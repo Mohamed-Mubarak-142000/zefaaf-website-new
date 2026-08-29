@@ -31,20 +31,20 @@ const NAV_ITEMS = [
 
 function ChevronDown() {
   return (
-    <span className="relative size-6 shrink-0">
+    <span className="relative size-4 shrink-0">
       <img src="/icons/chevron-down.svg" alt="" className="absolute inset-0 size-full" />
     </span>
   );
 }
 
 // The full inline nav (8 links + logo + language switcher + 2 buttons) only
-// fits comfortably from 2xl (1536px) up — every narrower viewport, including
-// most laptop screens, gets this menu instead so navigation never overflows.
+// fits comfortably from lg (1024px) up at this compact size — anything
+// narrower gets this menu instead so navigation never overflows.
 function CompactNavMenu({ t }: { t: ReturnType<typeof useTranslations> }) {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="ghost" size="icon" aria-label="Menu" className="2xl:hidden">
+        <Button variant="ghost" size="icon" aria-label="Menu" className="lg:hidden">
           <Menu className="size-5" />
         </Button>
       </DropdownMenuTrigger>
@@ -72,16 +72,16 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-10 border-b border-border bg-white">
-      <div className="mx-auto flex max-w-[1800px] items-center justify-between gap-3 px-4 py-2 sm:px-6 lg:px-10 2xl:px-20">
+      <div className="mx-auto flex max-w-[1800px] items-center justify-between gap-2 px-4 py-2 sm:px-6 lg:gap-3 lg:px-8 xl:px-10 2xl:px-20">
         <Logo />
 
-        <nav className="hidden items-center gap-4 2xl:flex">
+        <nav className="hidden items-center gap-3 lg:flex xl:gap-4">
           {NAV_ITEMS.map((item) => (
             <Link
               key={item.key}
               href={item.href}
               className={cn(
-                "flex items-center gap-1.5 font-alexandria text-base whitespace-nowrap",
+                "flex items-center gap-1 font-alexandria text-sm whitespace-nowrap xl:text-base",
                 item.key === "home" ? "text-brand" : "text-foreground",
               )}
             >
@@ -94,10 +94,10 @@ export function Header() {
         <div className="flex items-center gap-2 sm:gap-3">
           <CompactNavMenu t={t} />
           <LanguageSwitcher />
-          <Button className="hidden h-12 rounded-lg px-3 font-alexandria text-sm font-normal sm:inline-flex">
+          <Button className="hidden h-11 rounded-lg px-3 font-alexandria text-sm font-normal sm:inline-flex xl:h-12">
             {t("nav.registerNow")}
           </Button>
-          <Button className="hidden h-12 rounded-lg bg-cta-secondary px-3 font-alexandria text-sm font-normal hover:bg-cta-secondary/90 sm:inline-flex">
+          <Button className="hidden h-11 rounded-lg bg-cta-secondary px-3 font-alexandria text-sm font-normal hover:bg-cta-secondary/90 sm:inline-flex xl:h-12">
             {t("nav.marriageRequest")}
           </Button>
         </div>
