@@ -1,0 +1,81 @@
+export const locales = [
+  "ar",
+  "en",
+  "nl",
+  "fr",
+  "de",
+  "tr",
+  "ru",
+  "id",
+  "zh",
+  "bn",
+  "bs",
+  "es",
+  "fa",
+  "pt",
+  "ja",
+  "ko",
+  "it",
+  "ur",
+  "ta",
+  "am",
+  "sv",
+  "da",
+  "sq",
+  "uz",
+  "az",
+  "fil",
+  "hi",
+  "kk",
+  "ms",
+  "pa",
+  "ps",
+  "sw",
+  "th",
+] as const;
+
+export type Locale = (typeof locales)[number];
+
+export const defaultLocale: Locale = "ar";
+
+export const rtlLocales = new Set<Locale>(["ar", "fa", "ur", "ps"]);
+
+export function getDirection(locale: Locale): "rtl" | "ltr" {
+  return rtlLocales.has(locale) ? "rtl" : "ltr";
+}
+
+export const localeNames: Record<Locale, string> = {
+  ar: "العربية",
+  en: "English",
+  nl: "Nederlands",
+  fr: "Français",
+  de: "Deutsch",
+  tr: "Türkçe",
+  ru: "Русский",
+  id: "Bahasa Indonesia",
+  zh: "中文",
+  bn: "বাংলা",
+  bs: "Bosanski",
+  es: "Español",
+  fa: "فارسی",
+  pt: "Português",
+  ja: "日本語",
+  ko: "한국어",
+  it: "Italiano",
+  ur: "اردو",
+  ta: "தமிழ்",
+  am: "አማርኛ",
+  sv: "Svenska",
+  da: "Dansk",
+  sq: "Shqip",
+  uz: "Oʻzbekcha",
+  az: "Azərbaycanca",
+  fil: "Filipino",
+  hi: "हिन्दी",
+  kk: "Қазақша",
+  ms: "Bahasa Melayu",
+  pa: "ਪੰਜਾਬੀ",
+  ps: "پښتو",
+  sw: "Kiswahili",
+  th: "ไทย",
+};

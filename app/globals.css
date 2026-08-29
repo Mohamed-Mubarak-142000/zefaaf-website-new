@@ -1,1 +1,179 @@
 @import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+    --font-heading: var(--font-sans);
+    --font-sans: var(--font-sans);
+    /* Figma brand palette — generates color utilities (bg-, text-, border-), e.g. bg-brand, text-grey-primary */
+    --color-cta-secondary: var(--cta-secondary);
+    --color-black-primary: var(--black-primary);
+    --color-grey-primary: var(--grey-primary);
+    --color-brand: var(--brand);
+    --color-secondary-pink: var(--secondary-pink);
+    --color-stroke-1: var(--stroke-1);
+    --color-stroke-2: var(--stroke-2);
+    --color-white: var(--white);
+    --color-light-blue: var(--light-blue);
+    --color-purple: var(--purple);
+    --color-orange: var(--orange);
+    --color-star-orange: var(--star-orange);
+    /* Figma spacing scale — same values as Tailwind's default 3/8 steps (p-3/p-8),
+       aliased so gap-xs/p-xs (12px) and gap-lg/p-lg (32px) match the design by name */
+    --spacing-xs: 12px;
+    --spacing-lg: 32px;
+    --color-sidebar-ring: var(--sidebar-ring);
+    --color-sidebar-border: var(--sidebar-border);
+    --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+    --color-sidebar-accent: var(--sidebar-accent);
+    --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+    --color-sidebar-primary: var(--sidebar-primary);
+    --color-sidebar-foreground: var(--sidebar-foreground);
+    --color-sidebar: var(--sidebar);
+    --color-chart-5: var(--chart-5);
+    --color-chart-4: var(--chart-4);
+    --color-chart-3: var(--chart-3);
+    --color-chart-2: var(--chart-2);
+    --color-chart-1: var(--chart-1);
+    --color-ring: var(--ring);
+    --color-input: var(--input);
+    --color-border: var(--border);
+    --color-destructive: var(--destructive);
+    --color-accent-foreground: var(--accent-foreground);
+    --color-accent: var(--accent);
+    --color-muted-foreground: var(--muted-foreground);
+    --color-muted: var(--muted);
+    --color-secondary-foreground: var(--secondary-foreground);
+    --color-secondary: var(--secondary);
+    --color-primary-foreground: var(--primary-foreground);
+    --color-primary: var(--primary);
+    --color-popover-foreground: var(--popover-foreground);
+    --color-popover: var(--popover);
+    --color-card-foreground: var(--card-foreground);
+    --color-card: var(--card);
+    --color-foreground: var(--foreground);
+    --color-background: var(--background);
+    --radius-sm: calc(var(--radius) * 0.6);
+    --radius-md: calc(var(--radius) * 0.8);
+    --radius-lg: var(--radius);
+    --radius-xl: calc(var(--radius) * 1.4);
+    --radius-2xl: calc(var(--radius) * 1.8);
+    --radius-3xl: calc(var(--radius) * 2.2);
+    --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+:root {
+    /* Figma brand palette — raw values, referenced by @theme above and usable directly (var(--brand)) */
+    --cta-secondary: #000100;
+    --black-primary: #202022;
+    --grey-primary: #626262;
+    --brand: #B02898;
+    --secondary-pink: #EAD6E4;
+    --stroke-1: #E1E1E1;
+    --stroke-2: #F5F6F6;
+    --white: #FFFFFF;
+    --light-blue: #BBE6EE;
+    --purple: #DB34F2;
+    --orange: #E3AB72;
+    --star-orange: #FBB742;
+
+    --background: var(--white);
+    --foreground: var(--black-primary);
+    --card: var(--white);
+    --card-foreground: var(--black-primary);
+    --popover: var(--white);
+    --popover-foreground: var(--black-primary);
+    --primary: var(--brand);
+    --primary-foreground: var(--white);
+    --secondary: var(--secondary-pink);
+    --secondary-foreground: var(--black-primary);
+    --muted: var(--stroke-2);
+    --muted-foreground: var(--grey-primary);
+    --accent: var(--stroke-2);
+    --accent-foreground: var(--black-primary);
+    --destructive: oklch(0.577 0.245 27.325);
+    --border: var(--stroke-1);
+    --input: var(--stroke-1);
+    --ring: var(--brand);
+    --chart-1: var(--brand);
+    --chart-2: var(--light-blue);
+    --chart-3: var(--purple);
+    --chart-4: var(--orange);
+    --chart-5: var(--star-orange);
+    --radius: 0.75rem;
+    --sidebar: oklch(0.985 0 0);
+    --sidebar-foreground: oklch(0.145 0 0);
+    --sidebar-primary: oklch(0.205 0 0);
+    --sidebar-primary-foreground: oklch(0.985 0 0);
+    --sidebar-accent: oklch(0.97 0 0);
+    --sidebar-accent-foreground: oklch(0.205 0 0);
+    --sidebar-border: oklch(0.922 0 0);
+    --sidebar-ring: oklch(0.708 0 0);
+}
+
+.dark {
+    --background: oklch(0.145 0 0);
+    --foreground: oklch(0.985 0 0);
+    --card: oklch(0.205 0 0);
+    --card-foreground: oklch(0.985 0 0);
+    --popover: oklch(0.205 0 0);
+    --popover-foreground: oklch(0.985 0 0);
+    --primary: oklch(0.922 0 0);
+    --primary-foreground: oklch(0.205 0 0);
+    --secondary: oklch(0.269 0 0);
+    --secondary-foreground: oklch(0.985 0 0);
+    --muted: oklch(0.269 0 0);
+    --muted-foreground: oklch(0.708 0 0);
+    --accent: oklch(0.269 0 0);
+    --accent-foreground: oklch(0.985 0 0);
+    --destructive: oklch(0.704 0.191 22.216);
+    --border: oklch(1 0 0 / 10%);
+    --input: oklch(1 0 0 / 15%);
+    --ring: oklch(0.556 0 0);
+    --chart-1: oklch(0.87 0 0);
+    --chart-2: oklch(0.556 0 0);
+    --chart-3: oklch(0.439 0 0);
+    --chart-4: oklch(0.371 0 0);
+    --chart-5: oklch(0.269 0 0);
+    --sidebar: oklch(0.205 0 0);
+    --sidebar-foreground: oklch(0.985 0 0);
+    --sidebar-primary: oklch(0.488 0.243 264.376);
+    --sidebar-primary-foreground: oklch(0.985 0 0);
+    --sidebar-accent: oklch(0.269 0 0);
+    --sidebar-accent-foreground: oklch(0.985 0 0);
+    --sidebar-border: oklch(1 0 0 / 10%);
+    --sidebar-ring: oklch(0.556 0 0);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+    }
+  body {
+    @apply bg-background text-foreground;
+    }
+  html {
+    @apply font-sans;
+    }
+}
+
+/* Figma "spacing between sections": 157px on mobile, 200px from md (768px) up.
+   Use as: <section className="section-gap"> — swap the md: breakpoint below
+   if the Figma cutoff is actually tablet (sm) or desktop (lg) instead. */
+:root {
+  --section-gap: 157px;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --section-gap: 200px;
+  }
+}
+
+@utility section-gap {
+  /* padding-top only: this is the gap *before* a section, so stacking
+     section-gap on consecutive <section>s doesn't double up at the seam. */
+  padding-top: var(--section-gap);
+}
