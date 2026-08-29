@@ -20,15 +20,15 @@ import { Link } from "@/shared/i18n";
 // Figma design, and mirrors correctly for LTR locales. Logo and nav are
 // grouped in one flex container (rather than 3-way justify-between) so the
 // links sit immediately after the logo instead of floating in the middle.
+// None of these have a real page yet — Figma only specified the navbar itself.
 const NAV_ITEMS = [
   { key: "home", href: "/", withChevron: false },
-  { key: "services", href: "#services", withChevron: true },
-  // These four don't have a page yet — Figma only specified the navbar itself.
+  { key: "services", href: "#", withChevron: true },
   { key: "successStories", href: "#", withChevron: false },
   { key: "upcomingEvents", href: "#", withChevron: true },
   { key: "articles", href: "#", withChevron: false },
   { key: "about", href: "#", withChevron: false },
-  { key: "contact", href: "#contact", withChevron: false },
+  { key: "contact", href: "#", withChevron: false },
   { key: "vipSearch", href: "#", withChevron: false },
 ] as const;
 
