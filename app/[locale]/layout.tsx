@@ -5,7 +5,9 @@ import { Alexandria, Almarai, Geist } from "next/font/google";
 import { notFound } from "next/navigation";
 
 import { AppProviders } from "@/app";
+import { siteConfig } from "@/shared/config/site";
 import { cn } from "@/shared/lib/utils";
+import { buildMetadata } from "@/shared/lib/seo";
 import { getDirection, routing, type Locale } from "@/shared/i18n";
 
 import "../globals.css";
@@ -33,11 +35,20 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "site" });
+  const t = await getTranslations({ locale, namespace: "seo" });
 
+  const metadata = buildMetadata({
+    locale: locale as Locale,
+    title: t("title"),
+    description: t("description"),
+  });
+
+  // Lets any future page set a short title (e.g. "About") via its own
+  // generateMetadata and get "About — Zefaaf" automatically, instead of
+  // every page needing to repeat the site name.
   return {
-    title: t("name"),
-    description: t("tagline"),
+    ...metadata,
+    title: { default: t("title"), template: `%s — ${siteConfig.name}` },
   };
 }
 

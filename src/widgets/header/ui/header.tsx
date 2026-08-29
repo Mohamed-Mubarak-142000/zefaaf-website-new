@@ -109,7 +109,7 @@ export function Header() {
           <Button className="hidden rounded-[8px] font-alexandria sm:inline-flex">
             {t("nav.registerNow")}
           </Button>
-          <Button className="hidden rounded-[8px] bg-cta-secondary font-alexandria hover:bg-cta-secondary/90 sm:inline-flex">
+          <Button variant="cta-secondary" className="hidden rounded-[8px] font-alexandria sm:inline-flex">
             {t("nav.marriageRequest")}
           </Button>
           <LanguageSwitcher />
