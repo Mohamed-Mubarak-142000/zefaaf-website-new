@@ -1,5 +1,7 @@
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
+
+import { getDirection, type Locale } from "@/shared/i18n";
 
 // Figma's frame for this collage is a fixed 1839×1080px canvas built from
 // 4 solid circles, 4 masked photos, 2 direct photos, and 2 solid dots, all
@@ -16,7 +18,12 @@ import Image from "next/image";
 // property isn't type-checked as a <length>, so browsers reject the whole
 // value — cqw/cqh sidesteps that entirely).
 const CANVAS_W = 1839;
-const CANVAS_H = 1080;
+// The big backdrop circle (#4 below) is 1128.34px tall but the Figma frame
+// itself was only 1080px — i.e. the frame clipped the circle's bottom edge.
+// That clip isn't wanted here, so the canvas height used for cqh() is the
+// circle's true bottom extent instead of the frame's, letting it render as a
+// full, uncropped circle.
+const CANVAS_H = 1128.34;
 
 function cqw(px: number) {
   return `${(px / CANVAS_W) * 100}cqw`;
@@ -27,6 +34,16 @@ function cqh(px: number) {
 
 export function HeroCollage() {
   const t = useTranslations();
+  // The canvas is always laid out left-to-right (see `dir="ltr"` below), so
+  // the prominent photo sits at the high end of the x-axis — i.e. away from
+  // the text in LTR, where the collage is to the text's right. In RTL the
+  // collage moves to the text's left, which would put that same prominent
+  // photo right next to the text instead of away from it. Mirroring the
+  // whole composition for RTL only puts it back on the far side. Photos and
+  // the rating badge get their own counter scaleX(-1) so their content (and
+  // any text baked into a photo) still reads normally.
+  const isRtl = getDirection(useLocale() as Locale) === "rtl";
+  const flip = isRtl ? "scaleX(-1)" : undefined;
 
   return (
     <div
@@ -36,6 +53,7 @@ export function HeroCollage() {
         width: "var(--size-fluid-hero-collage)",
         aspectRatio: `${CANVAS_W} / ${CANVAS_H}`,
         containerType: "size",
+        transform: flip,
       }}
     >
       {/* Solid circle #1 — the main backdrop circle */}
@@ -55,7 +73,14 @@ export function HeroCollage() {
         className="absolute overflow-hidden rounded-full"
         style={{ left: cqw(708.7), top: cqh(186.52), width: cqw(378.543), height: cqh(366.863) }}
       >
-        <Image src="/images/hero-photo-1652.png" alt="" fill sizes="20vw" className="object-cover" />
+        <Image
+          src="/images/hero-photo-1652.png"
+          alt=""
+          fill
+          sizes="20vw"
+          className="object-cover"
+          style={{ transform: flip }}
+        />
       </div>
 
       {/* Direct photo: bottom mosque scene, 64% opacity */}
@@ -63,7 +88,14 @@ export function HeroCollage() {
         className="absolute overflow-hidden rounded-full opacity-[0.64]"
         style={{ left: cqw(708.7), top: cqh(564.55), width: cqw(378.543), height: cqh(366.863) }}
       >
-        <Image src="/images/hero-photo-1653.png" alt="" fill sizes="20vw" className="object-cover" />
+        <Image
+          src="/images/hero-photo-1653.png"
+          alt=""
+          fill
+          sizes="20vw"
+          className="object-cover"
+          style={{ transform: flip }}
+        />
       </div>
 
       {/* White halo behind the small oval photo */}
@@ -90,7 +122,14 @@ export function HeroCollage() {
           maskRepeat: "no-repeat",
         }}
       >
-        <Image src="/images/hero-photo-1643.png" alt="" fill sizes="15vw" className="object-cover" />
+        <Image
+          src="/images/hero-photo-1643.png"
+          alt=""
+          fill
+          sizes="15vw"
+          className="object-cover"
+          style={{ transform: flip }}
+        />
       </div>
 
       {/* Tiny solid dot */}
@@ -123,7 +162,14 @@ export function HeroCollage() {
           maskRepeat: "no-repeat",
         }}
       >
-        <Image src="/images/hero-photo-1646.png" alt="" fill sizes="20vw" className="object-cover" />
+        <Image
+          src="/images/hero-photo-1646.png"
+          alt=""
+          fill
+          sizes="20vw"
+          className="object-cover"
+          style={{ transform: flip }}
+        />
       </div>
 
       {/* Masked photo: mosque scene duplicate #2 */}
@@ -144,13 +190,45 @@ export function HeroCollage() {
           maskRepeat: "no-repeat",
         }}
       >
-        <Image src="/images/hero-photo-1651.png" alt="" fill sizes="20vw" className="object-cover" />
+        <Image
+          src="/images/hero-photo-1651.png"
+          alt=""
+          fill
+          sizes="20vw"
+          className="object-cover"
+          style={{ transform: flip }}
+        />
       </div>
 
       {/* Solid circle #4 — largest, backs the main photo */}
       <div
         className="absolute rounded-full bg-foreground"
         style={{ left: cqw(1099.87), top: cqh(-0.32), width: cqw(1106.307), height: cqh(1128.342) }}
+      />
+
+      {/* Decorative Vector accent, doubled inside the black circle cluster's
+          exposed sliver (the lens-shaped gap between circles that isn't
+          covered by any photo) — one near the top of that gap pointing up
+          toward the rim, one near the bottom pointing down toward the rim. */}
+      <img
+        src="/images/Vector.svg"
+        alt=""
+        aria-hidden="true"
+        className="absolute"
+        style={{ left: cqw(547), top: cqh(349), width: cqw(106), height: cqh(196) }}
+      />
+      <img
+        src="/images/Vector.svg"
+        alt=""
+        aria-hidden="true"
+        className="absolute"
+        style={{
+          left: cqw(547),
+          top: cqh(604),
+          width: cqw(106),
+          height: cqh(196),
+          transform: "rotate(180deg)",
+        }}
       />
 
       {/* Masked photo: the main, most prominent beach scene */}
@@ -171,7 +249,15 @@ export function HeroCollage() {
           maskRepeat: "no-repeat",
         }}
       >
-        <Image src="/images/hero-photo-1655.png" alt="" fill sizes="35vw" priority className="object-cover" />
+        <Image
+          src="/images/hero-photo-1655.png"
+          alt=""
+          fill
+          sizes="35vw"
+          priority
+          className="object-cover"
+          style={{ transform: flip }}
+        />
       </div>
 
       {/* Rating badge — position follows the design canvas, but its own
@@ -180,7 +266,7 @@ export function HeroCollage() {
           illegible sizes at the collage's smallest rendered width). */}
       <div
         className="absolute flex items-center gap-(--space-fluid-2xs) rounded-full bg-secondary-pink px-(--space-fluid-sm) py-(--space-fluid-2xs)"
-        style={{ left: cqw(552.15), top: cqh(232) }}
+        style={{ left: cqw(552.15), top: cqh(232), transform: flip }}
       >
         <span className="font-alexandria text-(length:--text-fluid-nav) whitespace-nowrap text-foreground">
           {t("hero.ratingLabel")}
