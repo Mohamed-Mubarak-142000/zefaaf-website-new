@@ -7,6 +7,8 @@
 @theme inline {
     --font-heading: var(--font-sans);
     --font-sans: var(--font-sans);
+    --font-alexandria: var(--font-alexandria);
+    --font-almarai: var(--font-almarai);
     /* Figma brand palette — generates color utilities (bg-, text-, border-), e.g. bg-brand, text-grey-primary */
     --color-cta-secondary: var(--cta-secondary);
     --color-black-primary: var(--black-primary);

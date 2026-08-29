@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations } from "next-intl/server";
-import { Geist } from "next/font/google";
+import { Alexandria, Almarai, Geist } from "next/font/google";
 import { notFound } from "next/navigation";
 
 import { AppProviders } from "@/app";
@@ -11,6 +11,17 @@ import { getDirection, routing, type Locale } from "@/shared/i18n";
 import "../globals.css";
 
 const geist = Geist({ subsets: ["latin"], variable: "--font-sans" });
+// Navbar typography from the Figma design: Alexandria for links/buttons, Almarai (bold) for the language label.
+const alexandria = Alexandria({
+  subsets: ["arabic", "latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-alexandria",
+});
+const almarai = Almarai({
+  subsets: ["arabic"],
+  weight: ["400", "700"],
+  variable: "--font-almarai",
+});
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -47,7 +58,12 @@ export default async function LocaleLayout({
     <html
       lang={locale}
       dir={getDirection(locale as Locale)}
-      className={cn("font-sans", geist.variable)}
+      className={cn(
+        "font-sans",
+        geist.variable,
+        alexandria.variable,
+        almarai.variable,
+      )}
       suppressHydrationWarning
     >
       <body>

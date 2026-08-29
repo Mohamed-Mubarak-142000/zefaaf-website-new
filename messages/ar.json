@@ -6,7 +6,14 @@
   "nav": {
     "home": "الرئيسية",
     "services": "خدماتنا",
-    "contact": "تواصل معنا"
+    "contact": "تواصل معنا",
+    "vipSearch": "البحث الشخصي VIP",
+    "about": "من نحن",
+    "articles": "المقالات",
+    "upcomingEvents": "الفعاليات القادمة",
+    "successStories": "قصص النجاح",
+    "registerNow": "سجل الآن",
+    "marriageRequest": "طلب زواج"
   },
   "hero": {
     "title": "نصنع منتجات رقمية تنمّي أعمالك",
