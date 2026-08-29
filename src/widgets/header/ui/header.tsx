@@ -94,10 +94,10 @@ export function Header() {
         <div className="flex items-center gap-2 sm:gap-3">
           <CompactNavMenu t={t} />
           <LanguageSwitcher />
-          <Button className="hidden h-11 rounded-lg px-3 font-alexandria text-sm font-normal sm:inline-flex xl:h-12">
+          <Button className="hidden font-alexandria sm:inline-flex">
             {t("nav.registerNow")}
           </Button>
-          <Button className="hidden h-11 rounded-lg bg-cta-secondary px-3 font-alexandria text-sm font-normal hover:bg-cta-secondary/90 sm:inline-flex xl:h-12">
+          <Button className="hidden bg-cta-secondary font-alexandria hover:bg-cta-secondary/90 sm:inline-flex">
             {t("nav.marriageRequest")}
           </Button>
         </div>
