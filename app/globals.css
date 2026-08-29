@@ -112,6 +112,7 @@
     --size-fluid-icon-lg: clamp(2.25rem, 2.07rem + 0.75vw, 2.75rem); /* 36px → 44px — footer social icons */
     --size-fluid-logo-w: clamp(1.75rem, 1.485rem + 1.13vw, 2.5rem); /* 28px → 40px */
     --size-fluid-logo-footer-w: clamp(6.5rem, 4.68rem + 7.75vw, 11.66rem); /* 104px → 186.574px — larger footer logo */
+    --size-fluid-hero-collage: clamp(17.5rem, 11.34rem + 26.29vw, 35rem); /* 280px → 560px — hero photo collage container */
     --radius-fluid: clamp(0.625rem, 0.58rem + 0.19vw, 0.75rem); /* 10px → 12px */
 
     --background: var(--white);

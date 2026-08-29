@@ -7,6 +7,13 @@
     "title": "Zefaaf — Marriage & Matchmaking Platform",
     "description": "Zefaaf is a trusted platform for serious marriage matchmaking — VIP personal search, real success stories, and a genuine path to marriage."
   },
+  "hero": {
+    "title": "Find your life partner the halal way",
+    "subtitle": "Zefaaf is a trusted platform designed to help Muslims find a life partner who shares their Islamic values, in a safe, Sharia-compliant way.",
+    "cta": "Discover more",
+    "ratingLabel": "Rating",
+    "ratingValue": "4.8"
+  },
   "nav": {
     "home": "Home",
     "services": "Services",
