@@ -94,7 +94,7 @@
     --text-fluid-nav: clamp(0.75rem, 0.71rem + 0.19vw, 0.875rem); /* 12px → 14px */
     --text-fluid-lg: clamp(1rem, 0.94rem + 0.28vw, 1.125rem); /* 16px → 18px */
     --text-fluid-xl: clamp(1.125rem, 1.08rem + 0.19vw, 1.25rem); /* 18px → 20px — footer column headings */
-    --text-fluid-hero: clamp(1.875rem, 1.22rem + 2.82vw, 3.75rem); /* 30px → 60px */
+    --text-fluid-hero: clamp(1.625rem, 1.1rem + 2.25vw, 3.125rem); /* 26px → 50px */
 
     --space-fluid-3xs: clamp(0.25rem, 0.22rem + 0.09vw, 0.3125rem); /* 4px → 5px — tight icon-to-label gap */
     --space-fluid-2xs: clamp(0.625rem, 0.58rem + 0.19vw, 0.75rem); /* 10px → 12px */

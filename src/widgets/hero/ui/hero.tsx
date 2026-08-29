@@ -22,7 +22,7 @@ export function Hero() {
         <h1 className="font-almarai text-(length:--text-fluid-hero) leading-[1.4] font-bold text-foreground">
           {t("hero.title")}
         </h1>
-        <p className="font-almarai text-(length:--text-fluid-xl) leading-[1.6] text-foreground/72">
+        <p className="font-almarai text-(length:--text-fluid-lg) leading-[1.6] text-foreground/72">
           {t("hero.subtitle")}
         </p>
         <Button
