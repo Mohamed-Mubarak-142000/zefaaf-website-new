@@ -15,48 +15,6 @@
     "registerNow": "Register Now",
     "marriageRequest": "Marriage Request"
   },
-  "hero": {
-    "title": "We build digital products that grow your business",
-    "subtitle": "Web, product design, and engineering — end to end.",
-    "cta": "Get in touch"
-  },
-  "services": {
-    "title": "What we do",
-    "subtitle": "A few of the ways we can help",
-    "items": {
-      "design": {
-        "title": "Product design",
-        "description": "Interfaces people enjoy using, grounded in your users' real needs."
-      },
-      "development": {
-        "title": "Web development",
-        "description": "Fast, reliable, and maintainable products built for the long run."
-      },
-      "growth": {
-        "title": "Growth & strategy",
-        "description": "From first idea to launch, and everything after."
-      }
-    }
-  },
-  "contactForm": {
-    "title": "Contact us",
-    "subtitle": "Tell us about your project and we'll get back to you shortly.",
-    "nameLabel": "Name",
-    "namePlaceholder": "Your name",
-    "emailLabel": "Email",
-    "emailPlaceholder": "you@example.com",
-    "messageLabel": "Message",
-    "messagePlaceholder": "How can we help?",
-    "submit": "Send message",
-    "submitting": "Sending...",
-    "success": "Thanks! We'll be in touch soon.",
-    "error": "Something went wrong. Please try again.",
-    "validation": {
-      "nameRequired": "Please enter your name.",
-      "emailInvalid": "Please enter a valid email address.",
-      "messageMin": "Please write at least 10 characters."
-    }
-  },
   "footer": {
     "rights": "All rights reserved."
   }
