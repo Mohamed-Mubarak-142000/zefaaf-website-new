@@ -10,6 +10,7 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default: "bg-primary text-primary-foreground hover:bg-primary/80",
+        "cta-secondary": "bg-cta-secondary text-white hover:bg-cta-secondary/90",
         outline:
           "border-border bg-background hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:border-input dark:bg-input/30 dark:hover:bg-input/50",
         secondary:
@@ -46,12 +47,24 @@ function Button({
   variant = "default",
   size = "default",
   asChild = false,
+  icon,
+  iconPosition = "start",
+  children,
   ...props
 }: React.ComponentProps<"button"> &
   VariantProps<typeof buttonVariants> & {
     asChild?: boolean
+    /** Icon rendered alongside the label (ignored when `asChild` — nest it in your own child element instead, since Slot needs exactly one). */
+    icon?: React.ReactNode
+    iconPosition?: "start" | "end"
   }) {
   const Comp = asChild ? Slot.Root : "button"
+
+  const iconEl = icon ? (
+    <span data-icon={iconPosition === "start" ? "inline-start" : "inline-end"}>
+      {icon}
+    </span>
+  ) : null
 
   return (
     <Comp
@@ -60,7 +73,17 @@ function Button({
       data-size={size}
       className={cn(buttonVariants({ variant, size, className }))}
       {...props}
-    />
+    >
+      {asChild || !icon ? (
+        children
+      ) : (
+        <>
+          {iconPosition === "start" && iconEl}
+          {children}
+          {iconPosition === "end" && iconEl}
+        </>
+      )}
+    </Comp>
   )
 }
 
