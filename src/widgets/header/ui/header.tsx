@@ -38,7 +38,7 @@ function ChevronDown() {
   // forcing it into a square box stretches it noticeably taller than the design.
   return (
     <span className="relative w-(--size-fluid-icon-xs) aspect-9/5 shrink-0">
-      <img src="/icons/chevron-down.svg" alt="" className="absolute inset-0 size-full" />
+      <img src="/icons/chevron-down.svg" alt="" className="absolute inset-0 size-full dark:invert" />
     </span>
   );
 }
@@ -80,7 +80,7 @@ export function Header() {
   const t = useTranslations();
 
   return (
-    <header className="sticky top-0 z-10 border-b border-border bg-white">
+    <header className="sticky top-0 z-10 border-b border-border bg-background">
       <div className="mx-auto flex max-w-[1800px] items-center justify-between gap-(--space-fluid-xs) px-(--space-fluid-nav-x) py-(--space-fluid-sm)">
         <div className="flex items-center gap-(--space-fluid-sm)">
           <Logo />
