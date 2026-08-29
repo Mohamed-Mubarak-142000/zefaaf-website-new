@@ -1,7 +1,14 @@
+import { Menu } from "lucide-react";
 import { useTranslations } from "next-intl";
 
 import { LanguageSwitcher } from "@/features/language-switcher";
 import { Button } from "@/shared/ui/button";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/shared/ui/dropdown-menu";
 import { Logo } from "@/shared/ui/logo";
 import { cn } from "@/shared/lib/utils";
 import { Link } from "@/shared/i18n";
@@ -30,15 +37,45 @@ function ChevronDown() {
   );
 }
 
+// The full inline nav (8 links + logo + language switcher + 2 buttons) only
+// fits comfortably from 2xl (1536px) up — every narrower viewport, including
+// most laptop screens, gets this menu instead so navigation never overflows.
+function CompactNavMenu({ t }: { t: ReturnType<typeof useTranslations> }) {
+  return (
+    <DropdownMenu>
+      <DropdownMenuTrigger asChild>
+        <Button variant="ghost" size="icon" aria-label="Menu" className="2xl:hidden">
+          <Menu className="size-5" />
+        </Button>
+      </DropdownMenuTrigger>
+      <DropdownMenuContent align="end" className="w-56">
+        {NAV_ITEMS.map((item) => (
+          <DropdownMenuItem key={item.key} asChild>
+            <Link
+              href={item.href}
+              className={cn(
+                "w-full font-alexandria",
+                item.key === "home" ? "text-brand" : "text-foreground",
+              )}
+            >
+              {t(`nav.${item.key}`)}
+            </Link>
+          </DropdownMenuItem>
+        ))}
+      </DropdownMenuContent>
+    </DropdownMenu>
+  );
+}
+
 export function Header() {
   const t = useTranslations();
 
   return (
     <header className="sticky top-0 z-10 border-b border-border bg-white">
-      <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-2 lg:px-20">
+      <div className="mx-auto flex max-w-[1800px] items-center justify-between gap-3 px-4 py-2 sm:px-6 lg:px-10 2xl:px-20">
         <Logo />
 
-        <nav className="hidden items-center gap-5 lg:flex">
+        <nav className="hidden items-center gap-4 2xl:flex">
           {NAV_ITEMS.map((item) => (
             <Link
               key={item.key}
@@ -54,7 +91,8 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2 sm:gap-3">
+          <CompactNavMenu t={t} />
           <LanguageSwitcher />
           <Button className="hidden h-12 rounded-lg px-3 font-alexandria text-sm font-normal sm:inline-flex">
             {t("nav.registerNow")}
