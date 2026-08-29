@@ -63,7 +63,7 @@ function CompactNavMenu({ t }: { t: ReturnType<typeof useTranslations> }) {
             <Link
               href={item.href}
               className={cn(
-                "w-full font-alexandria",
+                "w-full font-alexandria font-normal",
                 item.key === "home" ? "text-brand" : "text-foreground",
               )}
             >
@@ -94,7 +94,7 @@ export function Header() {
                 key={item.key}
                 href={item.href}
                 className={cn(
-                  "flex items-center gap-(--space-fluid-3xs) font-alexandria text-(length:--text-fluid-nav) whitespace-nowrap",
+                  "flex items-center gap-(--space-fluid-3xs) font-alexandria font-normal text-(length:--text-fluid-nav) whitespace-nowrap",
                   item.key === "home" ? "text-brand" : "text-foreground",
                 )}
               >

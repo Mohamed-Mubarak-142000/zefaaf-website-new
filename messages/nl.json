@@ -14,6 +14,20 @@
     "ratingLabel": "Rating",
     "ratingValue": "4.8"
   },
+  "stats": {
+    "happyClients": {
+      "value": "34,484k",
+      "label": "Happy clients"
+    },
+    "successStories": {
+      "value": "2768",
+      "label": "Success stories"
+    },
+    "registeredMembers": {
+      "value": "23416",
+      "label": "Registered Member"
+    }
+  },
   "nav": {
     "home": "Home",
     "services": "Services",

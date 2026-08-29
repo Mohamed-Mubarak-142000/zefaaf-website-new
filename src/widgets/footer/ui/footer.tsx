@@ -38,7 +38,7 @@ export function Footer() {
 
           {FOOTER_COLUMNS.map((column) => (
             <div key={column.key} className="flex min-w-32 flex-1 flex-col gap-(--space-fluid-xs)">
-              <p className="font-alexandria text-(length:--text-fluid-lg) font-normal text-white">
+              <p className="font-alexandria text-(length:--text-fluid-nav) font-normal text-white">
                 {t(`footer.columns.${column.key}.title`)}
               </p>
               <ul className="flex flex-col gap-(--space-fluid-3xs)">
@@ -46,7 +46,7 @@ export function Footer() {
                   <li key={linkKey}>
                     <Link
                       href="#"
-                      className="inline-block font-alexandria text-(length:--text-fluid-lg) text-white/80 hover:text-white"
+                      className="inline-block font-alexandria text-(length:--text-fluid-xs) text-white/80 hover:text-white"
                     >
                       {t(`footer.columns.${column.key}.links.${linkKey}`)}
                     </Link>
@@ -60,7 +60,7 @@ export function Footer() {
         </div>
 
         <div className="flex flex-wrap items-center justify-between gap-(--space-fluid-sm) pt-(--space-fluid-md)">
-          <div className="flex items-center gap-(--space-fluid-sm) font-alexandria text-(length:--text-fluid-nav) text-white">
+          <div className="flex items-center gap-(--space-fluid-sm) font-alexandria text-(length:--text-fluid-xs) text-white">
             <span>{t("footer.bottom.developedBy", { brand: DEVELOPER_NAME })}</span>
             <span className="h-3 w-px bg-white/40" aria-hidden="true" />
             <span>{t("footer.bottom.copyright", { year })}</span>
