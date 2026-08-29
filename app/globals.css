@@ -159,14 +159,15 @@
     }
 }
 
-/* Figma "spacing between sections": 157px on mobile, 200px from md (768px) up.
-   Use as: <section className="section-gap"> — swap the md: breakpoint below
-   if the Figma cutoff is actually tablet (sm) or desktop (lg) instead. */
+/* Figma "spacing between sections": 157px on mobile *and* tablet, 200px only
+   from lg (1024px) up — the roomier 200px value is reserved for genuine
+   desktop viewports so tablets in portrait don't get desktop-sized gaps.
+   Use as: <section className="section-gap">. */
 :root {
   --section-gap: 157px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   :root {
     --section-gap: 200px;
   }

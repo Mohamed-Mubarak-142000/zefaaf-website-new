@@ -16,7 +16,7 @@ export default function HomePage() {
 
       <main>
         <section className="section-gap mx-auto max-w-5xl px-4 text-center">
-          <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">
+          <h1 className="text-3xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
             {t("hero.title")}
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
@@ -35,7 +35,7 @@ export default function HomePage() {
             {t("services.subtitle")}
           </p>
 
-          <div className="mt-10 grid gap-6 sm:grid-cols-3">
+          <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {services.map((service) => (
               <ServiceCard key={service.id} service={service} />
             ))}
