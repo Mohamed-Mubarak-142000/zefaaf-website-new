@@ -22,7 +22,7 @@ export function LanguageSwitcher() {
           type="button"
           dir="ltr"
           aria-label={localeNames[locale]}
-          className="flex items-center gap-1.5 rounded-md px-1 py-1 outline-none hover:opacity-80 focus-visible:ring-2 focus-visible:ring-ring/50"
+          className="flex items-center gap-1 rounded-md px-1 py-1 outline-none hover:opacity-80 focus-visible:ring-2 focus-visible:ring-ring/50"
         >
           <span className="relative size-(--size-fluid-icon-md) shrink-0">
             <img src="/icons/globe.svg" alt="" className="absolute inset-0 size-full" />
@@ -30,7 +30,9 @@ export function LanguageSwitcher() {
           <span className="font-almarai text-(length:--text-fluid-lg) font-bold whitespace-nowrap text-foreground">
             {localeNames[locale]}
           </span>
-          <span className="relative size-(--size-fluid-icon-md) shrink-0">
+          {/* chevron-down.svg is 13.5×7.5 (not square) with preserveAspectRatio="none" —
+              forcing it into a square box stretches it noticeably taller than the design */}
+          <span className="relative w-(--size-fluid-icon-sm) aspect-9/5 shrink-0">
             <img src="/icons/chevron-down.svg" alt="" className="absolute inset-0 size-full" />
           </span>
         </button>
