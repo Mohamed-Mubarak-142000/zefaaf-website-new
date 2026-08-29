@@ -34,7 +34,7 @@ function ChevronDown() {
   // chevron-down.svg is 13.5×7.5 (not square) with preserveAspectRatio="none" —
   // forcing it into a square box stretches it noticeably taller than the design.
   return (
-    <span className="relative w-(--size-fluid-icon-sm) aspect-9/5 shrink-0">
+    <span className="relative w-(--size-fluid-icon-xs) aspect-9/5 shrink-0">
       <img src="/icons/chevron-down.svg" alt="" className="absolute inset-0 size-full" />
     </span>
   );
@@ -87,7 +87,7 @@ export function Header() {
               key={item.key}
               href={item.href}
               className={cn(
-                "flex items-center gap-(--space-fluid-2xs) font-alexandria text-(length:--text-fluid-nav) whitespace-nowrap",
+                "flex items-center gap-(--space-fluid-3xs) font-alexandria text-(length:--text-fluid-nav) whitespace-nowrap",
                 item.key === "home" ? "text-brand" : "text-foreground",
               )}
             >
