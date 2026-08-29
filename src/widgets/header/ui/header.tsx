@@ -13,10 +13,11 @@ import { Logo } from "@/shared/ui/logo";
 import { cn } from "@/shared/lib/utils";
 import { Link } from "@/shared/i18n";
 
-// DOM order follows RTL reading order (right → left): Logo first, then nav,
-// then the language switcher + CTAs — the ambient `dir="rtl"` on <html> for
-// Arabic locales renders this as logo-right / links-center / actions-left,
-// matching the Figma design, and mirrors correctly for LTR locales.
+// DOM order follows RTL reading order (right → left): Logo, then nav, then
+// the two CTA buttons, then the language switcher last — the ambient
+// `dir="rtl"` on <html> for Arabic locales renders this as logo-right /
+// links-center / buttons-then-language-switcher-left, matching the Figma
+// design, and mirrors correctly for LTR locales.
 const NAV_ITEMS = [
   { key: "home", href: "/", withChevron: false },
   { key: "services", href: "#services", withChevron: true },
@@ -30,8 +31,10 @@ const NAV_ITEMS = [
 ] as const;
 
 function ChevronDown() {
+  // chevron-down.svg is 13.5×7.5 (not square) with preserveAspectRatio="none" —
+  // forcing it into a square box stretches it noticeably taller than the design.
   return (
-    <span className="relative size-(--size-fluid-icon-sm) shrink-0">
+    <span className="relative w-(--size-fluid-icon-sm) aspect-9/5 shrink-0">
       <img src="/icons/chevron-down.svg" alt="" className="absolute inset-0 size-full" />
     </span>
   );
@@ -96,13 +99,13 @@ export function Header() {
 
         <div className="flex items-center gap-(--space-fluid-xs)">
           <CompactNavMenu t={t} />
-          <LanguageSwitcher />
           <Button className="hidden font-alexandria sm:inline-flex">
             {t("nav.registerNow")}
           </Button>
           <Button className="hidden bg-cta-secondary font-alexandria hover:bg-cta-secondary/90 sm:inline-flex">
             {t("nav.marriageRequest")}
           </Button>
+          <LanguageSwitcher />
         </div>
       </div>
     </header>
