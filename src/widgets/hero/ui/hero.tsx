@@ -32,7 +32,7 @@ export function Hero() {
           {t("hero.cta")}
         </Button>
 
-        <div className="mt-4 flex items-center gap-(--space-fluid-lg)">
+        <div className="mt-8 flex items-center gap-(--space-fluid-lg)">
           {STATS.map((key, i) => (
             <div key={key} className="flex items-center gap-(--space-fluid-lg)">
               {i > 0 && <span className="h-8 w-px bg-border" aria-hidden="true" />}
@@ -49,7 +49,7 @@ export function Hero() {
         </div>
       </div>
 
-      <div className="-mx-(--space-fluid-container) flex w-full translate-y-0 justify-center lg:mx-0 lg:w-auto lg:-translate-y-14 lg:ms-[calc(var(--space-fluid-sm)*-20)] lg:-me-(--space-fluid-sm) lg:justify-end">
+      <div className="-mx-(--space-fluid-container) flex w-full translate-y-0 justify-center lg:mx-0 lg:w-auto lg:-translate-y-14 lg:ms-[calc(var(--space-fluid-sm)*-20)] lg:-me-(--space-fluid-container) lg:justify-end">
         <HeroCollage />
       </div>
     </section>

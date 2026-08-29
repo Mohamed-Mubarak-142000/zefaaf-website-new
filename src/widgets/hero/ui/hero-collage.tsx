@@ -206,6 +206,33 @@ export function HeroCollage() {
         style={{ left: cqw(1099.87), top: cqh(-0.32), width: cqw(1106.307), height: cqh(1128.342) }}
       />
 
+      {/* Decorative Group accent, tripled down the exposed right two-thirds
+          of the big backdrop circle — the main photo's own box only reaches
+          x≈1575, so everything past that (up to the circle's ~2206 edge)
+          is plain black, with room for one copy near the top, one centered,
+          and one near the bottom. */}
+      <img
+        src="/images/Group.svg"
+        alt=""
+        aria-hidden="true"
+        className="absolute opacity-10"
+        style={{ left: cqw(1560), top: cqh(5), width: cqw(280), height: cqh(210) }}
+      />
+      <img
+        src="/images/Group.svg"
+        alt=""
+        aria-hidden="true"
+        className="absolute opacity-10"
+        style={{ left: cqw(1560), top: cqh(459), width: cqw(280), height: cqh(210) }}
+      />
+      <img
+        src="/images/Group.svg"
+        alt=""
+        aria-hidden="true"
+        className="absolute opacity-10"
+        style={{ left: cqw(1560), top: cqh(915), width: cqw(280), height: cqh(210) }}
+      />
+
       {/* Decorative Vector accent, doubled inside the black circle cluster's
           exposed sliver (the lens-shaped gap between circles that isn't
           covered by any photo) — one near the top of that gap pointing up
