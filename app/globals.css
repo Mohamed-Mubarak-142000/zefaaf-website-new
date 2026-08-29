@@ -107,7 +107,7 @@
     --size-fluid-icon-xs: clamp(0.75rem, 0.7rem + 0.19vw, 0.875rem); /* 12px → 14px — tiny inline dropdown-indicator chevrons */
     --size-fluid-icon-sm: clamp(1rem, 0.94rem + 0.28vw, 1.25rem); /* 16px → 20px */
     --size-fluid-icon-md: clamp(1.25rem, 1.19rem + 0.28vw, 1.5rem); /* 20px → 24px */
-    --size-fluid-logo-w: clamp(2rem, 1.75rem + 1.13vw, 2.9rem); /* 32px → 46.4px */
+    --size-fluid-logo-w: clamp(1.75rem, 1.485rem + 1.13vw, 2.5rem); /* 28px → 40px */
     --radius-fluid: clamp(0.625rem, 0.58rem + 0.19vw, 0.75rem); /* 10px → 12px */
 
     --background: var(--white);
