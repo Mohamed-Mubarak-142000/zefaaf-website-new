@@ -19,6 +19,58 @@
     "marriageRequest": "Marriage Request"
   },
   "footer": {
-    "rights": "All rights reserved."
+    "columns": {
+      "about": {
+        "title": "About Zefaaf",
+        "links": {
+          "about": "About Zefaaf",
+          "contact": "Contact Us",
+          "testimonials": "Client Testimonials",
+          "successStories": "Success Stories",
+          "businessLicense": "Business License"
+        }
+      },
+      "account": {
+        "title": "My Account",
+        "links": {
+          "manage": "Manage Account",
+          "safetyTips": "Safety Tips",
+          "delete": "Delete Account",
+          "security": "Security & Protection",
+          "membership": "Membership Level"
+        }
+      },
+      "help": {
+        "title": "Help",
+        "links": {
+          "helpCenter": "Help Center",
+          "faq": "FAQ",
+          "quickStart": "Quick Start Guide",
+          "tutorials": "Tutorials",
+          "partnersBlog": "Partners Blog"
+        }
+      },
+      "legal": {
+        "title": "Legal",
+        "links": {
+          "privacy": "Privacy Policy",
+          "terms": "Terms & Conditions",
+          "refund": "Payment & Refund Policy",
+          "cookies": "Cookie Policy",
+          "reportAbuse": "Report Abuse"
+        }
+      }
+    },
+    "newsletter": {
+      "title": "Newsletter",
+      "description": "Subscribe to receive the latest news by email",
+      "placeholder": "Enter your email address",
+      "subscribe": "Subscribe",
+      "privacyNote": "Your data is in safe hands. Check our privacy policy for more information."
+    },
+    "bottom": {
+      "developedBy": "Developed by {brand}",
+      "copyright": "All rights reserved to Zefaaf platform © {year}"
+    }
   }
 }

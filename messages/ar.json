@@ -19,6 +19,58 @@
     "marriageRequest": "طلب زواج"
   },
   "footer": {
-    "rights": "جميع الحقوق محفوظة."
+    "columns": {
+      "about": {
+        "title": "عن زفاف",
+        "links": {
+          "about": "عن زفاف",
+          "contact": "تواصل معنا",
+          "testimonials": "آراء العملاء",
+          "successStories": "قصص النجاح",
+          "businessLicense": "رخصة العمل"
+        }
+      },
+      "account": {
+        "title": "حسابي",
+        "links": {
+          "manage": "إدارة الحساب",
+          "safetyTips": "نصائح الأمان",
+          "delete": "حذف الحساب",
+          "security": "الأمان والحماية",
+          "membership": "مستوى العضوية"
+        }
+      },
+      "help": {
+        "title": "المساعدة",
+        "links": {
+          "helpCenter": "مركز المساعدة",
+          "faq": "الأسئلة الشائعة",
+          "quickStart": "دليل البداية السريع",
+          "tutorials": "الدروس التعليمية",
+          "partnersBlog": "مدونة الشركاء"
+        }
+      },
+      "legal": {
+        "title": "قانوني",
+        "links": {
+          "privacy": "سياسة الخصوصية",
+          "terms": "الشروط والأحكام",
+          "refund": "سياسة السداد والاسترجاع",
+          "cookies": "ملفات تعريف الارتباط",
+          "reportAbuse": "الإبلاغ عن إساءة"
+        }
+      }
+    },
+    "newsletter": {
+      "title": "نشرة الأخبار",
+      "description": "اشترك لتلقي أحدث الأخبار عبر البريد الإلكتروني",
+      "placeholder": "أدخل عنوان البريد الإلكتروني",
+      "subscribe": "اشترك",
+      "privacyNote": "بياناتك في أيدٍ أمينة. تحقق من سياسة الخصوصية الخاصة بنا لمزيد من المعلومات."
+    },
+    "bottom": {
+      "developedBy": "تم التطوير بواسطة {brand}",
+      "copyright": "جميع الحقوق محفوظة لمنصة زفاف © {year}"
+    }
   }
 }
