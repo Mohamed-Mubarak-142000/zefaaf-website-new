@@ -38,7 +38,7 @@ export function Footer() {
 
           {FOOTER_COLUMNS.map((column) => (
             <div key={column.key} className="flex min-w-32 flex-1 flex-col gap-(--space-fluid-xs)">
-              <p className="font-alexandria text-(length:--text-fluid-xl) font-extrabold text-white">
+              <p className="font-alexandria text-(length:--text-fluid-lg) font-normal text-white">
                 {t(`footer.columns.${column.key}.title`)}
               </p>
               <ul className="flex flex-col gap-(--space-fluid-3xs)">

@@ -16,7 +16,7 @@ export function NewsletterForm({ className }: { className?: string }) {
   return (
     <div className={cn("flex flex-col gap-(--space-fluid-sm)", className)}>
       <div className="flex flex-col gap-(--space-fluid-2xs)">
-        <p className="font-alexandria text-(length:--text-fluid-xl) font-extrabold text-white">
+        <p className="font-alexandria text-(length:--text-fluid-lg) font-normal text-white">
           {t("title")}
         </p>
         <p className="font-alexandria text-(length:--text-fluid-nav) text-white/80">
