@@ -13,11 +13,13 @@ import { Logo } from "@/shared/ui/logo";
 import { cn } from "@/shared/lib/utils";
 import { Link } from "@/shared/i18n";
 
-// DOM order follows RTL reading order (right → left): Logo, then nav, then
-// the two CTA buttons, then the language switcher last — the ambient
-// `dir="rtl"` on <html> for Arabic locales renders this as logo-right /
-// links-center / buttons-then-language-switcher-left, matching the Figma
-// design, and mirrors correctly for LTR locales.
+// DOM order follows RTL reading order (right → left): Logo+nav grouped
+// together first, then the two CTA buttons, then the language switcher last
+// — the ambient `dir="rtl"` on <html> for Arabic locales renders this as
+// logo+links-right / buttons-then-language-switcher-left, matching the
+// Figma design, and mirrors correctly for LTR locales. Logo and nav are
+// grouped in one flex container (rather than 3-way justify-between) so the
+// links sit immediately after the logo instead of floating in the middle.
 const NAV_ITEMS = [
   { key: "home", href: "/", withChevron: false },
   { key: "services", href: "#services", withChevron: true },
@@ -41,13 +43,16 @@ function ChevronDown() {
 }
 
 // The full inline nav (8 links + logo + language switcher + 2 buttons) only
-// fits comfortably from lg (1024px) up at this compact size — anything
-// narrower gets this menu instead so navigation never overflows.
+// fits comfortably from xl (1280px) up — English (the wordiest locale here,
+// e.g. "VIP Personal Search", "Upcoming Events") still overflowed at lg
+// (1024px) even at this compact size, so the breakpoint has to satisfy the
+// longest-content locale, not just Arabic. Anything narrower than xl gets
+// this menu instead so navigation never overflows in any locale.
 function CompactNavMenu({ t }: { t: ReturnType<typeof useTranslations> }) {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="ghost" size="icon" aria-label="Menu" className="lg:hidden">
+        <Button variant="ghost" size="icon" aria-label="Menu" className="xl:hidden">
           <Menu className="size-(--size-fluid-icon-md)" />
         </Button>
       </DropdownMenuTrigger>
@@ -76,33 +81,35 @@ export function Header() {
   return (
     <header className="sticky top-0 z-10 border-b border-border bg-white">
       <div className="mx-auto flex max-w-[1800px] items-center justify-between gap-(--space-fluid-xs) px-(--space-fluid-nav-x) py-(--space-fluid-sm)">
-        <Logo />
+        <div className="flex items-center gap-(--space-fluid-sm)">
+          <Logo />
 
-        {/* `lg:flex` is a genuine on/off switch (full nav vs. the compact
-            menu below), not a size — there's no continuous value between
-            "hidden" and "visible", so this stays a hard breakpoint. */}
-        <nav className="hidden items-center gap-(--space-fluid-sm) lg:flex">
-          {NAV_ITEMS.map((item) => (
-            <Link
-              key={item.key}
-              href={item.href}
-              className={cn(
-                "flex items-center gap-(--space-fluid-3xs) font-alexandria text-(length:--text-fluid-nav) whitespace-nowrap",
-                item.key === "home" ? "text-brand" : "text-foreground",
-              )}
-            >
-              {t(`nav.${item.key}`)}
-              {item.withChevron && <ChevronDown />}
-            </Link>
-          ))}
-        </nav>
+          {/* `xl:flex` is a genuine on/off switch (full nav vs. the compact
+              menu below), not a size — there's no continuous value between
+              "hidden" and "visible", so this stays a hard breakpoint. */}
+          <nav className="hidden items-center gap-(--space-fluid-sm) xl:flex">
+            {NAV_ITEMS.map((item) => (
+              <Link
+                key={item.key}
+                href={item.href}
+                className={cn(
+                  "flex items-center gap-(--space-fluid-3xs) font-alexandria text-(length:--text-fluid-nav) whitespace-nowrap",
+                  item.key === "home" ? "text-brand" : "text-foreground",
+                )}
+              >
+                {t(`nav.${item.key}`)}
+                {item.withChevron && <ChevronDown />}
+              </Link>
+            ))}
+          </nav>
+        </div>
 
         <div className="flex items-center gap-(--space-fluid-xs)">
           <CompactNavMenu t={t} />
-          <Button className="hidden font-alexandria sm:inline-flex">
+          <Button className="hidden rounded-[8px] font-alexandria sm:inline-flex">
             {t("nav.registerNow")}
           </Button>
-          <Button className="hidden bg-cta-secondary font-alexandria hover:bg-cta-secondary/90 sm:inline-flex">
+          <Button className="hidden rounded-[8px] bg-cta-secondary font-alexandria hover:bg-cta-secondary/90 sm:inline-flex">
             {t("nav.marriageRequest")}
           </Button>
           <LanguageSwitcher />

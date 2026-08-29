@@ -90,7 +90,7 @@
        given target sizes A at viewport W1 and B at viewport W2, slope =
        (B-A)/(W2-W1); preferred = (A - slope*W1)/16 + rem + slope*100 + vw.
        Reference range used throughout: 375px (small phone) → 1440px (desktop). */
-    --text-fluid-nav: clamp(0.8125rem, 0.77rem + 0.19vw, 0.9375rem); /* 13px → 15px */
+    --text-fluid-nav: clamp(0.75rem, 0.71rem + 0.19vw, 0.875rem); /* 12px → 14px */
     --text-fluid-lg: clamp(1rem, 0.94rem + 0.28vw, 1.125rem); /* 16px → 18px */
     --text-fluid-hero: clamp(1.875rem, 1.22rem + 2.82vw, 3.75rem); /* 30px → 60px */
 
@@ -101,13 +101,13 @@
     --space-fluid-md: clamp(1rem, 0.85rem + 0.75vw, 1.5rem); /* 16px → 24px */
     --space-fluid-lg: clamp(1.5rem, 1.31rem + 0.94vw, 2rem); /* 24px → 32px */
     --space-fluid-container: clamp(1rem, -0.4rem + 6.01vw, 5rem); /* 16px → 80px */
-    --space-fluid-nav-x: clamp(1rem, 0.3rem + 3vw, 3rem); /* 16px → 48px — tighter side padding just for the navbar */
+    --space-fluid-nav-x: clamp(0.75rem, 0.31rem + 1.88vw, 2rem); /* 12px → 32px — tighter side padding just for the navbar */
     --space-fluid-section: clamp(9.8125rem, 8.87rem + 4.04vw, 12.5rem); /* 157px → 200px */
 
     --size-fluid-icon-xs: clamp(0.75rem, 0.7rem + 0.19vw, 0.875rem); /* 12px → 14px — tiny inline dropdown-indicator chevrons */
     --size-fluid-icon-sm: clamp(1rem, 0.94rem + 0.28vw, 1.25rem); /* 16px → 20px */
     --size-fluid-icon-md: clamp(1.25rem, 1.19rem + 0.28vw, 1.5rem); /* 20px → 24px */
-    --size-fluid-logo-w: clamp(2rem, 1.75rem + 1.13vw, 2.9rem); /* 32px → 46.4px */
+    --size-fluid-logo-w: clamp(1.75rem, 1.485rem + 1.13vw, 2.5rem); /* 28px → 40px */
     --radius-fluid: clamp(0.625rem, 0.58rem + 0.19vw, 0.75rem); /* 10px → 12px */
 
     --background: var(--white);
