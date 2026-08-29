@@ -2,6 +2,7 @@ import { Menu } from "lucide-react";
 import { useTranslations } from "next-intl";
 
 import { LanguageSwitcher } from "@/features/language-switcher";
+import { ThemeToggle } from "@/features/theme-toggle";
 import { Button } from "@/shared/ui/button";
 import {
   DropdownMenu,
@@ -106,9 +107,7 @@ export function Header() {
 
         <div className="flex items-center gap-(--space-fluid-xs)">
           <CompactNavMenu t={t} />
-          <Button className="hidden rounded-[8px] font-alexandria sm:inline-flex">
-            {t("nav.registerNow")}
-          </Button>
+          <ThemeToggle />
           <Button variant="cta-secondary" className="hidden rounded-[8px] font-alexandria sm:inline-flex">
             {t("nav.marriageRequest")}
           </Button>
