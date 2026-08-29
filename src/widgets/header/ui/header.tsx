@@ -31,7 +31,7 @@ const NAV_ITEMS = [
 
 function ChevronDown() {
   return (
-    <span className="relative size-4 shrink-0">
+    <span className="relative size-(--size-fluid-icon-sm) shrink-0">
       <img src="/icons/chevron-down.svg" alt="" className="absolute inset-0 size-full" />
     </span>
   );
@@ -45,7 +45,7 @@ function CompactNavMenu({ t }: { t: ReturnType<typeof useTranslations> }) {
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button variant="ghost" size="icon" aria-label="Menu" className="lg:hidden">
-          <Menu className="size-5" />
+          <Menu className="size-(--size-fluid-icon-md)" />
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end" className="w-56">
@@ -72,16 +72,19 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-10 border-b border-border bg-white">
-      <div className="mx-auto flex max-w-[1800px] items-center justify-between gap-2 px-4 py-2 sm:px-6 lg:gap-3 lg:px-8 xl:px-10 2xl:px-20">
+      <div className="mx-auto flex max-w-[1800px] items-center justify-between gap-(--space-fluid-xs) px-(--space-fluid-container) py-(--space-fluid-2xs)">
         <Logo />
 
-        <nav className="hidden items-center gap-3 lg:flex xl:gap-4">
+        {/* `lg:flex` is a genuine on/off switch (full nav vs. the compact
+            menu below), not a size — there's no continuous value between
+            "hidden" and "visible", so this stays a hard breakpoint. */}
+        <nav className="hidden items-center gap-(--space-fluid-sm) lg:flex">
           {NAV_ITEMS.map((item) => (
             <Link
               key={item.key}
               href={item.href}
               className={cn(
-                "flex items-center gap-1 font-alexandria text-sm whitespace-nowrap xl:text-base",
+                "flex items-center gap-(--space-fluid-2xs) font-alexandria text-(length:--text-fluid-nav) whitespace-nowrap",
                 item.key === "home" ? "text-brand" : "text-foreground",
               )}
             >
@@ -91,7 +94,7 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="flex items-center gap-2 sm:gap-3">
+        <div className="flex items-center gap-(--space-fluid-xs)">
           <CompactNavMenu t={t} />
           <LanguageSwitcher />
           <Button className="hidden font-alexandria sm:inline-flex">

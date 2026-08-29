@@ -15,8 +15,8 @@ export default function HomePage() {
       <Header />
 
       <main>
-        <section className="section-gap mx-auto max-w-5xl px-4 text-center">
-          <h1 className="text-3xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
+        <section className="section-gap mx-auto max-w-5xl px-(--space-fluid-container) text-center">
+          <h1 className="text-(length:--text-fluid-hero) font-bold tracking-tight">
             {t("hero.title")}
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
@@ -27,7 +27,7 @@ export default function HomePage() {
           </Button>
         </section>
 
-        <section id="services" className="section-gap mx-auto max-w-5xl px-4">
+        <section id="services" className="section-gap mx-auto max-w-5xl px-(--space-fluid-container)">
           <h2 className="text-center text-2xl font-semibold">
             {t("services.title")}
           </h2>
@@ -35,14 +35,17 @@ export default function HomePage() {
             {t("services.subtitle")}
           </p>
 
-          <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {/* auto-fit/minmax instead of sm:/lg: column-count breakpoints —
+              the number of columns follows the available width continuously,
+              collapsing to fewer/wider cards as the viewport shrinks. */}
+          <div className="mt-10 grid grid-cols-[repeat(auto-fit,minmax(260px,1fr))] gap-(--space-fluid-md)">
             {services.map((service) => (
               <ServiceCard key={service.id} service={service} />
             ))}
           </div>
         </section>
 
-        <section id="contact" className="section-gap mx-auto max-w-5xl px-4">
+        <section id="contact" className="section-gap mx-auto max-w-5xl px-(--space-fluid-container)">
           <ContactForm />
         </section>
       </main>

@@ -5,8 +5,9 @@ export function Logo({ className }: { className?: string }) {
     <div
       role="img"
       aria-label="Zefaaf"
-      className={cn("h-[62px] w-[46px] shrink-0", className)}
+      className={cn("h-auto w-(--size-fluid-logo-w) shrink-0", className)}
       style={{
+        aspectRatio: "46.207 / 62.515",
         backgroundImage:
           "linear-gradient(234deg, #FFC643 0%, #F668D1 50.884%, #8539F7 100%)",
         WebkitMaskImage: "url(/icons/logo-mask.svg)",

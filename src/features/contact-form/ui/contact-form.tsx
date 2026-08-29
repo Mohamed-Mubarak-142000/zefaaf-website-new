@@ -41,7 +41,7 @@ export function ContactForm() {
         {t("contactForm.subtitle")}
       </p>
 
-      <form onSubmit={onSubmit} className="mt-6 flex flex-col gap-4" noValidate>
+      <form onSubmit={onSubmit} className="mt-(--space-fluid-lg) flex flex-col gap-(--space-fluid-sm)" noValidate>
         <div className="flex flex-col gap-1.5">
           <Label htmlFor="name">{t("contactForm.nameLabel")}</Label>
           <Input

@@ -8,7 +8,7 @@ export function Footer() {
 
   return (
     <footer className="border-t border-border">
-      <div className="mx-auto max-w-5xl px-4 py-6 text-sm text-muted-foreground">
+      <div className="mx-auto max-w-5xl px-(--space-fluid-container) py-(--space-fluid-lg) text-sm text-muted-foreground">
         © {year} {siteConfig.name}. {t("footer.rights")}
       </div>
     </footer>

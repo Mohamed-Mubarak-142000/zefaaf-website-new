@@ -22,10 +22,11 @@
     --color-purple: var(--purple);
     --color-orange: var(--orange);
     --color-star-orange: var(--star-orange);
-    /* Figma spacing scale — same values as Tailwind's default 3/8 steps (p-3/p-8),
-       aliased so gap-xs/p-xs (12px) and gap-lg/p-lg (32px) match the design by name */
-    --spacing-xs: 12px;
-    --spacing-lg: 32px;
+    /* Figma spacing scale, made fluid (see the clamp() block below) so
+       gap-xs/p-xs and gap-lg/p-lg scale with viewport instead of sitting at
+       one fixed px value. */
+    --spacing-xs: var(--space-fluid-2xs);
+    --spacing-lg: var(--space-fluid-lg);
     --color-sidebar-ring: var(--sidebar-ring);
     --color-sidebar-border: var(--sidebar-border);
     --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -81,6 +82,31 @@
     --orange: #E3AB72;
     --star-orange: #FBB742;
 
+    /* Fluid scale: every size below is `clamp(min, preferred, max)`. The
+       `preferred` term mixes `vw` (a % of the current viewport width) with a
+       `rem` offset, so the value grows and shrinks continuously as the
+       window resizes instead of jumping between fixed px at a breakpoint.
+       `min`/`max` just stop it from getting too small or too large. Formula:
+       given target sizes A at viewport W1 and B at viewport W2, slope =
+       (B-A)/(W2-W1); preferred = (A - slope*W1)/16 + rem + slope*100 + vw.
+       Reference range used throughout: 375px (small phone) → 1440px (desktop). */
+    --text-fluid-nav: clamp(0.875rem, 0.83rem + 0.19vw, 1rem); /* 14px → 16px */
+    --text-fluid-lg: clamp(1rem, 0.94rem + 0.28vw, 1.125rem); /* 16px → 18px */
+    --text-fluid-hero: clamp(1.875rem, 1.22rem + 2.82vw, 3.75rem); /* 30px → 60px */
+
+    --space-fluid-2xs: clamp(0.625rem, 0.58rem + 0.19vw, 0.75rem); /* 10px → 12px */
+    --space-fluid-xs: clamp(0.5rem, 0.44rem + 0.28vw, 0.75rem); /* 8px → 12px */
+    --space-fluid-sm: clamp(0.75rem, 0.65rem + 0.47vw, 1rem); /* 12px → 16px */
+    --space-fluid-md: clamp(1rem, 0.85rem + 0.75vw, 1.5rem); /* 16px → 24px */
+    --space-fluid-lg: clamp(1.5rem, 1.31rem + 0.94vw, 2rem); /* 24px → 32px */
+    --space-fluid-container: clamp(1rem, -0.4rem + 6.01vw, 5rem); /* 16px → 80px */
+    --space-fluid-section: clamp(9.8125rem, 8.87rem + 4.04vw, 12.5rem); /* 157px → 200px */
+
+    --size-fluid-icon-sm: clamp(1rem, 0.94rem + 0.28vw, 1.25rem); /* 16px → 20px */
+    --size-fluid-icon-md: clamp(1.25rem, 1.19rem + 0.28vw, 1.5rem); /* 20px → 24px */
+    --size-fluid-logo-w: clamp(2rem, 1.75rem + 1.13vw, 2.9rem); /* 32px → 46.4px */
+    --radius-fluid: clamp(0.625rem, 0.58rem + 0.19vw, 0.75rem); /* 10px → 12px */
+
     --background: var(--white);
     --foreground: var(--black-primary);
     --card: var(--white);
@@ -104,7 +130,7 @@
     --chart-3: var(--purple);
     --chart-4: var(--orange);
     --chart-5: var(--star-orange);
-    --radius: 0.75rem;
+    --radius: var(--radius-fluid);
     --sidebar: oklch(0.985 0 0);
     --sidebar-foreground: oklch(0.145 0 0);
     --sidebar-primary: oklch(0.205 0 0);
@@ -161,18 +187,11 @@
     }
 }
 
-/* Figma "spacing between sections": 157px on mobile *and* tablet, 200px only
-   from lg (1024px) up — the roomier 200px value is reserved for genuine
-   desktop viewports so tablets in portrait don't get desktop-sized gaps.
-   Use as: <section className="section-gap">. */
+/* Figma "spacing between sections": scales continuously from 157px on small
+   screens up to 200px on desktop (see --space-fluid-section above) instead
+   of jumping at one breakpoint. Use as: <section className="section-gap">. */
 :root {
-  --section-gap: 157px;
-}
-
-@media (min-width: 1024px) {
-  :root {
-    --section-gap: 200px;
-  }
+  --section-gap: var(--space-fluid-section);
 }
 
 @utility section-gap {

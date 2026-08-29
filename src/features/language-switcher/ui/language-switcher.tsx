@@ -24,13 +24,13 @@ export function LanguageSwitcher() {
           aria-label={localeNames[locale]}
           className="flex items-center gap-1.5 rounded-md px-1 py-1 outline-none hover:opacity-80 focus-visible:ring-2 focus-visible:ring-ring/50"
         >
-          <span className="relative size-5 shrink-0 xl:size-6">
+          <span className="relative size-(--size-fluid-icon-md) shrink-0">
             <img src="/icons/globe.svg" alt="" className="absolute inset-0 size-full" />
           </span>
-          <span className="font-almarai text-base font-bold whitespace-nowrap text-foreground xl:text-lg">
+          <span className="font-almarai text-(length:--text-fluid-lg) font-bold whitespace-nowrap text-foreground">
             {localeNames[locale]}
           </span>
-          <span className="relative size-5 shrink-0 xl:size-6">
+          <span className="relative size-(--size-fluid-icon-md) shrink-0">
             <img src="/icons/chevron-down.svg" alt="" className="absolute inset-0 size-full" />
           </span>
         </button>
