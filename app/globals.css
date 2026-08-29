@@ -100,6 +100,7 @@
     --space-fluid-md: clamp(1rem, 0.85rem + 0.75vw, 1.5rem); /* 16px → 24px */
     --space-fluid-lg: clamp(1.5rem, 1.31rem + 0.94vw, 2rem); /* 24px → 32px */
     --space-fluid-container: clamp(1rem, -0.4rem + 6.01vw, 5rem); /* 16px → 80px */
+    --space-fluid-nav-x: clamp(1rem, 0.3rem + 3vw, 3rem); /* 16px → 48px — tighter side padding just for the navbar */
     --space-fluid-section: clamp(9.8125rem, 8.87rem + 4.04vw, 12.5rem); /* 157px → 200px */
 
     --size-fluid-icon-sm: clamp(1rem, 0.94rem + 0.28vw, 1.25rem); /* 16px → 20px */

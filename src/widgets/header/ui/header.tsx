@@ -75,7 +75,7 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-10 border-b border-border bg-white">
-      <div className="mx-auto flex max-w-[1800px] items-center justify-between gap-(--space-fluid-xs) px-(--space-fluid-container) py-(--space-fluid-2xs)">
+      <div className="mx-auto flex max-w-[1800px] items-center justify-between gap-(--space-fluid-xs) px-(--space-fluid-nav-x) py-(--space-fluid-sm)">
         <Logo />
 
         {/* `lg:flex` is a genuine on/off switch (full nav vs. the compact
