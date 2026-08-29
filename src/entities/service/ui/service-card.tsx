@@ -16,7 +16,7 @@ export function ServiceCard({ service }: { service: Service }) {
   return (
     <Card>
       <CardHeader>
-        <Icon className="size-6 text-primary" aria-hidden />
+        <Icon className="size-(--size-fluid-icon-md) text-primary" aria-hidden />
         <CardTitle>{t(service.titleKey)}</CardTitle>
       </CardHeader>
       <CardContent className="text-sm text-muted-foreground">
