@@ -90,7 +90,7 @@
        given target sizes A at viewport W1 and B at viewport W2, slope =
        (B-A)/(W2-W1); preferred = (A - slope*W1)/16 + rem + slope*100 + vw.
        Reference range used throughout: 375px (small phone) → 1440px (desktop). */
-    --text-fluid-nav: clamp(0.875rem, 0.83rem + 0.19vw, 1rem); /* 14px → 16px */
+    --text-fluid-nav: clamp(0.8125rem, 0.77rem + 0.19vw, 0.9375rem); /* 13px → 15px */
     --text-fluid-lg: clamp(1rem, 0.94rem + 0.28vw, 1.125rem); /* 16px → 18px */
     --text-fluid-hero: clamp(1.875rem, 1.22rem + 2.82vw, 3.75rem); /* 30px → 60px */
 
