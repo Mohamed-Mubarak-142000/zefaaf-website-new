@@ -20,16 +20,17 @@ export function LanguageSwitcher() {
       <DropdownMenuTrigger asChild>
         <button
           type="button"
+          dir="ltr"
           aria-label={localeNames[locale]}
           className="flex items-center gap-1.5 rounded-md px-1 py-1 outline-none hover:opacity-80 focus-visible:ring-2 focus-visible:ring-ring/50"
         >
-          <span className="relative size-6 shrink-0">
+          <span className="relative size-5 shrink-0 xl:size-6">
             <img src="/icons/globe.svg" alt="" className="absolute inset-0 size-full" />
           </span>
-          <span className="font-almarai text-lg font-bold text-foreground">
+          <span className="font-almarai text-base font-bold whitespace-nowrap text-foreground xl:text-lg">
             {localeNames[locale]}
           </span>
-          <span className="relative size-6 shrink-0">
+          <span className="relative size-5 shrink-0 xl:size-6">
             <img src="/icons/chevron-down.svg" alt="" className="absolute inset-0 size-full" />
           </span>
         </button>
