@@ -17,12 +17,12 @@ export function Hero() {
   const t = useTranslations();
 
   return (
-    <section className="mx-auto flex max-w-[1800px] flex-col-reverse items-center gap-(--space-fluid-xl) px-(--space-fluid-container) py-(--space-fluid-lg) lg:flex-row lg:justify-between">
-      <div className="flex max-w-xl flex-col items-center gap-(--space-fluid-md) text-center lg:items-start lg:text-start">
-        <h1 className="font-almarai text-(length:--text-fluid-hero) leading-[1.4] font-bold text-foreground">
+    <section className="relative mx-auto flex max-w-[1800px] flex-col-reverse items-center gap-(--space-fluid-lg) overflow-x-clip px-(--space-fluid-container) py-(--space-fluid-lg) lg:flex-row lg:justify-between">
+      <div className="flex max-w-md flex-col items-center gap-(--space-fluid-md) text-center lg:shrink-0 lg:items-start lg:text-start">
+        <h1 className="font-almarai text-(length:--text-fluid-hero) leading-[1.4] font-bold whitespace-pre-line text-foreground">
           {t("hero.title")}
         </h1>
-        <p className="font-almarai text-(length:--text-fluid-lg) leading-[1.6] text-foreground/72">
+        <p className="font-almarai text-(length:--text-fluid-lg) leading-[1.6] whitespace-pre-line text-foreground/72">
           {t("hero.subtitle")}
         </p>
         <Button
@@ -49,7 +49,9 @@ export function Hero() {
         </div>
       </div>
 
-      <HeroCollage />
+      <div className="-mx-(--space-fluid-container) flex w-full translate-y-0 justify-center lg:mx-0 lg:w-auto lg:-translate-y-6 lg:-ms-(--space-fluid-sm) lg:-me-(--space-fluid-sm) lg:justify-end">
+        <HeroCollage />
+      </div>
     </section>
   );
 }
