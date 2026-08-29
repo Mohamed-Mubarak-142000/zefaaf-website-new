@@ -18,7 +18,7 @@ export function Hero() {
 
   return (
     <section className="relative mx-auto flex max-w-[1800px] flex-col-reverse items-center gap-(--space-fluid-lg) overflow-x-clip px-(--space-fluid-container) py-(--space-fluid-lg) lg:flex-row lg:justify-between">
-      <div className="flex max-w-md flex-col items-center gap-(--space-fluid-md) text-center lg:shrink-0 lg:items-start lg:text-start">
+      <div className="flex max-w-md translate-y-0 flex-col items-center gap-(--space-fluid-md) text-center lg:shrink-0 lg:-translate-y-36 lg:items-start lg:text-start">
         <h1 className="font-almarai text-(length:--text-fluid-hero) leading-[1.4] font-bold whitespace-pre-line text-foreground">
           {t("hero.title")}
         </h1>
@@ -32,7 +32,7 @@ export function Hero() {
           {t("hero.cta")}
         </Button>
 
-        <div className="flex items-center gap-(--space-fluid-lg)">
+        <div className="mt-4 flex items-center gap-(--space-fluid-lg)">
           {STATS.map((key, i) => (
             <div key={key} className="flex items-center gap-(--space-fluid-lg)">
               {i > 0 && <span className="h-8 w-px bg-border" aria-hidden="true" />}
@@ -49,7 +49,7 @@ export function Hero() {
         </div>
       </div>
 
-      <div className="-mx-(--space-fluid-container) flex w-full translate-y-0 justify-center lg:mx-0 lg:w-auto lg:-translate-y-6 lg:-ms-(--space-fluid-sm) lg:-me-(--space-fluid-sm) lg:justify-end">
+      <div className="-mx-(--space-fluid-container) flex w-full translate-y-0 justify-center lg:mx-0 lg:w-auto lg:-translate-y-14 lg:ms-[calc(var(--space-fluid-sm)*-20)] lg:-me-(--space-fluid-sm) lg:justify-end">
         <HeroCollage />
       </div>
     </section>
