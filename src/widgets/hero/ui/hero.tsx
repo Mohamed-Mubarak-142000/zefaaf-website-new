@@ -2,6 +2,8 @@ import { useTranslations } from "next-intl";
 
 import { Button } from "@/shared/ui/button";
 
+import { AnimatedHeroTitle } from "./animated-hero-title";
+import { AnimatedStats } from "./animated-stats";
 import { HeroCollage } from "./hero-collage";
 
 const STATS = ["happyClients", "successStories", "registeredMembers"] as const;
@@ -15,13 +17,17 @@ const STATS = ["happyClients", "successStories", "registeredMembers"] as const;
 // plain top-to-bottom flow in natural reading order.
 export function Hero() {
   const t = useTranslations();
+  const stats = STATS.map((key) => ({
+    value: t(`stats.${key}.value`),
+    label: t(`stats.${key}.label`),
+  }));
 
   return (
     <section className="relative mx-auto flex max-w-[1800px] flex-col-reverse items-center gap-(--space-fluid-lg) overflow-x-clip px-(--space-fluid-container) py-(--space-fluid-lg) lg:flex-row lg:justify-between">
       <div className="flex max-w-md translate-y-0 flex-col items-center gap-(--space-fluid-md) text-center lg:shrink-0 lg:-translate-y-36 lg:items-start lg:text-start">
-        <h1 className="font-almarai text-(length:--text-fluid-hero) leading-[1.4] font-bold whitespace-pre-line text-foreground">
+        <AnimatedHeroTitle className="font-almarai text-(length:--text-fluid-hero) leading-[1.4] font-bold whitespace-pre-line text-foreground">
           {t("hero.title")}
-        </h1>
+        </AnimatedHeroTitle>
         <p className="font-almarai text-(length:--text-fluid-lg) leading-[1.6] whitespace-pre-line text-foreground/72">
           {t("hero.subtitle")}
         </p>
@@ -33,21 +39,7 @@ export function Hero() {
           {t("hero.cta")}
         </Button>
 
-        <div className="mt-8 flex items-center gap-(--space-fluid-lg)">
-          {STATS.map((key, i) => (
-            <div key={key} className="flex items-center gap-(--space-fluid-lg)">
-              {i > 0 && <span className="h-8 w-px bg-border" aria-hidden="true" />}
-              <div className="flex flex-col items-center lg:items-start">
-                <span className="font-alexandria text-(length:--text-fluid-xl) font-bold whitespace-nowrap text-brand">
-                  {t(`stats.${key}.value`)}
-                </span>
-                <span className="font-alexandria text-(length:--text-fluid-nav) whitespace-nowrap text-muted-foreground">
-                  {t(`stats.${key}.label`)}
-                </span>
-              </div>
-            </div>
-          ))}
-        </div>
+        <AnimatedStats stats={stats} />
       </div>
 
       <div className="-mx-(--space-fluid-container) flex w-full -translate-y-4 justify-center lg:mx-0 lg:w-auto lg:-translate-y-14 lg:ms-[calc(var(--space-fluid-sm)*-13)] lg:-me-(--space-fluid-container) lg:justify-end lg:ltr:-translate-x-6 lg:rtl:translate-x-6">
