@@ -27,6 +27,7 @@ export function Hero() {
         </p>
         <Button
           icon={<img src="/icons/plus.svg" alt="" className="size-(--size-fluid-icon-sm)" />}
+          iconPosition="end"
           className="font-alexandria"
         >
           {t("hero.cta")}
@@ -49,7 +50,7 @@ export function Hero() {
         </div>
       </div>
 
-      <div className="-mx-(--space-fluid-container) flex w-full translate-y-0 justify-center lg:mx-0 lg:w-auto lg:-translate-y-14 lg:ms-[calc(var(--space-fluid-sm)*-20)] lg:-me-(--space-fluid-container) lg:justify-end">
+      <div className="-mx-(--space-fluid-container) flex w-full translate-y-0 justify-center lg:mx-0 lg:w-auto lg:-translate-y-10 lg:ms-[calc(var(--space-fluid-sm)*-13)] lg:-me-(--space-fluid-container) lg:justify-end">
         <HeroCollage />
       </div>
     </section>

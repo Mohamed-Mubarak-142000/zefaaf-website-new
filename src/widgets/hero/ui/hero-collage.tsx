@@ -58,13 +58,13 @@ export function HeroCollage() {
     >
       {/* Solid circle #1 — the main backdrop circle */}
       <div
-        className="absolute rounded-full bg-foreground"
+        className="absolute rounded-full bg-[#181818]"
         style={{ left: cqw(464.8), top: cqh(341.57), width: cqw(468.543), height: cqh(454.086) }}
       />
 
       {/* Solid circle #2 */}
       <div
-        className="absolute rounded-full bg-foreground"
+        className="absolute rounded-full bg-[#181818]"
         style={{ left: cqw(809.14), top: cqh(196.29), width: cqw(755.287), height: cqh(731.984) }}
       />
 
@@ -134,13 +134,13 @@ export function HeroCollage() {
 
       {/* Tiny solid dot */}
       <div
-        className="absolute rounded-full bg-foreground"
+        className="absolute rounded-full bg-[#181818]"
         style={{ left: cqw(236.86), top: cqh(530.55), width: cqw(75.035), height: cqh(78.173) }}
       />
 
       {/* Solid circle #3, 64% opacity */}
       <div
-        className="absolute rounded-full bg-foreground opacity-[0.64]"
+        className="absolute rounded-full bg-[#181818] opacity-[0.64]"
         style={{ left: cqw(816.72), top: cqh(196.29), width: cqw(706.066), height: cqh(735.116) }}
       />
 
@@ -202,7 +202,7 @@ export function HeroCollage() {
 
       {/* Solid circle #4 — largest, backs the main photo */}
       <div
-        className="absolute rounded-full bg-foreground"
+        className="absolute rounded-full bg-[#181818]"
         style={{ left: cqw(1099.87), top: cqh(-0.32), width: cqw(1106.307), height: cqh(1128.342) }}
       />
 
