@@ -200,67 +200,118 @@ export function HeroCollage() {
         />
       </div>
 
-      {/* Solid circle #4 — largest, backs the main photo */}
+      {/* Solid circle #4 — largest, backs the main photo and clips its accents */}
       <div
-        className="absolute rounded-full bg-[#181818]"
+        className="absolute overflow-hidden rounded-full bg-[#181818] [&>img]:opacity-10"
         style={{ left: cqw(1099.87), top: cqh(-0.32), width: cqw(1106.307), height: cqh(1128.342) }}
-      />
-
-      {/* Decorative Group accent, tripled down the exposed right two-thirds
-          of the big backdrop circle — the main photo's own box only reaches
-          x≈1575, so everything past that (up to the circle's ~2206 edge)
-          is plain black, with room for one copy near the top, one centered,
-          and one near the bottom. */}
-      <img
-        src="/images/Group.svg"
-        alt=""
-        aria-hidden="true"
-        className="absolute opacity-10"
-        style={{ left: cqw(1560), top: cqh(5), width: cqw(280), height: cqh(210) }}
-      />
-      <img
-        src="/images/Group.svg"
-        alt=""
-        aria-hidden="true"
-        className="absolute opacity-10"
-        style={{ left: cqw(1560), top: cqh(459), width: cqw(280), height: cqh(210) }}
-      />
-      <img
-        src="/images/Group.svg"
-        alt=""
-        aria-hidden="true"
-        className="absolute opacity-10"
-        style={{ left: cqw(1560), top: cqh(915), width: cqw(280), height: cqh(210) }}
-      />
-
-      {/* Decorative Vector accent, doubled inside the black circle cluster's
-          exposed sliver (the lens-shaped gap between circles that isn't
-          covered by any photo) — one near the top of that gap pointing up
-          toward the rim, one near the bottom pointing down toward the rim. */}
-      <img
-        src="/images/Vector.svg"
-        alt=""
-        aria-hidden="true"
-        className="absolute"
-        style={{ left: cqw(547), top: cqh(349), width: cqw(106), height: cqh(196) }}
-      />
-      <img
-        src="/images/Vector.svg"
-        alt=""
-        aria-hidden="true"
-        className="absolute"
-        style={{
-          left: cqw(547),
-          top: cqh(604),
-          width: cqw(106),
-          height: cqh(196),
-          transform: "rotate(180deg)",
-        }}
-      />
+      >
+        {/* Decorative Group accents stay clipped to the circle's boundary. */}
+        <img
+          src="/images/Group.svg"
+          alt=""
+          aria-hidden="true"
+          className="absolute z-0 opacity-30"
+          style={{ left: cqw(235.13), top: cqh(20), width: cqw(280), height: cqh(210) }}
+        />
+        <img
+          src="/images/Group.svg"
+          alt=""
+          aria-hidden="true"
+          className="absolute z-0 opacity-30"
+          style={{ left: cqw(515.13), top: cqh(100), width: cqw(280), height: cqh(210) }}
+        />
+        <img
+          src="/images/Group.svg"
+          alt=""
+          aria-hidden="true"
+          className="absolute z-0 opacity-30"
+          style={{ left: cqw(235.13), top: cqh(310), width: cqw(280), height: cqh(210) }}
+        />
+        <img
+          src="/images/Group.svg"
+          alt=""
+          aria-hidden="true"
+          className="absolute z-0 opacity-30"
+          style={{ left: cqw(515.13), top: cqh(310), width: cqw(280), height: cqh(210) }}
+        />
+        <img
+          src="/images/Group.svg"
+          alt=""
+          aria-hidden="true"
+          className="absolute z-0 opacity-30"
+          style={{ left: cqw(235.13), top: cqh(520), width: cqw(280), height: cqh(210) }}
+        />
+        <img
+          src="/images/Group.svg"
+          alt=""
+          aria-hidden="true"
+          className="absolute z-0 opacity-30"
+          style={{ left: cqw(515.13), top: cqh(520), width: cqw(280), height: cqh(210) }}
+        />
+        {[205, 415, 625].map((top) => (
+          <img
+            key={`edge-accent-${top}`}
+            src="/images/Group.svg"
+            alt=""
+            aria-hidden="true"
+            className="absolute z-0 opacity-30"
+            style={{ left: cqw(515.13), top: cqh(top), width: cqw(280), height: cqh(210) }}
+          />
+        ))}
+        {[205, 415, 625].map((top) => (
+          <img
+            key={`inner-edge-accent-${top}`}
+            src="/images/Group.svg"
+            alt=""
+            aria-hidden="true"
+            className="absolute z-0 opacity-30"
+            style={{ left: cqw(395.13), top: cqh(top), width: cqw(280), height: cqh(210) }}
+          />
+        ))}
+        <img
+          src="/images/Group.svg"
+          alt=""
+          aria-hidden="true"
+          className="absolute z-0 opacity-20"
+          style={{
+            left: cqw(270.13),
+            top: cqh(920),
+            width: cqw(280),
+            height: cqh(210),
+            transform: "rotate(180deg)",
+          }}
+        />
+        <img
+          src="/images/Group.svg"
+          alt=""
+          aria-hidden="true"
+          className="absolute z-10 opacity-30"
+          style={{
+            left: cqw(120.13),
+            top: cqh(90),
+            width: cqw(310),
+            height: cqh(233),
+            transform: "rotate(-36deg)",
+          }}
+        />
+        <img
+          src="/images/Group.svg"
+          alt=""
+          aria-hidden="true"
+          className="absolute z-10 opacity-30"
+          style={{
+            left: cqw(350.13),
+            top: cqh(230),
+            width: cqw(310),
+            height: cqh(233),
+            transform: "rotate(36deg)",
+          }}
+        />
+      </div>
 
       {/* Masked photo: the main, most prominent beach scene */}
       <div
-        className="absolute overflow-hidden"
+        className="absolute z-20 overflow-hidden"
         style={{
           left: cqw(868.96),
           top: cqh(206.5),
@@ -292,18 +343,30 @@ export function HeroCollage() {
           rather than raw proportional scaling (which would shrink to
           illegible sizes at the collage's smallest rendered width). */}
       <div
-        className="absolute flex items-center gap-(--space-fluid-2xs) rounded-full bg-secondary-pink px-(--space-fluid-sm) py-(--space-fluid-2xs)"
-        style={{ left: cqw(552.15), top: cqh(232), transform: flip }}
+        className="absolute z-30 flex items-center gap-1.5 rounded-full px-3 py-1.5"
+        style={{
+          left: cqw(552.15),
+          top: cqh(232),
+          transform: flip,
+          backgroundColor: "#FFBBFF",
+          color: "#101828",
+        }}
       >
-        <span className="font-alexandria text-(length:--text-fluid-nav) whitespace-nowrap text-foreground">
+        <span
+          className="font-alexandria text-xs whitespace-nowrap"
+          style={{ color: "#101828" }}
+        >
           {t("hero.ratingLabel")}
         </span>
         <span className="flex items-center gap-0.5">
           {Array.from({ length: 4 }).map((_, i) => (
-            <img key={i} src="/icons/star.svg" alt="" className="size-(--size-fluid-icon-xs)" />
+            <img key={i} src="/icons/star.svg" alt="" className="size-3" />
           ))}
         </span>
-        <span className="font-alexandria text-(length:--text-fluid-nav) whitespace-nowrap text-foreground">
+        <span
+          className="font-alexandria text-xs whitespace-nowrap"
+          style={{ color: "#101828" }}
+        >
           {t("hero.ratingValue")}
         </span>
       </div>
