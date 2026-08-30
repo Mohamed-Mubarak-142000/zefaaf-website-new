@@ -84,12 +84,17 @@ export function AnimatedStats({ stats }: AnimatedStatsProps) {
         <div key={stat.label} className="flex items-center gap-(--space-fluid-lg)">
           {index > 0 && <span className="h-8 w-px bg-border" aria-hidden="true" />}
           <div className="flex flex-col items-center lg:items-start" aria-label={`${stat.value} ${stat.label}`}>
-            <span
-              data-counter={stat.value}
-              aria-hidden="true"
-              className="font-alexandria text-(length:--text-fluid-xl) font-bold whitespace-nowrap text-brand tabular-nums"
-            >
-              0
+            <span className="relative inline-grid font-alexandria text-(length:--text-fluid-xl) font-bold whitespace-nowrap text-brand tabular-nums">
+              <span className="invisible" aria-hidden="true">
+                {stat.value}
+              </span>
+              <span
+                data-counter={stat.value}
+                aria-hidden="true"
+                className="absolute inset-0"
+              >
+                0
+              </span>
             </span>
             <span className="font-alexandria text-(length:--text-fluid-nav) whitespace-nowrap text-muted-foreground">
               {stat.label}
