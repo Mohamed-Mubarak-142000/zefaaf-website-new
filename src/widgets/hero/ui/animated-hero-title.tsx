@@ -9,13 +9,13 @@ type AnimatedHeroTitleProps = {
   className?: string;
 };
 
-const LETTER_DELAY = 0.14;
+const WORD_DELAY = 0.22;
 
 export function AnimatedHeroTitle({ children, className }: AnimatedHeroTitleProps) {
   const rootRef = useRef<HTMLHeadingElement>(null);
   const audioContextRef = useRef<AudioContext | null>(null);
   const reduceMotion = useReducedMotion();
-  const characters = Array.from(children);
+  const tokens = children.split(/(\s+)/);
 
   const playTick = useCallback(() => {
     const audioContext = audioContextRef.current;
@@ -45,16 +45,16 @@ export function AnimatedHeroTitle({ children, className }: AnimatedHeroTitleProp
     audioContextRef.current ??= new AudioContext();
     void audioContextRef.current.resume().catch(() => undefined);
 
-    const letters = rootRef.current.querySelectorAll<HTMLElement>("[data-hero-letter]");
+    const words = rootRef.current.querySelectorAll<HTMLElement>("[data-hero-word]");
     const context = gsap.context(() => {
       const timeline = gsap.timeline({ delay: 0.25 });
 
-      gsap.set(letters, { autoAlpha: 0 });
-      letters.forEach((letter, index) => {
-        const revealAt = index * LETTER_DELAY;
+      gsap.set(words, { autoAlpha: 0 });
+      words.forEach((word, index) => {
+        const revealAt = index * WORD_DELAY;
 
         timeline.call(playTick, [], revealAt).to(
-          letter,
+          word,
           { autoAlpha: 1, duration: 0.01, ease: "none" },
           revealAt,
         );
@@ -75,18 +75,21 @@ export function AnimatedHeroTitle({ children, className }: AnimatedHeroTitleProp
       className={className}
       aria-label={children.replaceAll("\n", " ")}
     >
-      {characters.map((character, index) => {
-        if (character === "\n") return <br key={`break-${index}`} />;
+      {tokens.map((token, index) => {
+        if (token === "\n") return <br key={`break-${index}`} />;
+
+        if (/^\s+$/.test(token)) {
+          return <span key={`space-${index}`}>{token}</span>;
+        }
 
         return (
           <motion.span
-            key={`${character}-${index}`}
-            data-hero-letter={character.trim() ? "" : undefined}
+            key={`${token}-${index}`}
+            data-hero-word=""
             aria-hidden="true"
             className="inline-block"
-            style={{ whiteSpace: "pre" }}
           >
-            {character}
+            {token}
           </motion.span>
         );
       })}
