@@ -4,6 +4,8 @@ import { motion, useReducedMotion } from "framer-motion";
 import gsap from "gsap";
 import { useCallback, useLayoutEffect, useRef } from "react";
 
+import { useSplashScreenComplete } from "@/shared/lib/use-splash-screen-complete";
+
 type AnimatedHeroTitleProps = {
   children: string;
   className?: string;
@@ -15,6 +17,7 @@ export function AnimatedHeroTitle({ children, className }: AnimatedHeroTitleProp
   const rootRef = useRef<HTMLHeadingElement>(null);
   const audioContextRef = useRef<AudioContext | null>(null);
   const reduceMotion = useReducedMotion();
+  const splashScreenComplete = useSplashScreenComplete();
   const tokens = children.split(/(\s+)/);
 
   const playTick = useCallback(() => {
@@ -38,7 +41,7 @@ export function AnimatedHeroTitle({ children, className }: AnimatedHeroTitleProp
   }, []);
 
   useLayoutEffect(() => {
-    if (!rootRef.current || reduceMotion) return;
+    if (!rootRef.current || reduceMotion || !splashScreenComplete) return;
 
     // Start audio immediately where the browser's autoplay policy allows it.
     // Browsers that block audible autoplay will keep the click/keyboard fallback below.
@@ -99,7 +102,7 @@ export function AnimatedHeroTitle({ children, className }: AnimatedHeroTitleProp
       void audioContextRef.current?.close();
       audioContextRef.current = null;
     };
-  }, [children, playTick, reduceMotion]);
+  }, [children, playTick, reduceMotion, splashScreenComplete]);
 
   return (
     <h1
