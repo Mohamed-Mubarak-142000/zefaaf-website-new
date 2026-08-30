@@ -50,7 +50,7 @@ export function Hero() {
         </div>
       </div>
 
-      <div className="-mx-(--space-fluid-container) flex w-full translate-y-0 justify-center lg:mx-0 lg:w-auto lg:-translate-y-10 lg:ms-[calc(var(--space-fluid-sm)*-13)] lg:-me-(--space-fluid-container) lg:justify-end">
+      <div className="-mx-(--space-fluid-container) flex w-full -translate-y-4 justify-center lg:mx-0 lg:w-auto lg:-translate-y-14 lg:ms-[calc(var(--space-fluid-sm)*-13)] lg:-me-(--space-fluid-container) lg:justify-end lg:ltr:-translate-x-6 lg:rtl:translate-x-6">
         <HeroCollage />
       </div>
     </section>
