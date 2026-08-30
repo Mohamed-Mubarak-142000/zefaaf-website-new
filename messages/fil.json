@@ -1,97 +1,126 @@
 {
   "site": {
     "name": "Zefaaf",
-    "tagline": "Building your ideas into reality"
+    "tagline": "Ginagawa naming totoo ang iyong mga ideya"
   },
   "seo": {
-    "title": "Zefaaf — Marriage & Matchmaking Platform",
-    "description": "Zefaaf is a trusted platform for serious marriage matchmaking — VIP personal search, real success stories, and a genuine path to marriage."
+    "title": "Zefaaf — Platform para sa Kasal at Pagtutugma",
+    "description": "Ang Zefaaf ay isang mapagkakatiwalaang platform para sa seryosong pagtutugma tungo sa kasal — personal na VIP na paghahanap, tunay na mga kuwento ng tagumpay, at isang tunay na landas patungo sa kasal."
   },
   "hero": {
-    "title": "Find your life partner the halal way",
-    "subtitle": "Zefaaf is a trusted platform designed to help Muslims find a life partner who shares their Islamic values, in a safe, Sharia-compliant way.",
-    "cta": "Discover more",
+    "title": "Hanapin ang iyong kabiyak\nsa buhay, sa paraang halal",
+    "subtitle": "Ang Zefaaf ay isang mapagkakatiwalaang platform na dinisenyo upang tulungan ang mga Muslim\nna makahanap ng kabiyak sa buhay na kapareho ang paniniwalang Islamiko, sa isang ligtas at naaayon-sa-Sharia na paraan.",
+    "cta": "Tuklasin pa",
     "ratingLabel": "Rating",
     "ratingValue": "4.8"
   },
   "stats": {
-    "happyClients": {
-      "value": "34,484k",
-      "label": "Happy clients"
-    },
-    "successStories": {
-      "value": "2768",
-      "label": "Success stories"
-    },
-    "registeredMembers": {
-      "value": "23416",
-      "label": "Registered Member"
-    }
+    "happyClients": { "value": "34,484k", "label": "Mga Nasiyahang Kliyente" },
+    "successStories": { "value": "2768", "label": "Mga Kuwento ng Tagumpay" },
+    "registeredMembers": { "value": "23416", "label": "Mga Rehistradong Miyembro" }
   },
   "nav": {
     "home": "Home",
-    "services": "Services",
-    "contact": "Contact",
-    "vipSearch": "VIP Personal Search",
-    "about": "About Us",
-    "articles": "Articles",
-    "upcomingEvents": "Upcoming Events",
-    "successStories": "Success Stories",
-    "marriageRequest": "Marriage Request"
+    "services": "Mga Serbisyo",
+    "contact": "Makipag-ugnayan",
+    "vipSearch": "VIP Personal na Paghahanap",
+    "about": "Tungkol sa Amin",
+    "articles": "Mga Artikulo",
+    "upcomingEvents": "Mga Paparating na Event",
+    "successStories": "Mga Kuwento ng Tagumpay",
+    "marriageRequest": "Kahilingan sa Kasal"
   },
   "footer": {
     "columns": {
       "about": {
-        "title": "About Zefaaf",
+        "title": "Tungkol sa Zefaaf",
         "links": {
-          "about": "About Zefaaf",
-          "contact": "Contact Us",
-          "testimonials": "Client Testimonials",
-          "successStories": "Success Stories",
-          "businessLicense": "Business License"
+          "about": "Tungkol sa Zefaaf",
+          "contact": "Makipag-ugnayan sa Amin",
+          "testimonials": "Mga Testimonya ng Kliyente",
+          "successStories": "Mga Kuwento ng Tagumpay",
+          "businessLicense": "Lisensya sa Negosyo"
         }
       },
       "account": {
-        "title": "My Account",
+        "title": "Aking Account",
         "links": {
-          "manage": "Manage Account",
-          "safetyTips": "Safety Tips",
-          "delete": "Delete Account",
-          "security": "Security & Protection",
-          "membership": "Membership Level"
+          "manage": "Pamahalaan ang Account",
+          "safetyTips": "Mga Tip sa Kaligtasan",
+          "delete": "Burahin ang Account",
+          "security": "Seguridad at Proteksyon",
+          "membership": "Antas ng Membership"
         }
       },
       "help": {
-        "title": "Help",
+        "title": "Tulong",
         "links": {
-          "helpCenter": "Help Center",
-          "faq": "FAQ",
-          "quickStart": "Quick Start Guide",
-          "tutorials": "Tutorials",
-          "partnersBlog": "Partners Blog"
+          "helpCenter": "Sentro ng Tulong",
+          "faq": "Mga Madalas Itanong (FAQ)",
+          "quickStart": "Gabay sa Mabilisang Simula",
+          "tutorials": "Mga Tutorial",
+          "partnersBlog": "Blog ng mga Kasosyo"
         }
       },
       "legal": {
         "title": "Legal",
         "links": {
-          "privacy": "Privacy Policy",
-          "terms": "Terms & Conditions",
-          "refund": "Payment & Refund Policy",
-          "cookies": "Cookie Policy",
-          "reportAbuse": "Report Abuse"
+          "privacy": "Patakaran sa Privacy",
+          "terms": "Mga Tuntunin at Kundisyon",
+          "refund": "Patakaran sa Bayad at Refund",
+          "cookies": "Patakaran sa Cookie",
+          "reportAbuse": "Mag-ulat ng Pang-aabuso"
         }
       }
     },
     "newsletter": {
       "title": "Newsletter",
-      "description": "Subscribe to receive the latest news by email",
-      "placeholder": "Enter your email address",
-      "subscribe": "Subscribe",
-      "privacyNote": "Your data is in safe hands. Check our privacy policy for more information."
+      "description": "Mag-subscribe upang matanggap ang pinakabagong balita sa pamamagitan ng email",
+      "placeholder": "Ilagay ang iyong email address",
+      "subscribe": "Mag-subscribe",
+      "privacyNote": "Ligtas ang iyong data sa aming mga kamay. Tingnan ang aming patakaran sa privacy para sa karagdagang impormasyon."
     },
     "bottom": {
-      "developedBy": "Developed by {brand}",
-      "copyright": "All rights reserved to Zefaaf platform © {year}"
+      "developedBy": "Binuo ng {brand}",
+      "copyright": "Nakalaan ang lahat ng karapatan sa Zefaaf platform © {year}"
     }
+  },
+  "services": {
+    "items": [
+      { "title": "Forum sa Islamikong Kasal", "description": "Mga event ng forum sa Islamikong kasal na nagtitipon sa mga Muslim na naghahanap ng kasal at sa kanilang mga pamilya" },
+      { "title": "Aplikasyon para sa Kasal", "description": "Hanapin ang iyong perpektong kabiyak sa buhay mula sa iba't ibang bansa." },
+      { "title": "VIP Personal na Paghahanap", "description": "Isang dedikadong serbisyo kung saan naghahanap ang mga consultant ng Zefaaf ng angkop na kabiyak sa buhay" },
+      { "title": "Pagsama ng Aming Team sa Bosnia", "description": "Isang gabayang programa kung saan sinasamahan ng team ng Zefaaf ang mga kliyente upang makilala ang mga pamilya para sa seryosong kasal" },
+      { "title": "Online na Pagpupulong", "description": "Magsimula sa isang session kasama ang isang family consultant upang maunawaan ang iyong personalidad at pangangailangan" }
+    ]
+  },
+  "globalPresence": {
+    "mapAlt": "Mapa na nagpapakita ng saklaw ng Zefaaf sa buong mundo",
+    "badge": "3 milyong user sa Zefaaf",
+    "title": "Nagpapatakbo kami sa <brand>175</brand> bansa",
+    "description": "Ikinokonekta ng Zefaaf ang mga Muslim sa buong mundo sa mapagkakatiwalaang serbisyo sa pagtutugma na kapareho ang paniniwalang Islamiko, sa isang ligtas at naaayon-sa-Sharia na paraan.",
+    "countries": {
+      "france": "Pransya", "germany": "Alemanya", "netherlands": "Holanda", "turkey": "Turkey", "russia": "Rusya", "china": "Tsina", "indonesia": "Indonesia"
+    }
+  },
+  "upcomingEvents": {
+    "description": "Tuklasin ang aming mga paparating na event at sumali sa amin para sa makabuluhang karanasan, nakakapukaw-isip na usapan, at mga alaalang hindi malilimutan. Sundan kami para sa mga petsa, detalye, at pagpaparehistro.",
+    "bookCta": "I-book ang iyong tiket",
+    "events": [
+      { "date": "Enero 10", "time": "12 ng tanghali", "title": "Forum sa Islamikong Kasal sa Netherlands", "location": "Churchillplein 10, 2517 JW", "price": "150 Euro" },
+      { "date": "Abril 25", "time": "12 ng tanghali", "title": "Forum sa Islamikong Kasal sa Bosnia", "location": "Terezija, 71000", "price": "150 Euro" }
+    ],
+    "ticker": ["Buhayin ang pinakamainam", "malusog na paglalakbay", "kabiyak sa buhay", "malulusog na pagpili", "kabiyak sa buhay"]
+  },
+  "whyChoose": {
+    "title": "Bakit Piliin ang Zefaaf",
+    "description": "Sa Zefaaf, naniniwala kami na ang kasal ay higit pa sa pagkakatugma — ito ay tungkol sa pagbuo ng matatag na buhay na nakabatay sa mga paniniwalang Islamiko.",
+    "features": [
+      { "title": "Secure at naaayon-sa-Sharia na video call", "description": "Isang secure na video feature na nasa ilalim ng pangangasiwang panrelihiyon, na nagpapahintulot sa iyong makilala ang iyong potensyal na kabiyak sa buhay habang sinusunod ang mga alituntuning Islamiko." },
+      { "title": "Direktang pagpapayo Islamiko at pampamilya", "description": "Kumuha ng libreng konsultasyon sa oras ng pagpaparehistro mula sa aming mga eksperto sa relihiyon at family counselor." },
+      { "title": "Ang iyong boses, ang iyong personalidad – hayaan ang iyong boses na magsalita para sa iyo!", "description": "Isang voice message sa iyong profile: ipakilala ang iyong sarili, ibahagi ang iyong mga interes at paniniwala, at pag-usapan ang iyong pananaw sa buhay may-asawa." },
+      { "title": "Pagpupulong ng pamilya – simulan ang inyong relasyon sa paraang halal", "description": "Isang pribadong video room na nagtitipon sa dalawang pamilya sa unang pagkakataon sa isang tama at naaayon-sa-Sharia na paraan." },
+      { "title": "Pre-approval system – huwag mag-aksaya ng oras sa hindi produktibong usapan!", "description": "Tingnan ang porsyento ng pagkakatugma mo sa kahit anong profile bago simulan ang isang usapan." }
+    ]
   }
 }

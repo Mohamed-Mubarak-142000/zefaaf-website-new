@@ -1,97 +1,183 @@
 {
   "site": {
     "name": "Zefaaf",
-    "tagline": "Building your ideas into reality"
+    "tagline": "お客様のアイデアを現実にする"
   },
   "seo": {
-    "title": "Zefaaf — Marriage & Matchmaking Platform",
-    "description": "Zefaaf is a trusted platform for serious marriage matchmaking — VIP personal search, real success stories, and a genuine path to marriage."
+    "title": "Zefaaf — 結婚・マッチメイキングプラットフォーム",
+    "description": "Zefaafは、真剣な結婚を目指す方のための信頼できるプラットフォームです。VIP個人サーチ、実際の成功事例、そして結婚への確かな道のりをご提供します。"
   },
   "hero": {
-    "title": "Find your life partner the halal way",
-    "subtitle": "Zefaaf is a trusted platform designed to help Muslims find a life partner who shares their Islamic values, in a safe, Sharia-compliant way.",
-    "cta": "Discover more",
-    "ratingLabel": "Rating",
+    "title": "ハラールな方法で\n生涯のパートナーを見つけましょう",
+    "subtitle": "Zefaafは、イスラームの価値観を共有する人生のパートナーを\n安全でシャリアに準拠した方法で見つけられるよう、ムスリムの方々をサポートする信頼できるプラットフォームです。",
+    "cta": "詳しく見る",
+    "ratingLabel": "評価",
     "ratingValue": "4.8"
   },
   "stats": {
     "happyClients": {
       "value": "34,484k",
-      "label": "Happy clients"
+      "label": "満足したお客様"
     },
     "successStories": {
       "value": "2768",
-      "label": "Success stories"
+      "label": "成功事例"
     },
     "registeredMembers": {
       "value": "23416",
-      "label": "Registered Member"
+      "label": "登録会員数"
     }
   },
   "nav": {
-    "home": "Home",
-    "services": "Services",
-    "contact": "Contact",
-    "vipSearch": "VIP Personal Search",
-    "about": "About Us",
-    "articles": "Articles",
-    "upcomingEvents": "Upcoming Events",
-    "successStories": "Success Stories",
-    "marriageRequest": "Marriage Request"
+    "home": "ホーム",
+    "services": "サービス",
+    "contact": "お問い合わせ",
+    "vipSearch": "VIP個人サーチ",
+    "about": "私たちについて",
+    "articles": "記事",
+    "upcomingEvents": "今後のイベント",
+    "successStories": "成功事例",
+    "marriageRequest": "結婚のご希望"
   },
   "footer": {
     "columns": {
       "about": {
-        "title": "About Zefaaf",
+        "title": "Zefaafについて",
         "links": {
-          "about": "About Zefaaf",
-          "contact": "Contact Us",
-          "testimonials": "Client Testimonials",
-          "successStories": "Success Stories",
-          "businessLicense": "Business License"
+          "about": "Zefaafについて",
+          "contact": "お問い合わせ",
+          "testimonials": "お客様の声",
+          "successStories": "成功事例",
+          "businessLicense": "事業許可証"
         }
       },
       "account": {
-        "title": "My Account",
+        "title": "マイアカウント",
         "links": {
-          "manage": "Manage Account",
-          "safetyTips": "Safety Tips",
-          "delete": "Delete Account",
-          "security": "Security & Protection",
-          "membership": "Membership Level"
+          "manage": "アカウント管理",
+          "safetyTips": "安全のためのヒント",
+          "delete": "アカウント削除",
+          "security": "セキュリティと保護",
+          "membership": "会員レベル"
         }
       },
       "help": {
-        "title": "Help",
+        "title": "ヘルプ",
         "links": {
-          "helpCenter": "Help Center",
-          "faq": "FAQ",
-          "quickStart": "Quick Start Guide",
-          "tutorials": "Tutorials",
-          "partnersBlog": "Partners Blog"
+          "helpCenter": "ヘルプセンター",
+          "faq": "よくある質問",
+          "quickStart": "クイックスタートガイド",
+          "tutorials": "チュートリアル",
+          "partnersBlog": "パートナーブログ"
         }
       },
       "legal": {
-        "title": "Legal",
+        "title": "法的情報",
         "links": {
-          "privacy": "Privacy Policy",
-          "terms": "Terms & Conditions",
-          "refund": "Payment & Refund Policy",
-          "cookies": "Cookie Policy",
-          "reportAbuse": "Report Abuse"
+          "privacy": "プライバシーポリシー",
+          "terms": "利用規約",
+          "refund": "支払い・返金ポリシー",
+          "cookies": "クッキーポリシー",
+          "reportAbuse": "不正行為の報告"
         }
       }
     },
     "newsletter": {
-      "title": "Newsletter",
-      "description": "Subscribe to receive the latest news by email",
-      "placeholder": "Enter your email address",
-      "subscribe": "Subscribe",
-      "privacyNote": "Your data is in safe hands. Check our privacy policy for more information."
+      "title": "ニュースレター",
+      "description": "最新情報をメールで受け取るには登録してください",
+      "placeholder": "メールアドレスを入力してください",
+      "subscribe": "登録する",
+      "privacyNote": "お客様の情報は安全に管理されています。詳しくはプライバシーポリシーをご確認ください。"
     },
     "bottom": {
-      "developedBy": "Developed by {brand}",
-      "copyright": "All rights reserved to Zefaaf platform © {year}"
+      "developedBy": "{brand} によって開発されました",
+      "copyright": "Zefaafプラットフォームの著作権は保護されています © {year}"
     }
+  },
+  "services": {
+    "items": [
+      {
+        "title": "イスラーム結婚フォーラム",
+        "description": "結婚を希望するムスリムの方々とそのご家族が集うイスラーム結婚フォーラムのイベントです"
+      },
+      {
+        "title": "結婚アプリケーション",
+        "description": "さまざまな国から理想の人生のパートナーを見つけましょう。"
+      },
+      {
+        "title": "VIP個人サーチ",
+        "description": "Zefaafのコンサルタントがふさわしい人生のパートナーを探す専任サービスです"
+      },
+      {
+        "title": "ボスニアでの弊社チームによる同行サポート",
+        "description": "真剣な結婚のため、Zefaafチームがお客様のご家族との対面に同行するガイド付きプログラムです"
+      },
+      {
+        "title": "オンライン面談",
+        "description": "ご自身の性格やニーズを理解するため、まずは家族カウンセラーとのセッションから始めましょう"
+      }
+    ]
+  },
+  "globalPresence": {
+    "mapAlt": "世界におけるZefaafの展開を示す地図",
+    "badge": "Zefaafの利用者数300万人",
+    "title": "私たちは<brand>175</brand>か国で事業を展開しています",
+    "description": "Zefaafは、イスラームの価値観を共有する世界中のムスリムの方々を、安全でシャリアに準拠した信頼できるマッチメイキングサービスでつないでいます。",
+    "countries": {
+      "france": "フランス",
+      "germany": "ドイツ",
+      "netherlands": "オランダ",
+      "turkey": "トルコ",
+      "russia": "ロシア",
+      "china": "中国",
+      "indonesia": "インドネシア"
+    }
+  },
+  "upcomingEvents": {
+    "description": "今後のイベントをぜひご覧いただき、意義深い体験、心に響く対話、そして忘れられないひとときをご一緒しましょう。日程や詳細、お申し込み方法は当プラットフォームをフォローしてご確認ください。",
+    "bookCta": "チケットを予約する",
+    "events": [
+      {
+        "date": "1月10日",
+        "time": "午後12時",
+        "title": "オランダでのイスラーム結婚フォーラム",
+        "location": "Churchillplein 10, 2517 JW",
+        "price": "150ユーロ"
+      },
+      {
+        "date": "4月25日",
+        "time": "午後12時",
+        "title": "ボスニアでのイスラーム結婚フォーラム",
+        "location": "Terezija, 71000",
+        "price": "150ユーロ"
+      }
+    ],
+    "ticker": ["最高の人生を", "健やかな歩み", "人生のパートナー", "健康的な選択", "人生のパートナー"]
+  },
+  "whyChoose": {
+    "title": "Zefaafが選ばれる理由",
+    "description": "Zefaafでは、結婚とは単なる相性以上のものであり、イスラームの価値観に基づいた安定した生活を築くことだと考えています。",
+    "features": [
+      {
+        "title": "安全でシャリアに準拠したビデオ通話",
+        "description": "宗教的な監督のもとで行われる安全なビデオ機能により、イスラームの指針を守りながら将来のパートナー候補と出会うことができます。"
+      },
+      {
+        "title": "直接的なイスラームおよび家族カウンセリング",
+        "description": "ご登録時に、宗教の専門家や家族カウンセラーによる無料相談をご利用いただけます。"
+      },
+      {
+        "title": "あなたの声、あなたの個性 — あなたの声に語らせましょう",
+        "description": "プロフィールに音声メッセージを追加し、自己紹介、ご自身の興味や価値観、そして結婚生活へのビジョンについてお話しください。"
+      },
+      {
+        "title": "家族との対面 — ハラールな方法で関係をスタート",
+        "description": "両家が初めて顔を合わせる、適切でシャリアに準拠した専用のビデオルームです。"
+      },
+      {
+        "title": "事前承認システム — 実りのない会話に時間を費やさないために",
+        "description": "会話を始める前に、どのプロフィールとの相性度も確認できます。"
+      }
+    ]
   }
 }

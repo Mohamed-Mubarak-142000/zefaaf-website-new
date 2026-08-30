@@ -1,97 +1,126 @@
 {
   "site": {
     "name": "Zefaaf",
-    "tagline": "Building your ideas into reality"
+    "tagline": "Ihre Ideen werden Wirklichkeit"
   },
   "seo": {
-    "title": "Zefaaf — Marriage & Matchmaking Platform",
-    "description": "Zefaaf is a trusted platform for serious marriage matchmaking — VIP personal search, real success stories, and a genuine path to marriage."
+    "title": "Zefaaf — Plattform für Ehe & Partnervermittlung",
+    "description": "Zefaaf ist eine vertrauenswürdige Plattform für seriöse Eheanbahnung — persönliche VIP-Suche, echte Erfolgsgeschichten und ein authentischer Weg zur Ehe."
   },
   "hero": {
-    "title": "Find your life partner the halal way",
-    "subtitle": "Zefaaf is a trusted platform designed to help Muslims find a life partner who shares their Islamic values, in a safe, Sharia-compliant way.",
-    "cta": "Discover more",
-    "ratingLabel": "Rating",
+    "title": "Finden Sie Ihren Lebenspartner\nauf halal-konforme Weise",
+    "subtitle": "Zefaaf ist eine vertrauenswürdige Plattform, die Muslimen hilft,\neinen Lebenspartner zu finden, der ihre islamischen Werte teilt – auf sichere, scharia-konforme Weise.",
+    "cta": "Mehr entdecken",
+    "ratingLabel": "Bewertung",
     "ratingValue": "4.8"
   },
   "stats": {
-    "happyClients": {
-      "value": "34,484k",
-      "label": "Happy clients"
-    },
-    "successStories": {
-      "value": "2768",
-      "label": "Success stories"
-    },
-    "registeredMembers": {
-      "value": "23416",
-      "label": "Registered Member"
-    }
+    "happyClients": { "value": "34,484k", "label": "Zufriedene Kunden" },
+    "successStories": { "value": "2768", "label": "Erfolgsgeschichten" },
+    "registeredMembers": { "value": "23416", "label": "Registrierte Mitglieder" }
   },
   "nav": {
-    "home": "Home",
-    "services": "Services",
-    "contact": "Contact",
-    "vipSearch": "VIP Personal Search",
-    "about": "About Us",
-    "articles": "Articles",
-    "upcomingEvents": "Upcoming Events",
-    "successStories": "Success Stories",
-    "marriageRequest": "Marriage Request"
+    "home": "Startseite",
+    "services": "Dienstleistungen",
+    "contact": "Kontakt",
+    "vipSearch": "VIP Persönliche Suche",
+    "about": "Über uns",
+    "articles": "Artikel",
+    "upcomingEvents": "Kommende Veranstaltungen",
+    "successStories": "Erfolgsgeschichten",
+    "marriageRequest": "Heiratsantrag"
   },
   "footer": {
     "columns": {
       "about": {
-        "title": "About Zefaaf",
+        "title": "Über Zefaaf",
         "links": {
-          "about": "About Zefaaf",
-          "contact": "Contact Us",
-          "testimonials": "Client Testimonials",
-          "successStories": "Success Stories",
-          "businessLicense": "Business License"
+          "about": "Über Zefaaf",
+          "contact": "Kontaktieren Sie uns",
+          "testimonials": "Kundenstimmen",
+          "successStories": "Erfolgsgeschichten",
+          "businessLicense": "Gewerbelizenz"
         }
       },
       "account": {
-        "title": "My Account",
+        "title": "Mein Konto",
         "links": {
-          "manage": "Manage Account",
-          "safetyTips": "Safety Tips",
-          "delete": "Delete Account",
-          "security": "Security & Protection",
-          "membership": "Membership Level"
+          "manage": "Konto verwalten",
+          "safetyTips": "Sicherheitstipps",
+          "delete": "Konto löschen",
+          "security": "Sicherheit & Schutz",
+          "membership": "Mitgliedschaftsstufe"
         }
       },
       "help": {
-        "title": "Help",
+        "title": "Hilfe",
         "links": {
-          "helpCenter": "Help Center",
-          "faq": "FAQ",
-          "quickStart": "Quick Start Guide",
-          "tutorials": "Tutorials",
-          "partnersBlog": "Partners Blog"
+          "helpCenter": "Hilfe-Center",
+          "faq": "Häufig gestellte Fragen",
+          "quickStart": "Schnellstart-Anleitung",
+          "tutorials": "Anleitungen",
+          "partnersBlog": "Partner-Blog"
         }
       },
       "legal": {
-        "title": "Legal",
+        "title": "Rechtliches",
         "links": {
-          "privacy": "Privacy Policy",
-          "terms": "Terms & Conditions",
-          "refund": "Payment & Refund Policy",
-          "cookies": "Cookie Policy",
-          "reportAbuse": "Report Abuse"
+          "privacy": "Datenschutzrichtlinie",
+          "terms": "Allgemeine Geschäftsbedingungen",
+          "refund": "Zahlungs- und Rückerstattungsrichtlinie",
+          "cookies": "Cookie-Richtlinie",
+          "reportAbuse": "Missbrauch melden"
         }
       }
     },
     "newsletter": {
       "title": "Newsletter",
-      "description": "Subscribe to receive the latest news by email",
-      "placeholder": "Enter your email address",
-      "subscribe": "Subscribe",
-      "privacyNote": "Your data is in safe hands. Check our privacy policy for more information."
+      "description": "Abonnieren Sie, um die neuesten Neuigkeiten per E-Mail zu erhalten",
+      "placeholder": "Geben Sie Ihre E-Mail-Adresse ein",
+      "subscribe": "Abonnieren",
+      "privacyNote": "Ihre Daten sind bei uns sicher. Weitere Informationen finden Sie in unserer Datenschutzrichtlinie."
     },
     "bottom": {
-      "developedBy": "Developed by {brand}",
-      "copyright": "All rights reserved to Zefaaf platform © {year}"
+      "developedBy": "Entwickelt von {brand}",
+      "copyright": "Alle Rechte vorbehalten für die Zefaaf-Plattform © {year}"
     }
+  },
+  "services": {
+    "items": [
+      { "title": "Islamisches Heiratsforum", "description": "Islamische Heiratsforum-Veranstaltungen, die muslimische Heiratswillige und ihre Familien zusammenbringen" },
+      { "title": "Heiratsantrag", "description": "Finden Sie Ihren idealen Lebenspartner aus verschiedenen Ländern." },
+      { "title": "VIP Persönliche Suche", "description": "Ein spezieller Service, bei dem Zefaaf-Berater passende Lebenspartner suchen" },
+      { "title": "Begleitung durch unser Team in Bosnien", "description": "Ein begleitetes Programm, bei dem das Zefaaf-Team Kunden zu Familientreffen für eine ernsthafte Heirat begleitet" },
+      { "title": "Online-Treffen", "description": "Beginnen Sie mit einer Sitzung bei einem Familienberater, um Ihre Persönlichkeit und Bedürfnisse zu verstehen" }
+    ]
+  },
+  "globalPresence": {
+    "mapAlt": "Karte, die Zefaafs Reichweite weltweit zeigt",
+    "badge": "3 Millionen Nutzer bei Zefaaf",
+    "title": "Wir sind in <brand>175</brand> Ländern vertreten",
+    "description": "Zefaaf verbindet Muslime auf der ganzen Welt mit vertrauenswürdigen Partnervermittlungsdiensten, die ihre islamischen Werte teilen – auf sichere, scharia-konforme Weise.",
+    "countries": {
+      "france": "Frankreich", "germany": "Deutschland", "netherlands": "Niederlande", "turkey": "Türkei", "russia": "Russland", "china": "China", "indonesia": "Indonesien"
+    }
+  },
+  "upcomingEvents": {
+    "description": "Entdecken Sie unsere kommenden Veranstaltungen und erleben Sie mit uns bedeutungsvolle Erfahrungen, inspirierende Gespräche und unvergessliche Momente. Folgen Sie uns für Termine, Details und Anmeldung.",
+    "bookCta": "Ticket buchen",
+    "events": [
+      { "date": "10. Januar", "time": "12 Uhr mittags", "title": "Islamisches Heiratsforum in den Niederlanden", "location": "Churchillplein 10, 2517 JW", "price": "150 Euro" },
+      { "date": "25. April", "time": "12 Uhr mittags", "title": "Islamisches Heiratsforum in Bosnien", "location": "Terezija, 71000", "price": "150 Euro" }
+    ],
+    "ticker": ["Lebe dein Bestes", "gesunde Reise", "Lebenspartner", "gesunde Entscheidungen", "Lebenspartner"]
+  },
+  "whyChoose": {
+    "title": "Warum Zefaaf wählen",
+    "description": "Bei Zefaaf glauben wir, dass Ehe mehr ist als nur Kompatibilität – es geht darum, ein stabiles Leben auf der Grundlage islamischer Werte aufzubauen.",
+    "features": [
+      { "title": "Sichere, scharia-konforme Videoanrufe", "description": "Eine sichere Videofunktion unter religiöser Aufsicht, die es Ihnen ermöglicht, Ihren potenziellen Lebenspartner zu treffen und dabei die islamischen Richtlinien einzuhalten." },
+      { "title": "Direkte islamische und familiäre Beratung", "description": "Erhalten Sie nach der Registrierung eine kostenlose Beratung von unseren religiösen Experten und Familienberatern." },
+      { "title": "Ihre Stimme, Ihre Persönlichkeit – lassen Sie Ihre Stimme für sich sprechen!", "description": "Eine Sprachnachricht auf Ihrem Profil: Stellen Sie sich vor, teilen Sie Ihre Interessen und Werte und sprechen Sie über Ihre Vorstellung vom Eheleben." },
+      { "title": "Familientreffen – beginnen Sie Ihre Beziehung auf halal-konforme Weise", "description": "Ein privater Videoraum, der beide Familien zum ersten Mal auf angemessene, scharia-konforme Weise zusammenbringt." },
+      { "title": "Vorab-Kompatibilitätssystem – verschwenden Sie keine Zeit mit unproduktiven Gesprächen!", "description": "Sehen Sie den Kompatibilitätsprozentsatz mit jedem Profil, bevor Sie ein Gespräch beginnen." }
+    ]
   }
 }

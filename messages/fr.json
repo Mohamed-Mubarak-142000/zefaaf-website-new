@@ -1,97 +1,126 @@
 {
   "site": {
     "name": "Zefaaf",
-    "tagline": "Building your ideas into reality"
+    "tagline": "Concrétiser vos idées"
   },
   "seo": {
-    "title": "Zefaaf — Marriage & Matchmaking Platform",
-    "description": "Zefaaf is a trusted platform for serious marriage matchmaking — VIP personal search, real success stories, and a genuine path to marriage."
+    "title": "Zefaaf — Plateforme de Mariage et de Rencontre Matrimoniale",
+    "description": "Zefaaf est une plateforme fiable dédiée à la recherche matrimoniale sérieuse — recherche personnelle VIP, véritables histoires de réussite et un chemin authentique vers le mariage."
   },
   "hero": {
-    "title": "Find your life partner the halal way",
-    "subtitle": "Zefaaf is a trusted platform designed to help Muslims find a life partner who shares their Islamic values, in a safe, Sharia-compliant way.",
-    "cta": "Discover more",
-    "ratingLabel": "Rating",
+    "title": "Trouvez votre partenaire de vie\nde la manière halal",
+    "subtitle": "Zefaaf est une plateforme fiable conçue pour aider les musulmans\nà trouver un partenaire de vie qui partage leurs valeurs islamiques, d'une manière sûre et conforme à la charia.",
+    "cta": "En savoir plus",
+    "ratingLabel": "Note",
     "ratingValue": "4.8"
   },
   "stats": {
-    "happyClients": {
-      "value": "34,484k",
-      "label": "Happy clients"
-    },
-    "successStories": {
-      "value": "2768",
-      "label": "Success stories"
-    },
-    "registeredMembers": {
-      "value": "23416",
-      "label": "Registered Member"
-    }
+    "happyClients": { "value": "34,484k", "label": "Clients satisfaits" },
+    "successStories": { "value": "2768", "label": "Histoires de réussite" },
+    "registeredMembers": { "value": "23416", "label": "Membres inscrits" }
   },
   "nav": {
-    "home": "Home",
+    "home": "Accueil",
     "services": "Services",
     "contact": "Contact",
-    "vipSearch": "VIP Personal Search",
-    "about": "About Us",
+    "vipSearch": "Recherche Personnelle VIP",
+    "about": "À Propos",
     "articles": "Articles",
-    "upcomingEvents": "Upcoming Events",
-    "successStories": "Success Stories",
-    "marriageRequest": "Marriage Request"
+    "upcomingEvents": "Événements à Venir",
+    "successStories": "Histoires de Réussite",
+    "marriageRequest": "Demande en Mariage"
   },
   "footer": {
     "columns": {
       "about": {
-        "title": "About Zefaaf",
+        "title": "À Propos de Zefaaf",
         "links": {
-          "about": "About Zefaaf",
-          "contact": "Contact Us",
-          "testimonials": "Client Testimonials",
-          "successStories": "Success Stories",
-          "businessLicense": "Business License"
+          "about": "À Propos de Zefaaf",
+          "contact": "Contactez-nous",
+          "testimonials": "Témoignages Clients",
+          "successStories": "Histoires de Réussite",
+          "businessLicense": "Licence Commerciale"
         }
       },
       "account": {
-        "title": "My Account",
+        "title": "Mon Compte",
         "links": {
-          "manage": "Manage Account",
-          "safetyTips": "Safety Tips",
-          "delete": "Delete Account",
-          "security": "Security & Protection",
-          "membership": "Membership Level"
+          "manage": "Gérer le Compte",
+          "safetyTips": "Conseils de Sécurité",
+          "delete": "Supprimer le Compte",
+          "security": "Sécurité et Protection",
+          "membership": "Niveau d'Adhésion"
         }
       },
       "help": {
-        "title": "Help",
+        "title": "Aide",
         "links": {
-          "helpCenter": "Help Center",
+          "helpCenter": "Centre d'Aide",
           "faq": "FAQ",
-          "quickStart": "Quick Start Guide",
-          "tutorials": "Tutorials",
-          "partnersBlog": "Partners Blog"
+          "quickStart": "Guide de Démarrage Rapide",
+          "tutorials": "Tutoriels",
+          "partnersBlog": "Blog des Partenaires"
         }
       },
       "legal": {
-        "title": "Legal",
+        "title": "Mentions Légales",
         "links": {
-          "privacy": "Privacy Policy",
-          "terms": "Terms & Conditions",
-          "refund": "Payment & Refund Policy",
-          "cookies": "Cookie Policy",
-          "reportAbuse": "Report Abuse"
+          "privacy": "Politique de Confidentialité",
+          "terms": "Conditions Générales",
+          "refund": "Politique de Paiement et de Remboursement",
+          "cookies": "Politique de Cookies",
+          "reportAbuse": "Signaler un Abus"
         }
       }
     },
     "newsletter": {
       "title": "Newsletter",
-      "description": "Subscribe to receive the latest news by email",
-      "placeholder": "Enter your email address",
-      "subscribe": "Subscribe",
-      "privacyNote": "Your data is in safe hands. Check our privacy policy for more information."
+      "description": "Abonnez-vous pour recevoir les dernières actualités par e-mail",
+      "placeholder": "Entrez votre adresse e-mail",
+      "subscribe": "S'abonner",
+      "privacyNote": "Vos données sont entre de bonnes mains. Consultez notre politique de confidentialité pour en savoir plus."
     },
     "bottom": {
-      "developedBy": "Developed by {brand}",
-      "copyright": "All rights reserved to Zefaaf platform © {year}"
+      "developedBy": "Développé par {brand}",
+      "copyright": "Tous droits réservés à la plateforme Zefaaf © {year}"
     }
+  },
+  "services": {
+    "items": [
+      { "title": "Forum du Mariage Islamique", "description": "Des événements de forum du mariage islamique qui rassemblent les musulmans en quête de mariage et leurs familles" },
+      { "title": "Demande en Mariage", "description": "Trouvez votre partenaire de vie idéal parmi différents pays." },
+      { "title": "Recherche Personnelle VIP", "description": "Un service dédié où les consultants de Zefaaf recherchent des partenaires de vie appropriés" },
+      { "title": "Accompagnement de Notre Équipe en Bosnie", "description": "Un programme accompagné dans lequel l'équipe Zefaaf accompagne les clients pour rencontrer les familles en vue d'un mariage sérieux" },
+      { "title": "Rencontre en Ligne", "description": "Commencez par une session avec un conseiller familial pour comprendre votre personnalité et vos besoins" }
+    ]
+  },
+  "globalPresence": {
+    "mapAlt": "Carte montrant la présence de Zefaaf à travers le monde",
+    "badge": "3 millions d'utilisateurs sur Zefaaf",
+    "title": "Nous opérons dans <brand>175</brand> pays",
+    "description": "Zefaaf connecte les musulmans du monde entier à des services de rencontre matrimoniale fiables qui partagent leurs valeurs islamiques, d'une manière sûre et conforme à la charia.",
+    "countries": {
+      "france": "France", "germany": "Allemagne", "netherlands": "Pays-Bas", "turkey": "Turquie", "russia": "Russie", "china": "Chine", "indonesia": "Indonésie"
+    }
+  },
+  "upcomingEvents": {
+    "description": "Découvrez nos prochains événements et rejoignez-nous pour vivre des expériences enrichissantes, des échanges inspirants et des moments mémorables. Suivez-nous pour connaître les dates, les détails et les modalités d'inscription.",
+    "bookCta": "Réservez votre billet",
+    "events": [
+      { "date": "10 janvier", "time": "12h", "title": "Forum du Mariage Islamique aux Pays-Bas", "location": "Churchillplein 10, 2517 JW", "price": "150 euros" },
+      { "date": "25 avril", "time": "12h", "title": "Forum du Mariage Islamique en Bosnie", "location": "Terezija, 71000", "price": "150 euros" }
+    ],
+    "ticker": ["Vivez le meilleur", "un parcours sain", "partenaire de vie", "des choix sains", "partenaire de vie"]
+  },
+  "whyChoose": {
+    "title": "Pourquoi Choisir Zefaaf",
+    "description": "Chez Zefaaf, nous croyons que le mariage est bien plus qu'une simple compatibilité — il s'agit de bâtir une vie stable fondée sur des valeurs islamiques.",
+    "features": [
+      { "title": "Appels vidéo sécurisés et conformes à la charia", "description": "Une fonctionnalité de vidéo sécurisée sous supervision religieuse, vous permettant de rencontrer votre futur partenaire de vie tout en respectant les principes islamiques." },
+      { "title": "Conseil islamique et familial direct", "description": "Bénéficiez d'une consultation gratuite dès votre inscription auprès de nos experts religieux et conseillers familiaux." },
+      { "title": "Votre voix, votre personnalité – laissez votre voix parler pour vous !", "description": "Un message vocal sur votre profil : présentez-vous, partagez vos centres d'intérêt et vos valeurs, et parlez de votre vision de la vie conjugale." },
+      { "title": "Rencontre familiale – commencez votre relation de la manière halal", "description": "Un salon vidéo privé qui réunit les deux familles pour la première fois, de manière appropriée et conforme à la charia." },
+      { "title": "Système de préapprobation – ne perdez pas de temps dans des échanges improductifs !", "description": "Consultez votre pourcentage de compatibilité avec n'importe quel profil avant d'entamer une conversation." }
+    ]
   }
 }

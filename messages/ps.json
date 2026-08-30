@@ -1,97 +1,183 @@
 {
   "site": {
     "name": "Zefaaf",
-    "tagline": "Building your ideas into reality"
+    "tagline": "ستاسو نظرونه په حقیقت بدلول"
   },
   "seo": {
-    "title": "Zefaaf — Marriage & Matchmaking Platform",
-    "description": "Zefaaf is a trusted platform for serious marriage matchmaking — VIP personal search, real success stories, and a genuine path to marriage."
+    "title": "Zefaaf — د واده او خواستګارۍ پلیټفورم",
+    "description": "Zefaaf د جدي واده لپاره یو باوري پلیټفورم دی — د VIP شخصي لټون، ریښتینې بریالیتوب کیسې، او د واده لپاره یوه ریښتینې لار."
   },
   "hero": {
-    "title": "Find your life partner the halal way",
-    "subtitle": "Zefaaf is a trusted platform designed to help Muslims find a life partner who shares their Islamic values, in a safe, Sharia-compliant way.",
-    "cta": "Discover more",
-    "ratingLabel": "Rating",
+    "title": "خپل ژوند\nملګری په حلال طریقه ومومئ",
+    "subtitle": "Zefaaf یو باوري پلیټفورم دی چې د مسلمانانو سره مرسته کوي\nترڅو داسې ملګری ومومي چې د هغوی اسلامي ارزښتونه شریک کړي، په خوندي، له شریعت سره سم طریقه.",
+    "cta": "نور معلومات",
+    "ratingLabel": "درجه بندي",
     "ratingValue": "4.8"
   },
   "stats": {
     "happyClients": {
       "value": "34,484k",
-      "label": "Happy clients"
+      "label": "خوشحاله پیرودونکي"
     },
     "successStories": {
       "value": "2768",
-      "label": "Success stories"
+      "label": "بریالیتوب کیسې"
     },
     "registeredMembers": {
       "value": "23416",
-      "label": "Registered Member"
+      "label": "ثبت شوي غړي"
     }
   },
   "nav": {
-    "home": "Home",
-    "services": "Services",
-    "contact": "Contact",
-    "vipSearch": "VIP Personal Search",
-    "about": "About Us",
-    "articles": "Articles",
-    "upcomingEvents": "Upcoming Events",
-    "successStories": "Success Stories",
-    "marriageRequest": "Marriage Request"
+    "home": "کور",
+    "services": "خدمتونه",
+    "contact": "اړیکه",
+    "vipSearch": "VIP شخصي لټون",
+    "about": "زموږ په اړه",
+    "articles": "مقالې",
+    "upcomingEvents": "راتلونکې غونډې",
+    "successStories": "بریالیتوب کیسې",
+    "marriageRequest": "د واده غوښتنه"
   },
   "footer": {
     "columns": {
       "about": {
-        "title": "About Zefaaf",
+        "title": "د Zefaaf په اړه",
         "links": {
-          "about": "About Zefaaf",
-          "contact": "Contact Us",
-          "testimonials": "Client Testimonials",
-          "successStories": "Success Stories",
-          "businessLicense": "Business License"
+          "about": "د Zefaaf په اړه",
+          "contact": "زموږ سره اړیکه ونیسئ",
+          "testimonials": "د پیرودونکو نظرونه",
+          "successStories": "بریالیتوب کیسې",
+          "businessLicense": "سوداګریز جواز"
         }
       },
       "account": {
-        "title": "My Account",
+        "title": "زما حساب",
         "links": {
-          "manage": "Manage Account",
-          "safetyTips": "Safety Tips",
-          "delete": "Delete Account",
-          "security": "Security & Protection",
-          "membership": "Membership Level"
+          "manage": "د حساب مدیریت",
+          "safetyTips": "د خوندیتوب مشورې",
+          "delete": "حساب حذف کول",
+          "security": "امنیت او خونديتوب",
+          "membership": "د غړیتوب کچه"
         }
       },
       "help": {
-        "title": "Help",
+        "title": "مرسته",
         "links": {
-          "helpCenter": "Help Center",
-          "faq": "FAQ",
-          "quickStart": "Quick Start Guide",
-          "tutorials": "Tutorials",
-          "partnersBlog": "Partners Blog"
+          "helpCenter": "د مرستې مرکز",
+          "faq": "ډیر پوښتل شوي پوښتنې",
+          "quickStart": "چټک پیل لارښود",
+          "tutorials": "زده کړې لارښودونه",
+          "partnersBlog": "د شریکانو بلاګ"
         }
       },
       "legal": {
-        "title": "Legal",
+        "title": "قانوني",
         "links": {
-          "privacy": "Privacy Policy",
-          "terms": "Terms & Conditions",
-          "refund": "Payment & Refund Policy",
-          "cookies": "Cookie Policy",
-          "reportAbuse": "Report Abuse"
+          "privacy": "د محرمیت تګلاره",
+          "terms": "شرایط او مقررات",
+          "refund": "د تادیاتو او بیرته ورکړې تګلاره",
+          "cookies": "د کوکي تګلاره",
+          "reportAbuse": "ناوړه ګټه اخیستنه راپور کړئ"
         }
       }
     },
     "newsletter": {
-      "title": "Newsletter",
-      "description": "Subscribe to receive the latest news by email",
-      "placeholder": "Enter your email address",
-      "subscribe": "Subscribe",
-      "privacyNote": "Your data is in safe hands. Check our privacy policy for more information."
+      "title": "خبرپاڼه",
+      "description": "د ایمیل له لارې تازه خبرونه ترلاسه کولو لپاره ګډون وکړئ",
+      "placeholder": "خپل بریښنالیک پته دننه کړئ",
+      "subscribe": "ګډون",
+      "privacyNote": "ستاسو معلومات په خوندي لاسونو کې دي. د نورو معلوماتو لپاره زموږ د محرمیت تګلاره وګورئ."
     },
     "bottom": {
-      "developedBy": "Developed by {brand}",
-      "copyright": "All rights reserved to Zefaaf platform © {year}"
+      "developedBy": "د {brand} لخوا رامینځته شوی",
+      "copyright": "د Zefaaf پلیټفورم ټول حقوق خوندي دي © {year}"
     }
+  },
+  "services": {
+    "items": [
+      {
+        "title": "د اسلامي واده غونډه",
+        "description": "د اسلامي واده غونډې پروګرامونه چې د واده غوښتونکي مسلمانان او د هغوی کورنۍ سره یوځای کوي"
+      },
+      {
+        "title": "د واده غوښتنلیک",
+        "description": "خپل غوره ژوند ملګری د بېلابېلو هېوادونو څخه ومومئ."
+      },
+      {
+        "title": "VIP شخصي لټون",
+        "description": "یو ځانګړی خدمت چې پکې د Zefaaf مشورتیان مناسب ژوند ملګري لټوي"
+      },
+      {
+        "title": "په بوسنیا کې زموږ ټیم سره ملتیا",
+        "description": "یو لارښود شوی پروګرام چې پکې د Zefaaf ټیم پیرودونکو ته د جدي واده لپاره له کورنیو سره د لیدنې پر مهال ملتیا کوي"
+      },
+      {
+        "title": "آنلاین غونډه",
+        "description": "د کورنۍ مشورتي سره یوه ناسته پیل کړئ ترڅو خپل شخصیت او اړتیاوې وپیژنئ"
+      }
+    ]
+  },
+  "globalPresence": {
+    "mapAlt": "یوه نقشه چې د نړۍ په کچه د Zefaaf شتون ښیي",
+    "badge": "په Zefaaf کې ۳ میلیونه کاروونکي",
+    "title": "موږ په <brand>175</brand> هېوادونو کې فعالیت کوو",
+    "description": "Zefaaf د نړۍ په کچه مسلمانان له باوري خواستګارۍ خدمتونو سره نښلوي چې د هغوی اسلامي ارزښتونه شریکوي، په خوندي، له شریعت سره سم طریقه.",
+    "countries": {
+      "france": "فرانسه",
+      "germany": "المان",
+      "netherlands": "هالنډ",
+      "turkey": "ترکیه",
+      "russia": "روسیه",
+      "china": "چین",
+      "indonesia": "اندونیزیا"
+    }
+  },
+  "upcomingEvents": {
+    "description": "زموږ راتلونکې غونډې وپیژنئ او د معنی لرونکو تجربو، الهام بښونکو خبرو اترو، او ياد ماندنه لرونکو شیبو لپاره له موږ سره یوځای شئ. د نیټو، توضیحاتو او ثبت نام لپاره موږ تعقیب کړئ.",
+    "bookCta": "خپله ټکټ بک کړئ",
+    "events": [
+      {
+        "date": "د جنوري ۱۰",
+        "time": "غرمه ۱۲ بجې",
+        "title": "په هالنډ کې د اسلامي واده غونډه",
+        "location": "Churchillplein 10, 2517 JW",
+        "price": "150 یورو"
+      },
+      {
+        "date": "د اپریل ۲۵",
+        "time": "غرمه ۱۲ بجې",
+        "title": "په بوسنیا کې د اسلامي واده غونډه",
+        "location": "Terezija, 71000",
+        "price": "150 یورو"
+      }
+    ],
+    "ticker": ["خپل غوره ژوند وکړئ", "روغ سفر", "ژوند ملګری", "روغ انتخابونه", "ژوند ملګری"]
+  },
+  "whyChoose": {
+    "title": "ولې Zefaaf غوره کړئ",
+    "description": "موږ په Zefaaf کې باور لرو چې واده یوازې همغږي نه ده — دا د اسلامي ارزښتونو پر بنسټ د ثابت ژوند جوړولو په اړه ده.",
+    "features": [
+      {
+        "title": "خوندي، له شریعت سره سم ویډیو اړیکې",
+        "description": "د دیني څارنې لاندې یو خوندي ویډیو ځانګړتیا، چې تاسو ته اجازه درکوي خپل احتمالي ژوند ملګری ومومئ پداسې حال کې چې اسلامي لارښوونې ساتل کیږي."
+      },
+      {
+        "title": "مستقیم اسلامي او کورنۍ مشوره",
+        "description": "د نوم لیکنې پر مهال زموږ له دیني متخصصینو او کورنۍ مشورتیانو څخه وړیا مشوره ترلاسه کړئ."
+      },
+      {
+        "title": "ستاسو غږ، ستاسو شخصیت – پرېږدئ ستاسو غږ ستاسو لپاره خبرې وکړي!",
+        "description": "په خپل پروفایل کې یو غږیز پیغام: ځان معرفي کړئ، خپل علایق او ارزښتونه شریک کړئ، او د واده شوي ژوند لپاره خپل لید بیان کړئ."
+      },
+      {
+        "title": "کورنۍ غونډه – خپله اړیکه په حلال طریقه پیل کړئ",
+        "description": "یو خصوصي ویډیو خونه چې دواړه کورنۍ لومړی ځل د مناسب، له شریعت سره سم طریقه سره یوځای کوي."
+      },
+      {
+        "title": "د مخکینۍ تصویب سیسټم – په غیر مثمر خبرو اترو کې وخت ضایع مه کوئ!",
+        "description": "له خبرو اترو د پیل کولو دمخه د هر پروفایل سره خپل مطابقت سلنه وګورئ."
+      }
+    ]
   }
 }

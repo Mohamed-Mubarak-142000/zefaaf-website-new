@@ -1,97 +1,183 @@
 {
   "site": {
     "name": "Zefaaf",
-    "tagline": "Building your ideas into reality"
+    "tagline": "आपके विचारों को साकार करना"
   },
   "seo": {
-    "title": "Zefaaf — Marriage & Matchmaking Platform",
-    "description": "Zefaaf is a trusted platform for serious marriage matchmaking — VIP personal search, real success stories, and a genuine path to marriage."
+    "title": "Zefaaf — विवाह एवं मैचमेकिंग प्लेटफ़ॉर्म",
+    "description": "Zefaaf गंभीर विवाह मैचमेकिंग के लिए एक विश्वसनीय प्लेटफ़ॉर्म है — वीआईपी व्यक्तिगत खोज, वास्तविक सफलता की कहानियाँ, और विवाह की ओर एक सच्चा मार्ग।"
   },
   "hero": {
-    "title": "Find your life partner the halal way",
-    "subtitle": "Zefaaf is a trusted platform designed to help Muslims find a life partner who shares their Islamic values, in a safe, Sharia-compliant way.",
-    "cta": "Discover more",
-    "ratingLabel": "Rating",
+    "title": "अपना जीवनसाथी\nहलाल तरीके से खोजें",
+    "subtitle": "Zefaaf एक विश्वसनीय प्लेटफ़ॉर्म है जो मुसलमानों को\nएक ऐसा जीवनसाथी खोजने में मदद करता है जो उनके इस्लामी मूल्यों को साझा करे, सुरक्षित और शरिया-अनुरूप तरीके से।",
+    "cta": "और जानें",
+    "ratingLabel": "रेटिंग",
     "ratingValue": "4.8"
   },
   "stats": {
     "happyClients": {
       "value": "34,484k",
-      "label": "Happy clients"
+      "label": "खुश ग्राहक"
     },
     "successStories": {
       "value": "2768",
-      "label": "Success stories"
+      "label": "सफलता की कहानियाँ"
     },
     "registeredMembers": {
       "value": "23416",
-      "label": "Registered Member"
+      "label": "पंजीकृत सदस्य"
     }
   },
   "nav": {
-    "home": "Home",
-    "services": "Services",
-    "contact": "Contact",
-    "vipSearch": "VIP Personal Search",
-    "about": "About Us",
-    "articles": "Articles",
-    "upcomingEvents": "Upcoming Events",
-    "successStories": "Success Stories",
-    "marriageRequest": "Marriage Request"
+    "home": "होम",
+    "services": "सेवाएं",
+    "contact": "संपर्क करें",
+    "vipSearch": "वीआईपी व्यक्तिगत खोज",
+    "about": "हमारे बारे में",
+    "articles": "लेख",
+    "upcomingEvents": "आगामी कार्यक्रम",
+    "successStories": "सफलता की कहानियाँ",
+    "marriageRequest": "विवाह अनुरोध"
   },
   "footer": {
     "columns": {
       "about": {
-        "title": "About Zefaaf",
+        "title": "Zefaaf के बारे में",
         "links": {
-          "about": "About Zefaaf",
-          "contact": "Contact Us",
-          "testimonials": "Client Testimonials",
-          "successStories": "Success Stories",
-          "businessLicense": "Business License"
+          "about": "Zefaaf के बारे में",
+          "contact": "हमसे संपर्क करें",
+          "testimonials": "ग्राहक प्रशंसापत्र",
+          "successStories": "सफलता की कहानियाँ",
+          "businessLicense": "व्यवसाय लाइसेंस"
         }
       },
       "account": {
-        "title": "My Account",
+        "title": "मेरा खाता",
         "links": {
-          "manage": "Manage Account",
-          "safetyTips": "Safety Tips",
-          "delete": "Delete Account",
-          "security": "Security & Protection",
-          "membership": "Membership Level"
+          "manage": "खाता प्रबंधित करें",
+          "safetyTips": "सुरक्षा सुझाव",
+          "delete": "खाता हटाएं",
+          "security": "सुरक्षा एवं संरक्षण",
+          "membership": "सदस्यता स्तर"
         }
       },
       "help": {
-        "title": "Help",
+        "title": "सहायता",
         "links": {
-          "helpCenter": "Help Center",
-          "faq": "FAQ",
-          "quickStart": "Quick Start Guide",
-          "tutorials": "Tutorials",
-          "partnersBlog": "Partners Blog"
+          "helpCenter": "सहायता केंद्र",
+          "faq": "सामान्य प्रश्न",
+          "quickStart": "त्वरित प्रारंभ गाइड",
+          "tutorials": "ट्यूटोरियल",
+          "partnersBlog": "पार्टनर्स ब्लॉग"
         }
       },
       "legal": {
-        "title": "Legal",
+        "title": "कानूनी",
         "links": {
-          "privacy": "Privacy Policy",
-          "terms": "Terms & Conditions",
-          "refund": "Payment & Refund Policy",
-          "cookies": "Cookie Policy",
-          "reportAbuse": "Report Abuse"
+          "privacy": "गोपनीयता नीति",
+          "terms": "नियम एवं शर्तें",
+          "refund": "भुगतान एवं धनवापसी नीति",
+          "cookies": "कुकी नीति",
+          "reportAbuse": "दुरुपयोग की रिपोर्ट करें"
         }
       }
     },
     "newsletter": {
-      "title": "Newsletter",
-      "description": "Subscribe to receive the latest news by email",
-      "placeholder": "Enter your email address",
-      "subscribe": "Subscribe",
-      "privacyNote": "Your data is in safe hands. Check our privacy policy for more information."
+      "title": "न्यूज़लेटर",
+      "description": "ईमेल द्वारा नवीनतम समाचार प्राप्त करने के लिए सदस्यता लें",
+      "placeholder": "अपना ईमेल पता दर्ज करें",
+      "subscribe": "सदस्यता लें",
+      "privacyNote": "आपका डेटा सुरक्षित हाथों में है। अधिक जानकारी के लिए हमारी गोपनीयता नीति देखें।"
     },
     "bottom": {
-      "developedBy": "Developed by {brand}",
-      "copyright": "All rights reserved to Zefaaf platform © {year}"
+      "developedBy": "{brand} द्वारा विकसित",
+      "copyright": "Zefaaf प्लेटफ़ॉर्म के सर्वाधिकार सुरक्षित © {year}"
     }
+  },
+  "services": {
+    "items": [
+      {
+        "title": "इस्लामिक विवाह मंच",
+        "description": "इस्लामिक विवाह मंच कार्यक्रम जो विवाह की तलाश कर रहे मुसलमानों और उनके परिवारों को एक साथ लाते हैं"
+      },
+      {
+        "title": "विवाह आवेदन",
+        "description": "विभिन्न देशों से अपना आदर्श जीवनसाथी खोजें।"
+      },
+      {
+        "title": "वीआईपी व्यक्तिगत खोज",
+        "description": "एक समर्पित सेवा जिसमें Zefaaf के सलाहकार उपयुक्त जीवनसाथी की खोज करते हैं"
+      },
+      {
+        "title": "बोस्निया में हमारी टीम के साथ",
+        "description": "एक निर्देशित कार्यक्रम जिसमें Zefaaf टीम गंभीर विवाह के लिए ग्राहकों को परिवारों से मिलने में साथ देती है"
+      },
+      {
+        "title": "ऑनलाइन मीटिंग",
+        "description": "अपने व्यक्तित्व और आवश्यकताओं को समझने के लिए एक पारिवारिक सलाहकार के साथ सत्र से शुरुआत करें"
+      }
+    ]
+  },
+  "globalPresence": {
+    "mapAlt": "दुनिया भर में Zefaaf की पहुंच दिखाने वाला मानचित्र",
+    "badge": "Zefaaf पर 3 मिलियन उपयोगकर्ता",
+    "title": "हम <brand>175</brand> देशों में कार्यरत हैं",
+    "description": "Zefaaf दुनिया भर के मुसलमानों को विश्वसनीय मैचमेकिंग सेवाओं से जोड़ता है जो उनके इस्लामी मूल्यों को साझा करती हैं, सुरक्षित और शरिया-अनुरूप तरीके से।",
+    "countries": {
+      "france": "फ्रांस",
+      "germany": "जर्मनी",
+      "netherlands": "नीदरलैंड",
+      "turkey": "तुर्की",
+      "russia": "रूस",
+      "china": "चीन",
+      "indonesia": "इंडोनेशिया"
+    }
+  },
+  "upcomingEvents": {
+    "description": "हमारे आगामी कार्यक्रमों की खोज करें और सार्थक अनुभवों, प्रेरणादायक बातचीत, और यादगार पलों के लिए हमारे साथ जुड़ें। तारीखों, विवरण और पंजीकरण के लिए हमें फॉलो करें।",
+    "bookCta": "अपना टिकट बुक करें",
+    "events": [
+      {
+        "date": "10 जनवरी",
+        "time": "दोपहर 12 बजे",
+        "title": "नीदरलैंड में इस्लामिक विवाह मंच",
+        "location": "Churchillplein 10, 2517 JW",
+        "price": "150 यूरो"
+      },
+      {
+        "date": "25 अप्रैल",
+        "time": "दोपहर 12 बजे",
+        "title": "बोस्निया में इस्लामिक विवाह मंच",
+        "location": "Terezija, 71000",
+        "price": "150 यूरो"
+      }
+    ],
+    "ticker": ["सर्वश्रेष्ठ जिएं", "स्वस्थ यात्रा", "जीवनसाथी", "स्वस्थ विकल्प", "जीवनसाथी"]
+  },
+  "whyChoose": {
+    "title": "Zefaaf को क्यों चुनें",
+    "description": "Zefaaf में, हम मानते हैं कि विवाह केवल अनुकूलता से कहीं अधिक है — यह इस्लामी मूल्यों पर आधारित एक स्थिर जीवन बनाने के बारे में है।",
+    "features": [
+      {
+        "title": "सुरक्षित, शरिया-अनुरूप वीडियो कॉल",
+        "description": "धार्मिक निगरानी में एक सुरक्षित वीडियो सुविधा, जो आपको इस्लामी दिशा-निर्देशों का पालन करते हुए अपने संभावित जीवनसाथी से मिलने देती है।"
+      },
+      {
+        "title": "प्रत्यक्ष इस्लामी और पारिवारिक परामर्श",
+        "description": "पंजीकरण पर हमारे धार्मिक विशेषज्ञों और पारिवारिक सलाहकारों से निःशुल्क परामर्श प्राप्त करें।"
+      },
+      {
+        "title": "आपकी आवाज़, आपका व्यक्तित्व – अपनी आवाज़ को खुद बोलने दें!",
+        "description": "आपकी प्रोफ़ाइल पर एक वॉइस मैसेज: अपना परिचय दें, अपनी रुचियों और मूल्यों को साझा करें, और वैवाहिक जीवन के लिए अपने दृष्टिकोण के बारे में बात करें।"
+      },
+      {
+        "title": "पारिवारिक मुलाकात – हलाल तरीके से अपने रिश्ते की शुरुआत करें",
+        "description": "एक निजी वीडियो रूम जो दोनों परिवारों को पहली बार उचित, शरिया-अनुरूप तरीके से एक साथ लाता है।"
+      },
+      {
+        "title": "पूर्व-अनुमोदन प्रणाली – अनुत्पादक बातचीत में समय बर्बाद न करें!",
+        "description": "बातचीत शुरू करने से पहले किसी भी प्रोफ़ाइल के साथ अपनी अनुकूलता प्रतिशत देखें।"
+      }
+    ]
   }
 }

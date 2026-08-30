@@ -93,5 +93,159 @@
       "developedBy": "Developed by {brand}",
       "copyright": "All rights reserved to Zefaaf platform © {year}"
     }
+  },
+  "services": {
+    "items": [
+      {
+        "title": "Islamic Marriage Forum",
+        "description": "Islamic marriage forum events that bring together Muslims seeking marriage and their families"
+      },
+      {
+        "title": "Marriage Application",
+        "description": "Find your ideal life partner from different countries."
+      },
+      {
+        "title": "VIP Personal Search",
+        "description": "A dedicated service where Zefaaf consultants search for suitable life partners"
+      },
+      {
+        "title": "Accompanying Our Team in Bosnia",
+        "description": "A guided program where the Zefaaf team accompanies clients to meet families for serious marriage"
+      },
+      {
+        "title": "Online Meeting",
+        "description": "Start with a session with a family consultant to understand your personality and needs"
+      }
+    ]
+  },
+  "globalPresence": {
+    "mapAlt": "Map showing Zefaaf's reach around the world",
+    "badge": "3 million users on Zefaaf",
+    "title": "We operate in <brand>175</brand> countries",
+    "description": "Zefaaf connects Muslims around the world with trusted matchmaking services who share their Islamic values, in a safe, Sharia-compliant way.",
+    "countries": {
+      "france": "France",
+      "germany": "Germany",
+      "netherlands": "Netherlands",
+      "turkey": "Turkey",
+      "russia": "Russia",
+      "china": "China",
+      "indonesia": "Indonesia"
+    }
+  },
+  "upcomingEvents": {
+    "description": "Discover our upcoming events and join us for meaningful experiences, inspiring conversations, and memorable moments. Follow us for dates, details, and registration.",
+    "bookCta": "Book your ticket",
+    "events": [
+      {
+        "date": "10 Jan",
+        "time": "12 PM",
+        "title": "Islamic Marriage Forum in the Netherlands",
+        "location": "Churchillplein 10, 2517 JW",
+        "price": "150 Euro"
+      },
+      {
+        "date": "25 Apr",
+        "time": "12 PM",
+        "title": "Islamic Marriage Forum in Bosnia",
+        "location": "Terezija, 71000",
+        "price": "150 Euro"
+      },
+      {
+        "date": "14 Jun",
+        "time": "2 PM",
+        "title": "Islamic Marriage Forum in Germany",
+        "location": "Alexanderplatz, Berlin",
+        "price": "150 Euro"
+      },
+      {
+        "date": "22 Aug",
+        "time": "1 PM",
+        "title": "Islamic Marriage Forum in Belgium",
+        "location": "Brussels City Centre",
+        "price": "150 Euro"
+      },
+      {
+        "date": "17 Oct",
+        "time": "3 PM",
+        "title": "Islamic Marriage Forum in Türkiye",
+        "location": "Fatih, Istanbul",
+        "price": "150 Euro"
+      },
+      {
+        "date": "12 Dec",
+        "time": "12 PM",
+        "title": "Islamic Marriage Forum in the United Kingdom",
+        "location": "London City Centre",
+        "price": "150 Euro"
+      }
+    ],
+    "ticker": ["Live your best", "healthy journey", "life partner", "healthy choices", "life partner"]
+  },
+  "whyChoose": {
+    "title": "Why Choose Zefaaf",
+    "description": "At Zefaaf, we believe marriage is more than just compatibility — it's about building a stable life founded on Islamic values.",
+    "features": [
+      {
+        "title": "Secure, Sharia-compliant video calls",
+        "description": "A secure video feature under religious supervision, letting you meet your potential life partner while upholding Islamic guidelines."
+      },
+      {
+        "title": "Direct Islamic and family counseling",
+        "description": "Get a free consultation upon registration from our religious experts and family counselors."
+      },
+      {
+        "title": "Your voice, your personality – let your voice speak for you!",
+        "description": "A voice message on your profile: introduce yourself, share your interests and values, and talk about your vision for married life."
+      },
+      {
+        "title": "Family meeting – start your relationship the halal way",
+        "description": "A private video room that brings both families together for the first time in a proper, Sharia-compliant way."
+      },
+      {
+        "title": "Pre-approval system – don't waste time on unproductive chats!",
+        "description": "See your compatibility percentage with any profile before starting a conversation."
+      },
+      {
+        "title": "Verified identities and profiles",
+        "description": "Reliable verification that strengthens safety and trust between members."
+      },
+      {
+        "title": "Global Zefaaf marriage officiant",
+        "description": "A service for completing an Islamic marriage contract in countries around the world."
+      },
+      {
+        "title": "Safe community groups",
+        "description": "Private, secure spaces that bring together members with shared interests."
+      },
+      {
+        "title": "Personal matchmaking via WhatsApp",
+        "description": "A dedicated team searches for your potential partner and follows up with you through WhatsApp."
+      },
+      {
+        "title": "Family introductions around the world",
+        "description": "A formal, secure introduction session between both families, managed with complete privacy."
+      },
+      {
+        "title": "Meet without borders",
+        "description": "Discover a compatible partner from countries around the world."
+      },
+      {
+        "title": "Guardian participation",
+        "description": "Include your guardian throughout the matchmaking journey with clarity and peace of mind."
+      },
+      {
+        "title": "Rewards program",
+        "description": "Receive benefits and rewards when you invite your friends to join."
+      },
+      {
+        "title": "Support for new Muslims",
+        "description": "Dedicated guidance for new Muslims throughout their search for a suitable partner."
+      },
+      {
+        "title": "Sharia-compliant meetings in Amsterdam",
+        "description": "Safe, in-person halal marriage meetings with full supervision and family attendance in Amsterdam."
+      }
+    ]
   }
 }

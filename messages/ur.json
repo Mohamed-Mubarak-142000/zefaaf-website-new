@@ -1,97 +1,183 @@
 {
   "site": {
     "name": "Zefaaf",
-    "tagline": "Building your ideas into reality"
+    "tagline": "آپ کے خیالات کو حقیقت میں بدلنا"
   },
   "seo": {
-    "title": "Zefaaf — Marriage & Matchmaking Platform",
-    "description": "Zefaaf is a trusted platform for serious marriage matchmaking — VIP personal search, real success stories, and a genuine path to marriage."
+    "title": "Zefaaf — شادی اور رشتہ جوڑنے کا پلیٹ فارم",
+    "description": "Zefaaf ایک قابلِ اعتماد پلیٹ فارم ہے جو سنجیدہ رشتوں کے لیے وقف ہے — VIP ذاتی تلاش، حقیقی کامیابی کی کہانیاں، اور شادی کی طرف ایک حقیقی راستہ۔"
   },
   "hero": {
-    "title": "Find your life partner the halal way",
-    "subtitle": "Zefaaf is a trusted platform designed to help Muslims find a life partner who shares their Islamic values, in a safe, Sharia-compliant way.",
-    "cta": "Discover more",
-    "ratingLabel": "Rating",
+    "title": "اپنے زندگی کے\nساتھی کو حلال طریقے سے تلاش کریں",
+    "subtitle": "Zefaaf ایک قابلِ اعتماد پلیٹ فارم ہے جو مسلمانوں کی\nمدد کے لیے بنایا گیا ہے تاکہ وہ ایک محفوظ اور شرعی اصولوں کے مطابق طریقے سے اپنے اسلامی اقدار سے ہم آہنگ زندگی کا ساتھی تلاش کر سکیں۔",
+    "cta": "مزید جانیں",
+    "ratingLabel": "درجہ بندی",
     "ratingValue": "4.8"
   },
   "stats": {
     "happyClients": {
       "value": "34,484k",
-      "label": "Happy clients"
+      "label": "خوش صارفین"
     },
     "successStories": {
       "value": "2768",
-      "label": "Success stories"
+      "label": "کامیابی کی کہانیاں"
     },
     "registeredMembers": {
       "value": "23416",
-      "label": "Registered Member"
+      "label": "رجسٹرڈ ممبر"
     }
   },
   "nav": {
-    "home": "Home",
-    "services": "Services",
-    "contact": "Contact",
-    "vipSearch": "VIP Personal Search",
-    "about": "About Us",
-    "articles": "Articles",
-    "upcomingEvents": "Upcoming Events",
-    "successStories": "Success Stories",
-    "marriageRequest": "Marriage Request"
+    "home": "ہوم",
+    "services": "خدمات",
+    "contact": "رابطہ",
+    "vipSearch": "VIP ذاتی تلاش",
+    "about": "ہمارے بارے میں",
+    "articles": "مضامین",
+    "upcomingEvents": "آئندہ تقریبات",
+    "successStories": "کامیابی کی کہانیاں",
+    "marriageRequest": "شادی کی درخواست"
   },
   "footer": {
     "columns": {
       "about": {
-        "title": "About Zefaaf",
+        "title": "Zefaaf کے بارے میں",
         "links": {
-          "about": "About Zefaaf",
-          "contact": "Contact Us",
-          "testimonials": "Client Testimonials",
-          "successStories": "Success Stories",
-          "businessLicense": "Business License"
+          "about": "Zefaaf کے بارے میں",
+          "contact": "ہم سے رابطہ کریں",
+          "testimonials": "صارفین کی آراء",
+          "successStories": "کامیابی کی کہانیاں",
+          "businessLicense": "کاروباری لائسنس"
         }
       },
       "account": {
-        "title": "My Account",
+        "title": "میرا اکاؤنٹ",
         "links": {
-          "manage": "Manage Account",
-          "safetyTips": "Safety Tips",
-          "delete": "Delete Account",
-          "security": "Security & Protection",
-          "membership": "Membership Level"
+          "manage": "اکاؤنٹ کا انتظام کریں",
+          "safetyTips": "حفاظتی تجاویز",
+          "delete": "اکاؤنٹ حذف کریں",
+          "security": "سیکیورٹی اور تحفظ",
+          "membership": "رکنیت کی سطح"
         }
       },
       "help": {
-        "title": "Help",
+        "title": "مدد",
         "links": {
-          "helpCenter": "Help Center",
-          "faq": "FAQ",
-          "quickStart": "Quick Start Guide",
-          "tutorials": "Tutorials",
-          "partnersBlog": "Partners Blog"
+          "helpCenter": "مدد کا مرکز",
+          "faq": "اکثر پوچھے گئے سوالات",
+          "quickStart": "فوری آغاز گائیڈ",
+          "tutorials": "سبق",
+          "partnersBlog": "شراکت داروں کا بلاگ"
         }
       },
       "legal": {
-        "title": "Legal",
+        "title": "قانونی",
         "links": {
-          "privacy": "Privacy Policy",
-          "terms": "Terms & Conditions",
-          "refund": "Payment & Refund Policy",
-          "cookies": "Cookie Policy",
-          "reportAbuse": "Report Abuse"
+          "privacy": "رازداری کی پالیسی",
+          "terms": "شرائط و ضوابط",
+          "refund": "ادائیگی اور رقم واپسی کی پالیسی",
+          "cookies": "کوکی پالیسی",
+          "reportAbuse": "بدسلوکی کی اطلاع دیں"
         }
       }
     },
     "newsletter": {
-      "title": "Newsletter",
-      "description": "Subscribe to receive the latest news by email",
-      "placeholder": "Enter your email address",
-      "subscribe": "Subscribe",
-      "privacyNote": "Your data is in safe hands. Check our privacy policy for more information."
+      "title": "نیوز لیٹر",
+      "description": "ای میل کے ذریعے تازہ ترین خبریں حاصل کرنے کے لیے سبسکرائب کریں",
+      "placeholder": "اپنا ای میل پتہ درج کریں",
+      "subscribe": "سبسکرائب کریں",
+      "privacyNote": "آپ کا ڈیٹا محفوظ ہاتھوں میں ہے۔ مزید معلومات کے لیے ہماری رازداری کی پالیسی ملاحظہ کریں۔"
     },
     "bottom": {
-      "developedBy": "Developed by {brand}",
-      "copyright": "All rights reserved to Zefaaf platform © {year}"
+      "developedBy": "{brand} کی جانب سے تیار کردہ",
+      "copyright": "تمام حقوق Zefaaf پلیٹ فارم کے لیے محفوظ ہیں © {year}"
     }
+  },
+  "services": {
+    "items": [
+      {
+        "title": "اسلامی شادی فورم",
+        "description": "اسلامی شادی فورم کی تقریبات جو شادی کے خواہاں مسلمانوں اور ان کے خاندانوں کو ایک ساتھ لاتی ہیں"
+      },
+      {
+        "title": "شادی کی درخواست",
+        "description": "مختلف ممالک سے اپنا مثالی زندگی کا ساتھی تلاش کریں۔"
+      },
+      {
+        "title": "VIP ذاتی تلاش",
+        "description": "ایک مخصوص سروس جس میں Zefaaf کے مشیر موزوں زندگی کے ساتھی تلاش کرتے ہیں"
+      },
+      {
+        "title": "بوسنیا میں ہماری ٹیم کے ہمراہ",
+        "description": "ایک رہنمائی پر مبنی پروگرام جس میں Zefaaf کی ٹیم سنجیدہ شادی کے لیے صارفین کو خاندانوں سے ملاقات کے لیے ساتھ لے جاتی ہے"
+      },
+      {
+        "title": "آن لائن ملاقات",
+        "description": "اپنی شخصیت اور ضروریات کو سمجھنے کے لیے فیملی مشیر کے ساتھ ایک نشست سے آغاز کریں"
+      }
+    ]
+  },
+  "globalPresence": {
+    "mapAlt": "دنیا بھر میں Zefaaf کی موجودگی دکھانے والا نقشہ",
+    "badge": "Zefaaf پر 30 لاکھ صارفین",
+    "title": "ہم <brand>175</brand> ممالک میں کام کرتے ہیں",
+    "description": "Zefaaf دنیا بھر کے مسلمانوں کو ایسی قابلِ اعتماد رشتہ جوڑنے کی خدمات سے جوڑتا ہے جو ان کے اسلامی اقدار سے ہم آہنگ ہیں، ایک محفوظ اور شرعی اصولوں کے مطابق طریقے سے۔",
+    "countries": {
+      "france": "فرانس",
+      "germany": "جرمنی",
+      "netherlands": "نیدرلینڈز",
+      "turkey": "ترکی",
+      "russia": "روس",
+      "china": "چین",
+      "indonesia": "انڈونیشیا"
+    }
+  },
+  "upcomingEvents": {
+    "description": "ہماری آئندہ تقریبات دریافت کریں اور بامعنی تجربات، متاثر کن گفتگو، اور یادگار لمحات کے لیے ہمارے ساتھ شامل ہوں۔ تاریخوں، تفصیلات اور رجسٹریشن کے لیے ہمیں فالو کریں۔",
+    "bookCta": "اپنا ٹکٹ بک کریں",
+    "events": [
+      {
+        "date": "10 جنوری",
+        "time": "دوپہر 12 بجے",
+        "title": "نیدرلینڈز میں اسلامی شادی فورم",
+        "location": "Churchillplein 10, 2517 JW",
+        "price": "150 یورو"
+      },
+      {
+        "date": "25 اپریل",
+        "time": "دوپہر 12 بجے",
+        "title": "بوسنیا میں اسلامی شادی فورم",
+        "location": "Terezija, 71000",
+        "price": "150 یورو"
+      }
+    ],
+    "ticker": ["اپنی بہترین زندگی گزاریں", "صحت مند سفر", "زندگی کا ساتھی", "صحت مند انتخاب", "زندگی کا ساتھی"]
+  },
+  "whyChoose": {
+    "title": "Zefaaf کیوں منتخب کریں",
+    "description": "Zefaaf میں، ہمارا ماننا ہے کہ شادی محض مطابقت سے کہیں بڑھ کر ہے — یہ اسلامی اقدار پر مبنی ایک مستحکم زندگی کی تعمیر کے بارے میں ہے۔",
+    "features": [
+      {
+        "title": "محفوظ، شرعی اصولوں کے مطابق ویڈیو کالز",
+        "description": "مذہبی نگرانی میں ایک محفوظ ویڈیو سہولت، جو آپ کو اسلامی اصولوں کی پاسداری کرتے ہوئے اپنے ممکنہ زندگی کے ساتھی سے ملنے دیتی ہے۔"
+      },
+      {
+        "title": "براہ راست اسلامی اور خاندانی مشاورت",
+        "description": "رجسٹریشن کے بعد ہمارے مذہبی ماہرین اور خاندانی مشیروں سے مفت مشاورت حاصل کریں۔"
+      },
+      {
+        "title": "آپ کی آواز، آپ کی شخصیت – اپنی آواز کو اپنی نمائندگی کرنے دیں!",
+        "description": "آپ کی پروفائل پر ایک صوتی پیغام: اپنا تعارف کروائیں، اپنی دلچسپیوں اور اقدار کا اظہار کریں، اور ازدواجی زندگی کے بارے میں اپنے نقطہ نظر پر بات کریں۔"
+      },
+      {
+        "title": "خاندانی ملاقات – اپنے رشتے کا آغاز حلال طریقے سے کریں",
+        "description": "ایک نجی ویڈیو روم جو دونوں خاندانوں کو پہلی بار ایک مناسب اور شرعی اصولوں کے مطابق طریقے سے اکٹھا کرتا ہے۔"
+      },
+      {
+        "title": "پیشگی منظوری کا نظام – غیر ضروری بات چیت میں وقت ضائع نہ کریں!",
+        "description": "بات چیت شروع کرنے سے پہلے کسی بھی پروفائل کے ساتھ اپنی مطابقت کا فیصد دیکھیں۔"
+      }
+    ]
   }
 }

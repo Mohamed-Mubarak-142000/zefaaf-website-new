@@ -1,97 +1,183 @@
 {
   "site": {
     "name": "Zefaaf",
-    "tagline": "Building your ideas into reality"
+    "tagline": "உங்கள் யோசனைகளை நிதர்சனமாக்குகிறோம்"
   },
   "seo": {
-    "title": "Zefaaf — Marriage & Matchmaking Platform",
-    "description": "Zefaaf is a trusted platform for serious marriage matchmaking — VIP personal search, real success stories, and a genuine path to marriage."
+    "title": "Zefaaf — திருமண மற்றும் பொருத்தப் பணி தளம்",
+    "description": "Zefaaf என்பது தீவிரமான திருமணப் பொருத்தத்திற்கான நம்பகமான தளமாகும் — VIP தனிப்பட்ட தேடல், உண்மையான வெற்றிக் கதைகள், மற்றும் திருமணத்திற்கான உண்மையான பாதை."
   },
   "hero": {
-    "title": "Find your life partner the halal way",
-    "subtitle": "Zefaaf is a trusted platform designed to help Muslims find a life partner who shares their Islamic values, in a safe, Sharia-compliant way.",
-    "cta": "Discover more",
-    "ratingLabel": "Rating",
+    "title": "உங்கள் வாழ்க்கைத்\nதுணையை ஹலால் முறையில் கண்டறியுங்கள்",
+    "subtitle": "Zefaaf என்பது முஸ்லிம்கள்\nதங்கள் இஸ்லாமிய விழுமியங்களைப் பகிர்ந்து கொள்ளும் வாழ்க்கைத் துணையை பாதுகாப்பான, ஷரீஆ-இணக்கமான முறையில் கண்டறிய உதவும் நம்பகமான தளமாகும்.",
+    "cta": "மேலும் அறியுங்கள்",
+    "ratingLabel": "மதிப்பீடு",
     "ratingValue": "4.8"
   },
   "stats": {
     "happyClients": {
       "value": "34,484k",
-      "label": "Happy clients"
+      "label": "மகிழ்ச்சியான வாடிக்கையாளர்கள்"
     },
     "successStories": {
       "value": "2768",
-      "label": "Success stories"
+      "label": "வெற்றிக் கதைகள்"
     },
     "registeredMembers": {
       "value": "23416",
-      "label": "Registered Member"
+      "label": "பதிவு செய்யப்பட்ட உறுப்பினர்"
     }
   },
   "nav": {
-    "home": "Home",
-    "services": "Services",
-    "contact": "Contact",
-    "vipSearch": "VIP Personal Search",
-    "about": "About Us",
-    "articles": "Articles",
-    "upcomingEvents": "Upcoming Events",
-    "successStories": "Success Stories",
-    "marriageRequest": "Marriage Request"
+    "home": "முகப்பு",
+    "services": "சேவைகள்",
+    "contact": "தொடர்பு",
+    "vipSearch": "VIP தனிப்பட்ட தேடல்",
+    "about": "எங்களைப் பற்றி",
+    "articles": "கட்டுரைகள்",
+    "upcomingEvents": "வரவிருக்கும் நிகழ்வுகள்",
+    "successStories": "வெற்றிக் கதைகள்",
+    "marriageRequest": "திருமண கோரிக்கை"
   },
   "footer": {
     "columns": {
       "about": {
-        "title": "About Zefaaf",
+        "title": "Zefaaf பற்றி",
         "links": {
-          "about": "About Zefaaf",
-          "contact": "Contact Us",
-          "testimonials": "Client Testimonials",
-          "successStories": "Success Stories",
-          "businessLicense": "Business License"
+          "about": "Zefaaf பற்றி",
+          "contact": "எங்களைத் தொடர்பு கொள்ளுங்கள்",
+          "testimonials": "வாடிக்கையாளர் கருத்துக்கள்",
+          "successStories": "வெற்றிக் கதைகள்",
+          "businessLicense": "வணிக உரிமம்"
         }
       },
       "account": {
-        "title": "My Account",
+        "title": "என் கணக்கு",
         "links": {
-          "manage": "Manage Account",
-          "safetyTips": "Safety Tips",
-          "delete": "Delete Account",
-          "security": "Security & Protection",
-          "membership": "Membership Level"
+          "manage": "கணக்கை நிர்வகி",
+          "safetyTips": "பாதுகாப்பு உதவிக்குறிப்புகள்",
+          "delete": "கணக்கை நீக்கு",
+          "security": "பாதுகாப்பும் பராமரிப்பும்",
+          "membership": "உறுப்பினர் நிலை"
         }
       },
       "help": {
-        "title": "Help",
+        "title": "உதவி",
         "links": {
-          "helpCenter": "Help Center",
-          "faq": "FAQ",
-          "quickStart": "Quick Start Guide",
-          "tutorials": "Tutorials",
-          "partnersBlog": "Partners Blog"
+          "helpCenter": "உதவி மையம்",
+          "faq": "அடிக்கடி கேட்கப்படும் கேள்விகள்",
+          "quickStart": "விரைவு தொடக்க வழிகாட்டி",
+          "tutorials": "பயிற்சிகள்",
+          "partnersBlog": "பங்குதாரர் வலைப்பதிவு"
         }
       },
       "legal": {
-        "title": "Legal",
+        "title": "சட்டப்பூர்வ",
         "links": {
-          "privacy": "Privacy Policy",
-          "terms": "Terms & Conditions",
-          "refund": "Payment & Refund Policy",
-          "cookies": "Cookie Policy",
-          "reportAbuse": "Report Abuse"
+          "privacy": "தனியுரிமைக் கொள்கை",
+          "terms": "விதிமுறைகள் மற்றும் நிபந்தனைகள்",
+          "refund": "கட்டணம் மற்றும் திரும்பப் பெறும் கொள்கை",
+          "cookies": "குக்கீ கொள்கை",
+          "reportAbuse": "தவறான பயன்பாட்டைப் புகாரளி"
         }
       }
     },
     "newsletter": {
-      "title": "Newsletter",
-      "description": "Subscribe to receive the latest news by email",
-      "placeholder": "Enter your email address",
-      "subscribe": "Subscribe",
-      "privacyNote": "Your data is in safe hands. Check our privacy policy for more information."
+      "title": "செய்திமடல்",
+      "description": "மின்னஞ்சல் மூலம் சமீபத்திய செய்திகளைப் பெற பதிவு செய்யுங்கள்",
+      "placeholder": "உங்கள் மின்னஞ்சல் முகவரியை உள்ளிடவும்",
+      "subscribe": "பதிவு செய்",
+      "privacyNote": "உங்கள் தரவு பாதுகாப்பான கைகளில் உள்ளது. மேலும் தகவலுக்கு எங்கள் தனியுரிமைக் கொள்கையைப் பார்க்கவும்."
     },
     "bottom": {
-      "developedBy": "Developed by {brand}",
-      "copyright": "All rights reserved to Zefaaf platform © {year}"
+      "developedBy": "{brand} ஆல் உருவாக்கப்பட்டது",
+      "copyright": "அனைத்து உரிமைகளும் Zefaaf தளத்திற்கு பாதுகாக்கப்பட்டவை © {year}"
     }
+  },
+  "services": {
+    "items": [
+      {
+        "title": "இஸ்லாமிய திருமண மன்றம்",
+        "description": "திருமணம் செய்ய விரும்பும் முஸ்லிம்களையும் அவர்களது குடும்பங்களையும் ஒன்றிணைக்கும் இஸ்லாமிய திருமண மன்ற நிகழ்வுகள்"
+      },
+      {
+        "title": "திருமண விண்ணப்பம்",
+        "description": "வெவ்வேறு நாடுகளிலிருந்து உங்கள் இலட்சிய வாழ்க்கைத் துணையைக் கண்டறியுங்கள்."
+      },
+      {
+        "title": "VIP தனிப்பட்ட தேடல்",
+        "description": "Zefaaf ஆலோசகர்கள் பொருத்தமான வாழ்க்கைத் துணைகளைத் தேடும் ஒரு பிரத்யேக சேவை"
+      },
+      {
+        "title": "போஸ்னியாவில் எங்கள் குழுவுடன் இணைந்து",
+        "description": "தீவிரமான திருமணத்திற்காக குடும்பங்களைச் சந்திக்க Zefaaf குழு வாடிக்கையாளர்களுடன் உடன் செல்லும் வழிகாட்டப்பட்ட திட்டம்"
+      },
+      {
+        "title": "ஆன்லைன் சந்திப்பு",
+        "description": "உங்கள் ஆளுமையையும் தேவைகளையும் புரிந்துகொள்ள ஒரு குடும்ப ஆலோசகருடன் அமர்வுடன் தொடங்குங்கள்"
+      }
+    ]
+  },
+  "globalPresence": {
+    "mapAlt": "உலகம் முழுவதும் Zefaaf இன் வீச்சைக் காட்டும் வரைபடம்",
+    "badge": "Zefaaf-இல் 30 லட்சம் பயனர்கள்",
+    "title": "நாங்கள் <brand>175</brand> நாடுகளில் செயல்படுகிறோம்",
+    "description": "Zefaaf, தங்கள் இஸ்லாமிய விழுமியங்களைப் பகிர்ந்து கொள்ளும் நம்பகமான பொருத்தச் சேவைகளுடன் உலகெங்குமுள்ள முஸ்லிம்களை பாதுகாப்பான, ஷரீஆ-இணக்கமான முறையில் இணைக்கிறது.",
+    "countries": {
+      "france": "பிரான்ஸ்",
+      "germany": "ஜெர்மனி",
+      "netherlands": "நெதர்லாந்து",
+      "turkey": "துருக்கி",
+      "russia": "ரஷ்யா",
+      "china": "சீனா",
+      "indonesia": "இந்தோனேசியா"
+    }
+  },
+  "upcomingEvents": {
+    "description": "எங்கள் வரவிருக்கும் நிகழ்வுகளைக் கண்டறிந்து, அர்த்தமுள்ள அனுபவங்கள், ஊக்கமளிக்கும் உரையாடல்கள் மற்றும் மறக்கமுடியாத தருணங்களுக்காக எங்களுடன் இணையுங்கள். தேதிகள், விவரங்கள் மற்றும் பதிவுக்காக எங்களைப் பின்தொடருங்கள்.",
+    "bookCta": "உங்கள் டிக்கெட்டை முன்பதிவு செய்யுங்கள்",
+    "events": [
+      {
+        "date": "ஜனவரி 10",
+        "time": "மதியம் 12 மணி",
+        "title": "நெதர்லாந்தில் இஸ்லாமிய திருமண மன்றம்",
+        "location": "Churchillplein 10, 2517 JW",
+        "price": "150 யூரோ"
+      },
+      {
+        "date": "ஏப்ரல் 25",
+        "time": "மதியம் 12 மணி",
+        "title": "போஸ்னியாவில் இஸ்லாமிய திருமண மன்றம்",
+        "location": "Terezija, 71000",
+        "price": "150 யூரோ"
+      }
+    ],
+    "ticker": ["சிறந்த வாழ்க்கை வாழுங்கள்", "ஆரோக்கியமான பயணம்", "வாழ்க்கைத் துணை", "ஆரோக்கியமான தேர்வுகள்", "வாழ்க்கைத் துணை"]
+  },
+  "whyChoose": {
+    "title": "Zefaaf-ஐ ஏன் தேர்வு செய்ய வேண்டும்",
+    "description": "Zefaaf-இல், திருமணம் என்பது வெறும் பொருத்தம் மட்டுமல்ல — இஸ்லாமிய விழுமியங்களின் அடிப்படையில் ஒரு உறுதியான வாழ்க்கையை உருவாக்குவதே என்று நாங்கள் நம்புகிறோம்.",
+    "features": [
+      {
+        "title": "பாதுகாப்பான, ஷரீஆ-இணக்கமான வீடியோ அழைப்புகள்",
+        "description": "மத மேற்பார்வையின் கீழ் பாதுகாப்பான வீடியோ அம்சம், இஸ்லாமிய வழிகாட்டுதல்களை பேணி உங்கள் சாத்தியமான வாழ்க்கைத் துணையை சந்திக்க அனுமதிக்கிறது."
+      },
+      {
+        "title": "நேரடி இஸ்லாமிய மற்றும் குடும்ப ஆலோசனை",
+        "description": "பதிவு செய்தவுடன் எங்கள் மத நிபுணர்கள் மற்றும் குடும்ப ஆலோசகர்களிடமிருந்து இலவச ஆலோசனையைப் பெறுங்கள்."
+      },
+      {
+        "title": "உங்கள் குரல், உங்கள் ஆளுமை – உங்கள் குரலே உங்களுக்காக பேசட்டும்!",
+        "description": "உங்கள் சுயவிவரத்தில் ஒரு குரல் செய்தி: உங்களை அறிமுகப்படுத்திக் கொள்ளுங்கள், உங்கள் ஆர்வங்களையும் விழுமியங்களையும் பகிருங்கள், மற்றும் திருமண வாழ்க்கை பற்றிய உங்கள் பார்வையைப் பற்றி பேசுங்கள்."
+      },
+      {
+        "title": "குடும்பச் சந்திப்பு – உங்கள் உறவை ஹலால் முறையில் தொடங்குங்கள்",
+        "description": "இரு குடும்பங்களையும் முதன்முறையாக முறையான, ஷரீஆ-இணக்கமான வழியில் ஒன்றிணைக்கும் தனியார் வீடியோ அறை."
+      },
+      {
+        "title": "முன் ஒப்புதல் அமைப்பு – பயனற்ற உரையாடல்களில் நேரத்தை வீணடிக்க வேண்டாம்!",
+        "description": "உரையாடலைத் தொடங்கும் முன் எந்தவொரு சுயவிவரத்துடனும் உங்கள் பொருத்தம் சதவீதத்தைப் பார்க்கவும்."
+      }
+    ]
   }
 }

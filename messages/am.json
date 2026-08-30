@@ -1,97 +1,126 @@
 {
   "site": {
     "name": "Zefaaf",
-    "tagline": "Building your ideas into reality"
+    "tagline": "ሀሳብዎን ወደ እውነታ መገንባት"
   },
   "seo": {
-    "title": "Zefaaf — Marriage & Matchmaking Platform",
-    "description": "Zefaaf is a trusted platform for serious marriage matchmaking — VIP personal search, real success stories, and a genuine path to marriage."
+    "title": "Zefaaf — የጋብቻ እና ጥምረት መድረክ",
+    "description": "Zefaaf ለቁም ነገር ጋብቻ ጥምረት የታመነ መድረክ ነው — የVIP የግል ፍለጋ አገልግሎት፣ እውነተኛ የስኬት ታሪኮች፣ እና ወደ ጋብቻ የሚያደርስ ትክክለኛ መንገድ።"
   },
   "hero": {
-    "title": "Find your life partner the halal way",
-    "subtitle": "Zefaaf is a trusted platform designed to help Muslims find a life partner who shares their Islamic values, in a safe, Sharia-compliant way.",
-    "cta": "Discover more",
-    "ratingLabel": "Rating",
+    "title": "የህይወት አጋርዎን\nበሐላል መንገድ ያግኙ",
+    "subtitle": "Zefaaf ሙስሊሞች የእስልምና እሴቶቻቸውን የሚጋራ የህይወት አጋር በአስተማማኝ፣ ከሸሪዓ ጋር በተጣጣመ መንገድ እንዲያገኙ የሚያግዝ የታመነ መድረክ ነው።",
+    "cta": "የበለጠ ይወቁ",
+    "ratingLabel": "ደረጃ",
     "ratingValue": "4.8"
   },
   "stats": {
-    "happyClients": {
-      "value": "34,484k",
-      "label": "Happy clients"
-    },
-    "successStories": {
-      "value": "2768",
-      "label": "Success stories"
-    },
-    "registeredMembers": {
-      "value": "23416",
-      "label": "Registered Member"
-    }
+    "happyClients": { "value": "34,484k", "label": "ደስተኛ ደንበኞች" },
+    "successStories": { "value": "2768", "label": "የስኬት ታሪኮች" },
+    "registeredMembers": { "value": "23416", "label": "የተመዘገቡ አባላት" }
   },
   "nav": {
-    "home": "Home",
-    "services": "Services",
-    "contact": "Contact",
-    "vipSearch": "VIP Personal Search",
-    "about": "About Us",
-    "articles": "Articles",
-    "upcomingEvents": "Upcoming Events",
-    "successStories": "Success Stories",
-    "marriageRequest": "Marriage Request"
+    "home": "መነሻ",
+    "services": "አገልግሎቶች",
+    "contact": "አግኙን",
+    "vipSearch": "የVIP የግል ፍለጋ",
+    "about": "ስለ እኛ",
+    "articles": "መጣጥፎች",
+    "upcomingEvents": "መጪ ዝግጅቶች",
+    "successStories": "የስኬት ታሪኮች",
+    "marriageRequest": "የጋብቻ ጥያቄ"
   },
   "footer": {
     "columns": {
       "about": {
-        "title": "About Zefaaf",
+        "title": "ስለ Zefaaf",
         "links": {
-          "about": "About Zefaaf",
-          "contact": "Contact Us",
-          "testimonials": "Client Testimonials",
-          "successStories": "Success Stories",
-          "businessLicense": "Business License"
+          "about": "ስለ Zefaaf",
+          "contact": "አግኙን",
+          "testimonials": "የደንበኞች አስተያየቶች",
+          "successStories": "የስኬት ታሪኮች",
+          "businessLicense": "የንግድ ፈቃድ"
         }
       },
       "account": {
-        "title": "My Account",
+        "title": "የእኔ አካውንት",
         "links": {
-          "manage": "Manage Account",
-          "safetyTips": "Safety Tips",
-          "delete": "Delete Account",
-          "security": "Security & Protection",
-          "membership": "Membership Level"
+          "manage": "አካውንት ያስተዳድሩ",
+          "safetyTips": "የደህንነት ምክሮች",
+          "delete": "አካውንት ሰርዝ",
+          "security": "ደህንነት እና ጥበቃ",
+          "membership": "የአባልነት ደረጃ"
         }
       },
       "help": {
-        "title": "Help",
+        "title": "እገዛ",
         "links": {
-          "helpCenter": "Help Center",
-          "faq": "FAQ",
-          "quickStart": "Quick Start Guide",
-          "tutorials": "Tutorials",
-          "partnersBlog": "Partners Blog"
+          "helpCenter": "የእገዛ ማዕከል",
+          "faq": "ተደጋግሞ የሚጠየቁ ጥያቄዎች",
+          "quickStart": "ፈጣን መጀመሪያ መመሪያ",
+          "tutorials": "ትምህርቶች",
+          "partnersBlog": "የአጋሮች ብሎግ"
         }
       },
       "legal": {
-        "title": "Legal",
+        "title": "ህጋዊ",
         "links": {
-          "privacy": "Privacy Policy",
-          "terms": "Terms & Conditions",
-          "refund": "Payment & Refund Policy",
-          "cookies": "Cookie Policy",
-          "reportAbuse": "Report Abuse"
+          "privacy": "የግላዊነት ፖሊሲ",
+          "terms": "ውሎች እና ሁኔታዎች",
+          "refund": "የክፍያ እና ተመላሽ ፖሊሲ",
+          "cookies": "የኩኪ ፖሊሲ",
+          "reportAbuse": "አላግባብ አጠቃቀምን ሪፖርት ያድርጉ"
         }
       }
     },
     "newsletter": {
-      "title": "Newsletter",
-      "description": "Subscribe to receive the latest news by email",
-      "placeholder": "Enter your email address",
-      "subscribe": "Subscribe",
-      "privacyNote": "Your data is in safe hands. Check our privacy policy for more information."
+      "title": "ኒውስሌተር",
+      "description": "የቅርብ ጊዜ ዜናዎችን በኢሜይል ለመቀበል ይመዝገቡ",
+      "placeholder": "የኢሜይል አድራሻዎን ያስገቡ",
+      "subscribe": "ይመዝገቡ",
+      "privacyNote": "የእርስዎ መረጃ በአስተማማኝ እጅ ውስጥ ነው። ለበለጠ መረጃ የግላዊነት ፖሊሲያችንን ይመልከቱ።"
     },
     "bottom": {
-      "developedBy": "Developed by {brand}",
-      "copyright": "All rights reserved to Zefaaf platform © {year}"
+      "developedBy": "በ{brand} የተሰራ",
+      "copyright": "ሁሉም መብቶች ለ Zefaaf መድረክ የተጠበቁ ናቸው © {year}"
     }
+  },
+  "services": {
+    "items": [
+      { "title": "የእስልምና ጋብቻ መድረክ", "description": "ጋብቻ የሚፈልጉ ሙስሊሞችን እና ቤተሰቦቻቸውን አንድ ላይ የሚያመጡ የእስልምና ጋብቻ መድረክ ዝግጅቶች" },
+      { "title": "የጋብቻ ማመልከቻ", "description": "ከተለያዩ ሀገራት ተስማሚ የህይወት አጋርዎን ያግኙ።" },
+      { "title": "የVIP የግል ፍለጋ", "description": "የ Zefaaf አማካሪዎች ተስማሚ የህይወት አጋሮችን የሚፈልጉበት ልዩ አገልግሎት" },
+      { "title": "በቦስኒያ ቡድናችንን አጅቦ መሄድ", "description": "የ Zefaaf ቡድን ደንበኞችን ለቁም ነገር ጋብቻ ቤተሰቦችን እንዲያገኙ አጅቦ የሚወስድበት የተመራ ፕሮግራም" },
+      { "title": "የመስመር ላይ ስብሰባ", "description": "ስብዕናዎን እና ፍላጎቶችዎን ለመረዳት ከቤተሰብ አማካሪ ጋር በሚደረግ ክፍለ ጊዜ ይጀምሩ" }
+    ]
+  },
+  "globalPresence": {
+    "mapAlt": "የ Zefaaf የዓለም አቀፍ ተደራሽነትን የሚያሳይ ካርታ",
+    "badge": "3 ሚሊዮን ተጠቃሚዎች በ Zefaaf ላይ",
+    "title": "በ<brand>175</brand> ሀገራት ውስጥ እንሰራለን",
+    "description": "Zefaaf በዓለም ዙሪያ ያሉ ሙስሊሞችን የእስልምና እሴቶቻቸውን ከሚጋሩ በአስተማማኝ፣ ከሸሪዓ ጋር በተጣጣመ የጥምረት አገልግሎቶች ጋር ያገናኛል።",
+    "countries": {
+      "france": "ፈረንሳይ", "germany": "ጀርመን", "netherlands": "ኔዘርላንድስ", "turkey": "ቱርክ", "russia": "ሩሲያ", "china": "ቻይና", "indonesia": "ኢንዶኔዢያ"
+    }
+  },
+  "upcomingEvents": {
+    "description": "መጪ ዝግጅቶቻችንን ያግኙ እና ትርጉም ላላቸው ተሞክሮዎች፣ አነቃቂ ውይይቶች እና የማይረሱ ጊዜያት ይቀላቀሉን። ለቀናት፣ ዝርዝሮች እና ምዝገባ ይከታተሉን።",
+    "bookCta": "ትኬትዎን ያስይዙ",
+    "events": [
+      { "date": "ጥር 10", "time": "ከቀኑ 12:00", "title": "በኔዘርላንድስ የእስልምና ጋብቻ መድረክ", "location": "Churchillplein 10, 2517 JW", "price": "150 ዩሮ" },
+      { "date": "ሚያዝያ 25", "time": "ከቀኑ 12:00", "title": "በቦስኒያ የእስልምና ጋብቻ መድረክ", "location": "Terezija, 71000", "price": "150 ዩሮ" }
+    ],
+    "ticker": ["ምርጡን ኑሮ ኑሩ", "ጤናማ ጉዞ", "የህይወት አጋር", "ጤናማ ምርጫዎች", "የህይወት አጋር"]
+  },
+  "whyChoose": {
+    "title": "ለምን Zefaaf ይምረጡ",
+    "description": "በ Zefaaf፣ ጋብቻ ከተስማሚነት በላይ እንደሆነ እናምናለን — በእስልምና እሴቶች ላይ የተመሰረተ የተረጋጋ ሕይወት ስለመገንባት ነው።",
+    "features": [
+      { "title": "አስተማማኝ፣ ከሸሪዓ ጋር የተጣጣመ የቪዲዮ ጥሪ", "description": "በሃይማኖታዊ ቁጥጥር ስር ያለ አስተማማኝ የቪዲዮ ባህሪ፣ የእስልምና መመሪያዎችን በጠበቀ መልኩ ሊሆኑ የሚችለውን የህይወት አጋርዎን እንዲያገኙ የሚያስችል።" },
+      { "title": "ቀጥተኛ የእስልምና እና የቤተሰብ ምክር", "description": "ከምዝገባ በኋላ ከሃይማኖታዊ ባለሙያዎቻችን እና የቤተሰብ አማካሪዎቻችን ነፃ ምክክር ያግኙ።" },
+      { "title": "የእርስዎ ድምጽ፣ የእርስዎ ስብዕና – ድምጽዎ ስለ እርስዎ ይናገር!", "description": "በመገለጫዎ ላይ የድምጽ መልእክት፦ ራስዎን ያስተዋውቁ፣ ፍላጎቶችዎን እና እሴቶችዎን ያካፍሉ፣ እና ስለ ትዳር ራዕይዎ ይናገሩ።" },
+      { "title": "የቤተሰብ ስብሰባ – ግንኙነትዎን በሐላል መንገድ ይጀምሩ", "description": "ሁለቱን ቤተሰቦች ለመጀመሪያ ጊዜ በተገቢ፣ ከሸሪዓ ጋር በተጣጣመ መንገድ የሚያገናኝ የግል የቪዲዮ ክፍል።" },
+      { "title": "የቅድመ ማረጋገጫ ስርዓት – በማይጠቅም ውይይት ጊዜዎን አያባክኑ!", "description": "ውይይት ከመጀመርዎ በፊት ከማንኛውም መገለጫ ጋር ያለዎትን የተስማሚነት መቶኛ ይመልከቱ።" }
+    ]
   }
 }

@@ -1,97 +1,126 @@
 {
   "site": {
     "name": "Zefaaf",
-    "tagline": "Building your ideas into reality"
+    "tagline": "Воплощаем ваши идеи в реальность"
   },
   "seo": {
-    "title": "Zefaaf — Marriage & Matchmaking Platform",
-    "description": "Zefaaf is a trusted platform for serious marriage matchmaking — VIP personal search, real success stories, and a genuine path to marriage."
+    "title": "Zefaaf — платформа для знакомств с целью брака",
+    "description": "Zefaaf — надёжная платформа для серьёзного поиска спутника жизни: персональный VIP-поиск, реальные истории успеха и настоящий путь к браку."
   },
   "hero": {
-    "title": "Find your life partner the halal way",
-    "subtitle": "Zefaaf is a trusted platform designed to help Muslims find a life partner who shares their Islamic values, in a safe, Sharia-compliant way.",
-    "cta": "Discover more",
-    "ratingLabel": "Rating",
+    "title": "Найдите спутника жизни\nхаляльным путём",
+    "subtitle": "Zefaaf — надёжная платформа, созданная, чтобы помочь мусульманам\nнайти спутника жизни, разделяющего их исламские ценности, безопасно и в соответствии с шариатом.",
+    "cta": "Узнать больше",
+    "ratingLabel": "Рейтинг",
     "ratingValue": "4.8"
   },
   "stats": {
-    "happyClients": {
-      "value": "34,484k",
-      "label": "Happy clients"
-    },
-    "successStories": {
-      "value": "2768",
-      "label": "Success stories"
-    },
-    "registeredMembers": {
-      "value": "23416",
-      "label": "Registered Member"
-    }
+    "happyClients": { "value": "34,484k", "label": "Довольные клиенты" },
+    "successStories": { "value": "2768", "label": "Истории успеха" },
+    "registeredMembers": { "value": "23416", "label": "Зарегистрированные участники" }
   },
   "nav": {
-    "home": "Home",
-    "services": "Services",
-    "contact": "Contact",
-    "vipSearch": "VIP Personal Search",
-    "about": "About Us",
-    "articles": "Articles",
-    "upcomingEvents": "Upcoming Events",
-    "successStories": "Success Stories",
-    "marriageRequest": "Marriage Request"
+    "home": "Главная",
+    "services": "Услуги",
+    "contact": "Контакты",
+    "vipSearch": "Персональный VIP-поиск",
+    "about": "О нас",
+    "articles": "Статьи",
+    "upcomingEvents": "Предстоящие мероприятия",
+    "successStories": "Истории успеха",
+    "marriageRequest": "Заявка на брак"
   },
   "footer": {
     "columns": {
       "about": {
-        "title": "About Zefaaf",
+        "title": "О Zefaaf",
         "links": {
-          "about": "About Zefaaf",
-          "contact": "Contact Us",
-          "testimonials": "Client Testimonials",
-          "successStories": "Success Stories",
-          "businessLicense": "Business License"
+          "about": "О Zefaaf",
+          "contact": "Связаться с нами",
+          "testimonials": "Отзывы клиентов",
+          "successStories": "Истории успеха",
+          "businessLicense": "Бизнес-лицензия"
         }
       },
       "account": {
-        "title": "My Account",
+        "title": "Мой аккаунт",
         "links": {
-          "manage": "Manage Account",
-          "safetyTips": "Safety Tips",
-          "delete": "Delete Account",
-          "security": "Security & Protection",
-          "membership": "Membership Level"
+          "manage": "Управление аккаунтом",
+          "safetyTips": "Советы по безопасности",
+          "delete": "Удалить аккаунт",
+          "security": "Безопасность и защита",
+          "membership": "Уровень членства"
         }
       },
       "help": {
-        "title": "Help",
+        "title": "Помощь",
         "links": {
-          "helpCenter": "Help Center",
-          "faq": "FAQ",
-          "quickStart": "Quick Start Guide",
-          "tutorials": "Tutorials",
-          "partnersBlog": "Partners Blog"
+          "helpCenter": "Центр помощи",
+          "faq": "Часто задаваемые вопросы",
+          "quickStart": "Краткое руководство",
+          "tutorials": "Обучающие материалы",
+          "partnersBlog": "Блог партнёров"
         }
       },
       "legal": {
-        "title": "Legal",
+        "title": "Правовая информация",
         "links": {
-          "privacy": "Privacy Policy",
-          "terms": "Terms & Conditions",
-          "refund": "Payment & Refund Policy",
-          "cookies": "Cookie Policy",
-          "reportAbuse": "Report Abuse"
+          "privacy": "Политика конфиденциальности",
+          "terms": "Условия использования",
+          "refund": "Политика оплаты и возврата средств",
+          "cookies": "Политика использования файлов cookie",
+          "reportAbuse": "Сообщить о нарушении"
         }
       }
     },
     "newsletter": {
-      "title": "Newsletter",
-      "description": "Subscribe to receive the latest news by email",
-      "placeholder": "Enter your email address",
-      "subscribe": "Subscribe",
-      "privacyNote": "Your data is in safe hands. Check our privacy policy for more information."
+      "title": "Рассылка",
+      "description": "Подпишитесь, чтобы получать последние новости по электронной почте",
+      "placeholder": "Введите ваш адрес электронной почты",
+      "subscribe": "Подписаться",
+      "privacyNote": "Ваши данные в надёжных руках. Ознакомьтесь с нашей политикой конфиденциальности для получения дополнительной информации."
     },
     "bottom": {
-      "developedBy": "Developed by {brand}",
-      "copyright": "All rights reserved to Zefaaf platform © {year}"
+      "developedBy": "Разработано {brand}",
+      "copyright": "Все права защищены платформой Zefaaf © {year}"
     }
+  },
+  "services": {
+    "items": [
+      { "title": "Форум исламского брака", "description": "Мероприятия форума исламского брака, объединяющие мусульман, желающих вступить в брак, и их семьи" },
+      { "title": "Заявка на брак", "description": "Найдите идеального спутника жизни из разных стран." },
+      { "title": "Персональный VIP-поиск", "description": "Специализированная услуга, при которой консультанты Zefaaf подбирают подходящих спутников жизни" },
+      { "title": "Сопровождение нашей командой в Боснии", "description": "Сопровождаемая программа, в рамках которой команда Zefaaf сопровождает клиентов на встречи с семьями с целью серьёзного брака" },
+      { "title": "Онлайн-встреча", "description": "Начните с сессии с семейным консультантом, чтобы понять свою личность и потребности" }
+    ]
+  },
+  "globalPresence": {
+    "mapAlt": "Карта, показывающая присутствие Zefaaf по всему миру",
+    "badge": "3 миллиона пользователей Zefaaf",
+    "title": "Мы работаем в <brand>175</brand> странах",
+    "description": "Zefaaf объединяет мусульман по всему миру с надёжными службами знакомств, разделяющими их исламские ценности, безопасно и в соответствии с шариатом.",
+    "countries": {
+      "france": "Франция", "germany": "Германия", "netherlands": "Нидерланды", "turkey": "Турция", "russia": "Россия", "china": "Китай", "indonesia": "Индонезия"
+    }
+  },
+  "upcomingEvents": {
+    "description": "Узнайте о наших предстоящих мероприятиях и присоединяйтесь к нам ради содержательного опыта, вдохновляющих бесед и незабываемых моментов. Следите за нами, чтобы узнавать даты, подробности и регистрацию.",
+    "bookCta": "Забронировать билет",
+    "events": [
+      { "date": "10 января", "time": "12:00", "title": "Форум исламского брака в Нидерландах", "location": "Churchillplein 10, 2517 JW", "price": "150 евро" },
+      { "date": "25 апреля", "time": "12:00", "title": "Форум исламского брака в Боснии", "location": "Terezija, 71000", "price": "150 евро" }
+    ],
+    "ticker": ["Живите лучшей", "здоровой жизнью", "спутник жизни", "здоровым выбором", "спутник жизни"]
+  },
+  "whyChoose": {
+    "title": "Почему выбирают Zefaaf",
+    "description": "В Zefaaf мы верим, что брак — это больше, чем просто совместимость: это построение стабильной жизни на основе исламских ценностей.",
+    "features": [
+      { "title": "Безопасные видеозвонки в соответствии с шариатом", "description": "Безопасная видеофункция под религиозным наблюдением, позволяющая познакомиться с потенциальным спутником жизни, соблюдая исламские нормы." },
+      { "title": "Прямое исламское и семейное консультирование", "description": "Получите бесплатную консультацию сразу после регистрации от наших религиозных экспертов и семейных консультантов." },
+      { "title": "Ваш голос, ваша личность — пусть ваш голос говорит за вас!", "description": "Голосовое сообщение в вашем профиле: представьтесь, расскажите о своих интересах и ценностях, а также о своём видении семейной жизни." },
+      { "title": "Встреча семей — начните отношения халяльным путём", "description": "Приватная видеокомната, которая впервые собирает обе семьи вместе достойным образом, в соответствии с шариатом." },
+      { "title": "Система предварительного одобрения — не тратьте время на бесполезные переписки!", "description": "Узнайте процент совместимости с любым профилем перед началом общения." }
+    ]
   }
 }

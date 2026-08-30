@@ -1,97 +1,126 @@
 {
   "site": {
     "name": "Zefaaf",
-    "tagline": "Building your ideas into reality"
+    "tagline": "Pretvaranje vaših ideja u stvarnost"
   },
   "seo": {
-    "title": "Zefaaf — Marriage & Matchmaking Platform",
-    "description": "Zefaaf is a trusted platform for serious marriage matchmaking — VIP personal search, real success stories, and a genuine path to marriage."
+    "title": "Zefaaf — Platforma za brak i provodadžisanje",
+    "description": "Zefaaf je pouzdana platforma za ozbiljno provodadžisanje u svrhu braka — VIP lična pretraga, prave priče o uspjehu i istinski put ka braku."
   },
   "hero": {
-    "title": "Find your life partner the halal way",
-    "subtitle": "Zefaaf is a trusted platform designed to help Muslims find a life partner who shares their Islamic values, in a safe, Sharia-compliant way.",
-    "cta": "Discover more",
-    "ratingLabel": "Rating",
+    "title": "Pronađite svog životnog\npartnera na halal način",
+    "subtitle": "Zefaaf je pouzdana platforma osmišljena da pomogne muslimanima\nda pronađu životnog partnera koji dijeli njihove islamske vrijednosti, na siguran način u skladu sa šerijatom.",
+    "cta": "Saznajte više",
+    "ratingLabel": "Ocjena",
     "ratingValue": "4.8"
   },
   "stats": {
-    "happyClients": {
-      "value": "34,484k",
-      "label": "Happy clients"
-    },
-    "successStories": {
-      "value": "2768",
-      "label": "Success stories"
-    },
-    "registeredMembers": {
-      "value": "23416",
-      "label": "Registered Member"
-    }
+    "happyClients": { "value": "34,484k", "label": "Zadovoljni klijenti" },
+    "successStories": { "value": "2768", "label": "Priče o uspjehu" },
+    "registeredMembers": { "value": "23416", "label": "Registrovani članovi" }
   },
   "nav": {
-    "home": "Home",
-    "services": "Services",
-    "contact": "Contact",
-    "vipSearch": "VIP Personal Search",
-    "about": "About Us",
-    "articles": "Articles",
-    "upcomingEvents": "Upcoming Events",
-    "successStories": "Success Stories",
-    "marriageRequest": "Marriage Request"
+    "home": "Početna",
+    "services": "Usluge",
+    "contact": "Kontakt",
+    "vipSearch": "VIP Lična Pretraga",
+    "about": "O nama",
+    "articles": "Članci",
+    "upcomingEvents": "Predstojeći Događaji",
+    "successStories": "Priče o Uspjehu",
+    "marriageRequest": "Zahtjev za Brak"
   },
   "footer": {
     "columns": {
       "about": {
-        "title": "About Zefaaf",
+        "title": "O Zefaaf-u",
         "links": {
-          "about": "About Zefaaf",
-          "contact": "Contact Us",
-          "testimonials": "Client Testimonials",
-          "successStories": "Success Stories",
-          "businessLicense": "Business License"
+          "about": "O Zefaaf-u",
+          "contact": "Kontaktirajte nas",
+          "testimonials": "Utisci klijenata",
+          "successStories": "Priče o uspjehu",
+          "businessLicense": "Poslovna licenca"
         }
       },
       "account": {
-        "title": "My Account",
+        "title": "Moj Račun",
         "links": {
-          "manage": "Manage Account",
-          "safetyTips": "Safety Tips",
-          "delete": "Delete Account",
-          "security": "Security & Protection",
-          "membership": "Membership Level"
+          "manage": "Upravljajte računom",
+          "safetyTips": "Savjeti za sigurnost",
+          "delete": "Izbrišite račun",
+          "security": "Sigurnost i zaštita",
+          "membership": "Nivo članstva"
         }
       },
       "help": {
-        "title": "Help",
+        "title": "Pomoć",
         "links": {
-          "helpCenter": "Help Center",
-          "faq": "FAQ",
-          "quickStart": "Quick Start Guide",
-          "tutorials": "Tutorials",
-          "partnersBlog": "Partners Blog"
+          "helpCenter": "Centar za pomoć",
+          "faq": "Često postavljana pitanja",
+          "quickStart": "Vodič za brzi početak",
+          "tutorials": "Vodiči",
+          "partnersBlog": "Blog partnera"
         }
       },
       "legal": {
-        "title": "Legal",
+        "title": "Pravno",
         "links": {
-          "privacy": "Privacy Policy",
-          "terms": "Terms & Conditions",
-          "refund": "Payment & Refund Policy",
-          "cookies": "Cookie Policy",
-          "reportAbuse": "Report Abuse"
+          "privacy": "Politika privatnosti",
+          "terms": "Uslovi korištenja",
+          "refund": "Politika plaćanja i povrata novca",
+          "cookies": "Politika kolačića",
+          "reportAbuse": "Prijavite zloupotrebu"
         }
       }
     },
     "newsletter": {
-      "title": "Newsletter",
-      "description": "Subscribe to receive the latest news by email",
-      "placeholder": "Enter your email address",
-      "subscribe": "Subscribe",
-      "privacyNote": "Your data is in safe hands. Check our privacy policy for more information."
+      "title": "Bilten",
+      "description": "Pretplatite se da primate najnovije vijesti putem e-maila",
+      "placeholder": "Unesite vašu e-mail adresu",
+      "subscribe": "Pretplatite se",
+      "privacyNote": "Vaši podaci su na sigurnom. Pogledajte našu politiku privatnosti za više informacija."
     },
     "bottom": {
-      "developedBy": "Developed by {brand}",
-      "copyright": "All rights reserved to Zefaaf platform © {year}"
+      "developedBy": "Razvio {brand}",
+      "copyright": "Sva prava zadržana za platformu Zefaaf © {year}"
     }
+  },
+  "services": {
+    "items": [
+      { "title": "Islamski forum za brak", "description": "Događaji islamskog foruma za brak koji okupljaju muslimane koji traže brak i njihove porodice" },
+      { "title": "Prijava za brak", "description": "Pronađite svog idealnog životnog partnera iz različitih zemalja." },
+      { "title": "VIP Lična Pretraga", "description": "Posvećena usluga u kojoj Zefaaf konsultanti traže odgovarajuće životne partnere" },
+      { "title": "Pratnja našeg tima u Bosni", "description": "Vođeni program u kojem tim Zefaaf-a prati klijente na susrete s porodicama radi ozbiljnog braka" },
+      { "title": "Online sastanak", "description": "Započnite sesijom s porodičnim konsultantom kako biste razumjeli svoju ličnost i potrebe" }
+    ]
+  },
+  "globalPresence": {
+    "mapAlt": "Mapa koja prikazuje prisustvo Zefaaf-a širom svijeta",
+    "badge": "3 miliona korisnika na Zefaaf-u",
+    "title": "Poslujemo u <brand>175</brand> zemalja",
+    "description": "Zefaaf povezuje muslimane širom svijeta s pouzdanim uslugama provodadžisanja koje dijele njihove islamske vrijednosti, na siguran način u skladu sa šerijatom.",
+    "countries": {
+      "france": "Francuska", "germany": "Njemačka", "netherlands": "Nizozemska", "turkey": "Turska", "russia": "Rusija", "china": "Kina", "indonesia": "Indonezija"
+    }
+  },
+  "upcomingEvents": {
+    "description": "Otkrijte naše predstojeće događaje i pridružite nam se za smislena iskustva, inspirativne razgovore i nezaboravne trenutke. Pratite nas za datume, detalje i registraciju.",
+    "bookCta": "Rezervišite svoju kartu",
+    "events": [
+      { "date": "10. januar", "time": "12 sati", "title": "Islamski forum za brak u Nizozemskoj", "location": "Churchillplein 10, 2517 JW", "price": "150 eura" },
+      { "date": "25. april", "time": "12 sati", "title": "Islamski forum za brak u Bosni", "location": "Terezija, 71000", "price": "150 eura" }
+    ],
+    "ticker": ["Živite najbolje", "zdravo putovanje", "životni partner", "zdravi izbori", "životni partner"]
+  },
+  "whyChoose": {
+    "title": "Zašto odabrati Zefaaf",
+    "description": "U Zefaaf-u vjerujemo da je brak više od same kompatibilnosti — riječ je o izgradnji stabilnog života utemeljenog na islamskim vrijednostima.",
+    "features": [
+      { "title": "Sigurni video pozivi u skladu sa šerijatom", "description": "Sigurna video funkcija pod vjerskim nadzorom, koja vam omogućava da upoznate potencijalnog životnog partnera uz poštovanje islamskih smjernica." },
+      { "title": "Direktno islamsko i porodično savjetovanje", "description": "Dobijte besplatnu konsultaciju nakon registracije od naših vjerskih stručnjaka i porodičnih savjetnika." },
+      { "title": "Vaš glas, vaša ličnost – neka vaš glas govori umjesto vas!", "description": "Glasovna poruka na vašem profilu: predstavite se, podijelite svoje interese i vrijednosti, i govorite o svojoj viziji bračnog života." },
+      { "title": "Porodični sastanak – započnite svoju vezu na halal način", "description": "Privatna video soba koja po prvi put spaja obje porodice na ispravan način, u skladu sa šerijatom." },
+      { "title": "Sistem prethodnog odobrenja – ne gubite vrijeme na neproduktivne razgovore!", "description": "Pogledajte procenat kompatibilnosti s bilo kojim profilom prije nego što započnete razgovor." }
+    ]
   }
 }

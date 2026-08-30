@@ -21,7 +21,7 @@ const alexandria = Alexandria({
 });
 const almarai = Almarai({
   subsets: ["arabic"],
-  weight: ["400", "700"],
+  weight: ["400", "700", "800"],
   variable: "--font-almarai",
 });
 

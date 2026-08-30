@@ -80,7 +80,7 @@ export function Header() {
   const t = useTranslations();
 
   return (
-    <header className="sticky top-0 z-10 border-b border-border bg-background">
+    <header className="sticky top-0 z-50 border-b border-border bg-background">
       <div className="mx-auto flex max-w-[1800px] items-center justify-between gap-(--space-fluid-xs) px-(--space-fluid-nav-x) py-(--space-fluid-2xs)">
         <div className="flex items-center gap-(--space-fluid-sm)">
           <Logo />
@@ -108,7 +108,7 @@ export function Header() {
         <div className="flex items-center gap-(--space-fluid-xs)">
           <CompactNavMenu t={t} />
           <ThemeToggle />
-          <Button variant="cta-secondary" className="hidden rounded-[8px] font-alexandria sm:inline-flex">
+          <Button variant="default" className="hidden rounded-[8px] font-alexandria sm:inline-flex">
             {t("nav.marriageRequest")}
           </Button>
           <LanguageSwitcher />

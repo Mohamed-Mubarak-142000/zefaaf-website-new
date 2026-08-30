@@ -1,97 +1,183 @@
 {
   "site": {
     "name": "Zefaaf",
-    "tagline": "Building your ideas into reality"
+    "tagline": "Сіздің идеяларыңызды шындыққа айналдырамыз"
   },
   "seo": {
-    "title": "Zefaaf — Marriage & Matchmaking Platform",
-    "description": "Zefaaf is a trusted platform for serious marriage matchmaking — VIP personal search, real success stories, and a genuine path to marriage."
+    "title": "Zefaaf — Неке және жар табу платформасы",
+    "description": "Zefaaf — байсалды неке құруға арналған сенімді платформа: VIP жеке іздеу, нақты табыс тарихтары және некеге апаратын шынайы жол."
   },
   "hero": {
-    "title": "Find your life partner the halal way",
-    "subtitle": "Zefaaf is a trusted platform designed to help Muslims find a life partner who shares their Islamic values, in a safe, Sharia-compliant way.",
-    "cta": "Discover more",
-    "ratingLabel": "Rating",
+    "title": "Өмірлік серігіңізді\nхалал жолмен табыңыз",
+    "subtitle": "Zefaaf — мұсылмандарға исламдық құндылықтарды бөлісетін\nөмірлік серігін қауіпсіз әрі шариғатқа сай тәсілмен табуға көмектесуге арналған сенімді платформа.",
+    "cta": "Толығырақ білу",
+    "ratingLabel": "Рейтинг",
     "ratingValue": "4.8"
   },
   "stats": {
     "happyClients": {
       "value": "34,484k",
-      "label": "Happy clients"
+      "label": "Риза болған клиенттер"
     },
     "successStories": {
       "value": "2768",
-      "label": "Success stories"
+      "label": "Табыс тарихтары"
     },
     "registeredMembers": {
       "value": "23416",
-      "label": "Registered Member"
+      "label": "Тіркелген мүшелер"
     }
   },
   "nav": {
-    "home": "Home",
-    "services": "Services",
-    "contact": "Contact",
-    "vipSearch": "VIP Personal Search",
-    "about": "About Us",
-    "articles": "Articles",
-    "upcomingEvents": "Upcoming Events",
-    "successStories": "Success Stories",
-    "marriageRequest": "Marriage Request"
+    "home": "Басты бет",
+    "services": "Қызметтер",
+    "contact": "Байланыс",
+    "vipSearch": "VIP жеке іздеу",
+    "about": "Біз туралы",
+    "articles": "Мақалалар",
+    "upcomingEvents": "Алдағы іс-шаралар",
+    "successStories": "Табыс тарихтары",
+    "marriageRequest": "Некеге тұру өтініші"
   },
   "footer": {
     "columns": {
       "about": {
-        "title": "About Zefaaf",
+        "title": "Zefaaf туралы",
         "links": {
-          "about": "About Zefaaf",
-          "contact": "Contact Us",
-          "testimonials": "Client Testimonials",
-          "successStories": "Success Stories",
-          "businessLicense": "Business License"
+          "about": "Zefaaf туралы",
+          "contact": "Бізбен байланысу",
+          "testimonials": "Клиенттердің пікірлері",
+          "successStories": "Табыс тарихтары",
+          "businessLicense": "Бизнес лицензиясы"
         }
       },
       "account": {
-        "title": "My Account",
+        "title": "Менің тіркелгім",
         "links": {
-          "manage": "Manage Account",
-          "safetyTips": "Safety Tips",
-          "delete": "Delete Account",
-          "security": "Security & Protection",
-          "membership": "Membership Level"
+          "manage": "Тіркелгіні басқару",
+          "safetyTips": "Қауіпсіздік кеңестері",
+          "delete": "Тіркелгіні жою",
+          "security": "Қауіпсіздік және қорғау",
+          "membership": "Мүшелік деңгейі"
         }
       },
       "help": {
-        "title": "Help",
+        "title": "Көмек",
         "links": {
-          "helpCenter": "Help Center",
-          "faq": "FAQ",
-          "quickStart": "Quick Start Guide",
-          "tutorials": "Tutorials",
-          "partnersBlog": "Partners Blog"
+          "helpCenter": "Көмек орталығы",
+          "faq": "Жиі қойылатын сұрақтар",
+          "quickStart": "Жылдам бастау нұсқаулығы",
+          "tutorials": "Оқыту материалдары",
+          "partnersBlog": "Серіктестер блогы"
         }
       },
       "legal": {
-        "title": "Legal",
+        "title": "Заңды ақпарат",
         "links": {
-          "privacy": "Privacy Policy",
-          "terms": "Terms & Conditions",
-          "refund": "Payment & Refund Policy",
-          "cookies": "Cookie Policy",
-          "reportAbuse": "Report Abuse"
+          "privacy": "Құпиялылық саясаты",
+          "terms": "Ережелер мен шарттар",
+          "refund": "Төлем және қаражатты қайтару саясаты",
+          "cookies": "Cookie саясаты",
+          "reportAbuse": "Теріс пайдалану туралы хабарлау"
         }
       }
     },
     "newsletter": {
-      "title": "Newsletter",
-      "description": "Subscribe to receive the latest news by email",
-      "placeholder": "Enter your email address",
-      "subscribe": "Subscribe",
-      "privacyNote": "Your data is in safe hands. Check our privacy policy for more information."
+      "title": "Жаңалықтар парағы",
+      "description": "Соңғы жаңалықтарды электрондық поштаңызға алу үшін жазылыңыз",
+      "placeholder": "Электрондық поштаңызды енгізіңіз",
+      "subscribe": "Жазылу",
+      "privacyNote": "Сіздің деректеріңіз сенімді қолда. Қосымша ақпарат алу үшін құпиялылық саясатымызды қараңыз."
     },
     "bottom": {
-      "developedBy": "Developed by {brand}",
-      "copyright": "All rights reserved to Zefaaf platform © {year}"
+      "developedBy": "{brand} әзірлеген",
+      "copyright": "Барлық құқықтар Zefaaf платформасына тиесілі © {year}"
     }
+  },
+  "services": {
+    "items": [
+      {
+        "title": "Исламдық неке форумы",
+        "description": "Некеге тұруды қалайтын мұсылмандар мен олардың отбасыларын біріктіретін исламдық неке форумының іс-шаралары"
+      },
+      {
+        "title": "Некеге тұру өтінімі",
+        "description": "Түрлі елдерден өзіңіздің идеалды өмірлік серігіңізді табыңыз."
+      },
+      {
+        "title": "VIP жеке іздеу",
+        "description": "Zefaaf кеңесшілері лайықты өмірлік серігін іздейтін арнайы қызмет"
+      },
+      {
+        "title": "Босниядағы командамыздың сүйемелдеуі",
+        "description": "Zefaaf командасы клиенттерді байсалды неке үшін отбасылармен кездестіруге сүйемелдейтін бағдарлама"
+      },
+      {
+        "title": "Онлайн кездесу",
+        "description": "Жеке басыңыз бен қажеттіліктеріңізді түсіну үшін отбасылық кеңесшімен сессиядан бастаңыз"
+      }
+    ]
+  },
+  "globalPresence": {
+    "mapAlt": "Zefaaf-тың бүкіл әлемдегі қамтуын көрсететін карта",
+    "badge": "Zefaaf-та 3 миллион пайдаланушы",
+    "title": "Біз <brand>175</brand> елде жұмыс істейміз",
+    "description": "Zefaaf исламдық құндылықтарды бөлісетін бүкіл әлемдегі мұсылмандарды қауіпсіз әрі шариғатқа сай сенімді жар табу қызметтерімен байланыстырады.",
+    "countries": {
+      "france": "Франция",
+      "germany": "Германия",
+      "netherlands": "Нидерланды",
+      "turkey": "Түркия",
+      "russia": "Ресей",
+      "china": "Қытай",
+      "indonesia": "Индонезия"
+    }
+  },
+  "upcomingEvents": {
+    "description": "Алдағы іс-шараларымызбен танысып, мазмұнды тәжірибелерге, шабыттандыратын әңгімелерге және естен кетпес сәттерге ортақ болыңыз. Күндер, толық ақпарат және тіркелу үшін бізді бақылап отырыңыз.",
+    "bookCta": "Билетіңізді брондаңыз",
+    "events": [
+      {
+        "date": "10 қаңтар",
+        "time": "түскі 12:00",
+        "title": "Нидерландыдағы исламдық неке форумы",
+        "location": "Churchillplein 10, 2517 JW",
+        "price": "150 еуро"
+      },
+      {
+        "date": "25 сәуір",
+        "time": "түскі 12:00",
+        "title": "Босниядағы исламдық неке форумы",
+        "location": "Terezija, 71000",
+        "price": "150 еуро"
+      }
+    ],
+    "ticker": ["Ең жақсысын өмір сүр", "салауатты жол", "өмірлік серік", "салауатты таңдаулар", "өмірлік серік"]
+  },
+  "whyChoose": {
+    "title": "Неге Zefaaf-ты таңдау керек",
+    "description": "Zefaaf-та біз неке тек үйлесімділіктен көп нәрсе екеніне сенеміз — бұл исламдық құндылықтарға негізделген тұрақты өмір құру туралы.",
+    "features": [
+      {
+        "title": "Қауіпсіз, шариғатқа сай бейне қоңыраулар",
+        "description": "Діни бақылаудағы қауіпсіз бейне мүмкіндігі сізге исламдық нормаларды сақтай отырып, әлеуетті өмірлік серігіңізбен кездесуге мүмкіндік береді."
+      },
+      {
+        "title": "Тікелей исламдық және отбасылық кеңес беру",
+        "description": "Тіркелу кезінде діни сарапшыларымыз бен отбасылық кеңесшілерімізден тегін кеңес алыңыз."
+      },
+      {
+        "title": "Сіздің дауысыңыз, сіздің болмысыңыз — дауысыңыз өзіңіз үшін сөйлесін!",
+        "description": "Профиліңіздегі дауыстық хабарлама: өзіңізді таныстырыңыз, қызығушылықтарыңыз бен құндылықтарыңызбен бөлісіңіз және неке өміріне деген көзқарасыңыз туралы айтыңыз."
+      },
+      {
+        "title": "Отбасылық кездесу — қарым-қатынасыңызды халал жолмен бастаңыз",
+        "description": "Екі отбасын алғаш рет лайықты, шариғатқа сай түрде біріктіретін жеке бейне бөлме."
+      },
+      {
+        "title": "Алдын ала мақұлдау жүйесі — нәтижесіз әңгімелерге уақыт жоғалтпаңыз!",
+        "description": "Әңгімені бастамас бұрын кез келген профильмен үйлесімділік пайызыңызды көріңіз."
+      }
+    ]
   }
 }

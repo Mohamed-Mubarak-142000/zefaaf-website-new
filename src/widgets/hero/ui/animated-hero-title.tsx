@@ -9,7 +9,7 @@ type AnimatedHeroTitleProps = {
   className?: string;
 };
 
-const WORD_DELAY = 0.22;
+const LETTER_DELAY = 0.14;
 
 export function AnimatedHeroTitle({ children, className }: AnimatedHeroTitleProps) {
   const rootRef = useRef<HTMLHeadingElement>(null);
@@ -48,16 +48,48 @@ export function AnimatedHeroTitle({ children, className }: AnimatedHeroTitleProp
     const words = rootRef.current.querySelectorAll<HTMLElement>("[data-hero-word]");
     const context = gsap.context(() => {
       const timeline = gsap.timeline({ delay: 0.25 });
+      const isRtl = getComputedStyle(rootRef.current!).direction === "rtl";
+      let revealAt = 0;
 
-      gsap.set(words, { autoAlpha: 0 });
-      words.forEach((word, index) => {
-        const revealAt = index * WORD_DELAY;
+      gsap.set(words, {
+        clipPath: isRtl ? "inset(0 0 0 100%)" : "inset(0 100% 0 0)",
+      });
+      words.forEach((word) => {
+        const textNode = word.firstChild;
+        const letters = Array.from(word.textContent ?? "");
+        const wordWidth = word.getBoundingClientRect().width;
+        let textOffset = 0;
 
-        timeline.call(playTick, [], revealAt).to(
-          word,
-          { autoAlpha: 1, duration: 0.01, ease: "none" },
-          revealAt,
-        );
+        if (!textNode || wordWidth === 0) return;
+
+        letters.forEach((letter, index) => {
+          const range = document.createRange();
+          textOffset += letter.length;
+          range.setStart(textNode, 0);
+          range.setEnd(textNode, textOffset);
+
+          const revealedPercent = Math.min(
+            100,
+            (range.getBoundingClientRect().width / wordWidth) * 100,
+          );
+          const hiddenPercent = 100 - revealedPercent;
+          const clipPath = isRtl
+            ? `inset(0 0 0 ${hiddenPercent}%)`
+            : `inset(0 ${hiddenPercent}% 0 0)`;
+          const letterRevealAt = revealAt + index * LETTER_DELAY;
+
+          timeline.call(playTick, [], letterRevealAt).set(
+            word,
+            { clipPath },
+            letterRevealAt,
+          );
+        });
+
+        revealAt += letters.length * LETTER_DELAY;
+
+        if (letters.length > 0) {
+          timeline.set(word, { clipPath: "inset(0 0 0 0)" }, revealAt);
+        }
       });
 
     }, rootRef);
