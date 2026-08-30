@@ -1,97 +1,183 @@
 {
   "site": {
     "name": "Zefaaf",
-    "tagline": "Building your ideas into reality"
+    "tagline": "G'oyalaringizni haqiqatga aylantiramiz"
   },
   "seo": {
-    "title": "Zefaaf — Marriage & Matchmaking Platform",
-    "description": "Zefaaf is a trusted platform for serious marriage matchmaking — VIP personal search, real success stories, and a genuine path to marriage."
+    "title": "Zefaaf — Nikoh va juftlik topish platformasi",
+    "description": "Zefaaf — jiddiy nikoh maqsadida uchrashish uchun ishonchli platforma: VIP shaxsiy qidiruv, haqiqiy muvaffaqiyat hikoyalari va nikohga olib boradigan haqiqiy yo'l."
   },
   "hero": {
-    "title": "Find your life partner the halal way",
-    "subtitle": "Zefaaf is a trusted platform designed to help Muslims find a life partner who shares their Islamic values, in a safe, Sharia-compliant way.",
-    "cta": "Discover more",
-    "ratingLabel": "Rating",
+    "title": "Hayotiy sherigingizni\nhalol yo'l bilan toping",
+    "subtitle": "Zefaaf — musulmonlarga\no'zlarining islomiy qadriyatlarini baham ko'radigan hayotiy sherik topishda yordam berish uchun yaratilgan, xavfsiz va shariatga mos ishonchli platforma.",
+    "cta": "Batafsil bilib oling",
+    "ratingLabel": "Reyting",
     "ratingValue": "4.8"
   },
   "stats": {
     "happyClients": {
       "value": "34,484k",
-      "label": "Happy clients"
+      "label": "Mamnun mijozlar"
     },
     "successStories": {
       "value": "2768",
-      "label": "Success stories"
+      "label": "Muvaffaqiyat hikoyalari"
     },
     "registeredMembers": {
       "value": "23416",
-      "label": "Registered Member"
+      "label": "Ro'yxatdan o'tgan a'zo"
     }
   },
   "nav": {
-    "home": "Home",
-    "services": "Services",
-    "contact": "Contact",
-    "vipSearch": "VIP Personal Search",
-    "about": "About Us",
-    "articles": "Articles",
-    "upcomingEvents": "Upcoming Events",
-    "successStories": "Success Stories",
-    "marriageRequest": "Marriage Request"
+    "home": "Bosh sahifa",
+    "services": "Xizmatlar",
+    "contact": "Aloqa",
+    "vipSearch": "VIP shaxsiy qidiruv",
+    "about": "Biz haqimizda",
+    "articles": "Maqolalar",
+    "upcomingEvents": "Bo'lajak tadbirlar",
+    "successStories": "Muvaffaqiyat hikoyalari",
+    "marriageRequest": "Nikoh so'rovi"
   },
   "footer": {
     "columns": {
       "about": {
-        "title": "About Zefaaf",
+        "title": "Zefaaf haqida",
         "links": {
-          "about": "About Zefaaf",
-          "contact": "Contact Us",
-          "testimonials": "Client Testimonials",
-          "successStories": "Success Stories",
-          "businessLicense": "Business License"
+          "about": "Zefaaf haqida",
+          "contact": "Biz bilan bog'laning",
+          "testimonials": "Mijozlar fikri",
+          "successStories": "Muvaffaqiyat hikoyalari",
+          "businessLicense": "Biznes litsenziyasi"
         }
       },
       "account": {
-        "title": "My Account",
+        "title": "Mening hisobim",
         "links": {
-          "manage": "Manage Account",
-          "safetyTips": "Safety Tips",
-          "delete": "Delete Account",
-          "security": "Security & Protection",
-          "membership": "Membership Level"
+          "manage": "Hisobni boshqarish",
+          "safetyTips": "Xavfsizlik bo'yicha maslahatlar",
+          "delete": "Hisobni o'chirish",
+          "security": "Xavfsizlik va himoya",
+          "membership": "A'zolik darajasi"
         }
       },
       "help": {
-        "title": "Help",
+        "title": "Yordam",
         "links": {
-          "helpCenter": "Help Center",
-          "faq": "FAQ",
-          "quickStart": "Quick Start Guide",
-          "tutorials": "Tutorials",
-          "partnersBlog": "Partners Blog"
+          "helpCenter": "Yordam markazi",
+          "faq": "Ko'p so'raladigan savollar",
+          "quickStart": "Tezkor boshlash qo'llanmasi",
+          "tutorials": "Qo'llanmalar",
+          "partnersBlog": "Hamkorlar blogi"
         }
       },
       "legal": {
-        "title": "Legal",
+        "title": "Huquqiy",
         "links": {
-          "privacy": "Privacy Policy",
-          "terms": "Terms & Conditions",
-          "refund": "Payment & Refund Policy",
-          "cookies": "Cookie Policy",
-          "reportAbuse": "Report Abuse"
+          "privacy": "Maxfiylik siyosati",
+          "terms": "Foydalanish shartlari",
+          "refund": "To'lov va pulni qaytarish siyosati",
+          "cookies": "Cookie siyosati",
+          "reportAbuse": "Suiiste'mol haqida xabar berish"
         }
       }
     },
     "newsletter": {
-      "title": "Newsletter",
-      "description": "Subscribe to receive the latest news by email",
-      "placeholder": "Enter your email address",
-      "subscribe": "Subscribe",
-      "privacyNote": "Your data is in safe hands. Check our privacy policy for more information."
+      "title": "Yangiliklar byulleteni",
+      "description": "Eng so'nggi yangiliklarni elektron pochta orqali olish uchun obuna bo'ling",
+      "placeholder": "Elektron pochta manzilingizni kiriting",
+      "subscribe": "Obuna bo'lish",
+      "privacyNote": "Sizning ma'lumotlaringiz ishonchli qo'llarda. Batafsil ma'lumot uchun maxfiylik siyosatimizni ko'rib chiqing."
     },
     "bottom": {
-      "developedBy": "Developed by {brand}",
-      "copyright": "All rights reserved to Zefaaf platform © {year}"
+      "developedBy": "{brand} tomonidan ishlab chiqilgan",
+      "copyright": "Barcha huquqlar Zefaaf platformasiga tegishli © {year}"
     }
+  },
+  "services": {
+    "items": [
+      {
+        "title": "Islomiy nikoh forumi",
+        "description": "Nikohga intilayotgan musulmonlar va ularning oilalarini bir araya keltiruvchi islomiy nikoh forumi tadbirlari"
+      },
+      {
+        "title": "Nikoh arizasi",
+        "description": "Turli mamlakatlardan o'zingizga mos hayotiy sherigingizni toping."
+      },
+      {
+        "title": "VIP shaxsiy qidiruv",
+        "description": "Zefaaf maslahatchilari mos hayotiy sheriklarni qidiradigan maxsus xizmat"
+      },
+      {
+        "title": "Bosniyada jamoamiz bilan birga",
+        "description": "Zefaaf jamoasi mijozlarni jiddiy nikoh uchun oilalar bilan uchrashtiradigan yo'naltiruvchi dastur"
+      },
+      {
+        "title": "Onlayn uchrashuv",
+        "description": "Shaxsiyatingiz va ehtiyojlaringizni tushunish uchun oila maslahatchisi bilan suhbatdan boshlang"
+      }
+    ]
+  },
+  "globalPresence": {
+    "mapAlt": "Zefaafning dunyo bo'ylab qamrovini ko'rsatuvchi xarita",
+    "badge": "Zefaafda 3 million foydalanuvchi",
+    "title": "Biz <brand>175</brand> davlatda faoliyat yuritamiz",
+    "description": "Zefaaf dunyo bo'ylab musulmonlarni o'zlarining islomiy qadriyatlarini baham ko'radigan ishonchli juftlik topish xizmatlari bilan xavfsiz va shariatga mos tarzda bog'laydi.",
+    "countries": {
+      "france": "Fransiya",
+      "germany": "Germaniya",
+      "netherlands": "Niderlandiya",
+      "turkey": "Turkiya",
+      "russia": "Rossiya",
+      "china": "Xitoy",
+      "indonesia": "Indoneziya"
+    }
+  },
+  "upcomingEvents": {
+    "description": "Bo'lajak tadbirlarimizni kashf eting va mazmunli tajribalar, ilhomlantiruvchi suhbatlar hamda unutilmas lahzalar uchun bizga qo'shiling. Sanalar, tafsilotlar va ro'yxatdan o'tish haqida ma'lumot olish uchun bizni kuzatib boring.",
+    "bookCta": "Chiptangizni band qiling",
+    "events": [
+      {
+        "date": "10-yanvar",
+        "time": "Kunduzi soat 12:00",
+        "title": "Niderlandiyada islomiy nikoh forumi",
+        "location": "Churchillplein 10, 2517 JW",
+        "price": "150 Yevro"
+      },
+      {
+        "date": "25-aprel",
+        "time": "Kunduzi soat 12:00",
+        "title": "Bosniyada islomiy nikoh forumi",
+        "location": "Terezija, 71000",
+        "price": "150 Yevro"
+      }
+    ],
+    "ticker": ["Eng yaxshisini yashang", "sog'lom sayohat", "hayotiy sherik", "sog'lom tanlovlar", "hayotiy sherik"]
+  },
+  "whyChoose": {
+    "title": "Nega Zefaafni tanlash kerak",
+    "description": "Zefaafda biz nikoh shunchaki moslikdan iborat emas, balki islomiy qadriyatlarga asoslangan barqaror hayot qurish demak, deb ishonamiz.",
+    "features": [
+      {
+        "title": "Xavfsiz, shariatga mos video qo'ng'iroqlar",
+        "description": "Diniy nazorat ostida xavfsiz video imkoniyat, sizga islomiy qoidalarga rioya qilgan holda potentsial hayotiy sherigingiz bilan uchrashish imkonini beradi."
+      },
+      {
+        "title": "To'g'ridan-to'g'ri islomiy va oilaviy maslahat",
+        "description": "Ro'yxatdan o'tganingizdan so'ng diniy mutaxassislarimiz va oila maslahatchilarimizdan bepul maslahat oling."
+      },
+      {
+        "title": "Ovozingiz, shaxsiyatingiz – ovozingiz o'zingiz uchun gapirsin!",
+        "description": "Profilingizdagi ovozli xabar: o'zingizni tanishtiring, qiziqishlaringiz va qadriyatlaringizni baham ko'ring hamda oilaviy hayot haqidagi tasavvuringiz haqida gapiring."
+      },
+      {
+        "title": "Oilaviy uchrashuv – munosabatlaringizni halol yo'l bilan boshlang",
+        "description": "Ikki oilani birinchi marta to'g'ri, shariatga mos tarzda birlashtiruvchi shaxsiy video xona."
+      },
+      {
+        "title": "Oldindan tasdiqlash tizimi – befoyda suhbatlarga vaqt sarflamang!",
+        "description": "Suhbatni boshlashdan oldin istalgan profil bilan mosligingiz foizini ko'ring."
+      }
+    ]
   }
 }

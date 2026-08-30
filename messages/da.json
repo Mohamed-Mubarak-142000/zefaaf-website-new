@@ -1,97 +1,126 @@
 {
   "site": {
     "name": "Zefaaf",
-    "tagline": "Building your ideas into reality"
+    "tagline": "Vi bygger dine idéer til virkelighed"
   },
   "seo": {
-    "title": "Zefaaf — Marriage & Matchmaking Platform",
-    "description": "Zefaaf is a trusted platform for serious marriage matchmaking — VIP personal search, real success stories, and a genuine path to marriage."
+    "title": "Zefaaf — Platform for ægteskab og matchmaking",
+    "description": "Zefaaf er en pålidelig platform for seriøs ægteskabsformidling — VIP personlig søgning, ægte succeshistorier og en ægte vej til ægteskab."
   },
   "hero": {
-    "title": "Find your life partner the halal way",
-    "subtitle": "Zefaaf is a trusted platform designed to help Muslims find a life partner who shares their Islamic values, in a safe, Sharia-compliant way.",
-    "cta": "Discover more",
-    "ratingLabel": "Rating",
+    "title": "Find din livspartner\npå en halal måde",
+    "subtitle": "Zefaaf er en pålidelig platform designet til at hjælpe muslimer\nmed at finde en livspartner, der deler deres islamiske værdier, på en tryg og sharia-forenelig måde.",
+    "cta": "Opdag mere",
+    "ratingLabel": "Bedømmelse",
     "ratingValue": "4.8"
   },
   "stats": {
-    "happyClients": {
-      "value": "34,484k",
-      "label": "Happy clients"
-    },
-    "successStories": {
-      "value": "2768",
-      "label": "Success stories"
-    },
-    "registeredMembers": {
-      "value": "23416",
-      "label": "Registered Member"
-    }
+    "happyClients": { "value": "34,484k", "label": "Glade kunder" },
+    "successStories": { "value": "2768", "label": "Succeshistorier" },
+    "registeredMembers": { "value": "23416", "label": "Registrerede medlemmer" }
   },
   "nav": {
-    "home": "Home",
-    "services": "Services",
-    "contact": "Contact",
-    "vipSearch": "VIP Personal Search",
-    "about": "About Us",
-    "articles": "Articles",
-    "upcomingEvents": "Upcoming Events",
-    "successStories": "Success Stories",
-    "marriageRequest": "Marriage Request"
+    "home": "Hjem",
+    "services": "Tjenester",
+    "contact": "Kontakt",
+    "vipSearch": "VIP Personlig Søgning",
+    "about": "Om os",
+    "articles": "Artikler",
+    "upcomingEvents": "Kommende Arrangementer",
+    "successStories": "Succeshistorier",
+    "marriageRequest": "Ægteskabsanmodning"
   },
   "footer": {
     "columns": {
       "about": {
-        "title": "About Zefaaf",
+        "title": "Om Zefaaf",
         "links": {
-          "about": "About Zefaaf",
-          "contact": "Contact Us",
-          "testimonials": "Client Testimonials",
-          "successStories": "Success Stories",
-          "businessLicense": "Business License"
+          "about": "Om Zefaaf",
+          "contact": "Kontakt os",
+          "testimonials": "Kundeudtalelser",
+          "successStories": "Succeshistorier",
+          "businessLicense": "Erhvervstilladelse"
         }
       },
       "account": {
-        "title": "My Account",
+        "title": "Min Konto",
         "links": {
-          "manage": "Manage Account",
-          "safetyTips": "Safety Tips",
-          "delete": "Delete Account",
-          "security": "Security & Protection",
-          "membership": "Membership Level"
+          "manage": "Administrer konto",
+          "safetyTips": "Sikkerhedstips",
+          "delete": "Slet konto",
+          "security": "Sikkerhed og Beskyttelse",
+          "membership": "Medlemsniveau"
         }
       },
       "help": {
-        "title": "Help",
+        "title": "Hjælp",
         "links": {
-          "helpCenter": "Help Center",
-          "faq": "FAQ",
-          "quickStart": "Quick Start Guide",
-          "tutorials": "Tutorials",
-          "partnersBlog": "Partners Blog"
+          "helpCenter": "Hjælpecenter",
+          "faq": "Ofte stillede spørgsmål",
+          "quickStart": "Hurtig Startguide",
+          "tutorials": "Vejledninger",
+          "partnersBlog": "Partnerblog"
         }
       },
       "legal": {
-        "title": "Legal",
+        "title": "Juridisk",
         "links": {
-          "privacy": "Privacy Policy",
-          "terms": "Terms & Conditions",
-          "refund": "Payment & Refund Policy",
-          "cookies": "Cookie Policy",
-          "reportAbuse": "Report Abuse"
+          "privacy": "Privatlivspolitik",
+          "terms": "Vilkår og Betingelser",
+          "refund": "Betalings- og Refusionspolitik",
+          "cookies": "Cookiepolitik",
+          "reportAbuse": "Anmeld misbrug"
         }
       }
     },
     "newsletter": {
-      "title": "Newsletter",
-      "description": "Subscribe to receive the latest news by email",
-      "placeholder": "Enter your email address",
-      "subscribe": "Subscribe",
-      "privacyNote": "Your data is in safe hands. Check our privacy policy for more information."
+      "title": "Nyhedsbrev",
+      "description": "Abonnér for at modtage de seneste nyheder via e-mail",
+      "placeholder": "Indtast din e-mailadresse",
+      "subscribe": "Abonnér",
+      "privacyNote": "Dine data er i trygge hænder. Se vores privatlivspolitik for mere information."
     },
     "bottom": {
-      "developedBy": "Developed by {brand}",
-      "copyright": "All rights reserved to Zefaaf platform © {year}"
+      "developedBy": "Udviklet af {brand}",
+      "copyright": "Alle rettigheder forbeholdes Zefaaf-platformen © {year}"
     }
+  },
+  "services": {
+    "items": [
+      { "title": "Islamisk Ægteskabsforum", "description": "Islamiske ægteskabsforum-arrangementer, der samler muslimer, som søger ægteskab, og deres familier" },
+      { "title": "Ægteskabsansøgning", "description": "Find din ideelle livspartner fra forskellige lande." },
+      { "title": "VIP Personlig Søgning", "description": "En dedikeret service, hvor Zefaafs konsulenter søger efter passende livspartnere" },
+      { "title": "Vores team følger med i Bosnien", "description": "Et guidet forløb, hvor Zefaafs team ledsager kunder til møder med familier med henblik på seriøst ægteskab" },
+      { "title": "Onlinemøde", "description": "Start med en session hos en familiekonsulent for at forstå din personlighed og dine behov" }
+    ]
+  },
+  "globalPresence": {
+    "mapAlt": "Kort, der viser Zefaafs tilstedeværelse verden over",
+    "badge": "3 millioner brugere på Zefaaf",
+    "title": "Vi er til stede i <brand>175</brand> lande",
+    "description": "Zefaaf forbinder muslimer verden over med pålidelige matchmaking-tjenester, der deler deres islamiske værdier, på en tryg og sharia-forenelig måde.",
+    "countries": {
+      "france": "Frankrig", "germany": "Tyskland", "netherlands": "Nederlandene", "turkey": "Tyrkiet", "russia": "Rusland", "china": "Kina", "indonesia": "Indonesien"
+    }
+  },
+  "upcomingEvents": {
+    "description": "Opdag vores kommende arrangementer, og bliv en del af meningsfulde oplevelser, inspirerende samtaler og mindeværdige øjeblikke. Følg os for datoer, detaljer og tilmelding.",
+    "bookCta": "Book din billet",
+    "events": [
+      { "date": "10. januar", "time": "kl. 12", "title": "Islamisk ægteskabsforum i Nederlandene", "location": "Churchillplein 10, 2517 JW", "price": "150 euro" },
+      { "date": "25. april", "time": "kl. 12", "title": "Islamisk ægteskabsforum i Bosnien", "location": "Terezija, 71000", "price": "150 euro" }
+    ],
+    "ticker": ["Lev dit bedste", "sunde rejse", "livspartner", "sunde valg", "livspartner"]
+  },
+  "whyChoose": {
+    "title": "Hvorfor vælge Zefaaf",
+    "description": "Hos Zefaaf tror vi på, at ægteskab er mere end blot kompatibilitet — det handler om at bygge et stabilt liv baseret på islamiske værdier.",
+    "features": [
+      { "title": "Sikre, sharia-forenelige videoopkald", "description": "En sikker videofunktion under religiøst tilsyn, der giver dig mulighed for at møde din potentielle livspartner, samtidig med at de islamiske retningslinjer overholdes." },
+      { "title": "Direkte islamisk og familierådgivning", "description": "Få en gratis konsultation ved tilmelding fra vores religiøse eksperter og familierådgivere." },
+      { "title": "Din stemme, din personlighed – lad din stemme tale for dig!", "description": "En talebesked på din profil: præsentér dig selv, del dine interesser og værdier, og fortæl om din vision for ægteskabet." },
+      { "title": "Familiemøde – start jeres forhold på en halal måde", "description": "Et privat videorum, der for første gang samler begge familier på en ordentlig, sharia-forenelig måde." },
+      { "title": "System til forhåndsgodkendelse – spild ikke tiden på uproduktive samtaler!", "description": "Se din kompatibilitetsprocent med enhver profil, før du starter en samtale." }
+    ]
   }
 }

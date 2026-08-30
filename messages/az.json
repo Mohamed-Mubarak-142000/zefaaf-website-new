@@ -1,97 +1,126 @@
 {
   "site": {
     "name": "Zefaaf",
-    "tagline": "Building your ideas into reality"
+    "tagline": "Fikirlərinizi reallığa çevirmək"
   },
   "seo": {
-    "title": "Zefaaf — Marriage & Matchmaking Platform",
-    "description": "Zefaaf is a trusted platform for serious marriage matchmaking — VIP personal search, real success stories, and a genuine path to marriage."
+    "title": "Zefaaf — Nikah və Uyğunlaşdırma Platforması",
+    "description": "Zefaaf ciddi nikah məqsədli uyğunlaşdırma üçün etibarlı platformadır — VIP şəxsi axtarış, real uğur hekayələri və nikaha aparan həqiqi yol."
   },
   "hero": {
-    "title": "Find your life partner the halal way",
-    "subtitle": "Zefaaf is a trusted platform designed to help Muslims find a life partner who shares their Islamic values, in a safe, Sharia-compliant way.",
-    "cta": "Discover more",
-    "ratingLabel": "Rating",
+    "title": "Həyat yoldaşınızı\nhalal yolla tapın",
+    "subtitle": "Zefaaf müsəlmanlara İslami dəyərlərini bölüşən həyat yoldaşı tapmaqda kömək etmək üçün yaradılmış, təhlükəsiz və Şəriətə uyğun etibarlı platformadır.",
+    "cta": "Daha çox öyrənin",
+    "ratingLabel": "Reytinq",
     "ratingValue": "4.8"
   },
   "stats": {
-    "happyClients": {
-      "value": "34,484k",
-      "label": "Happy clients"
-    },
-    "successStories": {
-      "value": "2768",
-      "label": "Success stories"
-    },
-    "registeredMembers": {
-      "value": "23416",
-      "label": "Registered Member"
-    }
+    "happyClients": { "value": "34,484k", "label": "Xoşbəxt müştərilər" },
+    "successStories": { "value": "2768", "label": "Uğur hekayələri" },
+    "registeredMembers": { "value": "23416", "label": "Qeydiyyatdan keçmiş üzvlər" }
   },
   "nav": {
-    "home": "Home",
-    "services": "Services",
-    "contact": "Contact",
-    "vipSearch": "VIP Personal Search",
-    "about": "About Us",
-    "articles": "Articles",
-    "upcomingEvents": "Upcoming Events",
-    "successStories": "Success Stories",
-    "marriageRequest": "Marriage Request"
+    "home": "Ana səhifə",
+    "services": "Xidmətlər",
+    "contact": "Əlaqə",
+    "vipSearch": "VIP Şəxsi Axtarış",
+    "about": "Haqqımızda",
+    "articles": "Məqalələr",
+    "upcomingEvents": "Növbəti Tədbirlər",
+    "successStories": "Uğur Hekayələri",
+    "marriageRequest": "Nikah Sorğusu"
   },
   "footer": {
     "columns": {
       "about": {
-        "title": "About Zefaaf",
+        "title": "Zefaaf haqqında",
         "links": {
-          "about": "About Zefaaf",
-          "contact": "Contact Us",
-          "testimonials": "Client Testimonials",
-          "successStories": "Success Stories",
-          "businessLicense": "Business License"
+          "about": "Zefaaf haqqında",
+          "contact": "Bizimlə əlaqə",
+          "testimonials": "Müştəri rəyləri",
+          "successStories": "Uğur hekayələri",
+          "businessLicense": "Biznes lisenziyası"
         }
       },
       "account": {
-        "title": "My Account",
+        "title": "Hesabım",
         "links": {
-          "manage": "Manage Account",
-          "safetyTips": "Safety Tips",
-          "delete": "Delete Account",
-          "security": "Security & Protection",
-          "membership": "Membership Level"
+          "manage": "Hesabı idarə et",
+          "safetyTips": "Təhlükəsizlik məsləhətləri",
+          "delete": "Hesabı sil",
+          "security": "Təhlükəsizlik və Mühafizə",
+          "membership": "Üzvlük Səviyyəsi"
         }
       },
       "help": {
-        "title": "Help",
+        "title": "Kömək",
         "links": {
-          "helpCenter": "Help Center",
-          "faq": "FAQ",
-          "quickStart": "Quick Start Guide",
-          "tutorials": "Tutorials",
-          "partnersBlog": "Partners Blog"
+          "helpCenter": "Kömək Mərkəzi",
+          "faq": "Tez-tez verilən suallar",
+          "quickStart": "Sürətli Başlanğıc Bələdçisi",
+          "tutorials": "Dərsliklər",
+          "partnersBlog": "Tərəfdaşlar Bloqu"
         }
       },
       "legal": {
-        "title": "Legal",
+        "title": "Hüquqi",
         "links": {
-          "privacy": "Privacy Policy",
-          "terms": "Terms & Conditions",
-          "refund": "Payment & Refund Policy",
-          "cookies": "Cookie Policy",
-          "reportAbuse": "Report Abuse"
+          "privacy": "Məxfilik Siyasəti",
+          "terms": "Şərtlər və Qaydalar",
+          "refund": "Ödəniş və Geri Qaytarma Siyasəti",
+          "cookies": "Kuki Siyasəti",
+          "reportAbuse": "Sui-istifadə haqqında bildir"
         }
       }
     },
     "newsletter": {
-      "title": "Newsletter",
-      "description": "Subscribe to receive the latest news by email",
-      "placeholder": "Enter your email address",
-      "subscribe": "Subscribe",
-      "privacyNote": "Your data is in safe hands. Check our privacy policy for more information."
+      "title": "Bülleten",
+      "description": "Son xəbərləri e-poçt vasitəsilə almaq üçün abunə olun",
+      "placeholder": "E-poçt ünvanınızı daxil edin",
+      "subscribe": "Abunə ol",
+      "privacyNote": "Məlumatlarınız etibarlı əllərdədir. Ətraflı məlumat üçün məxfilik siyasətimizə baxın."
     },
     "bottom": {
-      "developedBy": "Developed by {brand}",
-      "copyright": "All rights reserved to Zefaaf platform © {year}"
+      "developedBy": "{brand} tərəfindən hazırlanmışdır",
+      "copyright": "Bütün hüquqlar Zefaaf platformasına aiddir © {year}"
     }
+  },
+  "services": {
+    "items": [
+      { "title": "İslami Nikah Forumu", "description": "Nikah axtaran müsəlmanları və onların ailələrini bir araya gətirən İslami nikah forumu tədbirləri" },
+      { "title": "Nikah Müraciəti", "description": "Fərqli ölkələrdən ideal həyat yoldaşınızı tapın." },
+      { "title": "VIP Şəxsi Axtarış", "description": "Zefaaf məsləhətçilərinin uyğun həyat yoldaşları axtardığı xüsusi xidmət" },
+      { "title": "Bosniyada Komandamızın Müşayiəti", "description": "Zefaaf komandasının müştəriləri ciddi nikah üçün ailələrlə görüşə müşayiət etdiyi bələdçili proqram" },
+      { "title": "Onlayn Görüş", "description": "Şəxsiyyətinizi və ehtiyaclarınızı anlamaq üçün ailə məsləhətçisi ilə görüşdən başlayın" }
+    ]
+  },
+  "globalPresence": {
+    "mapAlt": "Zefaaf-ın dünya üzrə əhatəsini göstərən xəritə",
+    "badge": "Zefaaf-da 3 milyon istifadəçi",
+    "title": "Biz <brand>175</brand> ölkədə fəaliyyət göstəririk",
+    "description": "Zefaaf dünya üzrə müsəlmanları İslami dəyərlərini bölüşən, təhlükəsiz və Şəriətə uyğun etibarlı uyğunlaşdırma xidmətləri ilə birləşdirir.",
+    "countries": {
+      "france": "Fransa", "germany": "Almaniya", "netherlands": "Niderland", "turkey": "Türkiyə", "russia": "Rusiya", "china": "Çin", "indonesia": "İndoneziya"
+    }
+  },
+  "upcomingEvents": {
+    "description": "Növbəti tədbirlərimizi kəşf edin və mənalı təcrübələr, ilhamverici söhbətlər və unudulmaz anlar üçün bizə qoşulun. Tarixlər, təfərrüatlar və qeydiyyat üçün bizi izləyin.",
+    "bookCta": "Biletinizi rezerv edin",
+    "events": [
+      { "date": "10 Yanvar", "time": "12:00", "title": "Niderlandda İslami Nikah Forumu", "location": "Churchillplein 10, 2517 JW", "price": "150 Avro" },
+      { "date": "25 Aprel", "time": "12:00", "title": "Bosniyada İslami Nikah Forumu", "location": "Terezija, 71000", "price": "150 Avro" }
+    ],
+    "ticker": ["Ən yaxşı şəkildə yaşayın", "sağlam səyahət", "həyat yoldaşı", "sağlam seçimlər", "həyat yoldaşı"]
+  },
+  "whyChoose": {
+    "title": "Niyə Zefaaf-ı seçməlisiniz",
+    "description": "Zefaaf-da biz nikahın sadəcə uyğunluqdan daha çox olduğuna inanırıq — bu, İslami dəyərlər üzərində qurulmuş sabit həyat qurmaqla bağlıdır.",
+    "features": [
+      { "title": "Təhlükəsiz, Şəriətə uyğun video zənglər", "description": "Dini nəzarət altında təhlükəsiz video funksiyası, İslami qaydalara riayət edərək potensial həyat yoldaşınızla tanış olmağa imkan verir." },
+      { "title": "Birbaşa İslami və ailə məsləhəti", "description": "Qeydiyyatdan sonra dini ekspertlərimizdən və ailə məsləhətçilərimizdən pulsuz məsləhət alın." },
+      { "title": "Sizin səsiniz, sizin şəxsiyyətiniz – qoy səsiniz sizin adınızdan danışsın!", "description": "Profilinizdə səs mesajı: özünüzü tanıdın, maraqlarınızı və dəyərlərinizi bölüşün və ailə həyatı ilə bağlı görüşünüzdən danışın." },
+      { "title": "Ailə görüşü – münasibətinizə halal yolla başlayın", "description": "İki ailəni ilk dəfə düzgün, Şəriətə uyğun şəkildə bir araya gətirən şəxsi video otağı." },
+      { "title": "Ön təsdiq sistemi – məhsuldar olmayan söhbətlərə vaxt itirməyin!", "description": "Söhbətə başlamazdan əvvəl istənilən profil ilə uyğunluq faizinizi görün." }
+    ]
   }
 }

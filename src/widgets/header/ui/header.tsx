@@ -108,7 +108,7 @@ export function Header() {
         <div className="flex items-center gap-(--space-fluid-xs)">
           <CompactNavMenu t={t} />
           <ThemeToggle />
-          <Button variant="cta-secondary" className="hidden rounded-[8px] font-alexandria sm:inline-flex">
+          <Button variant="default" className="hidden rounded-[8px] font-alexandria sm:inline-flex">
             {t("nav.marriageRequest")}
           </Button>
           <LanguageSwitcher />

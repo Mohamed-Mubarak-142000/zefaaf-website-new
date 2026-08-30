@@ -1,97 +1,183 @@
 {
   "site": {
     "name": "Zefaaf",
-    "tagline": "Building your ideas into reality"
+    "tagline": "สร้างสรรค์ไอเดียของคุณให้เป็นจริง"
   },
   "seo": {
-    "title": "Zefaaf — Marriage & Matchmaking Platform",
-    "description": "Zefaaf is a trusted platform for serious marriage matchmaking — VIP personal search, real success stories, and a genuine path to marriage."
+    "title": "Zefaaf — แพลตฟอร์มการแต่งงานและจับคู่",
+    "description": "Zefaaf คือแพลตฟอร์มที่เชื่อถือได้สำหรับการจับคู่แต่งงานอย่างจริงจัง — การค้นหาส่วนตัวระดับ VIP เรื่องราวความสำเร็จที่แท้จริง และเส้นทางสู่การแต่งงานอย่างแท้จริง"
   },
   "hero": {
-    "title": "Find your life partner the halal way",
-    "subtitle": "Zefaaf is a trusted platform designed to help Muslims find a life partner who shares their Islamic values, in a safe, Sharia-compliant way.",
-    "cta": "Discover more",
-    "ratingLabel": "Rating",
+    "title": "ค้นหาคู่ชีวิต\nของคุณในแบบฮาลาล",
+    "subtitle": "Zefaaf คือแพลตฟอร์มที่เชื่อถือได้ซึ่งออกแบบมาเพื่อช่วยชาวมุสลิม\nค้นหาคู่ชีวิตที่มีคุณค่าทางศาสนาอิสลามร่วมกัน ในแบบที่ปลอดภัยและสอดคล้องกับหลักชะรีอะฮ์",
+    "cta": "ดูเพิ่มเติม",
+    "ratingLabel": "คะแนน",
     "ratingValue": "4.8"
   },
   "stats": {
     "happyClients": {
       "value": "34,484k",
-      "label": "Happy clients"
+      "label": "ลูกค้าที่พึงพอใจ"
     },
     "successStories": {
       "value": "2768",
-      "label": "Success stories"
+      "label": "เรื่องราวความสำเร็จ"
     },
     "registeredMembers": {
       "value": "23416",
-      "label": "Registered Member"
+      "label": "สมาชิกที่ลงทะเบียน"
     }
   },
   "nav": {
-    "home": "Home",
-    "services": "Services",
-    "contact": "Contact",
-    "vipSearch": "VIP Personal Search",
-    "about": "About Us",
-    "articles": "Articles",
-    "upcomingEvents": "Upcoming Events",
-    "successStories": "Success Stories",
-    "marriageRequest": "Marriage Request"
+    "home": "หน้าแรก",
+    "services": "บริการ",
+    "contact": "ติดต่อเรา",
+    "vipSearch": "การค้นหาส่วนตัวระดับ VIP",
+    "about": "เกี่ยวกับเรา",
+    "articles": "บทความ",
+    "upcomingEvents": "กิจกรรมที่กำลังจะมาถึง",
+    "successStories": "เรื่องราวความสำเร็จ",
+    "marriageRequest": "คำขอแต่งงาน"
   },
   "footer": {
     "columns": {
       "about": {
-        "title": "About Zefaaf",
+        "title": "เกี่ยวกับ Zefaaf",
         "links": {
-          "about": "About Zefaaf",
-          "contact": "Contact Us",
-          "testimonials": "Client Testimonials",
-          "successStories": "Success Stories",
-          "businessLicense": "Business License"
+          "about": "เกี่ยวกับ Zefaaf",
+          "contact": "ติดต่อเรา",
+          "testimonials": "ความคิดเห็นจากลูกค้า",
+          "successStories": "เรื่องราวความสำเร็จ",
+          "businessLicense": "ใบอนุญาตประกอบธุรกิจ"
         }
       },
       "account": {
-        "title": "My Account",
+        "title": "บัญชีของฉัน",
         "links": {
-          "manage": "Manage Account",
-          "safetyTips": "Safety Tips",
-          "delete": "Delete Account",
-          "security": "Security & Protection",
-          "membership": "Membership Level"
+          "manage": "จัดการบัญชี",
+          "safetyTips": "เคล็ดลับความปลอดภัย",
+          "delete": "ลบบัญชี",
+          "security": "ความปลอดภัยและการคุ้มครอง",
+          "membership": "ระดับสมาชิก"
         }
       },
       "help": {
-        "title": "Help",
+        "title": "ความช่วยเหลือ",
         "links": {
-          "helpCenter": "Help Center",
-          "faq": "FAQ",
-          "quickStart": "Quick Start Guide",
-          "tutorials": "Tutorials",
-          "partnersBlog": "Partners Blog"
+          "helpCenter": "ศูนย์ช่วยเหลือ",
+          "faq": "คำถามที่พบบ่อย",
+          "quickStart": "คู่มือเริ่มต้นใช้งานอย่างรวดเร็ว",
+          "tutorials": "บทเรียนแนะนำ",
+          "partnersBlog": "บล็อกพันธมิตร"
         }
       },
       "legal": {
-        "title": "Legal",
+        "title": "กฎหมาย",
         "links": {
-          "privacy": "Privacy Policy",
-          "terms": "Terms & Conditions",
-          "refund": "Payment & Refund Policy",
-          "cookies": "Cookie Policy",
-          "reportAbuse": "Report Abuse"
+          "privacy": "นโยบายความเป็นส่วนตัว",
+          "terms": "ข้อกำหนดและเงื่อนไข",
+          "refund": "นโยบายการชำระเงินและการคืนเงิน",
+          "cookies": "นโยบายคุกกี้",
+          "reportAbuse": "รายงานการละเมิด"
         }
       }
     },
     "newsletter": {
-      "title": "Newsletter",
-      "description": "Subscribe to receive the latest news by email",
-      "placeholder": "Enter your email address",
-      "subscribe": "Subscribe",
-      "privacyNote": "Your data is in safe hands. Check our privacy policy for more information."
+      "title": "จดหมายข่าว",
+      "description": "สมัครรับข่าวสารล่าสุดทางอีเมล",
+      "placeholder": "กรอกที่อยู่อีเมลของคุณ",
+      "subscribe": "สมัครรับข่าวสาร",
+      "privacyNote": "ข้อมูลของคุณอยู่ในมือที่ปลอดภัย ดูนโยบายความเป็นส่วนตัวของเราสำหรับข้อมูลเพิ่มเติม"
     },
     "bottom": {
-      "developedBy": "Developed by {brand}",
-      "copyright": "All rights reserved to Zefaaf platform © {year}"
+      "developedBy": "พัฒนาโดย {brand}",
+      "copyright": "สงวนลิขสิทธิ์สำหรับแพลตฟอร์ม Zefaaf © {year}"
     }
+  },
+  "services": {
+    "items": [
+      {
+        "title": "ฟอรัมการแต่งงานอิสลาม",
+        "description": "กิจกรรมฟอรัมการแต่งงานอิสลามที่รวบรวมชาวมุสลิมที่ต้องการแต่งงานและครอบครัวของพวกเขาไว้ด้วยกัน"
+      },
+      {
+        "title": "ใบสมัครแต่งงาน",
+        "description": "ค้นหาคู่ชีวิตในอุดมคติของคุณจากประเทศต่างๆ"
+      },
+      {
+        "title": "การค้นหาส่วนตัวระดับ VIP",
+        "description": "บริการเฉพาะที่ที่ปรึกษาของ Zefaaf ค้นหาคู่ชีวิตที่เหมาะสมให้คุณ"
+      },
+      {
+        "title": "ร่วมเดินทางไปกับทีมงานของเราที่บอสเนีย",
+        "description": "โปรแกรมที่มีผู้นำทาง ซึ่งทีมงาน Zefaaf จะพาลูกค้าไปพบครอบครัวเพื่อการแต่งงานอย่างจริงจัง"
+      },
+      {
+        "title": "การพบปะออนไลน์",
+        "description": "เริ่มต้นด้วยเซสชันกับที่ปรึกษาครอบครัวเพื่อทำความเข้าใจบุคลิกภาพและความต้องการของคุณ"
+      }
+    ]
+  },
+  "globalPresence": {
+    "mapAlt": "แผนที่แสดงการดำเนินงานของ Zefaaf ทั่วโลก",
+    "badge": "ผู้ใช้งาน 3 ล้านคนบน Zefaaf",
+    "title": "เราดำเนินงานใน <brand>175</brand> ประเทศ",
+    "description": "Zefaaf เชื่อมโยงชาวมุสลิมทั่วโลกเข้ากับบริการจับคู่ที่เชื่อถือได้ซึ่งมีคุณค่าทางศาสนาอิสลามร่วมกัน ในแบบที่ปลอดภัยและสอดคล้องกับหลักชะรีอะฮ์",
+    "countries": {
+      "france": "ฝรั่งเศส",
+      "germany": "เยอรมนี",
+      "netherlands": "เนเธอร์แลนด์",
+      "turkey": "ตุรกี",
+      "russia": "รัสเซีย",
+      "china": "จีน",
+      "indonesia": "อินโดนีเซีย"
+    }
+  },
+  "upcomingEvents": {
+    "description": "ค้นพบกิจกรรมที่กำลังจะมาถึงของเราและร่วมเป็นส่วนหนึ่งกับประสบการณ์ที่มีความหมาย บทสนทนาที่สร้างแรงบันดาลใจ และช่วงเวลาที่น่าจดจำ ติดตามเราเพื่อดูวันที่ รายละเอียด และการลงทะเบียน",
+    "bookCta": "จองตั๋วของคุณ",
+    "events": [
+      {
+        "date": "10 มกราคม",
+        "time": "12.00 น.",
+        "title": "ฟอรัมการแต่งงานอิสลามในเนเธอร์แลนด์",
+        "location": "Churchillplein 10, 2517 JW",
+        "price": "150 ยูโร"
+      },
+      {
+        "date": "25 เมษายน",
+        "time": "12.00 น.",
+        "title": "ฟอรัมการแต่งงานอิสลามในบอสเนีย",
+        "location": "Terezija, 71000",
+        "price": "150 ยูโร"
+      }
+    ],
+    "ticker": ["ใช้ชีวิตให้ดีที่สุด", "การเดินทางที่ดีต่อสุขภาพ", "คู่ชีวิต", "ทางเลือกเพื่อสุขภาพ", "คู่ชีวิต"]
+  },
+  "whyChoose": {
+    "title": "ทำไมต้องเลือก Zefaaf",
+    "description": "ที่ Zefaaf เราเชื่อว่าการแต่งงานไม่ใช่แค่เรื่องความเข้ากันได้ — แต่คือการสร้างชีวิตที่มั่นคงบนพื้นฐานคุณค่าทางศาสนาอิสลาม",
+    "features": [
+      {
+        "title": "การวิดีโอคอลที่ปลอดภัยและสอดคล้องกับหลักชะรีอะฮ์",
+        "description": "ฟีเจอร์วิดีโอที่ปลอดภัยภายใต้การดูแลทางศาสนา ช่วยให้คุณได้พบคู่ชีวิตที่มีศักยภาพโดยยังคงปฏิบัติตามหลักคำสอนอิสลาม"
+      },
+      {
+        "title": "การให้คำปรึกษาด้านศาสนาอิสลามและครอบครัวโดยตรง",
+        "description": "รับคำปรึกษาฟรีทันทีที่ลงทะเบียนจากผู้เชี่ยวชาญด้านศาสนาและที่ปรึกษาครอบครัวของเรา"
+      },
+      {
+        "title": "เสียงของคุณ บุคลิกภาพของคุณ – ให้เสียงของคุณพูดแทนคุณ!",
+        "description": "ข้อความเสียงในโปรไฟล์ของคุณ แนะนำตัวเอง แบ่งปันความสนใจและคุณค่าของคุณ และพูดถึงวิสัยทัศน์ของคุณสำหรับชีวิตแต่งงาน"
+      },
+      {
+        "title": "การพบปะครอบครัว – เริ่มต้นความสัมพันธ์ของคุณในแบบฮาลาล",
+        "description": "ห้องวิดีโอส่วนตัวที่นำทั้งสองครอบครัวมาพบกันเป็นครั้งแรกในแบบที่ถูกต้องและสอดคล้องกับหลักชะรีอะฮ์"
+      },
+      {
+        "title": "ระบบอนุมัติล่วงหน้า – ไม่ต้องเสียเวลากับการสนทนาที่ไม่เกิดผล!",
+        "description": "ดูเปอร์เซ็นต์ความเข้ากันได้ของคุณกับโปรไฟล์ใดๆ ก่อนเริ่มการสนทนา"
+      }
+    ]
   }
 }

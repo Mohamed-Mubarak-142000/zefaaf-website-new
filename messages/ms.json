@@ -1,97 +1,183 @@
 {
   "site": {
     "name": "Zefaaf",
-    "tagline": "Building your ideas into reality"
+    "tagline": "Membina idea anda menjadi realiti"
   },
   "seo": {
-    "title": "Zefaaf — Marriage & Matchmaking Platform",
-    "description": "Zefaaf is a trusted platform for serious marriage matchmaking — VIP personal search, real success stories, and a genuine path to marriage."
+    "title": "Zefaaf — Platform Perkahwinan & Jodoh",
+    "description": "Zefaaf ialah platform yang dipercayai untuk urusan jodoh perkahwinan yang serius — carian peribadi VIP, kisah kejayaan sebenar, dan laluan tulen menuju perkahwinan."
   },
   "hero": {
-    "title": "Find your life partner the halal way",
-    "subtitle": "Zefaaf is a trusted platform designed to help Muslims find a life partner who shares their Islamic values, in a safe, Sharia-compliant way.",
-    "cta": "Discover more",
-    "ratingLabel": "Rating",
+    "title": "Temui pasangan hidup\nanda secara halal",
+    "subtitle": "Zefaaf ialah platform dipercayai yang direka untuk membantu umat Islam\nmencari pasangan hidup yang berkongsi nilai Islam mereka, dengan cara yang selamat dan mematuhi Syariah.",
+    "cta": "Ketahui lebih lanjut",
+    "ratingLabel": "Penilaian",
     "ratingValue": "4.8"
   },
   "stats": {
     "happyClients": {
       "value": "34,484k",
-      "label": "Happy clients"
+      "label": "Pelanggan gembira"
     },
     "successStories": {
       "value": "2768",
-      "label": "Success stories"
+      "label": "Kisah kejayaan"
     },
     "registeredMembers": {
       "value": "23416",
-      "label": "Registered Member"
+      "label": "Ahli Berdaftar"
     }
   },
   "nav": {
-    "home": "Home",
-    "services": "Services",
-    "contact": "Contact",
-    "vipSearch": "VIP Personal Search",
-    "about": "About Us",
-    "articles": "Articles",
-    "upcomingEvents": "Upcoming Events",
-    "successStories": "Success Stories",
-    "marriageRequest": "Marriage Request"
+    "home": "Laman Utama",
+    "services": "Perkhidmatan",
+    "contact": "Hubungi Kami",
+    "vipSearch": "Carian Peribadi VIP",
+    "about": "Tentang Kami",
+    "articles": "Artikel",
+    "upcomingEvents": "Acara Akan Datang",
+    "successStories": "Kisah Kejayaan",
+    "marriageRequest": "Permohonan Perkahwinan"
   },
   "footer": {
     "columns": {
       "about": {
-        "title": "About Zefaaf",
+        "title": "Tentang Zefaaf",
         "links": {
-          "about": "About Zefaaf",
-          "contact": "Contact Us",
-          "testimonials": "Client Testimonials",
-          "successStories": "Success Stories",
-          "businessLicense": "Business License"
+          "about": "Tentang Zefaaf",
+          "contact": "Hubungi Kami",
+          "testimonials": "Testimoni Pelanggan",
+          "successStories": "Kisah Kejayaan",
+          "businessLicense": "Lesen Perniagaan"
         }
       },
       "account": {
-        "title": "My Account",
+        "title": "Akaun Saya",
         "links": {
-          "manage": "Manage Account",
-          "safetyTips": "Safety Tips",
-          "delete": "Delete Account",
-          "security": "Security & Protection",
-          "membership": "Membership Level"
+          "manage": "Urus Akaun",
+          "safetyTips": "Tip Keselamatan",
+          "delete": "Padam Akaun",
+          "security": "Keselamatan & Perlindungan",
+          "membership": "Tahap Keahlian"
         }
       },
       "help": {
-        "title": "Help",
+        "title": "Bantuan",
         "links": {
-          "helpCenter": "Help Center",
-          "faq": "FAQ",
-          "quickStart": "Quick Start Guide",
-          "tutorials": "Tutorials",
-          "partnersBlog": "Partners Blog"
+          "helpCenter": "Pusat Bantuan",
+          "faq": "Soalan Lazim",
+          "quickStart": "Panduan Permulaan Pantas",
+          "tutorials": "Tutorial",
+          "partnersBlog": "Blog Rakan Kongsi"
         }
       },
       "legal": {
-        "title": "Legal",
+        "title": "Perundangan",
         "links": {
-          "privacy": "Privacy Policy",
-          "terms": "Terms & Conditions",
-          "refund": "Payment & Refund Policy",
-          "cookies": "Cookie Policy",
-          "reportAbuse": "Report Abuse"
+          "privacy": "Dasar Privasi",
+          "terms": "Terma & Syarat",
+          "refund": "Dasar Pembayaran & Bayaran Balik",
+          "cookies": "Dasar Kuki",
+          "reportAbuse": "Laporkan Penyalahgunaan"
         }
       }
     },
     "newsletter": {
-      "title": "Newsletter",
-      "description": "Subscribe to receive the latest news by email",
-      "placeholder": "Enter your email address",
-      "subscribe": "Subscribe",
-      "privacyNote": "Your data is in safe hands. Check our privacy policy for more information."
+      "title": "Surat Berita",
+      "description": "Langgan untuk menerima berita terkini melalui e-mel",
+      "placeholder": "Masukkan alamat e-mel anda",
+      "subscribe": "Langgan",
+      "privacyNote": "Data anda berada di tangan yang selamat. Semak dasar privasi kami untuk maklumat lanjut."
     },
     "bottom": {
-      "developedBy": "Developed by {brand}",
-      "copyright": "All rights reserved to Zefaaf platform © {year}"
+      "developedBy": "Dibangunkan oleh {brand}",
+      "copyright": "Hak cipta terpelihara untuk platform Zefaaf © {year}"
     }
+  },
+  "services": {
+    "items": [
+      {
+        "title": "Forum Perkahwinan Islam",
+        "description": "Acara forum perkahwinan Islam yang menyatukan umat Islam yang ingin berkahwin bersama keluarga mereka"
+      },
+      {
+        "title": "Permohonan Perkahwinan",
+        "description": "Cari pasangan hidup ideal anda dari pelbagai negara."
+      },
+      {
+        "title": "Carian Peribadi VIP",
+        "description": "Perkhidmatan khusus di mana perunding Zefaaf mencari pasangan hidup yang sesuai"
+      },
+      {
+        "title": "Ditemani Pasukan Kami di Bosnia",
+        "description": "Program berpandu di mana pasukan Zefaaf menemani pelanggan bertemu keluarga untuk perkahwinan yang serius"
+      },
+      {
+        "title": "Pertemuan Dalam Talian",
+        "description": "Mulakan dengan sesi bersama perunding keluarga untuk memahami keperibadian dan keperluan anda"
+      }
+    ]
+  },
+  "globalPresence": {
+    "mapAlt": "Peta yang menunjukkan jangkauan Zefaaf di seluruh dunia",
+    "badge": "3 juta pengguna di Zefaaf",
+    "title": "Kami beroperasi di <brand>175</brand> buah negara",
+    "description": "Zefaaf menghubungkan umat Islam di seluruh dunia dengan perkhidmatan jodoh yang dipercayai serta berkongsi nilai Islam mereka, dengan cara yang selamat dan mematuhi Syariah.",
+    "countries": {
+      "france": "Perancis",
+      "germany": "Jerman",
+      "netherlands": "Belanda",
+      "turkey": "Turki",
+      "russia": "Rusia",
+      "china": "China",
+      "indonesia": "Indonesia"
+    }
+  },
+  "upcomingEvents": {
+    "description": "Terokai acara akan datang kami dan sertai kami untuk pengalaman yang bermakna, perbualan yang memberi inspirasi, dan detik-detik yang tidak dapat dilupakan. Ikuti kami untuk mengetahui tarikh, butiran, dan pendaftaran.",
+    "bookCta": "Tempah tiket anda",
+    "events": [
+      {
+        "date": "10 Januari",
+        "time": "12 Tengah Hari",
+        "title": "Forum Perkahwinan Islam di Belanda",
+        "location": "Churchillplein 10, 2517 JW",
+        "price": "150 Euro"
+      },
+      {
+        "date": "25 April",
+        "time": "12 Tengah Hari",
+        "title": "Forum Perkahwinan Islam di Bosnia",
+        "location": "Terezija, 71000",
+        "price": "150 Euro"
+      }
+    ],
+    "ticker": ["Jalani yang terbaik", "perjalanan sihat", "pasangan hidup", "pilihan sihat", "pasangan hidup"]
+  },
+  "whyChoose": {
+    "title": "Kenapa Memilih Zefaaf",
+    "description": "Di Zefaaf, kami percaya perkahwinan bukan sekadar keserasian — ia tentang membina kehidupan yang stabil berlandaskan nilai Islam.",
+    "features": [
+      {
+        "title": "Panggilan video selamat dan mematuhi Syariah",
+        "description": "Ciri video selamat di bawah pengawasan agama, membolehkan anda bertemu bakal pasangan hidup sambil mematuhi garis panduan Islam."
+      },
+      {
+        "title": "Kaunseling Islam dan keluarga secara langsung",
+        "description": "Dapatkan khidmat nasihat percuma sebaik sahaja mendaftar daripada pakar agama dan kaunselor keluarga kami."
+      },
+      {
+        "title": "Suara anda, keperibadian anda – biar suara anda bercakap untuk anda!",
+        "description": "Mesej suara pada profil anda: perkenalkan diri, kongsikan minat dan nilai anda, serta ceritakan wawasan anda untuk kehidupan berkahwin."
+      },
+      {
+        "title": "Pertemuan keluarga – mulakan hubungan anda secara halal",
+        "description": "Bilik video peribadi yang menyatukan kedua-dua keluarga buat kali pertama dengan cara yang wajar dan mematuhi Syariah."
+      },
+      {
+        "title": "Sistem pra-kelulusan – jangan bazirkan masa dengan perbualan yang tidak produktif!",
+        "description": "Lihat peratusan keserasian anda dengan mana-mana profil sebelum memulakan perbualan."
+      }
+    ]
   }
 }

@@ -1,97 +1,126 @@
 {
   "site": {
     "name": "Zefaaf",
-    "tagline": "Building your ideas into reality"
+    "tagline": "Tunageuza mawazo yako kuwa uhalisia"
   },
   "seo": {
-    "title": "Zefaaf — Marriage & Matchmaking Platform",
-    "description": "Zefaaf is a trusted platform for serious marriage matchmaking — VIP personal search, real success stories, and a genuine path to marriage."
+    "title": "Zefaaf — Jukwaa la Ndoa na Uchumba",
+    "description": "Zefaaf ni jukwaa la kuaminika kwa uchumba wa ndoa wa dhati — utafutaji binafsi wa VIP, hadithi halisi za mafanikio, na njia halisi kuelekea ndoa."
   },
   "hero": {
-    "title": "Find your life partner the halal way",
-    "subtitle": "Zefaaf is a trusted platform designed to help Muslims find a life partner who shares their Islamic values, in a safe, Sharia-compliant way.",
-    "cta": "Discover more",
-    "ratingLabel": "Rating",
+    "title": "Pata mwenzi wako wa maisha\nkwa njia ya halali",
+    "subtitle": "Zefaaf ni jukwaa la kuaminika lililoundwa kuwasaidia Waislamu\nkupata mwenzi wa maisha anayeshiriki maadili yao ya Kiislamu, kwa njia salama inayozingatia Sheria.",
+    "cta": "Gundua zaidi",
+    "ratingLabel": "Ukadiriaji",
     "ratingValue": "4.8"
   },
   "stats": {
-    "happyClients": {
-      "value": "34,484k",
-      "label": "Happy clients"
-    },
-    "successStories": {
-      "value": "2768",
-      "label": "Success stories"
-    },
-    "registeredMembers": {
-      "value": "23416",
-      "label": "Registered Member"
-    }
+    "happyClients": { "value": "34,484k", "label": "Wateja walioridhika" },
+    "successStories": { "value": "2768", "label": "Hadithi za mafanikio" },
+    "registeredMembers": { "value": "23416", "label": "Wanachama waliojisajili" }
   },
   "nav": {
-    "home": "Home",
-    "services": "Services",
-    "contact": "Contact",
-    "vipSearch": "VIP Personal Search",
-    "about": "About Us",
-    "articles": "Articles",
-    "upcomingEvents": "Upcoming Events",
-    "successStories": "Success Stories",
-    "marriageRequest": "Marriage Request"
+    "home": "Nyumbani",
+    "services": "Huduma",
+    "contact": "Wasiliana Nasi",
+    "vipSearch": "Utafutaji Binafsi wa VIP",
+    "about": "Kuhusu Sisi",
+    "articles": "Makala",
+    "upcomingEvents": "Matukio Yajayo",
+    "successStories": "Hadithi za Mafanikio",
+    "marriageRequest": "Ombi la Ndoa"
   },
   "footer": {
     "columns": {
       "about": {
-        "title": "About Zefaaf",
+        "title": "Kuhusu Zefaaf",
         "links": {
-          "about": "About Zefaaf",
-          "contact": "Contact Us",
-          "testimonials": "Client Testimonials",
-          "successStories": "Success Stories",
-          "businessLicense": "Business License"
+          "about": "Kuhusu Zefaaf",
+          "contact": "Wasiliana Nasi",
+          "testimonials": "Ushuhuda wa Wateja",
+          "successStories": "Hadithi za Mafanikio",
+          "businessLicense": "Leseni ya Biashara"
         }
       },
       "account": {
-        "title": "My Account",
+        "title": "Akaunti Yangu",
         "links": {
-          "manage": "Manage Account",
-          "safetyTips": "Safety Tips",
-          "delete": "Delete Account",
-          "security": "Security & Protection",
-          "membership": "Membership Level"
+          "manage": "Simamia Akaunti",
+          "safetyTips": "Vidokezo vya Usalama",
+          "delete": "Futa Akaunti",
+          "security": "Usalama na Ulinzi",
+          "membership": "Kiwango cha Uanachama"
         }
       },
       "help": {
-        "title": "Help",
+        "title": "Msaada",
         "links": {
-          "helpCenter": "Help Center",
-          "faq": "FAQ",
-          "quickStart": "Quick Start Guide",
-          "tutorials": "Tutorials",
-          "partnersBlog": "Partners Blog"
+          "helpCenter": "Kituo cha Msaada",
+          "faq": "Maswali Yanayoulizwa Mara kwa Mara",
+          "quickStart": "Mwongozo wa Kuanza Haraka",
+          "tutorials": "Mafunzo",
+          "partnersBlog": "Blogu ya Washirika"
         }
       },
       "legal": {
-        "title": "Legal",
+        "title": "Kisheria",
         "links": {
-          "privacy": "Privacy Policy",
-          "terms": "Terms & Conditions",
-          "refund": "Payment & Refund Policy",
-          "cookies": "Cookie Policy",
-          "reportAbuse": "Report Abuse"
+          "privacy": "Sera ya Faragha",
+          "terms": "Vigezo na Masharti",
+          "refund": "Sera ya Malipo na Marejesho",
+          "cookies": "Sera ya Vidakuzi",
+          "reportAbuse": "Ripoti Unyanyasaji"
         }
       }
     },
     "newsletter": {
-      "title": "Newsletter",
-      "description": "Subscribe to receive the latest news by email",
-      "placeholder": "Enter your email address",
-      "subscribe": "Subscribe",
-      "privacyNote": "Your data is in safe hands. Check our privacy policy for more information."
+      "title": "Jarida",
+      "description": "Jisajili ili kupokea habari za hivi karibuni kwa barua pepe",
+      "placeholder": "Weka anwani yako ya barua pepe",
+      "subscribe": "Jisajili",
+      "privacyNote": "Data yako iko mikononi salama. Angalia sera yetu ya faragha kwa maelezo zaidi."
     },
     "bottom": {
-      "developedBy": "Developed by {brand}",
-      "copyright": "All rights reserved to Zefaaf platform © {year}"
+      "developedBy": "Imetengenezwa na {brand}",
+      "copyright": "Haki zote zimehifadhiwa kwa jukwaa la Zefaaf © {year}"
     }
+  },
+  "services": {
+    "items": [
+      { "title": "Jukwaa la Ndoa la Kiislamu", "description": "Matukio ya jukwaa la ndoa la Kiislamu yanayowakutanisha Waislamu wanaotafuta ndoa pamoja na familia zao" },
+      { "title": "Ombi la Ndoa", "description": "Pata mwenzi wako bora wa maisha kutoka nchi mbalimbali." },
+      { "title": "Utafutaji Binafsi wa VIP", "description": "Huduma maalum ambapo washauri wa Zefaaf hutafuta wenzi wa maisha wanaofaa" },
+      { "title": "Kuambatana na Timu Yetu Bosnia", "description": "Programu inayoongozwa ambapo timu ya Zefaaf huwaambatana wateja kukutana na familia kwa ajili ya ndoa ya dhati" },
+      { "title": "Mkutano wa Mtandaoni", "description": "Anza na kikao na mshauri wa familia ili kuelewa utu na mahitaji yako" }
+    ]
+  },
+  "globalPresence": {
+    "mapAlt": "Ramani inayoonyesha uwepo wa Zefaaf duniani kote",
+    "badge": "Watumiaji milioni 3 kwenye Zefaaf",
+    "title": "Tunafanya kazi katika <brand>175</brand> nchi",
+    "description": "Zefaaf inaunganisha Waislamu duniani kote na huduma za uchumba zinazoaminika zinazoshiriki maadili yao ya Kiislamu, kwa njia salama inayozingatia Sheria.",
+    "countries": {
+      "france": "Ufaransa", "germany": "Ujerumani", "netherlands": "Uholanzi", "turkey": "Uturuki", "russia": "Urusi", "china": "Uchina", "indonesia": "Indonesia"
+    }
+  },
+  "upcomingEvents": {
+    "description": "Gundua matukio yetu yajayo na ujiunge nasi kwa uzoefu wenye maana, mazungumzo yenye kutia moyo, na nyakati za kukumbukwa. Tufuatilie kwa tarehe, maelezo, na usajili.",
+    "bookCta": "Hifadhi tiketi yako",
+    "events": [
+      { "date": "Januari 10", "time": "Saa sita mchana", "title": "Jukwaa la Ndoa la Kiislamu Uholanzi", "location": "Churchillplein 10, 2517 JW", "price": "Euro 150" },
+      { "date": "Aprili 25", "time": "Saa sita mchana", "title": "Jukwaa la Ndoa la Kiislamu Bosnia", "location": "Terezija, 71000", "price": "Euro 150" }
+    ],
+    "ticker": ["Ishi maisha yako bora", "safari yenye afya", "mwenzi wa maisha", "chaguo zenye afya", "mwenzi wa maisha"]
+  },
+  "whyChoose": {
+    "title": "Kwa Nini Uchague Zefaaf",
+    "description": "Katika Zefaaf, tunaamini ndoa ni zaidi ya upatanifu tu — ni kuhusu kujenga maisha thabiti yaliyojengwa juu ya maadili ya Kiislamu.",
+    "features": [
+      { "title": "Mazungumzo salama ya video yanayozingatia Sheria", "description": "Kipengele salama cha video chini ya usimamizi wa kidini, kinachokuwezesha kukutana na mwenzi wako wa maisha anayewezekana huku ukizingatia miongozo ya Kiislamu." },
+      { "title": "Ushauri wa moja kwa moja wa Kiislamu na wa kifamilia", "description": "Pata ushauri wa bure baada ya kujisajili kutoka kwa wataalamu wetu wa dini na washauri wa familia." },
+      { "title": "Sauti yako, utu wako – acha sauti yako iseme kwa niaba yako!", "description": "Ujumbe wa sauti kwenye wasifu wako: jitambulishe, shiriki maslahi na maadili yako, na zungumzia maono yako kuhusu maisha ya ndoa." },
+      { "title": "Mkutano wa familia – anza uhusiano wako kwa njia ya halali", "description": "Chumba maalum cha video cha faragha kinachokutanisha familia zote mbili kwa mara ya kwanza kwa njia inayofaa na inayozingatia Sheria." },
+      { "title": "Mfumo wa idhini ya awali – usipoteze muda kwenye mazungumzo yasiyo na tija!", "description": "Ona asilimia ya upatanifu wako na wasifu wowote kabla ya kuanza mazungumzo." }
+    ]
   }
 }

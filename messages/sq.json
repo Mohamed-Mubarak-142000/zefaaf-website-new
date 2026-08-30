@@ -1,97 +1,126 @@
 {
   "site": {
     "name": "Zefaaf",
-    "tagline": "Building your ideas into reality"
+    "tagline": "Duke shndërruar idetë tuaja në realitet"
   },
   "seo": {
-    "title": "Zefaaf — Marriage & Matchmaking Platform",
-    "description": "Zefaaf is a trusted platform for serious marriage matchmaking — VIP personal search, real success stories, and a genuine path to marriage."
+    "title": "Zefaaf — Platformë Martese dhe Ndeshjeje",
+    "description": "Zefaaf është një platformë e besueshme për ndeshje serioze martese — kërkim personal VIP, histori suksesi të vërteta dhe një rrugë të vërtetë drejt martesës."
   },
   "hero": {
-    "title": "Find your life partner the halal way",
-    "subtitle": "Zefaaf is a trusted platform designed to help Muslims find a life partner who shares their Islamic values, in a safe, Sharia-compliant way.",
-    "cta": "Discover more",
-    "ratingLabel": "Rating",
+    "title": "Gjeni partnerin tuaj\ntë jetës në mënyrë hallall",
+    "subtitle": "Zefaaf është një platformë e besueshme e krijuar për të ndihmuar myslimanët\ntë gjejnë një partner jete që ndan vlerat e tyre islame, në një mënyrë të sigurt dhe në përputhje me Sheriatin.",
+    "cta": "Zbuloni më shumë",
+    "ratingLabel": "Vlerësimi",
     "ratingValue": "4.8"
   },
   "stats": {
-    "happyClients": {
-      "value": "34,484k",
-      "label": "Happy clients"
-    },
-    "successStories": {
-      "value": "2768",
-      "label": "Success stories"
-    },
-    "registeredMembers": {
-      "value": "23416",
-      "label": "Registered Member"
-    }
+    "happyClients": { "value": "34,484k", "label": "Klientë të kënaqur" },
+    "successStories": { "value": "2768", "label": "Histori suksesi" },
+    "registeredMembers": { "value": "23416", "label": "Anëtarë të regjistruar" }
   },
   "nav": {
-    "home": "Home",
-    "services": "Services",
-    "contact": "Contact",
-    "vipSearch": "VIP Personal Search",
-    "about": "About Us",
-    "articles": "Articles",
-    "upcomingEvents": "Upcoming Events",
-    "successStories": "Success Stories",
-    "marriageRequest": "Marriage Request"
+    "home": "Kryefaqja",
+    "services": "Shërbimet",
+    "contact": "Kontakt",
+    "vipSearch": "Kërkim Personal VIP",
+    "about": "Rreth Nesh",
+    "articles": "Artikuj",
+    "upcomingEvents": "Ngjarjet e Ardhshme",
+    "successStories": "Histori Suksesi",
+    "marriageRequest": "Kërkesë për Martesë"
   },
   "footer": {
     "columns": {
       "about": {
-        "title": "About Zefaaf",
+        "title": "Rreth Zefaaf",
         "links": {
-          "about": "About Zefaaf",
-          "contact": "Contact Us",
-          "testimonials": "Client Testimonials",
-          "successStories": "Success Stories",
-          "businessLicense": "Business License"
+          "about": "Rreth Zefaaf",
+          "contact": "Na Kontaktoni",
+          "testimonials": "Dëshmi Klientësh",
+          "successStories": "Histori Suksesi",
+          "businessLicense": "Licencë Biznesi"
         }
       },
       "account": {
-        "title": "My Account",
+        "title": "Llogaria Ime",
         "links": {
-          "manage": "Manage Account",
-          "safetyTips": "Safety Tips",
-          "delete": "Delete Account",
-          "security": "Security & Protection",
-          "membership": "Membership Level"
+          "manage": "Menaxho Llogarinë",
+          "safetyTips": "Këshilla Sigurie",
+          "delete": "Fshi Llogarinë",
+          "security": "Siguria dhe Mbrojtja",
+          "membership": "Niveli i Anëtarësimit"
         }
       },
       "help": {
-        "title": "Help",
+        "title": "Ndihmë",
         "links": {
-          "helpCenter": "Help Center",
-          "faq": "FAQ",
-          "quickStart": "Quick Start Guide",
-          "tutorials": "Tutorials",
-          "partnersBlog": "Partners Blog"
+          "helpCenter": "Qendra e Ndihmës",
+          "faq": "Pyetjet e Bëra Shpesh",
+          "quickStart": "Udhëzues i Fillimit të Shpejtë",
+          "tutorials": "Tutoriale",
+          "partnersBlog": "Blogu i Partnerëve"
         }
       },
       "legal": {
-        "title": "Legal",
+        "title": "Ligjore",
         "links": {
-          "privacy": "Privacy Policy",
-          "terms": "Terms & Conditions",
-          "refund": "Payment & Refund Policy",
-          "cookies": "Cookie Policy",
-          "reportAbuse": "Report Abuse"
+          "privacy": "Politika e Privatësisë",
+          "terms": "Kushtet dhe Afatet",
+          "refund": "Politika e Pagesës dhe Rimbursimit",
+          "cookies": "Politika e Cookies",
+          "reportAbuse": "Raporto Abuzim"
         }
       }
     },
     "newsletter": {
-      "title": "Newsletter",
-      "description": "Subscribe to receive the latest news by email",
-      "placeholder": "Enter your email address",
-      "subscribe": "Subscribe",
-      "privacyNote": "Your data is in safe hands. Check our privacy policy for more information."
+      "title": "Buletini",
+      "description": "Abonohuni për të marrë lajmet më të fundit me email",
+      "placeholder": "Vendosni adresën tuaj të email-it",
+      "subscribe": "Abonohu",
+      "privacyNote": "Të dhënat tuaja janë në duar të sigurta. Kontrolloni politikën tonë të privatësisë për më shumë informacion."
     },
     "bottom": {
-      "developedBy": "Developed by {brand}",
-      "copyright": "All rights reserved to Zefaaf platform © {year}"
+      "developedBy": "Zhvilluar nga {brand}",
+      "copyright": "Të gjitha të drejtat e rezervuara për platformën Zefaaf © {year}"
     }
+  },
+  "services": {
+    "items": [
+      { "title": "Forumi i Martesës Islame", "description": "Ngjarje të forumit të martesës islame që bashkojnë myslimanët në kërkim të martesës dhe familjet e tyre" },
+      { "title": "Aplikim për Martesë", "description": "Gjeni partnerin ideal të jetës nga vende të ndryshme." },
+      { "title": "Kërkim Personal VIP", "description": "Një shërbim i dedikuar ku konsulentët e Zefaaf kërkojnë partnerë jete të përshtatshëm" },
+      { "title": "Shoqërimi i Ekipit Tonë në Bosnjë", "description": "Një program i udhëhequr ku ekipi i Zefaaf shoqëron klientët për t'u takuar me familjet për martesë serioze" },
+      { "title": "Takim Online", "description": "Filloni me një seancë me një konsulent familjar për të kuptuar personalitetin dhe nevojat tuaja" }
+    ]
+  },
+  "globalPresence": {
+    "mapAlt": "Hartë që tregon praninë e Zefaaf në mbarë botën",
+    "badge": "3 milionë përdorues në Zefaaf",
+    "title": "Operojmë në <brand>175</brand> vende",
+    "description": "Zefaaf lidh myslimanët në mbarë botën me shërbime të besueshme ndeshjeje që ndajnë vlerat e tyre islame, në një mënyrë të sigurt dhe në përputhje me Sheriatin.",
+    "countries": {
+      "france": "Francë", "germany": "Gjermani", "netherlands": "Holandë", "turkey": "Turqi", "russia": "Rusi", "china": "Kinë", "indonesia": "Indonezi"
+    }
+  },
+  "upcomingEvents": {
+    "description": "Zbuloni ngjarjet tona të ardhshme dhe bashkohuni me ne për përvoja domethënëse, biseda frymëzuese dhe momente të paharrueshme. Na ndiqni për data, detaje dhe regjistrim.",
+    "bookCta": "Rezervoni biletën tuaj",
+    "events": [
+      { "date": "10 Janar", "time": "12:00", "title": "Forumi i Martesës Islame në Holandë", "location": "Churchillplein 10, 2517 JW", "price": "150 Euro" },
+      { "date": "25 Prill", "time": "12:00", "title": "Forumi i Martesës Islame në Bosnjë", "location": "Terezija, 71000", "price": "150 Euro" }
+    ],
+    "ticker": ["Jetoni më të mirën", "udhëtim të shëndetshëm", "partnerin e jetës", "zgjedhje të shëndetshme", "partnerin e jetës"]
+  },
+  "whyChoose": {
+    "title": "Pse të Zgjidhni Zefaaf",
+    "description": "Në Zefaaf, ne besojmë se martesa është më shumë sesa përputhshmëri — bëhet fjalë për ndërtimin e një jete të qëndrueshme të bazuar në vlerat islame.",
+    "features": [
+      { "title": "Video-thirrje të sigurta, në përputhje me Sheriatin", "description": "Një veçori video e sigurt nën mbikëqyrje fetare, që ju lejon të takoni partnerin tuaj të mundshëm të jetës duke respektuar udhëzimet islame." },
+      { "title": "Këshillim i drejtpërdrejtë islam dhe familjar", "description": "Merrni një konsultë falas pas regjistrimit nga ekspertët tanë fetarë dhe këshilltarët familjarë." },
+      { "title": "Zëri juaj, personaliteti juaj – lëreni zërin tuaj të flasë për ju!", "description": "Një mesazh zanor në profilin tuaj: prezantohuni, ndani interesat dhe vlerat tuaja, dhe flisni për vizionin tuaj për jetën martesore." },
+      { "title": "Takimi i familjeve – filloni marrëdhënien tuaj në mënyrë hallall", "description": "Një dhomë private video që bashkon të dyja familjet për herë të parë në mënyrë të përshtatshme dhe në përputhje me Sheriatin." },
+      { "title": "Sistemi i para-miratimit – mos humbisni kohë me biseda joproduktive!", "description": "Shihni përqindjen e përputhshmërisë suaj me çdo profil para se të filloni një bisedë." }
+    ]
   }
 }

@@ -1,97 +1,183 @@
 {
   "site": {
     "name": "Zefaaf",
-    "tagline": "Building your ideas into reality"
+    "tagline": "ਤੁਹਾਡੇ ਵਿਚਾਰਾਂ ਨੂੰ ਹਕੀਕਤ ਵਿੱਚ ਬਦਲਣਾ"
   },
   "seo": {
-    "title": "Zefaaf — Marriage & Matchmaking Platform",
-    "description": "Zefaaf is a trusted platform for serious marriage matchmaking — VIP personal search, real success stories, and a genuine path to marriage."
+    "title": "Zefaaf — ਵਿਆਹ ਅਤੇ ਰਿਸ਼ਤਾ ਜੋੜਨ ਵਾਲਾ ਪਲੇਟਫਾਰਮ",
+    "description": "Zefaaf ਗੰਭੀਰ ਵਿਆਹ ਲਈ ਇੱਕ ਭਰੋਸੇਯੋਗ ਰਿਸ਼ਤਾ ਜੋੜਨ ਵਾਲਾ ਪਲੇਟਫਾਰਮ ਹੈ — VIP ਨਿੱਜੀ ਖੋਜ, ਅਸਲ ਸਫਲਤਾ ਦੀਆਂ ਕਹਾਣੀਆਂ, ਅਤੇ ਵਿਆਹ ਵੱਲ ਇੱਕ ਸੱਚਾ ਰਾਹ।"
   },
   "hero": {
-    "title": "Find your life partner the halal way",
-    "subtitle": "Zefaaf is a trusted platform designed to help Muslims find a life partner who shares their Islamic values, in a safe, Sharia-compliant way.",
-    "cta": "Discover more",
-    "ratingLabel": "Rating",
+    "title": "ਹਲਾਲ ਤਰੀਕੇ ਨਾਲ ਆਪਣਾ ਜੀਵਨ\nਸਾਥੀ ਲੱਭੋ",
+    "subtitle": "Zefaaf ਇੱਕ ਭਰੋਸੇਯੋਗ ਪਲੇਟਫਾਰਮ ਹੈ ਜੋ ਮੁਸਲਮਾਨਾਂ ਦੀ ਮਦਦ ਕਰਨ ਲਈ ਬਣਾਇਆ ਗਿਆ ਹੈ\nਅਜਿਹਾ ਜੀਵਨ ਸਾਥੀ ਲੱਭਣ ਵਿੱਚ ਜੋ ਉਹਨਾਂ ਦੀਆਂ ਇਸਲਾਮੀ ਕਦਰਾਂ-ਕੀਮਤਾਂ ਸਾਂਝੀਆਂ ਕਰਦਾ ਹੋਵੇ, ਇੱਕ ਸੁਰੱਖਿਅਤ, ਸ਼ਰੀਆ-ਅਨੁਕੂਲ ਤਰੀਕੇ ਨਾਲ।",
+    "cta": "ਹੋਰ ਜਾਣੋ",
+    "ratingLabel": "ਰੇਟਿੰਗ",
     "ratingValue": "4.8"
   },
   "stats": {
     "happyClients": {
       "value": "34,484k",
-      "label": "Happy clients"
+      "label": "ਖੁਸ਼ ਗਾਹਕ"
     },
     "successStories": {
       "value": "2768",
-      "label": "Success stories"
+      "label": "ਸਫਲਤਾ ਦੀਆਂ ਕਹਾਣੀਆਂ"
     },
     "registeredMembers": {
       "value": "23416",
-      "label": "Registered Member"
+      "label": "ਰਜਿਸਟਰਡ ਮੈਂਬਰ"
     }
   },
   "nav": {
-    "home": "Home",
-    "services": "Services",
-    "contact": "Contact",
-    "vipSearch": "VIP Personal Search",
-    "about": "About Us",
-    "articles": "Articles",
-    "upcomingEvents": "Upcoming Events",
-    "successStories": "Success Stories",
-    "marriageRequest": "Marriage Request"
+    "home": "ਹੋਮ",
+    "services": "ਸੇਵਾਵਾਂ",
+    "contact": "ਸੰਪਰਕ ਕਰੋ",
+    "vipSearch": "VIP ਨਿੱਜੀ ਖੋਜ",
+    "about": "ਸਾਡੇ ਬਾਰੇ",
+    "articles": "ਲੇਖ",
+    "upcomingEvents": "ਆਉਣ ਵਾਲੇ ਸਮਾਗਮ",
+    "successStories": "ਸਫਲਤਾ ਦੀਆਂ ਕਹਾਣੀਆਂ",
+    "marriageRequest": "ਵਿਆਹ ਦੀ ਬੇਨਤੀ"
   },
   "footer": {
     "columns": {
       "about": {
-        "title": "About Zefaaf",
+        "title": "Zefaaf ਬਾਰੇ",
         "links": {
-          "about": "About Zefaaf",
-          "contact": "Contact Us",
-          "testimonials": "Client Testimonials",
-          "successStories": "Success Stories",
-          "businessLicense": "Business License"
+          "about": "Zefaaf ਬਾਰੇ",
+          "contact": "ਸਾਡੇ ਨਾਲ ਸੰਪਰਕ ਕਰੋ",
+          "testimonials": "ਗਾਹਕਾਂ ਦੀ ਰਾਏ",
+          "successStories": "ਸਫਲਤਾ ਦੀਆਂ ਕਹਾਣੀਆਂ",
+          "businessLicense": "ਵਪਾਰਕ ਲਾਇਸੈਂਸ"
         }
       },
       "account": {
-        "title": "My Account",
+        "title": "ਮੇਰਾ ਖਾਤਾ",
         "links": {
-          "manage": "Manage Account",
-          "safetyTips": "Safety Tips",
-          "delete": "Delete Account",
-          "security": "Security & Protection",
-          "membership": "Membership Level"
+          "manage": "ਖਾਤਾ ਪ੍ਰਬੰਧਿਤ ਕਰੋ",
+          "safetyTips": "ਸੁਰੱਖਿਆ ਸੁਝਾਅ",
+          "delete": "ਖਾਤਾ ਮਿਟਾਓ",
+          "security": "ਸੁਰੱਖਿਆ ਅਤੇ ਬਚਾਅ",
+          "membership": "ਮੈਂਬਰਸ਼ਿਪ ਪੱਧਰ"
         }
       },
       "help": {
-        "title": "Help",
+        "title": "ਮਦਦ",
         "links": {
-          "helpCenter": "Help Center",
-          "faq": "FAQ",
-          "quickStart": "Quick Start Guide",
-          "tutorials": "Tutorials",
-          "partnersBlog": "Partners Blog"
+          "helpCenter": "ਸਹਾਇਤਾ ਕੇਂਦਰ",
+          "faq": "ਅਕਸਰ ਪੁੱਛੇ ਜਾਂਦੇ ਸਵਾਲ",
+          "quickStart": "ਤੁਰੰਤ ਸ਼ੁਰੂਆਤ ਗਾਈਡ",
+          "tutorials": "ਟਿਊਟੋਰਿਅਲ",
+          "partnersBlog": "ਪਾਰਟਨਰਜ਼ ਬਲੌਗ"
         }
       },
       "legal": {
-        "title": "Legal",
+        "title": "ਕਾਨੂੰਨੀ",
         "links": {
-          "privacy": "Privacy Policy",
-          "terms": "Terms & Conditions",
-          "refund": "Payment & Refund Policy",
-          "cookies": "Cookie Policy",
-          "reportAbuse": "Report Abuse"
+          "privacy": "ਪਰਦੇਦਾਰੀ ਨੀਤੀ",
+          "terms": "ਨਿਯਮ ਅਤੇ ਸ਼ਰਤਾਂ",
+          "refund": "ਭੁਗਤਾਨ ਅਤੇ ਵਾਪਸੀ ਨੀਤੀ",
+          "cookies": "ਕੂਕੀ ਨੀਤੀ",
+          "reportAbuse": "ਦੁਰਵਿਵਹਾਰ ਦੀ ਰਿਪੋਰਟ ਕਰੋ"
         }
       }
     },
     "newsletter": {
-      "title": "Newsletter",
-      "description": "Subscribe to receive the latest news by email",
-      "placeholder": "Enter your email address",
-      "subscribe": "Subscribe",
-      "privacyNote": "Your data is in safe hands. Check our privacy policy for more information."
+      "title": "ਨਿਊਜ਼ਲੈਟਰ",
+      "description": "ਈਮੇਲ ਰਾਹੀਂ ਤਾਜ਼ਾ ਖ਼ਬਰਾਂ ਪ੍ਰਾਪਤ ਕਰਨ ਲਈ ਸਬਸਕ੍ਰਾਈਬ ਕਰੋ",
+      "placeholder": "ਆਪਣਾ ਈਮੇਲ ਪਤਾ ਦਰਜ ਕਰੋ",
+      "subscribe": "ਸਬਸਕ੍ਰਾਈਬ ਕਰੋ",
+      "privacyNote": "ਤੁਹਾਡਾ ਡਾਟਾ ਸੁਰੱਖਿਅਤ ਹੱਥਾਂ ਵਿੱਚ ਹੈ। ਹੋਰ ਜਾਣਕਾਰੀ ਲਈ ਸਾਡੀ ਪਰਦੇਦਾਰੀ ਨੀਤੀ ਦੇਖੋ।"
     },
     "bottom": {
-      "developedBy": "Developed by {brand}",
-      "copyright": "All rights reserved to Zefaaf platform © {year}"
+      "developedBy": "{brand} ਦੁਆਰਾ ਵਿਕਸਿਤ",
+      "copyright": "Zefaaf ਪਲੇਟਫਾਰਮ ਦੇ ਸਾਰੇ ਅਧਿਕਾਰ ਸੁਰੱਖਿਅਤ © {year}"
     }
+  },
+  "services": {
+    "items": [
+      {
+        "title": "ਇਸਲਾਮੀ ਵਿਆਹ ਫੋਰਮ",
+        "description": "ਇਸਲਾਮੀ ਵਿਆਹ ਫੋਰਮ ਸਮਾਗਮ ਜੋ ਵਿਆਹ ਦੀ ਭਾਲ ਕਰ ਰਹੇ ਮੁਸਲਮਾਨਾਂ ਅਤੇ ਉਹਨਾਂ ਦੇ ਪਰਿਵਾਰਾਂ ਨੂੰ ਇਕੱਠੇ ਲਿਆਉਂਦੇ ਹਨ"
+      },
+      {
+        "title": "ਵਿਆਹ ਦੀ ਅਰਜ਼ੀ",
+        "description": "ਵੱਖ-ਵੱਖ ਦੇਸ਼ਾਂ ਤੋਂ ਆਪਣਾ ਆਦਰਸ਼ ਜੀਵਨ ਸਾਥੀ ਲੱਭੋ।"
+      },
+      {
+        "title": "VIP ਨਿੱਜੀ ਖੋਜ",
+        "description": "ਇੱਕ ਸਮਰਪਿਤ ਸੇਵਾ ਜਿੱਥੇ Zefaaf ਦੇ ਸਲਾਹਕਾਰ ਢੁਕਵੇਂ ਜੀਵਨ ਸਾਥੀ ਲੱਭਦੇ ਹਨ"
+      },
+      {
+        "title": "ਬੋਸਨੀਆ ਵਿੱਚ ਸਾਡੀ ਟੀਮ ਨਾਲ",
+        "description": "ਇੱਕ ਗਾਈਡਡ ਪ੍ਰੋਗਰਾਮ ਜਿਸ ਵਿੱਚ Zefaaf ਦੀ ਟੀਮ ਗਾਹਕਾਂ ਨੂੰ ਗੰਭੀਰ ਵਿਆਹ ਲਈ ਪਰਿਵਾਰਾਂ ਨਾਲ ਮਿਲਣ ਵਿੱਚ ਸਾਥ ਦਿੰਦੀ ਹੈ"
+      },
+      {
+        "title": "ਆਨਲਾਈਨ ਮੀਟਿੰਗ",
+        "description": "ਆਪਣੀ ਸ਼ਖ਼ਸੀਅਤ ਅਤੇ ਲੋੜਾਂ ਨੂੰ ਸਮਝਣ ਲਈ ਇੱਕ ਪਰਿਵਾਰਕ ਸਲਾਹਕਾਰ ਨਾਲ ਸੈਸ਼ਨ ਨਾਲ ਸ਼ੁਰੂਆਤ ਕਰੋ"
+      }
+    ]
+  },
+  "globalPresence": {
+    "mapAlt": "ਦੁਨੀਆ ਭਰ ਵਿੱਚ Zefaaf ਦੀ ਪਹੁੰਚ ਦਿਖਾਉਂਦਾ ਨਕਸ਼ਾ",
+    "badge": "Zefaaf 'ਤੇ 3 ਮਿਲੀਅਨ ਉਪਭੋਗਤਾ",
+    "title": "ਅਸੀਂ <brand>175</brand> ਦੇਸ਼ਾਂ ਵਿੱਚ ਕੰਮ ਕਰਦੇ ਹਾਂ",
+    "description": "Zefaaf ਦੁਨੀਆ ਭਰ ਦੇ ਮੁਸਲਮਾਨਾਂ ਨੂੰ ਭਰੋਸੇਯੋਗ ਰਿਸ਼ਤਾ ਜੋੜਨ ਵਾਲੀਆਂ ਸੇਵਾਵਾਂ ਨਾਲ ਜੋੜਦਾ ਹੈ ਜੋ ਉਹਨਾਂ ਦੀਆਂ ਇਸਲਾਮੀ ਕਦਰਾਂ-ਕੀਮਤਾਂ ਸਾਂਝੀਆਂ ਕਰਦੀਆਂ ਹਨ, ਇੱਕ ਸੁਰੱਖਿਅਤ, ਸ਼ਰੀਆ-ਅਨੁਕੂਲ ਤਰੀਕੇ ਨਾਲ।",
+    "countries": {
+      "france": "ਫਰਾਂਸ",
+      "germany": "ਜਰਮਨੀ",
+      "netherlands": "ਨੀਦਰਲੈਂਡ",
+      "turkey": "ਤੁਰਕੀ",
+      "russia": "ਰੂਸ",
+      "china": "ਚੀਨ",
+      "indonesia": "ਇੰਡੋਨੇਸ਼ੀਆ"
+    }
+  },
+  "upcomingEvents": {
+    "description": "ਸਾਡੇ ਆਉਣ ਵਾਲੇ ਸਮਾਗਮਾਂ ਬਾਰੇ ਜਾਣੋ ਅਤੇ ਸਾਰਥਕ ਅਨੁਭਵਾਂ, ਪ੍ਰੇਰਨਾਦਾਇਕ ਗੱਲਬਾਤਾਂ, ਅਤੇ ਯਾਦਗਾਰ ਪਲਾਂ ਲਈ ਸਾਡੇ ਨਾਲ ਜੁੜੋ। ਤਾਰੀਖਾਂ, ਵੇਰਵਿਆਂ ਅਤੇ ਰਜਿਸਟ੍ਰੇਸ਼ਨ ਲਈ ਸਾਨੂੰ ਫਾਲੋ ਕਰੋ।",
+    "bookCta": "ਆਪਣੀ ਟਿਕਟ ਬੁੱਕ ਕਰੋ",
+    "events": [
+      {
+        "date": "10 ਜਨਵਰੀ",
+        "time": "ਦੁਪਹਿਰ 12 ਵਜੇ",
+        "title": "ਨੀਦਰਲੈਂਡ ਵਿੱਚ ਇਸਲਾਮੀ ਵਿਆਹ ਫੋਰਮ",
+        "location": "Churchillplein 10, 2517 JW",
+        "price": "150 ਯੂਰੋ"
+      },
+      {
+        "date": "25 ਅਪ੍ਰੈਲ",
+        "time": "ਦੁਪਹਿਰ 12 ਵਜੇ",
+        "title": "ਬੋਸਨੀਆ ਵਿੱਚ ਇਸਲਾਮੀ ਵਿਆਹ ਫੋਰਮ",
+        "location": "Terezija, 71000",
+        "price": "150 ਯੂਰੋ"
+      }
+    ],
+    "ticker": ["ਆਪਣੀ ਸਭ ਤੋਂ ਵਧੀਆ ਜ਼ਿੰਦਗੀ ਜੀਓ", "ਸਿਹਤਮੰਦ ਸਫ਼ਰ", "ਜੀਵਨ ਸਾਥੀ", "ਸਿਹਤਮੰਦ ਚੋਣਾਂ", "ਜੀਵਨ ਸਾਥੀ"]
+  },
+  "whyChoose": {
+    "title": "Zefaaf ਨੂੰ ਕਿਉਂ ਚੁਣੀਏ",
+    "description": "Zefaaf ਵਿੱਚ, ਅਸੀਂ ਮੰਨਦੇ ਹਾਂ ਕਿ ਵਿਆਹ ਸਿਰਫ਼ ਅਨੁਕੂਲਤਾ ਤੋਂ ਵੱਧ ਹੈ — ਇਹ ਇਸਲਾਮੀ ਕਦਰਾਂ-ਕੀਮਤਾਂ 'ਤੇ ਆਧਾਰਿਤ ਇੱਕ ਸਥਿਰ ਜ਼ਿੰਦਗੀ ਬਣਾਉਣ ਬਾਰੇ ਹੈ।",
+    "features": [
+      {
+        "title": "ਸੁਰੱਖਿਅਤ, ਸ਼ਰੀਆ-ਅਨੁਕੂਲ ਵੀਡੀਓ ਕਾਲਾਂ",
+        "description": "ਧਾਰਮਿਕ ਨਿਗਰਾਨੀ ਹੇਠ ਇੱਕ ਸੁਰੱਖਿਅਤ ਵੀਡੀਓ ਵਿਸ਼ੇਸ਼ਤਾ, ਜੋ ਤੁਹਾਨੂੰ ਇਸਲਾਮੀ ਦਿਸ਼ਾ-ਨਿਰਦੇਸ਼ਾਂ ਦੀ ਪਾਲਣਾ ਕਰਦੇ ਹੋਏ ਆਪਣੇ ਸੰਭਾਵੀ ਜੀਵਨ ਸਾਥੀ ਨੂੰ ਮਿਲਣ ਦਿੰਦੀ ਹੈ।"
+      },
+      {
+        "title": "ਸਿੱਧੀ ਇਸਲਾਮੀ ਅਤੇ ਪਰਿਵਾਰਕ ਸਲਾਹ",
+        "description": "ਰਜਿਸਟ੍ਰੇਸ਼ਨ ਦੇ ਸਮੇਂ ਸਾਡੇ ਧਾਰਮਿਕ ਮਾਹਿਰਾਂ ਅਤੇ ਪਰਿਵਾਰਕ ਸਲਾਹਕਾਰਾਂ ਤੋਂ ਮੁਫ਼ਤ ਸਲਾਹ ਲਓ।"
+      },
+      {
+        "title": "ਤੁਹਾਡੀ ਆਵਾਜ਼, ਤੁਹਾਡੀ ਸ਼ਖ਼ਸੀਅਤ – ਆਪਣੀ ਆਵਾਜ਼ ਨੂੰ ਆਪਣੇ ਲਈ ਬੋਲਣ ਦਿਓ!",
+        "description": "ਆਪਣੀ ਪ੍ਰੋਫਾਈਲ 'ਤੇ ਇੱਕ ਵੌਇਸ ਸੁਨੇਹਾ: ਆਪਣੀ ਜਾਣ-ਪਛਾਣ ਕਰਵਾਓ, ਆਪਣੀਆਂ ਰੁਚੀਆਂ ਅਤੇ ਕਦਰਾਂ-ਕੀਮਤਾਂ ਸਾਂਝੀਆਂ ਕਰੋ, ਅਤੇ ਵਿਆਹੁਤਾ ਜੀਵਨ ਲਈ ਆਪਣੇ ਦ੍ਰਿਸ਼ਟੀਕੋਣ ਬਾਰੇ ਗੱਲ ਕਰੋ।"
+      },
+      {
+        "title": "ਪਰਿਵਾਰਕ ਮੁਲਾਕਾਤ – ਆਪਣਾ ਰਿਸ਼ਤਾ ਹਲਾਲ ਤਰੀਕੇ ਨਾਲ ਸ਼ੁਰੂ ਕਰੋ",
+        "description": "ਇੱਕ ਨਿੱਜੀ ਵੀਡੀਓ ਕਮਰਾ ਜੋ ਦੋਵਾਂ ਪਰਿਵਾਰਾਂ ਨੂੰ ਪਹਿਲੀ ਵਾਰ ਇੱਕ ਢੁਕਵੇਂ, ਸ਼ਰੀਆ-ਅਨੁਕੂਲ ਤਰੀਕੇ ਨਾਲ ਇਕੱਠੇ ਲਿਆਉਂਦਾ ਹੈ।"
+      },
+      {
+        "title": "ਪ੍ਰੀ-ਅਪਰੂਵਲ ਸਿਸਟਮ – ਗੈਰ-ਲਾਭਕਾਰੀ ਗੱਲਬਾਤਾਂ 'ਤੇ ਸਮਾਂ ਬਰਬਾਦ ਨਾ ਕਰੋ!",
+        "description": "ਗੱਲਬਾਤ ਸ਼ੁਰੂ ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ ਕਿਸੇ ਵੀ ਪ੍ਰੋਫਾਈਲ ਨਾਲ ਆਪਣੀ ਅਨੁਕੂਲਤਾ ਪ੍ਰਤੀਸ਼ਤ ਵੇਖੋ।"
+      }
+    ]
   }
 }

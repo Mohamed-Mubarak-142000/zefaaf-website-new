@@ -1,97 +1,183 @@
 {
   "site": {
     "name": "Zefaaf",
-    "tagline": "Building your ideas into reality"
+    "tagline": "Uw ideeën omzetten in werkelijkheid"
   },
   "seo": {
-    "title": "Zefaaf — Marriage & Matchmaking Platform",
-    "description": "Zefaaf is a trusted platform for serious marriage matchmaking — VIP personal search, real success stories, and a genuine path to marriage."
+    "title": "Zefaaf — Platform voor Huwelijk & Partnerbemiddeling",
+    "description": "Zefaaf is een betrouwbaar platform voor serieuze huwelijksbemiddeling — VIP persoonlijke zoektocht, echte succesverhalen en een oprechte weg naar het huwelijk."
   },
   "hero": {
-    "title": "Find your life partner the halal way",
-    "subtitle": "Zefaaf is a trusted platform designed to help Muslims find a life partner who shares their Islamic values, in a safe, Sharia-compliant way.",
-    "cta": "Discover more",
-    "ratingLabel": "Rating",
+    "title": "Vind uw levenspartner\nop de halal manier",
+    "subtitle": "Zefaaf is een betrouwbaar platform dat moslims helpt\neen levenspartner te vinden die hun islamitische waarden deelt, op een veilige, sharia-conforme manier.",
+    "cta": "Ontdek meer",
+    "ratingLabel": "Beoordeling",
     "ratingValue": "4.8"
   },
   "stats": {
     "happyClients": {
       "value": "34,484k",
-      "label": "Happy clients"
+      "label": "Tevreden klanten"
     },
     "successStories": {
       "value": "2768",
-      "label": "Success stories"
+      "label": "Succesverhalen"
     },
     "registeredMembers": {
       "value": "23416",
-      "label": "Registered Member"
+      "label": "Geregistreerde leden"
     }
   },
   "nav": {
     "home": "Home",
-    "services": "Services",
+    "services": "Diensten",
     "contact": "Contact",
-    "vipSearch": "VIP Personal Search",
-    "about": "About Us",
-    "articles": "Articles",
-    "upcomingEvents": "Upcoming Events",
-    "successStories": "Success Stories",
-    "marriageRequest": "Marriage Request"
+    "vipSearch": "VIP Persoonlijke Zoektocht",
+    "about": "Over Ons",
+    "articles": "Artikelen",
+    "upcomingEvents": "Aankomende Evenementen",
+    "successStories": "Succesverhalen",
+    "marriageRequest": "Huwelijksaanvraag"
   },
   "footer": {
     "columns": {
       "about": {
-        "title": "About Zefaaf",
+        "title": "Over Zefaaf",
         "links": {
-          "about": "About Zefaaf",
-          "contact": "Contact Us",
-          "testimonials": "Client Testimonials",
-          "successStories": "Success Stories",
-          "businessLicense": "Business License"
+          "about": "Over Zefaaf",
+          "contact": "Neem Contact Op",
+          "testimonials": "Klantbeoordelingen",
+          "successStories": "Succesverhalen",
+          "businessLicense": "Bedrijfsvergunning"
         }
       },
       "account": {
-        "title": "My Account",
+        "title": "Mijn Account",
         "links": {
-          "manage": "Manage Account",
-          "safetyTips": "Safety Tips",
-          "delete": "Delete Account",
-          "security": "Security & Protection",
-          "membership": "Membership Level"
+          "manage": "Account Beheren",
+          "safetyTips": "Veiligheidstips",
+          "delete": "Account Verwijderen",
+          "security": "Beveiliging & Bescherming",
+          "membership": "Lidmaatschapsniveau"
         }
       },
       "help": {
-        "title": "Help",
+        "title": "Hulp",
         "links": {
-          "helpCenter": "Help Center",
-          "faq": "FAQ",
-          "quickStart": "Quick Start Guide",
-          "tutorials": "Tutorials",
-          "partnersBlog": "Partners Blog"
+          "helpCenter": "Helpcentrum",
+          "faq": "Veelgestelde Vragen",
+          "quickStart": "Snelstartgids",
+          "tutorials": "Handleidingen",
+          "partnersBlog": "Partnersblog"
         }
       },
       "legal": {
-        "title": "Legal",
+        "title": "Juridisch",
         "links": {
-          "privacy": "Privacy Policy",
-          "terms": "Terms & Conditions",
-          "refund": "Payment & Refund Policy",
-          "cookies": "Cookie Policy",
-          "reportAbuse": "Report Abuse"
+          "privacy": "Privacybeleid",
+          "terms": "Algemene Voorwaarden",
+          "refund": "Betalings- en Terugbetalingsbeleid",
+          "cookies": "Cookiebeleid",
+          "reportAbuse": "Misbruik Melden"
         }
       }
     },
     "newsletter": {
-      "title": "Newsletter",
-      "description": "Subscribe to receive the latest news by email",
-      "placeholder": "Enter your email address",
-      "subscribe": "Subscribe",
-      "privacyNote": "Your data is in safe hands. Check our privacy policy for more information."
+      "title": "Nieuwsbrief",
+      "description": "Abonneer u om het laatste nieuws per e-mail te ontvangen",
+      "placeholder": "Voer uw e-mailadres in",
+      "subscribe": "Abonneren",
+      "privacyNote": "Uw gegevens zijn in veilige handen. Raadpleeg ons privacybeleid voor meer informatie."
     },
     "bottom": {
-      "developedBy": "Developed by {brand}",
-      "copyright": "All rights reserved to Zefaaf platform © {year}"
+      "developedBy": "Ontwikkeld door {brand}",
+      "copyright": "Alle rechten voorbehouden aan het Zefaaf-platform © {year}"
     }
+  },
+  "services": {
+    "items": [
+      {
+        "title": "Islamitisch Huwelijksforum",
+        "description": "Islamitische huwelijksforumevenementen die moslims die willen trouwen en hun families samenbrengen"
+      },
+      {
+        "title": "Huwelijksaanvraag",
+        "description": "Vind uw ideale levenspartner uit verschillende landen."
+      },
+      {
+        "title": "VIP Persoonlijke Zoektocht",
+        "description": "Een toegewijde dienst waarbij Zefaaf-consulenten op zoek gaan naar geschikte levenspartners"
+      },
+      {
+        "title": "Begeleiding door Ons Team in Bosnië",
+        "description": "Een begeleid programma waarbij het Zefaaf-team klanten begeleidt bij ontmoetingen met families met het oog op een serieus huwelijk"
+      },
+      {
+        "title": "Online Ontmoeting",
+        "description": "Begin met een sessie bij een gezinsconsulent om uw persoonlijkheid en behoeften te begrijpen"
+      }
+    ]
+  },
+  "globalPresence": {
+    "mapAlt": "Kaart die het bereik van Zefaaf wereldwijd toont",
+    "badge": "3 miljoen gebruikers op Zefaaf",
+    "title": "Wij zijn actief in <brand>175</brand> landen",
+    "description": "Zefaaf verbindt moslims wereldwijd met betrouwbare bemiddelingsdiensten die hun islamitische waarden delen, op een veilige, sharia-conforme manier.",
+    "countries": {
+      "france": "Frankrijk",
+      "germany": "Duitsland",
+      "netherlands": "Nederland",
+      "turkey": "Turkije",
+      "russia": "Rusland",
+      "china": "China",
+      "indonesia": "Indonesië"
+    }
+  },
+  "upcomingEvents": {
+    "description": "Ontdek onze aankomende evenementen en doe met ons mee voor betekenisvolle ervaringen, inspirerende gesprekken en onvergetelijke momenten. Volg ons voor data, details en aanmelding.",
+    "bookCta": "Boek uw ticket",
+    "events": [
+      {
+        "date": "10 januari",
+        "time": "12.00 uur",
+        "title": "Islamitisch Huwelijksforum in Nederland",
+        "location": "Churchillplein 10, 2517 JW",
+        "price": "150 Euro"
+      },
+      {
+        "date": "25 april",
+        "time": "12.00 uur",
+        "title": "Islamitisch Huwelijksforum in Bosnië",
+        "location": "Terezija, 71000",
+        "price": "150 Euro"
+      }
+    ],
+    "ticker": ["Leef uw beste", "gezonde reis", "levenspartner", "gezonde keuzes", "levenspartner"]
+  },
+  "whyChoose": {
+    "title": "Waarom Kiezen Voor Zefaaf",
+    "description": "Bij Zefaaf geloven wij dat een huwelijk meer is dan alleen compatibiliteit — het gaat om het opbouwen van een stabiel leven gegrondvest op islamitische waarden.",
+    "features": [
+      {
+        "title": "Veilige, sharia-conforme videogesprekken",
+        "description": "Een veilige videofunctie onder religieus toezicht, waarmee u uw potentiële levenspartner kunt ontmoeten met inachtneming van islamitische richtlijnen."
+      },
+      {
+        "title": "Directe islamitische en gezinsbegeleiding",
+        "description": "Ontvang na registratie een gratis consult van onze religieuze experts en gezinsconsulenten."
+      },
+      {
+        "title": "Uw stem, uw persoonlijkheid – laat uw stem voor u spreken!",
+        "description": "Een spraakbericht op uw profiel: stel uzelf voor, deel uw interesses en waarden, en vertel over uw visie op het huwelijksleven."
+      },
+      {
+        "title": "Familieontmoeting – begin uw relatie op de halal manier",
+        "description": "Een privé videoruimte waarin beide families voor het eerst samenkomen, op een gepaste, sharia-conforme manier."
+      },
+      {
+        "title": "Voorgoedkeuringssysteem – verspil geen tijd aan onproductieve gesprekken!",
+        "description": "Bekijk uw compatibiliteitspercentage met elk profiel voordat u een gesprek begint."
+      }
+    ]
   }
 }

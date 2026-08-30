@@ -31,7 +31,7 @@ export function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="bg-[#181818] text-white">
+    <footer className="mt-[50px] bg-[#181818] text-white">
       <div className="mx-auto max-w-[1800px] px-(--space-fluid-container) pt-(--space-fluid-xl) pb-(--space-fluid-md)">
         <div className="flex flex-wrap items-start gap-(--space-fluid-md)">
           <Logo className="h-auto w-(--size-fluid-logo-footer-w) shrink-0" />

@@ -1,97 +1,183 @@
 {
   "site": {
     "name": "Zefaaf",
-    "tagline": "Building your ideas into reality"
+    "tagline": "将您的想法变为现实"
   },
   "seo": {
-    "title": "Zefaaf — Marriage & Matchmaking Platform",
-    "description": "Zefaaf is a trusted platform for serious marriage matchmaking — VIP personal search, real success stories, and a genuine path to marriage."
+    "title": "Zefaaf — 婚姻与配对服务平台",
+    "description": "Zefaaf 是一个值得信赖的严肃婚恋配对平台——提供VIP专属搜索、真实的成功故事，以及通往婚姻的真诚之路。"
   },
   "hero": {
-    "title": "Find your life partner the halal way",
-    "subtitle": "Zefaaf is a trusted platform designed to help Muslims find a life partner who shares their Islamic values, in a safe, Sharia-compliant way.",
-    "cta": "Discover more",
-    "ratingLabel": "Rating",
+    "title": "寻找您的人生伴侣\n以清真的方式",
+    "subtitle": "Zefaaf 是一个值得信赖的平台，旨在帮助穆斯林\n以安全、符合伊斯兰教法的方式，找到志同道合、拥有共同伊斯兰价值观的人生伴侣。",
+    "cta": "了解更多",
+    "ratingLabel": "评分",
     "ratingValue": "4.8"
   },
   "stats": {
     "happyClients": {
       "value": "34,484k",
-      "label": "Happy clients"
+      "label": "满意客户"
     },
     "successStories": {
       "value": "2768",
-      "label": "Success stories"
+      "label": "成功案例"
     },
     "registeredMembers": {
       "value": "23416",
-      "label": "Registered Member"
+      "label": "注册会员"
     }
   },
   "nav": {
-    "home": "Home",
-    "services": "Services",
-    "contact": "Contact",
-    "vipSearch": "VIP Personal Search",
-    "about": "About Us",
-    "articles": "Articles",
-    "upcomingEvents": "Upcoming Events",
-    "successStories": "Success Stories",
-    "marriageRequest": "Marriage Request"
+    "home": "首页",
+    "services": "服务",
+    "contact": "联系我们",
+    "vipSearch": "VIP专属搜索",
+    "about": "关于我们",
+    "articles": "文章",
+    "upcomingEvents": "近期活动",
+    "successStories": "成功案例",
+    "marriageRequest": "婚姻申请"
   },
   "footer": {
     "columns": {
       "about": {
-        "title": "About Zefaaf",
+        "title": "关于 Zefaaf",
         "links": {
-          "about": "About Zefaaf",
-          "contact": "Contact Us",
-          "testimonials": "Client Testimonials",
-          "successStories": "Success Stories",
-          "businessLicense": "Business License"
+          "about": "关于 Zefaaf",
+          "contact": "联系我们",
+          "testimonials": "客户评价",
+          "successStories": "成功案例",
+          "businessLicense": "营业执照"
         }
       },
       "account": {
-        "title": "My Account",
+        "title": "我的账户",
         "links": {
-          "manage": "Manage Account",
-          "safetyTips": "Safety Tips",
-          "delete": "Delete Account",
-          "security": "Security & Protection",
-          "membership": "Membership Level"
+          "manage": "管理账户",
+          "safetyTips": "安全提示",
+          "delete": "删除账户",
+          "security": "安全与保护",
+          "membership": "会员等级"
         }
       },
       "help": {
-        "title": "Help",
+        "title": "帮助",
         "links": {
-          "helpCenter": "Help Center",
-          "faq": "FAQ",
-          "quickStart": "Quick Start Guide",
-          "tutorials": "Tutorials",
-          "partnersBlog": "Partners Blog"
+          "helpCenter": "帮助中心",
+          "faq": "常见问题",
+          "quickStart": "快速入门指南",
+          "tutorials": "教程",
+          "partnersBlog": "合作伙伴博客"
         }
       },
       "legal": {
-        "title": "Legal",
+        "title": "法律信息",
         "links": {
-          "privacy": "Privacy Policy",
-          "terms": "Terms & Conditions",
-          "refund": "Payment & Refund Policy",
-          "cookies": "Cookie Policy",
-          "reportAbuse": "Report Abuse"
+          "privacy": "隐私政策",
+          "terms": "条款与条件",
+          "refund": "付款与退款政策",
+          "cookies": "Cookie政策",
+          "reportAbuse": "举报滥用行为"
         }
       }
     },
     "newsletter": {
-      "title": "Newsletter",
-      "description": "Subscribe to receive the latest news by email",
-      "placeholder": "Enter your email address",
-      "subscribe": "Subscribe",
-      "privacyNote": "Your data is in safe hands. Check our privacy policy for more information."
+      "title": "新闻订阅",
+      "description": "订阅以通过电子邮件接收最新资讯",
+      "placeholder": "请输入您的电子邮箱地址",
+      "subscribe": "订阅",
+      "privacyNote": "您的数据安全无忧。欲了解更多信息，请查看我们的隐私政策。"
     },
     "bottom": {
-      "developedBy": "Developed by {brand}",
-      "copyright": "All rights reserved to Zefaaf platform © {year}"
+      "developedBy": "由 {brand} 开发",
+      "copyright": "Zefaaf 平台版权所有 © {year}"
     }
+  },
+  "services": {
+    "items": [
+      {
+        "title": "伊斯兰婚姻论坛",
+        "description": "汇聚寻求婚姻的穆斯林及其家庭的伊斯兰婚姻论坛活动"
+      },
+      {
+        "title": "婚姻申请",
+        "description": "从不同国家寻找您理想的人生伴侣。"
+      },
+      {
+        "title": "VIP专属搜索",
+        "description": "由Zefaaf顾问专门为您寻找合适人生伴侣的专属服务"
+      },
+      {
+        "title": "陪同我们的团队前往波斯尼亚",
+        "description": "由Zefaaf团队陪同客户与家庭会面、以促成严肃婚姻的引导式项目"
+      },
+      {
+        "title": "线上会面",
+        "description": "从与家庭顾问的会谈开始，深入了解您的性格与需求"
+      }
+    ]
+  },
+  "globalPresence": {
+    "mapAlt": "展示Zefaaf全球覆盖范围的地图",
+    "badge": "Zefaaf平台拥有300万用户",
+    "title": "我们的业务遍及<brand>175</brand>个国家",
+    "description": "Zefaaf以安全、符合伊斯兰教法的方式，将全球穆斯林与拥有共同伊斯兰价值观的可信配对服务连接起来。",
+    "countries": {
+      "france": "法国",
+      "germany": "德国",
+      "netherlands": "荷兰",
+      "turkey": "土耳其",
+      "russia": "俄罗斯",
+      "china": "中国",
+      "indonesia": "印度尼西亚"
+    }
+  },
+  "upcomingEvents": {
+    "description": "探索我们的近期活动，与我们一起共享有意义的体验、启发人心的交流和难忘的时刻。请关注我们以获取日期、详情和报名信息。",
+    "bookCta": "预订门票",
+    "events": [
+      {
+        "date": "1月10日",
+        "time": "中午12点",
+        "title": "荷兰伊斯兰婚姻论坛",
+        "location": "Churchillplein 10, 2517 JW",
+        "price": "150欧元"
+      },
+      {
+        "date": "4月25日",
+        "time": "中午12点",
+        "title": "波斯尼亚伊斯兰婚姻论坛",
+        "location": "Terezija, 71000",
+        "price": "150欧元"
+      }
+    ],
+    "ticker": ["活出最好的自己", "健康之旅", "人生伴侣", "健康的选择", "人生伴侣"]
+  },
+  "whyChoose": {
+    "title": "为什么选择 Zefaaf",
+    "description": "在Zefaaf，我们相信婚姻不仅仅是匹配契合——更是建立一个以伊斯兰价值观为根基的稳定人生。",
+    "features": [
+      {
+        "title": "安全、符合伊斯兰教法的视频通话",
+        "description": "在宗教监督下的安全视频功能，让您在遵循伊斯兰教义的同时，与潜在的人生伴侣会面。"
+      },
+      {
+        "title": "直接的伊斯兰及家庭咨询",
+        "description": "注册后即可免费获得我们宗教专家和家庭顾问的咨询。"
+      },
+      {
+        "title": "您的声音，您的个性——让您的声音为您发声！",
+        "description": "在您的资料中添加语音留言：自我介绍，分享您的兴趣与价值观，并谈谈您对婚姻生活的愿景。"
+      },
+      {
+        "title": "家庭见面——以清真的方式开启您的关系",
+        "description": "一个私密的视频房间，让双方家庭首次以恰当、符合伊斯兰教法的方式相聚。"
+      },
+      {
+        "title": "预先匹配系统——不要把时间浪费在无效的交流上！",
+        "description": "在开始对话之前，即可查看您与任意资料的匹配百分比。"
+      }
+    ]
   }
 }

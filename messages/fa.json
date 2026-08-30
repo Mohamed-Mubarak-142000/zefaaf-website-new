@@ -1,97 +1,126 @@
 {
   "site": {
     "name": "Zefaaf",
-    "tagline": "Building your ideas into reality"
+    "tagline": "تبدیل ایده‌های شما به واقعیت"
   },
   "seo": {
-    "title": "Zefaaf — Marriage & Matchmaking Platform",
-    "description": "Zefaaf is a trusted platform for serious marriage matchmaking — VIP personal search, real success stories, and a genuine path to marriage."
+    "title": "زفاف — پلتفرم ازدواج و همسریابی",
+    "description": "زفاف یک پلتفرم قابل اعتماد برای همسریابی جدی است — جست‌وجوی شخصی VIP، داستان‌های موفقیت واقعی و مسیری حقیقی به سوی ازدواج."
   },
   "hero": {
-    "title": "Find your life partner the halal way",
-    "subtitle": "Zefaaf is a trusted platform designed to help Muslims find a life partner who shares their Islamic values, in a safe, Sharia-compliant way.",
-    "cta": "Discover more",
-    "ratingLabel": "Rating",
+    "title": "همسر زندگی خود را\nبه شیوه حلال بیابید",
+    "subtitle": "زفاف پلتفرمی قابل اعتماد است که به مسلمانان کمک می‌کند\nهمسری بیابند که ارزش‌های اسلامی مشترکی دارد؛ به شیوه‌ای امن و مطابق با شریعت.",
+    "cta": "بیشتر بدانید",
+    "ratingLabel": "امتیاز",
     "ratingValue": "4.8"
   },
   "stats": {
-    "happyClients": {
-      "value": "34,484k",
-      "label": "Happy clients"
-    },
-    "successStories": {
-      "value": "2768",
-      "label": "Success stories"
-    },
-    "registeredMembers": {
-      "value": "23416",
-      "label": "Registered Member"
-    }
+    "happyClients": { "value": "34,484k", "label": "مشتریان راضی" },
+    "successStories": { "value": "2768", "label": "داستان‌های موفقیت" },
+    "registeredMembers": { "value": "23416", "label": "اعضای ثبت‌نام‌شده" }
   },
   "nav": {
-    "home": "Home",
-    "services": "Services",
-    "contact": "Contact",
-    "vipSearch": "VIP Personal Search",
-    "about": "About Us",
-    "articles": "Articles",
-    "upcomingEvents": "Upcoming Events",
-    "successStories": "Success Stories",
-    "marriageRequest": "Marriage Request"
+    "home": "خانه",
+    "services": "خدمات",
+    "contact": "تماس با ما",
+    "vipSearch": "جست‌وجوی شخصی VIP",
+    "about": "درباره ما",
+    "articles": "مقالات",
+    "upcomingEvents": "رویدادهای پیش رو",
+    "successStories": "داستان‌های موفقیت",
+    "marriageRequest": "درخواست ازدواج"
   },
   "footer": {
     "columns": {
       "about": {
-        "title": "About Zefaaf",
+        "title": "درباره زفاف",
         "links": {
-          "about": "About Zefaaf",
-          "contact": "Contact Us",
-          "testimonials": "Client Testimonials",
-          "successStories": "Success Stories",
-          "businessLicense": "Business License"
+          "about": "درباره زفاف",
+          "contact": "تماس با ما",
+          "testimonials": "نظرات مشتریان",
+          "successStories": "داستان‌های موفقیت",
+          "businessLicense": "مجوز کسب‌وکار"
         }
       },
       "account": {
-        "title": "My Account",
+        "title": "حساب کاربری من",
         "links": {
-          "manage": "Manage Account",
-          "safetyTips": "Safety Tips",
-          "delete": "Delete Account",
-          "security": "Security & Protection",
-          "membership": "Membership Level"
+          "manage": "مدیریت حساب کاربری",
+          "safetyTips": "نکات ایمنی",
+          "delete": "حذف حساب کاربری",
+          "security": "امنیت و حفاظت",
+          "membership": "سطح عضویت"
         }
       },
       "help": {
-        "title": "Help",
+        "title": "راهنما",
         "links": {
-          "helpCenter": "Help Center",
-          "faq": "FAQ",
-          "quickStart": "Quick Start Guide",
-          "tutorials": "Tutorials",
-          "partnersBlog": "Partners Blog"
+          "helpCenter": "مرکز راهنما",
+          "faq": "سوالات متداول",
+          "quickStart": "راهنمای شروع سریع",
+          "tutorials": "آموزش‌ها",
+          "partnersBlog": "وبلاگ همکاران"
         }
       },
       "legal": {
-        "title": "Legal",
+        "title": "حقوقی",
         "links": {
-          "privacy": "Privacy Policy",
-          "terms": "Terms & Conditions",
-          "refund": "Payment & Refund Policy",
-          "cookies": "Cookie Policy",
-          "reportAbuse": "Report Abuse"
+          "privacy": "سیاست حریم خصوصی",
+          "terms": "شرایط و ضوابط",
+          "refund": "سیاست پرداخت و بازپرداخت",
+          "cookies": "سیاست کوکی‌ها",
+          "reportAbuse": "گزارش سوءاستفاده"
         }
       }
     },
     "newsletter": {
-      "title": "Newsletter",
-      "description": "Subscribe to receive the latest news by email",
-      "placeholder": "Enter your email address",
-      "subscribe": "Subscribe",
-      "privacyNote": "Your data is in safe hands. Check our privacy policy for more information."
+      "title": "خبرنامه",
+      "description": "برای دریافت آخرین اخبار از طریق ایمیل عضو شوید",
+      "placeholder": "آدرس ایمیل خود را وارد کنید",
+      "subscribe": "عضویت",
+      "privacyNote": "اطلاعات شما نزد ما امن است. برای اطلاعات بیشتر سیاست حریم خصوصی ما را مطالعه کنید."
     },
     "bottom": {
-      "developedBy": "Developed by {brand}",
-      "copyright": "All rights reserved to Zefaaf platform © {year}"
+      "developedBy": "طراحی‌شده توسط {brand}",
+      "copyright": "تمامی حقوق برای پلتفرم زفاف محفوظ است © {year}"
     }
+  },
+  "services": {
+    "items": [
+      { "title": "انجمن ازدواج اسلامی", "description": "رویدادهای انجمن ازدواج اسلامی که مسلمانان به‌دنبال ازدواج و خانواده‌های آنان را گرد هم می‌آورد" },
+      { "title": "درخواست ازدواج", "description": "همسر ایده‌آل زندگی خود را از کشورهای مختلف بیابید." },
+      { "title": "جست‌وجوی شخصی VIP", "description": "خدمتی اختصاصی که در آن مشاوران زفاف به دنبال همسران مناسب می‌گردند" },
+      { "title": "همراهی تیم ما در بوسنی", "description": "برنامه‌ای هدایت‌شده که در آن تیم زفاف مشتریان را برای دیدار با خانواده‌ها جهت ازدواجی جدی همراهی می‌کند" },
+      { "title": "دیدار آنلاین", "description": "با یک جلسه با مشاور خانواده شروع کنید تا شخصیت و نیازهای شما درک شود" }
+    ]
+  },
+  "globalPresence": {
+    "mapAlt": "نقشه‌ای که گستره فعالیت زفاف را در سراسر جهان نشان می‌دهد",
+    "badge": "3 میلیون کاربر در زفاف",
+    "title": "ما در <brand>175</brand> کشور فعالیت می‌کنیم",
+    "description": "زفاف مسلمانان سراسر جهان را با خدمات همسریابی قابل اعتماد که ارزش‌های اسلامی مشترکی دارند، به شیوه‌ای امن و مطابق با شریعت پیوند می‌دهد.",
+    "countries": {
+      "france": "فرانسه", "germany": "آلمان", "netherlands": "هلند", "turkey": "ترکیه", "russia": "روسیه", "china": "چین", "indonesia": "اندونزی"
+    }
+  },
+  "upcomingEvents": {
+    "description": "رویدادهای پیش روی ما را کشف کنید و در تجربه‌هایی معنادار، گفت‌وگوهایی الهام‌بخش و لحظاتی به‌یادماندنی به ما بپیوندید. برای اطلاع از تاریخ‌ها، جزئیات و ثبت‌نام، ما را دنبال کنید.",
+    "bookCta": "بلیت خود را رزرو کنید",
+    "events": [
+      { "date": "10 ژانویه", "time": "12 ظهر", "title": "انجمن ازدواج اسلامی در هلند", "location": "Churchillplein 10, 2517 JW", "price": "150 یورو" },
+      { "date": "25 آوریل", "time": "12 ظهر", "title": "انجمن ازدواج اسلامی در بوسنی", "location": "Terezija, 71000", "price": "150 یورو" }
+    ],
+    "ticker": ["بهترین زندگی را تجربه کنید", "مسیری سالم", "همسر زندگی", "انتخاب‌های سالم", "همسر زندگی"]
+  },
+  "whyChoose": {
+    "title": "چرا زفاف را انتخاب کنیم",
+    "description": "در زفاف، ما معتقدیم ازدواج چیزی فراتر از تناسب است — ساختن زندگی‌ای پایدار بر پایه ارزش‌های اسلامی.",
+    "features": [
+      { "title": "تماس‌های تصویری امن و مطابق با شریعت", "description": "قابلیت تماس تصویری امن تحت نظارت دینی که به شما امکان می‌دهد همسر بالقوه خود را در چارچوب اصول اسلامی ملاقات کنید." },
+      { "title": "مشاوره مستقیم اسلامی و خانوادگی", "description": "پس از ثبت‌نام، از مشاوره رایگان کارشناسان دینی و مشاوران خانواده ما بهره‌مند شوید." },
+      { "title": "صدای شما، شخصیت شما – بگذارید صدایتان گویای شما باشد!", "description": "یک پیام صوتی در پروفایل شما: خودتان را معرفی کنید، علایق و ارزش‌های خود را به اشتراک بگذارید و درباره دیدگاهتان نسبت به زندگی مشترک صحبت کنید." },
+      { "title": "دیدار خانوادگی – رابطه خود را به شیوه حلال آغاز کنید", "description": "یک اتاق ویدئویی خصوصی که برای نخستین‌بار دو خانواده را به شیوه‌ای درست و مطابق با شریعت گرد هم می‌آورد." },
+      { "title": "سامانه تأیید اولیه – وقت خود را صرف گفت‌وگوهای بی‌نتیجه نکنید!", "description": "پیش از شروع گفت‌وگو، درصد تناسب خود را با هر پروفایل مشاهده کنید." }
+    ]
   }
 }

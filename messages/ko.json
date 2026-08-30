@@ -1,97 +1,183 @@
 {
   "site": {
     "name": "Zefaaf",
-    "tagline": "Building your ideas into reality"
+    "tagline": "당신의 아이디어를 현실로 만듭니다"
   },
   "seo": {
-    "title": "Zefaaf — Marriage & Matchmaking Platform",
-    "description": "Zefaaf is a trusted platform for serious marriage matchmaking — VIP personal search, real success stories, and a genuine path to marriage."
+    "title": "Zefaaf — 결혼 및 매칭 플랫폼",
+    "description": "Zefaaf는 진지한 결혼을 위한 신뢰할 수 있는 매칭 플랫폼입니다 — VIP 개인 검색, 실제 성공 사례, 그리고 결혼으로 이어지는 진정한 길을 제공합니다."
   },
   "hero": {
-    "title": "Find your life partner the halal way",
-    "subtitle": "Zefaaf is a trusted platform designed to help Muslims find a life partner who shares their Islamic values, in a safe, Sharia-compliant way.",
-    "cta": "Discover more",
-    "ratingLabel": "Rating",
+    "title": "할랄한 방식으로\n인생의 동반자를 찾으세요",
+    "subtitle": "Zefaaf는 무슬림들이 안전하고 샤리아를 준수하는 방식으로\n이슬람 가치관을 공유하는 인생의 동반자를 찾도록 돕는 신뢰할 수 있는 플랫폼입니다.",
+    "cta": "더 알아보기",
+    "ratingLabel": "평점",
     "ratingValue": "4.8"
   },
   "stats": {
     "happyClients": {
       "value": "34,484k",
-      "label": "Happy clients"
+      "label": "행복한 고객"
     },
     "successStories": {
       "value": "2768",
-      "label": "Success stories"
+      "label": "성공 사례"
     },
     "registeredMembers": {
       "value": "23416",
-      "label": "Registered Member"
+      "label": "등록 회원"
     }
   },
   "nav": {
-    "home": "Home",
-    "services": "Services",
-    "contact": "Contact",
-    "vipSearch": "VIP Personal Search",
-    "about": "About Us",
-    "articles": "Articles",
-    "upcomingEvents": "Upcoming Events",
-    "successStories": "Success Stories",
-    "marriageRequest": "Marriage Request"
+    "home": "홈",
+    "services": "서비스",
+    "contact": "문의하기",
+    "vipSearch": "VIP 개인 검색",
+    "about": "회사 소개",
+    "articles": "아티클",
+    "upcomingEvents": "다가오는 행사",
+    "successStories": "성공 사례",
+    "marriageRequest": "결혼 신청"
   },
   "footer": {
     "columns": {
       "about": {
-        "title": "About Zefaaf",
+        "title": "Zefaaf 소개",
         "links": {
-          "about": "About Zefaaf",
-          "contact": "Contact Us",
-          "testimonials": "Client Testimonials",
-          "successStories": "Success Stories",
-          "businessLicense": "Business License"
+          "about": "Zefaaf 소개",
+          "contact": "문의하기",
+          "testimonials": "고객 후기",
+          "successStories": "성공 사례",
+          "businessLicense": "사업자 등록증"
         }
       },
       "account": {
-        "title": "My Account",
+        "title": "내 계정",
         "links": {
-          "manage": "Manage Account",
-          "safetyTips": "Safety Tips",
-          "delete": "Delete Account",
-          "security": "Security & Protection",
-          "membership": "Membership Level"
+          "manage": "계정 관리",
+          "safetyTips": "안전 수칙",
+          "delete": "계정 삭제",
+          "security": "보안 및 개인정보 보호",
+          "membership": "멤버십 등급"
         }
       },
       "help": {
-        "title": "Help",
+        "title": "도움말",
         "links": {
-          "helpCenter": "Help Center",
-          "faq": "FAQ",
-          "quickStart": "Quick Start Guide",
-          "tutorials": "Tutorials",
-          "partnersBlog": "Partners Blog"
+          "helpCenter": "고객센터",
+          "faq": "자주 묻는 질문",
+          "quickStart": "빠른 시작 가이드",
+          "tutorials": "튜토리얼",
+          "partnersBlog": "파트너 블로그"
         }
       },
       "legal": {
-        "title": "Legal",
+        "title": "법적 고지",
         "links": {
-          "privacy": "Privacy Policy",
-          "terms": "Terms & Conditions",
-          "refund": "Payment & Refund Policy",
-          "cookies": "Cookie Policy",
-          "reportAbuse": "Report Abuse"
+          "privacy": "개인정보 처리방침",
+          "terms": "이용약관",
+          "refund": "결제 및 환불 정책",
+          "cookies": "쿠키 정책",
+          "reportAbuse": "신고하기"
         }
       }
     },
     "newsletter": {
-      "title": "Newsletter",
-      "description": "Subscribe to receive the latest news by email",
-      "placeholder": "Enter your email address",
-      "subscribe": "Subscribe",
-      "privacyNote": "Your data is in safe hands. Check our privacy policy for more information."
+      "title": "뉴스레터",
+      "description": "이메일로 최신 소식을 받아보세요",
+      "placeholder": "이메일 주소를 입력하세요",
+      "subscribe": "구독하기",
+      "privacyNote": "고객님의 정보는 안전하게 보호됩니다. 자세한 내용은 개인정보 처리방침을 확인하세요."
     },
     "bottom": {
-      "developedBy": "Developed by {brand}",
-      "copyright": "All rights reserved to Zefaaf platform © {year}"
+      "developedBy": "{brand}가 개발함",
+      "copyright": "Zefaaf 플랫폼의 모든 권리 보유 © {year}"
     }
+  },
+  "services": {
+    "items": [
+      {
+        "title": "이슬람 결혼 포럼",
+        "description": "결혼을 원하는 무슬림들과 그 가족들이 한자리에 모이는 이슬람 결혼 포럼 행사"
+      },
+      {
+        "title": "결혼 신청",
+        "description": "여러 나라에서 이상적인 인생의 동반자를 찾아보세요."
+      },
+      {
+        "title": "VIP 개인 검색",
+        "description": "Zefaaf 상담사가 적합한 인생의 동반자를 직접 찾아드리는 전담 서비스"
+      },
+      {
+        "title": "보스니아 동행 서비스",
+        "description": "Zefaaf 팀이 진지한 결혼을 위해 가족을 만나는 자리에 동행하는 안내 프로그램"
+      },
+      {
+        "title": "온라인 미팅",
+        "description": "가족 상담사와의 세션을 통해 당신의 성향과 필요를 파악하는 것부터 시작하세요"
+      }
+    ]
+  },
+  "globalPresence": {
+    "mapAlt": "전 세계 Zefaaf의 활동 범위를 보여주는 지도",
+    "badge": "Zefaaf 사용자 300만 명",
+    "title": "우리는 <brand>175</brand>개국에서 활동하고 있습니다",
+    "description": "Zefaaf는 전 세계 무슬림들을 이슬람 가치관을 공유하는 신뢰할 수 있는 매칭 서비스와 안전하고 샤리아를 준수하는 방식으로 연결합니다.",
+    "countries": {
+      "france": "프랑스",
+      "germany": "독일",
+      "netherlands": "네덜란드",
+      "turkey": "터키",
+      "russia": "러시아",
+      "china": "중국",
+      "indonesia": "인도네시아"
+    }
+  },
+  "upcomingEvents": {
+    "description": "다가오는 행사를 만나보고, 의미 있는 경험과 영감을 주는 대화, 그리고 잊지 못할 순간을 함께하세요. 일정, 세부 정보 및 등록 안내는 저희를 팔로우해 주세요.",
+    "bookCta": "티켓 예매하기",
+    "events": [
+      {
+        "date": "1월 10일",
+        "time": "오후 12시",
+        "title": "네덜란드 이슬람 결혼 포럼",
+        "location": "Churchillplein 10, 2517 JW",
+        "price": "150유로"
+      },
+      {
+        "date": "4월 25일",
+        "time": "오후 12시",
+        "title": "보스니아 이슬람 결혼 포럼",
+        "location": "Terezija, 71000",
+        "price": "150유로"
+      }
+    ],
+    "ticker": ["최고의 삶을 사세요", "건강한 여정", "인생의 동반자", "건강한 선택", "인생의 동반자"]
+  },
+  "whyChoose": {
+    "title": "Zefaaf를 선택해야 하는 이유",
+    "description": "Zefaaf는 결혼이 단순한 궁합을 넘어, 이슬람 가치관에 기반한 안정적인 삶을 만드는 것이라고 믿습니다.",
+    "features": [
+      {
+        "title": "안전하고 샤리아를 준수하는 화상 통화",
+        "description": "종교적 감독 하에 진행되는 안전한 화상 기능으로, 이슬람 지침을 준수하면서 잠재적인 인생의 동반자를 만날 수 있습니다."
+      },
+      {
+        "title": "직접적인 이슬람 및 가족 상담",
+        "description": "가입 시 저희 종교 전문가와 가족 상담사로부터 무료 상담을 받으세요."
+      },
+      {
+        "title": "당신의 목소리, 당신의 개성 – 목소리로 자신을 표현하세요!",
+        "description": "프로필에 음성 메시지를 남겨보세요: 자신을 소개하고, 관심사와 가치관을 공유하며, 결혼 생활에 대한 비전을 이야기하세요."
+      },
+      {
+        "title": "가족 상견례 – 할랄한 방식으로 관계를 시작하세요",
+        "description": "두 가족이 처음으로 적절하고 샤리아를 준수하는 방식으로 함께하는 전용 화상 채팅방입니다."
+      },
+      {
+        "title": "사전 승인 시스템 – 의미 없는 대화에 시간을 낭비하지 마세요!",
+        "description": "대화를 시작하기 전에 상대방 프로필과의 궁합 비율을 확인하세요."
+      }
+    ]
   }
 }
