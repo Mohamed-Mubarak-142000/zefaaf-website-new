@@ -3,8 +3,6 @@
 import gsap from "gsap";
 import { useLayoutEffect, useRef } from "react";
 
-import { useSplashScreenComplete } from "@/shared/lib/use-splash-screen-complete";
-
 type Stat = {
   value: string;
   label: string;
@@ -47,10 +45,9 @@ function formatNumber(value: number, grouped: boolean, digitSet: string | null) 
 
 export function AnimatedStats({ stats }: AnimatedStatsProps) {
   const rootRef = useRef<HTMLDivElement>(null);
-  const splashScreenComplete = useSplashScreenComplete();
 
   useLayoutEffect(() => {
-    if (!rootRef.current || !splashScreenComplete) return;
+    if (!rootRef.current) return;
 
     const counters = rootRef.current.querySelectorAll<HTMLElement>("[data-counter]");
     const context = gsap.context(() => {
@@ -79,7 +76,7 @@ export function AnimatedStats({ stats }: AnimatedStatsProps) {
     }, rootRef);
 
     return () => context.revert();
-  }, [splashScreenComplete]);
+  }, []);
 
   return (
     <div ref={rootRef} className="mt-8 flex items-center gap-(--space-fluid-lg)">

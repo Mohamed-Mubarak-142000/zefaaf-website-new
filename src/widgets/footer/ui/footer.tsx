@@ -11,10 +11,8 @@ const DEVELOPER_NAME = "Tech-flow";
 // content and hrefs aren't real pages yet (only the Figma footer itself was
 // specified), same placeholder approach as the header's NAV_ITEMS.
 const FOOTER_COLUMNS = [
-  { key: "about", links: ["about", "contact", "testimonials", "successStories", "businessLicense"] },
-  { key: "account", links: ["manage", "safetyTips", "delete", "security", "membership"] },
-  { key: "help", links: ["helpCenter", "faq", "quickStart", "tutorials", "partnersBlog"] },
-  { key: "legal", links: ["privacy", "terms", "refund", "cookies", "reportAbuse"] },
+  { key: "about", links: ["about", "contact", "testimonials", "successStories"] },
+  { key: "legal", links: ["privacy", "terms"] },
 ] as const;
 
 const SOCIAL_LINKS = [
@@ -56,10 +54,10 @@ export function Footer() {
             </div>
           ))}
 
-          <NewsletterForm className="min-w-52 flex-[1.5_1_200px]" />
+          <NewsletterForm className="min-w-72 flex-[1.5_1_320px] lg:ms-auto lg:max-w-xl" />
         </div>
 
-        <div className="flex flex-wrap items-center justify-between gap-(--space-fluid-sm) pt-(--space-fluid-md)">
+        <div className="mt-(--space-fluid-md) flex flex-wrap items-center justify-between gap-(--space-fluid-sm) border-t border-white/15 pt-(--space-fluid-md)">
           <div className="flex items-center gap-(--space-fluid-sm) font-alexandria text-(length:--text-fluid-xs) text-white">
             <span>{t("footer.bottom.developedBy", { brand: DEVELOPER_NAME })}</span>
             <span className="h-3 w-px bg-white/40" aria-hidden="true" />

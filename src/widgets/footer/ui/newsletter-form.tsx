@@ -24,13 +24,13 @@ export function NewsletterForm({ className }: { className?: string }) {
         </p>
       </div>
 
-      <form onSubmit={handleSubmit} className="flex flex-col gap-(--space-fluid-xs)">
+      <form onSubmit={handleSubmit} className="flex gap-(--space-fluid-xs)">
         <Input
           type="email"
           dir="ltr"
           required
           placeholder={t("placeholder")}
-          className="h-9 rounded-full border-none bg-white px-(--space-fluid-sm) text-(length:--text-fluid-xs) text-black placeholder:text-muted-foreground"
+          className="h-9 min-w-0 flex-1 rounded-full border-none bg-white px-(--space-fluid-sm) text-(length:--text-fluid-xs) text-black placeholder:text-muted-foreground"
         />
         <Button
           type="submit"
