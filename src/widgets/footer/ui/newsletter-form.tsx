@@ -16,10 +16,10 @@ export function NewsletterForm({ className }: { className?: string }) {
   return (
     <div className={cn("flex flex-col gap-(--space-fluid-sm)", className)}>
       <div className="flex flex-col gap-(--space-fluid-2xs)">
-        <p className="font-alexandria text-(length:--text-fluid-nav) font-normal text-white">
+        <p className="font-alexandria text-(length:--text-fluid-xs) font-normal text-white">
           {t("title")}
         </p>
-        <p className="font-alexandria text-(length:--text-fluid-xs) text-white/80">
+        <p className="font-alexandria text-[10px] text-white/80 sm:text-[11px]">
           {t("description")}
         </p>
       </div>
@@ -30,18 +30,18 @@ export function NewsletterForm({ className }: { className?: string }) {
           dir="ltr"
           required
           placeholder={t("placeholder")}
-          className="h-9 min-w-0 flex-1 rounded-full border-none bg-white px-(--space-fluid-sm) text-(length:--text-fluid-xs) text-black placeholder:text-muted-foreground"
+          className="h-8 min-w-0 flex-1 rounded-full border-none bg-white px-(--space-fluid-sm) text-[10px] text-black placeholder:text-muted-foreground sm:text-[11px]"
         />
         <Button
           type="submit"
           variant="outline"
-          className="w-fit rounded-full border-2 border-stroke-1 bg-white bg-[linear-gradient(191.74deg,#FFC643_0%,#F668D1_50.884%,#8539F7_100%)] bg-clip-text px-(--space-fluid-md) py-(--space-fluid-2xs) font-alexandria text-(length:--text-fluid-xs) font-bold text-transparent transition-opacity hover:bg-white hover:text-transparent hover:opacity-90"
+          className="h-8 w-fit rounded-full border-0 bg-white px-(--space-fluid-md) font-alexandria text-[10px] font-bold text-[#B02898] transition-opacity hover:bg-white hover:text-[#B02898] hover:opacity-90 sm:text-[11px]"
         >
           {t("subscribe")}
         </Button>
       </form>
 
-      <p className="font-alexandria text-(length:--text-fluid-xs) text-white/70">
+      <p className="font-alexandria text-[9px] text-white/70 sm:text-[10px]">
         {t("privacyNote")}
       </p>
     </div>

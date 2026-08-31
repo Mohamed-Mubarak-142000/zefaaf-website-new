@@ -54,7 +54,7 @@ export function Footer() {
             </div>
           ))}
 
-          <NewsletterForm className="min-w-72 flex-[1.5_1_320px] lg:ms-auto lg:max-w-xl" />
+          <NewsletterForm className="min-w-64 flex-[1_1_280px] lg:ms-auto lg:max-w-md" />
         </div>
 
         <div className="mt-(--space-fluid-md) flex flex-wrap items-center justify-between gap-(--space-fluid-sm) border-t border-white/15 pt-(--space-fluid-md)">

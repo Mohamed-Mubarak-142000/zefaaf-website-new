@@ -113,7 +113,7 @@ export function UpcomingEvents() {
         <img
           src="/images/events/glow-top.svg"
           alt=""
-          className="pointer-events-none absolute inset-x-0 top-0 z-10 h-[clamp(90px,12.4vw,179px)] w-full -translate-y-1/2 opacity-100 dark:opacity-30"
+          className="pointer-events-none absolute top-0 left-1/2 z-10 h-[clamp(90px,12.4vw,179px)] w-screen max-w-none -translate-x-1/2 -translate-y-1/2 object-fill opacity-100 dark:opacity-30"
         />
 
         <div className="relative mx-auto flex w-full max-w-[1600px] flex-col gap-[clamp(28px,3.5vw,44px)] px-(--space-fluid-container) lg:flex-row lg:items-center lg:justify-between lg:gap-[clamp(32px,4vw,64px)]">
