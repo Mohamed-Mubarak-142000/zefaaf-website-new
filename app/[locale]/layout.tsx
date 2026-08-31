@@ -16,7 +16,7 @@ const geist = Geist({ subsets: ["latin"], variable: "--font-sans" });
 // Navbar typography from the Figma design: Alexandria for links/buttons, Almarai (bold) for the language label.
 const alexandria = Alexandria({
   subsets: ["arabic", "latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["400", "500", "600", "700", "800"],
   variable: "--font-alexandria",
 });
 const almarai = Almarai({
