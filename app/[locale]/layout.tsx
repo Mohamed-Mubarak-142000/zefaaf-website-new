@@ -9,7 +9,6 @@ import { siteConfig } from "@/shared/config/site";
 import { cn } from "@/shared/lib/utils";
 import { buildMetadata } from "@/shared/lib/seo";
 import { getDirection, routing, type Locale } from "@/shared/i18n";
-import { SplashScreen } from "@/widgets/splash-screen";
 
 import "../globals.css";
 
@@ -81,7 +80,6 @@ export default async function LocaleLayout({
       <body>
         <NextIntlClientProvider>
           <AppProviders>
-            <SplashScreen />
             {children}
           </AppProviders>
         </NextIntlClientProvider>
