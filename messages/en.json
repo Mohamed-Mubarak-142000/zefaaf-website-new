@@ -10,7 +10,7 @@
   "hero": {
     "title": "Find your life\npartner the halal way",
     "subtitle": "Zefaaf is a trusted platform designed to help Muslims\nfind a life partner who shares their Islamic values, in a safe, Sharia-compliant way.",
-    "cta": "Discover more",
+    "cta": "Explore more",
     "ratingLabel": "Rating",
     "ratingValue": "4.8"
   },
@@ -34,10 +34,16 @@
     "contact": "Contact",
     "vipSearch": "VIP Personal Search",
     "about": "About Us",
-    "articles": "Articles",
+    "articles": "Blogs",
     "upcomingEvents": "Upcoming Events",
     "successStories": "Success Stories",
-    "marriageRequest": "Marriage Request"
+    "marriageRequest": "Marriage Request",
+    "servicesMenu": {
+      "zefaafEvents": "Zefaaf events",
+      "marriageForm": "Your Marriage Form",
+      "bosniaTour": "Bosnia Marriage Tour",
+      "meetingInCountry": "Meeting in Your Country"
+    }
   },
   "footer": {
     "columns": {
@@ -46,7 +52,7 @@
         "links": {
           "about": "About Zefaaf",
           "contact": "Contact Us",
-            "testimonials": "Blogs",
+          "testimonials": "Blogs",
           "successStories": "Success Stories",
           "businessLicense": "Business License"
         }
@@ -95,13 +101,14 @@
     }
   },
   "services": {
+    "title": "Our Services",
     "items": [
       {
-        "title": "Islamic Marriage Forum",
+        "title": "Zefaaf events",
         "description": "Islamic marriage forum events that bring together Muslims seeking marriage and their families"
       },
       {
-        "title": "Marriage Application",
+        "title": "Your Marriage Form",
         "description": "Find your ideal life partner from different countries."
       },
       {
@@ -109,28 +116,27 @@
         "description": "A dedicated service where Zefaaf consultants search for suitable life partners"
       },
       {
-        "title": "Accompanying Our Team in Bosnia",
+        "title": "Bosnia Marriage Tour",
         "description": "A guided program where the Zefaaf team accompanies clients to meet families for serious marriage"
       },
       {
-        "title": "Online Meeting",
+        "title": "Meeting in Your Country",
         "description": "Start with a session with a family consultant to understand your personality and needs"
       }
     ]
   },
   "globalPresence": {
     "mapAlt": "Map showing Zefaaf's reach around the world",
-    "badge": "3 million users on Zefaaf",
-    "title": "We operate in <brand>175</brand> countries",
-    "description": "Zefaaf connects Muslims around the world with trusted matchmaking services who share their Islamic values, in a safe, Sharia-compliant way.",
+    "badge": "12k user in zefaaf",
+    "title": "We support on <brand>175</brand> country",
+    "description": "Zefaaf connects Muslims around the world with compatible life partners who share their Islamic values, in a safe and Sharia-compliant way",
     "countries": {
-      "france": "France",
-      "germany": "Germany",
-      "netherlands": "Netherlands",
-      "turkey": "Turkey",
-      "russia": "Russia",
-      "china": "China",
-      "indonesia": "Indonesia"
+      "france": "North America",
+      "germany": "South America",
+      "netherlands": "Europe",
+      "turkey": "Africa",
+      "russia": "Asia",
+      "china": "Oceania"
     }
   },
   "upcomingEvents": {
@@ -180,72 +186,246 @@
         "price": "150 Euro"
       }
     ],
-    "ticker": ["Live your best", "healthy journey", "life partner", "healthy choices", "life partner"]
+    "ticker": [
+      "Live your best",
+      "healthy journey",
+      "life partner",
+      "healthy choices",
+      "life partner"
+    ]
   },
-  "whyChoose": {
-    "title": "Why Choose Zefaaf",
-    "description": "At Zefaaf, we believe marriage is more than just compatibility — it's about building a stable life founded on Islamic values.",
-    "features": [
+  "blogDetail": {
+    "breadcrumb": {
+      "home": "Home",
+      "blogs": "Blogs",
+      "current": "Blog Details"
+    },
+    "date": "02-12-2026",
+    "title": "Your Complete Guide to Tourism in Bosnia and Herzegovina: Tips for First-Time Travelers.",
+    "intro": "Bosnia and Herzegovina is a captivating destination that wins travelers’ hearts with its breathtaking natural beauty and rich history. In this article, Zefaaf highlights the most important tips and advice for first-time travelers, from planning your trip and choosing the best time to visit to understanding local culture and etiquette. This comprehensive guide will help you enjoy a comfortable and memorable travel experience filled with unforgettable moments.",
+    "banner": {
+      "imageAlt": "A smiling Muslim couple greeting the camera",
+      "title": "Stay updated with the trending articles"
+    },
+    "leadParagraphs": [
+      "Bosnia and Herzegovina is a destination that might seem easy on the map, but the experience becomes much more wonderful when you know some details before traveling. Between historic Sarajevo, Mostar with its famous bridge, and the nature that surrounds the cities and villages, you will find that the trip does not need a crowded schedule as much as it needs smart and flexible planning.",
+      "Therefore, if this is your first visit, this is the Bosnia tourism guide you need before packing your bags; from choosing the travel date and accommodation, to transportation and safety, all the way to practical tips that make your experience more comfortable, whether you are traveling alone or with your life partner, or planning for family tourism in Bosnia."
+    ],
+    "sections": [
       {
-        "title": "Secure, Sharia-compliant video calls",
-        "description": "A secure video feature under religious supervision, letting you meet your potential life partner while upholding Islamic guidelines."
+        "heading": "What is the best time to visit Bosnia and Herzegovina?",
+        "paragraphs": [
+          "The best time to visit Bosnia and Herzegovina depends on the type of trip you are looking for. Spring is suitable for anyone wanting to enjoy nature and moderate weather, while summer attracts travelers looking for outdoor activities and trips between cities.",
+          "Autumn gives you a calm atmosphere and landscapes with different colors, while winter represents an opportunity for lovers of cold weather, highlands, and winter activities.",
+          "Consequently, there is no single answer that suits everyone. If your goal is to tour the cities and explore nature without high heat, spring and autumn are comfortable choices. As for wanting to take advantage of the long daylight and many activities, summer can be suitable for you.",
+          "And after choosing the season, the most important question comes: Where will you stay and how will you move?"
+        ]
       },
       {
-        "title": "Direct Islamic and family counseling",
-        "description": "Get a free consultation upon registration from our religious experts and family counselors."
+        "heading": "Where to stay in Bosnia and Herzegovina?",
+        "paragraphs": [
+          "Choosing accommodation must be linked to your trip program, and not just the price. In Sarajevo, for example, staying near central areas facilitates access to landmarks, restaurants, and transportation, while in other cities you might prefer staying near the city center or natural areas you plan to visit.",
+          "It is also important to review traveler reviews before booking, and ensure the presence of amenities you need, especially if you are traveling with a family.",
+          "As for family tourism in Bosnia, it is best to prioritize location, quietness, and ease of access to services, so that daily movement over long distances does not turn into a burden on family members.",
+          "Once the accommodation is determined, planning transportation between cities becomes the next step."
+        ]
       },
       {
-        "title": "Your voice, your personality – let your voice speak for you!",
-        "description": "A voice message on your profile: introduce yourself, share your interests and values, and talk about your vision for married life."
+        "heading": "How is transportation in Bosnia and Herzegovina?",
+        "paragraphs": [
+          "You can get around Bosnia and Herzegovina in several ways, and the choice depends on the distance, number of people, and the nature of the trip.",
+          "Inside cities, local transportation or taxis can be used, while buses become a practical option when moving between a number of cities. If you prefer the freedom to determine your stopping times and visit places away from city centers, renting a car might be more appropriate.",
+          "Yet, driving in a new country needs some attention; Bosnia's mountainous nature means winding roads and elevations, and therefore road trips should not be treated as just a quick transition from one city to another.",
+          "Hence comes an important tip from the Bosnia tourism guide: Do not put a large number of cities in one day. Sometimes reducing the number of destinations is the best way to really see the country."
+        ]
       },
       {
-        "title": "Family meeting – start your relationship the halal way",
-        "description": "A private video room that brings both families together for the first time in a proper, Sharia-compliant way."
+        "heading": "Is Bosnia and Herzegovina safe for travelers?",
+        "paragraphs": [
+          "Generally, Bosnia and Herzegovina is considered a suitable destination for tourism, but that does not mean abandoning the usual precautions any traveler needs.",
+          "Keep your money and documents in a safe place, avoid leaving your personal belongings unattended, and pay attention in crowded places. It is also preferred to keep electronic copies of the passport, bookings, and important documents in case of any circumstance.",
+          "There is a special point worth noting: When taking trips outside populated or known areas, do not stray from designated roads and paths, and follow the instructions of local authorities, because some areas in Bosnia still require caution due to war remnants and landmines.",
+          "These precautions should not make you anxious about the trip; on the contrary, knowing them in advance gives you more space to enjoy without unnecessary surprises."
+        ]
       },
       {
-        "title": "Pre-approval system – don't waste time on unproductive chats!",
-        "description": "See your compatibility percentage with any profile before starting a conversation."
-      },
-      {
-        "title": "Verified identities and profiles",
-        "description": "Reliable verification that strengthens safety and trust between members."
-      },
-      {
-        "title": "Global Zefaaf marriage officiant",
-        "description": "A service for completing an Islamic marriage contract in countries around the world."
-      },
-      {
-        "title": "Safe community groups",
-        "description": "Private, secure spaces that bring together members with shared interests."
-      },
-      {
-        "title": "Personal matchmaking via WhatsApp",
-        "description": "A dedicated team searches for your potential partner and follows up with you through WhatsApp."
-      },
-      {
-        "title": "Family introductions around the world",
-        "description": "A formal, secure introduction session between both families, managed with complete privacy."
-      },
-      {
-        "title": "Meet without borders",
-        "description": "Discover a compatible partner from countries around the world."
-      },
-      {
-        "title": "Guardian participation",
-        "description": "Include your guardian throughout the matchmaking journey with clarity and peace of mind."
-      },
-      {
-        "title": "Rewards program",
-        "description": "Receive benefits and rewards when you invite your friends to join."
-      },
-      {
-        "title": "Support for new Muslims",
-        "description": "Dedicated guidance for new Muslims throughout their search for a suitable partner."
-      },
-      {
-        "title": "Sharia-compliant meetings in Amsterdam",
-        "description": "Safe, in-person halal marriage meetings with full supervision and family attendance in Amsterdam."
+        "heading": "What are the most important tips for first-time travelers to Bosnia?",
+        "paragraphs": [
+          "If this is your first visit, there is a set of tips for travelers to Bosnia that can save you a lot of confusion:"
+        ],
+        "list": [
+          "Plan the trip before arrival, but leave room for change.",
+          "Do not try to visit everything in a short trip.",
+          "Keep a copy of your passport and bookings on your phone.",
+          "Check accepted payment methods before heading to remote places.",
+          "Carry some local cash with you for cases where electronic payment methods are not available.",
+          "Wear comfortable shoes, especially if you plan to explore natural areas.",
+          "Check the weather condition before daily trips.",
+          "Do not rely on the internet alone; it is useful to keep important information in an accessible offline way.",
+          "If you rent a car, understand the driving rules, insurance, and rental company conditions well.",
+          "Do not make the trip schedule so crowded that you spend most of your time inside the car.",
+          "Most importantly: Treat the trip as an experience, not a race. Bosnia in particular is one of the countries worth stopping in for a little while instead of just taking pictures and leaving."
+        ]
       }
     ]
+  },
+  "blog": {
+    "hero": {
+      "title": "Stay updated with the trending articles",
+      "subtitle": "Discover the latest articles, insights, and tips to enrich your life, strengthen your relationships, and gain valuable guidance through expert sessions",
+      "collage": [
+        {
+          "title": "Your Guide to a Meaningful Marriage",
+          "excerpt": "Explore helpful articles and expert advice designed to support you in building a strong relationship and making confident decisions throughout your marriage journey."
+        },
+        {
+          "title": "Your Guide to a Meaningful Marriage",
+          "excerpt": "Explore helpful articles and expert advice designed to support you in building a strong relationship and making confident decisions throughout your marriage journey."
+        },
+        {
+          "title": "Building a Happy Life Together",
+          "excerpt": "Learn valuable insights, practical tips, and expert guidance to build a healthy relationship and create a happy"
+        },
+        {
+          "title": "Insights for Your Marriage Journey",
+          "excerpt": "Discover inspiring articles, relationship tips, and expert sessions to help you understand relationships better and build a stronger, happier future together."
+        },
+        {
+          "title": "Insights for Your Marriage Journey",
+          "excerpt": "Discover inspiring articles, relationship tips, and expert sessions to help you understand relationships better and build a stronger, happier future together."
+        }
+      ]
+    },
+    "featured": {
+      "date": "02-12-2026",
+      "title": "Stay updated with the trending articles",
+      "description": "Zefaaf is a trusted platform designed to help Muslims find a life partner who shares their Islamic values, in a safe and Sharia-compliant way.",
+      "cta": "Read more"
+    },
+    "list": {
+      "title": "Zefaaf Blog",
+      "description": "Everything you need to know about halal matchmaking and choosing a life partner through trusted platforms.",
+      "searchPlaceholder": "Search",
+      "viewMore": "View More",
+      "topics": {
+        "all": "All Topics",
+        "qualities": "Qualities of a Good Spouse",
+        "relationships": "Successful Marital Relationships",
+        "health": "Marital Health",
+        "choosing": "Choosing a Life Partner"
+      },
+      "articles": [
+        {
+          "title": "Marriage to a Bosnian Woman for Arabs: Complete Guide",
+          "excerpt": "Marrying a Bosnian woman has become an increasingly popular choice for Arab men due to shared cultural values and straightforward..",
+          "image": "/images/blog/grid-1.png"
+        },
+        {
+          "title": "Marriage Customs and Traditions in Bosnia and Herzegovina: Unforgettable Celebrations",
+          "excerpt": "Wedding customs and traditions in Bosnia and Herzegovina reflect a captivating blend of European heritage and authentic Eastern influences. This zefaaf article explores traditional engagement rituals, wedding music, festive dances, and iconic local cuisine that make Bosnian celebrations so distinct. This guide offers a deep dive into the rich cultural heritage that makes weddings in Bosnia truly unforgettable.",
+          "image": "/images/blog/grid-2-wide.png",
+          "wide": true
+        },
+        {
+          "title": "Marriage to a Bosnian Woman for Arabs: Complete Guide",
+          "excerpt": "Marrying a Bosnian woman has become an increasingly popular choice for Arab men due to shared cultural values and straightforward..",
+          "image": "/images/blog/grid-3.png"
+        },
+        {
+          "title": "Marriage to a Bosnian Woman for Arabs: Complete Guide",
+          "excerpt": "Marrying a Bosnian woman has become an increasingly popular choice for Arab men due to shared cultural values and straightforward..",
+          "image": "/images/blog/grid-4.png"
+        },
+        {
+          "title": "Marriage to a Bosnian Woman for Arabs: Complete Guide",
+          "excerpt": "Marrying a Bosnian woman has become an increasingly popular choice for Arab men due to shared cultural values and straightforward..",
+          "image": "/images/blog/grid-5.png"
+        }
+      ]
+    }
+  },
+  "downloadApp": {
+    "title": "A Special Free Trial – Download the Zefaaf\napp now and enjoy free messaging for\nyour first 3 days!",
+    "features": [
+      "A safe and secure environment to find the right partner.",
+      "A seamless experience that follows Islamic guidelines."
+    ],
+    "description": "Download the app from the App Store or Google Play."
+  },
+  "whyChoose": {
+    "title": "Why Choose Zefaaf?",
+    "description": "At Zefaaf, finding a life partner is no longer limited to apps and websites. We offer real solutions, from conducting a personal search on your behalf to arranging an in-person meeting.",
+    "features": [
+      {
+        "title": "Zefaaf App | Search and connect yourself",
+        "description": "Browse profiles, use search and compatibility tools, and connect with suitable people seeking serious marriage."
+      },
+      {
+        "title": "VIP Service | We search for you",
+        "description": "A specialized team searches for suitable matches, recommends them to you, and follows up personally for three months."
+      },
+      {
+        "title": "Marriage Events | Real, organized introductions",
+        "description": "Serious marriage events in the Netherlands and Bosnia that create genuine opportunities to meet in an organized environment."
+      },
+      {
+        "title": "Accompaniment to Bosnia | A journey for marriage",
+        "description": "We travel with you and handle coordination, follow-up, and direct meetings with Bosnian women and their families."
+      },
+      {
+        "title": "In-person meeting in your country | Wherever you are",
+        "description": "We begin with a private Zoom meeting with a family counselor to understand your personality and needs, then search for a suitable partner and arrange an in-person meeting when there is mutual acceptance."
+      }
+    ]
+  },
+  "contactUs": {
+    "mapAlt": "Map showing our office location",
+    "hero": {
+      "eyebrow": "Get in Touch",
+      "title": "We're here to help you every step of the way",
+      "description": "If you have any questions or need support, don't hesitate to contact us. Our team is always available to ensure the best experience on the Zefaaf platform."
+    },
+    "form": {
+      "card": {
+        "title": "Send us your message",
+        "subtitle": "We're here to listen and assist you",
+        "followUs": "Follow Us"
+      },
+      "heading": "How can we help you today?",
+      "fields": {
+        "fullName": "Full name",
+        "email": "Email address",
+        "message": "Message"
+      },
+      "send": "Send"
+    },
+    "faq": {
+      "title": "Frequently asked questions",
+      "description": "Find quick answers to common questions below, need more help?\nContact us anytime for further assistance",
+      "heading": "How can we help you?",
+      "searchPlaceholder": "Search",
+      "items": [
+        {
+          "question": "Is registration on the Zefaaf platform free?",
+          "answer": "Yes, basic registration is free for everyone, with optional additional packages for premium services."
+        },
+        {
+          "question": "How long does it take to find a suitable match?",
+          "answer": "It varies from person to person, but our team works continuously to introduce you to suitable matches as quickly as possible."
+        },
+        {
+          "question": "Is my personal information kept private?",
+          "answer": "Yes, we take your privacy seriously and only share your information with matches you approve."
+        },
+        {
+          "question": "Can I use Zefaaf from any country?",
+          "answer": "Yes, Zefaaf is available worldwide and connects Muslims from different countries seeking marriage."
+        },
+        {
+          "question": "How do I contact the support team?",
+          "answer": "You can reach us anytime through this contact form, and our team will respond as soon as possible."
+        }
+      ]
+    }
   }
 }

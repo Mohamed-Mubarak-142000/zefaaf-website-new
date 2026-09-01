@@ -110,11 +110,6 @@ export function UpcomingEvents() {
         />
         <div className="absolute inset-0 bg-black/20 dark:bg-black/35" />
         <div className="absolute inset-x-0 bottom-0 h-[70%] bg-linear-to-t from-brand/90 to-brand/0 dark:from-brand/70" />
-        <img
-          src="/images/events/glow-top.svg"
-          alt=""
-          className="pointer-events-none absolute inset-x-0 top-0 z-10 h-[clamp(90px,12.4vw,179px)] w-full -translate-y-1/2 opacity-100 dark:opacity-30"
-        />
 
         <div className="relative mx-auto flex w-full max-w-[1600px] flex-col gap-[clamp(28px,3.5vw,44px)] px-(--space-fluid-container) lg:flex-row lg:items-center lg:justify-between lg:gap-[clamp(32px,4vw,64px)]">
           {/* DOM order follows RTL reading order: heading/description first,

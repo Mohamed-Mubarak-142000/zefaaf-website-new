@@ -15,9 +15,18 @@
     "ratingValue": "4.8"
   },
   "stats": {
-    "happyClients": { "value": "34,484k", "label": "Clients satisfaits" },
-    "successStories": { "value": "2768", "label": "Histoires de réussite" },
-    "registeredMembers": { "value": "23416", "label": "Membres inscrits" }
+    "happyClients": {
+      "value": "34,484k",
+      "label": "Clients satisfaits"
+    },
+    "successStories": {
+      "value": "2768",
+      "label": "Histoires de réussite"
+    },
+    "registeredMembers": {
+      "value": "23416",
+      "label": "Membres inscrits"
+    }
   },
   "nav": {
     "home": "Accueil",
@@ -28,7 +37,13 @@
     "articles": "Articles",
     "upcomingEvents": "Événements à Venir",
     "successStories": "Histoires de Réussite",
-    "marriageRequest": "Demande en Mariage"
+    "marriageRequest": "Demande en Mariage",
+    "servicesMenu": {
+      "zefaafEvents": "Événements Zefaaf",
+      "marriageForm": "Votre Formulaire de Mariage",
+      "bosniaTour": "Voyage de Mariage en Bosnie",
+      "meetingInCountry": "Rencontre dans votre Pays"
+    }
   },
   "footer": {
     "columns": {
@@ -86,41 +101,331 @@
     }
   },
   "services": {
+    "title": "Nos services",
     "items": [
-      { "title": "Forum du Mariage Islamique", "description": "Des événements de forum du mariage islamique qui rassemblent les musulmans en quête de mariage et leurs familles" },
-      { "title": "Demande en Mariage", "description": "Trouvez votre partenaire de vie idéal parmi différents pays." },
-      { "title": "Recherche Personnelle VIP", "description": "Un service dédié où les consultants de Zefaaf recherchent des partenaires de vie appropriés" },
-      { "title": "Accompagnement de Notre Équipe en Bosnie", "description": "Un programme accompagné dans lequel l'équipe Zefaaf accompagne les clients pour rencontrer les familles en vue d'un mariage sérieux" },
-      { "title": "Rencontre en Ligne", "description": "Commencez par une session avec un conseiller familial pour comprendre votre personnalité et vos besoins" }
+      {
+        "title": "Événements Zefaaf",
+        "description": "Des événements de forum du mariage islamique qui rassemblent les musulmans en quête de mariage et leurs familles"
+      },
+      {
+        "title": "Votre Formulaire de Mariage",
+        "description": "Trouvez votre partenaire de vie idéal parmi différents pays."
+      },
+      {
+        "title": "Recherche Personnelle VIP",
+        "description": "Un service dédié où les consultants de Zefaaf recherchent des partenaires de vie appropriés"
+      },
+      {
+        "title": "Voyage de Mariage en Bosnie",
+        "description": "Un programme accompagné dans lequel l'équipe Zefaaf accompagne les clients pour rencontrer les familles en vue d'un mariage sérieux"
+      },
+      {
+        "title": "Rencontre dans votre Pays",
+        "description": "Commencez par une session avec un conseiller familial pour comprendre votre personnalité et vos besoins"
+      }
     ]
   },
   "globalPresence": {
     "mapAlt": "Carte montrant la présence de Zefaaf à travers le monde",
-    "badge": "3 millions d'utilisateurs sur Zefaaf",
+    "badge": "12k utilisateurs sur Zefaaf",
     "title": "Nous opérons dans <brand>175</brand> pays",
     "description": "Zefaaf connecte les musulmans du monde entier à des services de rencontre matrimoniale fiables qui partagent leurs valeurs islamiques, d'une manière sûre et conforme à la charia.",
     "countries": {
-      "france": "France", "germany": "Allemagne", "netherlands": "Pays-Bas", "turkey": "Turquie", "russia": "Russie", "china": "Chine", "indonesia": "Indonésie"
+      "france": "Amérique du Nord",
+      "germany": "Amérique du Sud",
+      "netherlands": "Europe",
+      "turkey": "Afrique",
+      "russia": "Asie",
+      "china": "Océanie"
     }
   },
   "upcomingEvents": {
     "description": "Découvrez nos prochains événements et rejoignez-nous pour vivre des expériences enrichissantes, des échanges inspirants et des moments mémorables. Suivez-nous pour connaître les dates, les détails et les modalités d'inscription.",
     "bookCta": "Réservez votre billet",
     "events": [
-      { "date": "10 janvier", "time": "12h", "title": "Forum du Mariage Islamique aux Pays-Bas", "location": "Churchillplein 10, 2517 JW", "price": "150 euros" },
-      { "date": "25 avril", "time": "12h", "title": "Forum du Mariage Islamique en Bosnie", "location": "Terezija, 71000", "price": "150 euros" }
+      {
+        "date": "10 janvier",
+        "time": "12h",
+        "title": "Forum du Mariage Islamique aux Pays-Bas",
+        "location": "Churchillplein 10, 2517 JW",
+        "price": "150 euros"
+      },
+      {
+        "date": "25 avril",
+        "time": "12h",
+        "title": "Forum du Mariage Islamique en Bosnie",
+        "location": "Terezija, 71000",
+        "price": "150 euros"
+      },
+      {
+        "date": "14 juin",
+        "time": "14h",
+        "title": "Forum du Mariage Islamique en Allemagne",
+        "location": "Alexanderplatz, Berlin",
+        "price": "150 euros"
+      },
+      {
+        "date": "22 août",
+        "time": "13h",
+        "title": "Forum du Mariage Islamique en Belgique",
+        "location": "Centre-ville de Bruxelles",
+        "price": "150 euros"
+      },
+      {
+        "date": "17 octobre",
+        "time": "15h",
+        "title": "Forum du Mariage Islamique en Türkiye",
+        "location": "Fatih, Istanbul",
+        "price": "150 euros"
+      },
+      {
+        "date": "12 décembre",
+        "time": "12h",
+        "title": "Forum du Mariage Islamique au Royaume-Uni",
+        "location": "Centre-ville de Londres",
+        "price": "150 euros"
+      }
     ],
-    "ticker": ["Vivez le meilleur", "un parcours sain", "partenaire de vie", "des choix sains", "partenaire de vie"]
+    "ticker": [
+      "Vivez le meilleur",
+      "un parcours sain",
+      "partenaire de vie",
+      "des choix sains",
+      "partenaire de vie"
+    ]
+  },
+  "blogDetail": {
+    "breadcrumb": {
+      "home": "Accueil",
+      "blogs": "Articles",
+      "current": "Détails de l'article"
+    },
+    "date": "02-12-2026",
+    "title": "Votre guide complet du tourisme en Bosnie-Herzégovine : conseils pour les primo-voyageurs.",
+    "intro": "La Bosnie-Herzégovine est une destination captivante qui conquiert le cœur des voyageurs grâce à sa beauté naturelle à couper le souffle et à sa riche histoire. Dans cet article, Zefaaf met en lumière les conseils et recommandations les plus importants pour les primo-voyageurs, de la planification du voyage et du choix de la meilleure période pour visiter, jusqu'à la compréhension de la culture locale et des usages. Ce guide complet vous aidera à vivre une expérience de voyage confortable et mémorable, remplie de moments inoubliables.",
+    "banner": {
+      "imageAlt": "Un couple musulman souriant saluant la caméra",
+      "title": "Restez informé des articles tendances"
+    },
+    "leadParagraphs": [
+      "La Bosnie-Herzégovine est une destination qui peut sembler simple sur la carte, mais l'expérience devient bien plus merveilleuse lorsque l'on connaît certains détails avant de voyager. Entre la Sarajevo historique, Mostar et son célèbre pont, et la nature qui entoure les villes et les villages, vous constaterez que le voyage n'a pas tant besoin d'un programme chargé que d'une planification intelligente et flexible.",
+      "Ainsi, si c'est votre première visite, voici le guide touristique de la Bosnie dont vous avez besoin avant de faire vos valises ; du choix de la date de voyage et de l'hébergement, au transport et à la sécurité, jusqu'aux conseils pratiques qui rendent votre expérience plus confortable, que vous voyagiez seul, avec votre partenaire de vie, ou que vous prépariez un séjour en famille en Bosnie."
+    ],
+    "sections": [
+      {
+        "heading": "Quelle est la meilleure période pour visiter la Bosnie-Herzégovine ?",
+        "paragraphs": [
+          "La meilleure période pour visiter la Bosnie-Herzégovine dépend du type de voyage que vous recherchez. Le printemps convient à ceux qui souhaitent profiter de la nature et d'un climat tempéré, tandis que l'été attire les voyageurs à la recherche d'activités en plein air et de déplacements entre les villes.",
+          "L'automne offre une atmosphère calme et des paysages aux couleurs changeantes, tandis que l'hiver représente une opportunité pour les amateurs de froid, de hauts plateaux et d'activités hivernales.",
+          "Il n'existe donc pas de réponse unique qui convienne à tout le monde. Si votre objectif est de visiter les villes et d'explorer la nature sans forte chaleur, le printemps et l'automne sont des choix confortables. Si vous souhaitez profiter des longues journées ensoleillées et de nombreuses activités, l'été peut vous convenir.",
+          "Et après avoir choisi la saison, vient la question la plus importante : où allez-vous séjourner et comment allez-vous vous déplacer ?"
+        ]
+      },
+      {
+        "heading": "Où séjourner en Bosnie-Herzégovine ?",
+        "paragraphs": [
+          "Le choix de l'hébergement doit être lié à votre programme de voyage, et non uniquement au prix. À Sarajevo, par exemple, séjourner près des zones centrales facilite l'accès aux sites, aux restaurants et aux transports, tandis que dans d'autres villes, vous préférerez peut-être séjourner près du centre-ville ou des sites naturels que vous prévoyez de visiter.",
+          "Il est également important de consulter les avis des voyageurs avant de réserver, et de vous assurer de la présence des équipements dont vous avez besoin, surtout si vous voyagez en famille.",
+          "Quant au tourisme familial en Bosnie, il est préférable de privilégier l'emplacement, la tranquillité et la facilité d'accès aux services, afin que les déplacements quotidiens sur de longues distances ne deviennent pas un fardeau pour les membres de la famille.",
+          "Une fois l'hébergement déterminé, la planification des transports entre les villes devient l'étape suivante."
+        ]
+      },
+      {
+        "heading": "Comment se déplacer en Bosnie-Herzégovine ?",
+        "paragraphs": [
+          "Vous pouvez vous déplacer en Bosnie-Herzégovine de plusieurs façons, et le choix dépend de la distance, du nombre de personnes et de la nature du voyage.",
+          "À l'intérieur des villes, les transports locaux ou les taxis peuvent être utilisés, tandis que les bus deviennent une option pratique pour se déplacer entre plusieurs villes. Si vous préférez la liberté de déterminer vos propres arrêts et de visiter des lieux éloignés des centres-villes, la location d'une voiture peut être plus appropriée.",
+          "Toutefois, conduire dans un nouveau pays demande une certaine attention ; le relief montagneux de la Bosnie implique des routes sinueuses et des dénivelés, et les trajets routiers ne doivent donc pas être considérés comme de simples transitions rapides d'une ville à l'autre.",
+          "D'où un conseil important du guide touristique de la Bosnie : ne prévoyez pas un grand nombre de villes en une seule journée. Réduire le nombre de destinations est parfois la meilleure façon de vraiment découvrir le pays."
+        ]
+      },
+      {
+        "heading": "La Bosnie-Herzégovine est-elle sûre pour les voyageurs ?",
+        "paragraphs": [
+          "De manière générale, la Bosnie-Herzégovine est considérée comme une destination adaptée au tourisme, mais cela ne signifie pas qu'il faille abandonner les précautions habituelles que tout voyageur doit prendre.",
+          "Gardez votre argent et vos documents en lieu sûr, évitez de laisser vos effets personnels sans surveillance, et restez vigilant dans les lieux fréquentés. Il est également préférable de conserver des copies numériques de votre passeport, de vos réservations et de vos documents importants, en cas de besoin.",
+          "Un point particulier mérite d'être souligné : lors de sorties en dehors des zones habitées ou connues, ne vous écartez pas des routes et sentiers balisés, et suivez les instructions des autorités locales, car certaines zones de Bosnie exigent encore de la prudence en raison de vestiges de guerre et de mines terrestres.",
+          "Ces précautions ne doivent pas vous inquiéter au sujet du voyage ; au contraire, les connaître à l'avance vous laisse davantage de place pour en profiter sans mauvaises surprises."
+        ]
+      },
+      {
+        "heading": "Quels sont les conseils les plus importants pour les primo-voyageurs en Bosnie ?",
+        "paragraphs": [
+          "Si c'est votre première visite, voici un ensemble de conseils pour les voyageurs en Bosnie qui peuvent vous éviter bien des désagréments :"
+        ],
+        "list": [
+          "Planifiez le voyage avant votre arrivée, mais laissez de la place pour les imprévus.",
+          "N'essayez pas de tout visiter en un court séjour.",
+          "Gardez une copie de votre passeport et de vos réservations sur votre téléphone.",
+          "Vérifiez les moyens de paiement acceptés avant de vous rendre dans des lieux isolés.",
+          "Emportez avec vous un peu d'argent liquide local pour les cas où les moyens de paiement électroniques ne sont pas disponibles.",
+          "Portez des chaussures confortables, surtout si vous prévoyez d'explorer des espaces naturels.",
+          "Vérifiez les conditions météorologiques avant vos sorties quotidiennes.",
+          "Ne comptez pas uniquement sur Internet ; il est utile de conserver les informations importantes de manière accessible hors ligne.",
+          "Si vous louez une voiture, comprenez bien les règles de conduite, l'assurance et les conditions de l'agence de location.",
+          "Ne surchargez pas votre programme de voyage au point de passer la majeure partie de votre temps dans la voiture.",
+          "Le plus important : considérez le voyage comme une expérience, pas comme une course. La Bosnie, en particulier, est l'un de ces pays où il vaut la peine de s'arrêter un moment, plutôt que de simplement prendre des photos et repartir."
+        ]
+      }
+    ]
+  },
+  "blog": {
+    "hero": {
+      "title": "Restez informé des articles tendances",
+      "subtitle": "Découvrez les derniers articles, analyses et conseils pour enrichir votre vie, renforcer vos relations et bénéficier de précieux conseils grâce à des sessions d'experts",
+      "collage": [
+        {
+          "title": "Votre guide pour un mariage épanoui",
+          "excerpt": "Découvrez des articles utiles et les conseils d'experts conçus pour vous accompagner dans la construction d'une relation solide et la prise de décisions en toute confiance tout au long de votre parcours conjugal."
+        },
+        {
+          "title": "Votre guide pour un mariage épanoui",
+          "excerpt": "Découvrez des articles utiles et les conseils d'experts conçus pour vous accompagner dans la construction d'une relation solide et la prise de décisions en toute confiance tout au long de votre parcours conjugal."
+        },
+        {
+          "title": "Construire une vie heureuse ensemble",
+          "excerpt": "Découvrez des informations précieuses, des conseils pratiques et l'accompagnement d'experts pour bâtir une relation saine et créer un foyer heureux"
+        },
+        {
+          "title": "Des clés pour votre parcours conjugal",
+          "excerpt": "Découvrez des articles inspirants, des conseils relationnels et des sessions d'experts pour mieux comprendre les relations et construire ensemble un avenir plus solide et plus heureux."
+        },
+        {
+          "title": "Des clés pour votre parcours conjugal",
+          "excerpt": "Découvrez des articles inspirants, des conseils relationnels et des sessions d'experts pour mieux comprendre les relations et construire ensemble un avenir plus solide et plus heureux."
+        }
+      ]
+    },
+    "featured": {
+      "date": "02-12-2026",
+      "title": "Restez informé des articles tendances",
+      "description": "Zefaaf est une plateforme fiable conçue pour aider les musulmans à trouver un partenaire de vie qui partage leurs valeurs islamiques, d'une manière sûre et conforme à la charia.",
+      "cta": "Lire la suite"
+    },
+    "list": {
+      "title": "Blog Zefaaf",
+      "description": "Tout ce que vous devez savoir sur la rencontre matrimoniale halal et le choix d'un partenaire de vie via des plateformes fiables.",
+      "searchPlaceholder": "Rechercher",
+      "viewMore": "Voir plus",
+      "topics": {
+        "all": "Tous les sujets",
+        "qualities": "Qualités d'un bon conjoint",
+        "relationships": "Relations conjugales réussies",
+        "health": "Santé conjugale",
+        "choosing": "Choisir un partenaire de vie"
+      },
+      "articles": [
+        {
+          "title": "Le mariage avec une femme bosniaque pour les Arabes : guide complet",
+          "excerpt": "Épouser une femme bosniaque est devenu un choix de plus en plus populaire pour les hommes arabes, en raison de valeurs culturelles communes et de démarches simples..",
+          "image": "/images/blog/grid-1.png"
+        },
+        {
+          "title": "Coutumes et traditions du mariage en Bosnie-Herzégovine : des célébrations inoubliables",
+          "excerpt": "Les coutumes et traditions du mariage en Bosnie-Herzégovine reflètent un mélange fascinant d'héritage européen et d'influences orientales authentiques. Cet article de Zefaaf explore les rituels traditionnels de fiançailles, la musique de mariage, les danses festives et la cuisine locale emblématique qui rendent les célébrations bosniaques si particulières. Ce guide propose une plongée approfondie dans le riche patrimoine culturel qui rend les mariages en Bosnie véritablement inoubliables.",
+          "image": "/images/blog/grid-2-wide.png",
+          "wide": true
+        },
+        {
+          "title": "Le mariage avec une femme bosniaque pour les Arabes : guide complet",
+          "excerpt": "Épouser une femme bosniaque est devenu un choix de plus en plus populaire pour les hommes arabes, en raison de valeurs culturelles communes et de démarches simples..",
+          "image": "/images/blog/grid-3.png"
+        },
+        {
+          "title": "Le mariage avec une femme bosniaque pour les Arabes : guide complet",
+          "excerpt": "Épouser une femme bosniaque est devenu un choix de plus en plus populaire pour les hommes arabes, en raison de valeurs culturelles communes et de démarches simples..",
+          "image": "/images/blog/grid-4.png"
+        },
+        {
+          "title": "Le mariage avec une femme bosniaque pour les Arabes : guide complet",
+          "excerpt": "Épouser une femme bosniaque est devenu un choix de plus en plus populaire pour les hommes arabes, en raison de valeurs culturelles communes et de démarches simples..",
+          "image": "/images/blog/grid-5.png"
+        }
+      ]
+    }
+  },
+  "downloadApp": {
+    "title": "Un essai gratuit exclusif – téléchargez l'application Zefaaf\ndès maintenant et profitez de la messagerie gratuite pendant\nvos 3 premiers jours !",
+    "features": [
+      "Un environnement sûr et sécurisé pour trouver le bon partenaire.",
+      "Une expérience fluide qui respecte les principes islamiques."
+    ],
+    "description": "Téléchargez l'application sur l'App Store ou Google Play."
   },
   "whyChoose": {
-    "title": "Pourquoi Choisir Zefaaf",
-    "description": "Chez Zefaaf, nous croyons que le mariage est bien plus qu'une simple compatibilité — il s'agit de bâtir une vie stable fondée sur des valeurs islamiques.",
+    "title": "Pourquoi choisir Zefaaf ?",
+    "description": "Chez Zefaaf, trouver un partenaire de vie ne se limite plus aux applications et aux sites web. Nous proposons de véritables solutions, de la recherche personnalisée en votre nom jusqu'à l'organisation d'une rencontre en personne.",
     "features": [
-      { "title": "Appels vidéo sécurisés et conformes à la charia", "description": "Une fonctionnalité de vidéo sécurisée sous supervision religieuse, vous permettant de rencontrer votre futur partenaire de vie tout en respectant les principes islamiques." },
-      { "title": "Conseil islamique et familial direct", "description": "Bénéficiez d'une consultation gratuite dès votre inscription auprès de nos experts religieux et conseillers familiaux." },
-      { "title": "Votre voix, votre personnalité – laissez votre voix parler pour vous !", "description": "Un message vocal sur votre profil : présentez-vous, partagez vos centres d'intérêt et vos valeurs, et parlez de votre vision de la vie conjugale." },
-      { "title": "Rencontre familiale – commencez votre relation de la manière halal", "description": "Un salon vidéo privé qui réunit les deux familles pour la première fois, de manière appropriée et conforme à la charia." },
-      { "title": "Système de préapprobation – ne perdez pas de temps dans des échanges improductifs !", "description": "Consultez votre pourcentage de compatibilité avec n'importe quel profil avant d'entamer une conversation." }
+      {
+        "title": "Application Zefaaf | Recherchez et connectez-vous vous-même",
+        "description": "Parcourez les profils, utilisez les outils de recherche et de compatibilité, et entrez en contact avec des personnes sérieuses en quête de mariage."
+      },
+      {
+        "title": "Service VIP | Nous recherchons pour vous",
+        "description": "Une équipe spécialisée recherche des profils compatibles, vous les recommande, et assure un suivi personnalisé pendant trois mois."
+      },
+      {
+        "title": "Événements de mariage | De vraies rencontres organisées",
+        "description": "Des événements de mariage sérieux aux Pays-Bas et en Bosnie, qui offrent de véritables occasions de rencontre dans un cadre organisé."
+      },
+      {
+        "title": "Accompagnement en Bosnie | Un voyage pour le mariage",
+        "description": "Nous voyageons avec vous et prenons en charge la coordination, le suivi, ainsi que les rencontres directes avec des femmes bosniaques et leurs familles."
+      },
+      {
+        "title": "Rencontre en personne dans votre pays | Où que vous soyez",
+        "description": "Nous commençons par un entretien privé sur Zoom avec un conseiller familial afin de comprendre votre personnalité et vos besoins, puis nous recherchons un partenaire adapté et organisons une rencontre en personne en cas d'acceptation mutuelle."
+      }
     ]
+  },
+  "contactUs": {
+    "mapAlt": "Carte montrant l'emplacement de notre bureau",
+    "hero": {
+      "eyebrow": "Contactez-nous",
+      "title": "Nous sommes là pour vous accompagner à chaque étape",
+      "description": "Si vous avez des questions ou besoin d'assistance, n'hésitez pas à nous contacter. Notre équipe est toujours disponible pour vous garantir la meilleure expérience sur la plateforme Zefaaf."
+    },
+    "form": {
+      "card": {
+        "title": "Envoyez-nous votre message",
+        "subtitle": "Nous sommes là pour vous écouter et vous accompagner",
+        "followUs": "Suivez-nous"
+      },
+      "heading": "Comment pouvons-nous vous aider aujourd'hui ?",
+      "fields": {
+        "fullName": "Nom complet",
+        "email": "Adresse e-mail",
+        "message": "Message"
+      },
+      "send": "Envoyer"
+    },
+    "faq": {
+      "title": "Questions fréquemment posées",
+      "description": "Trouvez ci-dessous des réponses rapides aux questions courantes. Besoin d'aide supplémentaire ?\nContactez-nous à tout moment pour obtenir de l'aide.",
+      "heading": "Comment pouvons-nous vous aider ?",
+      "searchPlaceholder": "Rechercher",
+      "items": [
+        {
+          "question": "L'inscription sur la plateforme Zefaaf est-elle gratuite ?",
+          "answer": "Oui, l'inscription de base est gratuite pour tous, avec des forfaits complémentaires optionnels pour les services premium."
+        },
+        {
+          "question": "Combien de temps faut-il pour trouver un profil compatible ?",
+          "answer": "Cela varie d'une personne à l'autre, mais notre équipe travaille continuellement pour vous présenter des profils compatibles le plus rapidement possible."
+        },
+        {
+          "question": "Mes informations personnelles restent-elles confidentielles ?",
+          "answer": "Oui, nous prenons votre confidentialité au sérieux et ne partageons vos informations qu'avec les profils que vous approuvez."
+        },
+        {
+          "question": "Puis-je utiliser Zefaaf depuis n'importe quel pays ?",
+          "answer": "Oui, Zefaaf est disponible dans le monde entier et met en relation des musulmans de différents pays en quête de mariage."
+        },
+        {
+          "question": "Comment puis-je contacter l'équipe d'assistance ?",
+          "answer": "Vous pouvez nous joindre à tout moment via ce formulaire de contact, et notre équipe vous répondra dans les meilleurs délais."
+        }
+      ]
+    }
   }
 }

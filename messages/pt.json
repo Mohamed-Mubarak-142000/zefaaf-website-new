@@ -15,9 +15,18 @@
     "ratingValue": "4.8"
   },
   "stats": {
-    "happyClients": { "value": "34,484k", "label": "Clientes satisfeitos" },
-    "successStories": { "value": "2768", "label": "Histórias de sucesso" },
-    "registeredMembers": { "value": "23416", "label": "Membros registrados" }
+    "happyClients": {
+      "value": "34,484k",
+      "label": "Clientes satisfeitos"
+    },
+    "successStories": {
+      "value": "2768",
+      "label": "Histórias de sucesso"
+    },
+    "registeredMembers": {
+      "value": "23416",
+      "label": "Membros registrados"
+    }
   },
   "nav": {
     "home": "Início",
@@ -28,7 +37,13 @@
     "articles": "Artigos",
     "upcomingEvents": "Próximos Eventos",
     "successStories": "Histórias de Sucesso",
-    "marriageRequest": "Pedido de Casamento"
+    "marriageRequest": "Pedido de Casamento",
+    "servicesMenu": {
+      "zefaafEvents": "Eventos Zefaaf",
+      "marriageForm": "Seu Formulário de Casamento",
+      "bosniaTour": "Viagem de Casamento à Bósnia",
+      "meetingInCountry": "Encontro no seu País"
+    }
   },
   "footer": {
     "columns": {
@@ -86,41 +101,331 @@
     }
   },
   "services": {
+    "title": "Nossos serviços",
     "items": [
-      { "title": "Fórum de Casamento Islâmico", "description": "Eventos do fórum de casamento islâmico que reúnem muçulmanos em busca de casamento e suas famílias" },
-      { "title": "Pedido de Casamento", "description": "Encontre o parceiro de vida ideal em diferentes países." },
-      { "title": "Busca Pessoal VIP", "description": "Um serviço dedicado em que consultores da Zefaaf buscam parceiros de vida adequados" },
-      { "title": "Acompanhamento da Nossa Equipe na Bósnia", "description": "Um programa guiado em que a equipe da Zefaaf acompanha os clientes para conhecer famílias com fins de casamento sério" },
-      { "title": "Reunião Online", "description": "Comece com uma sessão com um consultor familiar para entender sua personalidade e necessidades" }
+      {
+        "title": "Eventos Zefaaf",
+        "description": "Eventos do fórum de casamento islâmico que reúnem muçulmanos em busca de casamento e suas famílias"
+      },
+      {
+        "title": "Seu Formulário de Casamento",
+        "description": "Encontre o parceiro de vida ideal em diferentes países."
+      },
+      {
+        "title": "Busca Pessoal VIP",
+        "description": "Um serviço dedicado em que consultores da Zefaaf buscam parceiros de vida adequados"
+      },
+      {
+        "title": "Viagem de Casamento à Bósnia",
+        "description": "Um programa guiado em que a equipe da Zefaaf acompanha os clientes para conhecer famílias com fins de casamento sério"
+      },
+      {
+        "title": "Encontro no seu País",
+        "description": "Comece com uma sessão com um consultor familiar para entender sua personalidade e necessidades"
+      }
     ]
   },
   "globalPresence": {
     "mapAlt": "Mapa mostrando o alcance da Zefaaf ao redor do mundo",
-    "badge": "3 milhões de usuários na Zefaaf",
+    "badge": "12 mil usuários na Zefaaf",
     "title": "Atuamos em <brand>175</brand> países",
     "description": "A Zefaaf conecta muçulmanos ao redor do mundo com serviços de matchmaking confiáveis que compartilham seus valores islâmicos, de forma segura e em conformidade com a Sharia.",
     "countries": {
-      "france": "França", "germany": "Alemanha", "netherlands": "Países Baixos", "turkey": "Turquia", "russia": "Rússia", "china": "China", "indonesia": "Indonésia"
+      "france": "América do Norte",
+      "germany": "América do Sul",
+      "netherlands": "Europa",
+      "turkey": "África",
+      "russia": "Ásia",
+      "china": "Oceania"
     }
   },
   "upcomingEvents": {
     "description": "Conheça nossos próximos eventos e junte-se a nós para experiências significativas, conversas inspiradoras e momentos memoráveis. Siga-nos para datas, detalhes e inscrições.",
     "bookCta": "Reserve seu ingresso",
     "events": [
-      { "date": "10 de janeiro", "time": "12h", "title": "Fórum de Casamento Islâmico na Holanda", "location": "Churchillplein 10, 2517 JW", "price": "150 Euros" },
-      { "date": "25 de abril", "time": "12h", "title": "Fórum de Casamento Islâmico na Bósnia", "location": "Terezija, 71000", "price": "150 Euros" }
+      {
+        "date": "10 de janeiro",
+        "time": "12h",
+        "title": "Fórum de Casamento Islâmico na Holanda",
+        "location": "Churchillplein 10, 2517 JW",
+        "price": "150 Euros"
+      },
+      {
+        "date": "25 de abril",
+        "time": "12h",
+        "title": "Fórum de Casamento Islâmico na Bósnia",
+        "location": "Terezija, 71000",
+        "price": "150 Euros"
+      },
+      {
+        "date": "14 de junho",
+        "time": "14h",
+        "title": "Fórum de Casamento Islâmico na Alemanha",
+        "location": "Alexanderplatz, Berlim",
+        "price": "150 Euros"
+      },
+      {
+        "date": "22 de agosto",
+        "time": "13h",
+        "title": "Fórum de Casamento Islâmico na Bélgica",
+        "location": "Centro da Cidade de Bruxelas",
+        "price": "150 Euros"
+      },
+      {
+        "date": "17 de outubro",
+        "time": "15h",
+        "title": "Fórum de Casamento Islâmico na Turquia",
+        "location": "Fatih, Istambul",
+        "price": "150 Euros"
+      },
+      {
+        "date": "12 de dezembro",
+        "time": "12h",
+        "title": "Fórum de Casamento Islâmico no Reino Unido",
+        "location": "Centro da Cidade de Londres",
+        "price": "150 Euros"
+      }
     ],
-    "ticker": ["Viva o seu melhor", "jornada saudável", "parceiro de vida", "escolhas saudáveis", "parceiro de vida"]
+    "ticker": [
+      "Viva o seu melhor",
+      "jornada saudável",
+      "parceiro de vida",
+      "escolhas saudáveis",
+      "parceiro de vida"
+    ]
+  },
+  "blogDetail": {
+    "breadcrumb": {
+      "home": "Início",
+      "blogs": "Blogs",
+      "current": "Detalhes do Blog"
+    },
+    "date": "02-12-2026",
+    "title": "Seu Guia Completo de Turismo na Bósnia e Herzegovina: Dicas para Viajantes de Primeira Viagem.",
+    "intro": "A Bósnia e Herzegovina é um destino cativante que conquista o coração dos viajantes com sua beleza natural deslumbrante e rica história. Neste artigo, a Zefaaf destaca as dicas e conselhos mais importantes para quem viaja pela primeira vez, desde o planejamento da viagem e a escolha da melhor época para visitar, até a compreensão da cultura e etiqueta locais. Este guia completo ajudará você a desfrutar de uma experiência de viagem confortável e memorável, repleta de momentos inesquecíveis.",
+    "banner": {
+      "imageAlt": "Um casal muçulmano sorridente acenando para a câmera",
+      "title": "Mantenha-se atualizado com os artigos em alta"
+    },
+    "leadParagraphs": [
+      "A Bósnia e Herzegovina é um destino que pode parecer simples no mapa, mas a experiência se torna muito mais maravilhosa quando você conhece alguns detalhes antes de viajar. Entre a histórica Sarajevo, Mostar com sua famosa ponte, e a natureza que envolve as cidades e vilarejos, você perceberá que a viagem não precisa de uma agenda lotada, mas sim de um planejamento inteligente e flexível.",
+      "Por isso, se esta é sua primeira visita, este é o guia de turismo da Bósnia que você precisa antes de fazer as malas; desde a escolha da data da viagem e da hospedagem, até o transporte e a segurança, chegando às dicas práticas que tornam sua experiência mais confortável, seja você viajando sozinho, com seu parceiro de vida, ou planejando turismo em família na Bósnia."
+    ],
+    "sections": [
+      {
+        "heading": "Qual é a melhor época para visitar a Bósnia e Herzegovina?",
+        "paragraphs": [
+          "A melhor época para visitar a Bósnia e Herzegovina depende do tipo de viagem que você procura. A primavera é ideal para quem deseja aproveitar a natureza e o clima ameno, enquanto o verão atrai viajantes em busca de atividades ao ar livre e passeios entre cidades.",
+          "O outono proporciona uma atmosfera tranquila e paisagens com cores diferentes, enquanto o inverno representa uma oportunidade para os amantes do frio, das terras altas e das atividades de inverno.",
+          "Consequentemente, não existe uma única resposta que sirva para todos. Se o seu objetivo é visitar as cidades e explorar a natureza sem calor excessivo, a primavera e o outono são escolhas confortáveis. Já se você deseja aproveitar os longos dias de luz e as diversas atividades, o verão pode ser adequado para você.",
+          "E depois de escolher a estação, vem a pergunta mais importante: onde você vai se hospedar e como vai se deslocar?"
+        ]
+      },
+      {
+        "heading": "Onde se hospedar na Bósnia e Herzegovina?",
+        "paragraphs": [
+          "A escolha da hospedagem deve estar ligada ao roteiro da sua viagem, e não apenas ao preço. Em Sarajevo, por exemplo, hospedar-se perto das áreas centrais facilita o acesso aos pontos turísticos, restaurantes e transporte, enquanto em outras cidades você pode preferir ficar perto do centro ou de áreas naturais que pretende visitar.",
+          "Também é importante analisar as avaliações de outros viajantes antes de reservar, e garantir a presença das comodidades que você precisa, especialmente se estiver viajando com a família.",
+          "Quanto ao turismo em família na Bósnia, o melhor é priorizar a localização, a tranquilidade e a facilidade de acesso aos serviços, para que os deslocamentos diários por longas distâncias não se tornem um fardo para os membros da família.",
+          "Uma vez definida a hospedagem, planejar o transporte entre as cidades torna-se o próximo passo."
+        ]
+      },
+      {
+        "heading": "Como é o transporte na Bósnia e Herzegovina?",
+        "paragraphs": [
+          "Você pode se deslocar pela Bósnia e Herzegovina de várias formas, e a escolha depende da distância, do número de pessoas e da natureza da viagem.",
+          "Dentro das cidades, é possível usar o transporte local ou táxis, enquanto os ônibus se tornam uma opção prática ao se deslocar entre várias cidades. Se você preferir a liberdade de determinar seus próprios horários de parada e visitar lugares afastados dos centros urbanos, alugar um carro pode ser mais adequado.",
+          "No entanto, dirigir em um país novo exige alguma atenção; a natureza montanhosa da Bósnia significa estradas sinuosas e elevações, por isso as viagens rodoviárias não devem ser tratadas como uma simples transição rápida de uma cidade para outra.",
+          "Daí vem uma dica importante do guia de turismo da Bósnia: não inclua um grande número de cidades em um único dia. Às vezes, reduzir o número de destinos é a melhor forma de realmente conhecer o país."
+        ]
+      },
+      {
+        "heading": "A Bósnia e Herzegovina é segura para os viajantes?",
+        "paragraphs": [
+          "De modo geral, a Bósnia e Herzegovina é considerada um destino adequado para o turismo, mas isso não significa abandonar as precauções habituais que todo viajante precisa tomar.",
+          "Mantenha seu dinheiro e documentos em um lugar seguro, evite deixar seus pertences pessoais sem vigilância e preste atenção em locais movimentados. Também é recomendável manter cópias eletrônicas do passaporte, das reservas e de documentos importantes, para qualquer eventualidade.",
+          "Há um ponto especial que merece atenção: ao fazer passeios fora de áreas povoadas ou conhecidas, não se afaste das estradas e caminhos designados, e siga as instruções das autoridades locais, pois algumas áreas da Bósnia ainda exigem cautela devido a resquícios de guerra e minas terrestres.",
+          "Essas precauções não devem deixá-lo ansioso quanto à viagem; pelo contrário, conhecê-las com antecedência lhe dá mais espaço para aproveitar sem surpresas desnecessárias."
+        ]
+      },
+      {
+        "heading": "Quais são as dicas mais importantes para quem visita a Bósnia pela primeira vez?",
+        "paragraphs": [
+          "Se esta é a sua primeira visita, existe um conjunto de dicas para viajantes na Bósnia que pode poupar você de muita confusão:"
+        ],
+        "list": [
+          "Planeje a viagem antes de chegar, mas deixe espaço para mudanças.",
+          "Não tente visitar tudo em uma viagem curta.",
+          "Mantenha uma cópia do seu passaporte e das reservas no celular.",
+          "Verifique os métodos de pagamento aceitos antes de se dirigir a lugares remotos.",
+          "Leve um pouco de dinheiro local com você para os casos em que métodos de pagamento eletrônico não estejam disponíveis.",
+          "Use calçados confortáveis, especialmente se planeja explorar áreas naturais.",
+          "Verifique as condições climáticas antes dos passeios diários.",
+          "Não dependa apenas da internet; é útil manter informações importantes acessíveis offline.",
+          "Se alugar um carro, entenda bem as regras de trânsito, o seguro e as condições da locadora.",
+          "Não deixe o roteiro da viagem tão cheio a ponto de passar a maior parte do tempo dentro do carro.",
+          "O mais importante: trate a viagem como uma experiência, não como uma corrida. A Bósnia, em especial, é um dos países que vale a pena explorar com calma, em vez de apenas tirar fotos e partir."
+        ]
+      }
+    ]
+  },
+  "blog": {
+    "hero": {
+      "title": "Mantenha-se atualizado com os artigos em alta",
+      "subtitle": "Descubra os artigos, insights e dicas mais recentes para enriquecer sua vida, fortalecer seus relacionamentos e obter orientações valiosas por meio de sessões com especialistas",
+      "collage": [
+        {
+          "title": "Seu Guia para um Casamento com Significado",
+          "excerpt": "Explore artigos úteis e conselhos de especialistas criados para apoiá-lo na construção de um relacionamento forte e na tomada de decisões seguras ao longo da sua jornada matrimonial."
+        },
+        {
+          "title": "Seu Guia para um Casamento com Significado",
+          "excerpt": "Explore artigos úteis e conselhos de especialistas criados para apoiá-lo na construção de um relacionamento forte e na tomada de decisões seguras ao longo da sua jornada matrimonial."
+        },
+        {
+          "title": "Construindo uma Vida Feliz Juntos",
+          "excerpt": "Aprenda insights valiosos, dicas práticas e orientações de especialistas para construir um relacionamento saudável e criar uma vida feliz"
+        },
+        {
+          "title": "Insights para a Sua Jornada Matrimonial",
+          "excerpt": "Descubra artigos inspiradores, dicas de relacionamento e sessões com especialistas para ajudá-lo a entender melhor os relacionamentos e construir um futuro mais forte e feliz juntos."
+        },
+        {
+          "title": "Insights para a Sua Jornada Matrimonial",
+          "excerpt": "Descubra artigos inspiradores, dicas de relacionamento e sessões com especialistas para ajudá-lo a entender melhor os relacionamentos e construir um futuro mais forte e feliz juntos."
+        }
+      ]
+    },
+    "featured": {
+      "date": "02-12-2026",
+      "title": "Mantenha-se atualizado com os artigos em alta",
+      "description": "Zefaaf é uma plataforma de confiança criada para ajudar muçulmanos a encontrar um parceiro de vida que compartilhe seus valores islâmicos, de forma segura e em conformidade com a Sharia.",
+      "cta": "Leia mais"
+    },
+    "list": {
+      "title": "Blog da Zefaaf",
+      "description": "Tudo o que você precisa saber sobre matchmaking halal e a escolha de um parceiro de vida por meio de plataformas confiáveis.",
+      "searchPlaceholder": "Buscar",
+      "viewMore": "Ver Mais",
+      "topics": {
+        "all": "Todos os Tópicos",
+        "qualities": "Qualidades de um Bom Cônjuge",
+        "relationships": "Relacionamentos Conjugais Bem-Sucedidos",
+        "health": "Saúde Conjugal",
+        "choosing": "Escolhendo um Parceiro de Vida"
+      },
+      "articles": [
+        {
+          "title": "Casamento com uma Mulher Bósnia para Árabes: Guia Completo",
+          "excerpt": "Casar-se com uma mulher bósnia tornou-se uma escolha cada vez mais popular entre homens árabes devido a valores culturais compartilhados e processos diretos..",
+          "image": "/images/blog/grid-1.png"
+        },
+        {
+          "title": "Costumes e Tradições de Casamento na Bósnia e Herzegovina: Celebrações Inesquecíveis",
+          "excerpt": "Os costumes e tradições de casamento na Bósnia e Herzegovina refletem uma mistura cativante de herança europeia e influências orientais autênticas. Este artigo da Zefaaf explora os rituais tradicionais de noivado, a música dos casamentos, as danças festivas e a culinária local icônica que tornam as celebrações bósnias tão distintas. Este guia oferece um mergulho profundo na rica herança cultural que torna os casamentos na Bósnia verdadeiramente inesquecíveis.",
+          "image": "/images/blog/grid-2-wide.png",
+          "wide": true
+        },
+        {
+          "title": "Casamento com uma Mulher Bósnia para Árabes: Guia Completo",
+          "excerpt": "Casar-se com uma mulher bósnia tornou-se uma escolha cada vez mais popular entre homens árabes devido a valores culturais compartilhados e processos diretos..",
+          "image": "/images/blog/grid-3.png"
+        },
+        {
+          "title": "Casamento com uma Mulher Bósnia para Árabes: Guia Completo",
+          "excerpt": "Casar-se com uma mulher bósnia tornou-se uma escolha cada vez mais popular entre homens árabes devido a valores culturais compartilhados e processos diretos..",
+          "image": "/images/blog/grid-4.png"
+        },
+        {
+          "title": "Casamento com uma Mulher Bósnia para Árabes: Guia Completo",
+          "excerpt": "Casar-se com uma mulher bósnia tornou-se uma escolha cada vez mais popular entre homens árabes devido a valores culturais compartilhados e processos diretos..",
+          "image": "/images/blog/grid-5.png"
+        }
+      ]
+    }
+  },
+  "downloadApp": {
+    "title": "Um Teste Gratuito Especial – Baixe o aplicativo\nZefaaf agora e aproveite mensagens gratuitas\nnos seus primeiros 3 dias!",
+    "features": [
+      "Um ambiente seguro e protegido para encontrar o parceiro certo.",
+      "Uma experiência fluida que segue as diretrizes islâmicas."
+    ],
+    "description": "Baixe o aplicativo na App Store ou no Google Play."
   },
   "whyChoose": {
-    "title": "Por Que Escolher a Zefaaf",
-    "description": "Na Zefaaf, acreditamos que o casamento é mais do que compatibilidade — trata-se de construir uma vida estável fundamentada em valores islâmicos.",
+    "title": "Por Que Escolher a Zefaaf?",
+    "description": "Na Zefaaf, encontrar um parceiro de vida já não se limita a aplicativos e sites. Oferecemos soluções reais, desde a realização de uma busca pessoal em seu nome até a organização de um encontro presencial.",
     "features": [
-      { "title": "Videochamadas seguras e em conformidade com a Sharia", "description": "Um recurso de vídeo seguro sob supervisão religiosa, que permite conhecer seu potencial parceiro de vida respeitando as diretrizes islâmicas." },
-      { "title": "Aconselhamento islâmico e familiar direto", "description": "Receba uma consulta gratuita ao se cadastrar com nossos especialistas religiosos e conselheiros familiares." },
-      { "title": "Sua voz, sua personalidade – deixe sua voz falar por você!", "description": "Uma mensagem de voz no seu perfil: apresente-se, compartilhe seus interesses e valores, e fale sobre sua visão para a vida conjugal." },
-      { "title": "Reunião de famílias – comece seu relacionamento da forma halal", "description": "Uma sala de vídeo privada que reúne ambas as famílias pela primeira vez de maneira adequada e em conformidade com a Sharia." },
-      { "title": "Sistema de pré-aprovação – não perca tempo com conversas improdutivas!", "description": "Veja sua porcentagem de compatibilidade com qualquer perfil antes de iniciar uma conversa." }
+      {
+        "title": "Aplicativo Zefaaf | Busque e conecte-se por conta própria",
+        "description": "Navegue pelos perfis, use as ferramentas de busca e compatibilidade, e conecte-se com pessoas adequadas em busca de um casamento sério."
+      },
+      {
+        "title": "Serviço VIP | Nós buscamos por você",
+        "description": "Uma equipe especializada busca combinações adequadas, recomenda-as a você e faz o acompanhamento pessoal por três meses."
+      },
+      {
+        "title": "Eventos de Casamento | Apresentações reais e organizadas",
+        "description": "Eventos sérios de casamento na Holanda e na Bósnia que criam oportunidades genuínas de encontro em um ambiente organizado."
+      },
+      {
+        "title": "Acompanhamento à Bósnia | Uma jornada rumo ao casamento",
+        "description": "Viajamos com você e cuidamos da coordenação, do acompanhamento e dos encontros diretos com mulheres bósnias e suas famílias."
+      },
+      {
+        "title": "Encontro presencial no seu país | Onde quer que você esteja",
+        "description": "Começamos com uma reunião privada por Zoom com um conselheiro familiar para entender sua personalidade e necessidades, depois buscamos um parceiro adequado e organizamos um encontro presencial quando há aceitação mútua."
+      }
     ]
+  },
+  "contactUs": {
+    "mapAlt": "Mapa mostrando a localização do nosso escritório",
+    "hero": {
+      "eyebrow": "Entre em Contato",
+      "title": "Estamos aqui para ajudá-lo em cada etapa do caminho",
+      "description": "Se você tiver alguma dúvida ou precisar de suporte, não hesite em nos contatar. Nossa equipe está sempre disponível para garantir a melhor experiência na plataforma Zefaaf."
+    },
+    "form": {
+      "card": {
+        "title": "Envie-nos sua mensagem",
+        "subtitle": "Estamos aqui para ouvi-lo e ajudá-lo",
+        "followUs": "Siga-nos"
+      },
+      "heading": "Como podemos ajudá-lo hoje?",
+      "fields": {
+        "fullName": "Nome completo",
+        "email": "Endereço de e-mail",
+        "message": "Mensagem"
+      },
+      "send": "Enviar"
+    },
+    "faq": {
+      "title": "Perguntas frequentes",
+      "description": "Encontre respostas rápidas para perguntas comuns abaixo. Precisa de mais ajuda?\nEntre em contato conosco a qualquer momento para obter mais assistência",
+      "heading": "Como podemos ajudá-lo?",
+      "searchPlaceholder": "Buscar",
+      "items": [
+        {
+          "question": "O registro na plataforma Zefaaf é gratuito?",
+          "answer": "Sim, o registro básico é gratuito para todos, com pacotes adicionais opcionais para serviços premium."
+        },
+        {
+          "question": "Quanto tempo leva para encontrar uma combinação adequada?",
+          "answer": "Varia de pessoa para pessoa, mas nossa equipe trabalha continuamente para apresentá-lo a combinações adequadas o mais rápido possível."
+        },
+        {
+          "question": "Minhas informações pessoais são mantidas privadas?",
+          "answer": "Sim, levamos sua privacidade a sério e só compartilhamos suas informações com combinações que você aprovar."
+        },
+        {
+          "question": "Posso usar o Zefaaf de qualquer país?",
+          "answer": "Sim, o Zefaaf está disponível em todo o mundo e conecta muçulmanos de diferentes países em busca de casamento."
+        },
+        {
+          "question": "Como entro em contato com a equipe de suporte?",
+          "answer": "Você pode entrar em contato conosco a qualquer momento através deste formulário de contato, e nossa equipe responderá o mais breve possível."
+        }
+      ]
+    }
   }
 }

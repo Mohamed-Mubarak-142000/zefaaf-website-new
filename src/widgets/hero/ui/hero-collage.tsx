@@ -3,17 +3,6 @@ import Image from "next/image";
 
 import { getDirection, type Locale } from "@/shared/i18n";
 
-import { RotatingImage } from "./rotating-image";
-
-const HERO_PHOTOS = [
-  "/images/hero-photo-1652.png",
-  "/images/hero-photo-1653.png",
-  "/images/hero-photo-1643.png",
-  "/images/hero-photo-1646.png",
-  "/images/hero-photo-1651.png",
-  "/images/hero-photo-1655.png",
-] as const;
-
 // Figma's frame for this collage is a fixed 1839×1080px canvas built from
 // 4 solid circles, 4 masked photos, 2 direct photos, and 2 solid dots, all
 // absolutely positioned. Rather than approximate that with hand-picked
@@ -84,13 +73,13 @@ export function HeroCollage() {
         className="absolute overflow-hidden rounded-full"
         style={{ left: cqw(708.7), top: cqh(186.52), width: cqw(378.543), height: cqh(366.863) }}
       >
-        <RotatingImage
-          sources={HERO_PHOTOS}
-          initialIndex={0}
-          interval={7600}
+        <Image
+          src="/images/hero-photo-1652.png"
+          alt=""
+          fill
           sizes="20vw"
           className="object-cover"
-          imageStyle={{ transform: flip }}
+          style={{ transform: flip }}
         />
       </div>
 
@@ -99,13 +88,13 @@ export function HeroCollage() {
         className="absolute overflow-hidden rounded-full opacity-[0.64]"
         style={{ left: cqw(708.7), top: cqh(564.55), width: cqw(378.543), height: cqh(366.863) }}
       >
-        <RotatingImage
-          sources={HERO_PHOTOS}
-          initialIndex={1}
-          interval={8200}
+        <Image
+          src="/images/hero-photo-1653.png"
+          alt=""
+          fill
           sizes="20vw"
           className="object-cover"
-          imageStyle={{ transform: flip }}
+          style={{ transform: flip }}
         />
       </div>
 
@@ -338,14 +327,14 @@ export function HeroCollage() {
           maskRepeat: "no-repeat",
         }}
       >
-        <RotatingImage
-          sources={HERO_PHOTOS}
-          initialIndex={5}
-          interval={10600}
+        <Image
+          src="/images/hero-photo-1655.png"
+          alt=""
+          fill
           sizes="35vw"
           preload
           className="object-cover"
-          imageStyle={{ transform: flip }}
+          style={{ transform: flip }}
         />
       </div>
 

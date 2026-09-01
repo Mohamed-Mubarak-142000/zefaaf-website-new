@@ -1,8 +1,5 @@
 import { useTranslations } from "next-intl";
 
-import { Button } from "@/shared/ui/button";
-
-import { AnimatedHeroTitle } from "./animated-hero-title";
 import { AnimatedStats } from "./animated-stats";
 import { HeroCollage } from "./hero-collage";
 
@@ -25,19 +22,23 @@ export function Hero() {
   return (
     <section className="relative mx-auto flex max-w-[1800px] flex-col-reverse items-center gap-(--space-fluid-lg) overflow-x-clip px-(--space-fluid-container) py-(--space-fluid-lg) lg:flex-row lg:justify-between">
       <div className="flex max-w-md translate-y-0 flex-col items-center gap-(--space-fluid-md) text-center lg:shrink-0 lg:-translate-y-36 lg:items-start lg:text-start">
-        <AnimatedHeroTitle className="font-almarai text-(length:--text-fluid-hero) leading-[1.4] font-bold whitespace-pre-line text-foreground">
+        <h1 className="font-almarai text-(length:--text-fluid-hero) leading-[1.4] font-bold whitespace-pre-line text-foreground">
           {t("hero.title")}
-        </AnimatedHeroTitle>
+        </h1>
         <p className="font-almarai text-(length:--text-fluid-lg) leading-[1.6] whitespace-pre-line text-foreground/72">
           {t("hero.subtitle")}
         </p>
-        <Button
-          icon={<img src="/icons/plus.svg" alt="" className="size-(--size-fluid-icon-sm)" />}
-          iconPosition="end"
-          className="font-alexandria"
+        <button
+          type="button"
+          className="flex shrink-0 items-center gap-(--space-fluid-3xs) rounded-[8px] bg-brand px-(--space-fluid-sm) py-(--space-fluid-2xs) font-alexandria text-[12px] leading-[1.5] text-white transition-opacity hover:opacity-90 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand"
         >
-          {t("hero.cta")}
-        </Button>
+          <span>{t("hero.cta")}</span>
+          <img
+            src="/icons/arrow-right-double.svg"
+            alt=""
+            className="size-(--size-fluid-icon-xs) rtl:rotate-180"
+          />
+        </button>
 
         <AnimatedStats stats={stats} />
       </div>

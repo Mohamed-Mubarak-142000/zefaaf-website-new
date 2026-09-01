@@ -145,23 +145,23 @@ function FeaturesList({ features }: { features: Feature[] }) {
                   {/* Keeping the marker in the same row as its content prevents
                       variable description heights from shifting their alignment. */}
                   <div className="relative z-10 mt-[5px] flex w-[52px] shrink-0 items-center justify-between">
+                    <span className="font-alexandria text-[clamp(13px,1.2vw,15px)] leading-none font-semibold text-foreground">
+                      {String(featureNumber + 1).padStart(2, "0")}
+                    </span>
                     <span
                       className={cn(
                         "size-[12px] shrink-0 rounded-full",
                         featureNumber === 0 ? "bg-brand" : "bg-muted-foreground/45",
                       )}
                     />
-                    <span className="font-alexandria text-[12px] leading-none font-semibold text-foreground">
-                      {String(featureNumber + 1).padStart(2, "0")}
-                    </span>
-                    <span className="absolute top-[12px] start-[5.5px] h-[38px] w-px bg-foreground/25" />
+                    <span className="absolute top-[12px] start-[45.5px] h-[38px] w-px bg-foreground/25" />
                   </div>
 
                   <div className="flex flex-1 flex-col gap-[9px] text-start">
-                    <h3 className="font-almarai text-[16px] leading-[1.4] font-extrabold text-foreground">
+                    <h3 className="font-almarai text-[clamp(16px,1.5vw,19px)] leading-[1.4] font-semibold text-foreground">
                       {feature.title}
                     </h3>
-                    <p className="font-almarai text-[12px] leading-[1.6] text-muted-foreground">
+                    <p className="font-almarai text-[clamp(12px,1.1vw,14px)] leading-[1.6] text-muted-foreground">
                       {feature.description}
                     </p>
                   </div>
@@ -172,7 +172,7 @@ function FeaturesList({ features }: { features: Feature[] }) {
         </AnimatePresence>
       </div>
 
-      <div className="mt-[clamp(20px,2.4vw,32px)] flex items-center justify-start gap-[6px]">
+      <div className="mt-[clamp(20px,2.4vw,32px)] flex flex-row-reverse items-center justify-end gap-[10px]">
         {Array.from({ length: pageCount }, (_, index) => (
           <button
             key={index}
@@ -181,8 +181,10 @@ function FeaturesList({ features }: { features: Feature[] }) {
             aria-current={page === index ? "page" : undefined}
             onClick={() => selectPage(index)}
             className={cn(
-              "h-[9px] rounded-full bg-brand transition-[width,opacity] duration-500 ease-out focus-visible:outline-2 focus-visible:outline-offset-3 focus-visible:outline-brand",
-              page === index ? "w-[88px] opacity-100" : "w-[28px] opacity-35 hover:opacity-60",
+              "h-[7px] rounded-full transition-[width,background-color] duration-500 ease-out focus-visible:outline-2 focus-visible:outline-offset-3 focus-visible:outline-brand",
+              page === index
+                ? "w-[98px] bg-secondary-pink"
+                : "w-[30px] bg-stroke-1 hover:bg-grey-primary/25",
             )}
           />
         ))}

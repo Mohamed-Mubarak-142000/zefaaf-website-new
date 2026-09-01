@@ -37,7 +37,13 @@
     "articles": "Artikelen",
     "upcomingEvents": "Aankomende Evenementen",
     "successStories": "Succesverhalen",
-    "marriageRequest": "Huwelijksaanvraag"
+    "marriageRequest": "Huwelijksaanvraag",
+    "servicesMenu": {
+      "zefaafEvents": "Zefaaf-evenementen",
+      "marriageForm": "Uw Huwelijksformulier",
+      "bosniaTour": "Bosnië Huwelijksreis",
+      "meetingInCountry": "Ontmoeting in uw Land"
+    }
   },
   "footer": {
     "columns": {
@@ -95,13 +101,14 @@
     }
   },
   "services": {
+    "title": "Onze diensten",
     "items": [
       {
-        "title": "Islamitisch Huwelijksforum",
+        "title": "Zefaaf-evenementen",
         "description": "Islamitische huwelijksforumevenementen die moslims die willen trouwen en hun families samenbrengen"
       },
       {
-        "title": "Huwelijksaanvraag",
+        "title": "Uw Huwelijksformulier",
         "description": "Vind uw ideale levenspartner uit verschillende landen."
       },
       {
@@ -109,28 +116,27 @@
         "description": "Een toegewijde dienst waarbij Zefaaf-consulenten op zoek gaan naar geschikte levenspartners"
       },
       {
-        "title": "Begeleiding door Ons Team in Bosnië",
+        "title": "Bosnië Huwelijksreis",
         "description": "Een begeleid programma waarbij het Zefaaf-team klanten begeleidt bij ontmoetingen met families met het oog op een serieus huwelijk"
       },
       {
-        "title": "Online Ontmoeting",
+        "title": "Ontmoeting in uw Land",
         "description": "Begin met een sessie bij een gezinsconsulent om uw persoonlijkheid en behoeften te begrijpen"
       }
     ]
   },
   "globalPresence": {
     "mapAlt": "Kaart die het bereik van Zefaaf wereldwijd toont",
-    "badge": "3 miljoen gebruikers op Zefaaf",
+    "badge": "12k gebruikers op Zefaaf",
     "title": "Wij zijn actief in <brand>175</brand> landen",
     "description": "Zefaaf verbindt moslims wereldwijd met betrouwbare bemiddelingsdiensten die hun islamitische waarden delen, op een veilige, sharia-conforme manier.",
     "countries": {
-      "france": "Frankrijk",
-      "germany": "Duitsland",
-      "netherlands": "Nederland",
-      "turkey": "Turkije",
-      "russia": "Rusland",
-      "china": "China",
-      "indonesia": "Indonesië"
+      "france": "Noord-Amerika",
+      "germany": "Zuid-Amerika",
+      "netherlands": "Europa",
+      "turkey": "Afrika",
+      "russia": "Azië",
+      "china": "Oceanië"
     }
   },
   "upcomingEvents": {
@@ -150,34 +156,276 @@
         "title": "Islamitisch Huwelijksforum in Bosnië",
         "location": "Terezija, 71000",
         "price": "150 Euro"
+      },
+      {
+        "date": "14 juni",
+        "time": "14.00 uur",
+        "title": "Islamitisch Huwelijksforum in Duitsland",
+        "location": "Alexanderplatz, Berlijn",
+        "price": "150 Euro"
+      },
+      {
+        "date": "22 augustus",
+        "time": "13.00 uur",
+        "title": "Islamitisch Huwelijksforum in België",
+        "location": "Brussel Stadscentrum",
+        "price": "150 Euro"
+      },
+      {
+        "date": "17 oktober",
+        "time": "15.00 uur",
+        "title": "Islamitisch Huwelijksforum in Turkije",
+        "location": "Fatih, Istanboel",
+        "price": "150 Euro"
+      },
+      {
+        "date": "12 december",
+        "time": "12.00 uur",
+        "title": "Islamitisch Huwelijksforum in het Verenigd Koninkrijk",
+        "location": "Londen Stadscentrum",
+        "price": "150 Euro"
       }
     ],
-    "ticker": ["Leef uw beste", "gezonde reis", "levenspartner", "gezonde keuzes", "levenspartner"]
+    "ticker": [
+      "Leef uw beste",
+      "gezonde reis",
+      "levenspartner",
+      "gezonde keuzes",
+      "levenspartner"
+    ]
   },
-  "whyChoose": {
-    "title": "Waarom Kiezen Voor Zefaaf",
-    "description": "Bij Zefaaf geloven wij dat een huwelijk meer is dan alleen compatibiliteit — het gaat om het opbouwen van een stabiel leven gegrondvest op islamitische waarden.",
-    "features": [
+  "blogDetail": {
+    "breadcrumb": {
+      "home": "Home",
+      "blogs": "Blogs",
+      "current": "Blogdetails"
+    },
+    "date": "02-12-2026",
+    "title": "Uw Complete Gids voor Toerisme in Bosnië en Herzegovina: Tips voor Eerste Bezoekers.",
+    "intro": "Bosnië en Herzegovina is een betoverende bestemming die het hart van reizigers verovert met zijn adembenemende natuurlijke schoonheid en rijke geschiedenis. In dit artikel belicht Zefaaf de belangrijkste tips en adviezen voor mensen die voor het eerst reizen, van het plannen van uw reis en het kiezen van het beste moment om te gaan tot het begrijpen van de lokale cultuur en etiquette. Deze uitgebreide gids helpt u genieten van een comfortabele en onvergetelijke reiservaring vol bijzondere momenten.",
+    "banner": {
+      "imageAlt": "Een glimlachend moslimkoppel dat naar de camera zwaait",
+      "title": "Blijf op de hoogte van de populairste artikelen"
+    },
+    "leadParagraphs": [
+      "Bosnië en Herzegovina is een bestemming die op de kaart eenvoudig lijkt, maar de ervaring wordt veel mooier wanneer u vooraf enkele details kent. Tussen het historische Sarajevo, Mostar met zijn beroemde brug, en de natuur rondom de steden en dorpen, zult u merken dat de reis niet zozeer een vol programma nodig heeft, als wel een slimme en flexibele planning.",
+      "Als dit uw eerste bezoek is, is dit daarom de Bosnië-reisgids die u nodig heeft voordat u uw koffers pakt; van het kiezen van de reisdatum en accommodatie, tot vervoer en veiligheid, tot praktische tips die uw ervaring comfortabeler maken, of u nu alleen reist, samen met uw levenspartner, of een gezinsreis naar Bosnië plant."
+    ],
+    "sections": [
       {
-        "title": "Veilige, sharia-conforme videogesprekken",
-        "description": "Een veilige videofunctie onder religieus toezicht, waarmee u uw potentiële levenspartner kunt ontmoeten met inachtneming van islamitische richtlijnen."
+        "heading": "Wat is de beste tijd om Bosnië en Herzegovina te bezoeken?",
+        "paragraphs": [
+          "De beste tijd om Bosnië en Herzegovina te bezoeken hangt af van het soort reis dat u zoekt. De lente is geschikt voor wie wil genieten van de natuur en een gematigd klimaat, terwijl de zomer reizigers aantrekt die op zoek zijn naar buitenactiviteiten en tochten tussen de steden.",
+          "De herfst biedt u een rustige sfeer en landschappen in wisselende kleuren, terwijl de winter een uitgelezen kans is voor liefhebbers van koud weer, hoogland en winteractiviteiten.",
+          "Er is dus geen eenduidig antwoord dat voor iedereen geldt. Als uw doel is om de steden te bezoeken en de natuur te verkennen zonder grote hitte, zijn lente en herfst comfortabele keuzes. Wilt u profiteren van de lange daglichturen en talrijke activiteiten, dan kan de zomer geschikt voor u zijn.",
+          "En na het kiezen van het seizoen komt de belangrijkste vraag: waar verblijft u en hoe verplaatst u zich?"
+        ]
       },
       {
-        "title": "Directe islamitische en gezinsbegeleiding",
-        "description": "Ontvang na registratie een gratis consult van onze religieuze experts en gezinsconsulenten."
+        "heading": "Waar kunt u verblijven in Bosnië en Herzegovina?",
+        "paragraphs": [
+          "De keuze van uw accommodatie moet aansluiten bij uw reisprogramma, en niet alleen bij de prijs. In Sarajevo bijvoorbeeld maakt verblijf in de buurt van het centrum de toegang tot bezienswaardigheden, restaurants en vervoer gemakkelijker, terwijl u in andere steden wellicht liever verblijft nabij het stadscentrum of de natuurgebieden die u van plan bent te bezoeken.",
+          "Het is ook belangrijk om vooraf reviews van andere reizigers te lezen, en te controleren of de voorzieningen die u nodig heeft aanwezig zijn, zeker wanneer u met een gezin reist.",
+          "Voor gezinsreizen in Bosnië is het het beste om prioriteit te geven aan de locatie, rust en de bereikbaarheid van voorzieningen, zodat dagelijkse verplaatsingen over lange afstanden geen belasting worden voor de gezinsleden.",
+          "Zodra de accommodatie is vastgelegd, is het plannen van het vervoer tussen de steden de volgende stap."
+        ]
       },
       {
-        "title": "Uw stem, uw persoonlijkheid – laat uw stem voor u spreken!",
-        "description": "Een spraakbericht op uw profiel: stel uzelf voor, deel uw interesses en waarden, en vertel over uw visie op het huwelijksleven."
+        "heading": "Hoe is het vervoer in Bosnië en Herzegovina geregeld?",
+        "paragraphs": [
+          "U kunt zich op verschillende manieren door Bosnië en Herzegovina verplaatsen, en de keuze hangt af van de afstand, het aantal personen en de aard van de reis.",
+          "Binnen de steden kunt u gebruikmaken van lokaal vervoer of taxi's, terwijl bussen een praktische optie zijn wanneer u tussen verschillende steden reist. Als u de vrijheid wilt om zelf uw stopmomenten te bepalen en plekken buiten de stadscentra te bezoeken, is het huren van een auto wellicht geschikter.",
+          "Toch vraagt autorijden in een nieuw land om enige aandacht; door het bergachtige landschap van Bosnië kent u kronkelende wegen en hoogteverschillen, waardoor een roadtrip niet als een snelle overgang van de ene stad naar de andere moet worden beschouwd.",
+          "Vandaar een belangrijke tip uit de Bosnië-reisgids: plan niet te veel steden op één dag. Soms is het beperken van het aantal bestemmingen de beste manier om het land écht te zien."
+        ]
       },
       {
-        "title": "Familieontmoeting – begin uw relatie op de halal manier",
-        "description": "Een privé videoruimte waarin beide families voor het eerst samenkomen, op een gepaste, sharia-conforme manier."
+        "heading": "Is Bosnië en Herzegovina veilig voor reizigers?",
+        "paragraphs": [
+          "In het algemeen wordt Bosnië en Herzegovina beschouwd als een geschikte bestemming voor toerisme, maar dat betekent niet dat u de gebruikelijke voorzorgsmaatregelen die elke reiziger nodig heeft, kunt laten varen.",
+          "Bewaar uw geld en documenten op een veilige plek, laat uw persoonlijke bezittingen niet onbeheerd achter en let goed op in drukke plaatsen. Het is ook aan te raden om elektronische kopieën van uw paspoort, boekingen en belangrijke documenten bij de hand te houden, voor het geval zich onverwachte omstandigheden voordoen.",
+          "Er is een bijzonder punt dat het vermelden waard is: wanneer u uitstapjes maakt buiten bewoonde of bekende gebieden, wijk dan niet af van de aangewezen wegen en paden, en volg de aanwijzingen van de lokale autoriteiten, aangezien in sommige gebieden in Bosnië nog voorzichtigheid geboden is vanwege oorlogsresten en landmijnen.",
+          "Deze voorzorgsmaatregelen hoeven u niet ongerust te maken over de reis; integendeel, door ze vooraf te kennen krijgt u juist meer ruimte om te genieten zonder onnodige verrassingen."
+        ]
       },
       {
-        "title": "Voorgoedkeuringssysteem – verspil geen tijd aan onproductieve gesprekken!",
-        "description": "Bekijk uw compatibiliteitspercentage met elk profiel voordat u een gesprek begint."
+        "heading": "Wat zijn de belangrijkste tips voor wie voor het eerst naar Bosnië reist?",
+        "paragraphs": [
+          "Als dit uw eerste bezoek is, is er een reeks tips voor reizigers naar Bosnië die u veel verwarring kan besparen:"
+        ],
+        "list": [
+          "Plan de reis vóór aankomst, maar houd ruimte voor verandering.",
+          "Probeer niet alles te bezoeken tijdens een korte reis.",
+          "Bewaar een kopie van uw paspoort en boekingen op uw telefoon.",
+          "Controleer welke betaalmethoden geaccepteerd worden voordat u naar afgelegen plaatsen gaat.",
+          "Neem wat lokaal contant geld mee voor situaties waarin elektronisch betalen niet mogelijk is.",
+          "Draag comfortabele schoenen, vooral als u van plan bent natuurgebieden te verkennen.",
+          "Controleer de weersomstandigheden voordat u op dagtocht gaat.",
+          "Vertrouw niet uitsluitend op internet; het is nuttig om belangrijke informatie ook offline bij de hand te hebben.",
+          "Als u een auto huurt, zorg dan dat u de verkeersregels, verzekering en voorwaarden van het verhuurbedrijf goed begrijpt.",
+          "Maak het reisschema niet zo vol dat u het grootste deel van uw tijd in de auto doorbrengt.",
+          "Het belangrijkste: behandel de reis als een ervaring, niet als een wedstrijd. Bosnië is bij uitstek een land waar het de moeite waard is om even stil te staan, in plaats van enkel foto's te maken en weer te vertrekken."
+        ]
       }
     ]
+  },
+  "blog": {
+    "hero": {
+      "title": "Blijf op de hoogte van de populairste artikelen",
+      "subtitle": "Ontdek de nieuwste artikelen, inzichten en tips om uw leven te verrijken, uw relaties te versterken en waardevolle begeleiding te krijgen via sessies met experts",
+      "collage": [
+        {
+          "title": "Uw Gids voor een Betekenisvol Huwelijk",
+          "excerpt": "Ontdek nuttige artikelen en deskundig advies die u ondersteunen bij het opbouwen van een sterke relatie en het nemen van zelfverzekerde beslissingen tijdens uw huwelijksreis."
+        },
+        {
+          "title": "Uw Gids voor een Betekenisvol Huwelijk",
+          "excerpt": "Ontdek nuttige artikelen en deskundig advies die u ondersteunen bij het opbouwen van een sterke relatie en het nemen van zelfverzekerde beslissingen tijdens uw huwelijksreis."
+        },
+        {
+          "title": "Samen een Gelukkig Leven Opbouwen",
+          "excerpt": "Ontdek waardevolle inzichten, praktische tips en deskundige begeleiding om een gezonde relatie op te bouwen en een gelukkig"
+        },
+        {
+          "title": "Inzichten voor uw Huwelijksreis",
+          "excerpt": "Ontdek inspirerende artikelen, relatietips en sessies met experts om relaties beter te begrijpen en samen een sterkere, gelukkigere toekomst op te bouwen."
+        },
+        {
+          "title": "Inzichten voor uw Huwelijksreis",
+          "excerpt": "Ontdek inspirerende artikelen, relatietips en sessies met experts om relaties beter te begrijpen en samen een sterkere, gelukkigere toekomst op te bouwen."
+        }
+      ]
+    },
+    "featured": {
+      "date": "02-12-2026",
+      "title": "Blijf op de hoogte van de populairste artikelen",
+      "description": "Zefaaf is een betrouwbaar platform dat moslims helpt een levenspartner te vinden die hun islamitische waarden deelt, op een veilige en sharia-conforme manier.",
+      "cta": "Lees meer"
+    },
+    "list": {
+      "title": "Zefaaf Blog",
+      "description": "Alles wat u moet weten over halal partnerbemiddeling en het kiezen van een levenspartner via betrouwbare platforms.",
+      "searchPlaceholder": "Zoeken",
+      "viewMore": "Meer Weergeven",
+      "topics": {
+        "all": "Alle Onderwerpen",
+        "qualities": "Kwaliteiten van een Goede Partner",
+        "relationships": "Succesvolle Huwelijksrelaties",
+        "health": "Huwelijksgezondheid",
+        "choosing": "Het Kiezen van een Levenspartner"
+      },
+      "articles": [
+        {
+          "title": "Trouwen met een Bosnische Vrouw voor Arabieren: Complete Gids",
+          "excerpt": "Trouwen met een Bosnische vrouw is voor Arabische mannen een steeds populairdere keuze geworden, vanwege gedeelde culturele waarden en eenvoudige..",
+          "image": "/images/blog/grid-1.png"
+        },
+        {
+          "title": "Huwelijksgebruiken en Tradities in Bosnië en Herzegovina: Onvergetelijke Vieringen",
+          "excerpt": "Huwelijksgebruiken en tradities in Bosnië en Herzegovina weerspiegelen een boeiende mix van Europese erfenis en authentieke oosterse invloeden. Dit zefaaf-artikel behandelt traditionele verlovingsrituelen, bruiloftsmuziek, feestelijke dansen en iconische lokale gerechten die Bosnische vieringen zo bijzonder maken. Deze gids biedt een diepgaand inzicht in het rijke culturele erfgoed dat bruiloften in Bosnië werkelijk onvergetelijk maakt.",
+          "image": "/images/blog/grid-2-wide.png",
+          "wide": true
+        },
+        {
+          "title": "Trouwen met een Bosnische Vrouw voor Arabieren: Complete Gids",
+          "excerpt": "Trouwen met een Bosnische vrouw is voor Arabische mannen een steeds populairdere keuze geworden, vanwege gedeelde culturele waarden en eenvoudige..",
+          "image": "/images/blog/grid-3.png"
+        },
+        {
+          "title": "Trouwen met een Bosnische Vrouw voor Arabieren: Complete Gids",
+          "excerpt": "Trouwen met een Bosnische vrouw is voor Arabische mannen een steeds populairdere keuze geworden, vanwege gedeelde culturele waarden en eenvoudige..",
+          "image": "/images/blog/grid-4.png"
+        },
+        {
+          "title": "Trouwen met een Bosnische Vrouw voor Arabieren: Complete Gids",
+          "excerpt": "Trouwen met een Bosnische vrouw is voor Arabische mannen een steeds populairdere keuze geworden, vanwege gedeelde culturele waarden en eenvoudige..",
+          "image": "/images/blog/grid-5.png"
+        }
+      ]
+    }
+  },
+  "downloadApp": {
+    "title": "Een Speciale Gratis Proefperiode – Download de Zefaaf\napp nu en geniet van gratis berichten tijdens\nuw eerste 3 dagen!",
+    "features": [
+      "Een veilige en beschermde omgeving om de juiste partner te vinden.",
+      "Een naadloze ervaring die de islamitische richtlijnen volgt."
+    ],
+    "description": "Download de app via de App Store of Google Play."
+  },
+  "whyChoose": {
+    "title": "Waarom Kiezen Voor Zefaaf?",
+    "description": "Bij Zefaaf is het vinden van een levenspartner niet langer beperkt tot apps en websites. Wij bieden echte oplossingen, van het uitvoeren van een persoonlijke zoektocht namens u tot het regelen van een persoonlijke ontmoeting.",
+    "features": [
+      {
+        "title": "Zefaaf App | Zoek en maak zelf contact",
+        "description": "Blader door profielen, gebruik zoek- en compatibiliteitstools, en maak contact met geschikte personen die op zoek zijn naar een serieus huwelijk."
+      },
+      {
+        "title": "VIP Service | Wij zoeken voor u",
+        "description": "Een gespecialiseerd team zoekt naar geschikte kandidaten, beveelt deze bij u aan en volgt dit persoonlijk drie maanden lang op."
+      },
+      {
+        "title": "Huwelijksevenementen | Echte, georganiseerde kennismakingen",
+        "description": "Serieuze huwelijksevenementen in Nederland en Bosnië die oprechte kansen creëren om elkaar te ontmoeten in een georganiseerde omgeving."
+      },
+      {
+        "title": "Begeleiding naar Bosnië | Een reis met het oog op het huwelijk",
+        "description": "Wij reizen met u mee en verzorgen de coördinatie, opvolging en directe ontmoetingen met Bosnische vrouwen en hun families."
+      },
+      {
+        "title": "Persoonlijke ontmoeting in uw land | Waar u zich ook bevindt",
+        "description": "Wij beginnen met een privé Zoom-gesprek met een gezinsconsulent om uw persoonlijkheid en behoeften te begrijpen, waarna wij op zoek gaan naar een geschikte partner en een persoonlijke ontmoeting regelen zodra er sprake is van wederzijdse acceptatie."
+      }
+    ]
+  },
+  "contactUs": {
+    "mapAlt": "Kaart met de locatie van ons kantoor",
+    "hero": {
+      "eyebrow": "Neem Contact Op",
+      "title": "Wij staan voor u klaar, bij elke stap",
+      "description": "Heeft u vragen of heeft u ondersteuning nodig, aarzel dan niet om contact met ons op te nemen. Ons team staat altijd voor u klaar om de beste ervaring op het Zefaaf-platform te garanderen."
+    },
+    "form": {
+      "card": {
+        "title": "Stuur ons uw bericht",
+        "subtitle": "Wij staan klaar om naar u te luisteren en u te helpen",
+        "followUs": "Volg Ons"
+      },
+      "heading": "Hoe kunnen wij u vandaag helpen?",
+      "fields": {
+        "fullName": "Volledige naam",
+        "email": "E-mailadres",
+        "message": "Bericht"
+      },
+      "send": "Versturen"
+    },
+    "faq": {
+      "title": "Veelgestelde vragen",
+      "description": "Vind hieronder snel antwoord op veelgestelde vragen, heeft u meer hulp nodig?\nNeem gerust op elk moment contact met ons op voor verdere ondersteuning",
+      "heading": "Hoe kunnen wij u helpen?",
+      "searchPlaceholder": "Zoeken",
+      "items": [
+        {
+          "question": "Is registreren op het Zefaaf-platform gratis?",
+          "answer": "Ja, de basisregistratie is voor iedereen gratis, met optionele extra pakketten voor premium diensten."
+        },
+        {
+          "question": "Hoe lang duurt het om een geschikte match te vinden?",
+          "answer": "Dit verschilt van persoon tot persoon, maar ons team werkt voortdurend om u zo snel mogelijk in contact te brengen met geschikte kandidaten."
+        },
+        {
+          "question": "Blijft mijn persoonlijke informatie privé?",
+          "answer": "Ja, wij nemen uw privacy serieus en delen uw gegevens alleen met kandidaten die u zelf goedkeurt."
+        },
+        {
+          "question": "Kan ik Zefaaf vanuit elk land gebruiken?",
+          "answer": "Ja, Zefaaf is wereldwijd beschikbaar en verbindt moslims uit verschillende landen die op zoek zijn naar een huwelijk."
+        },
+        {
+          "question": "Hoe neem ik contact op met het supportteam?",
+          "answer": "U kunt ons op elk moment bereiken via dit contactformulier, en ons team reageert zo snel mogelijk."
+        }
+      ]
+    }
   }
 }

@@ -15,9 +15,18 @@
     "ratingValue": "4.8"
   },
   "stats": {
-    "happyClients": { "value": "34,484k", "label": "Mga Nasiyahang Kliyente" },
-    "successStories": { "value": "2768", "label": "Mga Kuwento ng Tagumpay" },
-    "registeredMembers": { "value": "23416", "label": "Mga Rehistradong Miyembro" }
+    "happyClients": {
+      "value": "34,484k",
+      "label": "Mga Nasiyahang Kliyente"
+    },
+    "successStories": {
+      "value": "2768",
+      "label": "Mga Kuwento ng Tagumpay"
+    },
+    "registeredMembers": {
+      "value": "23416",
+      "label": "Mga Rehistradong Miyembro"
+    }
   },
   "nav": {
     "home": "Home",
@@ -28,7 +37,13 @@
     "articles": "Mga Artikulo",
     "upcomingEvents": "Mga Paparating na Event",
     "successStories": "Mga Kuwento ng Tagumpay",
-    "marriageRequest": "Kahilingan sa Kasal"
+    "marriageRequest": "Kahilingan sa Kasal",
+    "servicesMenu": {
+      "zefaafEvents": "Mga Kaganapan ng Zefaaf",
+      "marriageForm": "Ang Iyong Marriage Form",
+      "bosniaTour": "Bosnia Marriage Tour",
+      "meetingInCountry": "Pagpupulong sa Iyong Bansa"
+    }
   },
   "footer": {
     "columns": {
@@ -86,41 +101,331 @@
     }
   },
   "services": {
+    "title": "Ang Aming mga Serbisyo",
     "items": [
-      { "title": "Forum sa Islamikong Kasal", "description": "Mga event ng forum sa Islamikong kasal na nagtitipon sa mga Muslim na naghahanap ng kasal at sa kanilang mga pamilya" },
-      { "title": "Aplikasyon para sa Kasal", "description": "Hanapin ang iyong perpektong kabiyak sa buhay mula sa iba't ibang bansa." },
-      { "title": "VIP Personal na Paghahanap", "description": "Isang dedikadong serbisyo kung saan naghahanap ang mga consultant ng Zefaaf ng angkop na kabiyak sa buhay" },
-      { "title": "Pagsama ng Aming Team sa Bosnia", "description": "Isang gabayang programa kung saan sinasamahan ng team ng Zefaaf ang mga kliyente upang makilala ang mga pamilya para sa seryosong kasal" },
-      { "title": "Online na Pagpupulong", "description": "Magsimula sa isang session kasama ang isang family consultant upang maunawaan ang iyong personalidad at pangangailangan" }
+      {
+        "title": "Mga Kaganapan ng Zefaaf",
+        "description": "Mga event ng forum sa Islamikong kasal na nagtitipon sa mga Muslim na naghahanap ng kasal at sa kanilang mga pamilya"
+      },
+      {
+        "title": "Ang Iyong Marriage Form",
+        "description": "Hanapin ang iyong perpektong kabiyak sa buhay mula sa iba't ibang bansa."
+      },
+      {
+        "title": "VIP Personal na Paghahanap",
+        "description": "Isang dedikadong serbisyo kung saan naghahanap ang mga consultant ng Zefaaf ng angkop na kabiyak sa buhay"
+      },
+      {
+        "title": "Bosnia Marriage Tour",
+        "description": "Isang gabayang programa kung saan sinasamahan ng team ng Zefaaf ang mga kliyente upang makilala ang mga pamilya para sa seryosong kasal"
+      },
+      {
+        "title": "Pagpupulong sa Iyong Bansa",
+        "description": "Magsimula sa isang session kasama ang isang family consultant upang maunawaan ang iyong personalidad at pangangailangan"
+      }
     ]
   },
   "globalPresence": {
     "mapAlt": "Mapa na nagpapakita ng saklaw ng Zefaaf sa buong mundo",
-    "badge": "3 milyong user sa Zefaaf",
+    "badge": "12k user sa Zefaaf",
     "title": "Nagpapatakbo kami sa <brand>175</brand> bansa",
     "description": "Ikinokonekta ng Zefaaf ang mga Muslim sa buong mundo sa mapagkakatiwalaang serbisyo sa pagtutugma na kapareho ang paniniwalang Islamiko, sa isang ligtas at naaayon-sa-Sharia na paraan.",
     "countries": {
-      "france": "Pransya", "germany": "Alemanya", "netherlands": "Holanda", "turkey": "Turkey", "russia": "Rusya", "china": "Tsina", "indonesia": "Indonesia"
+      "france": "Hilagang Amerika",
+      "germany": "Timog Amerika",
+      "netherlands": "Europa",
+      "turkey": "Aprika",
+      "russia": "Asya",
+      "china": "Oceania"
     }
   },
   "upcomingEvents": {
     "description": "Tuklasin ang aming mga paparating na event at sumali sa amin para sa makabuluhang karanasan, nakakapukaw-isip na usapan, at mga alaalang hindi malilimutan. Sundan kami para sa mga petsa, detalye, at pagpaparehistro.",
     "bookCta": "I-book ang iyong tiket",
     "events": [
-      { "date": "Enero 10", "time": "12 ng tanghali", "title": "Forum sa Islamikong Kasal sa Netherlands", "location": "Churchillplein 10, 2517 JW", "price": "150 Euro" },
-      { "date": "Abril 25", "time": "12 ng tanghali", "title": "Forum sa Islamikong Kasal sa Bosnia", "location": "Terezija, 71000", "price": "150 Euro" }
+      {
+        "date": "Enero 10",
+        "time": "12 ng tanghali",
+        "title": "Forum sa Islamikong Kasal sa Netherlands",
+        "location": "Churchillplein 10, 2517 JW",
+        "price": "150 Euro"
+      },
+      {
+        "date": "Abril 25",
+        "time": "12 ng tanghali",
+        "title": "Forum sa Islamikong Kasal sa Bosnia",
+        "location": "Terezija, 71000",
+        "price": "150 Euro"
+      },
+      {
+        "date": "Hunyo 14",
+        "time": "2 ng hapon",
+        "title": "Forum sa Islamikong Kasal sa Germany",
+        "location": "Alexanderplatz, Berlin",
+        "price": "150 Euro"
+      },
+      {
+        "date": "Agosto 22",
+        "time": "1 ng hapon",
+        "title": "Forum sa Islamikong Kasal sa Belgium",
+        "location": "Sentro ng Lungsod ng Brussels",
+        "price": "150 Euro"
+      },
+      {
+        "date": "Oktubre 17",
+        "time": "3 ng hapon",
+        "title": "Forum sa Islamikong Kasal sa Türkiye",
+        "location": "Fatih, Istanbul",
+        "price": "150 Euro"
+      },
+      {
+        "date": "Disyembre 12",
+        "time": "12 ng tanghali",
+        "title": "Forum sa Islamikong Kasal sa United Kingdom",
+        "location": "Sentro ng Lungsod ng London",
+        "price": "150 Euro"
+      }
     ],
-    "ticker": ["Buhayin ang pinakamainam", "malusog na paglalakbay", "kabiyak sa buhay", "malulusog na pagpili", "kabiyak sa buhay"]
+    "ticker": [
+      "Buhayin ang pinakamainam",
+      "malusog na paglalakbay",
+      "kabiyak sa buhay",
+      "malulusog na pagpili",
+      "kabiyak sa buhay"
+    ]
+  },
+  "blogDetail": {
+    "breadcrumb": {
+      "home": "Home",
+      "blogs": "Mga Blog",
+      "current": "Detalye ng Blog"
+    },
+    "date": "02-12-2026",
+    "title": "Ang Iyong Kumpletong Gabay sa Turismo sa Bosnia and Herzegovina: Mga Tip para sa mga Unang Beses na Manlalakbay.",
+    "intro": "Ang Bosnia and Herzegovina ay isang kaakit-akit na destinasyon na nananalo sa puso ng mga manlalakbay sa pamamagitan ng kahanga-hangang likas na kagandahan at mayamang kasaysayan nito. Sa artikulong ito, itinatampok ng Zefaaf ang pinakamahahalagang tip at payo para sa mga unang beses na manlalakbay, mula sa pagpaplano ng iyong biyahe at pagpili ng pinakamainam na oras upang bumisita, hanggang sa pag-unawa sa lokal na kultura at asal. Ang komprehensibong gabay na ito ay tutulong sa iyo na masiyahan sa isang komportable at hindi malilimutang karanasan sa paglalakbay, puno ng mga sandaling mananatili sa alaala.",
+    "banner": {
+      "imageAlt": "Isang ngumingiting mag-asawang Muslim na kumukumusta sa camera",
+      "title": "Manatiling updated sa mga trending na artikulo"
+    },
+    "leadParagraphs": [
+      "Ang Bosnia and Herzegovina ay isang destinasyong maaaring mukhang madali sa mapa, ngunit mas nagiging kahanga-hanga ang karanasan kapag alam mo ang ilang detalye bago maglakbay. Sa pagitan ng makasaysayang Sarajevo, ng Mostar kasama ang tanyag na tulay nito, at ng kalikasang nakapalibot sa mga lungsod at nayon, mapapansin mong hindi kailangan ng biyahe ang siksik na iskedyul kundi matalino at flexible na pagpaplano.",
+      "Kaya, kung ito ang una mong pagbisita, ito ang gabay sa turismo sa Bosnia na kailangan mo bago mag-impake ng iyong mga gamit; mula sa pagpili ng petsa ng biyahe at tirahan, hanggang sa transportasyon at kaligtasan, hanggang sa mga praktikal na tip na magpapaginhawa sa iyong karanasan — maging ikaw man ay naglalakbay mag-isa o kasama ang iyong kabiyak sa buhay, o nagpaplano ng family tourism sa Bosnia."
+    ],
+    "sections": [
+      {
+        "heading": "Kailan ang pinakamainam na oras upang bumisita sa Bosnia and Herzegovina?",
+        "paragraphs": [
+          "Ang pinakamainam na oras upang bumisita sa Bosnia and Herzegovina ay nakadepende sa uri ng biyaheng hinahanap mo. Angkop ang tagsibol para sa sinumang gustong masiyahan sa kalikasan at katamtamang panahon, samantalang inaakit ng tag-init ang mga manlalakbay na naghahanap ng mga outdoor activity at biyahe sa pagitan ng mga lungsod.",
+          "Ang taglagas ay nagbibigay sa iyo ng payapang atmospera at tanawing may iba't ibang kulay, samantalang ang taglamig naman ay pagkakataon para sa mga mahilig sa malamig na panahon, kabundukan, at mga winter activity.",
+          "Dahil dito, walang iisang sagot na angkop para sa lahat. Kung layunin mong libutin ang mga lungsod at galugarin ang kalikasan nang walang matinding init, ang tagsibol at taglagas ang komportableng pagpipilian. Samantala, kung nais mong samantalahin ang mahabang oras ng liwanag ng araw at maraming aktibidad, angkop para sa iyo ang tag-init.",
+          "At pagkatapos piliin ang panahon, dumarating ang pinakamahalagang tanong: Saan ka titira at paano ka gagalaw?"
+        ]
+      },
+      {
+        "heading": "Saan tutuloy sa Bosnia and Herzegovina?",
+        "paragraphs": [
+          "Ang pagpili ng tirahan ay dapat na naaayon sa programa ng iyong biyahe, hindi lang sa presyo. Halimbawa, sa Sarajevo, ang pananatili malapit sa mga sentral na lugar ay nagpapadali sa pag-access sa mga landmark, restaurant, at transportasyon, samantalang sa ibang mga lungsod maaaring mas gusto mong manatili malapit sa city center o sa mga natural na lugar na balak mong bisitahin.",
+          "Mahalaga rin na basahin ang mga review ng mga manlalakbay bago mag-book, at tiyakin ang pagkakaroon ng mga amenity na kailangan mo, lalo na kung naglalakbay kasama ang pamilya.",
+          "Para naman sa family tourism sa Bosnia, mas mainam na unahin ang lokasyon, katahimikan, at kadalian ng pag-access sa mga serbisyo, upang hindi maging pabigat sa mga miyembro ng pamilya ang araw-araw na paggalaw sa malalayong distansya.",
+          "Kapag natukoy na ang tirahan, ang susunod na hakbang ay ang pagpaplano ng transportasyon sa pagitan ng mga lungsod."
+        ]
+      },
+      {
+        "heading": "Ano ang transportasyon sa Bosnia and Herzegovina?",
+        "paragraphs": [
+          "Maraming paraan upang makapaglibot sa Bosnia and Herzegovina, at ang pagpipilian ay nakadepende sa distansya, bilang ng tao, at katangian ng biyahe.",
+          "Sa loob ng mga lungsod, maaaring gamitin ang lokal na transportasyon o taxi, samantalang ang bus ay nagiging praktikal na opsyon kapag pupunta sa iba't ibang lungsod. Kung mas gusto mo ang kalayaang tukuyin ang iyong sariling oras ng paghinto at bumisita sa mga lugar na malayo sa city center, mas angkop na mag-rent ng kotse.",
+          "Gayunpaman, ang pagmamaneho sa bagong bansa ay nangangailangan ng pansin; dahil sa mabundok na katangian ng Bosnia, mayroong paikot-ikot na kalsada at pagtaas ng lupa, kaya't hindi dapat ituring ang road trip bilang isang mabilis na paglipat lamang mula sa isang lungsod patungo sa iba.",
+          "Kaya narito ang isang mahalagang tip mula sa gabay sa turismo sa Bosnia: Huwag maglagay ng maraming lungsod sa isang araw. Minsan, ang pagbawas ng bilang ng mga destinasyon ang pinakamainam na paraan upang tunay na makita ang bansa."
+        ]
+      },
+      {
+        "heading": "Ligtas ba ang Bosnia and Herzegovina para sa mga manlalakbay?",
+        "paragraphs": [
+          "Sa pangkalahatan, ang Bosnia and Herzegovina ay itinuturing na angkop na destinasyon para sa turismo, ngunit hindi ito nangangahulugang dapat kalimutan ang karaniwang mga pag-iingat na kailangan ng bawat manlalakbay.",
+          "Panatilihin ang iyong pera at mga dokumento sa ligtas na lugar, iwasang iwan nang walang bantay ang iyong mga personal na gamit, at maging mapagbantay sa mga lugar na siksik ng tao. Inirerekomenda rin na magtago ng electronic copy ng passport, mga booking, at mahahalagang dokumento sakaling magkaroon ng anumang pangyayari.",
+          "May isang espesyal na punto na dapat pansinin: Kapag naglalakbay palabas ng mga populadong o kilalang lugar, huwag lumihis sa mga itinakdang kalsada at daanan, at sundin ang mga tagubilin ng lokal na awtoridad, dahil ang ilang lugar sa Bosnia ay nangangailangan pa rin ng pag-iingat dahil sa mga labi ng digmaan at landmine.",
+          "Ang mga pag-iingat na ito ay hindi dapat magpataas ng iyong pagkabalisa tungkol sa biyahe; sa kabaligtaran, ang pagkaalam nito nang maaga ay nagbibigay sa iyo ng mas maraming puwang upang masiyahan nang walang hindi kinakailangang sorpresa."
+        ]
+      },
+      {
+        "heading": "Ano ang pinakamahalagang mga tip para sa mga unang beses na manlalakbay sa Bosnia?",
+        "paragraphs": [
+          "Kung ito ang una mong pagbisita, may isang set ng mga tip para sa mga manlalakbay sa Bosnia na makakatipid sa iyo mula sa maraming kalituhan:"
+        ],
+        "list": [
+          "Planuhin ang biyahe bago dumating, ngunit mag-iwan ng puwang para sa pagbabago.",
+          "Huwag subukang bisitahin ang lahat sa isang maikling biyahe.",
+          "Magtago ng kopya ng iyong passport at mga booking sa iyong telepono.",
+          "Tiyakin ang mga tinatanggap na paraan ng bayad bago pumunta sa mga malalayong lugar.",
+          "Magdala ng kaunting lokal na pera para sa mga sitwasyong hindi available ang electronic payment.",
+          "Magsuot ng komportableng sapatos, lalo na kung balak mong galugarin ang mga natural na lugar.",
+          "Suriin ang kalagayan ng panahon bago ang araw-araw na biyahe.",
+          "Huwag umasa lamang sa internet; kapaki-pakinabang na itago ang mahahalagang impormasyon sa paraang accessible kahit offline.",
+          "Kung mag-rent ka ng kotse, unawain nang mabuti ang mga alituntunin sa pagmamaneho, insurance, at kondisyon ng rental company.",
+          "Huwag gawing napakasiksik ang iskedyul ng biyahe na karamihan ng oras mo ay ginugugol na lang sa loob ng kotse.",
+          "Ang pinakamahalaga: Ituring ang biyahe bilang isang karanasan, hindi isang karera. Ang Bosnia sa partikular ay isa sa mga bansang sulit paghintuan nang kaunti sa halip na kumuha lang ng litrato at aalis."
+        ]
+      }
+    ]
+  },
+  "blog": {
+    "hero": {
+      "title": "Manatiling updated sa mga trending na artikulo",
+      "subtitle": "Tuklasin ang pinakabagong mga artikulo, kaalaman, at tip upang pagyamanin ang iyong buhay, palakasin ang iyong mga relasyon, at makakuha ng mahalagang gabay sa pamamagitan ng mga session ng eksperto",
+      "collage": [
+        {
+          "title": "Ang Iyong Gabay sa Makabuluhang Kasal",
+          "excerpt": "Galugarin ang mga kapaki-pakinabang na artikulo at payo ng eksperto na dinisenyo upang suportahan ka sa pagbuo ng matatag na relasyon at paggawa ng tiwalang desisyon sa buong paglalakbay ng iyong kasal."
+        },
+        {
+          "title": "Ang Iyong Gabay sa Makabuluhang Kasal",
+          "excerpt": "Galugarin ang mga kapaki-pakinabang na artikulo at payo ng eksperto na dinisenyo upang suportahan ka sa pagbuo ng matatag na relasyon at paggawa ng tiwalang desisyon sa buong paglalakbay ng iyong kasal."
+        },
+        {
+          "title": "Pagbuo ng Masayang Buhay na Magkasama",
+          "excerpt": "Matuto ng mahalagang kaalaman, praktikal na tip, at gabay ng eksperto upang bumuo ng malusog na relasyon at lumikha ng isang masaya"
+        },
+        {
+          "title": "Mga Kaalaman para sa Iyong Paglalakbay sa Kasal",
+          "excerpt": "Tuklasin ang nakakapukaw na mga artikulo, tip sa relasyon, at session ng eksperto upang matulungan kang mas maunawaan ang mga relasyon at bumuo ng mas matatag at masayang hinaharap na magkasama."
+        },
+        {
+          "title": "Mga Kaalaman para sa Iyong Paglalakbay sa Kasal",
+          "excerpt": "Tuklasin ang nakakapukaw na mga artikulo, tip sa relasyon, at session ng eksperto upang matulungan kang mas maunawaan ang mga relasyon at bumuo ng mas matatag at masayang hinaharap na magkasama."
+        }
+      ]
+    },
+    "featured": {
+      "date": "02-12-2026",
+      "title": "Manatiling updated sa mga trending na artikulo",
+      "description": "Ang Zefaaf ay isang mapagkakatiwalaang platform na dinisenyo upang tulungan ang mga Muslim na makahanap ng kabiyak sa buhay na kapareho ang paniniwalang Islamiko, sa isang ligtas at naaayon-sa-Sharia na paraan.",
+      "cta": "Basahin pa"
+    },
+    "list": {
+      "title": "Zefaaf Blog",
+      "description": "Lahat ng kailangan mong malaman tungkol sa halal na pagtutugma at pagpili ng kabiyak sa buhay sa pamamagitan ng mga mapagkakatiwalaang platform.",
+      "searchPlaceholder": "Maghanap",
+      "viewMore": "Tingnan Pa",
+      "topics": {
+        "all": "Lahat ng Paksa",
+        "qualities": "Mga Katangian ng Mabuting Asawa",
+        "relationships": "Matagumpay na Relasyon sa Pag-aasawa",
+        "health": "Kalusugan sa Pag-aasawa",
+        "choosing": "Pagpili ng Kabiyak sa Buhay"
+      },
+      "articles": [
+        {
+          "title": "Pag-aasawa sa Babaeng Bosnian para sa mga Arabo: Kumpletong Gabay",
+          "excerpt": "Ang pag-aasawa sa isang babaeng Bosnian ay naging lalong sikat na pagpipilian para sa mga lalaking Arabo dahil sa magkatulad na kultural na pagpapahalaga at direktang..",
+          "image": "/images/blog/grid-1.png"
+        },
+        {
+          "title": "Mga Kaugalian at Tradisyon sa Pag-aasawa sa Bosnia and Herzegovina: Mga Hindi Malilimutang Selebrasyon",
+          "excerpt": "Ang mga kaugalian at tradisyon sa kasal sa Bosnia and Herzegovina ay sumasalamin sa isang kaakit-akit na paghahalo ng pamanang European at tunay na impluwensyang Eastern. Sinusuri ng artikulong ito ng zefaaf ang mga tradisyonal na ritwal ng kasunduan, musika sa kasal, masasayang sayaw, at kilalang lokal na pagkain na gumagawa sa mga selebrasyon ng Bosnian na kakaiba. Ang gabay na ito ay nag-aalok ng malalim na pagtingin sa mayamang pamanang kultural na gumagawa sa mga kasal sa Bosnia na tunay na hindi malilimutan.",
+          "image": "/images/blog/grid-2-wide.png",
+          "wide": true
+        },
+        {
+          "title": "Pag-aasawa sa Babaeng Bosnian para sa mga Arabo: Kumpletong Gabay",
+          "excerpt": "Ang pag-aasawa sa isang babaeng Bosnian ay naging lalong sikat na pagpipilian para sa mga lalaking Arabo dahil sa magkatulad na kultural na pagpapahalaga at direktang..",
+          "image": "/images/blog/grid-3.png"
+        },
+        {
+          "title": "Pag-aasawa sa Babaeng Bosnian para sa mga Arabo: Kumpletong Gabay",
+          "excerpt": "Ang pag-aasawa sa isang babaeng Bosnian ay naging lalong sikat na pagpipilian para sa mga lalaking Arabo dahil sa magkatulad na kultural na pagpapahalaga at direktang..",
+          "image": "/images/blog/grid-4.png"
+        },
+        {
+          "title": "Pag-aasawa sa Babaeng Bosnian para sa mga Arabo: Kumpletong Gabay",
+          "excerpt": "Ang pag-aasawa sa isang babaeng Bosnian ay naging lalong sikat na pagpipilian para sa mga lalaking Arabo dahil sa magkatulad na kultural na pagpapahalaga at direktang..",
+          "image": "/images/blog/grid-5.png"
+        }
+      ]
+    }
+  },
+  "downloadApp": {
+    "title": "Isang Espesyal na Libreng Pagsubok – I-download ang Zefaaf\napp ngayon at tamasahin ang libreng pagmemensahe para sa\niyong unang 3 araw!",
+    "features": [
+      "Isang ligtas at secure na kapaligiran upang mahanap ang tamang kabiyak.",
+      "Isang maayos at walang-abalang karanasan na sumusunod sa mga alituntuning Islamiko."
+    ],
+    "description": "I-download ang app mula sa App Store o Google Play."
   },
   "whyChoose": {
     "title": "Bakit Piliin ang Zefaaf",
-    "description": "Sa Zefaaf, naniniwala kami na ang kasal ay higit pa sa pagkakatugma — ito ay tungkol sa pagbuo ng matatag na buhay na nakabatay sa mga paniniwalang Islamiko.",
+    "description": "Sa Zefaaf, hindi na limitado sa mga app at website ang paghahanap ng katuwang sa buhay. Nag-aalok kami ng tunay na solusyon, mula sa pagsasagawa ng personal na paghahanap sa iyong ngalan hanggang sa pag-aayos ng harapang pagkikita.",
     "features": [
-      { "title": "Secure at naaayon-sa-Sharia na video call", "description": "Isang secure na video feature na nasa ilalim ng pangangasiwang panrelihiyon, na nagpapahintulot sa iyong makilala ang iyong potensyal na kabiyak sa buhay habang sinusunod ang mga alituntuning Islamiko." },
-      { "title": "Direktang pagpapayo Islamiko at pampamilya", "description": "Kumuha ng libreng konsultasyon sa oras ng pagpaparehistro mula sa aming mga eksperto sa relihiyon at family counselor." },
-      { "title": "Ang iyong boses, ang iyong personalidad – hayaan ang iyong boses na magsalita para sa iyo!", "description": "Isang voice message sa iyong profile: ipakilala ang iyong sarili, ibahagi ang iyong mga interes at paniniwala, at pag-usapan ang iyong pananaw sa buhay may-asawa." },
-      { "title": "Pagpupulong ng pamilya – simulan ang inyong relasyon sa paraang halal", "description": "Isang pribadong video room na nagtitipon sa dalawang pamilya sa unang pagkakataon sa isang tama at naaayon-sa-Sharia na paraan." },
-      { "title": "Pre-approval system – huwag mag-aksaya ng oras sa hindi produktibong usapan!", "description": "Tingnan ang porsyento ng pagkakatugma mo sa kahit anong profile bago simulan ang isang usapan." }
+      {
+        "title": "Zefaaf App | Maghanap at kumonekta ng iyong sarili",
+        "description": "Mag-browse ng mga profile, gamitin ang mga tool sa paghahanap at pagtutugma, at kumonekta sa mga angkop na tao na naghahanap ng seryosong kasal."
+      },
+      {
+        "title": "VIP Service | Kami ang maghahanap para sa iyo",
+        "description": "Isang dalubhasang team ang maghahanap ng angkop na mga tugma, irerekomenda ang mga ito sa iyo, at susundan nang personal sa loob ng tatlong buwan."
+      },
+      {
+        "title": "Mga Marriage Event | Tunay at organisadong pagpapakilala",
+        "description": "Mga seryosong marriage event sa Netherlands at Bosnia na lumilikha ng tunay na pagkakataon upang magkita sa isang organisadong kapaligiran."
+      },
+      {
+        "title": "Pagsama sa Bosnia | Isang paglalakbay tungo sa kasal",
+        "description": "Sasamahan ka namin at aasikasuhin ang koordinasyon, follow-up, at direktang pagkikita sa mga kababaihang taga-Bosnia at sa kanilang mga pamilya."
+      },
+      {
+        "title": "Personal na pagpupulong sa iyong bansa | Saan ka man naroroon",
+        "description": "Magsisimula kami sa isang pribadong Zoom meeting kasama ang isang family consultant upang maunawaan ang iyong personalidad at pangangailangan, pagkatapos ay maghahanap ng angkop na kabiyak at aayusin ang personal na pagpupulong kapag may mutual na pagtanggap."
+      }
     ]
+  },
+  "contactUs": {
+    "mapAlt": "Mapa na nagpapakita ng lokasyon ng aming opisina",
+    "hero": {
+      "eyebrow": "Makipag-ugnayan",
+      "title": "Nandito kami upang tulungan ka sa bawat hakbang",
+      "description": "Kung mayroon kang mga katanungan o kailangan ng suporta, huwag mag-atubiling makipag-ugnayan sa amin. Palaging available ang aming team upang matiyak ang pinakamahusay na karanasan sa Zefaaf platform."
+    },
+    "form": {
+      "card": {
+        "title": "Ipadala sa amin ang iyong mensahe",
+        "subtitle": "Nandito kami upang makinig at tumulong sa iyo",
+        "followUs": "Sundan Kami"
+      },
+      "heading": "Paano ka namin matutulungan ngayon?",
+      "fields": {
+        "fullName": "Buong pangalan",
+        "email": "Email address",
+        "message": "Mensahe"
+      },
+      "send": "Ipadala"
+    },
+    "faq": {
+      "title": "Mga Madalas Itanong",
+      "description": "Maghanap ng mabilisang mga sagot sa mga karaniwang tanong sa ibaba, kailangan pa ng tulong?\nMakipag-ugnayan sa amin anumang oras para sa karagdagang tulong",
+      "heading": "Paano ka namin matutulungan?",
+      "searchPlaceholder": "Maghanap",
+      "items": [
+        {
+          "question": "Libre ba ang pagpaparehistro sa Zefaaf platform?",
+          "answer": "Oo, libre ang basic na pagpaparehistro para sa lahat, may opsyonal na karagdagang mga package para sa premium na serbisyo."
+        },
+        {
+          "question": "Gaano katagal bago makahanap ng angkop na tugma?",
+          "answer": "Nag-iiba ito depende sa tao, ngunit patuloy na nagtatrabaho ang aming team upang ipakilala sa iyo ang mga angkop na tugma sa lalong madaling panahon."
+        },
+        {
+          "question": "Pinananatili bang pribado ang aking personal na impormasyon?",
+          "answer": "Oo, seryoso naming pinoprotektahan ang iyong privacy at ibinabahagi lang ang iyong impormasyon sa mga tugmang inaprubahan mo."
+        },
+        {
+          "question": "Magagamit ko ba ang Zefaaf mula sa kahit anong bansa?",
+          "answer": "Oo, available ang Zefaaf sa buong mundo at ikinokonekta nito ang mga Muslim mula sa iba't ibang bansa na naghahanap ng kasal."
+        },
+        {
+          "question": "Paano ako makikipag-ugnayan sa support team?",
+          "answer": "Maaari mo kaming abutin anumang oras sa pamamagitan ng contact form na ito, at tutugon ang aming team sa lalong madaling panahon."
+        }
+      ]
+    }
   }
 }

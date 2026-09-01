@@ -37,7 +37,13 @@
     "articles": "Artikel",
     "upcomingEvents": "Acara Mendatang",
     "successStories": "Kisah Sukses",
-    "marriageRequest": "Permintaan Pernikahan"
+    "marriageRequest": "Permintaan Pernikahan",
+    "servicesMenu": {
+      "zefaafEvents": "Acara Zefaaf",
+      "marriageForm": "Formulir Pernikahan Anda",
+      "bosniaTour": "Tur Pernikahan Bosnia",
+      "meetingInCountry": "Pertemuan di Negara Anda"
+    }
   },
   "footer": {
     "columns": {
@@ -95,13 +101,14 @@
     }
   },
   "services": {
+    "title": "Layanan Kami",
     "items": [
       {
-        "title": "Forum Pernikahan Islami",
+        "title": "Acara Zefaaf",
         "description": "Acara forum pernikahan Islami yang mempertemukan umat Muslim yang mencari pernikahan beserta keluarga mereka"
       },
       {
-        "title": "Aplikasi Pernikahan",
+        "title": "Formulir Pernikahan Anda",
         "description": "Temukan pasangan hidup ideal Anda dari berbagai negara."
       },
       {
@@ -109,28 +116,27 @@
         "description": "Layanan khusus di mana konsultan Zefaaf mencarikan pasangan hidup yang sesuai"
       },
       {
-        "title": "Pendampingan Tim Kami di Bosnia",
+        "title": "Tur Pernikahan Bosnia",
         "description": "Program berpemandu di mana tim Zefaaf mendampingi klien untuk bertemu keluarga demi pernikahan yang serius"
       },
       {
-        "title": "Pertemuan Daring",
+        "title": "Pertemuan di Negara Anda",
         "description": "Mulailah dengan sesi bersama konsultan keluarga untuk memahami kepribadian dan kebutuhan Anda"
       }
     ]
   },
   "globalPresence": {
     "mapAlt": "Peta yang menunjukkan jangkauan Zefaaf di seluruh dunia",
-    "badge": "3 juta pengguna di Zefaaf",
+    "badge": "12rb pengguna di Zefaaf",
     "title": "Kami beroperasi di <brand>175</brand> negara",
     "description": "Zefaaf menghubungkan umat Muslim di seluruh dunia dengan layanan perjodohan tepercaya yang memiliki nilai-nilai Islam yang sama, dengan cara yang aman dan sesuai syariah.",
     "countries": {
-      "france": "Prancis",
-      "germany": "Jerman",
-      "netherlands": "Belanda",
-      "turkey": "Turki",
-      "russia": "Rusia",
-      "china": "Tiongkok",
-      "indonesia": "Indonesia"
+      "france": "Amerika Utara",
+      "germany": "Amerika Selatan",
+      "netherlands": "Eropa",
+      "turkey": "Afrika",
+      "russia": "Asia",
+      "china": "Oseania"
     }
   },
   "upcomingEvents": {
@@ -150,34 +156,276 @@
         "title": "Forum Pernikahan Islami di Bosnia",
         "location": "Terezija, 71000",
         "price": "150 Euro"
+      },
+      {
+        "date": "14 Juni",
+        "time": "2 Siang",
+        "title": "Forum Pernikahan Islami di Jerman",
+        "location": "Alexanderplatz, Berlin",
+        "price": "150 Euro"
+      },
+      {
+        "date": "22 Agustus",
+        "time": "1 Siang",
+        "title": "Forum Pernikahan Islami di Belgia",
+        "location": "Pusat Kota Brussels",
+        "price": "150 Euro"
+      },
+      {
+        "date": "17 Oktober",
+        "time": "3 Sore",
+        "title": "Forum Pernikahan Islami di Turki",
+        "location": "Fatih, Istanbul",
+        "price": "150 Euro"
+      },
+      {
+        "date": "12 Desember",
+        "time": "12 Siang",
+        "title": "Forum Pernikahan Islami di Britania Raya",
+        "location": "Pusat Kota London",
+        "price": "150 Euro"
       }
     ],
-    "ticker": ["Jalani yang terbaik", "perjalanan sehat", "pasangan hidup", "pilihan sehat", "pasangan hidup"]
+    "ticker": [
+      "Jalani yang terbaik",
+      "perjalanan sehat",
+      "pasangan hidup",
+      "pilihan sehat",
+      "pasangan hidup"
+    ]
   },
-  "whyChoose": {
-    "title": "Mengapa Memilih Zefaaf",
-    "description": "Di Zefaaf, kami percaya bahwa pernikahan lebih dari sekadar kecocokan — ini tentang membangun kehidupan yang stabil yang berlandaskan nilai-nilai Islam.",
-    "features": [
+  "blogDetail": {
+    "breadcrumb": {
+      "home": "Beranda",
+      "blogs": "Blog",
+      "current": "Detail Blog"
+    },
+    "date": "02-12-2026",
+    "title": "Panduan Lengkap Wisata ke Bosnia dan Herzegovina: Tips untuk Wisatawan Pertama Kali.",
+    "intro": "Bosnia dan Herzegovina adalah destinasi memikat yang berhasil merebut hati para wisatawan berkat keindahan alamnya yang menakjubkan dan sejarahnya yang kaya. Dalam artikel ini, Zefaaf menyajikan tips dan saran terpenting bagi wisatawan yang baru pertama kali berkunjung, mulai dari merencanakan perjalanan dan memilih waktu terbaik untuk berkunjung, hingga memahami budaya dan etika setempat. Panduan lengkap ini akan membantu Anda menikmati pengalaman perjalanan yang nyaman dan berkesan, penuh dengan momen yang tak terlupakan.",
+    "banner": {
+      "imageAlt": "Pasangan Muslim tersenyum menyapa kamera",
+      "title": "Tetap Ikuti Artikel-Artikel Terpopuler"
+    },
+    "leadParagraphs": [
+      "Bosnia dan Herzegovina adalah destinasi yang mungkin terlihat mudah di peta, namun pengalamannya akan jauh lebih indah jika Anda mengetahui beberapa detail sebelum bepergian. Di antara kota Sarajevo yang bersejarah, Mostar dengan jembatannya yang terkenal, dan alam yang mengelilingi kota-kota serta desa-desa, Anda akan menyadari bahwa perjalanan ini tidak membutuhkan jadwal yang padat, melainkan perencanaan yang cerdas dan fleksibel.",
+      "Oleh karena itu, jika ini adalah kunjungan pertama Anda, inilah panduan wisata Bosnia yang Anda butuhkan sebelum mengemas koper; mulai dari memilih tanggal perjalanan dan akomodasi, transportasi dan keamanan, hingga tips praktis yang membuat pengalaman Anda lebih nyaman, baik Anda bepergian sendiri, bersama pasangan hidup Anda, maupun merencanakan wisata keluarga di Bosnia."
+    ],
+    "sections": [
       {
-        "title": "Panggilan video yang aman dan sesuai syariah",
-        "description": "Fitur video aman di bawah pengawasan agama, memungkinkan Anda bertemu calon pasangan hidup sambil menjunjung tinggi pedoman Islam."
+        "heading": "Kapan Waktu Terbaik untuk Berkunjung ke Bosnia dan Herzegovina?",
+        "paragraphs": [
+          "Waktu terbaik untuk berkunjung ke Bosnia dan Herzegovina tergantung pada jenis perjalanan yang Anda inginkan. Musim semi cocok bagi siapa saja yang ingin menikmati alam dan cuaca yang sejuk, sementara musim panas menarik wisatawan yang mencari aktivitas luar ruangan dan perjalanan antarkota.",
+          "Musim gugur memberikan suasana yang tenang dan pemandangan dengan warna-warna yang berbeda, sementara musim dingin menjadi kesempatan bagi pecinta cuaca dingin, dataran tinggi, dan aktivitas musim dingin.",
+          "Oleh karena itu, tidak ada satu jawaban yang cocok untuk semua orang. Jika tujuan Anda adalah menjelajahi kota-kota dan menikmati alam tanpa panas yang menyengat, musim semi dan musim gugur adalah pilihan yang nyaman. Sementara jika Anda ingin memanfaatkan siang hari yang panjang dan banyak aktivitas, musim panas bisa menjadi pilihan yang cocok untuk Anda.",
+          "Dan setelah memilih musim, pertanyaan terpenting pun muncul: Di mana Anda akan menginap dan bagaimana Anda akan berpindah tempat?"
+        ]
       },
       {
-        "title": "Konseling Islami dan keluarga secara langsung",
-        "description": "Dapatkan konsultasi gratis saat pendaftaran dari para ahli agama dan konselor keluarga kami."
+        "heading": "Di Mana Sebaiknya Menginap di Bosnia dan Herzegovina?",
+        "paragraphs": [
+          "Pemilihan akomodasi harus disesuaikan dengan rencana perjalanan Anda, bukan hanya berdasarkan harga. Di Sarajevo, misalnya, menginap di dekat area pusat kota memudahkan akses ke tempat-tempat bersejarah, restoran, dan transportasi, sementara di kota-kota lain Anda mungkin lebih memilih menginap di dekat pusat kota atau area alam yang ingin Anda kunjungi.",
+          "Penting juga untuk membaca ulasan wisatawan lain sebelum memesan, dan memastikan tersedianya fasilitas yang Anda butuhkan, terutama jika Anda bepergian bersama keluarga.",
+          "Untuk wisata keluarga di Bosnia, sebaiknya utamakan lokasi, ketenangan, dan kemudahan akses ke berbagai layanan, agar perpindahan jarak jauh sehari-hari tidak menjadi beban bagi anggota keluarga.",
+          "Setelah akomodasi ditentukan, merencanakan transportasi antarkota menjadi langkah berikutnya."
+        ]
       },
       {
-        "title": "Suara Anda, kepribadian Anda – biarkan suara Anda berbicara untuk Anda!",
-        "description": "Pesan suara di profil Anda: perkenalkan diri Anda, bagikan minat dan nilai-nilai Anda, dan bicarakan tentang visi Anda untuk kehidupan pernikahan."
+        "heading": "Bagaimana Transportasi di Bosnia dan Herzegovina?",
+        "paragraphs": [
+          "Anda dapat berkeliling Bosnia dan Herzegovina dengan beberapa cara, dan pilihannya tergantung pada jarak, jumlah orang, dan sifat perjalanan Anda.",
+          "Di dalam kota, Anda dapat menggunakan transportasi lokal atau taksi, sementara bus menjadi pilihan praktis untuk berpindah antarkota. Jika Anda ingin bebas menentukan waktu berhenti dan mengunjungi tempat-tempat yang jauh dari pusat kota, menyewa mobil mungkin lebih sesuai.",
+          "Namun, berkendara di negara baru membutuhkan perhatian ekstra; kondisi pegunungan Bosnia berarti jalan yang berkelok dan berbukit, sehingga perjalanan darat tidak boleh dianggap sekadar perpindahan cepat dari satu kota ke kota lain.",
+          "Dari sinilah muncul tips penting dari panduan wisata Bosnia: jangan memasukkan terlalu banyak kota dalam satu hari. Terkadang mengurangi jumlah destinasi adalah cara terbaik untuk benar-benar menikmati negara ini."
+        ]
       },
       {
-        "title": "Pertemuan keluarga – mulai hubungan Anda dengan cara yang halal",
-        "description": "Ruang video pribadi yang mempertemukan kedua keluarga untuk pertama kalinya dengan cara yang tepat dan sesuai syariah."
+        "heading": "Apakah Bosnia dan Herzegovina Aman bagi Wisatawan?",
+        "paragraphs": [
+          "Secara umum, Bosnia dan Herzegovina dianggap sebagai destinasi wisata yang aman, namun bukan berarti Anda boleh mengabaikan langkah-langkah kewaspadaan yang biasa diperlukan setiap wisatawan.",
+          "Simpan uang dan dokumen Anda di tempat yang aman, hindari meninggalkan barang pribadi tanpa pengawasan, dan tetap waspada di tempat-tempat ramai. Sebaiknya simpan juga salinan elektronik paspor, bukti pemesanan, dan dokumen penting lainnya untuk berjaga-jaga.",
+          "Ada satu hal khusus yang perlu diperhatikan: ketika melakukan perjalanan ke luar area yang berpenduduk atau dikenal, jangan menyimpang dari jalan dan jalur yang telah ditentukan, dan ikuti instruksi otoritas setempat, karena sebagian wilayah di Bosnia masih memerlukan kehati-hatian akibat sisa-sisa perang dan ranjau darat.",
+          "Langkah-langkah kewaspadaan ini tidak seharusnya membuat Anda cemas tentang perjalanan; sebaliknya, mengetahuinya sejak awal memberi Anda lebih banyak ruang untuk menikmati perjalanan tanpa kejutan yang tidak perlu."
+        ]
       },
       {
-        "title": "Sistem pra-persetujuan – jangan buang waktu untuk obrolan yang tidak produktif!",
-        "description": "Lihat persentase kecocokan Anda dengan profil mana pun sebelum memulai percakapan."
+        "heading": "Apa Saja Tips Terpenting bagi Wisatawan yang Baru Pertama Kali Berkunjung ke Bosnia?",
+        "paragraphs": [
+          "Jika ini adalah kunjungan pertama Anda, berikut sejumlah tips bagi wisatawan ke Bosnia yang dapat menghemat banyak kebingungan Anda:"
+        ],
+        "list": [
+          "Rencanakan perjalanan sebelum tiba, namun sisakan ruang untuk perubahan.",
+          "Jangan mencoba mengunjungi semua tempat dalam perjalanan singkat.",
+          "Simpan salinan paspor dan bukti pemesanan Anda di ponsel.",
+          "Periksa metode pembayaran yang diterima sebelum menuju tempat-tempat terpencil.",
+          "Bawalah sejumlah uang tunai lokal untuk berjaga-jaga jika metode pembayaran elektronik tidak tersedia.",
+          "Kenakan sepatu yang nyaman, terutama jika Anda berencana menjelajahi area alam.",
+          "Periksa kondisi cuaca sebelum melakukan perjalanan harian.",
+          "Jangan hanya mengandalkan internet; ada baiknya menyimpan informasi penting dengan cara yang dapat diakses secara offline.",
+          "Jika Anda menyewa mobil, pahami dengan baik aturan berkendara, asuransi, dan ketentuan perusahaan penyewaan.",
+          "Jangan membuat jadwal perjalanan terlalu padat hingga sebagian besar waktu Anda habis di dalam mobil.",
+          "Yang terpenting: jadikan perjalanan ini sebagai pengalaman, bukan perlombaan. Bosnia khususnya adalah salah satu negara yang layak untuk disinggahi sejenak, bukan sekadar mengambil foto lalu pergi."
+        ]
       }
     ]
+  },
+  "blog": {
+    "hero": {
+      "title": "Tetap Ikuti Artikel-Artikel Terpopuler",
+      "subtitle": "Temukan artikel, wawasan, dan tips terbaru untuk memperkaya hidup Anda, memperkuat hubungan Anda, dan memperoleh panduan berharga melalui sesi bersama para ahli",
+      "collage": [
+        {
+          "title": "Panduan Anda Menuju Pernikahan yang Bermakna",
+          "excerpt": "Jelajahi artikel bermanfaat dan saran para ahli yang dirancang untuk mendukung Anda membangun hubungan yang kuat dan membuat keputusan dengan percaya diri sepanjang perjalanan pernikahan Anda."
+        },
+        {
+          "title": "Panduan Anda Menuju Pernikahan yang Bermakna",
+          "excerpt": "Jelajahi artikel bermanfaat dan saran para ahli yang dirancang untuk mendukung Anda membangun hubungan yang kuat dan membuat keputusan dengan percaya diri sepanjang perjalanan pernikahan Anda."
+        },
+        {
+          "title": "Membangun Kehidupan Bahagia Bersama",
+          "excerpt": "Pelajari wawasan berharga, tips praktis, dan panduan ahli untuk membangun hubungan yang sehat dan menciptakan kehidupan yang bahagia"
+        },
+        {
+          "title": "Wawasan untuk Perjalanan Pernikahan Anda",
+          "excerpt": "Temukan artikel inspiratif, tips hubungan, dan sesi bersama para ahli untuk membantu Anda memahami hubungan dengan lebih baik dan membangun masa depan yang lebih kuat dan bahagia bersama."
+        },
+        {
+          "title": "Wawasan untuk Perjalanan Pernikahan Anda",
+          "excerpt": "Temukan artikel inspiratif, tips hubungan, dan sesi bersama para ahli untuk membantu Anda memahami hubungan dengan lebih baik dan membangun masa depan yang lebih kuat dan bahagia bersama."
+        }
+      ]
+    },
+    "featured": {
+      "date": "02-12-2026",
+      "title": "Tetap Ikuti Artikel-Artikel Terpopuler",
+      "description": "Zefaaf adalah platform tepercaya yang dirancang untuk membantu umat Muslim menemukan pasangan hidup yang memiliki nilai-nilai Islam yang sama, dengan cara yang aman dan sesuai syariah.",
+      "cta": "Baca selengkapnya"
+    },
+    "list": {
+      "title": "Blog Zefaaf",
+      "description": "Semua yang perlu Anda ketahui tentang perjodohan halal dan memilih pasangan hidup melalui platform tepercaya.",
+      "searchPlaceholder": "Cari",
+      "viewMore": "Lihat Selengkapnya",
+      "topics": {
+        "all": "Semua Topik",
+        "qualities": "Kriteria Pasangan yang Baik",
+        "relationships": "Hubungan Pernikahan yang Sukses",
+        "health": "Kesehatan Pernikahan",
+        "choosing": "Memilih Pasangan Hidup"
+      },
+      "articles": [
+        {
+          "title": "Menikah dengan Perempuan Bosnia bagi Pria Arab: Panduan Lengkap",
+          "excerpt": "Menikahi perempuan Bosnia telah menjadi pilihan yang semakin populer bagi pria Arab karena kesamaan nilai budaya dan proses yang mudah..",
+          "image": "/images/blog/grid-1.png"
+        },
+        {
+          "title": "Adat dan Tradisi Pernikahan di Bosnia dan Herzegovina: Perayaan yang Tak Terlupakan",
+          "excerpt": "Adat dan tradisi pernikahan di Bosnia dan Herzegovina mencerminkan perpaduan memikat antara warisan Eropa dan pengaruh Timur yang autentik. Artikel Zefaaf ini mengulas ritual lamaran tradisional, musik pernikahan, tarian perayaan, serta kuliner khas setempat yang menjadikan perayaan pernikahan di Bosnia begitu istimewa. Panduan ini mengajak Anda menyelami lebih dalam warisan budaya yang kaya, yang membuat pernikahan di Bosnia benar-benar tak terlupakan.",
+          "image": "/images/blog/grid-2-wide.png",
+          "wide": true
+        },
+        {
+          "title": "Menikah dengan Perempuan Bosnia bagi Pria Arab: Panduan Lengkap",
+          "excerpt": "Menikahi perempuan Bosnia telah menjadi pilihan yang semakin populer bagi pria Arab karena kesamaan nilai budaya dan proses yang mudah..",
+          "image": "/images/blog/grid-3.png"
+        },
+        {
+          "title": "Menikah dengan Perempuan Bosnia bagi Pria Arab: Panduan Lengkap",
+          "excerpt": "Menikahi perempuan Bosnia telah menjadi pilihan yang semakin populer bagi pria Arab karena kesamaan nilai budaya dan proses yang mudah..",
+          "image": "/images/blog/grid-4.png"
+        },
+        {
+          "title": "Menikah dengan Perempuan Bosnia bagi Pria Arab: Panduan Lengkap",
+          "excerpt": "Menikahi perempuan Bosnia telah menjadi pilihan yang semakin populer bagi pria Arab karena kesamaan nilai budaya dan proses yang mudah..",
+          "image": "/images/blog/grid-5.png"
+        }
+      ]
+    }
+  },
+  "downloadApp": {
+    "title": "Uji Coba Gratis Khusus – Unduh aplikasi Zefaaf\nsekarang dan nikmati pesan gratis untuk\n3 hari pertama Anda!",
+    "features": [
+      "Lingkungan yang aman dan terpercaya untuk menemukan pasangan yang tepat.",
+      "Pengalaman yang mulus dan sesuai dengan pedoman Islam."
+    ],
+    "description": "Unduh aplikasi dari App Store atau Google Play."
+  },
+  "whyChoose": {
+    "title": "Mengapa Memilih Zefaaf?",
+    "description": "Di Zefaaf, menemukan pasangan hidup tidak lagi terbatas pada aplikasi dan situs web. Kami menawarkan solusi nyata, mulai dari melakukan pencarian pribadi atas nama Anda hingga mengatur pertemuan langsung.",
+    "features": [
+      {
+        "title": "Aplikasi Zefaaf | Cari dan hubungkan diri Anda sendiri",
+        "description": "Jelajahi profil, gunakan alat pencarian dan kecocokan, serta terhubung dengan orang yang sesuai yang mencari pernikahan serius."
+      },
+      {
+        "title": "Layanan VIP | Kami mencarikan untuk Anda",
+        "description": "Tim khusus mencari pasangan yang sesuai, merekomendasikannya kepada Anda, dan melakukan pendampingan pribadi selama tiga bulan."
+      },
+      {
+        "title": "Acara Pernikahan | Perkenalan nyata dan terorganisir",
+        "description": "Acara pernikahan serius di Belanda dan Bosnia yang menciptakan peluang nyata untuk bertemu dalam lingkungan yang terorganisir."
+      },
+      {
+        "title": "Pendampingan ke Bosnia | Perjalanan menuju pernikahan",
+        "description": "Kami menemani perjalanan Anda dan mengurus koordinasi, tindak lanjut, serta pertemuan langsung dengan perempuan Bosnia dan keluarga mereka."
+      },
+      {
+        "title": "Pertemuan langsung di negara Anda | Di mana pun Anda berada",
+        "description": "Kami memulai dengan pertemuan Zoom pribadi bersama konselor keluarga untuk memahami kepribadian dan kebutuhan Anda, lalu mencari pasangan yang sesuai dan mengatur pertemuan langsung ketika terdapat kesepakatan dari kedua belah pihak."
+      }
+    ]
+  },
+  "contactUs": {
+    "mapAlt": "Peta yang menunjukkan lokasi kantor kami",
+    "hero": {
+      "eyebrow": "Hubungi Kami",
+      "title": "Kami di sini untuk membantu Anda di setiap langkah",
+      "description": "Jika Anda memiliki pertanyaan atau membutuhkan bantuan, jangan ragu untuk menghubungi kami. Tim kami selalu siap memastikan pengalaman terbaik di platform Zefaaf."
+    },
+    "form": {
+      "card": {
+        "title": "Kirimkan pesan Anda kepada kami",
+        "subtitle": "Kami di sini untuk mendengarkan dan membantu Anda",
+        "followUs": "Ikuti Kami"
+      },
+      "heading": "Bagaimana kami dapat membantu Anda hari ini?",
+      "fields": {
+        "fullName": "Nama lengkap",
+        "email": "Alamat email",
+        "message": "Pesan"
+      },
+      "send": "Kirim"
+    },
+    "faq": {
+      "title": "Pertanyaan yang sering diajukan",
+      "description": "Temukan jawaban cepat untuk pertanyaan umum di bawah ini, butuh bantuan lebih lanjut?\nHubungi kami kapan saja untuk bantuan lebih lanjut",
+      "heading": "Bagaimana kami dapat membantu Anda?",
+      "searchPlaceholder": "Cari",
+      "items": [
+        {
+          "question": "Apakah pendaftaran di platform Zefaaf gratis?",
+          "answer": "Ya, pendaftaran dasar gratis untuk semua orang, dengan paket tambahan opsional untuk layanan premium."
+        },
+        {
+          "question": "Berapa lama waktu yang dibutuhkan untuk menemukan pasangan yang sesuai?",
+          "answer": "Waktunya berbeda-beda untuk setiap orang, namun tim kami bekerja terus-menerus untuk mengenalkan Anda dengan pasangan yang sesuai secepat mungkin."
+        },
+        {
+          "question": "Apakah informasi pribadi saya dijaga kerahasiaannya?",
+          "answer": "Ya, kami sangat menjaga privasi Anda dan hanya membagikan informasi Anda kepada calon pasangan yang telah Anda setujui."
+        },
+        {
+          "question": "Bisakah saya menggunakan Zefaaf dari negara mana pun?",
+          "answer": "Ya, Zefaaf tersedia di seluruh dunia dan menghubungkan umat Muslim dari berbagai negara yang mencari pernikahan."
+        },
+        {
+          "question": "Bagaimana cara menghubungi tim dukungan?",
+          "answer": "Anda dapat menghubungi kami kapan saja melalui formulir kontak ini, dan tim kami akan merespons secepat mungkin."
+        }
+      ]
+    }
   }
 }

@@ -15,9 +15,18 @@
     "ratingValue": "4.8"
   },
   "stats": {
-    "happyClients": { "value": "34,484k", "label": "Zadovoljni klijenti" },
-    "successStories": { "value": "2768", "label": "Priče o uspjehu" },
-    "registeredMembers": { "value": "23416", "label": "Registrovani članovi" }
+    "happyClients": {
+      "value": "34,484k",
+      "label": "Zadovoljni klijenti"
+    },
+    "successStories": {
+      "value": "2768",
+      "label": "Priče o uspjehu"
+    },
+    "registeredMembers": {
+      "value": "23416",
+      "label": "Registrovani članovi"
+    }
   },
   "nav": {
     "home": "Početna",
@@ -28,7 +37,13 @@
     "articles": "Članci",
     "upcomingEvents": "Predstojeći Događaji",
     "successStories": "Priče o Uspjehu",
-    "marriageRequest": "Zahtjev za Brak"
+    "marriageRequest": "Zahtjev za Brak",
+    "servicesMenu": {
+      "zefaafEvents": "Zefaaf događaji",
+      "marriageForm": "Vaš obrazac za brak",
+      "bosniaTour": "Bosanska tura za brak",
+      "meetingInCountry": "Sastanak u vašoj zemlji"
+    }
   },
   "footer": {
     "columns": {
@@ -86,41 +101,331 @@
     }
   },
   "services": {
+    "title": "Naše usluge",
     "items": [
-      { "title": "Islamski forum za brak", "description": "Događaji islamskog foruma za brak koji okupljaju muslimane koji traže brak i njihove porodice" },
-      { "title": "Prijava za brak", "description": "Pronađite svog idealnog životnog partnera iz različitih zemalja." },
-      { "title": "VIP Lična Pretraga", "description": "Posvećena usluga u kojoj Zefaaf konsultanti traže odgovarajuće životne partnere" },
-      { "title": "Pratnja našeg tima u Bosni", "description": "Vođeni program u kojem tim Zefaaf-a prati klijente na susrete s porodicama radi ozbiljnog braka" },
-      { "title": "Online sastanak", "description": "Započnite sesijom s porodičnim konsultantom kako biste razumjeli svoju ličnost i potrebe" }
+      {
+        "title": "Zefaaf događaji",
+        "description": "Događaji islamskog foruma za brak koji okupljaju muslimane koji traže brak i njihove porodice"
+      },
+      {
+        "title": "Vaš obrazac za brak",
+        "description": "Pronađite svog idealnog životnog partnera iz različitih zemalja."
+      },
+      {
+        "title": "VIP Lična Pretraga",
+        "description": "Posvećena usluga u kojoj Zefaaf konsultanti traže odgovarajuće životne partnere"
+      },
+      {
+        "title": "Bosanska tura za brak",
+        "description": "Vođeni program u kojem tim Zefaaf-a prati klijente na susrete s porodicama radi ozbiljnog braka"
+      },
+      {
+        "title": "Sastanak u vašoj zemlji",
+        "description": "Započnite sesijom s porodičnim konsultantom kako biste razumjeli svoju ličnost i potrebe"
+      }
     ]
   },
   "globalPresence": {
     "mapAlt": "Mapa koja prikazuje prisustvo Zefaaf-a širom svijeta",
-    "badge": "3 miliona korisnika na Zefaaf-u",
+    "badge": "12 hiljada korisnika na Zefaaf-u",
     "title": "Poslujemo u <brand>175</brand> zemalja",
     "description": "Zefaaf povezuje muslimane širom svijeta s pouzdanim uslugama provodadžisanja koje dijele njihove islamske vrijednosti, na siguran način u skladu sa šerijatom.",
     "countries": {
-      "france": "Francuska", "germany": "Njemačka", "netherlands": "Nizozemska", "turkey": "Turska", "russia": "Rusija", "china": "Kina", "indonesia": "Indonezija"
+      "france": "Sjeverna Amerika",
+      "germany": "Južna Amerika",
+      "netherlands": "Evropa",
+      "turkey": "Afrika",
+      "russia": "Azija",
+      "china": "Okeanija"
     }
   },
   "upcomingEvents": {
     "description": "Otkrijte naše predstojeće događaje i pridružite nam se za smislena iskustva, inspirativne razgovore i nezaboravne trenutke. Pratite nas za datume, detalje i registraciju.",
     "bookCta": "Rezervišite svoju kartu",
     "events": [
-      { "date": "10. januar", "time": "12 sati", "title": "Islamski forum za brak u Nizozemskoj", "location": "Churchillplein 10, 2517 JW", "price": "150 eura" },
-      { "date": "25. april", "time": "12 sati", "title": "Islamski forum za brak u Bosni", "location": "Terezija, 71000", "price": "150 eura" }
+      {
+        "date": "10. januar",
+        "time": "12 sati",
+        "title": "Islamski forum za brak u Nizozemskoj",
+        "location": "Churchillplein 10, 2517 JW",
+        "price": "150 eura"
+      },
+      {
+        "date": "25. april",
+        "time": "12 sati",
+        "title": "Islamski forum za brak u Bosni",
+        "location": "Terezija, 71000",
+        "price": "150 eura"
+      },
+      {
+        "date": "14. juni",
+        "time": "14 sati",
+        "title": "Islamski forum za brak u Njemačkoj",
+        "location": "Alexanderplatz, Berlin",
+        "price": "150 eura"
+      },
+      {
+        "date": "22. august",
+        "time": "13 sati",
+        "title": "Islamski forum za brak u Belgiji",
+        "location": "Centar grada Brisela",
+        "price": "150 eura"
+      },
+      {
+        "date": "17. oktobar",
+        "time": "15 sati",
+        "title": "Islamski forum za brak u Turskoj",
+        "location": "Fatih, Istanbul",
+        "price": "150 eura"
+      },
+      {
+        "date": "12. decembar",
+        "time": "12 sati",
+        "title": "Islamski forum za brak u Ujedinjenom Kraljevstvu",
+        "location": "Centar grada Londona",
+        "price": "150 eura"
+      }
     ],
-    "ticker": ["Živite najbolje", "zdravo putovanje", "životni partner", "zdravi izbori", "životni partner"]
+    "ticker": [
+      "Živite najbolje",
+      "zdravo putovanje",
+      "životni partner",
+      "zdravi izbori",
+      "životni partner"
+    ]
+  },
+  "blogDetail": {
+    "breadcrumb": {
+      "home": "Početna",
+      "blogs": "Članci",
+      "current": "Detalji članka"
+    },
+    "date": "02-12-2026",
+    "title": "Vaš potpuni vodič za turizam u Bosni i Hercegovini: Savjeti za putnike koji putuju prvi put",
+    "intro": "Bosna i Hercegovina je fascinantna destinacija koja osvaja srca putnika svojom zadivljujućom prirodnom ljepotom i bogatom historijom. U ovom članku, Zefaaf ističe najvažnije savjete i preporuke za putnike koji putuju prvi put, od planiranja putovanja i izbora najboljeg vremena za posjetu do razumijevanja lokalne kulture i bontona. Ovaj sveobuhvatni vodič pomoći će vam da uživate u ugodnom i nezaboravnom putnom iskustvu punom nezaboravnih trenutaka.",
+    "banner": {
+      "imageAlt": "Muslimanski par koji se osmjehuje kameri",
+      "title": "Budite u toku s popularnim člancima"
+    },
+    "leadParagraphs": [
+      "Bosna i Hercegovina je destinacija koja se na mapi može činiti jednostavnom, ali iskustvo postaje mnogo ljepše kada saznate neke detalje prije putovanja. Između historijskog Sarajeva, Mostara sa svojim čuvenim mostom, i prirode koja okružuje gradove i sela, primijetit ćete da putovanje ne treba toliko zbijen raspored koliko pametno i fleksibilno planiranje.",
+      "Zato, ako je ovo vaša prva posjeta, ovo je vodič za turizam u Bosni koji vam je potreban prije nego što spakujete torbe; od izbora datuma putovanja i smještaja, preko prevoza i sigurnosti, do praktičnih savjeta koji čine vaše iskustvo ugodnijim, bilo da putujete sami, sa svojim životnim partnerom, ili planirate porodični turizam u Bosni."
+    ],
+    "sections": [
+      {
+        "heading": "Koje je najbolje vrijeme za posjetu Bosni i Hercegovini?",
+        "paragraphs": [
+          "Najbolje vrijeme za posjetu Bosni i Hercegovini zavisi od vrste putovanja koje tražite. Proljeće je pogodno za svakoga ko želi uživati u prirodi i umjerenom vremenu, dok ljeto privlači putnike koji traže aktivnosti na otvorenom i putovanja između gradova.",
+          "Jesen vam pruža smirenu atmosferu i pejzaže različitih boja, dok zima predstavlja priliku za ljubitelje hladnog vremena, planinskih predjela i zimskih aktivnosti.",
+          "Prema tome, ne postoji jedan odgovor koji odgovara svima. Ako vam je cilj obići gradove i istražiti prirodu bez velike vrućine, proljeće i jesen su ugodni izbori. Što se tiče želje da iskoristite duže dnevno svjetlo i brojne aktivnosti, ljeto vam može odgovarati.",
+          "A nakon izbora sezone, dolazi najvažnije pitanje: gdje ćete odsjesti i kako ćete se kretati?"
+        ]
+      },
+      {
+        "heading": "Gdje odsjesti u Bosni i Hercegovini?",
+        "paragraphs": [
+          "Izbor smještaja mora biti povezan s vašim programom putovanja, a ne samo cijenom. U Sarajevu, na primjer, boravak u blizini centralnih dijelova olakšava pristup znamenitostima, restoranima i prevozu, dok u drugim gradovima možda preferirate boravak u blizini centra grada ili prirodnih predjela koje planirate posjetiti.",
+          "Također je važno pregledati recenzije putnika prije rezervacije i osigurati prisustvo pogodnosti koje su vam potrebne, posebno ako putujete sa porodicom.",
+          "Što se tiče porodičnog turizma u Bosni, najbolje je dati prioritet lokaciji, miru i lakom pristupu uslugama, kako svakodnevno kretanje na velike udaljenosti ne bi postalo teret za članove porodice.",
+          "Kada se smještaj odredi, planiranje prevoza između gradova postaje sljedeći korak."
+        ]
+      },
+      {
+        "heading": "Kakav je prevoz u Bosni i Hercegovini?",
+        "paragraphs": [
+          "Po Bosni i Hercegovini možete se kretati na nekoliko načina, a izbor zavisi od udaljenosti, broja osoba i prirode putovanja.",
+          "Unutar gradova mogu se koristiti lokalni prevoz ili taksi, dok autobusi postaju praktičan izbor prilikom kretanja između više gradova. Ako preferirate slobodu da sami odredite vrijeme zadržavanja i posjetite mjesta udaljena od centara gradova, iznajmljivanje automobila moglo bi biti prikladnije.",
+          "Ipak, vožnja u novoj zemlji zahtijeva određenu pažnju; planinska priroda Bosne znači vijugave puteve i uzvišenja, pa se putovanja autom ne bi trebala tretirati kao samo brzi prelazak iz jednog grada u drugi.",
+          "Otuda dolazi važan savjet iz vodiča za turizam u Bosni: ne stavljajte veliki broj gradova u jedan dan. Ponekad je smanjenje broja destinacija najbolji način da zaista vidite zemlju."
+        ]
+      },
+      {
+        "heading": "Da li je Bosna i Hercegovina sigurna za putnike?",
+        "paragraphs": [
+          "Generalno, Bosna i Hercegovina se smatra pogodnom destinacijom za turizam, ali to ne znači odustajanje od uobičajenih mjera opreza koje su svakom putniku potrebne.",
+          "Čuvajte novac i dokumente na sigurnom mjestu, izbjegavajte ostavljanje ličnih stvari bez nadzora, i budite pažljivi na prepunim mjestima. Također je preporučljivo čuvati elektronske kopije pasoša, rezervacija i važnih dokumenata za slučaj bilo kakve okolnosti.",
+          "Postoji posebna napomena vrijedna spomena: prilikom putovanja izvan naseljenih ili poznatih područja, ne skrećite s označenih puteva i staza, i pratite upute lokalnih vlasti, jer neka područja u Bosni i dalje zahtijevaju oprez zbog ostataka rata i mina.",
+          "Ove mjere opreza ne bi trebale da vas zabrinu zbog putovanja; naprotiv, poznavanje ovoga unaprijed daje vam više prostora da uživate bez nepotrebnih iznenađenja."
+        ]
+      },
+      {
+        "heading": "Koji su najvažniji savjeti za putnike koji prvi put posjećuju Bosnu?",
+        "paragraphs": [
+          "Ako je ovo vaša prva posjeta, postoji niz savjeta za putnike u Bosni koji vam mogu uštedjeti mnogo zabune:"
+        ],
+        "list": [
+          "Isplanirajte putovanje prije dolaska, ali ostavite prostora za promjene.",
+          "Ne pokušavajte posjetiti sve na kratkom putovanju.",
+          "Čuvajte kopiju pasoša i rezervacija na telefonu.",
+          "Provjerite prihvaćene načine plaćanja prije odlaska na udaljena mjesta.",
+          "Ponesite nešto lokalne gotovine za slučajeve kada elektronski načini plaćanja nisu dostupni.",
+          "Nosite udobnu obuću, posebno ako planirate istraživati prirodna područja.",
+          "Provjerite vremenske uslove prije dnevnih izleta.",
+          "Ne oslanjajte se samo na internet; korisno je čuvati važne informacije na način dostupan bez interneta.",
+          "Ako iznajmljujete automobil, dobro razumite pravila vožnje, osiguranje i uslove kompanije za iznajmljivanje.",
+          "Ne pravite raspored putovanja toliko zbijenim da većinu vremena provedete u autu.",
+          "Najvažnije: tretirajte putovanje kao iskustvo, a ne kao trku. Bosna je posebno jedna od zemalja u kojoj se vrijedi zaustaviti na trenutak umjesto samo slikanja i odlaska."
+        ]
+      }
+    ]
+  },
+  "blog": {
+    "hero": {
+      "title": "Budite u toku s popularnim člancima",
+      "subtitle": "Otkrijte najnovije članke, uvide i savjete koji obogaćuju vaš život, jačaju vaše odnose i pružaju vrijedne smjernice kroz stručne sesije",
+      "collage": [
+        {
+          "title": "Vaš vodič za smislen brak",
+          "excerpt": "Istražite korisne članke i stručne savjete osmišljene da vas podrže u izgradnji čvrste veze i donošenju sigurnih odluka tokom vašeg bračnog putovanja."
+        },
+        {
+          "title": "Vaš vodič za smislen brak",
+          "excerpt": "Istražite korisne članke i stručne savjete osmišljene da vas podrže u izgradnji čvrste veze i donošenju sigurnih odluka tokom vašeg bračnog putovanja."
+        },
+        {
+          "title": "Izgradnja sretnog života zajedno",
+          "excerpt": "Naučite vrijedne uvide, praktične savjete i stručne smjernice za izgradnju zdrave veze i stvaranje sretnog doma"
+        },
+        {
+          "title": "Uvidi za vaše bračno putovanje",
+          "excerpt": "Otkrijte inspirativne članke, savjete o vezama i stručne sesije koji vam pomažu da bolje razumijete odnose i izgradite jaču, sretniju budućnost zajedno."
+        },
+        {
+          "title": "Uvidi za vaše bračno putovanje",
+          "excerpt": "Otkrijte inspirativne članke, savjete o vezama i stručne sesije koji vam pomažu da bolje razumijete odnose i izgradite jaču, sretniju budućnost zajedno."
+        }
+      ]
+    },
+    "featured": {
+      "date": "02-12-2026",
+      "title": "Budite u toku s popularnim člancima",
+      "description": "Zefaaf je pouzdana platforma osmišljena da pomogne muslimanima da pronađu životnog partnera koji dijeli njihove islamske vrijednosti, na siguran način u skladu sa šerijatom.",
+      "cta": "Pročitajte više"
+    },
+    "list": {
+      "title": "Zefaaf Blog",
+      "description": "Sve što trebate znati o halal provodadžisanju i izboru životnog partnera putem pouzdanih platformi.",
+      "searchPlaceholder": "Pretraga",
+      "viewMore": "Prikaži više",
+      "topics": {
+        "all": "Sve teme",
+        "qualities": "Osobine dobrog bračnog partnera",
+        "relationships": "Uspješni bračni odnosi",
+        "health": "Bračno zdravlje",
+        "choosing": "Izbor životnog partnera"
+      },
+      "articles": [
+        {
+          "title": "Brak sa bosanskom ženom za Arape: Potpuni vodič",
+          "excerpt": "Brak sa bosanskom ženom postao je sve popularniji izbor za arapske muškarce zbog zajedničkih kulturnih vrijednosti i jednostavnog..",
+          "image": "/images/blog/grid-1.png"
+        },
+        {
+          "title": "Bračni običaji i tradicije u Bosni i Hercegovini: Nezaboravne proslave",
+          "excerpt": "Svadbeni običaji i tradicije u Bosni i Hercegovini odražavaju fascinantnu mješavinu evropskog naslijeđa i autentičnih istočnjačkih uticaja. Ovaj Zefaaf članak istražuje tradicionalne rituale vjeridbe, svadbenu muziku, svečane plesove i prepoznatljivu lokalnu kuhinju koji čine bosanske proslave tako posebnim. Ovaj vodič nudi dubok uvid u bogato kulturno naslijeđe koje čini vjenčanja u Bosni zaista nezaboravnim.",
+          "image": "/images/blog/grid-2-wide.png",
+          "wide": true
+        },
+        {
+          "title": "Brak sa bosanskom ženom za Arape: Potpuni vodič",
+          "excerpt": "Brak sa bosanskom ženom postao je sve popularniji izbor za arapske muškarce zbog zajedničkih kulturnih vrijednosti i jednostavnog..",
+          "image": "/images/blog/grid-3.png"
+        },
+        {
+          "title": "Brak sa bosanskom ženom za Arape: Potpuni vodič",
+          "excerpt": "Brak sa bosanskom ženom postao je sve popularniji izbor za arapske muškarce zbog zajedničkih kulturnih vrijednosti i jednostavnog..",
+          "image": "/images/blog/grid-4.png"
+        },
+        {
+          "title": "Brak sa bosanskom ženom za Arape: Potpuni vodič",
+          "excerpt": "Brak sa bosanskom ženom postao je sve popularniji izbor za arapske muškarce zbog zajedničkih kulturnih vrijednosti i jednostavnog..",
+          "image": "/images/blog/grid-5.png"
+        }
+      ]
+    }
+  },
+  "downloadApp": {
+    "title": "Poseban besplatan probni period – preuzmite Zefaaf\naplikaciju sada i uživajte u besplatnom slanju poruka\ntokom prva 3 dana!",
+    "features": [
+      "Sigurno i bezbjedno okruženje za pronalaženje pravog partnera.",
+      "Neometano iskustvo koje prati islamske smjernice."
+    ],
+    "description": "Preuzmite aplikaciju sa App Store-a ili Google Play-a."
   },
   "whyChoose": {
     "title": "Zašto odabrati Zefaaf",
-    "description": "U Zefaaf-u vjerujemo da je brak više od same kompatibilnosti — riječ je o izgradnji stabilnog života utemeljenog na islamskim vrijednostima.",
+    "description": "U Zefaaf-u, pronalaženje životnog partnera više nije ograničeno na aplikacije i web stranice. Nudimo prava rješenja, od vođenja lične pretrage u vaše ime do organizovanja ličnog susreta.",
     "features": [
-      { "title": "Sigurni video pozivi u skladu sa šerijatom", "description": "Sigurna video funkcija pod vjerskim nadzorom, koja vam omogućava da upoznate potencijalnog životnog partnera uz poštovanje islamskih smjernica." },
-      { "title": "Direktno islamsko i porodično savjetovanje", "description": "Dobijte besplatnu konsultaciju nakon registracije od naših vjerskih stručnjaka i porodičnih savjetnika." },
-      { "title": "Vaš glas, vaša ličnost – neka vaš glas govori umjesto vas!", "description": "Glasovna poruka na vašem profilu: predstavite se, podijelite svoje interese i vrijednosti, i govorite o svojoj viziji bračnog života." },
-      { "title": "Porodični sastanak – započnite svoju vezu na halal način", "description": "Privatna video soba koja po prvi put spaja obje porodice na ispravan način, u skladu sa šerijatom." },
-      { "title": "Sistem prethodnog odobrenja – ne gubite vrijeme na neproduktivne razgovore!", "description": "Pogledajte procenat kompatibilnosti s bilo kojim profilom prije nego što započnete razgovor." }
+      {
+        "title": "Zefaaf aplikacija | Sami tražite i povezujte se",
+        "description": "Pregledajte profile, koristite alate za pretragu i kompatibilnost i povežite se s odgovarajućim osobama koje traže ozbiljan brak."
+      },
+      {
+        "title": "VIP usluga | Mi tražimo umjesto vas",
+        "description": "Specijalizovani tim traži odgovarajuće partnere, preporučuje vam ih i lično prati tokom tri mjeseca."
+      },
+      {
+        "title": "Bračni događaji | Stvarna, organizovana upoznavanja",
+        "description": "Ozbiljni bračni događaji u Nizozemskoj i Bosni koji stvaraju prave prilike za upoznavanje u organizovanom okruženju."
+      },
+      {
+        "title": "Pratnja u Bosnu | Putovanje radi braka",
+        "description": "Putujemo s vama i vodimo koordinaciju, praćenje i direktne susrete sa ženama iz Bosne i njihovim porodicama."
+      },
+      {
+        "title": "Lični susret u vašoj zemlji | Gdje god da se nalazite",
+        "description": "Počinjemo privatnim Zoom sastankom s porodičnim savjetnikom kako bismo razumjeli vašu ličnost i potrebe, zatim tražimo odgovarajućeg partnera i organizujemo lični susret kada postoji obostrano prihvatanje."
+      }
     ]
+  },
+  "contactUs": {
+    "mapAlt": "Mapa koja prikazuje lokaciju naše kancelarije",
+    "hero": {
+      "eyebrow": "Stupite u kontakt",
+      "title": "Tu smo da vam pomognemo u svakom koraku",
+      "description": "Ako imate bilo kakva pitanja ili vam je potrebna podrška, ne oklijevajte da nas kontaktirate. Naš tim je uvijek dostupan kako bi osigurao najbolje iskustvo na Zefaaf platformi."
+    },
+    "form": {
+      "card": {
+        "title": "Pošaljite nam svoju poruku",
+        "subtitle": "Tu smo da vas saslušamo i pomognemo vam",
+        "followUs": "Pratite nas"
+      },
+      "heading": "Kako vam danas možemo pomoći?",
+      "fields": {
+        "fullName": "Puno ime",
+        "email": "Email adresa",
+        "message": "Poruka"
+      },
+      "send": "Pošalji"
+    },
+    "faq": {
+      "title": "Često postavljana pitanja",
+      "description": "Pronađite brze odgovore na uobičajena pitanja ispod, treba vam više pomoći?\nKontaktirajte nas bilo kada za dodatnu pomoć",
+      "heading": "Kako vam možemo pomoći?",
+      "searchPlaceholder": "Pretraga",
+      "items": [
+        {
+          "question": "Da li je registracija na Zefaaf platformi besplatna?",
+          "answer": "Da, osnovna registracija je besplatna za sve, s opcionalnim dodatnim paketima za premium usluge."
+        },
+        {
+          "question": "Koliko dugo traje pronalaženje odgovarajućeg partnera?",
+          "answer": "To varira od osobe do osobe, ali naš tim kontinuirano radi kako bi vas što prije upoznao s odgovarajućim partnerima."
+        },
+        {
+          "question": "Da li se moji lični podaci čuvaju privatnim?",
+          "answer": "Da, ozbiljno shvatamo vašu privatnost i dijelimo vaše podatke samo s partnerima koje odobrite."
+        },
+        {
+          "question": "Mogu li koristiti Zefaaf iz bilo koje zemlje?",
+          "answer": "Da, Zefaaf je dostupan širom svijeta i povezuje muslimane iz različitih zemalja koji traže brak."
+        },
+        {
+          "question": "Kako mogu kontaktirati tim za podršku?",
+          "answer": "Možete nas kontaktirati bilo kada putem ovog kontakt obrasca, a naš tim će odgovoriti što je prije moguće."
+        }
+      ]
+    }
   }
 }

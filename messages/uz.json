@@ -37,7 +37,13 @@
     "articles": "Maqolalar",
     "upcomingEvents": "Bo'lajak tadbirlar",
     "successStories": "Muvaffaqiyat hikoyalari",
-    "marriageRequest": "Nikoh so'rovi"
+    "marriageRequest": "Nikoh so'rovi",
+    "servicesMenu": {
+      "zefaafEvents": "Zefaaf tadbirlari",
+      "marriageForm": "Sizning nikoh formangiz",
+      "bosniaTour": "Bosniya nikoh sayohati",
+      "meetingInCountry": "O'z mamlakatingizda uchrashuv"
+    }
   },
   "footer": {
     "columns": {
@@ -95,13 +101,14 @@
     }
   },
   "services": {
+    "title": "Bizning xizmatlarimiz",
     "items": [
       {
-        "title": "Islomiy nikoh forumi",
+        "title": "Zefaaf tadbirlari",
         "description": "Nikohga intilayotgan musulmonlar va ularning oilalarini bir araya keltiruvchi islomiy nikoh forumi tadbirlari"
       },
       {
-        "title": "Nikoh arizasi",
+        "title": "Sizning nikoh formangiz",
         "description": "Turli mamlakatlardan o'zingizga mos hayotiy sherigingizni toping."
       },
       {
@@ -109,28 +116,27 @@
         "description": "Zefaaf maslahatchilari mos hayotiy sheriklarni qidiradigan maxsus xizmat"
       },
       {
-        "title": "Bosniyada jamoamiz bilan birga",
+        "title": "Bosniya nikoh sayohati",
         "description": "Zefaaf jamoasi mijozlarni jiddiy nikoh uchun oilalar bilan uchrashtiradigan yo'naltiruvchi dastur"
       },
       {
-        "title": "Onlayn uchrashuv",
+        "title": "O'z mamlakatingizda uchrashuv",
         "description": "Shaxsiyatingiz va ehtiyojlaringizni tushunish uchun oila maslahatchisi bilan suhbatdan boshlang"
       }
     ]
   },
   "globalPresence": {
     "mapAlt": "Zefaafning dunyo bo'ylab qamrovini ko'rsatuvchi xarita",
-    "badge": "Zefaafda 3 million foydalanuvchi",
+    "badge": "Zefaafda 12 ming foydalanuvchi",
     "title": "Biz <brand>175</brand> davlatda faoliyat yuritamiz",
     "description": "Zefaaf dunyo bo'ylab musulmonlarni o'zlarining islomiy qadriyatlarini baham ko'radigan ishonchli juftlik topish xizmatlari bilan xavfsiz va shariatga mos tarzda bog'laydi.",
     "countries": {
-      "france": "Fransiya",
-      "germany": "Germaniya",
-      "netherlands": "Niderlandiya",
-      "turkey": "Turkiya",
-      "russia": "Rossiya",
-      "china": "Xitoy",
-      "indonesia": "Indoneziya"
+      "france": "Shimoliy Amerika",
+      "germany": "Janubiy Amerika",
+      "netherlands": "Yevropa",
+      "turkey": "Afrika",
+      "russia": "Osiyo",
+      "china": "Okeaniya"
     }
   },
   "upcomingEvents": {
@@ -150,34 +156,276 @@
         "title": "Bosniyada islomiy nikoh forumi",
         "location": "Terezija, 71000",
         "price": "150 Yevro"
+      },
+      {
+        "date": "14-iyun",
+        "time": "Kunduzi soat 14:00",
+        "title": "Germaniyada islomiy nikoh forumi",
+        "location": "Alexanderplatz, Berlin",
+        "price": "150 Yevro"
+      },
+      {
+        "date": "22-avgust",
+        "time": "Kunduzi soat 13:00",
+        "title": "Belgiyada islomiy nikoh forumi",
+        "location": "Brussel shahar markazi",
+        "price": "150 Yevro"
+      },
+      {
+        "date": "17-oktyabr",
+        "time": "Kunduzi soat 15:00",
+        "title": "Turkiyada islomiy nikoh forumi",
+        "location": "Fatih, Istanbul",
+        "price": "150 Yevro"
+      },
+      {
+        "date": "12-dekabr",
+        "time": "Kunduzi soat 12:00",
+        "title": "Buyuk Britaniyada islomiy nikoh forumi",
+        "location": "London shahar markazi",
+        "price": "150 Yevro"
       }
     ],
-    "ticker": ["Eng yaxshisini yashang", "sog'lom sayohat", "hayotiy sherik", "sog'lom tanlovlar", "hayotiy sherik"]
+    "ticker": [
+      "Eng yaxshisini yashang",
+      "sog'lom sayohat",
+      "hayotiy sherik",
+      "sog'lom tanlovlar",
+      "hayotiy sherik"
+    ]
+  },
+  "blogDetail": {
+    "breadcrumb": {
+      "home": "Bosh sahifa",
+      "blogs": "Maqolalar",
+      "current": "Maqola tafsilotlari"
+    },
+    "date": "02-12-2026",
+    "title": "Bosniya va Gertsegovinada turizm bo'yicha to'liq qo'llanmangiz: Birinchi marta sayohat qiluvchilar uchun maslahatlar",
+    "intro": "Bosniya va Gertsegovina — o'zining hayratlanarli tabiiy go'zalligi va boy tarixi bilan sayohatchilar qalbini zabt etuvchi jozibali manzil. Ushbu maqolada Zefaaf birinchi marta sayohat qiluvchilar uchun eng muhim maslahat va tavsiyalarni, sayohatingizni rejalashtirish va tashrif buyurish uchun eng yaxshi vaqtni tanlashdan tortib, mahalliy madaniyat va odob-axloq qoidalarini tushunishgacha bo'lgan mavzularni yoritadi. Ushbu keng qamrovli qo'llanma sizga unutilmas lahzalarga to'la, qulay va yodda qoladigan sayohat tajribasidan bahramand bo'lishga yordam beradi.",
+    "banner": {
+      "imageAlt": "Kameraga tabassum bilan qarayotgan musulmon er-xotin",
+      "title": "Mashhur maqolalardan xabardor bo'ling"
+    },
+    "leadParagraphs": [
+      "Bosniya va Gertsegovina xaritada oson ko'rinishi mumkin bo'lgan manzil, ammo sayohatdan oldin ba'zi tafsilotlarni bilsangiz, tajriba ancha ajoyib bo'lib qoladi. Tarixiy Saroyevo, o'zining mashhur ko'prigi bilan Mostar va shaharlar hamda qishloqlarni o'rab turgan tabiat orasida, sayohat zich jadvaldan ko'ra aqlli va moslashuvchan rejalashtirishga muhtoj ekanini ko'rasiz.",
+      "Shuning uchun, agar bu sizning birinchi tashrifingiz bo'lsa, chamadonlaringizni yig'ishdan oldin sizga kerak bo'lgan Bosniya turizm qo'llanmasi mana shu; sayohat sanasi va turar joyni tanlashdan tortib, transport va xavfsizlikkacha, tajribangizni yanada qulayroq qiladigan amaliy maslahatlargacha — yolg'iz sayohat qilasizmi, hayotiy sherigingiz bilanmi yoki Bosniyada oilaviy turizmni rejalashtirasizmi, farqi yo'q."
+    ],
+    "sections": [
+      {
+        "heading": "Bosniya va Gertsegovinaga sayohat qilish uchun eng yaxshi vaqt qachon?",
+        "paragraphs": [
+          "Bosniya va Gertsegovinaga sayohat qilish uchun eng yaxshi vaqt qanday sayohat qidirayotganingizga bog'liq. Bahor tabiat va mo''tadil ob-havodan bahramand bo'lishni istagan har bir kishi uchun mos keladi, yoz esa ochiq havoda faoliyat va shaharlar orasida sayohat qidirayotgan sayyohlarni jalb qiladi.",
+          "Kuz sizga xotirjam muhit va turli rangdagi manzaralarni beradi, qish esa sovuq ob-havo, tog'li hududlar va qishki faoliyatlar ishqibozlari uchun imkoniyatdir.",
+          "Natijada, hammaga mos keladigan yagona javob yo'q. Agar maqsadingiz kuchli issiqlikdan qochib shaharlarni aylanish va tabiatni kashf etish bo'lsa, bahor va kuz qulay tanlovdir. Uzoq kunduzgi yorug'lik va ko'plab faoliyatlardan foydalanishni istasangiz, yoz sizga mos kelishi mumkin.",
+          "Mavsumni tanlaganingizdan so'ng eng muhim savol keladi: qayerda qolasiz va qanday harakatlanasiz?"
+        ]
+      },
+      {
+        "heading": "Bosniya va Gertsegovinada qayerda qolish kerak?",
+        "paragraphs": [
+          "Turar joyni tanlash faqat narxga emas, sayohat dasturingizga bog'liq bo'lishi kerak. Masalan, Saroyevoda markaziy hududlarga yaqin qolish diqqatga sazovor joylar, restoranlar va transportga borishni osonlashtiradi, boshqa shaharlarda esa siz shahar markaziga yoki tashrif buyurishni rejalashtirgan tabiiy hududlarga yaqin qolishni afzal ko'rishingiz mumkin.",
+          "Bron qilishdan oldin sayohatchilar sharhlarini ko'rib chiqish va, ayniqsa oila bilan sayohat qilayotgan bo'lsangiz, sizga kerakli qulayliklar mavjudligini ta'minlash ham muhim.",
+          "Bosniyada oilaviy turizm uchun esa joylashuv, xotirjamlik va xizmatlarga oson kirishga ustunlik berish yaxshiroq, shunda uzoq masofalarda kundalik harakatlanish oila a'zolari uchun yukka aylanmaydi.",
+          "Turar joy aniqlangandan so'ng, shaharlar orasidagi transportni rejalashtirish keyingi qadam bo'ladi."
+        ]
+      },
+      {
+        "heading": "Bosniya va Gertsegovinada transport qanday?",
+        "paragraphs": [
+          "Bosniya va Gertsegovinada bir necha usulda harakatlanishingiz mumkin, va tanlov masofa, odamlar soni va sayohat xarakteriga bog'liq.",
+          "Shahar ichida mahalliy transport yoki taksidan foydalanish mumkin, bir necha shahar orasida harakatlanganda esa avtobuslar amaliy tanlovga aylanadi. Agar to'xtash vaqtlaringizni o'zingiz belgilashni va shahar markazlaridan uzoqdagi joylarni ziyorat qilishni afzal ko'rsangiz, mashina ijaraga olish yanada mosroq bo'lishi mumkin.",
+          "Biroq, yangi mamlakatda mashina haydash biroz e'tibor talab qiladi; Bosniyaning tog'li tabiati burama yo'llar va balandliklarni anglatadi, shuning uchun yo'l sayohatlariga faqat bir shahardan ikkinchisiga tezkor o'tish sifatida qaramaslik kerak.",
+          "Shu bois Bosniya turizm qo'llanmasidan muhim maslahat: bir kunga ko'p sonli shaharlarni sig'dirmang. Ba'zida manzillar sonini kamaytirish mamlakatni haqiqatan ko'rishning eng yaxshi yo'lidir."
+        ]
+      },
+      {
+        "heading": "Bosniya va Gertsegovina sayohatchilar uchun xavfsizmi?",
+        "paragraphs": [
+          "Umuman olganda, Bosniya va Gertsegovina turizm uchun mos manzil hisoblanadi, ammo bu har bir sayohatchiga kerak bo'lgan odatiy ehtiyot choralaridan voz kechish degani emas.",
+          "Pulingiz va hujjatlaringizni xavfsiz joyda saqlang, shaxsiy buyumlaringizni nazoratsiz qoldirishdan saqlaning va gavjum joylarda ehtiyot bo'ling. Har qanday holat uchun pasport, bronlar va muhim hujjatlarning elektron nusxalarini saqlash ham tavsiya etiladi.",
+          "E'tiborga olinishi lozim bo'lgan alohida jihat bor: aholi zich yoki tanish bo'lmagan hududlardan tashqariga sayohat qilganda, belgilangan yo'l va so'qmoqlardan chetga chiqmang va mahalliy hokimiyat ko'rsatmalariga rioya qiling, chunki Bosniyaning ba'zi hududlari hali ham urush qoldiqlari va minalar sababli ehtiyot bo'lishni talab qiladi.",
+          "Bu ehtiyot choralari sizni sayohat haqida xavotirga solmasligi kerak; aksincha, ularni oldindan bilish sizga keraksiz sarguzashtlarsiz bahramand bo'lish uchun ko'proq imkoniyat beradi."
+        ]
+      },
+      {
+        "heading": "Bosniyaga birinchi marta sayohat qiluvchilar uchun eng muhim maslahatlar qanday?",
+        "paragraphs": [
+          "Agar bu sizning birinchi tashrifingiz bo'lsa, sizni ko'p chalkashliklardan qutqarishi mumkin bo'lgan Bosniya sayohatchilari uchun bir qator maslahatlar mavjud:"
+        ],
+        "list": [
+          "Kelishdan oldin sayohatni rejalashtiring, lekin o'zgarish uchun joy qoldiring.",
+          "Qisqa sayohatda hamma narsani ko'rishga urinmang.",
+          "Pasportingiz va bronlaringizning nusxasini telefoningizda saqlang.",
+          "Uzoq joylarga yo'l olishdan oldin qabul qilinadigan to'lov usullarini tekshiring.",
+          "Elektron to'lov usullari mavjud bo'lmagan holatlar uchun o'zingiz bilan biroz mahalliy naqd pul olib yuring.",
+          "Qulay poyabzal kiying, ayniqsa tabiiy hududlarni o'rganishni rejalashtirsangiz.",
+          "Kundalik sayohatlardan oldin ob-havo sharoitini tekshiring.",
+          "Faqat internetga tayanmang; muhim ma'lumotlarni oflayn holda ham foydalanish mumkin bo'lgan tarzda saqlash foydali.",
+          "Mashina ijaraga olsangiz, haydash qoidalari, sug'urta va ijara kompaniyasi shartlarini yaxshi tushunib oling.",
+          "Sayohat jadvalini vaqtingizning ko'p qismini mashinada o'tkazadigan darajada zich qilmang.",
+          "Eng muhimi: sayohatni poyga emas, tajriba sifatida qabul qiling. Bosniya ayniqsa faqat surat olib ketishdan ko'ra, biroz to'xtab qolishga arziydigan mamlakatlardan biridir."
+        ]
+      }
+    ]
+  },
+  "blog": {
+    "hero": {
+      "title": "Mashhur maqolalardan xabardor bo'ling",
+      "subtitle": "Hayotingizni boyitish, munosabatlaringizni mustahkamlash va ekspert sessiyalari orqali qimmatli yo'l-yo'riq olish uchun eng so'nggi maqolalar, fikrlar va maslahatlarni kashf eting",
+      "collage": [
+        {
+          "title": "Mazmunli nikohga qo'llanmangiz",
+          "excerpt": "Nikoh sayohatingiz davomida mustahkam munosabat qurish va o'ziga ishonch bilan qaror qabul qilishda sizga yordam berish uchun tayyorlangan foydali maqolalar va ekspert maslahatlarini kashf eting."
+        },
+        {
+          "title": "Mazmunli nikohga qo'llanmangiz",
+          "excerpt": "Nikoh sayohatingiz davomida mustahkam munosabat qurish va o'ziga ishonch bilan qaror qabul qilishda sizga yordam berish uchun tayyorlangan foydali maqolalar va ekspert maslahatlarini kashf eting."
+        },
+        {
+          "title": "Birgalikda baxtli hayot qurish",
+          "excerpt": "Sog'lom munosabat qurish va baxtli hayot yaratish uchun qimmatli fikrlar, amaliy maslahatlar va ekspert yo'l-yo'riqlarini o'rganing"
+        },
+        {
+          "title": "Nikoh sayohatingiz uchun fikrlar",
+          "excerpt": "Munosabatlarni yaxshiroq tushunish va birgalikda kuchliroq, baxtliroq kelajak qurishga yordam berish uchun ilhomlantiruvchi maqolalar, munosabat maslahatlari va ekspert sessiyalarini kashf eting."
+        },
+        {
+          "title": "Nikoh sayohatingiz uchun fikrlar",
+          "excerpt": "Munosabatlarni yaxshiroq tushunish va birgalikda kuchliroq, baxtliroq kelajak qurishga yordam berish uchun ilhomlantiruvchi maqolalar, munosabat maslahatlari va ekspert sessiyalarini kashf eting."
+        }
+      ]
+    },
+    "featured": {
+      "date": "02-12-2026",
+      "title": "Mashhur maqolalardan xabardor bo'ling",
+      "description": "Zefaaf — musulmonlarga o'zlarining islomiy qadriyatlarini baham ko'radigan hayotiy sherik topishda yordam berish uchun mo'ljallangan, xavfsiz va shariatga mos ishonchli platforma.",
+      "cta": "Ko'proq o'qish"
+    },
+    "list": {
+      "title": "Zefaaf Blogi",
+      "description": "Ishonchli platformalar orqali halol juftlik topish va hayotiy sherik tanlash haqida bilishingiz kerak bo'lgan hamma narsa.",
+      "searchPlaceholder": "Qidirish",
+      "viewMore": "Ko'proq ko'rsatish",
+      "topics": {
+        "all": "Barcha mavzular",
+        "qualities": "Yaxshi hayotiy sherikning fazilatlari",
+        "relationships": "Muvaffaqiyatli nikoh munosabatlari",
+        "health": "Nikoh salomatligi",
+        "choosing": "Hayotiy sherik tanlash"
+      },
+      "articles": [
+        {
+          "title": "Arablar uchun bosniyalik ayolga uylanish: To'liq qo'llanma",
+          "excerpt": "Bosniyalik ayolga uylanish umumiy madaniy qadriyatlar va sodda... sababli arab erkaklar orasida tobora ommalashib borayotgan tanlovga aylandi.",
+          "image": "/images/blog/grid-1.png"
+        },
+        {
+          "title": "Bosniya va Gertsegovinada nikoh urf-odatlari va an'analari: Unutilmas bayramlar",
+          "excerpt": "Bosniya va Gertsegovinada to'y urf-odatlari va an'analari Yevropa merosi bilan asl Sharq ta'sirlarining ajoyib uyg'unligini aks ettiradi. Ushbu Zefaaf maqolasi Bosniya bayramlarini shu qadar o'ziga xos qiladigan an'anaviy unashtiruv marosimlarini, to'y musiqasini, bayramona raqslarni va mashhur mahalliy taomlarni o'rganadi. Ushbu qo'llanma Bosniyada to'ylarni haqiqatan ham unutilmas qiladigan boy madaniy merosga chuqur nazar tashlaydi.",
+          "image": "/images/blog/grid-2-wide.png",
+          "wide": true
+        },
+        {
+          "title": "Arablar uchun bosniyalik ayolga uylanish: To'liq qo'llanma",
+          "excerpt": "Bosniyalik ayolga uylanish umumiy madaniy qadriyatlar va sodda... sababli arab erkaklar orasida tobora ommalashib borayotgan tanlovga aylandi.",
+          "image": "/images/blog/grid-3.png"
+        },
+        {
+          "title": "Arablar uchun bosniyalik ayolga uylanish: To'liq qo'llanma",
+          "excerpt": "Bosniyalik ayolga uylanish umumiy madaniy qadriyatlar va sodda... sababli arab erkaklar orasida tobora ommalashib borayotgan tanlovga aylandi.",
+          "image": "/images/blog/grid-4.png"
+        },
+        {
+          "title": "Arablar uchun bosniyalik ayolga uylanish: To'liq qo'llanma",
+          "excerpt": "Bosniyalik ayolga uylanish umumiy madaniy qadriyatlar va sodda... sababli arab erkaklar orasida tobora ommalashib borayotgan tanlovga aylandi.",
+          "image": "/images/blog/grid-5.png"
+        }
+      ]
+    }
+  },
+  "downloadApp": {
+    "title": "Maxsus bepul sinov muddati – hoziroq Zefaaf\nilovasini yuklab oling va birinchi 3 kun\nbepul xabar almashishdan bahramand bo'ling!",
+    "features": [
+      "To'g'ri sherikni topish uchun xavfsiz va ishonchli muhit.",
+      "Islomiy qoidalarga mos qulay tajriba."
+    ],
+    "description": "Ilovani App Store yoki Google Play'dan yuklab oling."
   },
   "whyChoose": {
     "title": "Nega Zefaafni tanlash kerak",
-    "description": "Zefaafda biz nikoh shunchaki moslikdan iborat emas, balki islomiy qadriyatlarga asoslangan barqaror hayot qurish demak, deb ishonamiz.",
+    "description": "Zefaafda hayotiy sherik topish endi faqat ilovalar va veb-saytlar bilan cheklanmaydi. Biz sizning nomingizdan shaxsiy qidiruv olib borishdan tortib, yuzma-yuz uchrashuvni tashkil qilishgacha haqiqiy yechimlarni taqdim etamiz.",
     "features": [
       {
-        "title": "Xavfsiz, shariatga mos video qo'ng'iroqlar",
-        "description": "Diniy nazorat ostida xavfsiz video imkoniyat, sizga islomiy qoidalarga rioya qilgan holda potentsial hayotiy sherigingiz bilan uchrashish imkonini beradi."
+        "title": "Zefaaf ilovasi | O'zingiz qidiring va bog'laning",
+        "description": "Profillarni ko'rib chiqing, qidiruv va moslik vositalaridan foydalaning va jiddiy nikoh izlayotgan mos insonlar bilan bog'laning."
       },
       {
-        "title": "To'g'ridan-to'g'ri islomiy va oilaviy maslahat",
-        "description": "Ro'yxatdan o'tganingizdan so'ng diniy mutaxassislarimiz va oila maslahatchilarimizdan bepul maslahat oling."
+        "title": "VIP xizmat | Biz siz uchun qidiramiz",
+        "description": "Maxsus jamoa mos nomzodlarni qidiradi, ularni sizga tavsiya qiladi va uch oy davomida shaxsan kuzatib boradi."
       },
       {
-        "title": "Ovozingiz, shaxsiyatingiz – ovozingiz o'zingiz uchun gapirsin!",
-        "description": "Profilingizdagi ovozli xabar: o'zingizni tanishtiring, qiziqishlaringiz va qadriyatlaringizni baham ko'ring hamda oilaviy hayot haqidagi tasavvuringiz haqida gapiring."
+        "title": "Nikoh tadbirlari | Haqiqiy, tashkil etilgan tanishuvlar",
+        "description": "Niderlandiya va Bosniyada o'tkaziladigan jiddiy nikoh tadbirlari tashkil etilgan muhitda haqiqiy tanishuv imkoniyatlarini yaratadi."
       },
       {
-        "title": "Oilaviy uchrashuv – munosabatlaringizni halol yo'l bilan boshlang",
-        "description": "Ikki oilani birinchi marta to'g'ri, shariatga mos tarzda birlashtiruvchi shaxsiy video xona."
+        "title": "Bosniyaga hamrohlik | Nikoh uchun sayohat",
+        "description": "Biz siz bilan birga sayohat qilamiz va muvofiqlashtirish, kuzatib borish hamda Bosniyalik ayollar va ularning oilalari bilan bevosita uchrashuvlarni tashkil qilamiz."
       },
       {
-        "title": "Oldindan tasdiqlash tizimi – befoyda suhbatlarga vaqt sarflamang!",
-        "description": "Suhbatni boshlashdan oldin istalgan profil bilan mosligingiz foizini ko'ring."
+        "title": "O'z mamlakatingizda shaxsiy uchrashuv | Qayerda bo'lishingizdan qat'i nazar",
+        "description": "Shaxsiyatingiz va ehtiyojlaringizni tushunish uchun oila maslahatchisi bilan shaxsiy Zoom uchrashuvidan boshlaymiz, so'ngra mos sherik qidiramiz va o'zaro rozilik bo'lganda shaxsiy uchrashuvni tashkil qilamiz."
       }
     ]
+  },
+  "contactUs": {
+    "mapAlt": "Ofisimiz joylashuvini ko'rsatuvchi xarita",
+    "hero": {
+      "eyebrow": "Biz bilan bog'laning",
+      "title": "Har bir qadamda sizga yordam berish uchun shu yerdamiz",
+      "description": "Har qanday savolingiz bo'lsa yoki yordam kerak bo'lsa, biz bilan bog'lanishdan tortinmang. Jamoamiz Zefaaf platformasida eng yaxshi tajribani ta'minlash uchun doimo tayyor."
+    },
+    "form": {
+      "card": {
+        "title": "Bizga xabaringizni yuboring",
+        "subtitle": "Sizni tinglash va yordam berish uchun shu yerdamiz",
+        "followUs": "Bizni kuzatib boring"
+      },
+      "heading": "Bugun sizga qanday yordam bera olamiz?",
+      "fields": {
+        "fullName": "To'liq ism",
+        "email": "Elektron pochta manzili",
+        "message": "Xabar"
+      },
+      "send": "Yuborish"
+    },
+    "faq": {
+      "title": "Ko'p so'raladigan savollar",
+      "description": "Umumiy savollarga tezkor javoblarni quyida toping, ko'proq yordam kerakmi?\nQo'shimcha yordam uchun istalgan vaqtda biz bilan bog'laning",
+      "heading": "Sizga qanday yordam bera olamiz?",
+      "searchPlaceholder": "Qidirish",
+      "items": [
+        {
+          "question": "Zefaaf platformasida ro'yxatdan o'tish bepulmi?",
+          "answer": "Ha, asosiy ro'yxatdan o'tish hamma uchun bepul, premium xizmatlar uchun qo'shimcha ixtiyoriy paketlar mavjud."
+        },
+        {
+          "question": "Mos sherik topish qancha vaqt oladi?",
+          "answer": "Bu insondan insonga farq qiladi, ammo jamoamiz sizni imkon qadar tezroq mos nomzodlar bilan tanishtirish uchun doimiy ishlaydi."
+        },
+        {
+          "question": "Shaxsiy ma'lumotlarim maxfiy saqlanadimi?",
+          "answer": "Ha, biz sizning maxfiyligingizni jiddiy qabul qilamiz va ma'lumotlaringizni faqat siz tasdiqlagan nomzodlar bilan baham ko'ramiz."
+        },
+        {
+          "question": "Zefaafdan istalgan mamlakatdan foydalanishim mumkinmi?",
+          "answer": "Ha, Zefaaf butun dunyoda mavjud va turli mamlakatlardan nikoh izlayotgan musulmonlarni bog'laydi."
+        },
+        {
+          "question": "Qo'llab-quvvatlash jamoasi bilan qanday bog'lanishim mumkin?",
+          "answer": "Siz ushbu aloqa formasi orqali istalgan vaqtda biz bilan bog'lanishingiz mumkin, jamoamiz imkon qadar tezroq javob beradi."
+        }
+      ]
+    }
   }
 }
