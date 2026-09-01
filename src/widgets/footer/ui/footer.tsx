@@ -10,8 +10,12 @@ const DEVELOPER_NAME = "Tech-flow";
 // Column/link keys mirror the messages/*.json `footer.columns` shape —
 // content and hrefs aren't real pages yet (only the Figma footer itself was
 // specified), same placeholder approach as the header's NAV_ITEMS.
+// The "about" column's own `links.about` entry is dropped here — it's the
+// exact same string as the column's `title` ("About Zefaaf" / "عن زفاف" in
+// every locale), so rendering both stacked read as one label duplicated
+// rather than two distinct nav items.
 const FOOTER_COLUMNS = [
-  { key: "about", links: ["about", "contact", "testimonials", "successStories"] },
+  { key: "about", links: ["contact", "testimonials", "successStories"] },
   { key: "legal", links: ["privacy", "terms"] },
 ] as const;
 
@@ -32,19 +36,27 @@ export function Footer() {
     <footer className="mt-[50px] bg-[#181818] text-white">
       <div className="mx-auto max-w-[1800px] px-(--space-fluid-container) pt-(--space-fluid-xl) pb-(--space-fluid-md)">
         <div className="flex flex-wrap items-start gap-(--space-fluid-md)">
-          <Logo className="h-auto w-(--size-fluid-logo-footer-w) shrink-0" />
+          <Logo
+            variant="white"
+            className="h-auto w-[clamp(3.25rem,2.72rem+2.25vw,4.75rem)] shrink-0"
+          />
 
           {FOOTER_COLUMNS.map((column) => (
-            <div key={column.key} className="flex min-w-32 flex-1 flex-col gap-(--space-fluid-xs)">
-              <p className="font-alexandria text-(length:--text-fluid-nav) font-normal text-white">
+            <div
+              key={column.key}
+              className="flex w-[130px] flex-none flex-col gap-(--space-fluid-xs)"
+            >
+              <p className="font-alexandria text-(length:--text-fluid-xs) font-light text-white">
                 {t(`footer.columns.${column.key}.title`)}
               </p>
               <ul className="flex flex-col gap-(--space-fluid-3xs)">
                 {column.links.map((linkKey) => (
                   <li key={linkKey}>
                     <Link
-                      href="#"
-                      className="inline-block font-alexandria text-(length:--text-fluid-xs) text-white/80 hover:text-white"
+                      href={
+                        linkKey === "terms" ? "/terms" : linkKey === "privacy" ? "/privacy" : "#"
+                      }
+                      className="inline-block font-alexandria text-(length:--text-fluid-2xs) text-white/80 hover:text-white"
                     >
                       {t(`footer.columns.${column.key}.links.${linkKey}`)}
                     </Link>
@@ -58,7 +70,7 @@ export function Footer() {
         </div>
 
         <div className="mt-(--space-fluid-md) flex flex-wrap items-center justify-between gap-(--space-fluid-sm) border-t border-white/15 pt-(--space-fluid-md)">
-          <div className="flex items-center gap-(--space-fluid-sm) font-alexandria text-(length:--text-fluid-xs) text-white">
+          <div className="flex items-center gap-(--space-fluid-sm) font-alexandria text-(length:--text-fluid-2xs) font-light text-white">
             <span>{t("footer.bottom.developedBy", { brand: DEVELOPER_NAME })}</span>
             <span className="h-3 w-px bg-white/40" aria-hidden="true" />
             <span>{t("footer.bottom.copyright", { year })}</span>

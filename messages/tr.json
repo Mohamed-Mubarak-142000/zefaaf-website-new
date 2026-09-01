@@ -37,7 +37,13 @@
     "articles": "Makaleler",
     "upcomingEvents": "Yaklaşan Etkinlikler",
     "successStories": "Başarı Hikayeleri",
-    "marriageRequest": "Evlilik Talebi"
+    "marriageRequest": "Evlilik Talebi",
+    "servicesMenu": {
+      "zefaafEvents": "Zefaaf Etkinlikleri",
+      "marriageForm": "Evlilik Formunuz",
+      "bosniaTour": "Bosna Evlilik Turu",
+      "meetingInCountry": "Kendi Ülkenizde Buluşma"
+    }
   },
   "footer": {
     "columns": {
@@ -95,13 +101,14 @@
     }
   },
   "services": {
+    "title": "Hizmetlerimiz",
     "items": [
       {
-        "title": "İslami Evlilik Forumu",
+        "title": "Zefaaf Etkinlikleri",
         "description": "Evlilik arayan Müslümanları ve ailelerini bir araya getiren İslami evlilik forumu etkinlikleri"
       },
       {
-        "title": "Evlilik Başvurusu",
+        "title": "Evlilik Formunuz",
         "description": "Farklı ülkelerden ideal hayat arkadaşınızı bulun."
       },
       {
@@ -109,28 +116,27 @@
         "description": "Zefaaf danışmanlarının uygun hayat arkadaşları aradığı özel bir hizmet"
       },
       {
-        "title": "Bosna'da Ekibimizle Birlikte",
+        "title": "Bosna Evlilik Turu",
         "description": "Zefaaf ekibinin, ciddi evlilik için müşterileri ailelerle buluşmaya götürdüğü rehberli bir program"
       },
       {
-        "title": "Çevrimiçi Görüşme",
+        "title": "Kendi Ülkenizde Buluşma",
         "description": "Kişiliğinizi ve ihtiyaçlarınızı anlamak için bir aile danışmanıyla oturumla başlayın"
       }
     ]
   },
   "globalPresence": {
     "mapAlt": "Zefaaf'ın dünya genelindeki etkisini gösteren harita",
-    "badge": "Zefaaf'ta 3 milyon kullanıcı",
+    "badge": "Zefaaf'ta 12 bin kullanıcı",
     "title": "<brand>175</brand> ülkede faaliyet gösteriyoruz",
     "description": "Zefaaf, dünya genelindeki Müslümanları İslami değerlerini paylaşan güvenilir eşleştirme hizmetleriyle güvenli ve şeriata uygun bir şekilde buluşturur.",
     "countries": {
-      "france": "Fransa",
-      "germany": "Almanya",
-      "netherlands": "Hollanda",
-      "turkey": "Türkiye",
-      "russia": "Rusya",
-      "china": "Çin",
-      "indonesia": "Endonezya"
+      "france": "Kuzey Amerika",
+      "germany": "Güney Amerika",
+      "netherlands": "Avrupa",
+      "turkey": "Afrika",
+      "russia": "Asya",
+      "china": "Okyanusya"
     }
   },
   "upcomingEvents": {
@@ -150,34 +156,276 @@
         "title": "Bosna'da İslami Evlilik Forumu",
         "location": "Terezija, 71000",
         "price": "150 Euro"
+      },
+      {
+        "date": "14 Haziran",
+        "time": "14.00",
+        "title": "Almanya'da İslami Evlilik Forumu",
+        "location": "Alexanderplatz, Berlin",
+        "price": "150 Euro"
+      },
+      {
+        "date": "22 Ağustos",
+        "time": "13.00",
+        "title": "Belçika'da İslami Evlilik Forumu",
+        "location": "Brüksel Şehir Merkezi",
+        "price": "150 Euro"
+      },
+      {
+        "date": "17 Ekim",
+        "time": "15.00",
+        "title": "Türkiye'de İslami Evlilik Forumu",
+        "location": "Fatih, İstanbul",
+        "price": "150 Euro"
+      },
+      {
+        "date": "12 Aralık",
+        "time": "12.00",
+        "title": "Birleşik Krallık'ta İslami Evlilik Forumu",
+        "location": "Londra Şehir Merkezi",
+        "price": "150 Euro"
       }
     ],
-    "ticker": ["En iyisini yaşayın", "sağlıklı yolculuk", "hayat arkadaşı", "sağlıklı seçimler", "hayat arkadaşı"]
+    "ticker": [
+      "En iyisini yaşayın",
+      "sağlıklı yolculuk",
+      "hayat arkadaşı",
+      "sağlıklı seçimler",
+      "hayat arkadaşı"
+    ]
+  },
+  "blogDetail": {
+    "breadcrumb": {
+      "home": "Ana Sayfa",
+      "blogs": "Bloglar",
+      "current": "Blog Detayı"
+    },
+    "date": "02-12-2026",
+    "title": "Bosna-Hersek'te Turizm İçin Eksiksiz Rehberiniz: İlk Kez Seyahat Edenler İçin İpuçları.",
+    "intro": "Bosna-Hersek, nefes kesici doğal güzelliği ve zengin tarihiyle gezginlerin kalbini kazanan büyüleyici bir destinasyondur. Bu makalede Zefaaf, seyahatinizi planlamaktan ziyaret için en iyi zamanı seçmeye, yerel kültürü ve görgü kurallarını anlamaya kadar ilk kez seyahat edenler için en önemli ipuçlarını ve tavsiyeleri sunuyor. Bu kapsamlı rehber, unutulmaz anlarla dolu, rahat ve akılda kalıcı bir seyahat deneyiminin tadını çıkarmanıza yardımcı olacaktır.",
+    "banner": {
+      "imageAlt": "Kameraya gülümseyerek bakan Müslüman bir çift",
+      "title": "Trend olan makalelerden haberdar olun"
+    },
+    "leadParagraphs": [
+      "Bosna-Hersek, haritada kolay görünebilecek bir destinasyondur, ancak seyahat etmeden önce bazı detayları bilirseniz deneyim çok daha güzel hale gelir. Tarihi Saraybosna, ünlü köprüsüyle Mostar ve şehirleri ve köyleri çevreleyen doğa arasında, bu seyahatin yoğun bir programdan çok akıllı ve esnek bir planlamaya ihtiyaç duyduğunu göreceksiniz.",
+      "Bu nedenle, eğer bu ilk ziyaretinizse, valizinizi hazırlamadan önce ihtiyacınız olan Bosna turizm rehberi budur; seyahat tarihini ve konaklamayı seçmekten, ulaşıma ve güvenliğe, ister tek başınıza ister hayat arkadaşınızla seyahat edin, isterse Bosna'da aile turizmi planlıyor olun, deneyiminizi daha rahat hale getirecek pratik ipuçlarına kadar her şeyi kapsar."
+    ],
+    "sections": [
+      {
+        "heading": "Bosna-Hersek'i ziyaret etmek için en iyi zaman nedir?",
+        "paragraphs": [
+          "Bosna-Hersek'i ziyaret etmek için en iyi zaman, aradığınız seyahat türüne bağlıdır. İlkbahar, doğanın ve ılıman havanın tadını çıkarmak isteyenler için uygundur; yaz ise açık hava etkinlikleri ve şehirler arası geziler arayan seyahatseverleri cezbeder.",
+          "Sonbahar size sakin bir atmosfer ve farklı renklere bürünmüş manzaralar sunarken, kış ise soğuk havayı, yaylaları ve kış aktivitelerini sevenler için bir fırsat teşkil eder.",
+          "Sonuç olarak, herkese uyan tek bir cevap yoktur. Amacınız yüksek sıcaklık olmadan şehirleri gezmek ve doğayı keşfetmekse, ilkbahar ve sonbahar rahat seçeneklerdir. Uzun gün ışığından ve çok sayıda etkinlikten yararlanmak istiyorsanız, yaz sizin için uygun olabilir.",
+          "Mevsimi seçtikten sonra en önemli soru gelir: Nerede kalacaksınız ve nasıl seyahat edeceksiniz?"
+        ]
+      },
+      {
+        "heading": "Bosna-Hersek'te nerede kalınır?",
+        "paragraphs": [
+          "Konaklama seçimi yalnızca fiyata değil, seyahat planınıza bağlı olmalıdır. Örneğin Saraybosna'da merkezi bölgelere yakın kalmak, önemli mekanlara, restoranlara ve ulaşıma erişimi kolaylaştırır; diğer şehirlerde ise şehir merkezine veya ziyaret etmeyi planladığınız doğal alanlara yakın kalmayı tercih edebilirsiniz.",
+          "Rezervasyon yapmadan önce gezginlerin yorumlarını incelemek ve özellikle aileyle seyahat ediyorsanız ihtiyacınız olan olanakların bulunduğundan emin olmak da önemlidir.",
+          "Bosna'da aile turizmi söz konusu olduğunda, günlük uzun mesafeli hareketin aile üyeleri için bir yük haline gelmemesi için konuma, sessizliğe ve hizmetlere kolay erişime öncelik vermek en iyisidir.",
+          "Konaklama belirlendikten sonra, şehirler arası ulaşımı planlamak bir sonraki adım olur."
+        ]
+      },
+      {
+        "heading": "Bosna-Hersek'te ulaşım nasıldır?",
+        "paragraphs": [
+          "Bosna-Hersek'te birçok şekilde seyahat edebilirsiniz ve seçiminiz mesafeye, kişi sayısına ve seyahatin niteliğine bağlıdır.",
+          "Şehir içinde yerel ulaşım araçları veya taksiler kullanılabilirken, birden fazla şehir arasında hareket ederken otobüsler pratik bir seçenek haline gelir. Durma zamanlarınızı kendiniz belirleme ve şehir merkezlerinden uzak yerleri ziyaret etme özgürlüğünü tercih ediyorsanız, araç kiralamak daha uygun olabilir.",
+          "Ancak yeni bir ülkede araç kullanmak biraz dikkat gerektirir; Bosna'nın dağlık yapısı virajlı yollar ve yükseklik farkları anlamına gelir, bu nedenle karayolu seyahatleri bir şehirden diğerine hızlı bir geçiş olarak görülmemelidir.",
+          "Bu nedenle Bosna turizm rehberinden önemli bir ipucu: Bir güne çok sayıda şehir sığdırmayın. Bazen gidilecek yer sayısını azaltmak, ülkeyi gerçekten görmenin en iyi yoludur."
+        ]
+      },
+      {
+        "heading": "Bosna-Hersek gezginler için güvenli mi?",
+        "paragraphs": [
+          "Genel olarak Bosna-Hersek, turizm için uygun bir destinasyon olarak kabul edilir, ancak bu, her gezginin ihtiyaç duyduğu olağan önlemlerden vazgeçmek anlamına gelmez.",
+          "Paranızı ve belgelerinizi güvenli bir yerde saklayın, kişisel eşyalarınızı gözetimsiz bırakmaktan kaçının ve kalabalık yerlerde dikkatli olun. Herhangi bir durum için pasaport, rezervasyonlar ve önemli belgelerin elektronik kopyalarını saklamanız da tercih edilir.",
+          "Belirtilmesi gereken özel bir nokta var: Yerleşik veya bilinen bölgelerin dışına geziler yaparken belirlenmiş yollardan ve patikalardan ayrılmayın ve yerel yetkililerin talimatlarına uyun, çünkü Bosna'daki bazı bölgeler savaş kalıntıları ve mayınlar nedeniyle hâlâ dikkat gerektirmektedir.",
+          "Bu önlemler sizi seyahat konusunda endişelendirmemelidir; aksine, bunları önceden bilmek, gereksiz sürprizler olmadan keyif almanız için size daha fazla alan tanır."
+        ]
+      },
+      {
+        "heading": "Bosna'ya ilk kez seyahat edenler için en önemli ipuçları nelerdir?",
+        "paragraphs": [
+          "Bu ilk ziyaretinizse, Bosna'ya seyahat edenler için size birçok karışıklıktan kurtaracak bir dizi ipucu var:"
+        ],
+        "list": [
+          "Seyahati varmadan önce planlayın, ancak değişiklik için alan bırakın.",
+          "Kısa bir seyahatte her şeyi ziyaret etmeye çalışmayın.",
+          "Pasaportunuzun ve rezervasyonlarınızın bir kopyasını telefonunuzda bulundurun.",
+          "Uzak yerlere gitmeden önce kabul edilen ödeme yöntemlerini kontrol edin.",
+          "Elektronik ödeme yöntemlerinin bulunmadığı durumlar için yanınızda biraz yerel nakit bulundurun.",
+          "Özellikle doğal alanları keşfetmeyi planlıyorsanız rahat ayakkabılar giyin.",
+          "Günlük gezilerden önce hava durumunu kontrol edin.",
+          "Yalnızca internete güvenmeyin; önemli bilgileri çevrimdışı olarak da erişilebilir şekilde saklamak faydalıdır.",
+          "Araç kiralarsanız, sürüş kurallarını, sigortayı ve kiralama şirketinin koşullarını iyi anlayın.",
+          "Seyahat programınızı, zamanınızın çoğunu araç içinde geçirecek kadar yoğun yapmayın.",
+          "En önemlisi: Seyahati bir yarış değil, bir deneyim olarak görün. Özellikle Bosna, sadece fotoğraf çekip gitmek yerine, biraz durup deneyimlemeye değer ülkelerden biridir."
+        ]
+      }
+    ]
+  },
+  "blog": {
+    "hero": {
+      "title": "Trend olan makalelerden haberdar olun",
+      "subtitle": "Hayatınızı zenginleştirmek, ilişkilerinizi güçlendirmek ve uzman oturumları aracılığıyla değerli rehberlik kazanmak için en son makaleleri, içgörüleri ve ipuçlarını keşfedin",
+      "collage": [
+        {
+          "title": "Anlamlı Bir Evliliğe Rehberiniz",
+          "excerpt": "Güçlü bir ilişki kurmanıza ve evlilik yolculuğunuz boyunca kendinden emin kararlar almanıza yardımcı olacak faydalı makaleleri ve uzman tavsiyelerini keşfedin."
+        },
+        {
+          "title": "Anlamlı Bir Evliliğe Rehberiniz",
+          "excerpt": "Güçlü bir ilişki kurmanıza ve evlilik yolculuğunuz boyunca kendinden emin kararlar almanıza yardımcı olacak faydalı makaleleri ve uzman tavsiyelerini keşfedin."
+        },
+        {
+          "title": "Birlikte Mutlu Bir Hayat Kurmak",
+          "excerpt": "Sağlıklı bir ilişki kurmak ve mutlu bir hayat yaratmak için değerli içgörüler, pratik ipuçları ve uzman rehberliği edinin"
+        },
+        {
+          "title": "Evlilik Yolculuğunuz İçin İçgörüler",
+          "excerpt": "İlişkileri daha iyi anlamanıza ve birlikte daha güçlü, daha mutlu bir gelecek inşa etmenize yardımcı olacak ilham verici makaleleri, ilişki ipuçlarını ve uzman oturumlarını keşfedin."
+        },
+        {
+          "title": "Evlilik Yolculuğunuz İçin İçgörüler",
+          "excerpt": "İlişkileri daha iyi anlamanıza ve birlikte daha güçlü, daha mutlu bir gelecek inşa etmenize yardımcı olacak ilham verici makaleleri, ilişki ipuçlarını ve uzman oturumlarını keşfedin."
+        }
+      ]
+    },
+    "featured": {
+      "date": "02-12-2026",
+      "title": "Trend olan makalelerden haberdar olun",
+      "description": "Zefaaf, Müslümanların İslami değerlerini paylaşan bir hayat arkadaşını güvenli ve şeriata uygun bir şekilde bulmalarına yardımcı olmak için tasarlanmış güvenilir bir platformdur.",
+      "cta": "Devamını oku"
+    },
+    "list": {
+      "title": "Zefaaf Blog",
+      "description": "Güvenilir platformlar aracılığıyla helal eşleştirme ve hayat arkadaşı seçimi hakkında bilmeniz gereken her şey.",
+      "searchPlaceholder": "Ara",
+      "viewMore": "Daha Fazla Göster",
+      "topics": {
+        "all": "Tüm Konular",
+        "qualities": "İyi Bir Eşin Nitelikleri",
+        "relationships": "Başarılı Evlilik İlişkileri",
+        "health": "Evlilik Sağlığı",
+        "choosing": "Hayat Arkadaşı Seçimi"
+      },
+      "articles": [
+        {
+          "title": "Araplar İçin Bosnalı Bir Kadınla Evlilik: Eksiksiz Rehber",
+          "excerpt": "Bosnalı bir kadınla evlenmek, paylaşılan kültürel değerler ve kolaylık nedeniyle Arap erkekler arasında giderek daha popüler bir tercih haline geldi..",
+          "image": "/images/blog/grid-1.png"
+        },
+        {
+          "title": "Bosna-Hersek'te Evlilik Gelenekleri ve Görenekleri: Unutulmaz Kutlamalar",
+          "excerpt": "Bosna-Hersek'teki düğün gelenekleri ve görenekleri, Avrupa mirası ile otantik Doğu etkilerinin büyüleyici bir karışımını yansıtır. Bu zefaaf makalesi, Bosna kutlamalarını bu kadar özel kılan geleneksel nişan ritüellerini, düğün müziğini, festival danslarını ve ikonik yerel mutfağı ele alıyor. Bu rehber, Bosna'daki düğünleri gerçekten unutulmaz kılan zengin kültürel mirasa derinlemesine bir bakış sunuyor.",
+          "image": "/images/blog/grid-2-wide.png",
+          "wide": true
+        },
+        {
+          "title": "Araplar İçin Bosnalı Bir Kadınla Evlilik: Eksiksiz Rehber",
+          "excerpt": "Bosnalı bir kadınla evlenmek, paylaşılan kültürel değerler ve kolaylık nedeniyle Arap erkekler arasında giderek daha popüler bir tercih haline geldi..",
+          "image": "/images/blog/grid-3.png"
+        },
+        {
+          "title": "Araplar İçin Bosnalı Bir Kadınla Evlilik: Eksiksiz Rehber",
+          "excerpt": "Bosnalı bir kadınla evlenmek, paylaşılan kültürel değerler ve kolaylık nedeniyle Arap erkekler arasında giderek daha popüler bir tercih haline geldi..",
+          "image": "/images/blog/grid-4.png"
+        },
+        {
+          "title": "Araplar İçin Bosnalı Bir Kadınla Evlilik: Eksiksiz Rehber",
+          "excerpt": "Bosnalı bir kadınla evlenmek, paylaşılan kültürel değerler ve kolaylık nedeniyle Arap erkekler arasında giderek daha popüler bir tercih haline geldi..",
+          "image": "/images/blog/grid-5.png"
+        }
+      ]
+    }
+  },
+  "downloadApp": {
+    "title": "Özel Ücretsiz Deneme – Zefaaf\nuygulamasını hemen indirin ve ilk 3\ngününüzde ücretsiz mesajlaşmanın keyfini çıkarın!",
+    "features": [
+      "Doğru eşi bulmak için güvenli ve emniyetli bir ortam.",
+      "İslami ilkelere uygun, kesintisiz bir deneyim."
+    ],
+    "description": "Uygulamayı App Store veya Google Play'den indirin."
   },
   "whyChoose": {
     "title": "Neden Zefaaf'ı Seçmelisiniz",
-    "description": "Zefaaf'ta evliliğin sadece uyumdan ibaret olmadığına inanıyoruz — bu, İslami değerler üzerine kurulu istikrarlı bir hayat inşa etmekle ilgilidir.",
+    "description": "Zefaaf'ta hayat partneri bulmak artık yalnızca uygulamalar ve web siteleriyle sınırlı değil. Sizin adınıza kişisel bir arama yapmaktan yüz yüze bir görüşme ayarlamaya kadar gerçek çözümler sunuyoruz.",
     "features": [
       {
-        "title": "Güvenli, şeriata uygun görüntülü aramalar",
-        "description": "Dini gözetim altında güvenli bir görüntülü görüşme özelliği, İslami ilkelere bağlı kalarak potansiyel hayat arkadaşınızla tanışmanızı sağlar."
+        "title": "Zefaaf Uygulaması | Kendiniz arayın ve bağlantı kurun",
+        "description": "Profillere göz atın, arama ve uyumluluk araçlarını kullanın ve ciddi evlilik arayan uygun kişilerle bağlantı kurun."
       },
       {
-        "title": "Doğrudan İslami ve aile danışmanlığı",
-        "description": "Kayıt olduğunuzda din uzmanlarımızdan ve aile danışmanlarımızdan ücretsiz danışmanlık alın."
+        "title": "VIP Hizmet | Sizin için biz arıyoruz",
+        "description": "Uzman bir ekip sizin için uygun eşleşmeleri arar, onları size önerir ve üç ay boyunca kişisel olarak takip eder."
       },
       {
-        "title": "Sesiniz, kişiliğiniz – sesiniz sizin adınıza konuşsun!",
-        "description": "Profilinizde bir sesli mesaj: kendinizi tanıtın, ilgi alanlarınızı ve değerlerinizi paylaşın ve evlilik hayatına dair vizyonunuzdan bahsedin."
+        "title": "Evlilik Etkinlikleri | Gerçek, düzenli tanışmalar",
+        "description": "Hollanda ve Bosna'da düzenlenen, organize bir ortamda tanışmak için gerçek fırsatlar yaratan ciddi evlilik etkinlikleri."
       },
       {
-        "title": "Aile buluşması – ilişkinize helal yoldan başlayın",
-        "description": "Her iki aileyi de ilk kez uygun, şeriata uygun bir şekilde bir araya getiren özel bir görüntülü görüşme odası."
+        "title": "Bosna'ya Eşlik | Evlilik için bir yolculuk",
+        "description": "Sizinle birlikte seyahat eder; koordinasyonu, takibi ve Bosnalı kadınlar ve aileleriyle doğrudan görüşmeleri biz üstleniriz."
       },
       {
-        "title": "Ön onay sistemi – verimsiz sohbetlerle vakit kaybetmeyin!",
-        "description": "Bir sohbete başlamadan önce herhangi bir profille uyumluluk yüzdenizi görün."
+        "title": "Kendi ülkenizde yüz yüze buluşma | Nerede olursanız olun",
+        "description": "Kişiliğinizi ve ihtiyaçlarınızı anlamak için bir aile danışmanıyla özel bir Zoom görüşmesiyle başlarız, ardından uygun bir eş arar ve karşılıklı kabul olduğunda yüz yüze bir buluşma ayarlarız."
       }
     ]
+  },
+  "contactUs": {
+    "mapAlt": "Ofis konumumuzu gösteren harita",
+    "hero": {
+      "eyebrow": "Bize Ulaşın",
+      "title": "Her adımda size yardımcı olmak için buradayız",
+      "description": "Herhangi bir sorunuz varsa veya desteğe ihtiyaç duyuyorsanız, bizimle iletişime geçmekten çekinmeyin. Ekibimiz, Zefaaf platformunda en iyi deneyimi sağlamak için her zaman hizmetinizdedir."
+    },
+    "form": {
+      "card": {
+        "title": "Bize mesajınızı gönderin",
+        "subtitle": "Sizi dinlemek ve size yardımcı olmak için buradayız",
+        "followUs": "Bizi Takip Edin"
+      },
+      "heading": "Bugün size nasıl yardımcı olabiliriz?",
+      "fields": {
+        "fullName": "Ad Soyad",
+        "email": "E-posta adresi",
+        "message": "Mesaj"
+      },
+      "send": "Gönder"
+    },
+    "faq": {
+      "title": "Sıkça sorulan sorular",
+      "description": "Aşağıda sık sorulan sorulara hızlı yanıtlar bulun, daha fazla yardıma mı ihtiyacınız var?\nDaha fazla destek için bizimle her zaman iletişime geçebilirsiniz",
+      "heading": "Size nasıl yardımcı olabiliriz?",
+      "searchPlaceholder": "Ara",
+      "items": [
+        {
+          "question": "Zefaaf platformuna kayıt olmak ücretsiz mi?",
+          "answer": "Evet, temel kayıt herkes için ücretsizdir; premium hizmetler için isteğe bağlı ek paketler mevcuttur."
+        },
+        {
+          "question": "Uygun bir eş bulmak ne kadar sürer?",
+          "answer": "Kişiden kişiye değişir, ancak ekibimiz sizi mümkün olan en kısa sürede uygun eşlerle tanıştırmak için sürekli çalışır."
+        },
+        {
+          "question": "Kişisel bilgilerim gizli tutuluyor mu?",
+          "answer": "Evet, gizliliğinizi ciddiye alıyoruz ve bilgilerinizi yalnızca onayladığınız eşleşmelerle paylaşıyoruz."
+        },
+        {
+          "question": "Zefaaf'ı herhangi bir ülkeden kullanabilir miyim?",
+          "answer": "Evet, Zefaaf dünya genelinde kullanılabilir ve evlilik arayan farklı ülkelerden Müslümanları bir araya getirir."
+        },
+        {
+          "question": "Destek ekibiyle nasıl iletişime geçebilirim?",
+          "answer": "Bize bu iletişim formu aracılığıyla her zaman ulaşabilirsiniz, ekibimiz en kısa sürede yanıt verecektir."
+        }
+      ]
+    }
   }
 }

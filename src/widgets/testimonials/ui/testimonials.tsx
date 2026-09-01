@@ -7,7 +7,7 @@ const testimonials = [
     name: "Ahmed",
     age: 29,
     initial: "A",
-    avatarClassName: "bg-light-blue",
+    avatarClassName: "bg-chart-2",
   },
   {
     quote:
@@ -15,7 +15,7 @@ const testimonials = [
     name: "Sara",
     age: 29,
     initial: "S",
-    avatarClassName: "bg-[#DCD6FA]",
+    avatarClassName: "bg-chart-3/25",
   },
   {
     quote:
@@ -23,7 +23,7 @@ const testimonials = [
     name: "Ahmed",
     age: 29,
     initial: "A",
-    avatarClassName: "bg-orange",
+    avatarClassName: "bg-chart-4",
   },
 ] as const;
 
@@ -50,53 +50,36 @@ export function Testimonials() {
       aria-labelledby="testimonials-title"
       className="section-gap mx-auto w-full max-w-[1600px] px-(--space-fluid-container)"
     >
-      <div className="flex items-end justify-between gap-6">
-        <h2
-          id="testimonials-title"
-          className="font-alexandria text-[clamp(26px,2.5vw,36px)] leading-[1.4] font-semibold text-black-primary"
-        >
-          What Our Members Are Saying
-        </h2>
-
-        <a
-          href="#testimonials-list"
-          className="mb-[7px] flex shrink-0 items-center gap-[10px] font-alexandria text-[12px] leading-[1.5] text-brand transition-opacity hover:opacity-70 focus-visible:rounded-sm focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand"
-        >
-          <span>Explore more</span>
-          <Image
-            src="/images/arrow-right-01.svg"
-            alt=""
-            width={14}
-            height={14}
-            unoptimized
-            className="rtl:rotate-180"
-          />
-        </a>
-      </div>
+      <h2
+        id="testimonials-title"
+        className="font-alexandria text-[clamp(26px,2.5vw,36px)] leading-[1.4] font-semibold text-foreground"
+      >
+        What Our Members Are Saying
+      </h2>
 
       <div id="testimonials-list" className="mt-[20px] grid gap-[20px] md:grid-cols-3">
         {testimonials.map((testimonial, index) => (
           <article
             key={`${testimonial.name}-${index}`}
-            className="flex min-h-[154px] flex-col rounded-[8px] border border-stroke-1 bg-white p-[14px]"
+            className="flex min-h-[154px] flex-col rounded-[8px] border border-border bg-card p-[14px] text-card-foreground"
           >
             <Rating />
-            <p className="mt-[7px] font-alexandria text-[10.5px] leading-[1.4] text-black-primary">
+            <p className="mt-[7px] font-alexandria text-[10.5px] leading-[1.4] text-card-foreground">
               {testimonial.quote}
             </p>
 
             <div className="mt-auto flex items-center gap-[10px] pt-[14px]">
               <div
                 aria-hidden="true"
-                className={`flex size-[38px] shrink-0 items-center justify-center rounded-full font-alexandria text-[12px] leading-none text-black-primary ${testimonial.avatarClassName}`}
+                className={`flex size-[38px] shrink-0 items-center justify-center rounded-full font-alexandria text-[12px] leading-none text-card-foreground ${testimonial.avatarClassName}`}
               >
                 {testimonial.initial}
               </div>
               <div>
-                <h3 className="font-alexandria text-[16px] leading-[1.4] font-extrabold text-black-primary">
+                <h3 className="font-alexandria text-[16px] leading-[1.4] font-extrabold text-card-foreground">
                   {testimonial.name}
                 </h3>
-                <p className="font-alexandria text-[12px] leading-[1.6] text-black-primary">
+                <p className="font-alexandria text-[14px] leading-[1.6] text-muted-foreground">
                   {testimonial.age} age
                 </p>
               </div>

@@ -51,11 +51,11 @@ export function LanguageSwitcher() {
                 CSS (it's an <img>, not inline markup) — dark:invert flips it
                 to near-white so it stays visible against a dark header. */}
             <img
-              src={flagUrl(locale)}
-              alt={LOCALE_FLAGS[locale]}
+              src="/icons/globe.svg"
+              alt=""
               width={24}
-              height={18}
-              className="absolute inset-0 size-full rounded-[2px] object-cover"
+              height={24}
+              className="absolute inset-0 size-full dark:invert"
             />
           </span>
           <span className="font-almarai text-(length:--text-fluid-nav) font-bold whitespace-nowrap text-foreground">
@@ -71,7 +71,7 @@ export function LanguageSwitcher() {
       <DropdownMenuContent
         align="end"
         collisionPadding={12}
-        className="max-h-72 w-[180px] overflow-y-auto rounded-[8px]"
+        className="max-h-72 w-[180px] overflow-y-auto rounded-[8px] ring-0"
       >
         {locales.map((code) => (
           <DropdownMenuItem

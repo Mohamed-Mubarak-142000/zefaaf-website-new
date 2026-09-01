@@ -15,9 +15,18 @@
     "ratingValue": "4.8"
   },
   "stats": {
-    "happyClients": { "value": "34,484k", "label": "Klientë të kënaqur" },
-    "successStories": { "value": "2768", "label": "Histori suksesi" },
-    "registeredMembers": { "value": "23416", "label": "Anëtarë të regjistruar" }
+    "happyClients": {
+      "value": "34,484k",
+      "label": "Klientë të kënaqur"
+    },
+    "successStories": {
+      "value": "2768",
+      "label": "Histori suksesi"
+    },
+    "registeredMembers": {
+      "value": "23416",
+      "label": "Anëtarë të regjistruar"
+    }
   },
   "nav": {
     "home": "Kryefaqja",
@@ -28,7 +37,13 @@
     "articles": "Artikuj",
     "upcomingEvents": "Ngjarjet e Ardhshme",
     "successStories": "Histori Suksesi",
-    "marriageRequest": "Kërkesë për Martesë"
+    "marriageRequest": "Kërkesë për Martesë",
+    "servicesMenu": {
+      "zefaafEvents": "Ngjarjet e Zefaaf",
+      "marriageForm": "Formulari juaj i Martesës",
+      "bosniaTour": "Udhëtimi i Martesës në Bosnjë",
+      "meetingInCountry": "Takim në Vendin Tuaj"
+    }
   },
   "footer": {
     "columns": {
@@ -86,41 +101,331 @@
     }
   },
   "services": {
+    "title": "Shërbimet tona",
     "items": [
-      { "title": "Forumi i Martesës Islame", "description": "Ngjarje të forumit të martesës islame që bashkojnë myslimanët në kërkim të martesës dhe familjet e tyre" },
-      { "title": "Aplikim për Martesë", "description": "Gjeni partnerin ideal të jetës nga vende të ndryshme." },
-      { "title": "Kërkim Personal VIP", "description": "Një shërbim i dedikuar ku konsulentët e Zefaaf kërkojnë partnerë jete të përshtatshëm" },
-      { "title": "Shoqërimi i Ekipit Tonë në Bosnjë", "description": "Një program i udhëhequr ku ekipi i Zefaaf shoqëron klientët për t'u takuar me familjet për martesë serioze" },
-      { "title": "Takim Online", "description": "Filloni me një seancë me një konsulent familjar për të kuptuar personalitetin dhe nevojat tuaja" }
+      {
+        "title": "Ngjarjet e Zefaaf",
+        "description": "Ngjarje të forumit të martesës islame që bashkojnë myslimanët në kërkim të martesës dhe familjet e tyre"
+      },
+      {
+        "title": "Formulari juaj i Martesës",
+        "description": "Gjeni partnerin ideal të jetës nga vende të ndryshme."
+      },
+      {
+        "title": "Kërkim Personal VIP",
+        "description": "Një shërbim i dedikuar ku konsulentët e Zefaaf kërkojnë partnerë jete të përshtatshëm"
+      },
+      {
+        "title": "Udhëtimi i Martesës në Bosnjë",
+        "description": "Një program i udhëhequr ku ekipi i Zefaaf shoqëron klientët për t'u takuar me familjet për martesë serioze"
+      },
+      {
+        "title": "Takim në Vendin Tuaj",
+        "description": "Filloni me një seancë me një konsulent familjar për të kuptuar personalitetin dhe nevojat tuaja"
+      }
     ]
   },
   "globalPresence": {
     "mapAlt": "Hartë që tregon praninë e Zefaaf në mbarë botën",
-    "badge": "3 milionë përdorues në Zefaaf",
+    "badge": "12 mijë përdorues në Zefaaf",
     "title": "Operojmë në <brand>175</brand> vende",
     "description": "Zefaaf lidh myslimanët në mbarë botën me shërbime të besueshme ndeshjeje që ndajnë vlerat e tyre islame, në një mënyrë të sigurt dhe në përputhje me Sheriatin.",
     "countries": {
-      "france": "Francë", "germany": "Gjermani", "netherlands": "Holandë", "turkey": "Turqi", "russia": "Rusi", "china": "Kinë", "indonesia": "Indonezi"
+      "france": "Amerika e Veriut",
+      "germany": "Amerika e Jugut",
+      "netherlands": "Evropa",
+      "turkey": "Afrika",
+      "russia": "Azia",
+      "china": "Oqeania"
     }
   },
   "upcomingEvents": {
     "description": "Zbuloni ngjarjet tona të ardhshme dhe bashkohuni me ne për përvoja domethënëse, biseda frymëzuese dhe momente të paharrueshme. Na ndiqni për data, detaje dhe regjistrim.",
     "bookCta": "Rezervoni biletën tuaj",
     "events": [
-      { "date": "10 Janar", "time": "12:00", "title": "Forumi i Martesës Islame në Holandë", "location": "Churchillplein 10, 2517 JW", "price": "150 Euro" },
-      { "date": "25 Prill", "time": "12:00", "title": "Forumi i Martesës Islame në Bosnjë", "location": "Terezija, 71000", "price": "150 Euro" }
+      {
+        "date": "10 Janar",
+        "time": "12:00",
+        "title": "Forumi i Martesës Islame në Holandë",
+        "location": "Churchillplein 10, 2517 JW",
+        "price": "150 Euro"
+      },
+      {
+        "date": "25 Prill",
+        "time": "12:00",
+        "title": "Forumi i Martesës Islame në Bosnjë",
+        "location": "Terezija, 71000",
+        "price": "150 Euro"
+      },
+      {
+        "date": "14 Qershor",
+        "time": "14:00",
+        "title": "Forumi i Martesës Islame në Gjermani",
+        "location": "Alexanderplatz, Berlin",
+        "price": "150 Euro"
+      },
+      {
+        "date": "22 Gusht",
+        "time": "13:00",
+        "title": "Forumi i Martesës Islame në Belgjikë",
+        "location": "Qendra e Brukselit",
+        "price": "150 Euro"
+      },
+      {
+        "date": "17 Tetor",
+        "time": "15:00",
+        "title": "Forumi i Martesës Islame në Turqi",
+        "location": "Fatih, Stamboll",
+        "price": "150 Euro"
+      },
+      {
+        "date": "12 Dhjetor",
+        "time": "12:00",
+        "title": "Forumi i Martesës Islame në Mbretërinë e Bashkuar",
+        "location": "Qendra e Londrës",
+        "price": "150 Euro"
+      }
     ],
-    "ticker": ["Jetoni më të mirën", "udhëtim të shëndetshëm", "partnerin e jetës", "zgjedhje të shëndetshme", "partnerin e jetës"]
+    "ticker": [
+      "Jetoni më të mirën",
+      "udhëtim të shëndetshëm",
+      "partnerin e jetës",
+      "zgjedhje të shëndetshme",
+      "partnerin e jetës"
+    ]
+  },
+  "blogDetail": {
+    "breadcrumb": {
+      "home": "Kryefaqja",
+      "blogs": "Blogje",
+      "current": "Detajet e Blogut"
+    },
+    "date": "02-12-2026",
+    "title": "Udhëzuesi Juaj i Plotë për Turizmin në Bosnjë dhe Hercegovinë: Këshilla për Udhëtarët për Herë të Parë.",
+    "intro": "Bosnja dhe Hercegovina është një destinacion magjepsës që fiton zemrat e udhëtarëve me bukurinë e saj natyrore mahnitëse dhe historinë e pasur. Në këtë artikull, Zefaaf nxjerr në pah këshillat dhe udhëzimet më të rëndësishme për udhëtarët për herë të parë, nga planifikimi i udhëtimit tuaj dhe zgjedhja e kohës më të mirë për të vizituar, deri te kuptimi i kulturës dhe etikës lokale. Ky udhëzues i plotë do t'ju ndihmojë të shijoni një përvojë udhëtimi të rehatshme dhe të paharrueshme, plot me momente të paharrueshme.",
+    "banner": {
+      "imageAlt": "Një çift mysliman buzëqeshës që përshëndet kamerën",
+      "title": "Qëndroni të përditësuar me artikujt në trend"
+    },
+    "leadParagraphs": [
+      "Bosnja dhe Hercegovina është një destinacion që mund të duket i thjeshtë në hartë, por përvoja bëhet shumë më e mrekullueshme kur njihni disa detaje përpara se të udhëtoni. Midis Sarajevës historike, Mostarit me urën e tij të famshme, dhe natyrës që rrethon qytetet dhe fshatrat, do të zbuloni se udhëtimi nuk ka nevojë aq shumë për një orar të ngjeshur, sesa për një planifikim të mençur dhe fleksibël.",
+      "Prandaj, nëse kjo është vizita juaj e parë, ky është udhëzuesi i turizmit në Bosnjë që ju nevojitet përpara se të bëni valixhet; nga zgjedhja e datës së udhëtimit dhe akomodimit, te transporti dhe siguria, deri te këshillat praktike që e bëjnë përvojën tuaj më të rehatshme, pavarësisht nëse udhëtoni vetëm apo me partnerin tuaj të jetës, ose po planifikoni turizëm familjar në Bosnjë."
+    ],
+    "sections": [
+      {
+        "heading": "Cila është koha më e mirë për të vizituar Bosnjën dhe Hercegovinën?",
+        "paragraphs": [
+          "Koha më e mirë për të vizituar Bosnjën dhe Hercegovinën varet nga lloji i udhëtimit që kërkoni. Pranvera është e përshtatshme për këdo që dëshiron të shijojë natyrën dhe motin e butë, ndërsa vera tërheq udhëtarët që kërkojnë aktivitete në natyrë dhe udhëtime mes qyteteve.",
+          "Vjeshta ju jep një atmosferë të qetë dhe peizazhe me ngjyra të ndryshme, ndërsa dimri përfaqëson një mundësi për dashamirët e motit të ftohtë, zonave malore dhe aktiviteteve dimërore.",
+          "Rrjedhimisht, nuk ka një përgjigje të vetme që i përshtatet të gjithëve. Nëse qëllimi juaj është të vizitoni qytetet dhe të eksploroni natyrën pa nxehtësi të lartë, pranvera dhe vjeshta janë zgjedhje të rehatshme. Sa i përket dëshirës për të shfrytëzuar orët e gjata të dritës dhe aktivitetet e shumta, vera mund t'ju përshtatet.",
+          "Dhe pasi të zgjidhni stinën, vjen pyetja më e rëndësishme: Ku do të qëndroni dhe si do të lëvizni?"
+        ]
+      },
+      {
+        "heading": "Ku të qëndroni në Bosnjë dhe Hercegovinë?",
+        "paragraphs": [
+          "Zgjedhja e akomodimit duhet të lidhet me programin e udhëtimit tuaj, dhe jo vetëm me çmimin. Në Sarajevë, për shembull, qëndrimi pranë zonave qendrore lehtëson qasjen në pikat e interesit, restorantet dhe transportin, ndërsa në qytete të tjera mund të preferoni të qëndroni pranë qendrës së qytetit ose zonave natyrore që planifikoni të vizitoni.",
+          "Është gjithashtu e rëndësishme të shqyrtoni vlerësimet e udhëtarëve përpara se të rezervoni, dhe të siguroheni për praninë e komoditeteve që ju nevojiten, sidomos nëse udhëtoni me familjen.",
+          "Sa i përket turizmit familjar në Bosnjë, është më mirë t'i jepni përparësi vendndodhjes, qetësisë dhe lehtësisë së qasjes në shërbime, në mënyrë që lëvizja e përditshme në distanca të gjata të mos kthehet në barrë për anëtarët e familjes.",
+          "Pasi të përcaktohet akomodimi, planifikimi i transportit ndërmjet qyteteve bëhet hapi tjetër."
+        ]
+      },
+      {
+        "heading": "Si është transporti në Bosnjë dhe Hercegovinë?",
+        "paragraphs": [
+          "Mund të lëvizni në Bosnjë dhe Hercegovinë në disa mënyra, dhe zgjedhja varet nga distanca, numri i personave dhe natyra e udhëtimit.",
+          "Brenda qyteteve, mund të përdoret transporti lokal ose taksitë, ndërsa autobusët bëhen një opsion praktik kur lëvizni mes disa qyteteve. Nëse preferoni lirinë për të përcaktuar kohët tuaja të ndalimit dhe për të vizituar vende larg qendrave të qyteteve, marrja me qira e një makine mund të jetë më e përshtatshme.",
+          "Megjithatë, ngasja në një vend të ri kërkon pak vëmendje; natyra malore e Bosnjës nënkupton rrugë të dredha dhe lartësi, prandaj udhëtimet rrugore nuk duhet të trajtohen thjesht si një kalim i shpejtë nga një qytet në tjetrin.",
+          "Prandaj vjen një këshillë e rëndësishme nga udhëzuesi i turizmit në Bosnjë: Mos vendosni një numër të madh qytetesh në një ditë të vetme. Ndonjëherë reduktimi i numrit të destinacioneve është mënyra më e mirë për ta parë vërtet vendin."
+        ]
+      },
+      {
+        "heading": "A është Bosnja dhe Hercegovina e sigurt për udhëtarët?",
+        "paragraphs": [
+          "Në përgjithësi, Bosnja dhe Hercegovina konsiderohet një destinacion i përshtatshëm për turizëm, por kjo nuk do të thotë braktisje e masave paraprake të zakonshme që i nevojiten çdo udhëtari.",
+          "Mbani paratë dhe dokumentet tuaja në një vend të sigurt, shmangni lënien e sendeve tuaja personale pa mbikëqyrje, dhe kini kujdes në vende të mbipopulluara. Preferohet gjithashtu të mbani kopje elektronike të pasaportës, rezervimeve dhe dokumenteve të rëndësishme në rast të ndonjë rrethane.",
+          "Ka një pikë të veçantë që vlen të përmendet: Kur bëni udhëtime jashtë zonave të populluara ose të njohura, mos u largoni nga rrugët dhe shtigjet e caktuara, dhe ndiqni udhëzimet e autoriteteve lokale, sepse disa zona në Bosnjë ende kërkojnë kujdes për shkak të mbetjeve të luftës dhe minave tokësore.",
+          "Këto masa paraprake nuk duhet t'ju bëjnë të shqetësuar për udhëtimin; përkundrazi, njohja e tyre paraprakisht ju jep më shumë hapësirë për të shijuar pa surpriza të panevojshme."
+        ]
+      },
+      {
+        "heading": "Cilat janë këshillat më të rëndësishme për udhëtarët për herë të parë në Bosnjë?",
+        "paragraphs": [
+          "Nëse kjo është vizita juaj e parë, ka një grup këshillash për udhëtarët në Bosnjë që mund t'ju kursejnë shumë hutim:"
+        ],
+        "list": [
+          "Planifikoni udhëtimin përpara mbërritjes, por lini vend për ndryshime.",
+          "Mos u përpiqni të vizitoni gjithçka në një udhëtim të shkurtër.",
+          "Mbani një kopje të pasaportës dhe rezervimeve tuaja në telefon.",
+          "Kontrolloni metodat e pagesës të pranuara përpara se të shkoni në vende të largëta.",
+          "Mbani me vete pak para të gatshme lokale për rastet kur metodat e pagesës elektronike nuk janë të disponueshme.",
+          "Vishni këpucë të rehatshme, sidomos nëse planifikoni të eksploroni zona natyrore.",
+          "Kontrolloni gjendjen e motit përpara udhëtimeve të përditshme.",
+          "Mos u mbështetni vetëm te interneti; është e dobishme të mbani informacionin e rëndësishëm në një mënyrë të aksesueshme edhe pa lidhje interneti.",
+          "Nëse merrni me qira një makinë, kuptoni mirë rregullat e ngasjes, sigurimin dhe kushtet e kompanisë së qirasë.",
+          "Mos e mbushni orarin e udhëtimit aq shumë sa të kaloni pjesën më të madhe të kohës brenda makinës.",
+          "Më e rëndësishmja: Trajtojeni udhëtimin si një përvojë, jo si një garë. Bosnja në veçanti është një nga vendet që ia vlen të ndaleni për pak, në vend që thjesht të bëni fotografi dhe të largoheni."
+        ]
+      }
+    ]
+  },
+  "blog": {
+    "hero": {
+      "title": "Qëndroni të përditësuar me artikujt në trend",
+      "subtitle": "Zbuloni artikujt, njohuritë dhe këshillat më të fundit për të pasuruar jetën tuaj, për të forcuar marrëdhëniet tuaja dhe për të fituar udhëzime të vlefshme përmes sesioneve me ekspertë",
+      "collage": [
+        {
+          "title": "Udhëzuesi Juaj për një Martesë Kuptimplote",
+          "excerpt": "Eksploroni artikuj të dobishëm dhe këshilla nga ekspertë të krijuara për t'ju mbështetur në ndërtimin e një marrëdhënieje të fortë dhe në marrjen e vendimeve me besim gjatë udhëtimit tuaj drejt martesës."
+        },
+        {
+          "title": "Udhëzuesi Juaj për një Martesë Kuptimplote",
+          "excerpt": "Eksploroni artikuj të dobishëm dhe këshilla nga ekspertë të krijuara për t'ju mbështetur në ndërtimin e një marrëdhënieje të fortë dhe në marrjen e vendimeve me besim gjatë udhëtimit tuaj drejt martesës."
+        },
+        {
+          "title": "Ndërtimi i një Jete të Lumtur Së Bashku",
+          "excerpt": "Mësoni njohuri të vlefshme, këshilla praktike dhe udhëzime nga ekspertë për të ndërtuar një marrëdhënie të shëndetshme dhe për të krijuar një jetë të lumtur"
+        },
+        {
+          "title": "Njohuri për Udhëtimin Tuaj drejt Martesës",
+          "excerpt": "Zbuloni artikuj frymëzues, këshilla për marrëdhëniet dhe sesione me ekspertë që ju ndihmojnë të kuptoni më mirë marrëdhëniet dhe të ndërtoni një të ardhme më të fortë dhe më të lumtur së bashku."
+        },
+        {
+          "title": "Njohuri për Udhëtimin Tuaj drejt Martesës",
+          "excerpt": "Zbuloni artikuj frymëzues, këshilla për marrëdhëniet dhe sesione me ekspertë që ju ndihmojnë të kuptoni më mirë marrëdhëniet dhe të ndërtoni një të ardhme më të fortë dhe më të lumtur së bashku."
+        }
+      ]
+    },
+    "featured": {
+      "date": "02-12-2026",
+      "title": "Qëndroni të përditësuar me artikujt në trend",
+      "description": "Zefaaf është një platformë e besueshme e krijuar për të ndihmuar myslimanët të gjejnë një partner jete që ndan vlerat e tyre islame, në një mënyrë të sigurt dhe në përputhje me Sheriatin.",
+      "cta": "Lexo më shumë"
+    },
+    "list": {
+      "title": "Blogu i Zefaaf",
+      "description": "Gjithçka që duhet të dini rreth ndeshjes hallall dhe zgjedhjes së një partneri jete përmes platformave të besueshme.",
+      "searchPlaceholder": "Kërko",
+      "viewMore": "Shiko Më Shumë",
+      "topics": {
+        "all": "Të Gjitha Temat",
+        "qualities": "Cilësitë e një Bashkëshorti të Mirë",
+        "relationships": "Marrëdhënie Martesore të Suksesshme",
+        "health": "Shëndeti Martesor",
+        "choosing": "Zgjedhja e një Partneri Jete"
+      },
+      "articles": [
+        {
+          "title": "Martesa me një Grua Bosnjake për Arabët: Udhëzues i Plotë",
+          "excerpt": "Martesa me një grua bosnjake është bërë një zgjedhje gjithnjë e më e popullarizuar për burrat arabë për shkak të vlerave kulturore të përbashkëta dhe procesit të drejtpërdrejtë..",
+          "image": "/images/blog/grid-1.png"
+        },
+        {
+          "title": "Zakonet dhe Traditat e Martesës në Bosnjë dhe Hercegovinë: Festime të Paharrueshme",
+          "excerpt": "Zakonet dhe traditat e dasmave në Bosnjë dhe Hercegovinë pasqyrojnë një përzierje magjepsëse të trashëgimisë evropiane dhe ndikimeve autentike lindore. Ky artikull i Zefaaf eksploron ritualet tradicionale të fejesës, muzikën e dasmës, vallet festive dhe kuzhinën lokale ikonike që i bëjnë festimet bosnjake kaq të veçanta. Ky udhëzues ofron një zhytje të thellë në trashëgiminë e pasur kulturore që i bën dasmat në Bosnjë vërtet të paharrueshme.",
+          "image": "/images/blog/grid-2-wide.png",
+          "wide": true
+        },
+        {
+          "title": "Martesa me një Grua Bosnjake për Arabët: Udhëzues i Plotë",
+          "excerpt": "Martesa me një grua bosnjake është bërë një zgjedhje gjithnjë e më e popullarizuar për burrat arabë për shkak të vlerave kulturore të përbashkëta dhe procesit të drejtpërdrejtë..",
+          "image": "/images/blog/grid-3.png"
+        },
+        {
+          "title": "Martesa me një Grua Bosnjake për Arabët: Udhëzues i Plotë",
+          "excerpt": "Martesa me një grua bosnjake është bërë një zgjedhje gjithnjë e më e popullarizuar për burrat arabë për shkak të vlerave kulturore të përbashkëta dhe procesit të drejtpërdrejtë..",
+          "image": "/images/blog/grid-4.png"
+        },
+        {
+          "title": "Martesa me një Grua Bosnjake për Arabët: Udhëzues i Plotë",
+          "excerpt": "Martesa me një grua bosnjake është bërë një zgjedhje gjithnjë e më e popullarizuar për burrat arabë për shkak të vlerave kulturore të përbashkëta dhe procesit të drejtpërdrejtë..",
+          "image": "/images/blog/grid-5.png"
+        }
+      ]
+    }
+  },
+  "downloadApp": {
+    "title": "Një Provë Falas Speciale – Shkarkoni aplikacionin\nZefaaf tani dhe shijoni mesazhe falas\npër 3 ditët tuaja të para!",
+    "features": [
+      "Një mjedis i sigurt dhe i mbrojtur për të gjetur partnerin e duhur.",
+      "Një përvojë e rrjedhshme që respekton udhëzimet islame."
+    ],
+    "description": "Shkarkoni aplikacionin nga App Store ose Google Play."
   },
   "whyChoose": {
-    "title": "Pse të Zgjidhni Zefaaf",
-    "description": "Në Zefaaf, ne besojmë se martesa është më shumë sesa përputhshmëri — bëhet fjalë për ndërtimin e një jete të qëndrueshme të bazuar në vlerat islame.",
+    "title": "Pse të Zgjidhni Zefaaf?",
+    "description": "Në Zefaaf, gjetja e një partneri jete nuk kufizohet më vetëm në aplikacione dhe faqe interneti. Ne ofrojmë zgjidhje reale, nga kryerja e një kërkimi personal në emrin tuaj deri te organizimi i një takimi ballë për ballë.",
     "features": [
-      { "title": "Video-thirrje të sigurta, në përputhje me Sheriatin", "description": "Një veçori video e sigurt nën mbikëqyrje fetare, që ju lejon të takoni partnerin tuaj të mundshëm të jetës duke respektuar udhëzimet islame." },
-      { "title": "Këshillim i drejtpërdrejtë islam dhe familjar", "description": "Merrni një konsultë falas pas regjistrimit nga ekspertët tanë fetarë dhe këshilltarët familjarë." },
-      { "title": "Zëri juaj, personaliteti juaj – lëreni zërin tuaj të flasë për ju!", "description": "Një mesazh zanor në profilin tuaj: prezantohuni, ndani interesat dhe vlerat tuaja, dhe flisni për vizionin tuaj për jetën martesore." },
-      { "title": "Takimi i familjeve – filloni marrëdhënien tuaj në mënyrë hallall", "description": "Një dhomë private video që bashkon të dyja familjet për herë të parë në mënyrë të përshtatshme dhe në përputhje me Sheriatin." },
-      { "title": "Sistemi i para-miratimit – mos humbisni kohë me biseda joproduktive!", "description": "Shihni përqindjen e përputhshmërisë suaj me çdo profil para se të filloni një bisedë." }
+      {
+        "title": "Aplikacioni Zefaaf | Kërkoni dhe lidhuni vetë",
+        "description": "Shfletoni profile, përdorni mjetet e kërkimit dhe përputhshmërisë, dhe lidhuni me persona të përshtatshëm që kërkojnë martesë serioze."
+      },
+      {
+        "title": "Shërbimi VIP | Ne kërkojmë për ju",
+        "description": "Një ekip i specializuar kërkon përputhje të përshtatshme, jua rekomandon dhe ju përcjell personalisht për tre muaj."
+      },
+      {
+        "title": "Ngjarje Martese | Njohje reale dhe të organizuara",
+        "description": "Ngjarje serioze martese në Holandë dhe Bosnjë që krijojnë mundësi të vërteta njohjeje në një mjedis të organizuar."
+      },
+      {
+        "title": "Shoqërim në Bosnjë | Një udhëtim drejt martesës",
+        "description": "Udhëtojmë me ju dhe kujdesemi për koordinimin, ndjekjen dhe takimet direkte me gra bosnjake dhe familjet e tyre."
+      },
+      {
+        "title": "Takim ballë për ballë në vendin tuaj | Kudo që të jeni",
+        "description": "Fillojmë me një takim privat në Zoom me një këshilltar familjar për të kuptuar personalitetin dhe nevojat tuaja, më pas kërkojmë një partner të përshtatshëm dhe organizojmë një takim ballë për ballë kur ka pranim të ndërsjellë."
+      }
     ]
+  },
+  "contactUs": {
+    "mapAlt": "Hartë që tregon vendndodhjen e zyrës sonë",
+    "hero": {
+      "eyebrow": "Na Kontaktoni",
+      "title": "Ne jemi këtu për t'ju ndihmuar në çdo hap të rrugës",
+      "description": "Nëse keni pyetje ose keni nevojë për mbështetje, mos hezitoni të na kontaktoni. Ekipi ynë është gjithmonë i disponueshëm për të siguruar përvojën më të mirë në platformën Zefaaf."
+    },
+    "form": {
+      "card": {
+        "title": "Na dërgoni mesazhin tuaj",
+        "subtitle": "Ne jemi këtu për t'ju dëgjuar dhe ndihmuar",
+        "followUs": "Na Ndiqni"
+      },
+      "heading": "Si mund t'ju ndihmojmë sot?",
+      "fields": {
+        "fullName": "Emri i plotë",
+        "email": "Adresa e email-it",
+        "message": "Mesazhi"
+      },
+      "send": "Dërgo"
+    },
+    "faq": {
+      "title": "Pyetjet e bëra shpesh",
+      "description": "Gjeni përgjigje të shpejta për pyetjet e zakonshme më poshtë. Keni nevojë për më shumë ndihmë?\nNa kontaktoni në çdo kohë për ndihmë të mëtejshme",
+      "heading": "Si mund t'ju ndihmojmë?",
+      "searchPlaceholder": "Kërko",
+      "items": [
+        {
+          "question": "A është regjistrimi në platformën Zefaaf falas?",
+          "answer": "Po, regjistrimi bazë është falas për të gjithë, me paketa shtesë opsionale për shërbime premium."
+        },
+        {
+          "question": "Sa kohë duhet për të gjetur një përputhje të përshtatshme?",
+          "answer": "Ndryshon nga personi në person, por ekipi ynë punon vazhdimisht për t'ju njohur me përputhje të përshtatshme sa më shpejt të jetë e mundur."
+        },
+        {
+          "question": "A ruhet privatësia e informacionit tim personal?",
+          "answer": "Po, ne e marrim seriozisht privatësinë tuaj dhe ndajmë informacionin tuaj vetëm me përputhjet që ju miratoni."
+        },
+        {
+          "question": "A mund ta përdor Zefaaf nga çdo vend?",
+          "answer": "Po, Zefaaf është i disponueshëm në mbarë botën dhe lidh myslimanë nga vende të ndryshme që kërkojnë martesë."
+        },
+        {
+          "question": "Si mund të kontaktoj ekipin e mbështetjes?",
+          "answer": "Mund të na kontaktoni në çdo kohë përmes këtij formulari kontakti, dhe ekipi ynë do t'ju përgjigjet sa më shpejt të jetë e mundur."
+        }
+      ]
+    }
   }
 }

@@ -37,7 +37,13 @@
     "articles": "Articoli",
     "upcomingEvents": "Prossimi Eventi",
     "successStories": "Storie di Successo",
-    "marriageRequest": "Richiesta di Matrimonio"
+    "marriageRequest": "Richiesta di Matrimonio",
+    "servicesMenu": {
+      "zefaafEvents": "Eventi Zefaaf",
+      "marriageForm": "Il Tuo Modulo di Matrimonio",
+      "bosniaTour": "Viaggio di Matrimonio in Bosnia",
+      "meetingInCountry": "Incontro nel tuo Paese"
+    }
   },
   "footer": {
     "columns": {
@@ -95,13 +101,14 @@
     }
   },
   "services": {
+    "title": "I nostri servizi",
     "items": [
       {
-        "title": "Forum sul Matrimonio Islamico",
+        "title": "Eventi Zefaaf",
         "description": "Eventi del forum sul matrimonio islamico che riuniscono musulmani in cerca di matrimonio e le loro famiglie"
       },
       {
-        "title": "Domanda di Matrimonio",
+        "title": "Il Tuo Modulo di Matrimonio",
         "description": "Trova il tuo compagno di vita ideale da diversi paesi."
       },
       {
@@ -109,28 +116,27 @@
         "description": "Un servizio dedicato in cui i consulenti Zefaaf cercano compagni di vita adatti"
       },
       {
-        "title": "Accompagnamento del Nostro Team in Bosnia",
+        "title": "Viaggio di Matrimonio in Bosnia",
         "description": "Un programma guidato in cui il team di Zefaaf accompagna i clienti a incontrare le famiglie per un matrimonio serio"
       },
       {
-        "title": "Incontro Online",
+        "title": "Incontro nel tuo Paese",
         "description": "Inizia con una sessione con un consulente familiare per comprendere la tua personalità e le tue esigenze"
       }
     ]
   },
   "globalPresence": {
     "mapAlt": "Mappa che mostra la presenza di Zefaaf in tutto il mondo",
-    "badge": "3 milioni di utenti su Zefaaf",
+    "badge": "12mila utenti su Zefaaf",
     "title": "Operiamo in <brand>175</brand> paesi",
     "description": "Zefaaf connette i musulmani di tutto il mondo con servizi di matrimonio affidabili che condividono i loro valori islamici, in modo sicuro e conforme alla Sharia.",
     "countries": {
-      "france": "Francia",
-      "germany": "Germania",
-      "netherlands": "Paesi Bassi",
-      "turkey": "Turchia",
-      "russia": "Russia",
-      "china": "Cina",
-      "indonesia": "Indonesia"
+      "france": "Nord America",
+      "germany": "Sud America",
+      "netherlands": "Europa",
+      "turkey": "Africa",
+      "russia": "Asia",
+      "china": "Oceania"
     }
   },
   "upcomingEvents": {
@@ -150,34 +156,276 @@
         "title": "Forum sul Matrimonio Islamico in Bosnia",
         "location": "Terezija, 71000",
         "price": "150 Euro"
+      },
+      {
+        "date": "14 giugno",
+        "time": "14:00",
+        "title": "Forum sul Matrimonio Islamico in Germania",
+        "location": "Alexanderplatz, Berlino",
+        "price": "150 Euro"
+      },
+      {
+        "date": "22 agosto",
+        "time": "13:00",
+        "title": "Forum sul Matrimonio Islamico in Belgio",
+        "location": "Centro di Bruxelles",
+        "price": "150 Euro"
+      },
+      {
+        "date": "17 ottobre",
+        "time": "15:00",
+        "title": "Forum sul Matrimonio Islamico in Turchia",
+        "location": "Fatih, Istanbul",
+        "price": "150 Euro"
+      },
+      {
+        "date": "12 dicembre",
+        "time": "12:00",
+        "title": "Forum sul Matrimonio Islamico nel Regno Unito",
+        "location": "Centro di Londra",
+        "price": "150 Euro"
       }
     ],
-    "ticker": ["Vivi al meglio", "il percorso salutare", "compagno di vita", "scelte salutari", "compagno di vita"]
+    "ticker": [
+      "Vivi al meglio",
+      "il percorso salutare",
+      "compagno di vita",
+      "scelte salutari",
+      "compagno di vita"
+    ]
   },
-  "whyChoose": {
-    "title": "Perché Scegliere Zefaaf",
-    "description": "In Zefaaf crediamo che il matrimonio sia molto più della semplice compatibilità: si tratta di costruire una vita stabile fondata sui valori islamici.",
-    "features": [
+  "blogDetail": {
+    "breadcrumb": {
+      "home": "Home",
+      "blogs": "Blog",
+      "current": "Dettagli Articolo"
+    },
+    "date": "02-12-2026",
+    "title": "La Tua Guida Completa al Turismo in Bosnia ed Erzegovina: Consigli per chi Viaggia per la Prima Volta.",
+    "intro": "La Bosnia ed Erzegovina è una destinazione affascinante che conquista il cuore dei viaggiatori con la sua straordinaria bellezza naturale e la sua ricca storia. In questo articolo, Zefaaf mette in evidenza i consigli e i suggerimenti più importanti per chi viaggia per la prima volta, dalla pianificazione del viaggio e la scelta del periodo migliore per visitarla, alla comprensione della cultura e delle usanze locali. Questa guida completa ti aiuterà a vivere un'esperienza di viaggio comoda e memorabile, ricca di momenti indimenticabili.",
+    "banner": {
+      "imageAlt": "Una coppia musulmana sorridente che saluta la telecamera",
+      "title": "Resta aggiornato con gli articoli di tendenza"
+    },
+    "leadParagraphs": [
+      "La Bosnia ed Erzegovina è una destinazione che sulla mappa può sembrare semplice, ma l'esperienza diventa molto più straordinaria quando conosci alcuni dettagli prima di partire. Tra la storica Sarajevo, Mostar con il suo celebre ponte, e la natura che circonda città e villaggi, scoprirai che il viaggio non ha bisogno di un programma affollato quanto di una pianificazione intelligente e flessibile.",
+      "Perciò, se questa è la tua prima visita, ecco la guida turistica della Bosnia di cui hai bisogno prima di preparare le valigie; dalla scelta della data di viaggio e dell'alloggio, ai trasporti e alla sicurezza, fino ai consigli pratici che rendono la tua esperienza più confortevole, che tu stia viaggiando da solo, con il tuo compagno di vita, oppure stia pianificando un viaggio in famiglia in Bosnia."
+    ],
+    "sections": [
       {
-        "title": "Videochiamate sicure e conformi alla Sharia",
-        "description": "Una funzione video sicura sotto supervisione religiosa, che ti permette di incontrare il tuo potenziale compagno di vita nel rispetto delle linee guida islamiche."
+        "heading": "Qual è il periodo migliore per visitare la Bosnia ed Erzegovina?",
+        "paragraphs": [
+          "Il periodo migliore per visitare la Bosnia ed Erzegovina dipende dal tipo di viaggio che stai cercando. La primavera è adatta a chi desidera godersi la natura e un clima mite, mentre l'estate attira i viaggiatori in cerca di attività all'aperto e spostamenti tra le città.",
+          "L'autunno regala un'atmosfera tranquilla e paesaggi dai colori diversi, mentre l'inverno rappresenta un'opportunità per gli amanti del freddo, delle zone montuose e delle attività invernali.",
+          "Di conseguenza, non esiste un'unica risposta valida per tutti. Se il tuo obiettivo è visitare le città ed esplorare la natura senza il caldo intenso, primavera e autunno sono scelte comode. Se invece vuoi approfittare delle lunghe ore di luce e delle numerose attività, l'estate può fare al caso tuo.",
+          "E dopo aver scelto la stagione, arriva la domanda più importante: dove alloggerai e come ti muoverai?"
+        ]
       },
       {
-        "title": "Consulenza islamica e familiare diretta",
-        "description": "Ricevi una consulenza gratuita al momento della registrazione dai nostri esperti religiosi e consulenti familiari."
+        "heading": "Dove alloggiare in Bosnia ed Erzegovina?",
+        "paragraphs": [
+          "La scelta dell'alloggio deve essere legata al programma del tuo viaggio, e non solo al prezzo. A Sarajevo, ad esempio, alloggiare vicino alle zone centrali facilita l'accesso ai luoghi di interesse, ai ristoranti e ai trasporti, mentre in altre città potresti preferire un alloggio vicino al centro città o alle aree naturali che intendi visitare.",
+          "È inoltre importante leggere le recensioni dei viaggiatori prima di prenotare, e assicurarti della presenza dei servizi di cui hai bisogno, soprattutto se viaggi con la famiglia.",
+          "Per quanto riguarda il turismo in famiglia in Bosnia, è meglio dare priorità alla posizione, alla tranquillità e alla facilità di accesso ai servizi, in modo che gli spostamenti quotidiani su lunghe distanze non diventino un peso per i membri della famiglia.",
+          "Una volta stabilito l'alloggio, pianificare i trasporti tra le città diventa il passo successivo."
+        ]
       },
       {
-        "title": "La tua voce, la tua personalità – lascia che sia la tua voce a parlare per te!",
-        "description": "Un messaggio vocale sul tuo profilo: presentati, condividi i tuoi interessi e valori, e parla della tua visione della vita matrimoniale."
+        "heading": "Come sono i trasporti in Bosnia ed Erzegovina?",
+        "paragraphs": [
+          "Puoi spostarti in Bosnia ed Erzegovina in diversi modi, e la scelta dipende dalla distanza, dal numero di persone e dalla natura del viaggio.",
+          "All'interno delle città puoi usare i trasporti locali o i taxi, mentre gli autobus diventano un'opzione pratica per spostarsi tra diverse città. Se preferisci la libertà di stabilire i tuoi tempi di sosta e visitare luoghi lontani dai centri cittadini, noleggiare un'auto potrebbe essere più indicato.",
+          "Tuttavia, guidare in un paese nuovo richiede attenzione; la natura montuosa della Bosnia significa strade tortuose e dislivelli, perciò i viaggi su strada non vanno considerati come un semplice passaggio rapido da una città all'altra.",
+          "Ecco quindi un consiglio importante dalla guida turistica della Bosnia: non inserire troppe città in un solo giorno. A volte ridurre il numero di destinazioni è il modo migliore per vedere davvero il paese."
+        ]
       },
       {
-        "title": "Incontro tra famiglie – inizia la tua relazione nel modo halal",
-        "description": "Una stanza video privata che riunisce entrambe le famiglie per la prima volta in modo appropriato e conforme alla Sharia."
+        "heading": "La Bosnia ed Erzegovina è sicura per i viaggiatori?",
+        "paragraphs": [
+          "In generale, la Bosnia ed Erzegovina è considerata una destinazione adatta al turismo, ma questo non significa abbandonare le precauzioni abituali di cui ogni viaggiatore ha bisogno.",
+          "Tieni denaro e documenti in un posto sicuro, evita di lasciare i tuoi effetti personali incustoditi e presta attenzione nei luoghi affollati. È inoltre preferibile conservare copie elettroniche del passaporto, delle prenotazioni e dei documenti importanti in caso di imprevisti.",
+          "C'è un punto particolare da sottolineare: quando fai escursioni al di fuori delle aree popolate o conosciute, non allontanarti dai sentieri e dalle strade designate, e segui le istruzioni delle autorità locali, perché alcune zone della Bosnia richiedono ancora cautela a causa di residuati bellici e mine antiuomo.",
+          "Queste precauzioni non devono renderti ansioso riguardo al viaggio; al contrario, conoscerle in anticipo ti dà più spazio per goderti l'esperienza senza sorprese indesiderate."
+        ]
       },
       {
-        "title": "Sistema di pre-approvazione – non perdere tempo in conversazioni improduttive!",
-        "description": "Visualizza la tua percentuale di compatibilità con qualsiasi profilo prima di iniziare una conversazione."
+        "heading": "Quali sono i consigli più importanti per chi visita la Bosnia per la prima volta?",
+        "paragraphs": [
+          "Se questa è la tua prima visita, ecco una serie di consigli per i viaggiatori in Bosnia che possono farti risparmiare molta confusione:"
+        ],
+        "list": [
+          "Pianifica il viaggio prima dell'arrivo, ma lascia spazio ai cambiamenti.",
+          "Non cercare di visitare tutto in un viaggio breve.",
+          "Tieni una copia del passaporto e delle prenotazioni sul telefono.",
+          "Verifica i metodi di pagamento accettati prima di dirigerti verso luoghi remoti.",
+          "Porta con te un po' di contanti locali per i casi in cui i metodi di pagamento elettronico non siano disponibili.",
+          "Indossa scarpe comode, soprattutto se prevedi di esplorare aree naturali.",
+          "Controlla le condizioni meteo prima delle escursioni giornaliere.",
+          "Non affidarti solo a internet; è utile conservare le informazioni importanti in un formato accessibile anche offline.",
+          "Se noleggi un'auto, comprendi bene le norme di guida, l'assicurazione e le condizioni della società di noleggio.",
+          "Non riempire troppo il programma di viaggio al punto da passare la maggior parte del tempo in auto.",
+          "Soprattutto: tratta il viaggio come un'esperienza, non una gara. La Bosnia in particolare è uno di quei paesi in cui vale la pena fermarsi un po', invece di limitarsi a scattare foto e andarsene."
+        ]
       }
     ]
+  },
+  "blog": {
+    "hero": {
+      "title": "Resta aggiornato con gli articoli di tendenza",
+      "subtitle": "Scopri gli ultimi articoli, approfondimenti e consigli per arricchire la tua vita, rafforzare le tue relazioni e ottenere una guida preziosa attraverso sessioni con esperti",
+      "collage": [
+        {
+          "title": "La Tua Guida per un Matrimonio Significativo",
+          "excerpt": "Esplora articoli utili e consigli di esperti pensati per aiutarti a costruire una relazione solida e a prendere decisioni sicure lungo il tuo percorso matrimoniale."
+        },
+        {
+          "title": "La Tua Guida per un Matrimonio Significativo",
+          "excerpt": "Esplora articoli utili e consigli di esperti pensati per aiutarti a costruire una relazione solida e a prendere decisioni sicure lungo il tuo percorso matrimoniale."
+        },
+        {
+          "title": "Costruire una Vita Felice Insieme",
+          "excerpt": "Scopri spunti preziosi, consigli pratici e la guida di esperti per costruire una relazione sana e creare una vita felice"
+        },
+        {
+          "title": "Spunti per il Tuo Percorso Matrimoniale",
+          "excerpt": "Scopri articoli ispiranti, consigli sulle relazioni e sessioni con esperti per aiutarti a comprendere meglio le relazioni e a costruire un futuro insieme più forte e felice."
+        },
+        {
+          "title": "Spunti per il Tuo Percorso Matrimoniale",
+          "excerpt": "Scopri articoli ispiranti, consigli sulle relazioni e sessioni con esperti per aiutarti a comprendere meglio le relazioni e a costruire un futuro insieme più forte e felice."
+        }
+      ]
+    },
+    "featured": {
+      "date": "02-12-2026",
+      "title": "Resta aggiornato con gli articoli di tendenza",
+      "description": "Zefaaf è una piattaforma affidabile pensata per aiutare i musulmani a trovare un compagno di vita che condivida i loro valori islamici, in modo sicuro e conforme alla Sharia.",
+      "cta": "Leggi di più"
+    },
+    "list": {
+      "title": "Blog Zefaaf",
+      "description": "Tutto quello che devi sapere sugli incontri halal e sulla scelta di un compagno di vita attraverso piattaforme affidabili.",
+      "searchPlaceholder": "Cerca",
+      "viewMore": "Vedi Altro",
+      "topics": {
+        "all": "Tutti gli Argomenti",
+        "qualities": "Qualità di un Buon Coniuge",
+        "relationships": "Relazioni Coniugali di Successo",
+        "health": "Salute Coniugale",
+        "choosing": "Scegliere un Compagno di Vita"
+      },
+      "articles": [
+        {
+          "title": "Sposare una Donna Bosniaca per gli Arabi: Guida Completa",
+          "excerpt": "Sposare una donna bosniaca è diventata una scelta sempre più popolare per gli uomini arabi grazie a valori culturali condivisi e a procedure semplici..",
+          "image": "/images/blog/grid-1.png"
+        },
+        {
+          "title": "Usanze e Tradizioni Matrimoniali in Bosnia ed Erzegovina: Celebrazioni Indimenticabili",
+          "excerpt": "Le usanze e le tradizioni matrimoniali in Bosnia ed Erzegovina riflettono un affascinante connubio di eredità europea e autentiche influenze orientali. Questo articolo di zefaaf esplora i rituali tradizionali di fidanzamento, la musica nuziale, le danze festose e la celebre cucina locale che rendono le celebrazioni bosniache così uniche. Questa guida offre uno sguardo approfondito sul ricco patrimonio culturale che rende i matrimoni in Bosnia davvero indimenticabili.",
+          "image": "/images/blog/grid-2-wide.png",
+          "wide": true
+        },
+        {
+          "title": "Sposare una Donna Bosniaca per gli Arabi: Guida Completa",
+          "excerpt": "Sposare una donna bosniaca è diventata una scelta sempre più popolare per gli uomini arabi grazie a valori culturali condivisi e a procedure semplici..",
+          "image": "/images/blog/grid-3.png"
+        },
+        {
+          "title": "Sposare una Donna Bosniaca per gli Arabi: Guida Completa",
+          "excerpt": "Sposare una donna bosniaca è diventata una scelta sempre più popolare per gli uomini arabi grazie a valori culturali condivisi e a procedure semplici..",
+          "image": "/images/blog/grid-4.png"
+        },
+        {
+          "title": "Sposare una Donna Bosniaca per gli Arabi: Guida Completa",
+          "excerpt": "Sposare una donna bosniaca è diventata una scelta sempre più popolare per gli uomini arabi grazie a valori culturali condivisi e a procedure semplici..",
+          "image": "/images/blog/grid-5.png"
+        }
+      ]
+    }
+  },
+  "downloadApp": {
+    "title": "Una Prova Gratuita Speciale – Scarica subito l'app\nZefaaf e goditi la messaggistica gratuita per\ni primi 3 giorni!",
+    "features": [
+      "Un ambiente sicuro e protetto per trovare il partner giusto.",
+      "Un'esperienza fluida che rispetta le linee guida islamiche."
+    ],
+    "description": "Scarica l'app dall'App Store o da Google Play."
+  },
+  "whyChoose": {
+    "title": "Perché Scegliere Zefaaf?",
+    "description": "In Zefaaf, trovare un compagno di vita non è più limitato ad app e siti web. Offriamo soluzioni reali, dalla realizzazione di una ricerca personale per tuo conto fino all'organizzazione di un incontro di persona.",
+    "features": [
+      {
+        "title": "App Zefaaf | Cerca e connettiti da solo",
+        "description": "Sfoglia i profili, usa gli strumenti di ricerca e compatibilità, e connettiti con persone adatte che cercano un matrimonio serio."
+      },
+      {
+        "title": "Servizio VIP | Cerchiamo noi per te",
+        "description": "Un team specializzato cerca abbinamenti adatti, te li consiglia e ti segue personalmente per tre mesi."
+      },
+      {
+        "title": "Eventi di Matrimonio | Presentazioni reali e organizzate",
+        "description": "Eventi di matrimonio seri nei Paesi Bassi e in Bosnia che creano vere opportunità di incontro in un ambiente organizzato."
+      },
+      {
+        "title": "Accompagnamento in Bosnia | Un viaggio per il matrimonio",
+        "description": "Viaggiamo con te e ci occupiamo del coordinamento, del follow-up e degli incontri diretti con le donne bosniache e le loro famiglie."
+      },
+      {
+        "title": "Incontro di persona nel tuo Paese | Ovunque tu sia",
+        "description": "Iniziamo con un incontro privato su Zoom con un consulente familiare per comprendere la tua personalità e le tue esigenze, poi cerchiamo un compagno adatto e organizziamo un incontro di persona quando c'è accettazione reciproca."
+      }
+    ]
+  },
+  "contactUs": {
+    "mapAlt": "Mappa che mostra la posizione del nostro ufficio",
+    "hero": {
+      "eyebrow": "Mettiti in Contatto",
+      "title": "Siamo qui per aiutarti in ogni fase del percorso",
+      "description": "Se hai domande o hai bisogno di supporto, non esitare a contattarci. Il nostro team è sempre disponibile per garantirti la migliore esperienza sulla piattaforma Zefaaf."
+    },
+    "form": {
+      "card": {
+        "title": "Inviaci il tuo messaggio",
+        "subtitle": "Siamo qui per ascoltarti e assisterti",
+        "followUs": "Seguici"
+      },
+      "heading": "Come possiamo aiutarti oggi?",
+      "fields": {
+        "fullName": "Nome completo",
+        "email": "Indirizzo email",
+        "message": "Messaggio"
+      },
+      "send": "Invia"
+    },
+    "faq": {
+      "title": "Domande frequenti",
+      "description": "Trova risposte rapide alle domande più comuni qui sotto, hai bisogno di ulteriore aiuto?\nContattaci in qualsiasi momento per ulteriore assistenza",
+      "heading": "Come possiamo aiutarti?",
+      "searchPlaceholder": "Cerca",
+      "items": [
+        {
+          "question": "La registrazione sulla piattaforma Zefaaf è gratuita?",
+          "answer": "Sì, la registrazione di base è gratuita per tutti, con pacchetti aggiuntivi opzionali per i servizi premium."
+        },
+        {
+          "question": "Quanto tempo ci vuole per trovare un abbinamento adatto?",
+          "answer": "Varia da persona a persona, ma il nostro team lavora continuamente per presentarti abbinamenti adatti nel modo più rapido possibile."
+        },
+        {
+          "question": "Le mie informazioni personali restano private?",
+          "answer": "Sì, prendiamo sul serio la tua privacy e condividiamo le tue informazioni solo con gli abbinamenti che approvi."
+        },
+        {
+          "question": "Posso usare Zefaaf da qualsiasi paese?",
+          "answer": "Sì, Zefaaf è disponibile in tutto il mondo e connette musulmani di diversi paesi in cerca di matrimonio."
+        },
+        {
+          "question": "Come posso contattare il team di assistenza?",
+          "answer": "Puoi contattarci in qualsiasi momento tramite questo modulo di contatto, e il nostro team risponderà il prima possibile."
+        }
+      ]
+    }
   }
 }

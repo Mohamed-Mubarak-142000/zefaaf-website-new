@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations } from "next-intl/server";
-import { Alexandria, Almarai, Geist } from "next/font/google";
+import { Alexandria, Almarai, Cairo, Geist } from "next/font/google";
 import { notFound } from "next/navigation";
 
 import { AppProviders } from "@/app";
@@ -16,13 +16,18 @@ const geist = Geist({ subsets: ["latin"], variable: "--font-sans" });
 // Navbar typography from the Figma design: Alexandria for links/buttons, Almarai (bold) for the language label.
 const alexandria = Alexandria({
   subsets: ["arabic", "latin"],
-  weight: ["400", "500", "600", "700", "800"],
+  weight: ["300", "400", "500", "600", "700", "800"],
   variable: "--font-alexandria",
 });
 const almarai = Almarai({
   subsets: ["arabic"],
   weight: ["400", "700", "800"],
   variable: "--font-almarai",
+});
+const cairo = Cairo({
+  subsets: ["arabic", "latin"],
+  weight: ["500", "700"],
+  variable: "--font-cairo",
 });
 
 export function generateStaticParams() {
@@ -74,6 +79,7 @@ export default async function LocaleLayout({
         geist.variable,
         alexandria.variable,
         almarai.variable,
+        cairo.variable,
       )}
       suppressHydrationWarning
     >

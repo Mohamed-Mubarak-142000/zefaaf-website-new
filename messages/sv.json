@@ -15,9 +15,18 @@
     "ratingValue": "4.8"
   },
   "stats": {
-    "happyClients": { "value": "34,484k", "label": "Nöjda kunder" },
-    "successStories": { "value": "2768", "label": "Framgångshistorier" },
-    "registeredMembers": { "value": "23416", "label": "Registrerade medlemmar" }
+    "happyClients": {
+      "value": "34,484k",
+      "label": "Nöjda kunder"
+    },
+    "successStories": {
+      "value": "2768",
+      "label": "Framgångshistorier"
+    },
+    "registeredMembers": {
+      "value": "23416",
+      "label": "Registrerade medlemmar"
+    }
   },
   "nav": {
     "home": "Hem",
@@ -28,7 +37,13 @@
     "articles": "Artiklar",
     "upcomingEvents": "Kommande Evenemang",
     "successStories": "Framgångshistorier",
-    "marriageRequest": "Äktenskapsansökan"
+    "marriageRequest": "Äktenskapsansökan",
+    "servicesMenu": {
+      "zefaafEvents": "Zefaaf-evenemang",
+      "marriageForm": "Ditt äktenskapsformulär",
+      "bosniaTour": "Bosnien äktenskapsresa",
+      "meetingInCountry": "Möte i ditt land"
+    }
   },
   "footer": {
     "columns": {
@@ -86,41 +101,331 @@
     }
   },
   "services": {
+    "title": "Våra tjänster",
     "items": [
-      { "title": "Islamiskt Äktenskapsforum", "description": "Islamiska äktenskapsforumevenemang som samlar muslimer som söker äktenskap och deras familjer" },
-      { "title": "Äktenskapsansökan", "description": "Hitta din ideala livspartner från olika länder." },
-      { "title": "Personlig VIP-sökning", "description": "En dedikerad tjänst där Zefaafs konsulter söker efter lämpliga livspartners" },
-      { "title": "Vårt Teams Följeskap i Bosnien", "description": "Ett guidat program där Zefaafs team följer med klienter för att träffa familjer för ett seriöst äktenskap" },
-      { "title": "Onlinemöte", "description": "Börja med en session med en familjekonsult för att förstå din personlighet och dina behov" }
+      {
+        "title": "Zefaaf-evenemang",
+        "description": "Islamiska äktenskapsforumevenemang som samlar muslimer som söker äktenskap och deras familjer"
+      },
+      {
+        "title": "Ditt äktenskapsformulär",
+        "description": "Hitta din ideala livspartner från olika länder."
+      },
+      {
+        "title": "Personlig VIP-sökning",
+        "description": "En dedikerad tjänst där Zefaafs konsulter söker efter lämpliga livspartners"
+      },
+      {
+        "title": "Bosnien äktenskapsresa",
+        "description": "Ett guidat program där Zefaafs team följer med klienter för att träffa familjer för ett seriöst äktenskap"
+      },
+      {
+        "title": "Möte i ditt land",
+        "description": "Börja med en session med en familjekonsult för att förstå din personlighet och dina behov"
+      }
     ]
   },
   "globalPresence": {
     "mapAlt": "Karta som visar Zefaafs närvaro runt om i världen",
-    "badge": "3 miljoner användare på Zefaaf",
+    "badge": "12k användare på Zefaaf",
     "title": "Vi verkar i <brand>175</brand> länder",
     "description": "Zefaaf förenar muslimer runt om i världen med pålitliga matchningstjänster som delar deras islamiska värderingar, på ett tryggt och sharia-anpassat sätt.",
     "countries": {
-      "france": "Frankrike", "germany": "Tyskland", "netherlands": "Nederländerna", "turkey": "Turkiet", "russia": "Ryssland", "china": "Kina", "indonesia": "Indonesien"
+      "france": "Nordamerika",
+      "germany": "Sydamerika",
+      "netherlands": "Europa",
+      "turkey": "Afrika",
+      "russia": "Asien",
+      "china": "Oceanien"
     }
   },
   "upcomingEvents": {
     "description": "Upptäck våra kommande evenemang och gå med oss för meningsfulla upplevelser, inspirerande samtal och minnesvärda ögonblick. Följ oss för datum, detaljer och anmälan.",
     "bookCta": "Boka din biljett",
     "events": [
-      { "date": "10 januari", "time": "12.00", "title": "Islamiskt Äktenskapsforum i Nederländerna", "location": "Churchillplein 10, 2517 JW", "price": "150 euro" },
-      { "date": "25 april", "time": "12.00", "title": "Islamiskt Äktenskapsforum i Bosnien", "location": "Terezija, 71000", "price": "150 euro" }
+      {
+        "date": "10 januari",
+        "time": "12.00",
+        "title": "Islamiskt Äktenskapsforum i Nederländerna",
+        "location": "Churchillplein 10, 2517 JW",
+        "price": "150 euro"
+      },
+      {
+        "date": "25 april",
+        "time": "12.00",
+        "title": "Islamiskt Äktenskapsforum i Bosnien",
+        "location": "Terezija, 71000",
+        "price": "150 euro"
+      },
+      {
+        "date": "14 juni",
+        "time": "14.00",
+        "title": "Islamiskt Äktenskapsforum i Tyskland",
+        "location": "Alexanderplatz, Berlin",
+        "price": "150 euro"
+      },
+      {
+        "date": "22 augusti",
+        "time": "13.00",
+        "title": "Islamiskt Äktenskapsforum i Belgien",
+        "location": "Brysselcentrum",
+        "price": "150 euro"
+      },
+      {
+        "date": "17 oktober",
+        "time": "15.00",
+        "title": "Islamiskt Äktenskapsforum i Turkiet",
+        "location": "Fatih, Istanbul",
+        "price": "150 euro"
+      },
+      {
+        "date": "12 december",
+        "time": "12.00",
+        "title": "Islamiskt Äktenskapsforum i Storbritannien",
+        "location": "Londoncentrum",
+        "price": "150 euro"
+      }
     ],
-    "ticker": ["Lev ditt bästa", "hälsosamma resa", "livspartner", "hälsosamma val", "livspartner"]
+    "ticker": [
+      "Lev ditt bästa",
+      "hälsosamma resa",
+      "livspartner",
+      "hälsosamma val",
+      "livspartner"
+    ]
+  },
+  "blogDetail": {
+    "breadcrumb": {
+      "home": "Hem",
+      "blogs": "Artiklar",
+      "current": "Artikeldetaljer"
+    },
+    "date": "02-12-2026",
+    "title": "Din kompletta guide till turism i Bosnien och Hercegovina: Tips för förstagångsresenärer",
+    "intro": "Bosnien och Hercegovina är en fascinerande destination som vinner resenärers hjärtan med sin hisnande naturskönhet och rika historia. I den här artikeln lyfter Zefaaf fram de viktigaste tipsen och råden för förstagångsresenärer, från att planera din resa och välja bästa tidpunkt för besök till att förstå lokal kultur och etikett. Den här heltäckande guiden hjälper dig att njuta av en bekväm och minnesvärd reseupplevelse full av oförglömliga stunder.",
+    "banner": {
+      "imageAlt": "Ett leende muslimskt par som hälsar kameran",
+      "title": "Håll dig uppdaterad med de mest lästa artiklarna"
+    },
+    "leadParagraphs": [
+      "Bosnien och Hercegovina är en destination som kan verka enkel på kartan, men upplevelsen blir mycket mer fantastisk när du känner till några detaljer innan du reser. Mellan det historiska Sarajevo, Mostar med sin berömda bro, och naturen som omger städerna och byarna, kommer du att upptäcka att resan inte behöver ett fullpackat schema lika mycket som den behöver smart och flexibel planering.",
+      "Om detta är ditt första besök är det här Bosnien-turistguiden du behöver innan du packar väskorna; från att välja resdatum och boende, till transport och säkerhet, hela vägen till praktiska tips som gör din upplevelse bekvämare, oavsett om du reser ensam eller med din livspartner, eller planerar familjeturism i Bosnien."
+    ],
+    "sections": [
+      {
+        "heading": "Vilken är den bästa tiden att besöka Bosnien och Hercegovina?",
+        "paragraphs": [
+          "Den bästa tiden att besöka Bosnien och Hercegovina beror på vilken typ av resa du är ute efter. Våren passar den som vill njuta av naturen och milt väder, medan sommaren lockar resenärer som söker utomhusaktiviteter och resor mellan städer.",
+          "Hösten ger dig en lugn atmosfär och landskap i olika färger, medan vintern är ett tillfälle för älskare av kallt väder, höglänta områden och vinteraktiviteter.",
+          "Följaktligen finns det inget enda svar som passar alla. Om ditt mål är att turnera städerna och utforska naturen utan stark hetta är vår och höst bekväma val. Om du vill dra nytta av det långa dagsljuset och de många aktiviteterna kan sommaren passa dig.",
+          "Och efter att ha valt säsong kommer den viktigaste frågan: var ska du bo och hur ska du ta dig fram?"
+        ]
+      },
+      {
+        "heading": "Var ska man bo i Bosnien och Hercegovina?",
+        "paragraphs": [
+          "Valet av boende måste vara kopplat till ditt reseprogram, inte bara priset. I Sarajevo underlättar till exempel boende nära de centrala områdena tillgång till sevärdheter, restauranger och transport, medan du i andra städer kanske föredrar att bo nära stadskärnan eller de naturområden du planerar att besöka.",
+          "Det är också viktigt att granska resenärers omdömen innan du bokar och säkerställa förekomsten av de bekvämligheter du behöver, särskilt om du reser med familj.",
+          "När det gäller familjeturism i Bosnien är det bäst att prioritera läge, lugn och lätt tillgång till service, så att den dagliga förflyttningen över långa avstånd inte blir en börda för familjemedlemmarna.",
+          "När boendet är fastställt blir planeringen av transport mellan städer nästa steg."
+        ]
+      },
+      {
+        "heading": "Hur är transporten i Bosnien och Hercegovina?",
+        "paragraphs": [
+          "Du kan ta dig runt i Bosnien och Hercegovina på flera sätt, och valet beror på avstånd, antal personer och resans karaktär.",
+          "Inne i städerna kan lokaltrafik eller taxi användas, medan bussar blir ett praktiskt alternativ när man rör sig mellan flera städer. Om du föredrar friheten att bestämma dina egna stopp och besöka platser långt från stadskärnorna kan biluthyrning vara lämpligare.",
+          "Ändå kräver bilkörning i ett nytt land viss uppmärksamhet; Bosniens bergiga natur innebär slingrande vägar och höjdskillnader, och därför bör bilresor inte behandlas som bara en snabb övergång från en stad till en annan.",
+          "Härifrån kommer ett viktigt tips från Bosnien-turistguiden: sätt inte ett stort antal städer på en dag. Ibland är att minska antalet resmål det bästa sättet att verkligen se landet."
+        ]
+      },
+      {
+        "heading": "Är Bosnien och Hercegovina säkert för resenärer?",
+        "paragraphs": [
+          "Generellt sett anses Bosnien och Hercegovina vara en lämplig destination för turism, men det betyder inte att man ska överge de vanliga försiktighetsåtgärder som alla resenärer behöver.",
+          "Förvara dina pengar och dokument på en säker plats, undvik att lämna dina personliga tillhörigheter utan uppsikt och var uppmärksam på trånga platser. Det är också att föredra att behålla elektroniska kopior av passet, bokningarna och viktiga dokument om något skulle inträffa.",
+          "Det finns en särskild punkt värd att notera: när du gör utflykter utanför bebodda eller kända områden, avvik inte från utsedda vägar och stigar, och följ de lokala myndigheternas instruktioner, eftersom vissa områden i Bosnien fortfarande kräver försiktighet på grund av krigslämningar och landminor.",
+          "Dessa försiktighetsåtgärder bör inte göra dig orolig för resan; tvärtom ger vetskapen om dem i förväg dig mer utrymme att njuta utan onödiga överraskningar."
+        ]
+      },
+      {
+        "heading": "Vilka är de viktigaste tipsen för förstagångsresenärer till Bosnien?",
+        "paragraphs": [
+          "Om detta är ditt första besök finns det en rad tips för resenärer till Bosnien som kan bespara dig mycket förvirring:"
+        ],
+        "list": [
+          "Planera resan innan ankomst, men lämna utrymme för förändring.",
+          "Försök inte besöka allt på en kort resa.",
+          "Behåll en kopia av ditt pass och dina bokningar i telefonen.",
+          "Kontrollera accepterade betalningsmetoder innan du beger dig till avlägsna platser.",
+          "Ha med dig lite lokal kontanter för de fall där elektroniska betalningsmetoder inte är tillgängliga.",
+          "Bär bekväma skor, särskilt om du planerar att utforska naturområden.",
+          "Kontrollera väderförhållandena innan dagliga utflykter.",
+          "Förlita dig inte enbart på internet; det är bra att ha viktig information tillgänglig offline.",
+          "Om du hyr en bil, förstå körreglerna, försäkringen och uthyrningsföretagets villkor väl.",
+          "Gör inte reseschemat så fullpackat att du tillbringar det mesta av din tid i bilen.",
+          "Viktigast av allt: behandla resan som en upplevelse, inte en tävling. Bosnien är särskilt ett av de länder som är värt att stanna upp i ett tag i, i stället för att bara ta bilder och åka vidare."
+        ]
+      }
+    ]
+  },
+  "blog": {
+    "hero": {
+      "title": "Håll dig uppdaterad med de mest lästa artiklarna",
+      "subtitle": "Upptäck de senaste artiklarna, insikterna och tipsen för att berika ditt liv, stärka dina relationer och få värdefull vägledning genom expertsessioner",
+      "collage": [
+        {
+          "title": "Din guide till ett meningsfullt äktenskap",
+          "excerpt": "Utforska hjälpsamma artiklar och expertråd utformade för att stödja dig i att bygga en stark relation och fatta säkra beslut under din äktenskapliga resa."
+        },
+        {
+          "title": "Din guide till ett meningsfullt äktenskap",
+          "excerpt": "Utforska hjälpsamma artiklar och expertråd utformade för att stödja dig i att bygga en stark relation och fatta säkra beslut under din äktenskapliga resa."
+        },
+        {
+          "title": "Att bygga ett lyckligt liv tillsammans",
+          "excerpt": "Lär dig värdefulla insikter, praktiska tips och expertvägledning för att bygga en hälsosam relation och skapa ett lyckligt hem"
+        },
+        {
+          "title": "Insikter för din äktenskapliga resa",
+          "excerpt": "Upptäck inspirerande artiklar, relationstips och expertsessioner som hjälper dig att bättre förstå relationer och bygga en starkare, lyckligare framtid tillsammans."
+        },
+        {
+          "title": "Insikter för din äktenskapliga resa",
+          "excerpt": "Upptäck inspirerande artiklar, relationstips och expertsessioner som hjälper dig att bättre förstå relationer och bygga en starkare, lyckligare framtid tillsammans."
+        }
+      ]
+    },
+    "featured": {
+      "date": "02-12-2026",
+      "title": "Håll dig uppdaterad med de mest lästa artiklarna",
+      "description": "Zefaaf är en pålitlig plattform utformad för att hjälpa muslimer att hitta en livspartner som delar deras islamiska värderingar, på ett tryggt och sharia-anpassat sätt.",
+      "cta": "Läs mer"
+    },
+    "list": {
+      "title": "Zefaaf Blogg",
+      "description": "Allt du behöver veta om halal-matchning och att välja en livspartner genom pålitliga plattformar.",
+      "searchPlaceholder": "Sök",
+      "viewMore": "Visa mer",
+      "topics": {
+        "all": "Alla ämnen",
+        "qualities": "Egenskaper hos en god make/maka",
+        "relationships": "Framgångsrika äktenskapliga relationer",
+        "health": "Äktenskaplig hälsa",
+        "choosing": "Att välja en livspartner"
+      },
+      "articles": [
+        {
+          "title": "Äktenskap med en bosnisk kvinna för araber: Komplett guide",
+          "excerpt": "Att gifta sig med en bosnisk kvinna har blivit ett allt populärare val för arabiska män på grund av delade kulturella värderingar och enkel..",
+          "image": "/images/blog/grid-1.png"
+        },
+        {
+          "title": "Äktenskapssedvänjor och traditioner i Bosnien och Hercegovina: Oförglömliga firanden",
+          "excerpt": "Bröllopssedvänjor och traditioner i Bosnien och Hercegovina återspeglar en fascinerande blandning av europeiskt arv och äkta österländska influenser. Den här Zefaaf-artikeln utforskar traditionella förlovningsritualer, bröllopsmusik, festliga danser och det ikoniska lokala köket som gör bosniska firanden så särpräglade. Den här guiden erbjuder en djupdykning i det rika kulturarv som gör bröllop i Bosnien verkligt oförglömliga.",
+          "image": "/images/blog/grid-2-wide.png",
+          "wide": true
+        },
+        {
+          "title": "Äktenskap med en bosnisk kvinna för araber: Komplett guide",
+          "excerpt": "Att gifta sig med en bosnisk kvinna har blivit ett allt populärare val för arabiska män på grund av delade kulturella värderingar och enkel..",
+          "image": "/images/blog/grid-3.png"
+        },
+        {
+          "title": "Äktenskap med en bosnisk kvinna för araber: Komplett guide",
+          "excerpt": "Att gifta sig med en bosnisk kvinna har blivit ett allt populärare val för arabiska män på grund av delade kulturella värderingar och enkel..",
+          "image": "/images/blog/grid-4.png"
+        },
+        {
+          "title": "Äktenskap med en bosnisk kvinna för araber: Komplett guide",
+          "excerpt": "Att gifta sig med en bosnisk kvinna har blivit ett allt populärare val för arabiska män på grund av delade kulturella värderingar och enkel..",
+          "image": "/images/blog/grid-5.png"
+        }
+      ]
+    }
+  },
+  "downloadApp": {
+    "title": "En särskild gratis provperiod – ladda ner Zefaaf-\nappen nu och njut av gratis meddelanden\nunder dina första 3 dagar!",
+    "features": [
+      "En trygg och säker miljö för att hitta rätt partner.",
+      "En smidig upplevelse som följer islamiska riktlinjer."
+    ],
+    "description": "Ladda ner appen från App Store eller Google Play."
   },
   "whyChoose": {
     "title": "Varför Välja Zefaaf",
-    "description": "På Zefaaf tror vi att äktenskap är mer än bara kompatibilitet — det handlar om att bygga ett stabilt liv grundat på islamiska värderingar.",
+    "description": "På Zefaaf är det att hitta en livspartner inte längre begränsat till appar och webbplatser. Vi erbjuder verkliga lösningar, från att genomföra en personlig sökning å dina vägnar till att arrangera ett personligt möte.",
     "features": [
-      { "title": "Säkra videosamtal i enlighet med sharia", "description": "En säker videofunktion under religiös övervakning, som låter dig träffa din potentiella livspartner samtidigt som islamiska riktlinjer upprätthålls." },
-      { "title": "Direkt islamisk och familjerådgivning", "description": "Få en kostnadsfri konsultation vid registrering från våra religiösa experter och familjerådgivare." },
-      { "title": "Din röst, din personlighet – låt din röst tala för dig!", "description": "Ett röstmeddelande på din profil: presentera dig själv, dela dina intressen och värderingar, och berätta om din vision för äktenskapligt liv." },
-      { "title": "Familjemöte – börja ditt förhållande på ett halal-sätt", "description": "Ett privat videorum som för samman båda familjerna för första gången på ett korrekt sätt, i enlighet med sharia." },
-      { "title": "Förgodkännandesystem – slösa inte tid på improduktiva samtal!", "description": "Se din kompatibilitetsprocent med vilken profil som helst innan du börjar ett samtal." }
+      {
+        "title": "Zefaaf-appen | Sök och skapa kontakt själv",
+        "description": "Bläddra bland profiler, använd sök- och kompatibilitetsverktyg och skapa kontakt med lämpliga personer som söker ett seriöst äktenskap."
+      },
+      {
+        "title": "VIP-tjänst | Vi söker åt dig",
+        "description": "Ett specialiserat team söker efter lämpliga matchningar, rekommenderar dem till dig och följer upp personligen under tre månader."
+      },
+      {
+        "title": "Äktenskapsevenemang | Verkliga, organiserade möten",
+        "description": "Seriösa äktenskapsevenemang i Nederländerna och Bosnien som skapar genuina möjligheter att träffas i en organiserad miljö."
+      },
+      {
+        "title": "Följe till Bosnien | En resa för äktenskap",
+        "description": "Vi reser med dig och sköter samordning, uppföljning och direkta möten med bosniska kvinnor och deras familjer."
+      },
+      {
+        "title": "Personligt möte i ditt land | Var du än befinner dig",
+        "description": "Vi börjar med ett privat Zoom-möte med en familjerådgivare för att förstå din personlighet och dina behov, söker sedan efter en lämplig partner och ordnar ett personligt möte när det finns ömsesidig acceptans."
+      }
     ]
+  },
+  "contactUs": {
+    "mapAlt": "Karta som visar vårt kontors läge",
+    "hero": {
+      "eyebrow": "Kontakta oss",
+      "title": "Vi finns här för att hjälpa dig varje steg på vägen",
+      "description": "Om du har några frågor eller behöver support, tveka inte att kontakta oss. Vårt team är alltid tillgängligt för att säkerställa den bästa upplevelsen på Zefaaf-plattformen."
+    },
+    "form": {
+      "card": {
+        "title": "Skicka ditt meddelande till oss",
+        "subtitle": "Vi finns här för att lyssna och hjälpa dig",
+        "followUs": "Följ oss"
+      },
+      "heading": "Hur kan vi hjälpa dig idag?",
+      "fields": {
+        "fullName": "Fullständigt namn",
+        "email": "E-postadress",
+        "message": "Meddelande"
+      },
+      "send": "Skicka"
+    },
+    "faq": {
+      "title": "Vanliga frågor",
+      "description": "Hitta snabba svar på vanliga frågor nedan, behöver du mer hjälp?\nKontakta oss när som helst för ytterligare hjälp",
+      "heading": "Hur kan vi hjälpa dig?",
+      "searchPlaceholder": "Sök",
+      "items": [
+        {
+          "question": "Är registrering på Zefaaf-plattformen gratis?",
+          "answer": "Ja, grundregistrering är gratis för alla, med valfria tilläggspaket för premiumtjänster."
+        },
+        {
+          "question": "Hur lång tid tar det att hitta en lämplig matchning?",
+          "answer": "Det varierar från person till person, men vårt team arbetar kontinuerligt för att presentera dig för lämpliga matchningar så snabbt som möjligt."
+        },
+        {
+          "question": "Hålls min personliga information privat?",
+          "answer": "Ja, vi tar din integritet på stort allvar och delar endast din information med matchningar du godkänner."
+        },
+        {
+          "question": "Kan jag använda Zefaaf från vilket land som helst?",
+          "answer": "Ja, Zefaaf är tillgängligt över hela världen och kopplar samman muslimer från olika länder som söker äktenskap."
+        },
+        {
+          "question": "Hur kontaktar jag supportteamet?",
+          "answer": "Du kan nå oss när som helst via det här kontaktformuläret, och vårt team svarar så snart som möjligt."
+        }
+      ]
+    }
   }
 }

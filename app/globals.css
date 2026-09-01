@@ -9,6 +9,7 @@
     --font-sans: var(--font-sans);
     --font-alexandria: var(--font-alexandria);
     --font-almarai: var(--font-almarai);
+    --font-cairo: var(--font-cairo);
     /* Figma brand palette — generates color utilities (bg-, text-, border-), e.g. bg-brand, text-grey-primary */
     --color-cta-secondary: var(--cta-secondary);
     --color-black-primary: var(--black-primary);
@@ -20,8 +21,11 @@
     --color-white: var(--white);
     --color-light-blue: var(--light-blue);
     --color-purple: var(--purple);
+    --color-lavender: var(--lavender);
     --color-orange: var(--orange);
     --color-star-orange: var(--star-orange);
+    --color-vip-note: var(--vip-note);
+    --color-vip-note-foreground: var(--vip-note-foreground);
     /* Figma spacing scale, made fluid (see the clamp() block below) so
        gap-xs/p-xs and gap-lg/p-lg scale with viewport instead of sitting at
        one fixed px value. */
@@ -56,6 +60,8 @@
     --color-popover: var(--popover);
     --color-card-foreground: var(--card-foreground);
     --color-card: var(--card);
+    --color-person-card-foreground: var(--person-card-foreground);
+    --color-person-card: var(--person-card);
     --color-foreground: var(--foreground);
     --color-background: var(--background);
     --radius-sm: calc(var(--radius) * 0.6);
@@ -79,8 +85,17 @@
     --white: #FFFFFF;
     --light-blue: #BBE6EE;
     --purple: #DB34F2;
+    /* Figma also calls this "purple" but it's a separate pastel — VIP bullet
+       dots and the decorative discs on the VIP page. */
+    --lavender: #BDBBEE;
     --orange: #E3AB72;
     --star-orange: #FBB742;
+    /* VIP "Personalized Matching & Support" note. It always sits on top of a
+       photograph, so — like --primary — it is deliberately not overridden in
+       .dark: the cream/blue pairing has to stay legible over the sky image in
+       both themes. */
+    --vip-note: #FDF7EB;
+    --vip-note-foreground: #396B99;
 
     /* Fluid scale: every size below is `clamp(min, preferred, max)`. The
        `preferred` term mixes `vw` (a % of the current viewport width) with a
@@ -90,6 +105,7 @@
        given target sizes A at viewport W1 and B at viewport W2, slope =
        (B-A)/(W2-W1); preferred = (A - slope*W1)/16 + rem + slope*100 + vw.
        Reference range used throughout: 375px (small phone) → 1440px (desktop). */
+    --text-fluid-2xs: clamp(0.625rem, 0.6rem + 0.09vw, 0.6875rem); /* 10px → 11px — footer legal line */
     --text-fluid-xs: clamp(0.6875rem, 0.67rem + 0.09vw, 0.75rem); /* 11px → 12px — smallest footer copy */
     --text-fluid-nav: clamp(0.75rem, 0.71rem + 0.19vw, 0.875rem); /* 12px → 14px */
     --text-fluid-lg: clamp(1rem, 0.94rem + 0.28vw, 1.125rem); /* 16px → 18px */
@@ -120,6 +136,8 @@
     --foreground: var(--black-primary);
     --card: var(--white);
     --card-foreground: var(--black-primary);
+    --person-card: #FBF7F0;
+    --person-card-foreground: var(--black-primary);
     --popover: var(--white);
     --popover-foreground: var(--black-primary);
     --primary: var(--brand);
@@ -155,6 +173,8 @@
     --foreground: oklch(0.985 0 0);
     --card: oklch(0.205 0 0);
     --card-foreground: oklch(0.985 0 0);
+    --person-card: oklch(0.235 0.008 75);
+    --person-card-foreground: oklch(0.985 0 0);
     --popover: oklch(0.205 0 0);
     --popover-foreground: oklch(0.985 0 0);
     /* --primary/--primary-foreground intentionally NOT overridden here —

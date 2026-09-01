@@ -15,9 +15,18 @@
     "ratingValue": "4.8"
   },
   "stats": {
-    "happyClients": { "value": "34,484k", "label": "Xoşbəxt müştərilər" },
-    "successStories": { "value": "2768", "label": "Uğur hekayələri" },
-    "registeredMembers": { "value": "23416", "label": "Qeydiyyatdan keçmiş üzvlər" }
+    "happyClients": {
+      "value": "34,484k",
+      "label": "Xoşbəxt müştərilər"
+    },
+    "successStories": {
+      "value": "2768",
+      "label": "Uğur hekayələri"
+    },
+    "registeredMembers": {
+      "value": "23416",
+      "label": "Qeydiyyatdan keçmiş üzvlər"
+    }
   },
   "nav": {
     "home": "Ana səhifə",
@@ -28,7 +37,13 @@
     "articles": "Məqalələr",
     "upcomingEvents": "Növbəti Tədbirlər",
     "successStories": "Uğur Hekayələri",
-    "marriageRequest": "Nikah Sorğusu"
+    "marriageRequest": "Nikah Sorğusu",
+    "servicesMenu": {
+      "zefaafEvents": "Zefaaf tədbirləri",
+      "marriageForm": "Nikah formanız",
+      "bosniaTour": "Bosniya Nikah Turu",
+      "meetingInCountry": "Öz ölkənizdə görüş"
+    }
   },
   "footer": {
     "columns": {
@@ -86,41 +101,331 @@
     }
   },
   "services": {
+    "title": "Xidmətlərimiz",
     "items": [
-      { "title": "İslami Nikah Forumu", "description": "Nikah axtaran müsəlmanları və onların ailələrini bir araya gətirən İslami nikah forumu tədbirləri" },
-      { "title": "Nikah Müraciəti", "description": "Fərqli ölkələrdən ideal həyat yoldaşınızı tapın." },
-      { "title": "VIP Şəxsi Axtarış", "description": "Zefaaf məsləhətçilərinin uyğun həyat yoldaşları axtardığı xüsusi xidmət" },
-      { "title": "Bosniyada Komandamızın Müşayiəti", "description": "Zefaaf komandasının müştəriləri ciddi nikah üçün ailələrlə görüşə müşayiət etdiyi bələdçili proqram" },
-      { "title": "Onlayn Görüş", "description": "Şəxsiyyətinizi və ehtiyaclarınızı anlamaq üçün ailə məsləhətçisi ilə görüşdən başlayın" }
+      {
+        "title": "Zefaaf tədbirləri",
+        "description": "Nikah axtaran müsəlmanları və onların ailələrini bir araya gətirən İslami nikah forumu tədbirləri"
+      },
+      {
+        "title": "Nikah formanız",
+        "description": "Fərqli ölkələrdən ideal həyat yoldaşınızı tapın."
+      },
+      {
+        "title": "VIP Şəxsi Axtarış",
+        "description": "Zefaaf məsləhətçilərinin uyğun həyat yoldaşları axtardığı xüsusi xidmət"
+      },
+      {
+        "title": "Bosniya Nikah Turu",
+        "description": "Zefaaf komandasının müştəriləri ciddi nikah üçün ailələrlə görüşə müşayiət etdiyi bələdçili proqram"
+      },
+      {
+        "title": "Öz ölkənizdə görüş",
+        "description": "Şəxsiyyətinizi və ehtiyaclarınızı anlamaq üçün ailə məsləhətçisi ilə görüşdən başlayın"
+      }
     ]
   },
   "globalPresence": {
     "mapAlt": "Zefaaf-ın dünya üzrə əhatəsini göstərən xəritə",
-    "badge": "Zefaaf-da 3 milyon istifadəçi",
+    "badge": "Zefaaf-da 12 min istifadəçi",
     "title": "Biz <brand>175</brand> ölkədə fəaliyyət göstəririk",
     "description": "Zefaaf dünya üzrə müsəlmanları İslami dəyərlərini bölüşən, təhlükəsiz və Şəriətə uyğun etibarlı uyğunlaşdırma xidmətləri ilə birləşdirir.",
     "countries": {
-      "france": "Fransa", "germany": "Almaniya", "netherlands": "Niderland", "turkey": "Türkiyə", "russia": "Rusiya", "china": "Çin", "indonesia": "İndoneziya"
+      "france": "Şimali Amerika",
+      "germany": "Cənubi Amerika",
+      "netherlands": "Avropa",
+      "turkey": "Afrika",
+      "russia": "Asiya",
+      "china": "Okeaniya"
     }
   },
   "upcomingEvents": {
     "description": "Növbəti tədbirlərimizi kəşf edin və mənalı təcrübələr, ilhamverici söhbətlər və unudulmaz anlar üçün bizə qoşulun. Tarixlər, təfərrüatlar və qeydiyyat üçün bizi izləyin.",
     "bookCta": "Biletinizi rezerv edin",
     "events": [
-      { "date": "10 Yanvar", "time": "12:00", "title": "Niderlandda İslami Nikah Forumu", "location": "Churchillplein 10, 2517 JW", "price": "150 Avro" },
-      { "date": "25 Aprel", "time": "12:00", "title": "Bosniyada İslami Nikah Forumu", "location": "Terezija, 71000", "price": "150 Avro" }
+      {
+        "date": "10 Yanvar",
+        "time": "12:00",
+        "title": "Niderlandda İslami Nikah Forumu",
+        "location": "Churchillplein 10, 2517 JW",
+        "price": "150 Avro"
+      },
+      {
+        "date": "25 Aprel",
+        "time": "12:00",
+        "title": "Bosniyada İslami Nikah Forumu",
+        "location": "Terezija, 71000",
+        "price": "150 Avro"
+      },
+      {
+        "date": "14 İyun",
+        "time": "14:00",
+        "title": "Almaniyada İslami Nikah Forumu",
+        "location": "Alexanderplatz, Berlin",
+        "price": "150 Avro"
+      },
+      {
+        "date": "22 Avqust",
+        "time": "13:00",
+        "title": "Belçikada İslami Nikah Forumu",
+        "location": "Brüssel Şəhər Mərkəzi",
+        "price": "150 Avro"
+      },
+      {
+        "date": "17 Oktyabr",
+        "time": "15:00",
+        "title": "Türkiyədə İslami Nikah Forumu",
+        "location": "Fateh, İstanbul",
+        "price": "150 Avro"
+      },
+      {
+        "date": "12 Dekabr",
+        "time": "12:00",
+        "title": "Birləşmiş Krallıqda İslami Nikah Forumu",
+        "location": "London Şəhər Mərkəzi",
+        "price": "150 Avro"
+      }
     ],
-    "ticker": ["Ən yaxşı şəkildə yaşayın", "sağlam səyahət", "həyat yoldaşı", "sağlam seçimlər", "həyat yoldaşı"]
+    "ticker": [
+      "Ən yaxşı şəkildə yaşayın",
+      "sağlam səyahət",
+      "həyat yoldaşı",
+      "sağlam seçimlər",
+      "həyat yoldaşı"
+    ]
+  },
+  "blogDetail": {
+    "breadcrumb": {
+      "home": "Ana səhifə",
+      "blogs": "Məqalələr",
+      "current": "Məqalənin təfərrüatları"
+    },
+    "date": "02-12-2026",
+    "title": "Bosniya və Herseqovinada Turizm üzrə Tam Bələdçiniz: İlk Dəfə Səyahət Edənlər üçün Məsləhətlər",
+    "intro": "Bosniya və Herseqovina nəfəskəsən təbii gözəlliyi və zəngin tarixi ilə səyahətçilərin qəlbini fəth edən cazibədar bir istiqamətdir. Bu məqalədə Zefaaf ilk dəfə səyahət edənlər üçün ən vacib məsləhət və tövsiyələri, səyahətinizi planlaşdırmaqdan və ən yaxşı ziyarət vaxtını seçməkdən tutmuş yerli mədəniyyəti və etiketi anlamağa qədər əhatə edir. Bu hərtərəfli bələdçi sizə unudulmaz anlarla dolu rahat və yaddaqalan bir səyahət təcrübəsi yaşamağa kömək edəcək.",
+    "banner": {
+      "imageAlt": "Kameraya gülümsəyərək baxan müsəlman cütlük",
+      "title": "Trend məqalələrdən xəbərdar olun"
+    },
+    "leadParagraphs": [
+      "Bosniya və Herseqovina xəritədə asan görünə bilən, lakin səyahətdən əvvəl bəzi detalları bildikdə təcrübəni daha da gözəlləşdirən bir istiqamətdir. Tarixi Sarayevo, məşhur körpüsü ilə Mostar və şəhər və kəndləri əhatə edən təbiət arasında, səfərin sıxlaşdırılmış cədvəldən çox, ağıllı və çevik planlaşdırmaya ehtiyacı olduğunu görəcəksiniz.",
+      "Buna görə də, əgər bu sizin ilk səfərinizdirsə, çantalarınızı yığmazdan əvvəl ehtiyacınız olan Bosniya turizm bələdçisi budur; səyahət tarixini və qalacağınız yeri seçməkdən, nəqliyyata və təhlükəsizliyə, təcrübənizi daha rahat edən praktiki məsləhətlərə qədər — istər tək, istər həyat yoldaşınızla səyahət edin, istərsə də Bosniyada ailəvi turizm planlaşdırın."
+    ],
+    "sections": [
+      {
+        "heading": "Bosniya və Herseqovinaya səyahət üçün ən yaxşı vaxt nə vaxtdır?",
+        "paragraphs": [
+          "Bosniya və Herseqovinaya səyahət üçün ən yaxşı vaxt axtardığınız səfər növündən asılıdır. Yaz təbiətdən və mülayim havadan həzz almaq istəyənlər üçün uyğundur, yay isə açıq hava fəaliyyətləri və şəhərlər arası səyahətlər axtaran səyahətçiləri cəlb edir.",
+          "Payız sizə sakit bir atmosfer və müxtəlif rəngli mənzərələr bəxş edir, qış isə soyuq hava, dağlıq ərazilər və qış fəaliyyətləri həvəskarları üçün bir fürsətdir.",
+          "Nəticədə, hamıya uyğun tək bir cavab yoxdur. Əgər məqsədiniz güclü istidən qaçaraq şəhərləri gəzmək və təbiəti kəşf etməkdirsə, yaz və payız rahat seçimlərdir. Uzun gün işığından və çoxsaylı fəaliyyətlərdən faydalanmaq istəyirsinizsə, yay sizə uyğun ola bilər.",
+          "Mövsümü seçdikdən sonra ən vacib sual gəlir: Harada qalacaqsınız və necə hərəkət edəcəksiniz?"
+        ]
+      },
+      {
+        "heading": "Bosniya və Herseqovinada harada qalmaq lazımdır?",
+        "paragraphs": [
+          "Qalacağınız yeri seçərkən sadəcə qiymətə deyil, səyahət proqramınıza uyğun olmasına diqqət etməlisiniz. Məsələn, Sarayevoda mərkəzi ərazilərə yaxın qalmaq görməli yerlərə, restoranlara və nəqliyyata çıxışı asanlaşdırır, digər şəhərlərdə isə şəhər mərkəzinə və ya ziyarət etməyi planlaşdırdığınız təbii ərazilərə yaxın qalmağı üstün tuta bilərsiniz.",
+          "Rezervasiya etməzdən əvvəl səyahətçi rəylərini nəzərdən keçirmək və xüsusilə ailə ilə səyahət edirsinizsə, ehtiyacınız olan imkanların mövcudluğunu təmin etmək də vacibdir.",
+          "Bosniyada ailəvi turizm üçün isə yerləşmə, sakitlik və xidmətlərə asan çatımlılığa üstünlük vermək daha yaxşıdır ki, uzun məsafələr üzərində gündəlik hərəkət ailə üzvləri üçün yükə çevrilməsin.",
+          "Yerləşmə müəyyən edildikdən sonra şəhərlər arası nəqliyyatı planlaşdırmaq növbəti addım olur."
+        ]
+      },
+      {
+        "heading": "Bosniya və Herseqovinada nəqliyyat necədir?",
+        "paragraphs": [
+          "Bosniya və Herseqovinada bir neçə üsulla hərəkət edə bilərsiniz və seçim məsafədən, insan sayından və səfərin xarakterindən asılıdır.",
+          "Şəhər daxilində yerli nəqliyyatdan və ya taksilərdən istifadə edilə bilər, şəhərlər arasında hərəkət edərkən isə avtobuslar praktik bir seçim olur. Əgər dayanma vaxtlarınızı özünüz təyin etmək və şəhər mərkəzlərindən uzaq yerləri ziyarət etmək istəyirsinizsə, avtomobil kirayələmək daha uyğun ola bilər.",
+          "Bununla belə, yeni bir ölkədə maşın sürmək diqqət tələb edir; Bosniyanın dağlıq təbiəti dolama yollar və hündürlüklər deməkdir, buna görə də yol səyahətlərinə sadəcə bir şəhərdən digərinə sürətli keçid kimi baxılmamalıdır.",
+          "Beləliklə, Bosniya turizm bələdçisindən vacib bir məsləhət: bir günə çox sayda şəhər sığışdırmayın. Bəzən təyinat sayını azaltmaq ölkəni həqiqətən görmək üçün ən yaxşı yoldur."
+        ]
+      },
+      {
+        "heading": "Bosniya və Herseqovina səyahətçilər üçün təhlükəsizdirmi?",
+        "paragraphs": [
+          "Ümumilikdə, Bosniya və Herseqovina turizm üçün uyğun bir istiqamət hesab olunur, lakin bu, hər səyahətçinin ehtiyac duyduğu adi ehtiyat tədbirlərindən əl çəkmək demək deyil.",
+          "Pulunuzu və sənədlərinizi təhlükəsiz bir yerdə saxlayın, şəxsi əşyalarınızı nəzarətsiz qoymaqdan çəkinin və izdihamlı yerlərdə diqqətli olun. Hər hansı bir hadisə baş verərsə, pasportun, rezervasiyaların və vacib sənədlərin elektron nüsxələrini saxlamaq da tövsiyə olunur.",
+          "Qeyd edilməli xüsusi bir məqam var: əhalinin sıx olmadığı və ya az tanınan ərazilərə səfər edərkən, müəyyən edilmiş yollardan və cığırlardan kənara çıxmayın və yerli hakimiyyət orqanlarının təlimatlarına əməl edin, çünki Bosniyada bəzi ərazilər hələ də müharibə qalıqları və minalar səbəbindən ehtiyat tələb edir.",
+          "Bu ehtiyat tədbirləri sizi səyahət barədə narahat etməməlidir; əksinə, onları əvvəlcədən bilmək sizə lazımsız sürprizlər olmadan həzz almaq üçün daha çox imkan verir."
+        ]
+      },
+      {
+        "heading": "Bosniyaya ilk dəfə səyahət edənlər üçün ən vacib məsləhətlər hansılardır?",
+        "paragraphs": [
+          "Əgər bu ilk səfəriniz olacaqsa, sizə çoxlu çaşqınlıqdan qurtula biləcək bir sıra Bosniya səyahətçiləri üçün məsləhətlər var:"
+        ],
+        "list": [
+          "Səfəri gəlməzdən əvvəl planlaşdırın, lakin dəyişiklik üçün yer buraxın.",
+          "Qısa bir səfərdə hər şeyi ziyarət etməyə çalışmayın.",
+          "Pasportunuzun və rezervasiyalarınızın bir nüsxəsini telefonunuzda saxlayın.",
+          "Uzaq yerlərə getməzdən əvvəl qəbul edilən ödəniş üsullarını yoxlayın.",
+          "Elektron ödəniş üsullarının mövcud olmadığı hallar üçün özünüzlə bir qədər yerli nağd pul aparın.",
+          "Rahat ayaqqabı geyinin, xüsusilə təbii ərazilər kəşf etməyi planlaşdırırsınızsa.",
+          "Gündəlik səyahətlərdən əvvəl hava vəziyyətini yoxlayın.",
+          "Yalnız internetə güvənməyin; vacib məlumatları oflayn əldə edilə bilən şəkildə saxlamaq faydalıdır.",
+          "Avtomobil kirayələyirsinizsə, sürücülük qaydalarını, sığortanı və kirayə şirkətinin şərtlərini yaxşı başa düşün.",
+          "Səfər cədvəlini vaxtınızın çoxunu maşında keçirəcək qədər sıxlaşdırmayın.",
+          "Ən əsası: səfərə bir yarış kimi deyil, bir təcrübə kimi baxın. Xüsusilə Bosniya sadəcə şəkil çəkib getmək əvəzinə bir az dayanıb yaşamağa dəyər ölkələrdən biridir."
+        ]
+      }
+    ]
+  },
+  "blog": {
+    "hero": {
+      "title": "Trend məqalələrdən xəbərdar olun",
+      "subtitle": "Həyatınızı zənginləşdirmək, münasibətlərinizi gücləndirmək və ekspert sessiyaları vasitəsilə dəyərli rəhbərlik əldə etmək üçün ən son məqalələri, fikirləri və məsləhətləri kəşf edin",
+      "collage": [
+        {
+          "title": "Mənalı Nikaha Bələdçiniz",
+          "excerpt": "Nikah səyahətiniz boyunca güclü münasibət qurmaq və inamla qərar verməkdə sizə dəstək olmaq üçün hazırlanmış faydalı məqalələri və ekspert məsləhətlərini kəşf edin."
+        },
+        {
+          "title": "Mənalı Nikaha Bələdçiniz",
+          "excerpt": "Nikah səyahətiniz boyunca güclü münasibət qurmaq və inamla qərar verməkdə sizə dəstək olmaq üçün hazırlanmış faydalı məqalələri və ekspert məsləhətlərini kəşf edin."
+        },
+        {
+          "title": "Birlikdə Xoşbəxt Həyat Qurmaq",
+          "excerpt": "Sağlam münasibət qurmaq və xoşbəxt bir həyat yaratmaq üçün dəyərli fikirlər, praktik məsləhətlər və ekspert rəhbərliyi öyrənin"
+        },
+        {
+          "title": "Nikah Səyahətiniz üçün Fikirlər",
+          "excerpt": "Münasibətləri daha yaxşı anlamağınıza və birlikdə daha güclü, xoşbəxt bir gələcək qurmağınıza kömək etmək üçün ilhamverici məqalələri, münasibət məsləhətlərini və ekspert sessiyalarını kəşf edin."
+        },
+        {
+          "title": "Nikah Səyahətiniz üçün Fikirlər",
+          "excerpt": "Münasibətləri daha yaxşı anlamağınıza və birlikdə daha güclü, xoşbəxt bir gələcək qurmağınıza kömək etmək üçün ilhamverici məqalələri, münasibət məsləhətlərini və ekspert sessiyalarını kəşf edin."
+        }
+      ]
+    },
+    "featured": {
+      "date": "02-12-2026",
+      "title": "Trend məqalələrdən xəbərdar olun",
+      "description": "Zefaaf müsəlmanlara İslami dəyərlərini bölüşən həyat yoldaşı tapmaqda kömək etmək üçün nəzərdə tutulmuş, təhlükəsiz və Şəriətə uyğun etibarlı platformadır.",
+      "cta": "Daha çox oxuyun"
+    },
+    "list": {
+      "title": "Zefaaf Bloqu",
+      "description": "Etibarlı platformalar vasitəsilə halal uyğunlaşdırma və həyat yoldaşı seçimi haqqında bilməli olduğunuz hər şey.",
+      "searchPlaceholder": "Axtarın",
+      "viewMore": "Daha çox göstər",
+      "topics": {
+        "all": "Bütün Mövzular",
+        "qualities": "Yaxşı Həyat Yoldaşının Xüsusiyyətləri",
+        "relationships": "Uğurlu Nikah Münasibətləri",
+        "health": "Nikah Sağlamlığı",
+        "choosing": "Həyat Yoldaşı Seçimi"
+      },
+      "articles": [
+        {
+          "title": "Ərəblər üçün Bosniyalı Qadınla Nikah: Tam Bələdçi",
+          "excerpt": "Bosniyalı bir qadınla evlənmək ortaq mədəni dəyərlər və sadə... səbəbindən ərəb kişilər üçün getdikcə populyarlaşan bir seçim halına gəlib.",
+          "image": "/images/blog/grid-1.png"
+        },
+        {
+          "title": "Bosniya və Herseqovinada Nikah Adət-ənənələri: Unudulmaz Qeydlər",
+          "excerpt": "Bosniya və Herseqovinada toy adət-ənənələri Avropa irsi ilə əsl Şərq təsirlərinin cazibədar qarışığını əks etdirir. Bu Zefaaf məqaləsi Bosniya qeydlərini bu qədər özünəməxsus edən ənənəvi nişan mərasimlərini, toy musiqisini, bayram rəqslərini və məşhur yerli mətbəxi araşdırır. Bu bələdçi Bosniyada toyları həqiqətən unudulmaz edən zəngin mədəni irsə dərin bir baxış təqdim edir.",
+          "image": "/images/blog/grid-2-wide.png",
+          "wide": true
+        },
+        {
+          "title": "Ərəblər üçün Bosniyalı Qadınla Nikah: Tam Bələdçi",
+          "excerpt": "Bosniyalı bir qadınla evlənmək ortaq mədəni dəyərlər və sadə... səbəbindən ərəb kişilər üçün getdikcə populyarlaşan bir seçim halına gəlib.",
+          "image": "/images/blog/grid-3.png"
+        },
+        {
+          "title": "Ərəblər üçün Bosniyalı Qadınla Nikah: Tam Bələdçi",
+          "excerpt": "Bosniyalı bir qadınla evlənmək ortaq mədəni dəyərlər və sadə... səbəbindən ərəb kişilər üçün getdikcə populyarlaşan bir seçim halına gəlib.",
+          "image": "/images/blog/grid-4.png"
+        },
+        {
+          "title": "Ərəblər üçün Bosniyalı Qadınla Nikah: Tam Bələdçi",
+          "excerpt": "Bosniyalı bir qadınla evlənmək ortaq mədəni dəyərlər və sadə... səbəbindən ərəb kişilər üçün getdikcə populyarlaşan bir seçim halına gəlib.",
+          "image": "/images/blog/grid-5.png"
+        }
+      ]
+    }
+  },
+  "downloadApp": {
+    "title": "Xüsusi Pulsuz Sınaq – İndi Zefaaf\ntətbiqini yükləyin və ilk 3 gün\npulsuz mesajlaşmadan həzz alın!",
+    "features": [
+      "Doğru tərəfdaşı tapmaq üçün təhlükəsiz və etibarlı mühit.",
+      "İslami qaydalara uyğun rahat bir təcrübə."
+    ],
+    "description": "Tətbiqi App Store və ya Google Play-dən yükləyin."
   },
   "whyChoose": {
     "title": "Niyə Zefaaf-ı seçməlisiniz",
-    "description": "Zefaaf-da biz nikahın sadəcə uyğunluqdan daha çox olduğuna inanırıq — bu, İslami dəyərlər üzərində qurulmuş sabit həyat qurmaqla bağlıdır.",
+    "description": "Zefaaf-da həyat yoldaşı tapmaq artıq tətbiqlər və vebsaytlarla məhdudlaşmır. Biz sizin adınızdan şəxsi axtarış aparmaqdan tutmuş üz-üzə görüş təşkil etməyə qədər real həllər təqdim edirik.",
     "features": [
-      { "title": "Təhlükəsiz, Şəriətə uyğun video zənglər", "description": "Dini nəzarət altında təhlükəsiz video funksiyası, İslami qaydalara riayət edərək potensial həyat yoldaşınızla tanış olmağa imkan verir." },
-      { "title": "Birbaşa İslami və ailə məsləhəti", "description": "Qeydiyyatdan sonra dini ekspertlərimizdən və ailə məsləhətçilərimizdən pulsuz məsləhət alın." },
-      { "title": "Sizin səsiniz, sizin şəxsiyyətiniz – qoy səsiniz sizin adınızdan danışsın!", "description": "Profilinizdə səs mesajı: özünüzü tanıdın, maraqlarınızı və dəyərlərinizi bölüşün və ailə həyatı ilə bağlı görüşünüzdən danışın." },
-      { "title": "Ailə görüşü – münasibətinizə halal yolla başlayın", "description": "İki ailəni ilk dəfə düzgün, Şəriətə uyğun şəkildə bir araya gətirən şəxsi video otağı." },
-      { "title": "Ön təsdiq sistemi – məhsuldar olmayan söhbətlərə vaxt itirməyin!", "description": "Söhbətə başlamazdan əvvəl istənilən profil ilə uyğunluq faizinizi görün." }
+      {
+        "title": "Zefaaf Tətbiqi | Özünüz axtarın və əlaqə saxlayın",
+        "description": "Profilləri araşdırın, axtarış və uyğunluq alətlərindən istifadə edin və ciddi nikah axtaran uyğun insanlarla əlaqə saxlayın."
+      },
+      {
+        "title": "VIP Xidmət | Biz sizin üçün axtarırıq",
+        "description": "Xüsusi komanda uyğun namizədləri axtarır, onları sizə təqdim edir və üç ay ərzində şəxsən sizinlə əlaqə saxlayır."
+      },
+      {
+        "title": "Nikah Tədbirləri | Real, mütəşəkkil tanışlıqlar",
+        "description": "Niderland və Bosniyada keçirilən ciddi nikah tədbirləri mütəşəkkil mühitdə həqiqi tanışlıq imkanları yaradır."
+      },
+      {
+        "title": "Bosniyaya Müşayiət | Nikah üçün səyahət",
+        "description": "Biz sizinlə birlikdə səyahət edir, əlaqələndirmə, izləmə və Bosniyalı qadınlar və ailələri ilə bilavasitə görüşləri təşkil edirik."
+      },
+      {
+        "title": "Öz ölkənizdə şəxsi görüş | Harada olmağınızdan asılı olmayaraq",
+        "description": "Şəxsiyyətinizi və ehtiyaclarınızı anlamaq üçün ailə məsləhətçisi ilə şəxsi Zoom görüşü ilə başlayırıq, sonra uyğun tərəfdaş axtarır və qarşılıqlı razılıq olduqda şəxsi görüş təşkil edirik."
+      }
     ]
+  },
+  "contactUs": {
+    "mapAlt": "Ofisimizin yerini göstərən xəritə",
+    "hero": {
+      "eyebrow": "Bizimlə Əlaqə",
+      "title": "Hər addımda sizə kömək etmək üçün buradayıq",
+      "description": "Hər hansı bir sualınız varsa və ya dəstəyə ehtiyacınız varsa, bizimlə əlaqə saxlamaqdan çəkinməyin. Komandamız Zefaaf platformasında ən yaxşı təcrübəni təmin etmək üçün həmişə əlçatandır."
+    },
+    "form": {
+      "card": {
+        "title": "Bizə mesajınızı göndərin",
+        "subtitle": "Sizi dinləmək və sizə kömək etmək üçün buradayıq",
+        "followUs": "Bizi izləyin"
+      },
+      "heading": "Bu gün sizə necə kömək edə bilərik?",
+      "fields": {
+        "fullName": "Tam ad",
+        "email": "E-poçt ünvanı",
+        "message": "Mesaj"
+      },
+      "send": "Göndər"
+    },
+    "faq": {
+      "title": "Tez-tez verilən suallar",
+      "description": "Ümumi sualların cavablarını aşağıda tez tapın, daha çox köməyə ehtiyacınız var?\nƏlavə dəstək üçün istənilən vaxt bizimlə əlaqə saxlayın",
+      "heading": "Sizə necə kömək edə bilərik?",
+      "searchPlaceholder": "Axtarın",
+      "items": [
+        {
+          "question": "Zefaaf platformasında qeydiyyat pulsuzdurmu?",
+          "answer": "Bəli, əsas qeydiyyat hər kəs üçün pulsuzdur, premium xidmətlər üçün isə əlavə paketlər mövcuddur."
+        },
+        {
+          "question": "Uyğun bir tərəfdaş tapmaq nə qədər vaxt aparır?",
+          "answer": "Bu, insandan insana dəyişir, lakin komandamız sizi mümkün qədər tez uyğun namizədlərlə tanış etmək üçün davamlı işləyir."
+        },
+        {
+          "question": "Şəxsi məlumatlarım məxfi saxlanılırmı?",
+          "answer": "Bəli, biz məxfiliyinizi ciddi qəbul edirik və məlumatlarınızı yalnız sizin təsdiqlədiyiniz namizədlərlə paylaşırıq."
+        },
+        {
+          "question": "Zefaaf-dan istənilən ölkədən istifadə edə bilərəmmi?",
+          "answer": "Bəli, Zefaaf bütün dünyada mövcuddur və nikah axtaran müsəlmanları müxtəlif ölkələrdən birləşdirir."
+        },
+        {
+          "question": "Dəstək komandası ilə necə əlaqə saxlaya bilərəm?",
+          "answer": "Bu əlaqə forması vasitəsilə istənilən vaxt bizimlə əlaqə saxlaya bilərsiniz, komandamız mümkün qədər tez cavab verəcək."
+        }
+      ]
+    }
   }
 }
