@@ -16,15 +16,16 @@ import { NavLink } from "./nav-link";
 // Figma (node 540:416979) only gives a real destination for VIP Personal
 // Search (the /vip page, reusing the existing `nav.vipSearch` label since
 // it's the exact same string), Zefaaf events (the /events page, built from
-// node 539:415976), and Meeting in Your Country (the /meeting-in-country
-// page, built from node 539:408802); the rest don't have a page yet,
-// matching the "#" placeholder convention already used for the other nav
-// items in Header.
+// node 539:415976), Meeting in Your Country (the /meeting-in-country page,
+// built from node 539:408802), and Bosnia Marriage Tour (the /bosnia-tour
+// page, built from node 553:16222); the rest don't have a page yet, matching
+// the "#" placeholder convention already used for the other nav items in
+// Header.
 export const SERVICE_MENU_ITEMS = [
   { labelKey: "nav.servicesMenu.zefaafEvents", href: "/events" },
   { labelKey: "nav.servicesMenu.marriageForm", href: "#" },
   { labelKey: "nav.vipSearch", href: "/vip" },
-  { labelKey: "nav.servicesMenu.bosniaTour", href: "#" },
+  { labelKey: "nav.servicesMenu.bosniaTour", href: "/bosnia-tour" },
   { labelKey: "nav.servicesMenu.meetingInCountry", href: "/meeting-in-country" },
 ] as const;
 

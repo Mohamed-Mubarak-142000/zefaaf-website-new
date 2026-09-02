@@ -4,6 +4,7 @@ import { motion, MotionConfig } from "framer-motion";
 import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
 
+import { Link } from "@/shared/i18n";
 import { Button } from "@/shared/ui/button";
 
 import { getEventsCopy } from "../model/copy";
@@ -17,6 +18,12 @@ const CARD_IMAGES = [
   "/images/events/event-card-5.webp",
   "/images/events/event-card-6.webp",
 ] as const;
+
+// Only the Bosnia gathering (2nd event, every locale) has a dedicated
+// details page so far — same pattern as the blog list, where only one
+// article has a real route and the rest stay plain cards.
+const BOSNIA_EVENT_INDEX = 1;
+const BOSNIA_EVENT_PATH = "/events/bosnia-islamic-marriage-gathering";
 
 type Event = {
   date: string;
@@ -90,14 +97,27 @@ export function EventsList() {
                 </span>
               </div>
 
-              <Button
-                variant="default"
-                className="mt-[clamp(14px,1.6vw,18px)] h-auto w-full gap-3 rounded-[6px] py-[13.5px] font-almarai text-[18px] font-bold"
-                icon={<img src="/icons/event-arrow-up-right.svg" alt="" className="size-[18px]" />}
-                iconPosition="end"
-              >
-                {buyTicketsCta}
-              </Button>
+              {index === BOSNIA_EVENT_INDEX ? (
+                <Button
+                  asChild
+                  variant="default"
+                  className="mt-[clamp(14px,1.6vw,18px)] h-auto w-full gap-3 rounded-[6px] py-[13.5px] font-almarai text-[18px] font-bold"
+                >
+                  <Link href={BOSNIA_EVENT_PATH}>
+                    {buyTicketsCta}
+                    <img src="/icons/event-arrow-up-right.svg" alt="" className="size-[18px]" />
+                  </Link>
+                </Button>
+              ) : (
+                <Button
+                  variant="default"
+                  className="mt-[clamp(14px,1.6vw,18px)] h-auto w-full gap-3 rounded-[6px] py-[13.5px] font-almarai text-[18px] font-bold"
+                  icon={<img src="/icons/event-arrow-up-right.svg" alt="" className="size-[18px]" />}
+                  iconPosition="end"
+                >
+                  {buyTicketsCta}
+                </Button>
+              )}
             </motion.li>
           ))}
         </ul>
