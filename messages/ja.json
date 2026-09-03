@@ -427,5 +427,77 @@
         }
       ]
     }
+  },
+  "paymentStatus": {
+    "close": "閉じる",
+    "backToHome": "ホームに戻る",
+    "tryAgain": "再試行",
+    "success": {
+      "eyebrow": "完了!",
+      "title": "支払いが完了しました",
+      "description": "お支払いが確認され、ご予約が完了しました。ご予約とチケットの詳細を確認いただけます。"
+    },
+    "fail": {
+      "eyebrow": "おっと!",
+      "title": "支払いに失敗しました",
+      "description": "お支払いを完了できませんでした。お支払い情報をご確認いただくか、別のお支払い方法を選択して再度お試しください。"
+    }
+  },
+  "marriageRequest": {
+    "modalTitle": "所在地情報",
+    "close": "閉じる",
+    "actions": {
+      "back": "戻る",
+      "next": "次へ",
+      "submit": "送信"
+    },
+    "steps": {
+      "personalInfo": "個人情報",
+      "financialLifestyle": "経済状況とライフスタイル情報",
+      "partnerSpecs": "パートナーの条件"
+    },
+    "step1": {
+      "applicant": "申請者",
+      "male": "男性",
+      "female": "女性",
+      "guardian": "保護者",
+      "fullName": "氏名",
+      "email": "メールアドレス",
+      "emailRequired": "この項目は必須です",
+      "phone": "電話番号",
+      "phoneNumberPlaceholder": "電話番号",
+      "contactMethods": "連絡方法",
+      "nationality": "国籍",
+      "city": "都市",
+      "marriageRequirements": "結婚の希望条件",
+      "day": "日",
+      "month": "月",
+      "year": "年",
+      "country": "国",
+      "marriageType": "結婚の種類",
+      "marriageRequirement": "結婚条件"
+    },
+    "step2": {
+      "education": "学歴",
+      "jobStability": "雇用の安定性",
+      "housingState": "住居状況",
+      "monthlyIncome": "月収",
+      "dowry": "婚資（マハル）",
+      "gold": "ゴールド",
+      "maritalStatus": "婚姻状況",
+      "religiousLevel": "信仰の度合い",
+      "personalTraits": "自身の特性",
+      "partnerTraits": "パートナーに求める特性"
+    },
+    "step3": {
+      "minimumAge": "最低年齢",
+      "maximumAge": "最高年齢",
+      "preferredNationalities": "希望する国籍",
+      "partnersCountry": "パートナーの国",
+      "preferredMaritalStatuses": "希望する婚姻状況",
+      "preferredReligiousStatuses": "希望する信仰の度合い",
+      "preferredEducationLevels": "希望する学歴",
+      "preferredJobGrades": "希望する職業レベル"
+    }
   }
 }

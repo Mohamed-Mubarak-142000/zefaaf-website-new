@@ -1,9 +1,11 @@
 "use client";
 
+import { useState } from "react";
 import { motion, MotionConfig } from "framer-motion";
 import Image from "next/image";
 import { useLocale } from "next-intl";
 
+import { BookSeatDialog } from "@/features/book-seat";
 import { Button } from "@/shared/ui/button";
 
 import { getBosniaCopy } from "../model/copy";
@@ -36,6 +38,7 @@ function InfoPill({ icon, label }: { icon: string; label: string }) {
 
 export function BosniaTourHero() {
   const { hero } = getBosniaCopy(useLocale());
+  const [bookSeatOpen, setBookSeatOpen] = useState(false);
 
   const pills = [
     { icon: "/icons/bosnia-tour/icon-pill-calendar.svg", label: hero.pills.date },
@@ -83,9 +86,14 @@ export function BosniaTourHero() {
             </motion.p>
 
             <motion.div variants={REVEAL}>
-              <Button asChild className="mt-[clamp(18px,2vw,29px)] rounded-[8px] font-alexandria text-[clamp(9px,0.88vw,10.5px)] font-normal">
-                <a href="#">{hero.cta}</a>
+              <Button
+                type="button"
+                onClick={() => setBookSeatOpen(true)}
+                className="mt-[clamp(18px,2vw,29px)] rounded-[8px] font-alexandria text-[clamp(9px,0.88vw,10.5px)] font-normal"
+              >
+                {hero.cta}
               </Button>
+              <BookSeatDialog open={bookSeatOpen} onOpenChange={setBookSeatOpen} />
             </motion.div>
           </div>
 

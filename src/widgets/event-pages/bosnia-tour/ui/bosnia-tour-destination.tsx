@@ -1,9 +1,11 @@
 "use client";
 
+import { useState } from "react";
 import { motion, MotionConfig } from "framer-motion";
 import Image from "next/image";
 import { useLocale } from "next-intl";
 
+import { BookSeatDialog } from "@/features/book-seat";
 import { Button } from "@/shared/ui/button";
 
 import { getBosniaCopy } from "../model/copy";
@@ -11,6 +13,7 @@ import { FADE, REVEAL, REVEAL_STAGGERED, VIEWPORT } from "../model/motion";
 
 export function BosniaTourDestination() {
   const { destination } = getBosniaCopy(useLocale());
+  const [bookSeatOpen, setBookSeatOpen] = useState(false);
 
   return (
     <MotionConfig reducedMotion="user">
@@ -76,9 +79,14 @@ export function BosniaTourDestination() {
             </motion.div>
 
             <motion.div variants={REVEAL}>
-              <Button asChild className="mt-[clamp(18px,2vw,29px)] rounded-[8px] font-alexandria text-[clamp(9px,0.88vw,10.5px)] font-normal">
-                <a href="#">{destination.cta}</a>
+              <Button
+                type="button"
+                onClick={() => setBookSeatOpen(true)}
+                className="mt-[clamp(18px,2vw,29px)] rounded-[8px] font-alexandria text-[clamp(9px,0.88vw,10.5px)] font-normal"
+              >
+                {destination.cta}
               </Button>
+              <BookSeatDialog open={bookSeatOpen} onOpenChange={setBookSeatOpen} />
             </motion.div>
           </div>
         </div>

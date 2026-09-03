@@ -427,5 +427,77 @@
         }
       ]
     }
+  },
+  "paymentStatus": {
+    "close": "닫기",
+    "backToHome": "홈으로 돌아가기",
+    "tryAgain": "다시 시도",
+    "success": {
+      "eyebrow": "완료!",
+      "title": "결제 성공",
+      "description": "결제가 확인되었으며 예약이 완료되었습니다. 이제 예약 및 티켓 세부 정보를 확인하실 수 있습니다."
+    },
+    "fail": {
+      "eyebrow": "이런!",
+      "title": "결제 실패",
+      "description": "결제를 완료할 수 없습니다. 결제 정보를 확인하거나 다른 결제 방법을 선택한 후 다시 시도해 주세요."
+    }
+  },
+  "marriageRequest": {
+    "modalTitle": "위치 정보",
+    "close": "닫기",
+    "actions": {
+      "back": "뒤로",
+      "next": "다음",
+      "submit": "제출"
+    },
+    "steps": {
+      "personalInfo": "개인 정보",
+      "financialLifestyle": "재정 및 라이프스타일 정보",
+      "partnerSpecs": "배우자 조건"
+    },
+    "step1": {
+      "applicant": "신청자",
+      "male": "남성",
+      "female": "여성",
+      "guardian": "보호자",
+      "fullName": "성명",
+      "email": "이메일",
+      "emailRequired": "이 항목은 필수입니다",
+      "phone": "전화번호",
+      "phoneNumberPlaceholder": "전화번호",
+      "contactMethods": "연락 방법",
+      "nationality": "국적",
+      "city": "도시",
+      "marriageRequirements": "결혼 요건",
+      "day": "일",
+      "month": "월",
+      "year": "년",
+      "country": "국가",
+      "marriageType": "결혼 유형",
+      "marriageRequirement": "결혼 요건"
+    },
+    "step2": {
+      "education": "학력",
+      "jobStability": "직업 안정성",
+      "housingState": "주거 상태",
+      "monthlyIncome": "월 소득",
+      "dowry": "혼납금(마흐르)",
+      "gold": "금",
+      "maritalStatus": "혼인 상태",
+      "religiousLevel": "신앙심 수준",
+      "personalTraits": "본인의 특성",
+      "partnerTraits": "배우자에게 바라는 특성"
+    },
+    "step3": {
+      "minimumAge": "최소 연령",
+      "maximumAge": "최대 연령",
+      "preferredNationalities": "선호 국적",
+      "partnersCountry": "배우자의 국가",
+      "preferredMaritalStatuses": "선호 혼인 상태",
+      "preferredReligiousStatuses": "선호 신앙심 수준",
+      "preferredEducationLevels": "선호 학력",
+      "preferredJobGrades": "선호 직업 등급"
+    }
   }
 }

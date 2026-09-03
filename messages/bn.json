@@ -427,5 +427,77 @@
         }
       ]
     }
+  },
+  "paymentStatus": {
+    "close": "বন্ধ করুন",
+    "backToHome": "হোমে ফিরে যান",
+    "tryAgain": "আবার চেষ্টা করুন",
+    "success": {
+      "eyebrow": "সম্পন্ন!",
+      "title": "পেমেন্ট সফল হয়েছে",
+      "description": "আপনার পেমেন্ট নিশ্চিত করা হয়েছে এবং আপনার বুকিং সম্পন্ন হয়েছে। আপনি এখন আপনার বুকিং ও টিকিটের বিবরণ দেখতে পারেন।"
+    },
+    "fail": {
+      "eyebrow": "দুঃখিত!",
+      "title": "পেমেন্ট ব্যর্থ হয়েছে",
+      "description": "আমরা আপনার পেমেন্ট সম্পন্ন করতে পারিনি। অনুগ্রহ করে আপনার পেমেন্টের বিবরণ পরীক্ষা করুন অথবা অন্য একটি পেমেন্ট পদ্ধতি বেছে নিয়ে আবার চেষ্টা করুন।"
+    }
+  },
+  "marriageRequest": {
+    "modalTitle": "অবস্থান তথ্য",
+    "close": "বন্ধ করুন",
+    "actions": {
+      "back": "পিছনে",
+      "next": "পরবর্তী",
+      "submit": "জমা দিন"
+    },
+    "steps": {
+      "personalInfo": "ব্যক্তিগত তথ্য",
+      "financialLifestyle": "আর্থিক ও জীবনযাত্রার তথ্য",
+      "partnerSpecs": "সঙ্গীর শর্তাবলী"
+    },
+    "step1": {
+      "applicant": "আবেদনকারী",
+      "male": "পুরুষ",
+      "female": "নারী",
+      "guardian": "অভিভাবক",
+      "fullName": "পূর্ণ নাম",
+      "email": "ইমেইল",
+      "emailRequired": "এই ক্ষেত্রটি আবশ্যক",
+      "phone": "ফোন",
+      "phoneNumberPlaceholder": "ফোন নম্বর",
+      "contactMethods": "যোগাযোগের মাধ্যম",
+      "nationality": "জাতীয়তা",
+      "city": "শহর",
+      "marriageRequirements": "বিবাহের প্রয়োজনীয়তা",
+      "day": "দিন",
+      "month": "মাস",
+      "year": "বছর",
+      "country": "দেশ",
+      "marriageType": "বিবাহের ধরন",
+      "marriageRequirement": "বিবাহের প্রয়োজনীয়তা"
+    },
+    "step2": {
+      "education": "শিক্ষা",
+      "jobStability": "চাকরির স্থিতিশীলতা",
+      "housingState": "আবাসন অবস্থা",
+      "monthlyIncome": "মাসিক আয়",
+      "dowry": "মোহর",
+      "gold": "স্বর্ণ",
+      "maritalStatus": "বৈবাহিক অবস্থা",
+      "religiousLevel": "ধর্মীয় স্তর",
+      "personalTraits": "ব্যক্তিগত বৈশিষ্ট্য",
+      "partnerTraits": "সঙ্গীর কাছে কাঙ্ক্ষিত বৈশিষ্ট্য"
+    },
+    "step3": {
+      "minimumAge": "সর্বনিম্ন বয়স",
+      "maximumAge": "সর্বোচ্চ বয়স",
+      "preferredNationalities": "পছন্দের জাতীয়তা",
+      "partnersCountry": "সঙ্গীর দেশ",
+      "preferredMaritalStatuses": "পছন্দের বৈবাহিক অবস্থা",
+      "preferredReligiousStatuses": "পছন্দের ধর্মীয় স্তর",
+      "preferredEducationLevels": "পছন্দের শিক্ষার স্তর",
+      "preferredJobGrades": "পছন্দের চাকরির স্তর"
+    }
   }
 }

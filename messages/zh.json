@@ -427,5 +427,77 @@
         }
       ]
     }
+  },
+  "paymentStatus": {
+    "close": "关闭",
+    "backToHome": "返回首页",
+    "tryAgain": "重试",
+    "success": {
+      "eyebrow": "完成！",
+      "title": "支付成功",
+      "description": "您的付款已确认，预订已完成。您现在可以查看预订和票务详情。"
+    },
+    "fail": {
+      "eyebrow": "哎呀！",
+      "title": "支付失败",
+      "description": "我们无法完成您的付款。请检查您的付款详情，或选择其他付款方式后重试。"
+    }
+  },
+  "marriageRequest": {
+    "modalTitle": "位置信息",
+    "close": "关闭",
+    "actions": {
+      "back": "返回",
+      "next": "下一步",
+      "submit": "提交"
+    },
+    "steps": {
+      "personalInfo": "个人信息",
+      "financialLifestyle": "财务与生活方式信息",
+      "partnerSpecs": "伴侣条件"
+    },
+    "step1": {
+      "applicant": "申请人",
+      "male": "男",
+      "female": "女",
+      "guardian": "监护人",
+      "fullName": "全名",
+      "email": "电子邮箱",
+      "emailRequired": "此字段为必填项",
+      "phone": "电话",
+      "phoneNumberPlaceholder": "电话号码",
+      "contactMethods": "联系方式",
+      "nationality": "国籍",
+      "city": "城市",
+      "marriageRequirements": "婚姻要求",
+      "day": "日",
+      "month": "月",
+      "year": "年",
+      "country": "国家",
+      "marriageType": "婚姻类型",
+      "marriageRequirement": "婚姻要求"
+    },
+    "step2": {
+      "education": "教育程度",
+      "jobStability": "工作稳定性",
+      "housingState": "住房状况",
+      "monthlyIncome": "月收入",
+      "dowry": "聘礼",
+      "gold": "黄金",
+      "maritalStatus": "婚姻状况",
+      "religiousLevel": "宗教虔诚程度",
+      "personalTraits": "个人特质",
+      "partnerTraits": "对伴侣特质的期望"
+    },
+    "step3": {
+      "minimumAge": "最小年龄",
+      "maximumAge": "最大年龄",
+      "preferredNationalities": "偏好国籍",
+      "partnersCountry": "伴侣所在国家",
+      "preferredMaritalStatuses": "偏好婚姻状况",
+      "preferredReligiousStatuses": "偏好宗教虔诚程度",
+      "preferredEducationLevels": "偏好教育程度",
+      "preferredJobGrades": "偏好职业等级"
+    }
   }
 }

@@ -427,5 +427,77 @@
         }
       ]
     }
+  },
+  "paymentStatus": {
+    "close": "Schließen",
+    "backToHome": "Zurück zur Startseite",
+    "tryAgain": "Erneut versuchen",
+    "success": {
+      "eyebrow": "Fertig!",
+      "title": "Zahlung erfolgreich",
+      "description": "Ihre Zahlung wurde bestätigt und Ihre Buchung ist abgeschlossen. Sie können jetzt Ihre Buchungs- und Ticketdetails einsehen."
+    },
+    "fail": {
+      "eyebrow": "Hoppla!",
+      "title": "Zahlung fehlgeschlagen",
+      "description": "Wir konnten Ihre Zahlung nicht abschließen. Bitte überprüfen Sie Ihre Zahlungsdaten oder wählen Sie eine andere Zahlungsmethode und versuchen Sie es erneut."
+    }
+  },
+  "marriageRequest": {
+    "modalTitle": "Standortinformationen",
+    "close": "Schließen",
+    "actions": {
+      "back": "Zurück",
+      "next": "Weiter",
+      "submit": "Absenden"
+    },
+    "steps": {
+      "personalInfo": "Persönliche Informationen",
+      "financialLifestyle": "Finanzielle Situation & Lebensstil",
+      "partnerSpecs": "Partneranforderungen"
+    },
+    "step1": {
+      "applicant": "Antragsteller",
+      "male": "Männlich",
+      "female": "Weiblich",
+      "guardian": "Vormund",
+      "fullName": "Vollständiger Name",
+      "email": "E-Mail",
+      "emailRequired": "Dieses Feld ist erforderlich",
+      "phone": "Telefon",
+      "phoneNumberPlaceholder": "Telefonnummer",
+      "contactMethods": "Kontaktmethoden",
+      "nationality": "Staatsangehörigkeit",
+      "city": "Stadt",
+      "marriageRequirements": "Heiratsanforderungen",
+      "day": "Tag",
+      "month": "Monat",
+      "year": "Jahr",
+      "country": "Land",
+      "marriageType": "Art der Ehe",
+      "marriageRequirement": "Eheanforderung"
+    },
+    "step2": {
+      "education": "Bildung",
+      "jobStability": "Berufliche Stabilität",
+      "housingState": "Wohnsituation",
+      "monthlyIncome": "Monatliches Einkommen",
+      "dowry": "Mitgift",
+      "gold": "Gold",
+      "maritalStatus": "Familienstand",
+      "religiousLevel": "Religiosität",
+      "personalTraits": "Persönliche Eigenschaften",
+      "partnerTraits": "Gewünschte Eigenschaften des Partners"
+    },
+    "step3": {
+      "minimumAge": "Mindestalter",
+      "maximumAge": "Höchstalter",
+      "preferredNationalities": "Bevorzugte Nationalitäten",
+      "partnersCountry": "Land des Partners",
+      "preferredMaritalStatuses": "Bevorzugter Familienstand",
+      "preferredReligiousStatuses": "Bevorzugte Religiosität",
+      "preferredEducationLevels": "Bevorzugtes Bildungsniveau",
+      "preferredJobGrades": "Bevorzugte Berufsstufe"
+    }
   }
 }

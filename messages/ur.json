@@ -427,5 +427,77 @@
         }
       ]
     }
+  },
+  "paymentStatus": {
+    "close": "بند کریں",
+    "backToHome": "ہوم پر واپس جائیں",
+    "tryAgain": "دوبارہ کوشش کریں",
+    "success": {
+      "eyebrow": "مکمل!",
+      "title": "ادائیگی کامیاب رہی",
+      "description": "آپ کی ادائیگی کی تصدیق ہو چکی ہے، اور آپ کی بکنگ مکمل ہو چکی ہے۔ اب آپ اپنی بکنگ اور ٹکٹ کی تفصیلات دیکھ سکتے ہیں۔"
+    },
+    "fail": {
+      "eyebrow": "افسوس!",
+      "title": "ادائیگی ناکام رہی",
+      "description": "ہم آپ کی ادائیگی مکمل نہیں کر سکے۔ براہ کرم اپنی ادائیگی کی تفصیلات چیک کریں یا کوئی اور ادائیگی کا طریقہ منتخب کریں اور دوبارہ کوشش کریں۔"
+    }
+  },
+  "marriageRequest": {
+    "modalTitle": "مقام کی معلومات",
+    "close": "بند کریں",
+    "actions": {
+      "back": "پیچھے",
+      "next": "اگلا",
+      "submit": "جمع کروائیں"
+    },
+    "steps": {
+      "personalInfo": "ذاتی معلومات",
+      "financialLifestyle": "مالی اور طرزِ زندگی کی معلومات",
+      "partnerSpecs": "شریک حیات کی خصوصیات"
+    },
+    "step1": {
+      "applicant": "درخواست دہندہ",
+      "male": "مرد",
+      "female": "عورت",
+      "guardian": "سرپرست",
+      "fullName": "پورا نام",
+      "email": "ای میل",
+      "emailRequired": "یہ خانہ درکار ہے",
+      "phone": "فون",
+      "phoneNumberPlaceholder": "فون نمبر",
+      "contactMethods": "رابطے کے ذرائع",
+      "nationality": "قومیت",
+      "city": "شہر",
+      "marriageRequirements": "نکاح کی شرائط",
+      "day": "دن",
+      "month": "مہینہ",
+      "year": "سال",
+      "country": "ملک",
+      "marriageType": "نکاح کی قسم",
+      "marriageRequirement": "نکاح کی شرط"
+    },
+    "step2": {
+      "education": "تعلیم",
+      "jobStability": "ملازمت میں استحکام",
+      "housingState": "رہائش کی صورتحال",
+      "monthlyIncome": "ماہانہ آمدنی",
+      "dowry": "مہر",
+      "gold": "سونا",
+      "maritalStatus": "ازدواجی حیثیت",
+      "religiousLevel": "دینداری کی سطح",
+      "personalTraits": "ذاتی خصوصیات",
+      "partnerTraits": "شریک حیات میں مطلوبہ خصوصیات"
+    },
+    "step3": {
+      "minimumAge": "کم از کم عمر",
+      "maximumAge": "زیادہ سے زیادہ عمر",
+      "preferredNationalities": "پسندیدہ قومیتیں",
+      "partnersCountry": "شریک حیات کا ملک",
+      "preferredMaritalStatuses": "پسندیدہ ازدواجی حیثیت",
+      "preferredReligiousStatuses": "پسندیدہ دینداری کی سطح",
+      "preferredEducationLevels": "پسندیدہ تعلیمی سطح",
+      "preferredJobGrades": "پسندیدہ ملازمت کا درجہ"
+    }
   }
 }

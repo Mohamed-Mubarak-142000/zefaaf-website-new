@@ -3,7 +3,7 @@ import { getTranslations } from "next-intl/server";
 
 import { Footer } from "@/widgets/footer";
 import { Header } from "@/widgets/header";
-import { BlogArticle } from "@/widgets/blog-article";
+import { BlogArticle } from "@/widgets/blog/article";
 import { buildMetadata } from "@/shared/lib/seo";
 import type { Locale } from "@/shared/i18n";
 

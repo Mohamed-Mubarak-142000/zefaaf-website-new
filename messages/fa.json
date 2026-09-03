@@ -427,5 +427,77 @@
         }
       ]
     }
+  },
+  "paymentStatus": {
+    "close": "بستن",
+    "backToHome": "بازگشت به صفحه اصلی",
+    "tryAgain": "تلاش مجدد",
+    "success": {
+      "eyebrow": "انجام شد!",
+      "title": "پرداخت موفق",
+      "description": "پرداخت شما تأیید شد و رزرو شما تکمیل گردید. اکنون می‌توانید جزئیات رزرو و بلیت خود را مشاهده کنید."
+    },
+    "fail": {
+      "eyebrow": "اوه!",
+      "title": "پرداخت ناموفق",
+      "description": "پرداخت شما تکمیل نشد. لطفاً اطلاعات پرداخت خود را بررسی کنید یا روش پرداخت دیگری انتخاب کرده و دوباره تلاش کنید."
+    }
+  },
+  "marriageRequest": {
+    "modalTitle": "اطلاعات مکان",
+    "close": "بستن",
+    "actions": {
+      "back": "بازگشت",
+      "next": "بعدی",
+      "submit": "ثبت"
+    },
+    "steps": {
+      "personalInfo": "اطلاعات شخصی",
+      "financialLifestyle": "اطلاعات مالی و سبک زندگی",
+      "partnerSpecs": "ویژگی‌های همسر"
+    },
+    "step1": {
+      "applicant": "متقاضی",
+      "male": "مرد",
+      "female": "زن",
+      "guardian": "سرپرست",
+      "fullName": "نام کامل",
+      "email": "ایمیل",
+      "emailRequired": "این فیلد الزامی است",
+      "phone": "تلفن",
+      "phoneNumberPlaceholder": "شماره تلفن",
+      "contactMethods": "روش‌های تماس",
+      "nationality": "ملیت",
+      "city": "شهر",
+      "marriageRequirements": "شرایط ازدواج",
+      "day": "روز",
+      "month": "ماه",
+      "year": "سال",
+      "country": "کشور",
+      "marriageType": "نوع ازدواج",
+      "marriageRequirement": "شرط ازدواج"
+    },
+    "step2": {
+      "education": "تحصیلات",
+      "jobStability": "ثبات شغلی",
+      "housingState": "وضعیت مسکن",
+      "monthlyIncome": "درآمد ماهانه",
+      "dowry": "مهریه",
+      "gold": "طلا",
+      "maritalStatus": "وضعیت تأهل",
+      "religiousLevel": "میزان پایبندی مذهبی",
+      "personalTraits": "ویژگی‌های شخصی",
+      "partnerTraits": "ویژگی‌های مورد نظر برای همسر"
+    },
+    "step3": {
+      "minimumAge": "حداقل سن",
+      "maximumAge": "حداکثر سن",
+      "preferredNationalities": "ملیت‌های مورد نظر",
+      "partnersCountry": "کشور همسر",
+      "preferredMaritalStatuses": "وضعیت تأهل مورد نظر",
+      "preferredReligiousStatuses": "میزان پایبندی مذهبی مورد نظر",
+      "preferredEducationLevels": "سطح تحصیلات مورد نظر",
+      "preferredJobGrades": "سطح شغلی مورد نظر"
+    }
   }
 }

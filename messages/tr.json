@@ -427,5 +427,77 @@
         }
       ]
     }
+  },
+  "paymentStatus": {
+    "close": "Kapat",
+    "backToHome": "Ana sayfaya dön",
+    "tryAgain": "Tekrar dene",
+    "success": {
+      "eyebrow": "Tamamlandı!",
+      "title": "Ödeme Başarılı",
+      "description": "Ödemeniz onaylandı ve rezervasyonunuz tamamlandı. Artık rezervasyon ve bilet bilgilerinizi görüntüleyebilirsiniz."
+    },
+    "fail": {
+      "eyebrow": "Hay aksi!",
+      "title": "Ödeme Başarısız",
+      "description": "Ödemenizi tamamlayamadık. Lütfen ödeme bilgilerinizi kontrol edin veya başka bir ödeme yöntemi seçip tekrar deneyin."
+    }
+  },
+  "marriageRequest": {
+    "modalTitle": "Konum bilgisi",
+    "close": "Kapat",
+    "actions": {
+      "back": "Geri",
+      "next": "İleri",
+      "submit": "Gönder"
+    },
+    "steps": {
+      "personalInfo": "Kişisel bilgiler",
+      "financialLifestyle": "Mali ve Yaşam Tarzı Bilgileri",
+      "partnerSpecs": "Eş özellikleri"
+    },
+    "step1": {
+      "applicant": "Başvuran",
+      "male": "Erkek",
+      "female": "Kadın",
+      "guardian": "Veli",
+      "fullName": "Ad soyad",
+      "email": "E-posta",
+      "emailRequired": "Bu alan zorunludur",
+      "phone": "Telefon",
+      "phoneNumberPlaceholder": "Telefon numarası",
+      "contactMethods": "İletişim yöntemleri",
+      "nationality": "Uyruk",
+      "city": "Şehir",
+      "marriageRequirements": "Evlilik gereksinimleri",
+      "day": "Gün",
+      "month": "Ay",
+      "year": "Yıl",
+      "country": "Ülke",
+      "marriageType": "Evlilik türü",
+      "marriageRequirement": "Evlilik gereksinimi"
+    },
+    "step2": {
+      "education": "Eğitim",
+      "jobStability": "İş istikrarı",
+      "housingState": "Konut durumu",
+      "monthlyIncome": "Aylık gelir",
+      "dowry": "Mehir",
+      "gold": "Altın",
+      "maritalStatus": "Medeni durum",
+      "religiousLevel": "Dindarlık seviyesi",
+      "personalTraits": "Kişisel özellikler",
+      "partnerTraits": "Eşte aranan özellikler"
+    },
+    "step3": {
+      "minimumAge": "Minimum yaş",
+      "maximumAge": "Maksimum yaş",
+      "preferredNationalities": "Tercih edilen uyruklar",
+      "partnersCountry": "Eşin ülkesi",
+      "preferredMaritalStatuses": "Tercih edilen medeni durum",
+      "preferredReligiousStatuses": "Tercih edilen dindarlık seviyesi",
+      "preferredEducationLevels": "Tercih edilen eğitim seviyesi",
+      "preferredJobGrades": "Tercih edilen iş seviyesi"
+    }
   }
 }

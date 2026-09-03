@@ -427,5 +427,77 @@
         }
       ]
     }
+  },
+  "paymentStatus": {
+    "close": "Mbyll",
+    "backToHome": "Kthehu në faqen kryesore",
+    "tryAgain": "Provo përsëri",
+    "success": {
+      "eyebrow": "U krye!",
+      "title": "Pagesa u krye me sukses",
+      "description": "Pagesa juaj u konfirmua dhe rezervimi juaj u përfundua. Tani mund të shihni detajet e rezervimit dhe biletës suaj."
+    },
+    "fail": {
+      "eyebrow": "Ups!",
+      "title": "Pagesa dështoi",
+      "description": "Nuk arritëm ta përfundojmë pagesën tuaj. Ju lutemi kontrolloni detajet e pagesës ose zgjidhni një metodë tjetër pagese dhe provoni përsëri."
+    }
+  },
+  "marriageRequest": {
+    "modalTitle": "Informacion mbi vendndodhjen",
+    "close": "Mbyll",
+    "actions": {
+      "back": "Mbrapa",
+      "next": "Tjetër",
+      "submit": "Dërgo"
+    },
+    "steps": {
+      "personalInfo": "Informacion personal",
+      "financialLifestyle": "Informacion Financiar dhe Stili i Jetesës",
+      "partnerSpecs": "Specifikimet e partnerit"
+    },
+    "step1": {
+      "applicant": "Aplikuesi",
+      "male": "Mashkull",
+      "female": "Femër",
+      "guardian": "Kujdestar",
+      "fullName": "Emri i plotë",
+      "email": "Email",
+      "emailRequired": "Ky fushë është e detyrueshme",
+      "phone": "Telefoni",
+      "phoneNumberPlaceholder": "Numri i telefonit",
+      "contactMethods": "Mënyrat e kontaktit",
+      "nationality": "Kombësia",
+      "city": "Qyteti",
+      "marriageRequirements": "Kërkesat e martesës",
+      "day": "Dita",
+      "month": "Muaji",
+      "year": "Viti",
+      "country": "Shteti",
+      "marriageType": "Lloji i martesës",
+      "marriageRequirement": "Kërkesa e martesës"
+    },
+    "step2": {
+      "education": "Arsimi",
+      "jobStability": "Stabiliteti i punës",
+      "housingState": "Gjendja e banimit",
+      "monthlyIncome": "Të ardhurat mujore",
+      "dowry": "Mehri",
+      "gold": "Ari",
+      "maritalStatus": "Statusi martesor",
+      "religiousLevel": "Niveli fetar",
+      "personalTraits": "Tiparet personale",
+      "partnerTraits": "Tiparet e dëshiruara të partnerit"
+    },
+    "step3": {
+      "minimumAge": "Mosha minimale",
+      "maximumAge": "Mosha maksimale",
+      "preferredNationalities": "Kombësitë e preferuara",
+      "partnersCountry": "Shteti i partnerit",
+      "preferredMaritalStatuses": "Statusi martesor i preferuar",
+      "preferredReligiousStatuses": "Niveli fetar i preferuar",
+      "preferredEducationLevels": "Niveli arsimor i preferuar",
+      "preferredJobGrades": "Niveli i punës i preferuar"
+    }
   }
 }

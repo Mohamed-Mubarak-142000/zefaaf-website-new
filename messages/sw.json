@@ -427,5 +427,77 @@
         }
       ]
     }
+  },
+  "paymentStatus": {
+    "close": "Funga",
+    "backToHome": "Rudi mwanzo",
+    "tryAgain": "Jaribu tena",
+    "success": {
+      "eyebrow": "Imekamilika!",
+      "title": "Malipo Yamefaulu",
+      "description": "Malipo yako yamethibitishwa, na uhifadhi wako umekamilika. Sasa unaweza kuona maelezo ya uhifadhi na tikiti yako."
+    },
+    "fail": {
+      "eyebrow": "Samahani!",
+      "title": "Malipo Yameshindwa",
+      "description": "Hatukuweza kukamilisha malipo yako. Tafadhali angalia maelezo ya malipo yako au chagua njia nyingine ya malipo kisha ujaribu tena."
+    }
+  },
+  "marriageRequest": {
+    "modalTitle": "Taarifa za mahali",
+    "close": "Funga",
+    "actions": {
+      "back": "Rudi",
+      "next": "Endelea",
+      "submit": "Wasilisha"
+    },
+    "steps": {
+      "personalInfo": "Taarifa binafsi",
+      "financialLifestyle": "Taarifa za Kifedha na Maisha",
+      "partnerSpecs": "Vigezo vya mwenzi"
+    },
+    "step1": {
+      "applicant": "Mwombaji",
+      "male": "Mwanaume",
+      "female": "Mwanamke",
+      "guardian": "Mlezi",
+      "fullName": "Jina kamili",
+      "email": "Barua pepe",
+      "emailRequired": "Sehemu hii inahitajika",
+      "phone": "Simu",
+      "phoneNumberPlaceholder": "Nambari ya simu",
+      "contactMethods": "Njia za mawasiliano",
+      "nationality": "Utaifa",
+      "city": "Jiji",
+      "marriageRequirements": "Mahitaji ya ndoa",
+      "day": "Siku",
+      "month": "Mwezi",
+      "year": "Mwaka",
+      "country": "Nchi",
+      "marriageType": "Aina ya ndoa",
+      "marriageRequirement": "Sharti la ndoa"
+    },
+    "step2": {
+      "education": "Elimu",
+      "jobStability": "Uthabiti wa kazi",
+      "housingState": "Hali ya makazi",
+      "monthlyIncome": "Kipato cha kila mwezi",
+      "dowry": "Mahari",
+      "gold": "Dhahabu",
+      "maritalStatus": "Hali ya ndoa",
+      "religiousLevel": "Kiwango cha dini",
+      "personalTraits": "Tabia binafsi",
+      "partnerTraits": "Tabia zinazotakiwa kwa mwenzi"
+    },
+    "step3": {
+      "minimumAge": "Umri wa chini",
+      "maximumAge": "Umri wa juu",
+      "preferredNationalities": "Utaifa unaopendelewa",
+      "partnersCountry": "Nchi ya mwenzi",
+      "preferredMaritalStatuses": "Hali ya ndoa inayopendelewa",
+      "preferredReligiousStatuses": "Kiwango cha dini kinachopendelewa",
+      "preferredEducationLevels": "Kiwango cha elimu kinachopendelewa",
+      "preferredJobGrades": "Kiwango cha kazi kinachopendelewa"
+    }
   }
 }

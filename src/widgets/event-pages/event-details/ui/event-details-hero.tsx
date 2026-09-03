@@ -1,9 +1,11 @@
 "use client";
 
+import { useState } from "react";
 import { motion, MotionConfig } from "framer-motion";
 import Image from "next/image";
 import { useLocale } from "next-intl";
 
+import { BookSeatDialog } from "@/features/book-seat";
 import { Button } from "@/shared/ui/button";
 
 import { getEventDetailsCopy } from "../model/copy";
@@ -26,6 +28,7 @@ export function EventDetailsHero() {
   const locale = useLocale();
   const copy = getEventDetailsCopy(locale);
   const { stats } = copy;
+  const [bookSeatOpen, setBookSeatOpen] = useState(false);
 
   return (
     <MotionConfig reducedMotion="user">
@@ -116,9 +119,14 @@ export function EventDetailsHero() {
           </motion.div>
 
           <motion.div variants={REVEAL}>
-            <Button className="h-9 gap-2 rounded-[8px] px-6 font-alexandria text-[13px] font-normal">
+            <Button
+              type="button"
+              onClick={() => setBookSeatOpen(true)}
+              className="h-9 gap-2 rounded-[8px] px-6 font-alexandria text-[13px] font-normal"
+            >
               {copy.cta}
             </Button>
+            <BookSeatDialog open={bookSeatOpen} onOpenChange={setBookSeatOpen} />
           </motion.div>
         </div>
 

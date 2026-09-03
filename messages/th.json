@@ -427,5 +427,77 @@
         }
       ]
     }
+  },
+  "paymentStatus": {
+    "close": "ปิด",
+    "backToHome": "กลับสู่หน้าหลัก",
+    "tryAgain": "ลองอีกครั้ง",
+    "success": {
+      "eyebrow": "เสร็จสิ้น!",
+      "title": "ชำระเงินสำเร็จ",
+      "description": "การชำระเงินของคุณได้รับการยืนยันแล้ว และการจองของคุณเสร็จสมบูรณ์ ตอนนี้คุณสามารถดูรายละเอียดการจองและตั๋วของคุณได้"
+    },
+    "fail": {
+      "eyebrow": "อุ๊ปส์!",
+      "title": "การชำระเงินล้มเหลว",
+      "description": "เราไม่สามารถดำเนินการชำระเงินของคุณให้เสร็จสมบูรณ์ได้ โปรดตรวจสอบรายละเอียดการชำระเงินของคุณ หรือเลือกวิธีการชำระเงินอื่นแล้วลองอีกครั้ง"
+    }
+  },
+  "marriageRequest": {
+    "modalTitle": "ข้อมูลสถานที่",
+    "close": "ปิด",
+    "actions": {
+      "back": "ย้อนกลับ",
+      "next": "ถัดไป",
+      "submit": "ส่ง"
+    },
+    "steps": {
+      "personalInfo": "ข้อมูลส่วนตัว",
+      "financialLifestyle": "ข้อมูลการเงินและไลฟ์สไตล์",
+      "partnerSpecs": "คุณสมบัติคู่ครอง"
+    },
+    "step1": {
+      "applicant": "ผู้สมัคร",
+      "male": "ชาย",
+      "female": "หญิง",
+      "guardian": "ผู้ปกครอง",
+      "fullName": "ชื่อ-นามสกุล",
+      "email": "อีเมล",
+      "emailRequired": "จำเป็นต้องกรอกข้อมูลนี้",
+      "phone": "โทรศัพท์",
+      "phoneNumberPlaceholder": "หมายเลขโทรศัพท์",
+      "contactMethods": "ช่องทางการติดต่อ",
+      "nationality": "สัญชาติ",
+      "city": "เมือง",
+      "marriageRequirements": "เงื่อนไขการแต่งงาน",
+      "day": "วัน",
+      "month": "เดือน",
+      "year": "ปี",
+      "country": "ประเทศ",
+      "marriageType": "ประเภทการแต่งงาน",
+      "marriageRequirement": "เงื่อนไขการแต่งงาน"
+    },
+    "step2": {
+      "education": "การศึกษา",
+      "jobStability": "ความมั่นคงในงาน",
+      "housingState": "สถานะที่อยู่อาศัย",
+      "monthlyIncome": "รายได้ต่อเดือน",
+      "dowry": "สินสอด (มะฮัร)",
+      "gold": "ทองคำ",
+      "maritalStatus": "สถานภาพสมรส",
+      "religiousLevel": "ระดับความเคร่งศาสนา",
+      "personalTraits": "คุณลักษณะส่วนตัว",
+      "partnerTraits": "คุณลักษณะที่ต้องการในคู่ครอง"
+    },
+    "step3": {
+      "minimumAge": "อายุขั้นต่ำ",
+      "maximumAge": "อายุสูงสุด",
+      "preferredNationalities": "สัญชาติที่ต้องการ",
+      "partnersCountry": "ประเทศของคู่ครอง",
+      "preferredMaritalStatuses": "สถานภาพสมรสที่ต้องการ",
+      "preferredReligiousStatuses": "ระดับความเคร่งศาสนาที่ต้องการ",
+      "preferredEducationLevels": "ระดับการศึกษาที่ต้องการ",
+      "preferredJobGrades": "ระดับงานที่ต้องการ"
+    }
   }
 }

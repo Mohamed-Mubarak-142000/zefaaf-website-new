@@ -427,5 +427,77 @@
         }
       ]
     }
+  },
+  "paymentStatus": {
+    "close": "Isara",
+    "backToHome": "Bumalik sa home",
+    "tryAgain": "Subukan ulit",
+    "success": {
+      "eyebrow": "Tapos na!",
+      "title": "Matagumpay ang Bayad",
+      "description": "Nakumpirma na ang iyong bayad at kumpleto na ang iyong booking. Maaari mo na ngayong tingnan ang detalye ng booking at tiket mo."
+    },
+    "fail": {
+      "eyebrow": "Oops!",
+      "title": "Hindi Natuloy ang Bayad",
+      "description": "Hindi namin nakumpleto ang iyong bayad. Pakisuri ang detalye ng iyong bayad o pumili ng ibang paraan ng pagbabayad at subukang muli."
+    }
+  },
+  "marriageRequest": {
+    "modalTitle": "Impormasyon ng lokasyon",
+    "close": "Isara",
+    "actions": {
+      "back": "Bumalik",
+      "next": "Susunod",
+      "submit": "Isumite"
+    },
+    "steps": {
+      "personalInfo": "Personal na impormasyon",
+      "financialLifestyle": "Impormasyon sa Pananalapi at Pamumuhay",
+      "partnerSpecs": "Mga detalye ng kapareha"
+    },
+    "step1": {
+      "applicant": "Aplikante",
+      "male": "Lalaki",
+      "female": "Babae",
+      "guardian": "Tagapag-alaga",
+      "fullName": "Buong pangalan",
+      "email": "Email",
+      "emailRequired": "Kinakailangan ang patlang na ito",
+      "phone": "Telepono",
+      "phoneNumberPlaceholder": "Numero ng telepono",
+      "contactMethods": "Mga paraan ng pakikipag-ugnayan",
+      "nationality": "Nasyonalidad",
+      "city": "Lungsod",
+      "marriageRequirements": "Mga kinakailangan sa kasal",
+      "day": "Araw",
+      "month": "Buwan",
+      "year": "Taon",
+      "country": "Bansa",
+      "marriageType": "Uri ng kasal",
+      "marriageRequirement": "Kinakailangan sa kasal"
+    },
+    "step2": {
+      "education": "Edukasyon",
+      "jobStability": "Katatagan sa trabaho",
+      "housingState": "Kalagayan ng tirahan",
+      "monthlyIncome": "Buwanang kita",
+      "dowry": "Bigay-kaya (Mahr)",
+      "gold": "Ginto",
+      "maritalStatus": "Katayuang sibil",
+      "religiousLevel": "Antas ng relihiyosidad",
+      "personalTraits": "Personal na katangian",
+      "partnerTraits": "Nais na katangian ng kapareha"
+    },
+    "step3": {
+      "minimumAge": "Pinakamababang edad",
+      "maximumAge": "Pinakamataas na edad",
+      "preferredNationalities": "Ninanais na nasyonalidad",
+      "partnersCountry": "Bansa ng kapareha",
+      "preferredMaritalStatuses": "Ninanais na katayuang sibil",
+      "preferredReligiousStatuses": "Ninanais na antas ng relihiyosidad",
+      "preferredEducationLevels": "Ninanais na antas ng edukasyon",
+      "preferredJobGrades": "Ninanais na antas ng trabaho"
+    }
   }
 }
