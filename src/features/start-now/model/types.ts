@@ -12,4 +12,4 @@ export type DetailsFormValues = {
   agreeToTerms: boolean;
 };
 
-export const STEP_ORDER: readonly StartNowStep[] = ["gender", "details", "payment", "location"];
+export const STEP_ORDER: readonly StartNowStep[] = ["location", "gender", "details", "payment"];

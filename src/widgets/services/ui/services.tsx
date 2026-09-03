@@ -1,7 +1,12 @@
 "use client";
 
+import { useState } from "react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+
+import { MarriageFormDialog } from "@/features/marriage-form";
+import { MarriageRequestModal } from "@/features/marriage-request";
+import { Link } from "@/shared/i18n";
 
 const SERVICE_MEDIA = [
   { image: "/images/services/image-60621.webp", height: 376, decoration: null },
@@ -15,12 +20,23 @@ const SERVICE_MEDIA = [
   { image: "/images/services/image-606.webp", height: 376, decoration: null },
 ] as const;
 
+const SERVICE_DESTINATIONS = [
+  "/events",
+  null,
+  "/vip",
+  "/bosnia-tour",
+  "/meeting-in-country",
+] as const;
+
 export function Services() {
   const t = useTranslations();
   const items = t.raw("services.items") as { title: string; description: string }[];
   const SERVICES = SERVICE_MEDIA.map((media, index) => ({ ...media, ...items[index] }));
+  const [marriageTeaserOpen, setMarriageTeaserOpen] = useState(false);
+  const [marriageFormOpen, setMarriageFormOpen] = useState(false);
 
   return (
+    <>
     <section
       id="services"
       aria-labelledby="services-title"
@@ -34,7 +50,7 @@ export function Services() {
       </h2>
 
       <div className="flex items-end gap-[24px] overflow-x-auto pb-3 [scrollbar-width:none] lg:grid lg:grid-cols-5 lg:gap-[clamp(12px,1.5vw,24px)] lg:overflow-visible [&::-webkit-scrollbar]:hidden">
-        {SERVICES.map((service) => (
+        {SERVICES.map((service, index) => (
           <div
             key={service.title}
             style={{ "--card-height": `${service.height}px` } as React.CSSProperties}
@@ -51,7 +67,12 @@ export function Services() {
               />
             )}
 
-            <article className="group relative z-10 h-full w-full overflow-hidden rounded-[9px] bg-[#030c17]">
+            {index === 1 ? (
+              <button
+                type="button"
+                onClick={() => setMarriageTeaserOpen(true)}
+                className="group relative z-10 block h-full w-full overflow-hidden rounded-[9px] bg-[#030c17] text-start outline-none focus-visible:ring-3 focus-visible:ring-brand/50"
+              >
               <Image
                 src={service.image}
                 alt=""
@@ -69,10 +90,44 @@ export function Services() {
                   {service.description}
                 </p>
               </div>
-            </article>
+              </button>
+            ) : (
+              <Link
+                href={SERVICE_DESTINATIONS[index]!}
+                className="group relative z-10 block h-full w-full overflow-hidden rounded-[9px] bg-[#030c17] text-start outline-none focus-visible:ring-3 focus-visible:ring-brand/50"
+              >
+                <Image
+                  src={service.image}
+                  alt=""
+                  fill
+                  quality={90}
+                  sizes="243px"
+                  className="object-cover transition-transform duration-500 group-hover:scale-[1.025]"
+                />
+                <div className="absolute inset-x-0 bottom-0 h-[148px] bg-linear-to-t from-[#030c17] via-[#14263d]/75 to-transparent" />
+                <div className="absolute inset-x-0 bottom-0 z-10 px-3 pb-4 text-start text-white">
+                  <h3 className="font-alexandria text-(length:--text-fluid-nav) leading-normal font-semibold">
+                    {service.title}
+                  </h3>
+                  <p className="mt-[9px] font-alexandria text-(length:--text-fluid-xs) leading-normal font-normal text-white/90">
+                    {service.description}
+                  </p>
+                </div>
+              </Link>
+            )}
           </div>
         ))}
       </div>
     </section>
+      <MarriageFormDialog
+        open={marriageTeaserOpen}
+        onOpenChange={setMarriageTeaserOpen}
+        onRequestMarriage={() => {
+          setMarriageTeaserOpen(false);
+          setMarriageFormOpen(true);
+        }}
+      />
+      <MarriageRequestModal open={marriageFormOpen} onOpenChange={setMarriageFormOpen} />
+    </>
   );
 }
