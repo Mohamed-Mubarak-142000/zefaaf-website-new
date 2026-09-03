@@ -58,7 +58,7 @@ const en: EventDetailsCopy = {
   // Same section copy as the homepage Influential Figures slider — duplicated
   // rather than imported, for the same FSD reason as `stats` above.
   figures: {
-    title: "With an Elite Group of\nthe Most Influential & Inspiring\nFigures",
+    title: "With an Elite Group of the Most\nInfluential & Inspiring Figures",
     description:
       "Don't miss the opportunity to participate in an event that brings together inspiration, knowledge, and enriching experiences.",
     name: "Mustafa Hassan",

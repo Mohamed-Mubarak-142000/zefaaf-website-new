@@ -1,7 +1,7 @@
 "use client";
 
-import { useState } from "react";
-import { motion, MotionConfig } from "framer-motion";
+import { useEffect, useState } from "react";
+import { AnimatePresence, motion, MotionConfig, useReducedMotion } from "framer-motion";
 import Image from "next/image";
 import { useLocale } from "next-intl";
 
@@ -17,6 +17,12 @@ const AVATARS = [
   "/images/events/avatar-3.webp",
 ] as const;
 
+const HERO_IMAGES = [
+  "/images/events/bosnia-gathering.webp",
+  "/images/bosnia-tour/hero-collage-main.webp",
+  "/images/bosnia-tour/hero-canyon.webp",
+] as const;
+
 const INFO_ITEMS = [
   { icon: "/icons/event-date-time.svg", key: "date" as const },
   { icon: "/icons/event-money.svg", key: "payment" as const },
@@ -29,6 +35,18 @@ export function EventDetailsHero() {
   const copy = getEventDetailsCopy(locale);
   const { stats } = copy;
   const [bookSeatOpen, setBookSeatOpen] = useState(false);
+  const [activeImage, setActiveImage] = useState(0);
+  const reduceMotion = useReducedMotion();
+
+  useEffect(() => {
+    if (reduceMotion) return;
+
+    const interval = window.setInterval(() => {
+      setActiveImage((current) => (current + 1) % HERO_IMAGES.length);
+    }, 4000);
+
+    return () => window.clearInterval(interval);
+  }, [reduceMotion]);
 
   return (
     <MotionConfig reducedMotion="user">
@@ -51,7 +69,7 @@ export function EventDetailsHero() {
             <h1
               id="event-details-title"
               dir="auto"
-              className="font-alexandria text-[clamp(26px,3vw,36px)] leading-[1.2] font-bold text-foreground"
+              className="font-alexandria text-[clamp(20px,2.1vw,26px)] leading-[1.2] font-bold text-foreground"
             >
               {copy.titleLine1}
               <br />
@@ -130,25 +148,43 @@ export function EventDetailsHero() {
           </motion.div>
         </div>
 
-        <motion.div variants={REVEAL} className="relative mx-auto w-full max-w-[513px]">
-          <div aria-hidden className="absolute inset-0 rotate-[4.17deg] overflow-hidden rounded-[12px] bg-grey-primary">
+        <motion.div variants={REVEAL} className="relative mx-auto aspect-[513/347] w-full max-w-[513px]">
+          <motion.div
+            key={`back-${activeImage}`}
+            aria-hidden
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.7, ease: "easeInOut" }}
+            className="absolute inset-0 rotate-[4.17deg] overflow-hidden rounded-[12px] bg-grey-primary"
+          >
             <Image
-              src="/images/events/bosnia-gathering.webp"
+              src={HERO_IMAGES[(activeImage + 1) % HERO_IMAGES.length]}
               alt=""
               fill
               sizes="(min-width: 1280px) 513px, 90vw"
               className="object-cover"
             />
-          </div>
-          <div className="relative aspect-[513/347] w-full overflow-hidden rounded-[12px] shadow-lg">
-            <Image
-              src="/images/events/bosnia-gathering.webp"
-              alt={copy.imageAlt}
-              fill
-              sizes="(min-width: 1280px) 513px, 90vw"
-              className="object-cover"
-            />
-          </div>
+          </motion.div>
+
+          <AnimatePresence mode="popLayout" initial={false}>
+            <motion.div
+              key={HERO_IMAGES[activeImage]}
+              initial={{ opacity: 0, x: 28, scale: 0.97, rotate: 1.5 }}
+              animate={{ opacity: 1, x: 0, scale: 1, rotate: 0 }}
+              exit={{ opacity: 0, x: -28, scale: 0.97, rotate: -1.5 }}
+              transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+              className="absolute inset-0 overflow-hidden rounded-[12px] shadow-lg"
+            >
+              <Image
+                src={HERO_IMAGES[activeImage]}
+                alt={copy.imageAlt}
+                fill
+                priority={activeImage === 0}
+                sizes="(min-width: 1280px) 513px, 90vw"
+                className="object-cover"
+              />
+            </motion.div>
+          </AnimatePresence>
         </motion.div>
       </motion.section>
     </MotionConfig>

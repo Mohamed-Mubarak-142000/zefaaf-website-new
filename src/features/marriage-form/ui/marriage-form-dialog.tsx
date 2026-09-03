@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useLocale } from "next-intl";
 
+import { Link } from "@/shared/i18n";
 import { Button } from "@/shared/ui/button";
 import { Dialog, DialogContent, DialogFooter, DialogHeader, DialogTitle } from "@/shared/ui/dialog";
 
@@ -35,7 +36,7 @@ export function MarriageFormDialog({
             alt=""
             width={122}
             height={126}
-            className="h-auto w-[122px]"
+            className="h-auto w-[122px] [clip-path:inset(2px_0)]"
           />
           <div className="flex flex-col items-center gap-2 text-center">
             <p className="font-alexandria text-base font-medium text-black">{copy.heading}</p>
@@ -47,7 +48,7 @@ export function MarriageFormDialog({
           {/* No "read more" article destination exists yet — same placeholder
               convention as the header/footer/VIP CTAs. */}
           <Button asChild variant="secondary" className="h-9 rounded-lg bg-[#fbeef7] px-2.5 font-alexandria text-[10.5px] text-brand hover:bg-[#fbeef7]/80">
-            <a href="#">{copy.readMore}</a>
+            <Link href="/smart-marriage-initiative">{copy.readMore}</Link>
           </Button>
           <Button
             type="button"

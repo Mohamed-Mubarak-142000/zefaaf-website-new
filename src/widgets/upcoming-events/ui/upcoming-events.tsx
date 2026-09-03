@@ -6,7 +6,7 @@ import { useLocale, useTranslations } from "next-intl";
 import { useState } from "react";
 
 import { Button } from "@/shared/ui/button";
-import { getDirection, type Locale } from "@/shared/i18n";
+import { getDirection, Link, type Locale } from "@/shared/i18n";
 
 const TITLE_VARIANTS: Variants = {
   hidden: { opacity: 0, y: 24 },
@@ -200,18 +200,18 @@ export function UpcomingEvents() {
                 </div>
 
                 <Button
+                  asChild
                   variant="default"
                   className="h-auto w-full shrink-0 gap-2 rounded-[7px] px-[11px] py-[9px] font-almarai text-[14px] font-bold sm:col-start-4 sm:row-start-1"
-                  icon={
+                >
+                  <Link href="/events/bosnia-islamic-marriage-gathering">
+                    {t("upcomingEvents.bookCta")}
                     <img
                       src="/icons/event-arrow-up-right.svg"
                       alt=""
                       className="size-[14px]"
                     />
-                  }
-                  iconPosition="end"
-                >
-                  {t("upcomingEvents.bookCta")}
+                  </Link>
                 </Button>
                   </article>
                 ))}

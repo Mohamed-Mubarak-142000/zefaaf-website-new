@@ -27,7 +27,7 @@ function PhotoCollage({ photoAlts }: { photoAlts: { cliff: string; lake: string;
   return (
     <motion.div
       variants={REVEAL}
-      className="relative mx-auto w-full max-w-[420px] shrink-0 lg:mx-0 lg:w-[46%] lg:max-w-[560px]"
+      className="relative mx-auto w-full max-w-[380px] shrink-0 lg:mx-0 lg:w-[42%] lg:max-w-[500px]"
       style={{ aspectRatio: `${CANVAS_W} / ${CANVAS_H}` }}
     >
       <div

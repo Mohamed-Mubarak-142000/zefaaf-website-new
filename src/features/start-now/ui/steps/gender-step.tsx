@@ -5,9 +5,13 @@ import { cn } from "@/shared/lib/utils";
 import type { Gender } from "../../model/types";
 import type { StartNowCopy } from "../../model/copy";
 
-const AVATARS: Record<Gender, { src: string; alt: string }> = {
-  woman: { src: "/icons/start-now/gender-woman.png", alt: "" },
-  man: { src: "/icons/start-now/gender-man.png", alt: "" },
+const AVATARS: Record<Gender, { src: string; selectedSrc: string; alt: string }> = {
+  woman: {
+    src: "/icons/start-now/gender-woman.png",
+    selectedSrc: "/images/image 11.svg",
+    alt: "",
+  },
+  man: { src: "/images/image 10.svg", selectedSrc: "/images/image 1122.svg", alt: "" },
 };
 
 function GenderCard({
@@ -29,17 +33,27 @@ function GenderCard({
       onClick={onSelect}
       aria-pressed={selected}
       className={cn(
-        "flex flex-1 items-center gap-3 rounded-xl border p-3 text-start transition-colors focus-visible:outline-none focus-visible:ring-3 focus-visible:ring-ring/50",
+        "flex flex-1 items-center gap-2.5 rounded-xl border px-2.5 py-2 text-start transition-colors focus-visible:outline-none focus-visible:ring-3 focus-visible:ring-ring/50",
         selected ? "border-brand" : "border-[#d9d9d9] hover:border-brand/50"
       )}
     >
-      <span className="relative size-[60px] shrink-0 overflow-hidden rounded-full border border-[#d9d9d9] bg-white">
+      <span className="relative size-[52px] shrink-0 overflow-hidden rounded-full border border-[#d9d9d9] bg-white">
         {/* unoptimized: Next's image optimizer produces a corrupt (blank)
             WebP/AVIF re-encode of these small illustration PNGs — serve the
             source file as-is instead. */}
-        <Image src={avatar.src} alt={avatar.alt} fill sizes="60px" unoptimized className="object-cover object-top" />
+        <Image
+          src={selected ? avatar.selectedSrc : avatar.src}
+          alt={avatar.alt}
+          fill
+          sizes="52px"
+          unoptimized
+          className={cn(
+            "object-cover object-top transition-[filter] duration-300",
+            selected ? "grayscale-0" : "grayscale"
+          )}
+        />
       </span>
-      <span className={cn("font-almarai text-lg font-bold", selected ? "text-brand" : "text-[#757575]")}>
+      <span className={cn("font-almarai text-base font-bold", selected ? "text-brand" : "text-[#757575]")}>
         {label}
       </span>
     </button>
@@ -61,7 +75,7 @@ export function GenderStep({
         <p className="font-alexandria text-base font-medium text-black">{copy.heading}</p>
         <p className="font-alexandria text-sm text-[#626262]">{copy.description}</p>
       </div>
-      <div className="flex items-stretch gap-6">
+      <div className="flex items-stretch gap-4">
         <GenderCard gender="woman" label={copy.woman} selected={value === "woman"} onSelect={() => onChange("woman")} />
         <GenderCard gender="man" label={copy.man} selected={value === "man"} onSelect={() => onChange("man")} />
       </div>

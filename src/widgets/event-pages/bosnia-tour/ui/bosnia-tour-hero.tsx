@@ -1,7 +1,7 @@
 "use client";
 
-import { useState } from "react";
-import { motion, MotionConfig } from "framer-motion";
+import { useEffect, useState } from "react";
+import { AnimatePresence, motion, MotionConfig, useReducedMotion } from "framer-motion";
 import Image from "next/image";
 import { useLocale } from "next-intl";
 
@@ -17,6 +17,11 @@ import { FADE, REVEAL, VIEWPORT } from "../model/motion";
 // composition stays proportional to the real Figma layout at any width.
 const CANVAS_W = 394.726;
 const CANVAS_H = 330.77;
+const HERO_IMAGES = [
+  "/images/bosnia-tour/hero-canyon.webp",
+  "/images/bosnia-tour/hero-collage-main.webp",
+  "/images/bosnia-tour/hero-collage-secondary.webp",
+] as const;
 
 function pctW(px: number) {
   return `${(px / CANVAS_W) * 100}%`;
@@ -39,6 +44,18 @@ function InfoPill({ icon, label }: { icon: string; label: string }) {
 export function BosniaTourHero() {
   const { hero } = getBosniaCopy(useLocale());
   const [bookSeatOpen, setBookSeatOpen] = useState(false);
+  const [activeHeroImage, setActiveHeroImage] = useState(0);
+  const reduceMotion = useReducedMotion();
+
+  useEffect(() => {
+    if (reduceMotion) return;
+
+    const interval = window.setInterval(() => {
+      setActiveHeroImage((current) => (current + 1) % HERO_IMAGES.length);
+    }, 3500);
+
+    return () => window.clearInterval(interval);
+  }, [reduceMotion]);
 
   const pills = [
     { icon: "/icons/bosnia-tour/icon-pill-calendar.svg", label: hero.pills.date },
@@ -51,14 +68,25 @@ export function BosniaTourHero() {
     <MotionConfig reducedMotion="user">
       <section aria-labelledby="bosnia-tour-hero-title" className="relative isolate">
         <div className="absolute inset-0 -z-10 overflow-hidden">
-          <Image
-            src="/images/bosnia-tour/hero-canyon.webp"
-            alt=""
-            fill
-            sizes="100vw"
-            priority
-            className="object-cover"
-          />
+          <AnimatePresence initial={false}>
+            <motion.div
+              key={HERO_IMAGES[activeHeroImage]}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 1.2, ease: "easeInOut" }}
+              className="absolute inset-0"
+            >
+              <Image
+                src={HERO_IMAGES[activeHeroImage]}
+                alt=""
+                fill
+                sizes="100vw"
+                priority={activeHeroImage === 0}
+                className="object-cover"
+              />
+            </motion.div>
+          </AnimatePresence>
           <div className="absolute inset-0 bg-black/30" />
           <div className="absolute inset-0 bg-gradient-to-b from-black/90 to-transparent to-70%" />
         </div>
@@ -67,7 +95,7 @@ export function BosniaTourHero() {
           initial="hidden"
           whileInView="visible"
           viewport={VIEWPORT}
-          className="mx-auto flex w-full max-w-[1600px] flex-col gap-[clamp(28px,3.5vw,50px)] px-(--space-fluid-container) pt-[clamp(96px,14vw,200px)] pb-[clamp(140px,16vw,230px)]"
+          className="mx-auto flex w-full max-w-[1600px] flex-col gap-[clamp(20px,2.5vw,34px)] px-(--space-fluid-container) pt-[clamp(45px,6.5vw,95px)] pb-[clamp(70px,8vw,115px)]"
         >
           <div className="max-w-[705px]">
             <motion.h1
@@ -99,7 +127,7 @@ export function BosniaTourHero() {
 
           <motion.div
             variants={REVEAL}
-            className="flex w-full max-w-[708px] flex-wrap gap-x-[clamp(4px,0.5vw,6px)] gap-y-[clamp(6px,0.6vw,9px)] rounded-[clamp(24px,2.6vw,37px)] bg-white/15 px-[clamp(12px,1.3vw,18px)] py-[clamp(10px,1.1vw,16px)] backdrop-blur-md"
+            className="flex w-full max-w-[650px] flex-wrap justify-between gap-y-[clamp(6px,0.6vw,9px)] rounded-[clamp(24px,2.6vw,37px)] bg-white/15 px-[clamp(12px,1.3vw,18px)] py-[clamp(10px,1.1vw,16px)] backdrop-blur-md"
           >
             {pills.map((pill) => (
               <InfoPill key={pill.label} icon={pill.icon} label={pill.label} />
@@ -119,26 +147,48 @@ export function BosniaTourHero() {
             className="absolute overflow-hidden rounded-[9px] border-[5px] border-white bg-muted shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]"
             style={{ left: pctW(6), top: pctH(7), width: pctW(290.798), height: pctH(279.805) }}
           >
-            <Image
-              src="/images/bosnia-tour/hero-collage-main.webp"
-              alt={hero.imageAlt.collageMain}
-              fill
-              sizes="(min-width: 1024px) 20vw, 45vw"
-              className="object-cover"
-            />
+            <AnimatePresence initial={false}>
+              <motion.div
+                key={HERO_IMAGES[(activeHeroImage + 1) % HERO_IMAGES.length]}
+                initial={{ opacity: 0, scale: 1.06 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.96 }}
+                transition={{ duration: 0.85, ease: [0.22, 1, 0.36, 1] }}
+                className="absolute inset-0"
+              >
+                <Image
+                  src={HERO_IMAGES[(activeHeroImage + 1) % HERO_IMAGES.length]}
+                  alt=""
+                  fill
+                  sizes="(min-width: 1024px) 20vw, 45vw"
+                  className="object-cover"
+                />
+              </motion.div>
+            </AnimatePresence>
           </div>
 
           <div
             className="absolute overflow-hidden rounded-[9px] border-[5px] border-white bg-muted shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]"
             style={{ left: pctW(200.86), top: pctH(95.93), width: pctW(193.865), height: pctH(231.839) }}
           >
-            <Image
-              src="/images/bosnia-tour/hero-collage-secondary.webp"
-              alt={hero.imageAlt.collageSecondary}
-              fill
-              sizes="(min-width: 1024px) 14vw, 32vw"
-              className="object-cover"
-            />
+            <AnimatePresence initial={false}>
+              <motion.div
+                key={HERO_IMAGES[(activeHeroImage + 2) % HERO_IMAGES.length]}
+                initial={{ opacity: 0, scale: 1.06 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.96 }}
+                transition={{ duration: 0.85, ease: [0.22, 1, 0.36, 1] }}
+                className="absolute inset-0"
+              >
+                <Image
+                  src={HERO_IMAGES[(activeHeroImage + 2) % HERO_IMAGES.length]}
+                  alt=""
+                  fill
+                  sizes="(min-width: 1024px) 14vw, 32vw"
+                  className="object-cover"
+                />
+              </motion.div>
+            </AnimatePresence>
           </div>
         </motion.div>
       </section>

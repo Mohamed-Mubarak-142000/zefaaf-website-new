@@ -20,7 +20,7 @@ export function EventFiguresGrid() {
         initial="hidden"
         whileInView="visible"
         viewport={VIEWPORT}
-        className="section-gap mx-auto flex w-full max-w-[1600px] flex-col gap-[clamp(20px,2.3vw,32px)] px-(--space-fluid-container)"
+        className="mx-auto flex w-full max-w-[1600px] flex-col gap-[clamp(20px,2.3vw,32px)] px-(--space-fluid-container) pt-[clamp(100px,9vw,130px)]"
       >
         <motion.div variants={REVEAL} className="flex flex-col gap-[clamp(10px,1vw,14px)]">
           <h2
@@ -56,10 +56,10 @@ export function EventFiguresGrid() {
                   className="object-cover"
                 />
               </div>
-              <p dir="auto" className="font-alexandria text-[clamp(18px,1.8vw,24px)] leading-[1.5] font-bold text-person-card-foreground">
+              <p dir="auto" className="font-alexandria text-[clamp(14px,1.3vw,18px)] leading-[1.5] font-bold text-person-card-foreground">
                 {name}
               </p>
-              <p dir="auto" className="font-alexandria text-[clamp(18px,1.8vw,24px)] leading-[1.5] font-medium text-person-card-foreground">
+              <p dir="auto" className="font-alexandria text-[clamp(13px,1.15vw,16px)] leading-[1.5] font-medium text-person-card-foreground">
                 {followers}
               </p>
             </motion.article>

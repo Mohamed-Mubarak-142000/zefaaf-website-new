@@ -14,12 +14,12 @@ const INITIAL_DETAILS: DetailsFormValues = {
 };
 
 export function useStartNow() {
-  const [step, setStep] = useState<StartNowStep>("gender");
+  const [step, setStep] = useState<StartNowStep>("location");
   const [gender, setGender] = useState<Gender | null>(null);
   const [details, setDetails] = useState<DetailsFormValues>(INITIAL_DETAILS);
 
   function reset() {
-    setStep("gender");
+    setStep("location");
     setGender(null);
     setDetails(INITIAL_DETAILS);
   }
