@@ -5,9 +5,9 @@ import { buildMetadata } from "@/shared/lib/seo";
 import type { Locale } from "@/shared/i18n";
 import { Header } from "@/widgets/header";
 import { Footer } from "@/widgets/footer";
-import { BlogHero } from "@/widgets/blog-hero";
-import { FeaturedArticle } from "@/widgets/featured-article";
-import { BlogList } from "@/widgets/blog-list";
+import { BlogHero } from "@/widgets/blog/hero";
+import { FeaturedArticle } from "@/widgets/blog/featured-article";
+import { BlogList } from "@/widgets/blog/list";
 
 export async function generateMetadata({
   params,

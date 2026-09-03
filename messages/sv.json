@@ -427,5 +427,77 @@
         }
       ]
     }
+  },
+  "paymentStatus": {
+    "close": "Stäng",
+    "backToHome": "Tillbaka till start",
+    "tryAgain": "Försök igen",
+    "success": {
+      "eyebrow": "Klart!",
+      "title": "Betalning lyckades",
+      "description": "Din betalning har bekräftats och din bokning är klar. Du kan nu se dina boknings- och biljettuppgifter."
+    },
+    "fail": {
+      "eyebrow": "Hoppsan!",
+      "title": "Betalningen misslyckades",
+      "description": "Vi kunde inte slutföra din betalning. Kontrollera dina betalningsuppgifter eller välj en annan betalningsmetod och försök igen."
+    }
+  },
+  "marriageRequest": {
+    "modalTitle": "Platsinformation",
+    "close": "Stäng",
+    "actions": {
+      "back": "Tillbaka",
+      "next": "Nästa",
+      "submit": "Skicka"
+    },
+    "steps": {
+      "personalInfo": "Personlig information",
+      "financialLifestyle": "Ekonomi och livsstil",
+      "partnerSpecs": "Partnerkrav"
+    },
+    "step1": {
+      "applicant": "Sökande",
+      "male": "Man",
+      "female": "Kvinna",
+      "guardian": "Vårdnadshavare",
+      "fullName": "Fullständigt namn",
+      "email": "E-post",
+      "emailRequired": "Detta fält är obligatoriskt",
+      "phone": "Telefon",
+      "phoneNumberPlaceholder": "Telefonnummer",
+      "contactMethods": "Kontaktmetoder",
+      "nationality": "Nationalitet",
+      "city": "Stad",
+      "marriageRequirements": "Äktenskapskrav",
+      "day": "Dag",
+      "month": "Månad",
+      "year": "År",
+      "country": "Land",
+      "marriageType": "Äktenskapstyp",
+      "marriageRequirement": "Äktenskapskrav"
+    },
+    "step2": {
+      "education": "Utbildning",
+      "jobStability": "Anställningsstabilitet",
+      "housingState": "Boendesituation",
+      "monthlyIncome": "Månadsinkomst",
+      "dowry": "Hemgift",
+      "gold": "Guld",
+      "maritalStatus": "Civilstånd",
+      "religiousLevel": "Religiös nivå",
+      "personalTraits": "Personliga egenskaper",
+      "partnerTraits": "Önskade egenskaper hos partner"
+    },
+    "step3": {
+      "minimumAge": "Lägsta ålder",
+      "maximumAge": "Högsta ålder",
+      "preferredNationalities": "Önskade nationaliteter",
+      "partnersCountry": "Partnerns land",
+      "preferredMaritalStatuses": "Önskat civilstånd",
+      "preferredReligiousStatuses": "Önskad religiös nivå",
+      "preferredEducationLevels": "Önskad utbildningsnivå",
+      "preferredJobGrades": "Önskad yrkesnivå"
+    }
   }
 }

@@ -1,9 +1,11 @@
 "use client";
 
+import { useState } from "react";
 import { motion, MotionConfig } from "framer-motion";
 import Image from "next/image";
 import { useLocale } from "next-intl";
 
+import { StartNowDialog } from "@/features/start-now";
 import { Button } from "@/shared/ui/button";
 import { getDirection, type Locale } from "@/shared/i18n";
 
@@ -14,6 +16,7 @@ export function VipHero() {
   const locale = useLocale();
   const { hero } = getVipCopy(locale);
   const isRtl = getDirection(locale as Locale) === "rtl";
+  const [startNowOpen, setStartNowOpen] = useState(false);
 
   return (
     <MotionConfig reducedMotion="user">
@@ -130,23 +133,21 @@ export function VipHero() {
                 {hero.price}
               </p>
 
-              {/* No wa.me destination is specified in the design yet — same
-                  placeholder convention as the header/footer links. */}
               <Button
-                asChild
+                type="button"
+                onClick={() => setStartNowOpen(true)}
                 className="mt-[clamp(12px,1.3vw,19px)] rounded-[6px] bg-white font-alexandria font-normal text-black-primary hover:bg-white/85"
               >
-                <a href="#">
-                  {hero.cta}
-                  <Image
-                    src="/icons/arrow-right-dark.svg"
-                    alt=""
-                    width={18}
-                    height={18}
-                    className="size-[clamp(14px,1.25vw,18px)] rtl:rotate-180"
-                  />
-                </a>
+                {hero.cta}
+                <Image
+                  src="/icons/arrow-right-dark.svg"
+                  alt=""
+                  width={18}
+                  height={18}
+                  className="size-[clamp(14px,1.25vw,18px)] rtl:rotate-180"
+                />
               </Button>
+              <StartNowDialog open={startNowOpen} onOpenChange={setStartNowOpen} />
             </motion.div>
           </div>
         </motion.div>

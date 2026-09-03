@@ -427,5 +427,77 @@
         }
       ]
     }
+  },
+  "paymentStatus": {
+    "close": "Zatvori",
+    "backToHome": "Nazad na početnu",
+    "tryAgain": "Pokušaj ponovo",
+    "success": {
+      "eyebrow": "Gotovo!",
+      "title": "Plaćanje uspješno",
+      "description": "Vaše plaćanje je potvrđeno, a rezervacija je završena. Sada možete pogledati detalje rezervacije i karte."
+    },
+    "fail": {
+      "eyebrow": "Ups!",
+      "title": "Plaćanje neuspješno",
+      "description": "Nismo mogli završiti vaše plaćanje. Provjerite podatke o plaćanju ili odaberite drugi način plaćanja i pokušajte ponovo."
+    }
+  },
+  "marriageRequest": {
+    "modalTitle": "Informacije o lokaciji",
+    "close": "Zatvori",
+    "actions": {
+      "back": "Nazad",
+      "next": "Dalje",
+      "submit": "Pošalji"
+    },
+    "steps": {
+      "personalInfo": "Lični podaci",
+      "financialLifestyle": "Finansijske informacije i način života",
+      "partnerSpecs": "Specifikacije partnera"
+    },
+    "step1": {
+      "applicant": "Podnosilac zahtjeva",
+      "male": "Muško",
+      "female": "Žensko",
+      "guardian": "Staratelj",
+      "fullName": "Puno ime",
+      "email": "E-mail",
+      "emailRequired": "Ovo polje je obavezno",
+      "phone": "Telefon",
+      "phoneNumberPlaceholder": "Broj telefona",
+      "contactMethods": "Načini kontakta",
+      "nationality": "Nacionalnost",
+      "city": "Grad",
+      "marriageRequirements": "Uslovi za brak",
+      "day": "Dan",
+      "month": "Mjesec",
+      "year": "Godina",
+      "country": "Država",
+      "marriageType": "Vrsta braka",
+      "marriageRequirement": "Uslov za brak"
+    },
+    "step2": {
+      "education": "Obrazovanje",
+      "jobStability": "Stabilnost zaposlenja",
+      "housingState": "Stambeno stanje",
+      "monthlyIncome": "Mjesečni prihod",
+      "dowry": "Mehr",
+      "gold": "Zlato",
+      "maritalStatus": "Bračni status",
+      "religiousLevel": "Nivo religioznosti",
+      "personalTraits": "Lične osobine",
+      "partnerTraits": "Željene osobine partnera"
+    },
+    "step3": {
+      "minimumAge": "Minimalna dob",
+      "maximumAge": "Maksimalna dob",
+      "preferredNationalities": "Poželjne nacionalnosti",
+      "partnersCountry": "Država partnera",
+      "preferredMaritalStatuses": "Poželjni bračni status",
+      "preferredReligiousStatuses": "Poželjni nivo religioznosti",
+      "preferredEducationLevels": "Poželjni nivo obrazovanja",
+      "preferredJobGrades": "Poželjni nivo posla"
+    }
   }
 }

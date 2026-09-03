@@ -427,5 +427,77 @@
         }
       ]
     }
+  },
+  "paymentStatus": {
+    "close": "बंद करें",
+    "backToHome": "होम पर वापस जाएं",
+    "tryAgain": "पुनः प्रयास करें",
+    "success": {
+      "eyebrow": "हो गया!",
+      "title": "भुगतान सफल रहा",
+      "description": "आपके भुगतान की पुष्टि हो गई है, और आपकी बुकिंग पूर्ण हो गई है। अब आप अपनी बुकिंग और टिकट का विवरण देख सकते हैं।"
+    },
+    "fail": {
+      "eyebrow": "उफ़!",
+      "title": "भुगतान विफल रहा",
+      "description": "हम आपका भुगतान पूरा नहीं कर सके। कृपया अपने भुगतान विवरण की जांच करें या कोई अन्य भुगतान विधि चुनें और पुनः प्रयास करें।"
+    }
+  },
+  "marriageRequest": {
+    "modalTitle": "स्थान की जानकारी",
+    "close": "बंद करें",
+    "actions": {
+      "back": "वापस",
+      "next": "अगला",
+      "submit": "जमा करें"
+    },
+    "steps": {
+      "personalInfo": "व्यक्तिगत जानकारी",
+      "financialLifestyle": "आर्थिक एवं जीवनशैली जानकारी",
+      "partnerSpecs": "साथी की विशेषताएँ"
+    },
+    "step1": {
+      "applicant": "आवेदक",
+      "male": "पुरुष",
+      "female": "महिला",
+      "guardian": "अभिभावक",
+      "fullName": "पूरा नाम",
+      "email": "ईमेल",
+      "emailRequired": "यह फ़ील्ड आवश्यक है",
+      "phone": "फ़ोन",
+      "phoneNumberPlaceholder": "फ़ोन नंबर",
+      "contactMethods": "संपर्क के तरीके",
+      "nationality": "राष्ट्रीयता",
+      "city": "शहर",
+      "marriageRequirements": "विवाह आवश्यकताएँ",
+      "day": "दिन",
+      "month": "महीना",
+      "year": "वर्ष",
+      "country": "देश",
+      "marriageType": "विवाह का प्रकार",
+      "marriageRequirement": "विवाह आवश्यकता"
+    },
+    "step2": {
+      "education": "शिक्षा",
+      "jobStability": "नौकरी की स्थिरता",
+      "housingState": "आवास की स्थिति",
+      "monthlyIncome": "मासिक आय",
+      "dowry": "महर",
+      "gold": "सोना",
+      "maritalStatus": "वैवाहिक स्थिति",
+      "religiousLevel": "धार्मिक स्तर",
+      "personalTraits": "व्यक्तिगत गुण",
+      "partnerTraits": "साथी में वांछित गुण"
+    },
+    "step3": {
+      "minimumAge": "न्यूनतम आयु",
+      "maximumAge": "अधिकतम आयु",
+      "preferredNationalities": "पसंदीदा राष्ट्रीयताएँ",
+      "partnersCountry": "साथी का देश",
+      "preferredMaritalStatuses": "पसंदीदा वैवाहिक स्थिति",
+      "preferredReligiousStatuses": "पसंदीदा धार्मिक स्तर",
+      "preferredEducationLevels": "पसंदीदा शिक्षा स्तर",
+      "preferredJobGrades": "पसंदीदा नौकरी स्तर"
+    }
   }
 }

@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
 
 import { LanguageSwitcher } from "@/features/language-switcher";
+import { MarriageRequestModal } from "@/features/marriage-request";
 // import { ThemeToggle } from "@/features/theme-toggle";
 import { cn } from "@/shared/lib/utils";
 import { Button } from "@/shared/ui/button";
@@ -21,7 +22,9 @@ import { Logo } from "@/shared/ui/logo";
 
 import { ChevronDown } from "./chevron-down";
 import { NavLink } from "./nav-link";
-import { ServicesDropdown, SERVICE_MENU_ITEMS } from "./services-dropdown";
+import { ServicesDropdown, SERVICE_MENU_ITEMS, useMarriageFormEntry } from "./services-dropdown";
+
+const MARRIAGE_FORM_KEY: (typeof SERVICE_MENU_ITEMS)[number]["labelKey"] = "nav.servicesMenu.marriageForm";
 
 // DOM order follows RTL reading order (right → left): Logo+nav grouped
 // together first, then the two CTA buttons, then the language switcher last
@@ -35,7 +38,7 @@ import { ServicesDropdown, SERVICE_MENU_ITEMS } from "./services-dropdown";
 const NAV_ITEMS = [
   { key: "home", href: "/", withChevron: false },
   { key: "services", href: "#", withChevron: true },
-  { key: "successStories", href: "#", withChevron: false },
+  { key: "successStories", href: "/success-stories", withChevron: false },
   { key: "articles", href: "/blogs", withChevron: false },
   { key: "about", href: "/about", withChevron: false },
   { key: "contact", href: "/contact-us", withChevron: false },
@@ -49,46 +52,60 @@ const NAV_ITEMS = [
 // longest-content locale, not just Arabic. Anything narrower than xl gets
 // this menu instead so navigation never overflows in any locale.
 function CompactNavMenu({ t }: { t: ReturnType<typeof useTranslations> }) {
+  const { openTeaser, dialogs } = useMarriageFormEntry();
+
   return (
-    <DropdownMenu>
-      <DropdownMenuTrigger asChild>
-        <Button variant="ghost" size="icon" aria-label="Menu" className="xl:hidden">
-          <Menu className="size-(--size-fluid-icon-md)" />
-        </Button>
-      </DropdownMenuTrigger>
-      <DropdownMenuContent align="end" className="w-56">
-        {NAV_ITEMS.map((item) =>
-          item.key === "services" ? (
-            <DropdownMenuSub key={item.key}>
-              <DropdownMenuSubTrigger className="font-alexandria font-normal">
-                {t(`nav.${item.key}`)}
-              </DropdownMenuSubTrigger>
-              <DropdownMenuSubContent>
-                {SERVICE_MENU_ITEMS.map((sub) => (
-                  <DropdownMenuItem key={sub.labelKey} asChild>
-                    <NavLink href={sub.href} className="w-full font-alexandria font-normal">
-                      {t(sub.labelKey)}
-                    </NavLink>
-                  </DropdownMenuItem>
-                ))}
-              </DropdownMenuSubContent>
-            </DropdownMenuSub>
-          ) : (
-            <DropdownMenuItem key={item.key} asChild>
-              <NavLink href={item.href} className="w-full font-alexandria font-normal">
-                {t(`nav.${item.key}`)}
-              </NavLink>
-            </DropdownMenuItem>
-          ),
-        )}
-      </DropdownMenuContent>
-    </DropdownMenu>
+    <>
+      <DropdownMenu>
+        <DropdownMenuTrigger asChild>
+          <Button variant="ghost" size="icon" aria-label="Menu" className="xl:hidden">
+            <Menu className="size-(--size-fluid-icon-md)" />
+          </Button>
+        </DropdownMenuTrigger>
+        <DropdownMenuContent align="end" className="w-56">
+          {NAV_ITEMS.map((item) =>
+            item.key === "services" ? (
+              <DropdownMenuSub key={item.key}>
+                <DropdownMenuSubTrigger className="font-alexandria font-normal">
+                  {t(`nav.${item.key}`)}
+                </DropdownMenuSubTrigger>
+                <DropdownMenuSubContent>
+                  {SERVICE_MENU_ITEMS.map((sub) =>
+                    sub.labelKey === MARRIAGE_FORM_KEY ? (
+                      <DropdownMenuItem key={sub.labelKey} asChild>
+                        <button type="button" onClick={openTeaser} className="w-full text-start font-alexandria font-normal">
+                          {t(sub.labelKey)}
+                        </button>
+                      </DropdownMenuItem>
+                    ) : (
+                      <DropdownMenuItem key={sub.labelKey} asChild>
+                        <NavLink href={sub.href} className="w-full font-alexandria font-normal">
+                          {t(sub.labelKey)}
+                        </NavLink>
+                      </DropdownMenuItem>
+                    ),
+                  )}
+                </DropdownMenuSubContent>
+              </DropdownMenuSub>
+            ) : (
+              <DropdownMenuItem key={item.key} asChild>
+                <NavLink href={item.href} className="w-full font-alexandria font-normal">
+                  {t(`nav.${item.key}`)}
+                </NavLink>
+              </DropdownMenuItem>
+            ),
+          )}
+        </DropdownMenuContent>
+      </DropdownMenu>
+      {dialogs}
+    </>
   );
 }
 
 export function Header({ compact = false }: { compact?: boolean }) {
   const t = useTranslations();
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMarriageRequestOpen, setIsMarriageRequestOpen] = useState(false);
 
   useEffect(() => {
     const onScroll = () => setIsScrolled(window.scrollY > 8);
@@ -167,12 +184,15 @@ export function Header({ compact = false }: { compact?: boolean }) {
           <Button
             variant="default"
             className="hidden h-8 rounded-[8px] px-3 font-alexandria text-(length:--text-fluid-nav) sm:inline-flex"
+            onClick={() => setIsMarriageRequestOpen(true)}
           >
             {t("nav.marriageRequest")}
           </Button>
           <LanguageSwitcher />
         </div>
       </div>
+
+      <MarriageRequestModal open={isMarriageRequestOpen} onOpenChange={setIsMarriageRequestOpen} />
     </header>
   );
 }

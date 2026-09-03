@@ -427,5 +427,77 @@
         }
       ]
     }
+  },
+  "paymentStatus": {
+    "close": "Luk",
+    "backToHome": "Tilbage til forsiden",
+    "tryAgain": "Prøv igen",
+    "success": {
+      "eyebrow": "Færdig!",
+      "title": "Betaling gennemført",
+      "description": "Din betaling er bekræftet, og din booking er fuldført. Du kan nu se dine booking- og billetoplysninger."
+    },
+    "fail": {
+      "eyebrow": "Ups!",
+      "title": "Betaling mislykkedes",
+      "description": "Vi kunne ikke gennemføre din betaling. Kontroller dine betalingsoplysninger, eller vælg en anden betalingsmetode, og prøv igen."
+    }
+  },
+  "marriageRequest": {
+    "modalTitle": "Lokationsoplysninger",
+    "close": "Luk",
+    "actions": {
+      "back": "Tilbage",
+      "next": "Næste",
+      "submit": "Indsend"
+    },
+    "steps": {
+      "personalInfo": "Personlige oplysninger",
+      "financialLifestyle": "Økonomi og livsstil",
+      "partnerSpecs": "Partnerkrav"
+    },
+    "step1": {
+      "applicant": "Ansøger",
+      "male": "Mand",
+      "female": "Kvinde",
+      "guardian": "Værge",
+      "fullName": "Fulde navn",
+      "email": "E-mail",
+      "emailRequired": "Dette felt er påkrævet",
+      "phone": "Telefon",
+      "phoneNumberPlaceholder": "Telefonnummer",
+      "contactMethods": "Kontaktmetoder",
+      "nationality": "Nationalitet",
+      "city": "By",
+      "marriageRequirements": "Ægteskabskrav",
+      "day": "Dag",
+      "month": "Måned",
+      "year": "År",
+      "country": "Land",
+      "marriageType": "Ægteskabstype",
+      "marriageRequirement": "Ægteskabskrav"
+    },
+    "step2": {
+      "education": "Uddannelse",
+      "jobStability": "Jobstabilitet",
+      "housingState": "Boligsituation",
+      "monthlyIncome": "Månedlig indkomst",
+      "dowry": "Medgift",
+      "gold": "Guld",
+      "maritalStatus": "Civilstand",
+      "religiousLevel": "Religiøst niveau",
+      "personalTraits": "Personlige egenskaber",
+      "partnerTraits": "Ønskede egenskaber hos partner"
+    },
+    "step3": {
+      "minimumAge": "Minimumsalder",
+      "maximumAge": "Maksimumsalder",
+      "preferredNationalities": "Foretrukne nationaliteter",
+      "partnersCountry": "Partnerens land",
+      "preferredMaritalStatuses": "Foretrukken civilstand",
+      "preferredReligiousStatuses": "Foretrukket religiøst niveau",
+      "preferredEducationLevels": "Foretrukket uddannelsesniveau",
+      "preferredJobGrades": "Foretrukket jobniveau"
+    }
   }
 }

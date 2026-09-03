@@ -427,5 +427,77 @@
         }
       ]
     }
+  },
+  "paymentStatus": {
+    "close": "Yopish",
+    "backToHome": "Bosh sahifaga qaytish",
+    "tryAgain": "Qayta urinish",
+    "success": {
+      "eyebrow": "Tayyor!",
+      "title": "To'lov muvaffaqiyatli",
+      "description": "To'lovingiz tasdiqlandi va bandingiz yakunlandi. Endi band qilish va chipta tafsilotlarini ko'rishingiz mumkin."
+    },
+    "fail": {
+      "eyebrow": "Voy!",
+      "title": "To'lov amalga oshmadi",
+      "description": "To'lovingizni yakunlay olmadik. Iltimos, to'lov ma'lumotlaringizni tekshiring yoki boshqa to'lov usulini tanlab, qayta urinib ko'ring."
+    }
+  },
+  "marriageRequest": {
+    "modalTitle": "Manzil haqida ma'lumot",
+    "close": "Yopish",
+    "actions": {
+      "back": "Orqaga",
+      "next": "Keyingi",
+      "submit": "Yuborish"
+    },
+    "steps": {
+      "personalInfo": "Shaxsiy ma'lumot",
+      "financialLifestyle": "Moliyaviy va turmush tarzi haqida ma'lumot",
+      "partnerSpecs": "Turmush o'rtog'iga qo'yiladigan talablar"
+    },
+    "step1": {
+      "applicant": "Ariza beruvchi",
+      "male": "Erkak",
+      "female": "Ayol",
+      "guardian": "Vasiy",
+      "fullName": "To'liq ism",
+      "email": "Elektron pochta",
+      "emailRequired": "Bu maydon to'ldirilishi shart",
+      "phone": "Telefon",
+      "phoneNumberPlaceholder": "Telefon raqami",
+      "contactMethods": "Aloqa usullari",
+      "nationality": "Millati",
+      "city": "Shahar",
+      "marriageRequirements": "Nikoh talablari",
+      "day": "Kun",
+      "month": "Oy",
+      "year": "Yil",
+      "country": "Davlat",
+      "marriageType": "Nikoh turi",
+      "marriageRequirement": "Nikoh talabi"
+    },
+    "step2": {
+      "education": "Ta'lim",
+      "jobStability": "Ish barqarorligi",
+      "housingState": "Turar-joy holati",
+      "monthlyIncome": "Oylik daromad",
+      "dowry": "Mahr",
+      "gold": "Oltin",
+      "maritalStatus": "Oilaviy holati",
+      "religiousLevel": "Diniy darajasi",
+      "personalTraits": "Shaxsiy fazilatlar",
+      "partnerTraits": "Turmush o'rtog'ida istalgan fazilatlar"
+    },
+    "step3": {
+      "minimumAge": "Eng kichik yosh",
+      "maximumAge": "Eng katta yosh",
+      "preferredNationalities": "Afzal ko'rilgan millatlar",
+      "partnersCountry": "Turmush o'rtog'ining davlati",
+      "preferredMaritalStatuses": "Afzal ko'rilgan oilaviy holat",
+      "preferredReligiousStatuses": "Afzal ko'rilgan diniy daraja",
+      "preferredEducationLevels": "Afzal ko'rilgan ta'lim darajasi",
+      "preferredJobGrades": "Afzal ko'rilgan ish darajasi"
+    }
   }
 }

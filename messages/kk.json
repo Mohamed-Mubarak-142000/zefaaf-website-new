@@ -427,5 +427,77 @@
         }
       ]
     }
+  },
+  "paymentStatus": {
+    "close": "Жабу",
+    "backToHome": "Басты бетке оралу",
+    "tryAgain": "Қайта көру",
+    "success": {
+      "eyebrow": "Дайын!",
+      "title": "Төлем сәтті өтті",
+      "description": "Төлеміңіз расталды, брондауыңыз аяқталды. Енді брондау және билет мәліметтерін көре аласыз."
+    },
+    "fail": {
+      "eyebrow": "Кешіріңіз!",
+      "title": "Төлем сәтсіз аяқталды",
+      "description": "Төлеміңізді аяқтай алмадық. Төлем деректеріңізді тексеріңіз немесе басқа төлем әдісін таңдап, қайта көріңіз."
+    }
+  },
+  "marriageRequest": {
+    "modalTitle": "Орналасу туралы ақпарат",
+    "close": "Жабу",
+    "actions": {
+      "back": "Артқа",
+      "next": "Келесі",
+      "submit": "Жіберу"
+    },
+    "steps": {
+      "personalInfo": "Жеке ақпарат",
+      "financialLifestyle": "Қаржылық және өмір салты туралы ақпарат",
+      "partnerSpecs": "Серіктеске қойылатын талаптар"
+    },
+    "step1": {
+      "applicant": "Өтініш беруші",
+      "male": "Ер",
+      "female": "Әйел",
+      "guardian": "Қамқоршы",
+      "fullName": "Толық аты-жөні",
+      "email": "Электрондық пошта",
+      "emailRequired": "Бұл өріс міндетті",
+      "phone": "Телефон",
+      "phoneNumberPlaceholder": "Телефон нөмірі",
+      "contactMethods": "Байланыс тәсілдері",
+      "nationality": "Ұлты",
+      "city": "Қала",
+      "marriageRequirements": "Неке талаптары",
+      "day": "Күн",
+      "month": "Ай",
+      "year": "Жыл",
+      "country": "Ел",
+      "marriageType": "Неке түрі",
+      "marriageRequirement": "Неке талабы"
+    },
+    "step2": {
+      "education": "Білім",
+      "jobStability": "Жұмыс тұрақтылығы",
+      "housingState": "Тұрғын үй жағдайы",
+      "monthlyIncome": "Айлық табыс",
+      "dowry": "Мехр",
+      "gold": "Алтын",
+      "maritalStatus": "Отбасы жағдайы",
+      "religiousLevel": "Діни деңгейі",
+      "personalTraits": "Жеке қасиеттер",
+      "partnerTraits": "Серіктестен күтілетін қасиеттер"
+    },
+    "step3": {
+      "minimumAge": "Ең төменгі жас",
+      "maximumAge": "Ең жоғарғы жас",
+      "preferredNationalities": "Қалаулы ұлттар",
+      "partnersCountry": "Серіктестің елі",
+      "preferredMaritalStatuses": "Қалаулы отбасы жағдайы",
+      "preferredReligiousStatuses": "Қалаулы діни деңгей",
+      "preferredEducationLevels": "Қалаулы білім деңгейі",
+      "preferredJobGrades": "Қалаулы жұмыс деңгейі"
+    }
   }
 }

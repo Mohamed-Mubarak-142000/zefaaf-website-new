@@ -427,5 +427,77 @@
         }
       ]
     }
+  },
+  "paymentStatus": {
+    "close": "Закрыть",
+    "backToHome": "Вернуться на главную",
+    "tryAgain": "Попробовать снова",
+    "success": {
+      "eyebrow": "Готово!",
+      "title": "Оплата прошла успешно",
+      "description": "Ваш платёж подтверждён, и бронирование завершено. Теперь вы можете просмотреть детали бронирования и билета."
+    },
+    "fail": {
+      "eyebrow": "Упс!",
+      "title": "Оплата не прошла",
+      "description": "Нам не удалось завершить ваш платёж. Проверьте платёжные данные или выберите другой способ оплаты и попробуйте снова."
+    }
+  },
+  "marriageRequest": {
+    "modalTitle": "Информация о местоположении",
+    "close": "Закрыть",
+    "actions": {
+      "back": "Назад",
+      "next": "Далее",
+      "submit": "Отправить"
+    },
+    "steps": {
+      "personalInfo": "Личная информация",
+      "financialLifestyle": "Финансовая информация и образ жизни",
+      "partnerSpecs": "Требования к партнёру"
+    },
+    "step1": {
+      "applicant": "Заявитель",
+      "male": "Мужчина",
+      "female": "Женщина",
+      "guardian": "Опекун",
+      "fullName": "Полное имя",
+      "email": "Эл. почта",
+      "emailRequired": "Это поле обязательно",
+      "phone": "Телефон",
+      "phoneNumberPlaceholder": "Номер телефона",
+      "contactMethods": "Способы связи",
+      "nationality": "Национальность",
+      "city": "Город",
+      "marriageRequirements": "Требования к браку",
+      "day": "День",
+      "month": "Месяц",
+      "year": "Год",
+      "country": "Страна",
+      "marriageType": "Тип брака",
+      "marriageRequirement": "Требование к браку"
+    },
+    "step2": {
+      "education": "Образование",
+      "jobStability": "Стабильность работы",
+      "housingState": "Жилищные условия",
+      "monthlyIncome": "Ежемесячный доход",
+      "dowry": "Махр (приданое)",
+      "gold": "Золото",
+      "maritalStatus": "Семейное положение",
+      "religiousLevel": "Уровень религиозности",
+      "personalTraits": "Личные качества",
+      "partnerTraits": "Желаемые качества партнёра"
+    },
+    "step3": {
+      "minimumAge": "Минимальный возраст",
+      "maximumAge": "Максимальный возраст",
+      "preferredNationalities": "Предпочитаемые национальности",
+      "partnersCountry": "Страна партнёра",
+      "preferredMaritalStatuses": "Предпочитаемое семейное положение",
+      "preferredReligiousStatuses": "Предпочитаемый уровень религиозности",
+      "preferredEducationLevels": "Предпочитаемый уровень образования",
+      "preferredJobGrades": "Предпочитаемый уровень должности"
+    }
   }
 }

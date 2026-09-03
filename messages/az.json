@@ -427,5 +427,77 @@
         }
       ]
     }
+  },
+  "paymentStatus": {
+    "close": "Bağla",
+    "backToHome": "Ana səhifəyə qayıt",
+    "tryAgain": "Yenidən cəhd et",
+    "success": {
+      "eyebrow": "Hazırdır!",
+      "title": "Ödəniş uğurludur",
+      "description": "Ödənişiniz təsdiqləndi və rezervasiyanız tamamlandı. İndi rezervasiya və bilet təfərrüatlarınıza baxa bilərsiniz."
+    },
+    "fail": {
+      "eyebrow": "Bağışlayın!",
+      "title": "Ödəniş uğursuz oldu",
+      "description": "Ödənişinizi tamamlaya bilmədik. Zəhmət olmasa ödəniş məlumatlarınızı yoxlayın və ya başqa ödəniş üsulu seçib yenidən cəhd edin."
+    }
+  },
+  "marriageRequest": {
+    "modalTitle": "Məkan məlumatı",
+    "close": "Bağla",
+    "actions": {
+      "back": "Geri",
+      "next": "İrəli",
+      "submit": "Göndər"
+    },
+    "steps": {
+      "personalInfo": "Şəxsi məlumat",
+      "financialLifestyle": "Maliyyə və Həyat Tərzi Məlumatı",
+      "partnerSpecs": "Tərəf-müqabil tələbləri"
+    },
+    "step1": {
+      "applicant": "Müraciət edən",
+      "male": "Kişi",
+      "female": "Qadın",
+      "guardian": "Qəyyum",
+      "fullName": "Tam adı",
+      "email": "E-poçt",
+      "emailRequired": "Bu sahə tələb olunur",
+      "phone": "Telefon",
+      "phoneNumberPlaceholder": "Telefon nömrəsi",
+      "contactMethods": "Əlaqə üsulları",
+      "nationality": "Milliyyət",
+      "city": "Şəhər",
+      "marriageRequirements": "Nikah tələbləri",
+      "day": "Gün",
+      "month": "Ay",
+      "year": "İl",
+      "country": "Ölkə",
+      "marriageType": "Nikah növü",
+      "marriageRequirement": "Nikah tələbi"
+    },
+    "step2": {
+      "education": "Təhsil",
+      "jobStability": "İş sabitliyi",
+      "housingState": "Yaşayış vəziyyəti",
+      "monthlyIncome": "Aylıq gəlir",
+      "dowry": "Mehr",
+      "gold": "Qızıl",
+      "maritalStatus": "Ailə vəziyyəti",
+      "religiousLevel": "Dindarlıq səviyyəsi",
+      "personalTraits": "Şəxsi keyfiyyətlər",
+      "partnerTraits": "Tərəf-müqabildə istənilən keyfiyyətlər"
+    },
+    "step3": {
+      "minimumAge": "Minimum yaş",
+      "maximumAge": "Maksimum yaş",
+      "preferredNationalities": "Üstünlük verilən millətlər",
+      "partnersCountry": "Tərəf-müqabilin ölkəsi",
+      "preferredMaritalStatuses": "Üstünlük verilən ailə vəziyyəti",
+      "preferredReligiousStatuses": "Üstünlük verilən dindarlıq səviyyəsi",
+      "preferredEducationLevels": "Üstünlük verilən təhsil səviyyəsi",
+      "preferredJobGrades": "Üstünlük verilən iş səviyyəsi"
+    }
   }
 }

@@ -427,5 +427,77 @@
         }
       ]
     }
+  },
+  "paymentStatus": {
+    "close": "ዝጋ",
+    "backToHome": "ወደ መነሻ ተመለስ",
+    "tryAgain": "እንደገና ሞክር",
+    "success": {
+      "eyebrow": "ተከናውኗል!",
+      "title": "ክፍያ ተሳክቷል",
+      "description": "ክፍያዎ ተረጋግጧል፣ ቦታ ማስያዝዎም ተጠናቅቋል። አሁን የቦታ ማስያዣ እና የትኬት ዝርዝሮችን ማየት ይችላሉ።"
+    },
+    "fail": {
+      "eyebrow": "ይቅርታ!",
+      "title": "ክፍያ አልተሳካም",
+      "description": "ክፍያዎን ማጠናቀቅ አልቻልንም። እባክዎ የክፍያ ዝርዝሮችዎን ያረጋግጡ ወይም ሌላ የክፍያ ዘዴ ይምረጡ እና እንደገና ይሞክሩ።"
+    }
+  },
+  "marriageRequest": {
+    "modalTitle": "የአካባቢ መረጃ",
+    "close": "ዝጋ",
+    "actions": {
+      "back": "ተመለስ",
+      "next": "ቀጣይ",
+      "submit": "አስገባ"
+    },
+    "steps": {
+      "personalInfo": "የግል መረጃ",
+      "financialLifestyle": "የገንዘብና የአኗኗር ዘይቤ መረጃ",
+      "partnerSpecs": "የባልደረባ መስፈርቶች"
+    },
+    "step1": {
+      "applicant": "አመልካች",
+      "male": "ወንድ",
+      "female": "ሴት",
+      "guardian": "ሞግዚት",
+      "fullName": "ሙሉ ስም",
+      "email": "ኢሜይል",
+      "emailRequired": "ይህ መስክ አስፈላጊ ነው",
+      "phone": "ስልክ",
+      "phoneNumberPlaceholder": "የስልክ ቁጥር",
+      "contactMethods": "የመገናኛ መንገዶች",
+      "nationality": "ዜግነት",
+      "city": "ከተማ",
+      "marriageRequirements": "የጋብቻ መስፈርቶች",
+      "day": "ቀን",
+      "month": "ወር",
+      "year": "ዓመት",
+      "country": "ሀገር",
+      "marriageType": "የጋብቻ አይነት",
+      "marriageRequirement": "የጋብቻ መስፈርት"
+    },
+    "step2": {
+      "education": "ትምህርት",
+      "jobStability": "የስራ መረጋጋት",
+      "housingState": "የመኖሪያ ሁኔታ",
+      "monthlyIncome": "ወርሃዊ ገቢ",
+      "dowry": "መህር",
+      "gold": "ወርቅ",
+      "maritalStatus": "የጋብቻ ሁኔታ",
+      "religiousLevel": "የሃይማኖት ደረጃ",
+      "personalTraits": "የግል ባህሪያት",
+      "partnerTraits": "ከባልደረባ የሚፈለጉ ባህሪያት"
+    },
+    "step3": {
+      "minimumAge": "ዝቅተኛ ዕድሜ",
+      "maximumAge": "ከፍተኛ ዕድሜ",
+      "preferredNationalities": "የተመረጡ ዜግነቶች",
+      "partnersCountry": "የባልደረባ ሀገር",
+      "preferredMaritalStatuses": "የተመረጠ የጋብቻ ሁኔታ",
+      "preferredReligiousStatuses": "የተመረጠ የሃይማኖት ደረጃ",
+      "preferredEducationLevels": "የተመረጠ የትምህርት ደረጃ",
+      "preferredJobGrades": "የተመረጠ የስራ ደረጃ"
+    }
   }
 }

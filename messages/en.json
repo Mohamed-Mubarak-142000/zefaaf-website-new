@@ -427,5 +427,77 @@
         }
       ]
     }
+  },
+  "paymentStatus": {
+    "close": "Close",
+    "backToHome": "Back to home",
+    "tryAgain": "Try again",
+    "success": {
+      "eyebrow": "Done!",
+      "title": "Payment Successful",
+      "description": "Your payment has been confirmed, and your booking is complete. You can now view your booking and ticket details."
+    },
+    "fail": {
+      "eyebrow": "Oops!",
+      "title": "Payment Failed",
+      "description": "We couldn't complete your payment. Please check your payment details or choose another payment method and try again."
+    }
+  },
+  "marriageRequest": {
+    "modalTitle": "Location info",
+    "close": "Close",
+    "actions": {
+      "back": "Back",
+      "next": "Next",
+      "submit": "Submit"
+    },
+    "steps": {
+      "personalInfo": "Personal information",
+      "financialLifestyle": "Financial & Lifestyle Information",
+      "partnerSpecs": "Partner specifications"
+    },
+    "step1": {
+      "applicant": "Applicant",
+      "male": "Male",
+      "female": "Female",
+      "guardian": "Guardian",
+      "fullName": "Full name",
+      "email": "Email",
+      "emailRequired": "This field is required",
+      "phone": "Phone",
+      "phoneNumberPlaceholder": "Phone number",
+      "contactMethods": "Contact methods",
+      "nationality": "Nationality",
+      "city": "City",
+      "marriageRequirements": "Marriage Requirements",
+      "day": "Day",
+      "month": "Month",
+      "year": "Year",
+      "country": "Country",
+      "marriageType": "Marriage type",
+      "marriageRequirement": "Marriage requirement"
+    },
+    "step2": {
+      "education": "Education",
+      "jobStability": "Job Stability",
+      "housingState": "Housing state",
+      "monthlyIncome": "Monthly income",
+      "dowry": "Dowry",
+      "gold": "Gold",
+      "maritalStatus": "Marital status",
+      "religiousLevel": "Religious level",
+      "personalTraits": "Personal traits",
+      "partnerTraits": "Partner traits"
+    },
+    "step3": {
+      "minimumAge": "Minimum age",
+      "maximumAge": "Maximum age",
+      "preferredNationalities": "Preferred nationalities",
+      "partnersCountry": "Your partner's country",
+      "preferredMaritalStatuses": "Preferred marital statuses",
+      "preferredReligiousStatuses": "Preferred religious statuses",
+      "preferredEducationLevels": "Preferred education levels",
+      "preferredJobGrades": "Preferred job grades"
+    }
   }
 }

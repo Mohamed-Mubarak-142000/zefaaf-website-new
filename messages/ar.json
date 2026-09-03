@@ -427,5 +427,77 @@
         }
       ]
     }
+  },
+  "paymentStatus": {
+    "close": "إغلاق",
+    "backToHome": "العودة إلى الرئيسية",
+    "tryAgain": "إعادة المحاولة",
+    "success": {
+      "eyebrow": "تم!",
+      "title": "تم الدفع بنجاح",
+      "description": "تم تأكيد دفعتك واكتمل حجزك. يمكنك الآن الاطلاع على تفاصيل حجزك وتذكرتك."
+    },
+    "fail": {
+      "eyebrow": "عذرًا!",
+      "title": "فشلت عملية الدفع",
+      "description": "لم نتمكن من إتمام عملية الدفع. يرجى التحقق من بيانات الدفع أو اختيار طريقة دفع أخرى والمحاولة مرة أخرى."
+    }
+  },
+  "marriageRequest": {
+    "modalTitle": "معلومات الموقع",
+    "close": "إغلاق",
+    "actions": {
+      "back": "رجوع",
+      "next": "التالي",
+      "submit": "إرسال"
+    },
+    "steps": {
+      "personalInfo": "المعلومات الشخصية",
+      "financialLifestyle": "المعلومات المالية ونمط الحياة",
+      "partnerSpecs": "مواصفات الشريك"
+    },
+    "step1": {
+      "applicant": "مقدّم الطلب",
+      "male": "ذكر",
+      "female": "أنثى",
+      "guardian": "ولي الأمر",
+      "fullName": "الاسم الكامل",
+      "email": "البريد الإلكتروني",
+      "emailRequired": "هذا الحقل مطلوب",
+      "phone": "الهاتف",
+      "phoneNumberPlaceholder": "رقم الهاتف",
+      "contactMethods": "وسائل التواصل",
+      "nationality": "الجنسية",
+      "city": "المدينة",
+      "marriageRequirements": "متطلبات الزواج",
+      "day": "اليوم",
+      "month": "الشهر",
+      "year": "السنة",
+      "country": "الدولة",
+      "marriageType": "نوع الزواج",
+      "marriageRequirement": "متطلب الزواج"
+    },
+    "step2": {
+      "education": "المستوى التعليمي",
+      "jobStability": "الاستقرار الوظيفي",
+      "housingState": "الحالة السكنية",
+      "monthlyIncome": "الدخل الشهري",
+      "dowry": "المهر",
+      "gold": "الذهب",
+      "maritalStatus": "الحالة الاجتماعية",
+      "religiousLevel": "المستوى الديني",
+      "personalTraits": "الصفات الشخصية",
+      "partnerTraits": "صفات الشريك المطلوبة"
+    },
+    "step3": {
+      "minimumAge": "الحد الأدنى للعمر",
+      "maximumAge": "الحد الأقصى للعمر",
+      "preferredNationalities": "الجنسيات المفضلة",
+      "partnersCountry": "دولة الشريك",
+      "preferredMaritalStatuses": "الحالات الاجتماعية المفضلة",
+      "preferredReligiousStatuses": "المستويات الدينية المفضلة",
+      "preferredEducationLevels": "المستويات التعليمية المفضلة",
+      "preferredJobGrades": "الدرجات الوظيفية المفضلة"
+    }
   }
 }

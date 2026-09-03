@@ -1,0 +1,10 @@
+export { SmartMarriageInitiativeHero } from "./ui/smart-marriage-initiative-hero";
+export { SmartMarriageInitiativeNav } from "./ui/smart-marriage-initiative-nav";
+export { SmartMarriageInitiativeIntro } from "./ui/smart-marriage-initiative-intro";
+export { SmartMarriageInitiativeWhy } from "./ui/smart-marriage-initiative-why";
+export { SmartMarriageInitiativeBanner } from "./ui/smart-marriage-initiative-banner";
+export { SmartMarriageInitiativeFoundation } from "./ui/smart-marriage-initiative-foundation";
+export { SmartMarriageInitiativeMessages } from "./ui/smart-marriage-initiative-messages";
+export { SmartMarriageInitiativeCharter } from "./ui/smart-marriage-initiative-charter";
+export { SmartMarriageInitiativeCompanion } from "./ui/smart-marriage-initiative-companion";
+export { getSmartMarriageCopy } from "./model/copy";

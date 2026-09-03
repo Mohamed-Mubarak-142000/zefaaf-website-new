@@ -427,5 +427,77 @@
         }
       ]
     }
+  },
+  "paymentStatus": {
+    "close": "Sluiten",
+    "backToHome": "Terug naar home",
+    "tryAgain": "Opnieuw proberen",
+    "success": {
+      "eyebrow": "Klaar!",
+      "title": "Betaling geslaagd",
+      "description": "Je betaling is bevestigd en je boeking is voltooid. Je kunt nu je boeking- en ticketgegevens bekijken."
+    },
+    "fail": {
+      "eyebrow": "Oeps!",
+      "title": "Betaling mislukt",
+      "description": "We konden je betaling niet voltooien. Controleer je betalingsgegevens of kies een andere betaalmethode en probeer het opnieuw."
+    }
+  },
+  "marriageRequest": {
+    "modalTitle": "Locatie-informatie",
+    "close": "Sluiten",
+    "actions": {
+      "back": "Terug",
+      "next": "Volgende",
+      "submit": "Verzenden"
+    },
+    "steps": {
+      "personalInfo": "Persoonlijke informatie",
+      "financialLifestyle": "Financiële en levensstijlinformatie",
+      "partnerSpecs": "Partnerspecificaties"
+    },
+    "step1": {
+      "applicant": "Aanvrager",
+      "male": "Man",
+      "female": "Vrouw",
+      "guardian": "Voogd",
+      "fullName": "Volledige naam",
+      "email": "E-mail",
+      "emailRequired": "Dit veld is verplicht",
+      "phone": "Telefoon",
+      "phoneNumberPlaceholder": "Telefoonnummer",
+      "contactMethods": "Contactmethoden",
+      "nationality": "Nationaliteit",
+      "city": "Stad",
+      "marriageRequirements": "Huwelijksvereisten",
+      "day": "Dag",
+      "month": "Maand",
+      "year": "Jaar",
+      "country": "Land",
+      "marriageType": "Type huwelijk",
+      "marriageRequirement": "Huwelijksvereiste"
+    },
+    "step2": {
+      "education": "Opleiding",
+      "jobStability": "Werkstabiliteit",
+      "housingState": "Woonsituatie",
+      "monthlyIncome": "Maandinkomen",
+      "dowry": "Bruidsschat",
+      "gold": "Goud",
+      "maritalStatus": "Burgerlijke staat",
+      "religiousLevel": "Religieus niveau",
+      "personalTraits": "Persoonlijke eigenschappen",
+      "partnerTraits": "Gewenste eigenschappen partner"
+    },
+    "step3": {
+      "minimumAge": "Minimumleeftijd",
+      "maximumAge": "Maximumleeftijd",
+      "preferredNationalities": "Voorkeursnationaliteiten",
+      "partnersCountry": "Land van de partner",
+      "preferredMaritalStatuses": "Voorkeur burgerlijke staat",
+      "preferredReligiousStatuses": "Voorkeur religieus niveau",
+      "preferredEducationLevels": "Voorkeur opleidingsniveau",
+      "preferredJobGrades": "Voorkeur functieniveau"
+    }
   }
 }

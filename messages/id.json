@@ -427,5 +427,77 @@
         }
       ]
     }
+  },
+  "paymentStatus": {
+    "close": "Tutup",
+    "backToHome": "Kembali ke beranda",
+    "tryAgain": "Coba lagi",
+    "success": {
+      "eyebrow": "Selesai!",
+      "title": "Pembayaran Berhasil",
+      "description": "Pembayaran Anda telah dikonfirmasi, dan pemesanan Anda selesai. Anda sekarang dapat melihat detail pemesanan dan tiket Anda."
+    },
+    "fail": {
+      "eyebrow": "Ups!",
+      "title": "Pembayaran Gagal",
+      "description": "Kami tidak dapat menyelesaikan pembayaran Anda. Silakan periksa detail pembayaran Anda atau pilih metode pembayaran lain, lalu coba lagi."
+    }
+  },
+  "marriageRequest": {
+    "modalTitle": "Informasi lokasi",
+    "close": "Tutup",
+    "actions": {
+      "back": "Kembali",
+      "next": "Berikutnya",
+      "submit": "Kirim"
+    },
+    "steps": {
+      "personalInfo": "Informasi pribadi",
+      "financialLifestyle": "Informasi Keuangan & Gaya Hidup",
+      "partnerSpecs": "Kriteria pasangan"
+    },
+    "step1": {
+      "applicant": "Pemohon",
+      "male": "Laki-laki",
+      "female": "Perempuan",
+      "guardian": "Wali",
+      "fullName": "Nama lengkap",
+      "email": "Email",
+      "emailRequired": "Kolom ini wajib diisi",
+      "phone": "Telepon",
+      "phoneNumberPlaceholder": "Nomor telepon",
+      "contactMethods": "Metode kontak",
+      "nationality": "Kewarganegaraan",
+      "city": "Kota",
+      "marriageRequirements": "Persyaratan pernikahan",
+      "day": "Tanggal",
+      "month": "Bulan",
+      "year": "Tahun",
+      "country": "Negara",
+      "marriageType": "Jenis pernikahan",
+      "marriageRequirement": "Persyaratan pernikahan"
+    },
+    "step2": {
+      "education": "Pendidikan",
+      "jobStability": "Stabilitas pekerjaan",
+      "housingState": "Status tempat tinggal",
+      "monthlyIncome": "Pendapatan bulanan",
+      "dowry": "Mahar",
+      "gold": "Emas",
+      "maritalStatus": "Status pernikahan",
+      "religiousLevel": "Tingkat keagamaan",
+      "personalTraits": "Sifat pribadi",
+      "partnerTraits": "Sifat yang diinginkan dari pasangan"
+    },
+    "step3": {
+      "minimumAge": "Usia minimum",
+      "maximumAge": "Usia maksimum",
+      "preferredNationalities": "Kewarganegaraan yang diinginkan",
+      "partnersCountry": "Negara pasangan",
+      "preferredMaritalStatuses": "Status pernikahan yang diinginkan",
+      "preferredReligiousStatuses": "Tingkat keagamaan yang diinginkan",
+      "preferredEducationLevels": "Tingkat pendidikan yang diinginkan",
+      "preferredJobGrades": "Tingkat pekerjaan yang diinginkan"
+    }
   }
 }

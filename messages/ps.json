@@ -427,5 +427,77 @@
         }
       ]
     }
+  },
+  "paymentStatus": {
+    "close": "بند کول",
+    "backToHome": "کور ته بېرته",
+    "tryAgain": "بیا هڅه وکړئ",
+    "success": {
+      "eyebrow": "بشپړ شو!",
+      "title": "تادیه بریالۍ شوه",
+      "description": "ستاسو تادیه تایید شوه، او ستاسو ریزرویشن بشپړ شو. تاسو اوس کولی شئ د خپل ریزرویشن او ټکټ توضیحات وګورئ."
+    },
+    "fail": {
+      "eyebrow": "بښنه غواړو!",
+      "title": "تادیه ناکامه شوه",
+      "description": "موږ ستاسو تادیه بشپړولی نشوه. مهرباني وکړئ خپل تادیې توضیحات وګورئ یا بله تادیې طریقه غوره کړئ او بیا هڅه وکړئ."
+    }
+  },
+  "marriageRequest": {
+    "modalTitle": "د ځای معلومات",
+    "close": "تړل",
+    "actions": {
+      "back": "شاته",
+      "next": "راتلونکی",
+      "submit": "سپارل"
+    },
+    "steps": {
+      "personalInfo": "شخصي معلومات",
+      "financialLifestyle": "مالي او د ژوند طرز معلومات",
+      "partnerSpecs": "د ملګري ځانګړتیاوې"
+    },
+    "step1": {
+      "applicant": "غوښتونکی",
+      "male": "نارینه",
+      "female": "ښځینه",
+      "guardian": "سرپرست",
+      "fullName": "بشپړ نوم",
+      "email": "بریښنالیک",
+      "emailRequired": "دا برخه اړینه ده",
+      "phone": "تلیفون",
+      "phoneNumberPlaceholder": "د تلیفون شمېره",
+      "contactMethods": "د اړیکو لارې",
+      "nationality": "ملیت",
+      "city": "ښار",
+      "marriageRequirements": "د واده شرطونه",
+      "day": "ورځ",
+      "month": "میاشت",
+      "year": "کال",
+      "country": "هیواد",
+      "marriageType": "د واده ډول",
+      "marriageRequirement": "د واده شرط"
+    },
+    "step2": {
+      "education": "زده کړه",
+      "jobStability": "دنده ثبات",
+      "housingState": "د استوګنې حالت",
+      "monthlyIncome": "میاشتنۍ عاید",
+      "dowry": "مهر",
+      "gold": "سره زر",
+      "maritalStatus": "د واده حالت",
+      "religiousLevel": "دیني کچه",
+      "personalTraits": "شخصي ځانګړتیاوې",
+      "partnerTraits": "د ملګري غوره ځانګړتیاوې"
+    },
+    "step3": {
+      "minimumAge": "لږترلږه عمر",
+      "maximumAge": "ډېرترډېره عمر",
+      "preferredNationalities": "غوره ملیتونه",
+      "partnersCountry": "د ملګري هیواد",
+      "preferredMaritalStatuses": "غوره د واده حالت",
+      "preferredReligiousStatuses": "غوره دیني کچه",
+      "preferredEducationLevels": "غوره زده کړې کچه",
+      "preferredJobGrades": "غوره دندې کچه"
+    }
   }
 }

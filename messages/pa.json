@@ -427,5 +427,77 @@
         }
       ]
     }
+  },
+  "paymentStatus": {
+    "close": "ਬੰਦ ਕਰੋ",
+    "backToHome": "ਹੋਮ 'ਤੇ ਵਾਪਸ ਜਾਓ",
+    "tryAgain": "ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ",
+    "success": {
+      "eyebrow": "ਹੋ ਗਿਆ!",
+      "title": "ਭੁਗਤਾਨ ਸਫਲ ਹੋਇਆ",
+      "description": "ਤੁਹਾਡੇ ਭੁਗਤਾਨ ਦੀ ਪੁਸ਼ਟੀ ਹੋ ਗਈ ਹੈ, ਅਤੇ ਤੁਹਾਡੀ ਬੁਕਿੰਗ ਪੂਰੀ ਹੋ ਗਈ ਹੈ। ਹੁਣ ਤੁਸੀਂ ਆਪਣੀ ਬੁਕਿੰਗ ਅਤੇ ਟਿਕਟ ਦੇ ਵੇਰਵੇ ਦੇਖ ਸਕਦੇ ਹੋ।"
+    },
+    "fail": {
+      "eyebrow": "ਓਹੋ!",
+      "title": "ਭੁਗਤਾਨ ਅਸਫਲ ਰਿਹਾ",
+      "description": "ਅਸੀਂ ਤੁਹਾਡਾ ਭੁਗਤਾਨ ਪੂਰਾ ਨਹੀਂ ਕਰ ਸਕੇ। ਕਿਰਪਾ ਕਰਕੇ ਆਪਣੇ ਭੁਗਤਾਨ ਵੇਰਵਿਆਂ ਦੀ ਜਾਂਚ ਕਰੋ ਜਾਂ ਕੋਈ ਹੋਰ ਭੁਗਤਾਨ ਢੰਗ ਚੁਣੋ ਅਤੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।"
+    }
+  },
+  "marriageRequest": {
+    "modalTitle": "ਟਿਕਾਣੇ ਦੀ ਜਾਣਕਾਰੀ",
+    "close": "ਬੰਦ ਕਰੋ",
+    "actions": {
+      "back": "ਪਿੱਛੇ",
+      "next": "ਅੱਗੇ",
+      "submit": "ਜਮ੍ਹਾਂ ਕਰੋ"
+    },
+    "steps": {
+      "personalInfo": "ਨਿੱਜੀ ਜਾਣਕਾਰੀ",
+      "financialLifestyle": "ਵਿੱਤੀ ਅਤੇ ਜੀਵਨ ਸ਼ੈਲੀ ਦੀ ਜਾਣਕਾਰੀ",
+      "partnerSpecs": "ਸਾਥੀ ਦੀਆਂ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ"
+    },
+    "step1": {
+      "applicant": "ਬਿਨੈਕਾਰ",
+      "male": "ਮਰਦ",
+      "female": "ਔਰਤ",
+      "guardian": "ਸਰਪ੍ਰਸਤ",
+      "fullName": "ਪੂਰਾ ਨਾਮ",
+      "email": "ਈਮੇਲ",
+      "emailRequired": "ਇਹ ਖੇਤਰ ਲੋੜੀਂਦਾ ਹੈ",
+      "phone": "ਫ਼ੋਨ",
+      "phoneNumberPlaceholder": "ਫ਼ੋਨ ਨੰਬਰ",
+      "contactMethods": "ਸੰਪਰਕ ਦੇ ਤਰੀਕੇ",
+      "nationality": "ਕੌਮੀਅਤ",
+      "city": "ਸ਼ਹਿਰ",
+      "marriageRequirements": "ਵਿਆਹ ਦੀਆਂ ਲੋੜਾਂ",
+      "day": "ਦਿਨ",
+      "month": "ਮਹੀਨਾ",
+      "year": "ਸਾਲ",
+      "country": "ਦੇਸ਼",
+      "marriageType": "ਵਿਆਹ ਦੀ ਕਿਸਮ",
+      "marriageRequirement": "ਵਿਆਹ ਦੀ ਲੋੜ"
+    },
+    "step2": {
+      "education": "ਸਿੱਖਿਆ",
+      "jobStability": "ਨੌਕਰੀ ਦੀ ਸਥਿਰਤਾ",
+      "housingState": "ਰਿਹਾਇਸ਼ ਦੀ ਸਥਿਤੀ",
+      "monthlyIncome": "ਮਾਸਿਕ ਆਮਦਨ",
+      "dowry": "ਮਹਿਰ",
+      "gold": "ਸੋਨਾ",
+      "maritalStatus": "ਵਿਆਹੁਤਾ ਸਥਿਤੀ",
+      "religiousLevel": "ਧਾਰਮਿਕ ਪੱਧਰ",
+      "personalTraits": "ਨਿੱਜੀ ਗੁਣ",
+      "partnerTraits": "ਸਾਥੀ ਵਿੱਚ ਲੋੜੀਂਦੇ ਗੁਣ"
+    },
+    "step3": {
+      "minimumAge": "ਘੱਟੋ-ਘੱਟ ਉਮਰ",
+      "maximumAge": "ਵੱਧ ਤੋਂ ਵੱਧ ਉਮਰ",
+      "preferredNationalities": "ਪਸੰਦੀਦਾ ਕੌਮੀਅਤਾਂ",
+      "partnersCountry": "ਸਾਥੀ ਦਾ ਦੇਸ਼",
+      "preferredMaritalStatuses": "ਪਸੰਦੀਦਾ ਵਿਆਹੁਤਾ ਸਥਿਤੀ",
+      "preferredReligiousStatuses": "ਪਸੰਦੀਦਾ ਧਾਰਮਿਕ ਪੱਧਰ",
+      "preferredEducationLevels": "ਪਸੰਦੀਦਾ ਸਿੱਖਿਆ ਪੱਧਰ",
+      "preferredJobGrades": "ਪਸੰਦੀਦਾ ਨੌਕਰੀ ਪੱਧਰ"
+    }
   }
 }

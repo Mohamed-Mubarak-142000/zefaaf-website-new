@@ -427,5 +427,77 @@
         }
       ]
     }
+  },
+  "paymentStatus": {
+    "close": "மூடு",
+    "backToHome": "முகப்புக்குத் திரும்பு",
+    "tryAgain": "மீண்டும் முயற்சிக்கவும்",
+    "success": {
+      "eyebrow": "முடிந்தது!",
+      "title": "பணம் செலுத்துதல் வெற்றி",
+      "description": "உங்கள் கட்டணம் உறுதிசெய்யப்பட்டது, மேலும் உங்கள் முன்பதிவு முடிந்தது. இப்போது நீங்கள் உங்கள் முன்பதிவு மற்றும் டிக்கெட் விவரங்களைப் பார்க்கலாம்."
+    },
+    "fail": {
+      "eyebrow": "அச்சச்சோ!",
+      "title": "பணம் செலுத்துதல் தோல்வி",
+      "description": "உங்கள் கட்டணத்தை முடிக்க முடியவில்லை. உங்கள் கட்டண விவரங்களைச் சரிபார்க்கவும் அல்லது வேறு கட்டண முறையைத் தேர்ந்தெடுத்து மீண்டும் முயற்சிக்கவும்."
+    }
+  },
+  "marriageRequest": {
+    "modalTitle": "இருப்பிட தகவல்",
+    "close": "மூடு",
+    "actions": {
+      "back": "பின்னால்",
+      "next": "அடுத்து",
+      "submit": "சமர்ப்பி"
+    },
+    "steps": {
+      "personalInfo": "தனிப்பட்ட தகவல்",
+      "financialLifestyle": "நிதி மற்றும் வாழ்க்கை முறை தகவல்",
+      "partnerSpecs": "துணைவர் தேவைகள்"
+    },
+    "step1": {
+      "applicant": "விண்ணப்பதாரர்",
+      "male": "ஆண்",
+      "female": "பெண்",
+      "guardian": "பாதுகாவலர்",
+      "fullName": "முழுப்பெயர்",
+      "email": "மின்னஞ்சல்",
+      "emailRequired": "இந்தப் புலம் தேவை",
+      "phone": "தொலைபேசி",
+      "phoneNumberPlaceholder": "தொலைபேசி எண்",
+      "contactMethods": "தொடர்பு முறைகள்",
+      "nationality": "தேசியம்",
+      "city": "நகரம்",
+      "marriageRequirements": "திருமண தேவைகள்",
+      "day": "நாள்",
+      "month": "மாதம்",
+      "year": "ஆண்டு",
+      "country": "நாடு",
+      "marriageType": "திருமண வகை",
+      "marriageRequirement": "திருமண தேவை"
+    },
+    "step2": {
+      "education": "கல்வி",
+      "jobStability": "வேலை உறுதிப்பாடு",
+      "housingState": "வீட்டு வசதி நிலை",
+      "monthlyIncome": "மாத வருமானம்",
+      "dowry": "மஹர்",
+      "gold": "தங்கம்",
+      "maritalStatus": "திருமண நிலை",
+      "religiousLevel": "மத நம்பிக்கை அளவு",
+      "personalTraits": "தனிப்பட்ட பண்புகள்",
+      "partnerTraits": "துணைவரிடம் விரும்பப்படும் பண்புகள்"
+    },
+    "step3": {
+      "minimumAge": "குறைந்தபட்ச வயது",
+      "maximumAge": "அதிகபட்ச வயது",
+      "preferredNationalities": "விரும்பப்படும் தேசியங்கள்",
+      "partnersCountry": "துணைவரின் நாடு",
+      "preferredMaritalStatuses": "விரும்பப்படும் திருமண நிலை",
+      "preferredReligiousStatuses": "விரும்பப்படும் மத நம்பிக்கை அளவு",
+      "preferredEducationLevels": "விரும்பப்படும் கல்வி நிலை",
+      "preferredJobGrades": "விரும்பப்படும் வேலை நிலை"
+    }
   }
 }
