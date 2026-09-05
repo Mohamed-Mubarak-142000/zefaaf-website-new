@@ -96,7 +96,7 @@
       "privacyNote": "Məlumatlarınız etibarlı əllərdədir. Ətraflı məlumat üçün məxfilik siyasətimizə baxın."
     },
     "bottom": {
-      "developedBy": "{brand} tərəfindən hazırlanmışdır",
+      "developedBy": "<link>{brand}</link> tərəfindən hazırlanmışdır",
       "copyright": "Bütün hüquqlar Zefaaf platformasına aiddir © {year}"
     }
   },
@@ -187,11 +187,11 @@
       }
     ],
     "ticker": [
-      "Ən yaxşı şəkildə yaşayın",
-      "sağlam səyahət",
-      "həyat yoldaşı",
-      "sağlam seçimlər",
-      "həyat yoldaşı"
+      "Həyat yoldaşınız",
+      "Etibarlı seçimlər",
+      "Təhlükəsiz yol",
+      "Ciddi evlilik",
+      "Məxfiliyiniz birinci"
     ]
   },
   "blogDetail": {
@@ -345,7 +345,7 @@
     }
   },
   "downloadApp": {
-    "title": "Xüsusi Pulsuz Sınaq – İndi Zefaaf\ntətbiqini yükləyin və ilk 3 gün\npulsuz mesajlaşmadan həzz alın!",
+    "title": "Zefaaf tətbiqini indi yükləyin\nvə həyat yoldaşınızı tapmaq səyahətinə başlayın",
     "features": [
       "Doğru tərəfdaşı tapmaq üçün təhlükəsiz və etibarlı mühit.",
       "İslami qaydalara uyğun rahat bir təcrübə."
@@ -375,6 +375,27 @@
       {
         "title": "Öz ölkənizdə şəxsi görüş | Harada olmağınızdan asılı olmayaraq",
         "description": "Şəxsiyyətinizi və ehtiyaclarınızı anlamaq üçün ailə məsləhətçisi ilə şəxsi Zoom görüşü ilə başlayırıq, sonra uyğun tərəfdaş axtarır və qarşılıqlı razılıq olduqda şəxsi görüş təşkil edirik."
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "Üzvlərimiz nə deyir",
+    "ratingLabel": "5 ulduzdan 5-i",
+    "items": [
+      {
+        "quote": "Rahat və hörmətli bir təcrübə idi. Platformanın ciddi və şəriətə uyğun şəkildə uyğun tərəfdaş tapmağa həqiqətən kömək etdiyini hiss etdim.",
+        "name": "Əhməd",
+        "ageLabel": "29 yaş"
+      },
+      {
+        "quote": "Hər addımın nə qədər aydın və mütəşəkkil olduğunu çox bəyəndim. Uyğunluq balı da dəyərlərimi və maraqlarımı bölüşən profillərə diqqət yetirməyimə kömək etdi.",
+        "name": "Sara",
+        "ageLabel": "29 yaş"
+      },
+      {
+        "quote": "Bu, ənənəvi tanışlıq tətbiqlərindən fərqlidir. Məqsəd əvvəldən aydındır: nikahı nəzərdə tutaraq ciddi münasibət qurmaq.",
+        "name": "Əhməd",
+        "ageLabel": "29 yaş"
       }
     ]
   },
@@ -428,6 +449,26 @@
       ]
     }
   },
+  "vipPayment": {
+    "price": "Qiymət",
+    "title": "Ödəniş seçimləri",
+    "whatsapp": "WhatsApp vasitəsilə ödəniş linki",
+    "agent": "Agent vasitəsilə ödəniş",
+    "transferReference": "Köçürmə istinadı (istəyə bağlı)",
+    "uploadProof": "Köçürmə sübutunu yükləyin (JPG, PNG, WebP)",
+    "next": "Növbəti",
+    "back": "Geri",
+    "submitError": "Köçürmə sübutunu göndərmək mümkün olmadı.",
+    "fields": {
+      "paymentType": "Ödəniş növü",
+      "agentName": "Agentin adı",
+      "paymentNumber": "Ödəniş nömrəsi",
+      "paymentLink": "Ödəniş linki",
+      "bankName": "Bankın adı",
+      "accountHolder": "Hesab sahibi",
+      "agentPhone": "Agentin telefonu"
+    }
+  },
   "paymentStatus": {
     "close": "Bağla",
     "backToHome": "Ana səhifəyə qayıt",
@@ -469,7 +510,7 @@
       "contactMethods": "Əlaqə üsulları",
       "nationality": "Milliyyət",
       "city": "Şəhər",
-      "marriageRequirements": "Nikah tələbləri",
+      "marriageRequirements": "Doğum tarixi",
       "day": "Gün",
       "month": "Ay",
       "year": "İl",
@@ -499,5 +540,28 @@
       "preferredEducationLevels": "Üstünlük verilən təhsil səviyyəsi",
       "preferredJobGrades": "Üstünlük verilən iş səviyyəsi"
     }
+  },
+  "vipTerms": {
+    "eyebrow": "Qaydalar və Şərtlər",
+    "imageAlt": "Qələmlə kağız üzərində yazan əl, nikah müqaviləsini simvolizə edir",
+    "serviceTitle": "Şəxsi Axtarış Xidməti",
+    "platformLine": "Zefaaf Platformasında",
+    "intro": "Bu, ənənəvi proqram və ya vebsayt xidməti deyil, şəxsi xidmətdir, burada xüsusi komanda axtarış, qısa siyahı, filtrləmə və seçimlərinizə və şərtlərinizə əsasən ilkin ciddiliyin yoxlanılmasında sizinlə sıx əməkdaşlıq edir.",
+    "bullets": [
+      "Xidmət haqqı profilinizin aktivləşdirildiyi tarixdən başlayaraq tam bir ayı əhatə edən €99 (və ya onun yerli valyutada ekvivalenti) təşkil edir.",
+      "Məsləhətçilərin tövsiyələrini mütəmadi olaraq izləmək üçün e-poçtunuz və şifrənizlə əldə edilən şəxsi, təhlükəsiz idarə paneli əldə edirsiniz - inşallah, uyğun uyğunluqlar mövcud olduqda hər gün potensial olaraq.",
+      "Xidmətiniz tam məxfilik və məxfiliklə idarə olunur; heç bir namizəd sizin açıq razılığınız olmadan məlumatlarınızı, seçimlərinizi və ya sorğularınızı görə bilməz.",
+      "Şəxsiyyətinizi təsdiqləmək və hesabınızı təsdiqləmək üçün şəxsiyyət vəsiqəsinin şəkli tələb olunur; o, yalnız səlahiyyətli komanda ilə məxfi qalır və heç vaxt dərc olunmur və paylaşılmır.",
+      "Hər bir tərəfin üstünlüklərinə uyğun olaraq qəbul səviyyəsini qiymətləndirmək üçün şəxsi fotoşəkillər tələb olunur; onlar yalnız daxili olaraq istifadə olunur və heç vaxt dərc edilmir və heç kimə göndərilmir.",
+      "Tanışlıq və ya əlaqə məlumatlarının mübadiləsi yalnız hər iki tərəf razılaşdıqdan sonra başlayır və hər kəs üçün tam məxfilik qorunur.",
+      "Tövsiyələrin sabit sayı yoxdur; məqsəd müəyyən sayda profil göndərmək deyil, keyfiyyət və uyğunluqdur.",
+      "Şəbəkəmizə müəyyən bir millətin və ya ölkənin mövcudluğuna zəmanət vermədən müxtəlif ölkələrdən və millətlərdən, o cümlədən müsəlman avropalılardan olan ciddi üzvlər daxildir.",
+      "Tövsiyələrə, tanışlığa, hətta evlilik bitdikdən sonra da əlavə ödəniş tələb olunmur; tam ödəniş yalnız €99 və ya onun yerli valyutada ekvivalentidir.",
+      "Müvəffəqiyyət Allahın əlindədir və heç kim müəyyən bir müddət ərzində evliliyə zəmanət verə bilməz, lakin komandamız abunəliyiniz boyu sizin üçün ən uyğun uyğunluqları axtarmaq, filtrləmək və əldə etmək üçün əlindən gələni edir.",
+      "İzləmə WhatsApp və e-poçt vasitəsilə həyata keçirilir. Telegram şirkət tərəfindən pozula bilər, ona görə də yeganə əlaqə vasitəsi kimi ona etibar edilməməlidir.",
+      "Xidmət aktivləşdirildikdən və komanda profilinizdə işə başladıqdan sonra ödənişlər geri qaytarılmır, çünki onlar dərhal işə başlayan xüsusi komandanın vaxtını və səyini əhatə edir.",
+      "Ödənişi tamamlamaqla siz bu şərtləri oxuduğunuzu və razılaşdığınızı təsdiq edirsiniz və komandamız inşallah tam qayğı və məxfiliklə sizinlə işləməyə başlayacaq."
+    ],
+    "closing": "Allah sizə saleh həyat yoldaşı nəsib etsin."
   }
 }

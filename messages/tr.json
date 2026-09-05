@@ -96,7 +96,7 @@
       "privacyNote": "Verileriniz güvenli ellerde. Daha fazla bilgi için gizlilik politikamıza göz atın."
     },
     "bottom": {
-      "developedBy": "{brand} tarafından geliştirildi",
+      "developedBy": "<link>{brand}</link> tarafından geliştirildi",
       "copyright": "Tüm hakları Zefaaf platformuna aittir © {year}"
     }
   },
@@ -187,11 +187,11 @@
       }
     ],
     "ticker": [
-      "En iyisini yaşayın",
-      "sağlıklı yolculuk",
-      "hayat arkadaşı",
-      "sağlıklı seçimler",
-      "hayat arkadaşı"
+      "Hayat arkadaşınız",
+      "Güvenilir seçenekler",
+      "Güvenli bir yolculuk",
+      "Ciddi evlilik",
+      "Önce gizliliğiniz"
     ]
   },
   "blogDetail": {
@@ -345,7 +345,7 @@
     }
   },
   "downloadApp": {
-    "title": "Özel Ücretsiz Deneme – Zefaaf\nuygulamasını hemen indirin ve ilk 3\ngününüzde ücretsiz mesajlaşmanın keyfini çıkarın!",
+    "title": "Zefaaf uygulamasını hemen indirin\nve hayat arkadaşınızı arama yolculuğuna başlayın",
     "features": [
       "Doğru eşi bulmak için güvenli ve emniyetli bir ortam.",
       "İslami ilkelere uygun, kesintisiz bir deneyim."
@@ -375,6 +375,27 @@
       {
         "title": "Kendi ülkenizde yüz yüze buluşma | Nerede olursanız olun",
         "description": "Kişiliğinizi ve ihtiyaçlarınızı anlamak için bir aile danışmanıyla özel bir Zoom görüşmesiyle başlarız, ardından uygun bir eş arar ve karşılıklı kabul olduğunda yüz yüze bir buluşma ayarlarız."
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "Üyelerimiz ne diyor?",
+    "ratingLabel": "5 üzerinden 5 yıldız",
+    "items": [
+      {
+        "quote": "Rahat ve saygılı bir deneyimdi. Platformun ciddi ve şeriata uygun bir şekilde uygun bir eş bulmanıza gerçekten yardımcı olduğunu hissettim.",
+        "name": "Ahmed",
+        "ageLabel": "29 yaşında"
+      },
+      {
+        "quote": "Her adımın ne kadar net ve düzenli olduğunu çok sevdim. Uyumluluk puanı da değerlerimi ve ilgi alanlarımı paylaşan profillere odaklanmama yardımcı oldu.",
+        "name": "Sara",
+        "ageLabel": "29 yaşında"
+      },
+      {
+        "quote": "Geleneksel flört uygulamalarından farklı. Amaç en başından belli: evliliği düşünerek ciddi bir ilişki kurmak.",
+        "name": "Ahmed",
+        "ageLabel": "29 yaşında"
       }
     ]
   },
@@ -428,6 +449,26 @@
       ]
     }
   },
+  "vipPayment": {
+    "price": "Fiyat",
+    "title": "Ödeme seçenekleri",
+    "whatsapp": "WhatsApp üzerinden ödeme bağlantısı",
+    "agent": "Temsilci aracılığıyla ödeme",
+    "transferReference": "Havale referansı (isteğe bağlı)",
+    "uploadProof": "Havale dekontunu yükleyin (JPG, PNG, WebP)",
+    "next": "İleri",
+    "back": "Geri",
+    "submitError": "Havale dekontu gönderilemedi.",
+    "fields": {
+      "paymentType": "Ödeme türü",
+      "agentName": "Temsilci adı",
+      "paymentNumber": "Ödeme numarası",
+      "paymentLink": "Ödeme bağlantısı",
+      "bankName": "Banka adı",
+      "accountHolder": "Hesap sahibi",
+      "agentPhone": "Temsilci telefonu"
+    }
+  },
   "paymentStatus": {
     "close": "Kapat",
     "backToHome": "Ana sayfaya dön",
@@ -469,7 +510,7 @@
       "contactMethods": "İletişim yöntemleri",
       "nationality": "Uyruk",
       "city": "Şehir",
-      "marriageRequirements": "Evlilik gereksinimleri",
+      "marriageRequirements": "Doğum tarihi",
       "day": "Gün",
       "month": "Ay",
       "year": "Yıl",
@@ -499,5 +540,28 @@
       "preferredEducationLevels": "Tercih edilen eğitim seviyesi",
       "preferredJobGrades": "Tercih edilen iş seviyesi"
     }
+  },
+  "vipTerms": {
+    "eyebrow": "Şartlar ve koşullar",
+    "imageAlt": "Bir elin kağıda kalemle yazması, evlilik akdini simgeliyor",
+    "serviceTitle": "Kişisel Arama Hizmeti",
+    "platformLine": "Zefaaf Platformunda",
+    "intro": "Bu, geleneksel bir uygulama veya web sitesi hizmeti değildir, ancak özel bir ekibin arama, kısa liste oluşturma, filtreleme ve tercihlerinize ve koşullarınıza göre ilk ciddiyet kontrolünde sizinle yakın işbirliği içinde çalıştığı kişisel bir hizmettir.",
+    "bullets": [
+      "Hizmet ücreti, profilinizin etkinleştirildiği tarihten itibaren tam ayı kapsayan 99 Euro'dur (veya yerel para biriminizdeki eşdeğeri).",
+      "Danışmanlarınızın tavsiyelerini düzenli olarak takip etmek için e-postanız ve şifrenizle erişilebilen özel, güvenli bir kontrol paneline sahip olursunuz - Tanrı'nın izniyle, uygun eşleşmeler mevcut olduğunda potansiyel olarak günlük olarak.",
+      "Hizmetiniz tam bir gizlilik ve gizlilikle ele alınır; açık izniniz olmadan hiçbir aday verilerinizi, tercihlerinizi veya isteklerinizi göremez.",
+      "Kimliğinizi doğrulamak ve hesabınızı onaylamak için kimlik fotoğrafı gereklidir; yalnızca yetkili ekipte gizli kalır ve asla yayınlanmaz veya paylaşılmaz.",
+      "Her iki tarafın tercihlerine göre kabul düzeyinin değerlendirilmesi için kişisel fotoğraflar gerekmektedir; yalnızca dahili olarak kullanılırlar ve asla yayınlanmaz veya kimseye gönderilmezler.",
+      "Tanışmak veya iletişim bilgilerini paylaşmak ancak her iki tarafın da anlaşmasıyla başlar ve herkes için tam gizlilik sağlanır.",
+      "Sabit sayıda öneri yoktur; amaç kalite ve uyumluluktur, belirli sayıda profil göndermek değil.",
+      "Ağımız, belirli bir milliyet veya ülkenin mevcudiyetini garanti etmeden, Müslüman Avrupalılar da dahil olmak üzere çeşitli ülke ve milletlerden ciddi üyeleri içermektedir.",
+      "Tavsiyelerde bulunmak, tanışmak ve hatta evliliğin tamamlanmasından sonra bile ek ücret alınmaz; tam ücret yalnızca 99 € veya yerel para biriminizdeki karşılığıdır.",
+      "Başarı Tanrı'nın elindedir ve hiç kimse belirli bir zaman dilimi içinde evliliği garanti edemez, ancak ekibimiz aboneliğiniz boyunca size sunulan en uygun eşleşmeleri aramak, filtrelemek ve onlara ulaşmak için elinden geleni yapar.",
+      "Takip WhatsApp ve e-posta yoluyla gerçekleşir. Telegram şirket tarafından kesintiye uğratılabilir, bu nedenle tek iletişim aracı olarak ona güvenilmemelidir.",
+      "Hizmet etkinleştirildiğinde ve ekip profiliniz üzerinde çalışmaya başladığında ücretler iade edilmez; çünkü bu ücretler, hemen çalışmaya başlayan özel bir ekibin zamanını ve çabasını karşılar.",
+      "Ödemeyi tamamlayarak, bu şartları okuyup kabul ettiğinizi onaylamış olursunuz ve ekibimiz, Allah'ın izniyle, sizinle tam bir özen ve mahremiyet içinde çalışmaya başlayacaktır."
+    ],
+    "closing": "Allah sana doğru bir hayat arkadaşı nasip etsin."
   }
 }

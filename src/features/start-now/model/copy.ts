@@ -28,10 +28,7 @@ export type StartNowCopy = {
     agreePrefix: string;
     agreeLink: string;
   };
-  payment: {
-    title: string;
-    whatsapp: string;
-  };
+  verification: { title: string; heading: string; description: string };
   location: {
     title: string;
     heading: string;
@@ -68,10 +65,7 @@ const en: StartNowCopy = {
     agreePrefix: "I agree to the",
     agreeLink: "terms and conditions",
   },
-  payment: {
-    title: "Payment options",
-    whatsapp: "Payment link via whatsapp",
-  },
+  verification: { title: "Verification", heading: "Transfer proof received", description: "Your transfer proof was submitted successfully and is waiting for review." },
   location: {
     title: "Location info",
     heading: "Activate your website",
@@ -108,10 +102,7 @@ const ar: StartNowCopy = {
     agreePrefix: "أوافق على",
     agreeLink: "الشروط والأحكام",
   },
-  payment: {
-    title: "خيارات الدفع",
-    whatsapp: "رابط الدفع عبر واتساب",
-  },
+  verification: { title: "التحقق", heading: "تم استلام إثبات التحويل", description: "تم إرسال إثبات التحويل بنجاح وهو الآن بانتظار المراجعة." },
   location: {
     title: "معلومات الموقع",
     heading: "فعّل موقعك الجغرافي",

@@ -133,6 +133,18 @@
     --size-fluid-status-icon: clamp(4.5rem, 4.19rem + 1.13vw, 5.25rem); /* 72px → 84px — payment-status dialog success/fail icon badge */
     --size-fluid-field-h: clamp(2.25rem, 2.16rem + 0.38vw, 2.5rem); /* 36px → 40px — form input/select height */
     --size-fluid-textarea-h: clamp(6.25rem, 5.5rem + 3.19vw, 8.375rem); /* 100px → 134px — form textarea height */
+    /* App-store badge frame (download-app section). The desktop end of each
+       range is the exact Figma spec: 31.24px tall, 3.75px radius, 0.75px
+       border, 4.5px/11.25px padding, 6px gap. The 4.5px vertical padding is
+       realized by capping the badge's inner content at --size-fluid-store-mark
+       (31.24 - 2×4.5 - 2×0.75 border = 20.74px) rather than by a py-*, so all
+       three badges keep an identical height even though their inner artwork
+       differs. */
+    --size-fluid-store-badge-h: clamp(1.625rem, 1.51rem + 0.49vw, 1.9531rem); /* 26px → 31.24px */
+    --size-fluid-store-mark: clamp(1.0625rem, 0.98rem + 0.35vw, 1.2963rem); /* 17px → 20.74px — store logo mark / inner content cap */
+    --space-fluid-store-badge-x: clamp(0.59375rem, 0.555rem + 0.16vw, 0.7031rem); /* 9.5px → 11.25px */
+    --space-fluid-store-badge-gap: clamp(0.3125rem, 0.29rem + 0.09vw, 0.375rem); /* 5px → 6px */
+    --radius-fluid-store-badge: clamp(0.1875rem, 0.171rem + 0.07vw, 0.2344rem); /* 3px → 3.75px */
     --radius-fluid: clamp(0.625rem, 0.58rem + 0.19vw, 0.75rem); /* 10px → 12px */
 
     --background: var(--white);

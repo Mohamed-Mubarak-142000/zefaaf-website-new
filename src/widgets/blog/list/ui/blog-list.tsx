@@ -9,9 +9,10 @@ import { BlogCard, type BlogArticle } from "./blog-card";
 
 const TOPIC_KEYS = ["all", "qualities", "relationships", "health", "choosing"] as const;
 
-export function BlogList() {
+export function BlogList({ apiArticles }: { apiArticles?: BlogArticle[] }) {
   const t = useTranslations("blog.list");
-  const articles = t.raw("articles") as BlogArticle[];
+  const translatedArticles = t.raw("articles") as BlogArticle[];
+  const articles = apiArticles?.length ? apiArticles : translatedArticles;
 
   const [search, setSearch] = useState("");
   const [activeTopic, setActiveTopic] = useState<(typeof TOPIC_KEYS)[number]>("all");

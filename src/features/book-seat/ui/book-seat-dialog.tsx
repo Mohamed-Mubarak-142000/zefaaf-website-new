@@ -8,9 +8,14 @@ import { Dialog, DialogContent, DialogFooter, DialogHeader, DialogTitle } from "
 
 import { getBookSeatCopy } from "../model/copy";
 
-export function BookSeatDialog({ open, onOpenChange }: { open: boolean; onOpenChange: (open: boolean) => void }) {
+export function BookSeatDialog({ open, onOpenChange, eventUlid }: { open: boolean; onOpenChange: (open: boolean) => void; eventUlid?: string }) {
   const locale = useLocale();
   const copy = getBookSeatCopy(locale);
+  const rewaqBaseUrl = process.env.NEXT_PUBLIC_REWAQ_URL ??
+    (process.env.NODE_ENV === "production" ? "https://rewaq.nl" : "https://dev.rewaq.nl");
+  const rewaqUrl = eventUlid
+    ? `${rewaqBaseUrl.replace(/\/$/, "")}/${locale}/events/${encodeURIComponent(eventUlid)}`
+    : rewaqBaseUrl;
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
@@ -37,7 +42,7 @@ export function BookSeatDialog({ open, onOpenChange }: { open: boolean; onOpenCh
           {/* No live Rewaq destination exists yet — same placeholder
               convention as the header/footer/VIP CTAs. */}
           <Button asChild className="h-9 rounded-lg px-2.5 font-alexandria text-[10.5px]">
-            <a href="#">{copy.cta}</a>
+            <a href={rewaqUrl} target="_blank" rel="noopener noreferrer">{copy.cta}</a>
           </Button>
         </DialogFooter>
       </DialogContent>

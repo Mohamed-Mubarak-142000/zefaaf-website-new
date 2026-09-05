@@ -96,7 +96,7 @@
       "privacyNote": "Your data is in safe hands. Check our privacy policy for more information."
     },
     "bottom": {
-      "developedBy": "Developed by {brand}",
+      "developedBy": "Developed by <link>{brand}</link>",
       "copyright": "All rights reserved to Zefaaf platform © {year}"
     }
   },
@@ -187,11 +187,11 @@
       }
     ],
     "ticker": [
-      "Live your best",
-      "healthy journey",
-      "life partner",
-      "healthy choices",
-      "life partner"
+      "Your life partner",
+      "Trusted choices",
+      "A safe journey",
+      "Serious marriage",
+      "Your privacy first"
     ]
   },
   "blogDetail": {
@@ -345,7 +345,7 @@
     }
   },
   "downloadApp": {
-    "title": "A Special Free Trial – Download the Zefaaf\napp now and enjoy free messaging for\nyour first 3 days!",
+    "title": "Download the Zefaaf app now\nand start your journey to find your life partner",
     "features": [
       "A safe and secure environment to find the right partner.",
       "A seamless experience that follows Islamic guidelines."
@@ -375,6 +375,27 @@
       {
         "title": "In-person meeting in your country | Wherever you are",
         "description": "We begin with a private Zoom meeting with a family counselor to understand your personality and needs, then search for a suitable partner and arrange an in-person meeting when there is mutual acceptance."
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "What Our Members Are Saying",
+    "ratingLabel": "5 out of 5 stars",
+    "items": [
+      {
+        "quote": "A comfortable and respectful experience. I felt that the platform genuinely helps you find a suitable partner in a serious and Sharia-compliant way.",
+        "name": "Ahmed",
+        "ageLabel": "Age 29"
+      },
+      {
+        "quote": "I loved how clear and organized every step was. The compatibility score also helped me focus on profiles that share my values and interests.",
+        "name": "Sara",
+        "ageLabel": "Age 29"
+      },
+      {
+        "quote": "It's different from traditional dating apps. The purpose is clear from the beginning, building a serious relationship with marriage in mind.",
+        "name": "Ahmed",
+        "ageLabel": "Age 29"
       }
     ]
   },
@@ -428,6 +449,26 @@
       ]
     }
   },
+  "vipPayment": {
+    "price": "Price",
+    "title": "Payment options",
+    "whatsapp": "Payment link via WhatsApp",
+    "agent": "Payment through an agent",
+    "transferReference": "Transfer reference (optional)",
+    "uploadProof": "Upload transfer proof (JPG, PNG, WebP)",
+    "next": "Next",
+    "back": "Back",
+    "submitError": "Could not submit the transfer proof.",
+    "fields": {
+      "paymentType": "Payment type",
+      "agentName": "Agent name",
+      "paymentNumber": "Payment number",
+      "paymentLink": "Payment link",
+      "bankName": "Bank name",
+      "accountHolder": "Account holder",
+      "agentPhone": "Agent phone"
+    }
+  },
   "paymentStatus": {
     "close": "Close",
     "backToHome": "Back to home",
@@ -469,7 +510,7 @@
       "contactMethods": "Contact methods",
       "nationality": "Nationality",
       "city": "City",
-      "marriageRequirements": "Marriage Requirements",
+      "marriageRequirements": "Date of birth",
       "day": "Day",
       "month": "Month",
       "year": "Year",
@@ -499,5 +540,28 @@
       "preferredEducationLevels": "Preferred education levels",
       "preferredJobGrades": "Preferred job grades"
     }
+  },
+  "vipTerms": {
+    "eyebrow": "Terms and Conditions",
+    "imageAlt": "A hand writing on paper with a pen, symbolizing a marriage agreement",
+    "serviceTitle": "Personal Search Service",
+    "platformLine": "on the Zefaaf Platform",
+    "intro": "This is not a traditional app or website service, but a personal service where a dedicated team works closely with you on searching, shortlisting, filtering, and an initial seriousness check based on your preferences and circumstances.",
+    "bullets": [
+      "The service fee is €99 (or its equivalent in your local currency), covering a full month starting from your profile's activation date.",
+      "You get a private, secure dashboard, accessed with your email and password, to follow up on advisors' recommendations regularly — potentially daily whenever suitable matches become available, God willing.",
+      "Your service is handled with complete privacy and confidentiality; no candidate can see your data, preferences, or requests without your explicit consent.",
+      "An ID photo is required to verify your identity and confirm your account; it stays confidential with the authorized team only and is never published or shared.",
+      "Personal photos are required to assess the level of acceptance according to each side's preferences; they are used internally only and are never published or sent to anyone.",
+      "Getting acquainted or exchanging contact details only begins after both parties agree, with full privacy maintained for everyone.",
+      "There is no fixed number of recommendations; the goal is quality and compatibility, not sending a specific number of profiles.",
+      "Our network includes serious members from various countries and nationalities, including Muslim Europeans, without guaranteeing the availability of a specific nationality or country.",
+      "There are no additional fees for recommendations, getting acquainted, or even after marriage is completed; the full fee is only €99, or its equivalent in your local currency.",
+      "Success is in God's hands, and no one can guarantee marriage within a specific timeframe, but our team does its utmost throughout your subscription to search, filter, and reach the most suitable matches available to you.",
+      "Follow-up happens via WhatsApp and email. Telegram may be disrupted by the company, so it should not be relied upon as the sole means of contact.",
+      "Fees are non-refundable once the service is activated and the team begins working on your profile, as they cover the time and effort of a dedicated team that starts working immediately.",
+      "By completing payment, you acknowledge that you have read and agreed to these terms, and our team will begin working with you with full care and privacy, God willing."
+    ],
+    "closing": "May God grant you a righteous life partner."
   }
 }

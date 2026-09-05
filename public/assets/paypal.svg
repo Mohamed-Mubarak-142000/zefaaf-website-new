@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" fill="none">
+  <!-- Background circle -->
+  <circle cx="40" cy="40" r="38" fill="#F0F4FF" stroke="#E0E8FF" stroke-width="1.5"/>
+  <!-- PayPal P (blue) -->
+  <path d="M27 22h14.5c5.8 0 9.5 3.2 8.8 8.8-.9 7-5.6 10.2-11.8 10.2H34l-2 12H24l5-31z" fill="#003087"/>
+  <!-- PayPal P shadow (light blue) -->
+  <path d="M32 28h11c4.5 0 7.5 2.5 6.8 7-.8 5.5-4.5 8-9.5 8h-4.3l-2 11H27l5-26z" fill="#009CDE"/>
+  <!-- PayPal P highlight -->
+  <path d="M36.5 32h8c3 0 5 1.7 4.5 4.7-.5 3.5-3 5.3-6.3 5.3H39l-1.5 8.5h-5.5l4.5-18.5z" fill="#012169"/>
+</svg>

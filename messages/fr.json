@@ -96,7 +96,7 @@
       "privacyNote": "Vos données sont entre de bonnes mains. Consultez notre politique de confidentialité pour en savoir plus."
     },
     "bottom": {
-      "developedBy": "Développé par {brand}",
+      "developedBy": "Développé par <link>{brand}</link>",
       "copyright": "Tous droits réservés à la plateforme Zefaaf © {year}"
     }
   },
@@ -187,11 +187,11 @@
       }
     ],
     "ticker": [
-      "Vivez le meilleur",
-      "un parcours sain",
-      "partenaire de vie",
-      "des choix sains",
-      "partenaire de vie"
+      "Votre partenaire de vie",
+      "Des choix fiables",
+      "Un parcours sûr",
+      "Un mariage sérieux",
+      "Votre vie privée d'abord"
     ]
   },
   "blogDetail": {
@@ -345,7 +345,7 @@
     }
   },
   "downloadApp": {
-    "title": "Un essai gratuit exclusif – téléchargez l'application Zefaaf\ndès maintenant et profitez de la messagerie gratuite pendant\nvos 3 premiers jours !",
+    "title": "Téléchargez l'application Zefaaf dès maintenant\net commencez votre parcours vers votre partenaire de vie",
     "features": [
       "Un environnement sûr et sécurisé pour trouver le bon partenaire.",
       "Une expérience fluide qui respecte les principes islamiques."
@@ -375,6 +375,27 @@
       {
         "title": "Rencontre en personne dans votre pays | Où que vous soyez",
         "description": "Nous commençons par un entretien privé sur Zoom avec un conseiller familial afin de comprendre votre personnalité et vos besoins, puis nous recherchons un partenaire adapté et organisons une rencontre en personne en cas d'acceptation mutuelle."
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "Ce que disent nos membres",
+    "ratingLabel": "5 étoiles sur 5",
+    "items": [
+      {
+        "quote": "Une expérience confortable et respectueuse. J'ai senti que la plateforme aide vraiment à trouver un partenaire adapté, de façon sérieuse et conforme à la charia.",
+        "name": "Ahmed",
+        "ageLabel": "29 ans"
+      },
+      {
+        "quote": "J'ai adoré la clarté et l'organisation de chaque étape. Le score de compatibilité m'a aussi aidée à me concentrer sur des profils qui partagent mes valeurs et mes centres d'intérêt.",
+        "name": "Sara",
+        "ageLabel": "29 ans"
+      },
+      {
+        "quote": "C'est différent des applications de rencontre traditionnelles. L'objectif est clair dès le départ : construire une relation sérieuse en vue du mariage.",
+        "name": "Ahmed",
+        "ageLabel": "29 ans"
       }
     ]
   },
@@ -428,6 +449,26 @@
       ]
     }
   },
+  "vipPayment": {
+    "price": "Prix",
+    "title": "Options de paiement",
+    "whatsapp": "Lien de paiement via WhatsApp",
+    "agent": "Paiement via un agent",
+    "transferReference": "Référence du virement (facultatif)",
+    "uploadProof": "Téléverser la preuve du virement (JPG, PNG, WebP)",
+    "next": "Suivant",
+    "back": "Retour",
+    "submitError": "Impossible d’envoyer la preuve du virement.",
+    "fields": {
+      "paymentType": "Mode de paiement",
+      "agentName": "Nom de l’agent",
+      "paymentNumber": "Numéro de paiement",
+      "paymentLink": "Lien de paiement",
+      "bankName": "Nom de la banque",
+      "accountHolder": "Titulaire du compte",
+      "agentPhone": "Téléphone de l’agent"
+    }
+  },
   "paymentStatus": {
     "close": "Fermer",
     "backToHome": "Retour à l'accueil",
@@ -469,7 +510,7 @@
       "contactMethods": "Moyens de contact",
       "nationality": "Nationalité",
       "city": "Ville",
-      "marriageRequirements": "Exigences du mariage",
+      "marriageRequirements": "Date de naissance",
       "day": "Jour",
       "month": "Mois",
       "year": "Année",
@@ -499,5 +540,28 @@
       "preferredEducationLevels": "Niveaux d'éducation préférés",
       "preferredJobGrades": "Grades professionnels préférés"
     }
+  },
+  "vipTerms": {
+    "eyebrow": "Termes et conditions",
+    "imageAlt": "Une main écrivant sur du papier avec un stylo, symbolisant un contrat de mariage",
+    "serviceTitle": "Service de recherche personnelle",
+    "platformLine": "sur la plateforme Zefaaf",
+    "intro": "Il ne s'agit pas d'une application ou d'un service de site Web traditionnel, mais d'un service personnel dans lequel une équipe dédiée travaille en étroite collaboration avec vous pour la recherche, la présélection, le filtrage et une vérification initiale du sérieux en fonction de vos préférences et de votre situation.",
+    "bullets": [
+      "Les frais de service s'élèvent à 99 € (ou son équivalent dans votre devise locale), couvrant un mois complet à compter de la date d'activation de votre profil.",
+      "Vous disposez d'un tableau de bord privé et sécurisé, accessible avec votre e-mail et votre mot de passe, pour suivre régulièrement les recommandations des conseillers - potentiellement quotidiennement chaque fois que des correspondances appropriées deviennent disponibles, si Dieu le veut.",
+      "Votre service est traité en toute intimité et confidentialité ; aucun candidat ne peut voir vos données, préférences ou demandes sans votre consentement explicite.",
+      "Une photo d'identité est requise pour vérifier votre identité et confirmer votre compte ; il reste confidentiel avec l'équipe autorisée uniquement et n'est jamais publié ou partagé.",
+      "Des photos personnelles sont nécessaires pour évaluer le niveau d'acceptation en fonction des préférences de chacun ; ils sont utilisés uniquement en interne et ne sont jamais publiés ni envoyés à quiconque.",
+      "Faire connaissance ou échanger des coordonnées ne commence qu’après l’accord des deux parties, avec une confidentialité totale préservée pour chacun.",
+      "Il n'y a pas de nombre fixe de recommandations ; l'objectif est la qualité et la compatibilité, et non l'envoi d'un nombre spécifique de profils.",
+      "Notre réseau comprend des membres sérieux de divers pays et nationalités, y compris des européens musulmans, sans garantir la disponibilité d'une nationalité ou d'un pays spécifique.",
+      "Il n'y a pas de frais supplémentaires pour les recommandations, pour faire connaissance ou même après le mariage ; le tarif complet n'est que de 99 €, ou son équivalent dans votre devise locale.",
+      "Le succès est entre les mains de Dieu, et personne ne peut garantir le mariage dans un délai précis, mais notre équipe fait tout son possible tout au long de votre abonnement pour rechercher, filtrer et atteindre les correspondances les plus appropriées qui s'offrent à vous.",
+      "Le suivi s'effectue via WhatsApp et par e-mail. Telegram peut être perturbé par l'entreprise, il ne doit donc pas être utilisé comme seul moyen de contact.",
+      "Les frais ne sont pas remboursables une fois que le service est activé et que l'équipe commence à travailler sur votre profil, car ils couvrent le temps et les efforts d'une équipe dédiée qui commence à travailler immédiatement.",
+      "En effectuant le paiement, vous reconnaissez que vous avez lu et accepté ces conditions, et notre équipe commencera à travailler avec vous en toute confidentialité et avec le plus grand soin, si Dieu le veut."
+    ],
+    "closing": "Que Dieu vous accorde un partenaire de vie juste."
   }
 }

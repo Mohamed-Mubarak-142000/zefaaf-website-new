@@ -5,6 +5,7 @@ import { Alexandria, Almarai, Cairo, Geist } from "next/font/google";
 import { notFound } from "next/navigation";
 
 import { AppProviders } from "@/app";
+import { SmartMarriagePaymentReturn } from "@/features/payment-status";
 import { siteConfig } from "@/shared/config/site";
 import { cn } from "@/shared/lib/utils";
 import { buildMetadata } from "@/shared/lib/seo";
@@ -87,6 +88,7 @@ export default async function LocaleLayout({
         <NextIntlClientProvider>
           <AppProviders>
             {children}
+            <SmartMarriagePaymentReturn />
           </AppProviders>
         </NextIntlClientProvider>
       </body>

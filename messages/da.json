@@ -96,7 +96,7 @@
       "privacyNote": "Dine data er i trygge hænder. Se vores privatlivspolitik for mere information."
     },
     "bottom": {
-      "developedBy": "Udviklet af {brand}",
+      "developedBy": "Udviklet af <link>{brand}</link>",
       "copyright": "Alle rettigheder forbeholdes Zefaaf-platformen © {year}"
     }
   },
@@ -187,11 +187,11 @@
       }
     ],
     "ticker": [
-      "Lev dit bedste",
-      "sunde rejse",
-      "livspartner",
-      "sunde valg",
-      "livspartner"
+      "Din livspartner",
+      "Trygge valg",
+      "En sikker rejse",
+      "Seriøst ægteskab",
+      "Dit privatliv først"
     ]
   },
   "blogDetail": {
@@ -345,7 +345,7 @@
     }
   },
   "downloadApp": {
-    "title": "En særlig gratis prøveperiode – download Zefaaf-appen\nnu og nyd gratis beskeder i\ndine første 3 dage!",
+    "title": "Download Zefaaf-appen nu\nog begynd rejsen mod at finde din livspartner",
     "features": [
       "Et sikkert og trygt miljø til at finde den rette partner.",
       "En problemfri oplevelse, der følger islamiske retningslinjer."
@@ -375,6 +375,27 @@
       {
         "title": "Personligt møde i dit land | Uanset hvor du er",
         "description": "Vi starter med et privat Zoom-møde med en familierådgiver for at forstå din personlighed og dine behov, hvorefter vi søger efter en passende partner og arrangerer et fysisk møde, når der er gensidig accept."
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "Hvad vores medlemmer siger",
+    "ratingLabel": "5 ud af 5 stjerner",
+    "items": [
+      {
+        "quote": "En behagelig og respektfuld oplevelse. Jeg følte, at platformen virkelig hjælper dig med at finde en passende partner på en seriøs og sharia-forenelig måde.",
+        "name": "Ahmed",
+        "ageLabel": "29 år"
+      },
+      {
+        "quote": "Jeg elskede, hvor klart og organiseret hvert trin var. Kompatibilitetsscoren hjalp mig også med at fokusere på profiler, der deler mine værdier og interesser.",
+        "name": "Sara",
+        "ageLabel": "29 år"
+      },
+      {
+        "quote": "Det er anderledes end traditionelle datingapps. Formålet er klart fra begyndelsen: at opbygge et seriøst forhold med ægteskab for øje.",
+        "name": "Ahmed",
+        "ageLabel": "29 år"
       }
     ]
   },
@@ -428,6 +449,26 @@
       ]
     }
   },
+  "vipPayment": {
+    "price": "Pris",
+    "title": "Betalingsmuligheder",
+    "whatsapp": "Betalingslink via WhatsApp",
+    "agent": "Betaling via en agent",
+    "transferReference": "Overførselsreference (valgfrit)",
+    "uploadProof": "Upload dokumentation for overførsel (JPG, PNG, WebP)",
+    "next": "Næste",
+    "back": "Tilbage",
+    "submitError": "Dokumentationen for overførslen kunne ikke sendes.",
+    "fields": {
+      "paymentType": "Betalingstype",
+      "agentName": "Agentens navn",
+      "paymentNumber": "Betalingsnummer",
+      "paymentLink": "Betalingslink",
+      "bankName": "Banknavn",
+      "accountHolder": "Kontohaver",
+      "agentPhone": "Agentens telefon"
+    }
+  },
   "paymentStatus": {
     "close": "Luk",
     "backToHome": "Tilbage til forsiden",
@@ -469,7 +510,7 @@
       "contactMethods": "Kontaktmetoder",
       "nationality": "Nationalitet",
       "city": "By",
-      "marriageRequirements": "Ægteskabskrav",
+      "marriageRequirements": "Fødselsdato",
       "day": "Dag",
       "month": "Måned",
       "year": "År",
@@ -499,5 +540,28 @@
       "preferredEducationLevels": "Foretrukket uddannelsesniveau",
       "preferredJobGrades": "Foretrukket jobniveau"
     }
+  },
+  "vipTerms": {
+    "eyebrow": "Vilkår og betingelser",
+    "imageAlt": "En hånd, der skriver på papir med en pen, symboliserer en ægteskabsaftale",
+    "serviceTitle": "Personlig søgetjeneste",
+    "platformLine": "på Zefaaf-platformen",
+    "intro": "Dette er ikke en traditionel app- eller hjemmesidetjeneste, men en personlig service, hvor et dedikeret team arbejder tæt sammen med dig om søgning, shortlisting, filtrering og et indledende seriøsitetstjek baseret på dine præferencer og omstændigheder.",
+    "bullets": [
+      "Servicegebyret er €99 (eller tilsvarende i din lokale valuta), der dækker en hel måned fra din profils aktiveringsdato.",
+      "Du får et privat, sikkert dashboard, som du får adgang til med din e-mail og adgangskode, til at følge op på rådgiveres anbefalinger regelmæssigt - potentielt dagligt, når der bliver passende matches tilgængelige, hvis Gud vil.",
+      "Din service håndteres med fuldstændig fortrolighed og fortrolighed; ingen kandidat kan se dine data, præferencer eller anmodninger uden dit udtrykkelige samtykke.",
+      "Et ID-foto er påkrævet for at bekræfte din identitet og bekræfte din konto; den forbliver kun fortrolig med det autoriserede team og bliver aldrig offentliggjort eller delt.",
+      "Personlige billeder er påkrævet for at vurdere acceptniveauet i henhold til hver sides præferencer; de bruges kun internt og bliver aldrig offentliggjort eller sendt til nogen.",
+      "At stifte bekendtskab med eller udveksle kontaktoplysninger begynder først, når begge parter er enige, med fuld fortrolighed for alle.",
+      "Der er ikke noget fast antal anbefalinger; målet er kvalitet og kompatibilitet, ikke at sende et bestemt antal profiler.",
+      "Vores netværk omfatter seriøse medlemmer fra forskellige lande og nationaliteter, herunder muslimske europæere, uden at garantere tilgængeligheden af ​​en specifik nationalitet eller land.",
+      "Der er ingen ekstra gebyrer for anbefalinger, for at blive bekendt, eller endda efter ægteskabet er afsluttet; det fulde gebyr er kun €99 eller tilsvarende i din lokale valuta.",
+      "Succes er i Guds hænder, og ingen kan garantere ægteskab inden for en bestemt tidsramme, men vores team gør sit yderste i hele dit abonnement for at søge, filtrere og nå frem til de bedst egnede matches, der er tilgængelige for dig.",
+      "Opfølgning sker via WhatsApp og e-mail. Telegram kan blive forstyrret af virksomheden, så det bør ikke påberåbes som det eneste kontaktmiddel.",
+      "Gebyrer kan ikke refunderes, når først tjenesten er aktiveret, og teamet begynder at arbejde på din profil, da de dækker tiden og indsatsen for et dedikeret team, der begynder at arbejde med det samme.",
+      "Ved at gennemføre betalingen anerkender du, at du har læst og accepteret disse vilkår, og vores team vil begynde at arbejde med dig med fuld omhu og privatliv, hvis Gud vil."
+    ],
+    "closing": "Må Gud give dig en retfærdig livspartner."
   }
 }

@@ -5,6 +5,7 @@ import { Footer } from "@/widgets/footer";
 import { Header } from "@/widgets/header";
 import { buildMetadata } from "@/shared/lib/seo";
 import type { Locale } from "@/shared/i18n";
+import { getPublicEvent, getPublicEvents } from "@/shared/api";
 
 export async function generateMetadata({
   params,
@@ -22,13 +23,26 @@ export async function generateMetadata({
   });
 }
 
-export default function EventDetailsPage() {
+export default async function EventDetailsPage({
+  params,
+  searchParams,
+}: {
+  params: Promise<{ locale: string }>;
+  searchParams: Promise<{ event?: string }>;
+}) {
+  const { locale } = await params;
+  const { event: eventUlid } = await searchParams;
+  const event = eventUlid
+    ? await getPublicEvent(eventUlid, locale).catch(() => null)
+    : await getPublicEvents(locale)
+        .then((events) => events.find((item) => /bosnia|البوسنة/i.test(item.name)) ?? events[0] ?? null)
+        .catch(() => null);
   return (
     <>
       <Header />
       <main>
-        <EventDetailsHero />
-        <EventFiguresGrid />
+        <EventDetailsHero event={event} />
+        <EventFiguresGrid event={event} />
       </main>
       <Footer />
     </>

@@ -2,6 +2,7 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 
 import { Breadcrumb } from "@/shared/ui/breadcrumb";
+import type { SeoBlog } from "@/shared/api";
 
 type BlogSection = {
   heading: string;
@@ -50,7 +51,7 @@ function BlogSectionBlock({ section }: { section: BlogSection }) {
   );
 }
 
-export function BlogArticle() {
+export function BlogArticle({ blog }: { blog?: SeoBlog | null }) {
   const t = useTranslations("blogDetail");
   const leadParagraphs = t.raw("leadParagraphs") as string[];
   const sections = t.raw("sections") as BlogSection[];
@@ -67,22 +68,22 @@ export function BlogArticle() {
 
       <header className="mt-(--space-fluid-lg) flex flex-col items-start gap-[18px]">
         <span className="rounded-[12px] bg-cta-secondary px-[12px] py-[6px] font-alexandria text-[12px] leading-[1.6] text-white">
-          {t("date")}
+          {blog?.publishedAt ? new Intl.DateTimeFormat(undefined, { dateStyle: "medium" }).format(new Date(blog.publishedAt)) : t("date")}
         </span>
 
         <h1 className="font-alexandria text-[clamp(24px,4vw,36px)] leading-[1.4] font-semibold text-black-primary">
-          {t("title")}
+          {blog?.title ?? t("title")}
         </h1>
 
         <p className="font-alexandria text-[clamp(14px,1.1vw,16px)] leading-[1.6] text-grey-primary">
-          {t("intro")}
+          {blog?.description ?? t("intro")}
         </p>
       </header>
 
       <div className="relative mt-(--space-fluid-lg) h-[clamp(220px,26vw,384px)] w-full overflow-hidden rounded-[9px] bg-[#22344c]">
         <Image
-          src="/images/blog/tourism-guide-bosnia.jpg"
-          alt={t("banner.imageAlt")}
+          src={blog?.featuredImage ?? "/images/blog/tourism-guide-bosnia.jpg"}
+          alt={blog?.featuredImageAlt ?? t("banner.imageAlt")}
           fill
           sizes="(min-width: 1600px) 1600px, 100vw"
           className="object-cover object-[75%_30%]"
@@ -97,14 +98,14 @@ export function BlogArticle() {
         </div>
       </div>
 
-      <div className="mt-(--space-fluid-xl) flex flex-col gap-[42px] font-alexandria text-[clamp(12.5px,1vw,13.5px)] leading-[1.6] text-grey-primary">
-        {leadParagraphs.map((paragraph) => (
+      <div className="mt-(--space-fluid-xl) flex flex-col gap-[42px] whitespace-pre-wrap font-alexandria text-[clamp(12.5px,1vw,13.5px)] leading-[1.8] text-grey-primary">
+        {(blog?.content ? [blog.content] : leadParagraphs).map((paragraph) => (
           <p key={paragraph}>{paragraph}</p>
         ))}
       </div>
 
       <div className="mt-(--space-fluid-xl) flex flex-col gap-[clamp(32px,4vw,55px)] pb-(--space-fluid-xl)">
-        {sections.map((section) => (
+        {!blog && sections.map((section) => (
           <BlogSectionBlock key={section.heading} section={section} />
         ))}
       </div>

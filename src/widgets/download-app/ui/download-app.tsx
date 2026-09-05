@@ -100,10 +100,19 @@ function PhoneCollage() {
   );
 }
 
+// Figma spec for all three badges (node values at the 1440 desktop end):
+// 31.24px tall, 3.75px radius, 0.75px border, 11.25px side padding, 6px gap —
+// all fluid via the --*-store-badge-* tokens. The 4.5px top/bottom padding
+// falls out of capping the inner artwork at --size-fluid-store-mark. Figma's
+// Gray/300 border and Gray/100 fill map onto this palette's neutral pair:
+// border-border (--stroke-1) and bg-muted (--stroke-2). Width stays hug.
+const BADGE_FRAME =
+  "flex h-(--size-fluid-store-badge-h) items-center gap-(--space-fluid-store-badge-gap) rounded-(--radius-fluid-store-badge) border-[0.75px] border-border bg-muted px-(--space-fluid-store-badge-x)";
+
 function AppGalleryBadge() {
   return (
-    <div className="flex h-[clamp(26px,3vw,30px)] items-center gap-[clamp(5px,0.65vw,9px)] rounded-[4px] border-[0.75px] border-border bg-secondary px-[clamp(9px,1.1vw,13.5px)]">
-      <span className="relative block h-[clamp(17px,1.85vw,23.5px)] w-[clamp(17px,1.85vw,23.5px)] shrink-0">
+    <div className={BADGE_FRAME}>
+      <span className="relative block size-(--size-fluid-store-mark) shrink-0">
         <Image src="/icons/stores/appgallery-mark.svg" alt="" fill unoptimized className="object-contain" />
         <Image
           src="/icons/stores/appgallery-mark-2.svg"
@@ -121,7 +130,7 @@ function AppGalleryBadge() {
           width={48}
           height={5}
           unoptimized
-          className="h-[clamp(5px,0.5vw,6px)] w-auto"
+          className="h-[clamp(4.5px,0.45vw,5.5px)] w-auto"
         />
         <Image
           src="/icons/stores/appgallery-text.svg"
@@ -129,7 +138,7 @@ function AppGalleryBadge() {
           width={65}
           height={13}
           unoptimized
-          className="h-[clamp(13px,1.35vw,16px)] w-auto"
+          className="h-[clamp(11px,1.05vw,13px)] w-auto"
         />
       </span>
     </div>
@@ -138,18 +147,18 @@ function AppGalleryBadge() {
 
 function AppStoreBadge() {
   return (
-    <div className="flex h-[clamp(26px,3vw,30px)] items-center gap-[clamp(6px,0.7vw,9px)] rounded-[4px] border-[0.75px] border-border bg-secondary px-[clamp(9px,1.1vw,13.5px)]">
+    <div className={BADGE_FRAME}>
       <Image
         src="/icons/stores/apple-mark.svg"
         alt=""
         width={15}
         height={18}
         unoptimized
-        className="h-[clamp(16px,1.75vw,21px)] w-auto"
+        className="h-(--size-fluid-store-mark) w-auto"
       />
       <span className="flex flex-col items-start">
-        <span className="font-alexandria text-[clamp(6px,0.65vw,7.5px)] leading-tight text-black">Download on the</span>
-        <span className="font-alexandria text-[clamp(11px,1.3vw,15px)] leading-none font-semibold tracking-tight text-black">
+        <span className="font-alexandria text-[clamp(6px,0.57vw,7px)] leading-none text-black">Download on the</span>
+        <span className="font-alexandria text-[clamp(11px,1.09vw,13.5px)] leading-none font-semibold tracking-tight text-black">
           App Store
         </span>
       </span>
@@ -159,17 +168,17 @@ function AppStoreBadge() {
 
 function GooglePlayBadge() {
   return (
-    <div className="flex h-[clamp(26px,3vw,30px)] items-center gap-[clamp(6px,0.7vw,9px)] rounded-[4px] border-[0.75px] border-border bg-secondary px-[clamp(9px,1.1vw,13.5px)]">
+    <div className={BADGE_FRAME}>
       <Image
         src="/icons/stores/playstore-mark.svg"
         alt=""
         width={16}
         height={18}
         unoptimized
-        className="h-[clamp(16px,1.75vw,21px)] w-auto"
+        className="h-(--size-fluid-store-mark) w-auto"
       />
       <span className="flex flex-col items-start gap-0.5">
-        <span className="font-alexandria text-[clamp(6px,0.7vw,8.5px)] leading-none tracking-wide text-black uppercase">
+        <span className="font-alexandria text-[clamp(6px,0.57vw,7px)] leading-none tracking-wide text-black uppercase">
           Get it on
         </span>
         <Image
@@ -178,23 +187,53 @@ function GooglePlayBadge() {
           width={56}
           height={11}
           unoptimized
-          className="h-[clamp(9px,1vw,12px)] w-auto -scale-y-100"
+          className="h-[clamp(9px,0.94vw,11px)] w-auto -scale-y-100"
         />
       </span>
     </div>
   );
 }
 
+const STORE_LINKS = {
+  appGallery: "https://appgallery.huawei.com/app/C115428359",
+  googlePlay: "https://play.google.com/store/apps/details?id=com.zefaaf.zefaaf",
+  appStore: "https://apps.apple.com/app/6747707022",
+} as const;
+
+const STORE_LINK = "transition-opacity hover:opacity-75";
+
+// dir="ltr" is deliberate and must not be dropped: the page flips to RTL on
+// Arabic/Farsi/Urdu/etc., which would mirror each badge's lockup (mark to the
+// right of the text). All three stores treat the badge as fixed artwork, so it
+// keeps its LTR layout — and its left-to-right order — in every locale.
 function StoreButtons() {
   return (
-    <div className="flex flex-wrap items-start gap-[clamp(8px,1vw,12px)]">
-      <a href="#" aria-label="AppGallery" className="transition-opacity hover:opacity-75">
+    <div dir="ltr" className="flex flex-wrap items-start gap-[clamp(8px,1vw,12px)]">
+      <a
+        href={STORE_LINKS.appGallery}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="AppGallery"
+        className={STORE_LINK}
+      >
         <AppGalleryBadge />
       </a>
-      <a href="#" aria-label="App Store" className="transition-opacity hover:opacity-75">
+      <a
+        href={STORE_LINKS.appStore}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="App Store"
+        className={STORE_LINK}
+      >
         <AppStoreBadge />
       </a>
-      <a href="#" aria-label="Google Play" className="transition-opacity hover:opacity-75">
+      <a
+        href={STORE_LINKS.googlePlay}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Google Play"
+        className={STORE_LINK}
+      >
         <GooglePlayBadge />
       </a>
     </div>

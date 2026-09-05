@@ -1,4 +1,4 @@
-export type StartNowStep = "gender" | "details" | "payment" | "location";
+export type StartNowStep = "gender" | "details" | "payment" | "location" | "verification";
 
 export type Gender = "woman" | "man";
 
@@ -12,4 +12,4 @@ export type DetailsFormValues = {
   agreeToTerms: boolean;
 };
 
-export const STEP_ORDER: readonly StartNowStep[] = ["location", "gender", "details", "payment"];
+export const STEP_ORDER: readonly StartNowStep[] = ["location", "gender", "details", "payment", "verification"];

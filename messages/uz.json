@@ -96,7 +96,7 @@
       "privacyNote": "Sizning ma'lumotlaringiz ishonchli qo'llarda. Batafsil ma'lumot uchun maxfiylik siyosatimizni ko'rib chiqing."
     },
     "bottom": {
-      "developedBy": "{brand} tomonidan ishlab chiqilgan",
+      "developedBy": "<link>{brand}</link> tomonidan ishlab chiqilgan",
       "copyright": "Barcha huquqlar Zefaaf platformasiga tegishli © {year}"
     }
   },
@@ -187,11 +187,11 @@
       }
     ],
     "ticker": [
-      "Eng yaxshisini yashang",
-      "sog'lom sayohat",
-      "hayotiy sherik",
-      "sog'lom tanlovlar",
-      "hayotiy sherik"
+      "Hayotiy sherigingiz",
+      "Ishonchli tanlov",
+      "Xavfsiz yo'l",
+      "Jiddiy nikoh",
+      "Maxfiyligingiz birinchi"
     ]
   },
   "blogDetail": {
@@ -345,7 +345,7 @@
     }
   },
   "downloadApp": {
-    "title": "Maxsus bepul sinov muddati – hoziroq Zefaaf\nilovasini yuklab oling va birinchi 3 kun\nbepul xabar almashishdan bahramand bo'ling!",
+    "title": "Zefaaf ilovasini hoziroq yuklab oling\nva hayotiy sherigingizni izlash safarini boshlang",
     "features": [
       "To'g'ri sherikni topish uchun xavfsiz va ishonchli muhit.",
       "Islomiy qoidalarga mos qulay tajriba."
@@ -375,6 +375,27 @@
       {
         "title": "O'z mamlakatingizda shaxsiy uchrashuv | Qayerda bo'lishingizdan qat'i nazar",
         "description": "Shaxsiyatingiz va ehtiyojlaringizni tushunish uchun oila maslahatchisi bilan shaxsiy Zoom uchrashuvidan boshlaymiz, so'ngra mos sherik qidiramiz va o'zaro rozilik bo'lganda shaxsiy uchrashuvni tashkil qilamiz."
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "A'zolarimiz nima deydi",
+    "ratingLabel": "5 yulduzdan 5 tasi",
+    "items": [
+      {
+        "quote": "Qulay va hurmatli tajriba. Platforma haqiqatan ham jiddiy va shariatga mos tarzda mos hamrohni topishga yordam berishini his qildim.",
+        "name": "Ahmed",
+        "ageLabel": "29 yosh"
+      },
+      {
+        "quote": "Har bir qadam qanchalik aniq va tartibli ekanligi menga juda yoqdi. Moslik bali ham qadriyatlarim va qiziqishlarimni baham ko'radigan profillarga e'tibor qaratishimga yordam berdi.",
+        "name": "Sara",
+        "ageLabel": "29 yosh"
+      },
+      {
+        "quote": "Bu an'anaviy tanishuv ilovalaridan farq qiladi. Maqsad boshidanoq aniq: nikohni ko'zlab jiddiy munosabat qurish.",
+        "name": "Ahmed",
+        "ageLabel": "29 yosh"
       }
     ]
   },
@@ -428,6 +449,26 @@
       ]
     }
   },
+  "vipPayment": {
+    "price": "Narx",
+    "title": "To‘lov imkoniyatlari",
+    "whatsapp": "WhatsApp orqali to‘lov havolasi",
+    "agent": "Agent orqali to‘lov",
+    "transferReference": "O‘tkazma izohi (ixtiyoriy)",
+    "uploadProof": "O‘tkazma tasdig‘ini yuklang (JPG, PNG, WebP)",
+    "next": "Keyingi",
+    "back": "Orqaga",
+    "submitError": "O‘tkazma tasdig‘ini yuborib bo‘lmadi.",
+    "fields": {
+      "paymentType": "To‘lov turi",
+      "agentName": "Agent nomi",
+      "paymentNumber": "To‘lov raqami",
+      "paymentLink": "To‘lov havolasi",
+      "bankName": "Bank nomi",
+      "accountHolder": "Hisob egasi",
+      "agentPhone": "Agent telefoni"
+    }
+  },
   "paymentStatus": {
     "close": "Yopish",
     "backToHome": "Bosh sahifaga qaytish",
@@ -469,7 +510,7 @@
       "contactMethods": "Aloqa usullari",
       "nationality": "Millati",
       "city": "Shahar",
-      "marriageRequirements": "Nikoh talablari",
+      "marriageRequirements": "Tug‘ilgan sana",
       "day": "Kun",
       "month": "Oy",
       "year": "Yil",
@@ -499,5 +540,28 @@
       "preferredEducationLevels": "Afzal ko'rilgan ta'lim darajasi",
       "preferredJobGrades": "Afzal ko'rilgan ish darajasi"
     }
+  },
+  "vipTerms": {
+    "eyebrow": "Foydalanish shartlari",
+    "imageAlt": "Qog'ozga qalam bilan yozayotgan qo'l, nikoh shartnomasini ifodalaydi",
+    "serviceTitle": "Shaxsiy qidiruv xizmati",
+    "platformLine": "Zefaaf platformasida",
+    "intro": "Bu an'anaviy ilova yoki veb-sayt xizmati emas, balki shaxsiy xizmat bo'lib, unda maxsus guruh sizning xohishingiz va sharoitlaringiz asosida qidirish, saralash, filtrlash va dastlabki jiddiylikni tekshirishda siz bilan yaqindan hamkorlik qiladi.",
+    "bullets": [
+      "Xizmat toʻlovi €99 (yoki uning mahalliy valyutadagi ekvivalenti) boʻlib, profilingiz faollashtirilgan kundan boshlab toʻliq oyni qamrab oladi.",
+      "Maslahatchilarning tavsiyalarini muntazam kuzatib borish uchun elektron pochtangiz va parolingiz bilan kiradigan shaxsiy, xavfsiz boshqaruv paneliga ega bo'lasiz - har kuni, Xudo xohlasa, mos keladigan mosliklar mavjud bo'lganda.",
+      "Sizning xizmatingiz to'liq maxfiylik va maxfiylik bilan ko'rib chiqiladi; hech bir nomzod sizning aniq roziligingizsiz maʼlumotlaringiz, afzalliklaringiz yoki soʻrovlaringizni koʻra olmaydi.",
+      "Shaxsingizni tasdiqlash va hisobingizni tasdiqlash uchun shaxsni tasdiqlovchi fotosurat talab qilinadi; u faqat vakolatli jamoa bilan maxfiy bo'lib qoladi va hech qachon nashr etilmaydi yoki baham ko'rilmaydi.",
+      "Har bir tomonning xohishiga ko'ra qabul qilish darajasini baholash uchun shaxsiy fotosuratlar talab qilinadi; ular faqat ichki sifatida ishlatiladi va hech qachon nashr etilmaydi yoki hech kimga yuborilmaydi.",
+      "Tanishish yoki aloqa ma'lumotlarini almashish faqat har ikki tomon rozi bo'lganidan keyin boshlanadi va hamma uchun to'liq maxfiylik saqlanadi.",
+      "Tavsiyalarning qat'iy soni yo'q; maqsad - sifat va muvofiqlik, ma'lum miqdordagi profillarni jo'natish emas.",
+      "Bizning tarmog'imiz turli mamlakatlar va millatlardan, jumladan, musulmon evropaliklardan, ma'lum bir millat yoki mamlakat mavjudligiga kafolat bermasdan, jiddiy a'zolarni o'z ichiga oladi.",
+      "Tavsiya qilish, tanishish yoki hatto nikoh tugaganidan keyin ham qo'shimcha to'lovlar olinmaydi; to'liq to'lov atigi €99 yoki uning mahalliy valyutadagi ekvivalenti.",
+      "Muvaffaqiyat Xudoning qo'lida va hech kim ma'lum bir vaqt oralig'ida nikohga kafolat bera olmaydi, lekin bizning jamoamiz obuna bo'lganingiz davomida siz uchun mavjud bo'lgan eng mos mosliklarni qidirish, filtrlash va erishish uchun qo'lidan kelganini qiladi.",
+      "Kuzatuv WhatsApp va elektron pochta orqali amalga oshiriladi. Telegram kompaniya tomonidan to'xtatilishi mumkin, shuning uchun unga yagona aloqa vositasi sifatida ishonmaslik kerak.",
+      "Xizmat faollashtirilgandan so‘ng va jamoa sizning profilingiz ustida ishlay boshlaganidan so‘ng to‘lovlar qaytarilmaydi, chunki ular darhol ishlay boshlaydigan maxsus guruhning vaqt va kuchini qamrab oladi.",
+      "Toʻlovni amalga oshirish orqali siz ushbu shartlarni oʻqib chiqqaningiz va ularga rozi boʻlganingizni tan olasiz va bizning jamoamiz siz bilan toʻliq ehtiyotkorlik va maxfiylik bilan, Xudo xohlasa, ishlay boshlaydi."
+    ],
+    "closing": "Allohim sizga solih umr yo'ldoshini bersin."
   }
 }

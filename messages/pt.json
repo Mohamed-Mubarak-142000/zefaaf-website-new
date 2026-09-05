@@ -96,7 +96,7 @@
       "privacyNote": "Seus dados estão em boas mãos. Consulte nossa política de privacidade para mais informações."
     },
     "bottom": {
-      "developedBy": "Desenvolvido por {brand}",
+      "developedBy": "Desenvolvido por <link>{brand}</link>",
       "copyright": "Todos os direitos reservados à plataforma Zefaaf © {year}"
     }
   },
@@ -187,11 +187,11 @@
       }
     ],
     "ticker": [
-      "Viva o seu melhor",
-      "jornada saudável",
-      "parceiro de vida",
-      "escolhas saudáveis",
-      "parceiro de vida"
+      "Seu parceiro de vida",
+      "Escolhas confiáveis",
+      "Uma jornada segura",
+      "Casamento sério",
+      "Sua privacidade em primeiro lugar"
     ]
   },
   "blogDetail": {
@@ -345,7 +345,7 @@
     }
   },
   "downloadApp": {
-    "title": "Um Teste Gratuito Especial – Baixe o aplicativo\nZefaaf agora e aproveite mensagens gratuitas\nnos seus primeiros 3 dias!",
+    "title": "Baixe o aplicativo Zefaaf agora\ne comece sua jornada para encontrar seu parceiro de vida",
     "features": [
       "Um ambiente seguro e protegido para encontrar o parceiro certo.",
       "Uma experiência fluida que segue as diretrizes islâmicas."
@@ -375,6 +375,27 @@
       {
         "title": "Encontro presencial no seu país | Onde quer que você esteja",
         "description": "Começamos com uma reunião privada por Zoom com um conselheiro familiar para entender sua personalidade e necessidades, depois buscamos um parceiro adequado e organizamos um encontro presencial quando há aceitação mútua."
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "O que dizem os nossos membros",
+    "ratingLabel": "5 de 5 estrelas",
+    "items": [
+      {
+        "quote": "Uma experiência confortável e respeitosa. Senti que a plataforma realmente ajuda a encontrar um parceiro adequado de forma séria e em conformidade com a sharia.",
+        "name": "Ahmed",
+        "ageLabel": "29 anos"
+      },
+      {
+        "quote": "Adorei como cada etapa foi clara e organizada. A pontuação de compatibilidade também me ajudou a focar em perfis que compartilham meus valores e interesses.",
+        "name": "Sara",
+        "ageLabel": "29 anos"
+      },
+      {
+        "quote": "É diferente dos aplicativos de namoro tradicionais. O propósito é claro desde o início: construir um relacionamento sério com o casamento em mente.",
+        "name": "Ahmed",
+        "ageLabel": "29 anos"
       }
     ]
   },
@@ -428,6 +449,26 @@
       ]
     }
   },
+  "vipPayment": {
+    "price": "Preço",
+    "title": "Opções de pagamento",
+    "whatsapp": "Link de pagamento via WhatsApp",
+    "agent": "Pagamento por um agente",
+    "transferReference": "Referência da transferência (opcional)",
+    "uploadProof": "Enviar comprovativo da transferência (JPG, PNG, WebP)",
+    "next": "Seguinte",
+    "back": "Voltar",
+    "submitError": "Não foi possível enviar o comprovativo da transferência.",
+    "fields": {
+      "paymentType": "Tipo de pagamento",
+      "agentName": "Nome do agente",
+      "paymentNumber": "Número de pagamento",
+      "paymentLink": "Link de pagamento",
+      "bankName": "Nome do banco",
+      "accountHolder": "Titular da conta",
+      "agentPhone": "Telefone do agente"
+    }
+  },
   "paymentStatus": {
     "close": "Fechar",
     "backToHome": "Voltar ao início",
@@ -469,7 +510,7 @@
       "contactMethods": "Métodos de contato",
       "nationality": "Nacionalidade",
       "city": "Cidade",
-      "marriageRequirements": "Requisitos do casamento",
+      "marriageRequirements": "Data de nascimento",
       "day": "Dia",
       "month": "Mês",
       "year": "Ano",
@@ -499,5 +540,28 @@
       "preferredEducationLevels": "Níveis educacionais preferidos",
       "preferredJobGrades": "Graus profissionais preferidos"
     }
+  },
+  "vipTerms": {
+    "eyebrow": "Termos e Condições",
+    "imageAlt": "Uma mão escrevendo em papel com uma caneta, simbolizando um contrato de casamento",
+    "serviceTitle": "Serviço de pesquisa pessoal",
+    "platformLine": "na plataforma Zefaaf",
+    "intro": "Este não é um aplicativo tradicional ou serviço de site, mas um serviço pessoal onde uma equipe dedicada trabalha em estreita colaboração com você na pesquisa, seleção, filtragem e uma verificação inicial de seriedade com base em suas preferências e circunstâncias.",
+    "bullets": [
+      "A taxa de serviço é de 99€ (ou o equivalente na sua moeda local), cobrindo um mês inteiro a partir da data de ativação do seu perfil.",
+      "Você obtém um painel privado e seguro, acessado com seu e-mail e senha, para acompanhar regularmente as recomendações dos consultores - potencialmente diariamente sempre que correspondências adequadas estiverem disponíveis, se Deus quiser.",
+      "Seu serviço é tratado com total privacidade e confidencialidade; nenhum candidato pode ver seus dados, preferências ou solicitações sem o seu consentimento explícito.",
+      "É necessária uma foto de identificação para verificar sua identidade e confirmar sua conta; ele permanece confidencial apenas com a equipe autorizada e nunca é publicado ou compartilhado.",
+      "São necessárias fotos pessoais para avaliar o nível de aceitação de acordo com as preferências de cada lado; eles são usados ​​apenas internamente e nunca são publicados ou enviados a ninguém.",
+      "O conhecimento ou a troca de dados de contato só começa após o acordo de ambas as partes, sendo mantida total privacidade para todos.",
+      "Não existe um número fixo de recomendações; o objetivo é qualidade e compatibilidade, não enviando um número específico de perfis.",
+      "A nossa rede inclui membros sérios de vários países e nacionalidades, incluindo europeus muçulmanos, sem garantir a disponibilidade de uma nacionalidade ou país específico.",
+      "Não há taxas adicionais para recomendações, conhecimento ou mesmo após a conclusão do casamento; a taxa total é de apenas € 99 ou o equivalente na sua moeda local.",
+      "O sucesso está nas mãos de Deus e ninguém pode garantir o casamento dentro de um prazo específico, mas nossa equipe faz o possível ao longo da sua assinatura para pesquisar, filtrar e encontrar os pares mais adequados disponíveis para você.",
+      "O acompanhamento acontece via WhatsApp e e-mail. O Telegram pode ser interrompido pela empresa, portanto não deve ser considerado o único meio de contato.",
+      "As taxas não são reembolsáveis ​​assim que o serviço é ativado e a equipe começa a trabalhar no seu perfil, pois cobrem o tempo e o esforço de uma equipe dedicada que começa a trabalhar imediatamente.",
+      "Ao concluir o pagamento, você reconhece que leu e concordou com estes termos, e nossa equipe começará a trabalhar com você com total cuidado e privacidade, se Deus quiser."
+    ],
+    "closing": "Que Deus lhe conceda um parceiro de vida justo."
   }
 }
