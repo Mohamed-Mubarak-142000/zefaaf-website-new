@@ -1,7 +1,10 @@
 "use client";
 
+import { useState } from "react";
 import { useTranslations } from "next-intl";
+import { Loader2 } from "lucide-react";
 
+import { sendContactMessage } from "@/shared/api";
 import { Button } from "@/shared/ui/button";
 import { Input } from "@/shared/ui/input";
 import { Label } from "@/shared/ui/label";
@@ -15,12 +18,27 @@ const SOCIAL_LINKS = [
   { key: "tiktok", label: "TikTok", icon: "/icons/social-tiktok.svg" },
 ] as const;
 
-function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
-  event.preventDefault();
-}
-
 export function ContactForm() {
   const t = useTranslations("contactUs.form");
+  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+
+  async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    const form = event.currentTarget;
+    const formData = new FormData(form);
+    setStatus("loading");
+    try {
+      await sendContactMessage({
+        name: String(formData.get("fullName") ?? "").trim(),
+        email: String(formData.get("email") ?? "").trim(),
+        message: String(formData.get("message") ?? "").trim(),
+      });
+      form.reset();
+      setStatus("success");
+    } catch {
+      setStatus("error");
+    }
+  }
 
   return (
     <section className="mx-auto mt-(--space-fluid-xl) grid w-full max-w-[1600px] items-center gap-0 px-(--space-fluid-container) md:grid-cols-[1fr_1.5fr]">
@@ -79,9 +97,11 @@ export function ContactForm() {
             />
           </div>
 
-          <Button type="submit" className="w-fit rounded-md font-alexandria text-(length:--text-fluid-xs)">
-            {t("send")}
+          <Button disabled={status === "loading"} type="submit" className="w-fit rounded-md font-alexandria text-(length:--text-fluid-xs)">
+            {status === "loading" ? <Loader2 className="size-5 animate-spin" aria-label="Sending" /> : t("send")}
           </Button>
+          {status === "success" && <p role="status" className="font-alexandria text-sm text-emerald-600">Message sent successfully.</p>}
+          {status === "error" && <p role="alert" className="font-alexandria text-sm text-destructive">Could not send your message. Please try again.</p>}
         </form>
       </div>
     </section>

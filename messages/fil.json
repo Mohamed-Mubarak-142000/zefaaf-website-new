@@ -96,7 +96,7 @@
       "privacyNote": "Ligtas ang iyong data sa aming mga kamay. Tingnan ang aming patakaran sa privacy para sa karagdagang impormasyon."
     },
     "bottom": {
-      "developedBy": "Binuo ng {brand}",
+      "developedBy": "Binuo ng <link>{brand}</link>",
       "copyright": "Nakalaan ang lahat ng karapatan sa Zefaaf platform © {year}"
     }
   },
@@ -187,11 +187,11 @@
       }
     ],
     "ticker": [
-      "Buhayin ang pinakamainam",
-      "malusog na paglalakbay",
-      "kabiyak sa buhay",
-      "malulusog na pagpili",
-      "kabiyak sa buhay"
+      "Ang iyong kabiyak",
+      "Mapagkakatiwalaang pagpipilian",
+      "Ligtas na paglalakbay",
+      "Seryosong pag-aasawa",
+      "Privacy mo, una"
     ]
   },
   "blogDetail": {
@@ -345,7 +345,7 @@
     }
   },
   "downloadApp": {
-    "title": "Isang Espesyal na Libreng Pagsubok – I-download ang Zefaaf\napp ngayon at tamasahin ang libreng pagmemensahe para sa\niyong unang 3 araw!",
+    "title": "I-download ang Zefaaf app ngayon\nat simulan ang iyong paghahanap sa kabiyak ng iyong buhay",
     "features": [
       "Isang ligtas at secure na kapaligiran upang mahanap ang tamang kabiyak.",
       "Isang maayos at walang-abalang karanasan na sumusunod sa mga alituntuning Islamiko."
@@ -375,6 +375,27 @@
       {
         "title": "Personal na pagpupulong sa iyong bansa | Saan ka man naroroon",
         "description": "Magsisimula kami sa isang pribadong Zoom meeting kasama ang isang family consultant upang maunawaan ang iyong personalidad at pangangailangan, pagkatapos ay maghahanap ng angkop na kabiyak at aayusin ang personal na pagpupulong kapag may mutual na pagtanggap."
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "Ano ang sinasabi ng aming mga miyembro",
+    "ratingLabel": "5 sa 5 na bituin",
+    "items": [
+      {
+        "quote": "Isang komportable at magalang na karanasan. Naramdaman kong tunay na tumutulong ang plataporma na makahanap ng angkop na katuwang sa isang seryoso at sumusunod-sa-Sharia na paraan.",
+        "name": "Ahmed",
+        "ageLabel": "29 taong gulang"
+      },
+      {
+        "quote": "Gustung-gusto ko kung gaano kalinaw at organisado ang bawat hakbang. Ang compatibility score ay tumulong din sa akin na tumuon sa mga profile na may parehong pagpapahalaga at interes.",
+        "name": "Sara",
+        "ageLabel": "29 taong gulang"
+      },
+      {
+        "quote": "Iba ito sa tradisyunal na dating apps. Malinaw ang layunin mula sa simula: bumuo ng seryosong relasyon nang may kasal bilang hangarin.",
+        "name": "Ahmed",
+        "ageLabel": "29 taong gulang"
       }
     ]
   },
@@ -428,6 +449,26 @@
       ]
     }
   },
+  "vipPayment": {
+    "price": "Presyo",
+    "title": "Mga opsyon sa pagbabayad",
+    "whatsapp": "Link ng pagbabayad sa WhatsApp",
+    "agent": "Pagbabayad sa pamamagitan ng ahente",
+    "transferReference": "Sanggunian ng transfer (opsyonal)",
+    "uploadProof": "I-upload ang patunay ng transfer (JPG, PNG, WebP)",
+    "next": "Susunod",
+    "back": "Bumalik",
+    "submitError": "Hindi maisumite ang patunay ng transfer.",
+    "fields": {
+      "paymentType": "Uri ng pagbabayad",
+      "agentName": "Pangalan ng ahente",
+      "paymentNumber": "Numero ng pagbabayad",
+      "paymentLink": "Link ng pagbabayad",
+      "bankName": "Pangalan ng bangko",
+      "accountHolder": "May-ari ng account",
+      "agentPhone": "Telepono ng ahente"
+    }
+  },
   "paymentStatus": {
     "close": "Isara",
     "backToHome": "Bumalik sa home",
@@ -469,7 +510,7 @@
       "contactMethods": "Mga paraan ng pakikipag-ugnayan",
       "nationality": "Nasyonalidad",
       "city": "Lungsod",
-      "marriageRequirements": "Mga kinakailangan sa kasal",
+      "marriageRequirements": "Petsa ng kapanganakan",
       "day": "Araw",
       "month": "Buwan",
       "year": "Taon",
@@ -499,5 +540,28 @@
       "preferredEducationLevels": "Ninanais na antas ng edukasyon",
       "preferredJobGrades": "Ninanais na antas ng trabaho"
     }
+  },
+  "vipTerms": {
+    "eyebrow": "Mga Tuntunin at Kundisyon",
+    "imageAlt": "Isang kamay na sumusulat sa papel gamit ang panulat, sumisimbolo sa isang kasunduan sa kasal",
+    "serviceTitle": "Serbisyo ng Personal na Paghahanap",
+    "platformLine": "sa Zefaaf Platform",
+    "intro": "Ito ay hindi isang tradisyunal na serbisyo sa app o website, ngunit isang personal na serbisyo kung saan ang isang dedikadong team ay malapit na nakikipagtulungan sa iyo sa paghahanap, pag-shortlist, pag-filter, at isang paunang pagsusuri sa pagiging seryoso batay sa iyong mga kagustuhan at mga pangyayari.",
+    "bullets": [
+      "Ang bayad sa serbisyo ay €99 (o katumbas nito sa iyong lokal na pera), na sumasaklaw sa isang buong buwan simula sa petsa ng pag-activate ng iyong profile.",
+      "Makakakuha ka ng pribado, secure na dashboard, na naa-access gamit ang iyong email at password, para regular na mag-follow up sa mga rekomendasyon ng mga tagapayo — posibleng araw-araw kapag available ang mga angkop na tugma, sa kalooban ng Diyos.",
+      "Ang iyong serbisyo ay pinangangasiwaan nang may kumpletong pagkapribado at pagiging kumpidensyal; walang kandidato ang makakakita ng iyong data, mga kagustuhan, o mga kahilingan nang wala ang iyong tahasang pahintulot.",
+      "Kinakailangan ang isang larawan ng ID upang i-verify ang iyong pagkakakilanlan at kumpirmahin ang iyong account; nananatili itong kumpidensyal sa awtorisadong koponan lamang at hindi kailanman nai-publish o ibinabahagi.",
+      "Ang mga personal na larawan ay kinakailangan upang masuri ang antas ng pagtanggap ayon sa mga kagustuhan ng bawat panig; ang mga ito ay ginagamit sa loob lamang at hindi kailanman nai-publish o ipinadala sa sinuman.",
+      "Ang pakikipagkilala o pagpapalitan ng mga detalye sa pakikipag-ugnayan ay magsisimula lamang pagkatapos magkasundo ang magkabilang panig, na may buong privacy na pinananatili para sa lahat.",
+      "Walang nakapirming bilang ng mga rekomendasyon; ang layunin ay kalidad at pagiging tugma, hindi pagpapadala ng isang tiyak na bilang ng mga profile.",
+      "Kasama sa aming network ang mga seryosong miyembro mula sa iba't ibang bansa at nasyonalidad, kabilang ang mga Muslim na Europeo, nang hindi ginagarantiyahan ang pagkakaroon ng isang partikular na nasyonalidad o bansa.",
+      "Walang karagdagang bayad para sa mga rekomendasyon, pakikipagkilala, o kahit na matapos ang kasal; ang buong bayad ay €99 lamang, o katumbas nito sa iyong lokal na pera.",
+      "Ang tagumpay ay nasa kamay ng Diyos, at walang sinuman ang makakagarantiya ng kasal sa loob ng isang partikular na takdang panahon, ngunit ginagawa ng aming team ang lahat ng makakaya nito sa kabuuan ng iyong subscription upang maghanap, mag-filter, at maabot ang pinakaangkop na mga laban na magagamit mo.",
+      "Ang follow-up ay nangyayari sa pamamagitan ng WhatsApp at email. Maaaring maabala ng kumpanya ang Telegram, kaya hindi ito dapat umasa bilang ang tanging paraan ng pakikipag-ugnayan.",
+      "Hindi maibabalik ang mga bayarin kapag na-activate na ang serbisyo at nagsimula nang magtrabaho ang team sa iyong profile, dahil sinasaklaw nila ang oras at pagsisikap ng isang dedikadong team na nagsimulang magtrabaho kaagad.",
+      "Sa pamamagitan ng pagkumpleto ng pagbabayad, kinikilala mo na nabasa mo at sumang-ayon ka sa mga tuntuning ito, at ang aming koponan ay magsisimulang makipagtulungan sa iyo nang may buong pangangalaga at privacy, sa kalooban ng Diyos."
+    ],
+    "closing": "Nawa'y bigyan ka ng Diyos ng isang matuwid na kasama sa buhay."
   }
 }

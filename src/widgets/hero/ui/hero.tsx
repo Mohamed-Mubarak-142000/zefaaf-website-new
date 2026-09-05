@@ -1,9 +1,14 @@
 import { useTranslations } from "next-intl";
+import { Link } from "@/shared/i18n";
 
 import { AnimatedStats } from "./animated-stats";
 import { HeroCollage } from "./hero-collage";
 
-const STATS = ["happyClients", "successStories", "registeredMembers"] as const;
+const STATS = [
+  { key: "happyClients", value: "366,484k" },
+  { key: "successStories", value: "92,889" },
+  { key: "registeredMembers", value: "3,688,292" },
+] as const;
 
 // DOM order follows RTL reading order (right → left): text content first,
 // then the photo collage — the ambient `dir="rtl"` on <html> for Arabic
@@ -14,8 +19,8 @@ const STATS = ["happyClients", "successStories", "registeredMembers"] as const;
 // plain top-to-bottom flow in natural reading order.
 export function Hero() {
   const t = useTranslations();
-  const stats = STATS.map((key) => ({
-    value: t(`stats.${key}.value`),
+  const stats = STATS.map(({ key, value }) => ({
+    value,
     label: t(`stats.${key}.label`),
   }));
 
@@ -28,8 +33,8 @@ export function Hero() {
         <p className="font-almarai text-(length:--text-fluid-lg) leading-[1.6] whitespace-pre-line text-foreground/72">
           {t("hero.subtitle")}
         </p>
-        <button
-          type="button"
+        <Link
+          href="/about"
           className="flex shrink-0 items-center gap-(--space-fluid-3xs) rounded-[8px] bg-brand px-(--space-fluid-sm) py-(--space-fluid-2xs) font-alexandria text-[12px] leading-[1.5] text-white transition-opacity hover:opacity-90 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand"
         >
           <span>{t("hero.cta")}</span>
@@ -38,7 +43,7 @@ export function Hero() {
             alt=""
             className="size-(--size-fluid-icon-xs) rtl:rotate-180"
           />
-        </button>
+        </Link>
 
         <AnimatedStats stats={stats} />
       </div>

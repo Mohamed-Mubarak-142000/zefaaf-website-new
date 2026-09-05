@@ -96,7 +96,7 @@
       "privacyNote": "Uw gegevens zijn in veilige handen. Raadpleeg ons privacybeleid voor meer informatie."
     },
     "bottom": {
-      "developedBy": "Ontwikkeld door {brand}",
+      "developedBy": "Ontwikkeld door <link>{brand}</link>",
       "copyright": "Alle rechten voorbehouden aan het Zefaaf-platform © {year}"
     }
   },
@@ -187,11 +187,11 @@
       }
     ],
     "ticker": [
-      "Leef uw beste",
-      "gezonde reis",
-      "levenspartner",
-      "gezonde keuzes",
-      "levenspartner"
+      "Jouw levenspartner",
+      "Betrouwbare keuzes",
+      "Een veilige reis",
+      "Een serieus huwelijk",
+      "Jouw privacy voorop"
     ]
   },
   "blogDetail": {
@@ -345,7 +345,7 @@
     }
   },
   "downloadApp": {
-    "title": "Een Speciale Gratis Proefperiode – Download de Zefaaf\napp nu en geniet van gratis berichten tijdens\nuw eerste 3 dagen!",
+    "title": "Download de Zefaaf-app nu\nen begin je zoektocht naar je levenspartner",
     "features": [
       "Een veilige en beschermde omgeving om de juiste partner te vinden.",
       "Een naadloze ervaring die de islamitische richtlijnen volgt."
@@ -375,6 +375,27 @@
       {
         "title": "Persoonlijke ontmoeting in uw land | Waar u zich ook bevindt",
         "description": "Wij beginnen met een privé Zoom-gesprek met een gezinsconsulent om uw persoonlijkheid en behoeften te begrijpen, waarna wij op zoek gaan naar een geschikte partner en een persoonlijke ontmoeting regelen zodra er sprake is van wederzijdse acceptatie."
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "Wat onze leden zeggen",
+    "ratingLabel": "5 van de 5 sterren",
+    "items": [
+      {
+        "quote": "Een comfortabele en respectvolle ervaring. Ik voelde dat het platform je oprecht helpt een geschikte partner te vinden op een serieuze en sharia-conforme manier.",
+        "name": "Ahmed",
+        "ageLabel": "29 jaar"
+      },
+      {
+        "quote": "Ik vond het geweldig hoe duidelijk en georganiseerd elke stap was. De compatibiliteitsscore hielp me ook me te richten op profielen die mijn waarden en interesses delen.",
+        "name": "Sara",
+        "ageLabel": "29 jaar"
+      },
+      {
+        "quote": "Het is anders dan traditionele datingapps. Het doel is vanaf het begin duidelijk: een serieuze relatie opbouwen met het huwelijk in gedachten.",
+        "name": "Ahmed",
+        "ageLabel": "29 jaar"
       }
     ]
   },
@@ -428,6 +449,26 @@
       ]
     }
   },
+  "vipPayment": {
+    "price": "Prijs",
+    "title": "Betaalopties",
+    "whatsapp": "Betaallink via WhatsApp",
+    "agent": "Betalen via een agent",
+    "transferReference": "Betalingskenmerk (optioneel)",
+    "uploadProof": "Upload betalingsbewijs (JPG, PNG, WebP)",
+    "next": "Volgende",
+    "back": "Terug",
+    "submitError": "Het betalingsbewijs kon niet worden verzonden.",
+    "fields": {
+      "paymentType": "Betaalmethode",
+      "agentName": "Naam agent",
+      "paymentNumber": "Betaalnummer",
+      "paymentLink": "Betaallink",
+      "bankName": "Banknaam",
+      "accountHolder": "Rekeninghouder",
+      "agentPhone": "Telefoon agent"
+    }
+  },
   "paymentStatus": {
     "close": "Sluiten",
     "backToHome": "Terug naar home",
@@ -469,7 +510,7 @@
       "contactMethods": "Contactmethoden",
       "nationality": "Nationaliteit",
       "city": "Stad",
-      "marriageRequirements": "Huwelijksvereisten",
+      "marriageRequirements": "Geboortedatum",
       "day": "Dag",
       "month": "Maand",
       "year": "Jaar",
@@ -499,5 +540,28 @@
       "preferredEducationLevels": "Voorkeur opleidingsniveau",
       "preferredJobGrades": "Voorkeur functieniveau"
     }
+  },
+  "vipTerms": {
+    "eyebrow": "Algemene voorwaarden",
+    "imageAlt": "Een hand die met een pen op papier schrijft, symbool voor een huwelijksovereenkomst",
+    "serviceTitle": "Persoonlijke zoekservice",
+    "platformLine": "op het Zefaaf-platform",
+    "intro": "Dit is geen traditionele app- of websitedienst, maar een persoonlijke dienst waarbij een toegewijd team nauw met u samenwerkt bij het zoeken, shortlisten, filteren en een eerste ernstcheck op basis van uw voorkeuren en omstandigheden.",
+    "bullets": [
+      "De servicekosten bedragen € 99 (of het equivalent daarvan in uw lokale valuta), voor een volledige maand vanaf de activeringsdatum van uw profiel.",
+      "U krijgt een privé, beveiligd dashboard, toegankelijk met uw e-mailadres en wachtwoord, om regelmatig de aanbevelingen van adviseurs op te volgen - mogelijk dagelijks wanneer er geschikte matches beschikbaar komen, als God het wil.",
+      "Uw dienst wordt afgehandeld met volledige privacy en vertrouwelijkheid; geen enkele kandidaat kan uw gegevens, voorkeuren of verzoeken zien zonder uw uitdrukkelijke toestemming.",
+      "Een identiteitsfoto is vereist om uw identiteit te verifiëren en uw account te bevestigen; het blijft uitsluitend vertrouwelijk voor het geautoriseerde team en wordt nooit gepubliceerd of gedeeld.",
+      "Persoonlijke foto's zijn vereist om het acceptatieniveau te beoordelen op basis van de voorkeuren van elke partij; ze worden alleen intern gebruikt en worden nooit gepubliceerd of naar iemand verzonden.",
+      "Het kennismaken of het uitwisselen van contactgegevens begint pas nadat beide partijen daarmee instemmen, waarbij de volledige privacy voor iedereen behouden blijft.",
+      "Er is geen vast aantal aanbevelingen; het doel is kwaliteit en compatibiliteit, en niet het verzenden van een specifiek aantal profielen.",
+      "Ons netwerk omvat serieuze leden uit verschillende landen en nationaliteiten, waaronder islamitische Europeanen, zonder de beschikbaarheid van een specifieke nationaliteit of land te garanderen.",
+      "Er zijn geen extra kosten voor aanbevelingen, kennismaking of zelfs nadat het huwelijk is voltooid; het volledige tarief bedraagt ​​slechts € 99, ​​of het equivalent daarvan in uw lokale valuta.",
+      "Succes ligt in de handen van God, en niemand kan een huwelijk binnen een bepaald tijdsbestek garanderen, maar ons team doet tijdens uw abonnement zijn uiterste best om de meest geschikte matches die voor u beschikbaar zijn, te zoeken, filteren en bereiken.",
+      "Opvolging gebeurt via WhatsApp en e-mail. Telegram kan door het bedrijf worden verstoord, dus u mag er niet op vertrouwen als het enige contactmiddel.",
+      "Kosten worden niet gerestitueerd zodra de service is geactiveerd en het team aan uw profiel begint te werken, aangezien ze de tijd en moeite dekken van een toegewijd team dat onmiddellijk aan de slag gaat.",
+      "Door de betaling te voltooien, erkent u dat u deze voorwaarden heeft gelezen en ermee akkoord gaat, en ons team zal met volledige zorg en privacy met u aan de slag gaan, als God het wil."
+    ],
+    "closing": "Moge God u een rechtvaardige levenspartner schenken."
   }
 }

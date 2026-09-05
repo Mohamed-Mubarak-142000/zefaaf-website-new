@@ -3,10 +3,11 @@
 import { AnimatePresence, motion, MotionConfig, type Variants } from "framer-motion";
 import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import { Button } from "@/shared/ui/button";
 import { getDirection, Link, type Locale } from "@/shared/i18n";
+import { getPublicEvents, type PublicEvent } from "@/shared/api";
 
 const TITLE_VARIANTS: Variants = {
   hidden: { opacity: 0, y: 24 },
@@ -33,6 +34,20 @@ const WHEEL_VARIANTS: Variants = {
 };
 
 const EVENTS_PER_PAGE = 2;
+
+function mapPublicEvents(items: PublicEvent[], locale: string) {
+  return items
+    .filter((item) => item.status !== "canceled" && item.status !== "cancelled")
+    .map((item) => ({
+      date: item.date ? new Intl.DateTimeFormat(locale).format(new Date(item.date)) : "",
+      time: item.start_time?.slice(0, 5) ?? "",
+      title: item.name,
+      location: item.location ?? "",
+      price: [item.ticket_price, item.currency].filter(Boolean).join(" "),
+      ulid: item.ulid,
+      image: item.banner_urls?.[0],
+    }));
+}
 
 // Alternating phrase/sparkle sequence for the bottom ribbon, taken straight
 // from the Figma ticker. Rendered twice back-to-back (see the track below) so
@@ -72,16 +87,23 @@ function TickerTrack({ phrases, ariaHidden }: { phrases: string[]; ariaHidden?: 
   );
 }
 
-export function UpcomingEvents() {
+export function UpcomingEvents({ initialEvents = [] }: { initialEvents?: PublicEvent[] }) {
   const t = useTranslations();
-  const direction = getDirection(useLocale() as Locale);
-  const events = t.raw("upcomingEvents.events") as {
+  const locale = useLocale();
+  const direction = getDirection(locale as Locale);
+  const fallbackEvents = t.raw("upcomingEvents.events") as {
     date: string;
     time: string;
     title: string;
     location: string;
     price: string;
   }[];
+  const [apiEvents, setApiEvents] = useState<Array<(typeof fallbackEvents)[number] & { ulid?: string; image?: string }>>(() => mapPublicEvents(initialEvents, locale));
+  useEffect(() => {
+    if (initialEvents.length) return;
+    void getPublicEvents().then((items) => setApiEvents(mapPublicEvents(items, locale))).catch(() => undefined);
+  }, [locale, initialEvents.length]);
+  const events: Array<(typeof fallbackEvents)[number] & { ulid?: string; image?: string }> = apiEvents.length ? apiEvents : fallbackEvents;
   const ticker = t.raw("upcomingEvents.ticker") as string[];
   const [[page, wheelDirection], setPage] = useState([0, 1]);
   const pageCount = Math.ceil(events.length / EVENTS_PER_PAGE);
@@ -173,7 +195,7 @@ export function UpcomingEvents() {
 
                 <div className="relative h-[111.75px] w-[109.5px] shrink-0 overflow-hidden rounded-[6px] sm:col-start-2 sm:row-start-1">
                   <Image
-                    src="/images/events/event-thumb.webp"
+                    src={event.image ?? "/images/events/event-thumb.webp"}
                     alt=""
                     fill
                     sizes="110px"
@@ -204,7 +226,7 @@ export function UpcomingEvents() {
                   variant="default"
                   className="h-auto w-full shrink-0 gap-2 rounded-[7px] px-[11px] py-[9px] font-almarai text-[14px] font-bold sm:col-start-4 sm:row-start-1"
                 >
-                  <Link href="/events/bosnia-islamic-marriage-gathering">
+                  <Link href={event.ulid ? `/events/${encodeURIComponent(event.ulid)}` : "/events/bosnia-islamic-marriage-gathering"}>
                     {t("upcomingEvents.bookCta")}
                     <img
                       src="/icons/event-arrow-up-right.svg"

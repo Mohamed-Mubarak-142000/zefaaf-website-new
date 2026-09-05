@@ -6,6 +6,7 @@ import { Logo } from "@/shared/ui/logo";
 import { NewsletterForm } from "./newsletter-form";
 
 const DEVELOPER_NAME = "Tech-flow";
+const DEVELOPER_URL = "https://tech-flow.nl/";
 
 // Column/link keys mirror the messages/*.json `footer.columns` shape —
 // content and hrefs aren't real pages yet (only the Figma footer itself was
@@ -71,7 +72,21 @@ export function Footer() {
 
         <div className="mt-(--space-fluid-md) flex flex-wrap items-center justify-between gap-(--space-fluid-sm) border-t border-white/15 pt-(--space-fluid-md)">
           <div className="flex items-center gap-(--space-fluid-sm) font-alexandria text-(length:--text-fluid-2xs) font-light text-white">
-            <span>{t("footer.bottom.developedBy", { brand: DEVELOPER_NAME })}</span>
+            <span>
+              {t.rich("footer.bottom.developedBy", {
+                brand: DEVELOPER_NAME,
+                link: (chunks) => (
+                  <a
+                    href={DEVELOPER_URL}
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    className="underline-offset-4 hover:underline"
+                  >
+                    {chunks}
+                  </a>
+                ),
+              })}
+            </span>
             <span className="h-3 w-px bg-white/40" aria-hidden="true" />
             <span>{t("footer.bottom.copyright", { year })}</span>
           </div>

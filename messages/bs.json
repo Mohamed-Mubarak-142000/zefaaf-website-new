@@ -96,7 +96,7 @@
       "privacyNote": "Vaši podaci su na sigurnom. Pogledajte našu politiku privatnosti za više informacija."
     },
     "bottom": {
-      "developedBy": "Razvio {brand}",
+      "developedBy": "Razvio <link>{brand}</link>",
       "copyright": "Sva prava zadržana za platformu Zefaaf © {year}"
     }
   },
@@ -187,11 +187,11 @@
       }
     ],
     "ticker": [
-      "Živite najbolje",
-      "zdravo putovanje",
-      "životni partner",
-      "zdravi izbori",
-      "životni partner"
+      "Vaš životni partner",
+      "Pouzdani izbori",
+      "Sigurno putovanje",
+      "Ozbiljan brak",
+      "Privatnost na prvom mjestu"
     ]
   },
   "blogDetail": {
@@ -345,7 +345,7 @@
     }
   },
   "downloadApp": {
-    "title": "Poseban besplatan probni period – preuzmite Zefaaf\naplikaciju sada i uživajte u besplatnom slanju poruka\ntokom prva 3 dana!",
+    "title": "Preuzmite Zefaaf aplikaciju sada\ni započnite put ka pronalasku svog životnog partnera",
     "features": [
       "Sigurno i bezbjedno okruženje za pronalaženje pravog partnera.",
       "Neometano iskustvo koje prati islamske smjernice."
@@ -375,6 +375,27 @@
       {
         "title": "Lični susret u vašoj zemlji | Gdje god da se nalazite",
         "description": "Počinjemo privatnim Zoom sastankom s porodičnim savjetnikom kako bismo razumjeli vašu ličnost i potrebe, zatim tražimo odgovarajućeg partnera i organizujemo lični susret kada postoji obostrano prihvatanje."
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "Šta kažu naši članovi",
+    "ratingLabel": "5 od 5 zvjezdica",
+    "items": [
+      {
+        "quote": "Ugodno i uljudno iskustvo. Osjećao sam da platforma zaista pomaže da pronađete pravog partnera na ozbiljan i šerijatski usklađen način.",
+        "name": "Ahmed",
+        "ageLabel": "29 godina"
+      },
+      {
+        "quote": "Svidjelo mi se koliko je svaki korak bio jasan i organizovan. Ocjena kompatibilnosti mi je također pomogla da se fokusiram na profile koji dijele moje vrijednosti i interese.",
+        "name": "Sara",
+        "ageLabel": "29 godina"
+      },
+      {
+        "quote": "Razlikuje se od tradicionalnih aplikacija za upoznavanje. Cilj je jasan od samog početka: izgraditi ozbiljnu vezu s namjerom braka.",
+        "name": "Ahmed",
+        "ageLabel": "29 godina"
       }
     ]
   },
@@ -428,6 +449,26 @@
       ]
     }
   },
+  "vipPayment": {
+    "price": "Cijena",
+    "title": "Opcije plaćanja",
+    "whatsapp": "Link za plaćanje putem WhatsAppa",
+    "agent": "Plaćanje putem agenta",
+    "transferReference": "Referenca transfera (neobavezno)",
+    "uploadProof": "Učitajte dokaz o transferu (JPG, PNG, WebP)",
+    "next": "Dalje",
+    "back": "Nazad",
+    "submitError": "Dokaz o transferu nije moguće poslati.",
+    "fields": {
+      "paymentType": "Vrsta plaćanja",
+      "agentName": "Ime agenta",
+      "paymentNumber": "Broj plaćanja",
+      "paymentLink": "Link za plaćanje",
+      "bankName": "Naziv banke",
+      "accountHolder": "Vlasnik računa",
+      "agentPhone": "Telefon agenta"
+    }
+  },
   "paymentStatus": {
     "close": "Zatvori",
     "backToHome": "Nazad na početnu",
@@ -469,7 +510,7 @@
       "contactMethods": "Načini kontakta",
       "nationality": "Nacionalnost",
       "city": "Grad",
-      "marriageRequirements": "Uslovi za brak",
+      "marriageRequirements": "Datum rođenja",
       "day": "Dan",
       "month": "Mjesec",
       "year": "Godina",
@@ -499,5 +540,28 @@
       "preferredEducationLevels": "Poželjni nivo obrazovanja",
       "preferredJobGrades": "Poželjni nivo posla"
     }
+  },
+  "vipTerms": {
+    "eyebrow": "Odredbe i uslovi",
+    "imageAlt": "Ruka koja piše olovkom na papiru, simbolizirajući bračni ugovor",
+    "serviceTitle": "Usluga lične pretrage",
+    "platformLine": "na Zefaaf platformi",
+    "intro": "Ovo nije tradicionalna aplikacija ili usluga web stranice, već osobna usluga u kojoj posvećeni tim blisko sarađuje s vama na pretraživanju, odabiru u užem izboru, filtriranju i početnoj provjeri ozbiljnosti na osnovu vaših preferencija i okolnosti.",
+    "bullets": [
+      "Naknada za uslugu iznosi 99 € (ili njen ekvivalent u vašoj lokalnoj valuti), pokrivajući cijeli mjesec počevši od datuma aktivacije vašeg profila.",
+      "Dobijate privatnu, sigurnu kontrolnu tablu, kojoj se pristupa putem vaše e-pošte i lozinke, kako biste redovno pratili preporuke savjetnika - potencijalno svakodnevno kad god odgovarajući spojevi postanu dostupni, ako Bog da.",
+      "Vašom se uslugom rukuje uz potpunu privatnost i povjerljivost; nijedan kandidat ne može vidjeti vaše podatke, preferencije ili zahtjeve bez vašeg izričitog pristanka.",
+      "Za potvrdu identiteta i potvrdu naloga potrebna je lična fotografija; ostaje povjerljivo samo za ovlašteni tim i nikada se ne objavljuje ili dijeli.",
+      "Lične fotografije su potrebne da bi se procenio nivo prihvatanja u skladu sa preferencijama svake strane; koriste se samo interno i nikada se ne objavljuju ili šalju nikome.",
+      "Upoznavanje ili razmjena kontakt podataka počinje tek nakon što se obje strane slože, uz potpunu privatnost za sve.",
+      "Ne postoji fiksni broj preporuka; cilj je kvalitet i kompatibilnost, a ne slanje određenog broja profila.",
+      "Naša mreža uključuje ozbiljne članove iz različitih zemalja i nacionalnosti, uključujući muslimane Evropljane, bez garancije dostupnosti određene nacionalnosti ili zemlje.",
+      "Nema dodatnih naknada za preporuke, upoznavanje, pa čak ni nakon sklapanja braka; puna naknada iznosi samo 99 €, ili njen ekvivalent u vašoj lokalnoj valuti.",
+      "Uspjeh je u Božjim rukama i niko ne može garantirati brak u određenom vremenskom okviru, ali naš tim čini sve što je u njegovoj moći tokom cijele vaše pretplate kako bi pretražio, filtrirao i došao do najprikladnijih utakmica koje su vam dostupne.",
+      "Praćenje se odvija putem WhatsApp-a i e-pošte. Telegram može biti poremećen od strane kompanije, tako da se na njega ne treba oslanjati kao na jedino sredstvo za kontakt.",
+      "Naknade se ne vraćaju kada se usluga aktivira i tim počne raditi na vašem profilu, jer pokrivaju vrijeme i trud posvećenog tima koji odmah počinje s radom.",
+      "Dovršavanjem plaćanja potvrđujete da ste pročitali i da se slažete sa ovim uslovima, a naš tim će početi da radi sa vama uz punu pažnju i privatnost, ako Bog da."
+    ],
+    "closing": "Neka vam Bog podari pravednog životnog partnera."
   }
 }

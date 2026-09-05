@@ -3,7 +3,9 @@
 import { motion, MotionConfig } from "framer-motion";
 import Image from "next/image";
 import { useLocale } from "next-intl";
+import { useState } from "react";
 
+import { StartNowDialog } from "@/features/start-now";
 import { Button } from "@/shared/ui/button";
 
 import { getVipCopy } from "../model/copy";
@@ -13,6 +15,7 @@ const GALLERY = [1, 2, 3, 4, 5, 6] as const;
 
 export function VipEurope() {
   const { europe } = getVipCopy(useLocale());
+  const [startNowOpen, setStartNowOpen] = useState(false);
 
   return (
     <MotionConfig reducedMotion="user">
@@ -37,21 +40,18 @@ export function VipEurope() {
             </p>
           </motion.div>
 
-          {/* No wa.me destination is specified in the design yet — same
-              placeholder convention as the header/footer links. */}
           <motion.div variants={REVEAL} className="shrink-0">
-            <Button asChild className="rounded-[6px] font-alexandria font-normal">
-              <a href="#">
-                {europe.cta}
-                <Image
-                  src="/icons/arrow-right-white.svg"
-                  alt=""
-                  width={18}
-                  height={18}
-                  className="size-[clamp(14px,1.25vw,18px)] rtl:rotate-180"
-                />
-              </a>
+            <Button type="button" onClick={() => setStartNowOpen(true)} className="rounded-[6px] font-alexandria font-normal">
+              {europe.cta}
+              <Image
+                src="/icons/arrow-right-white.svg"
+                alt=""
+                width={18}
+                height={18}
+                className="size-[clamp(14px,1.25vw,18px)] rtl:rotate-180"
+              />
             </Button>
+            <StartNowDialog open={startNowOpen} onOpenChange={setStartNowOpen} />
           </motion.div>
         </div>
 

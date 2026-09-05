@@ -96,7 +96,7 @@
       "privacyNote": "Data anda berada di tangan yang selamat. Semak dasar privasi kami untuk maklumat lanjut."
     },
     "bottom": {
-      "developedBy": "Dibangunkan oleh {brand}",
+      "developedBy": "Dibangunkan oleh <link>{brand}</link>",
       "copyright": "Hak cipta terpelihara untuk platform Zefaaf © {year}"
     }
   },
@@ -187,11 +187,11 @@
       }
     ],
     "ticker": [
-      "Jalani yang terbaik",
-      "perjalanan sihat",
-      "pasangan hidup",
-      "pilihan sihat",
-      "pasangan hidup"
+      "Pasangan hidup anda",
+      "Pilihan dipercayai",
+      "Perjalanan selamat",
+      "Perkahwinan serius",
+      "Privasi anda diutamakan"
     ]
   },
   "blogDetail": {
@@ -345,7 +345,7 @@
     }
   },
   "downloadApp": {
-    "title": "Percubaan Percuma Istimewa – Muat turun aplikasi\nZefaaf sekarang dan nikmati mesej percuma untuk\n3 hari pertama anda!",
+    "title": "Muat turun aplikasi Zefaaf sekarang\ndan mulakan perjalanan mencari pasangan hidup anda",
     "features": [
       "Persekitaran yang selamat dan terjamin untuk mencari pasangan yang tepat.",
       "Pengalaman yang lancar yang mematuhi garis panduan Islam."
@@ -375,6 +375,27 @@
       {
         "title": "Pertemuan bersemuka di negara anda | Di mana sahaja anda berada",
         "description": "Kami bermula dengan pertemuan Zoom peribadi bersama kaunselor keluarga untuk memahami keperibadian dan keperluan anda, kemudian mencari pasangan yang sesuai dan menganjurkan pertemuan bersemuka apabila terdapat persetujuan bersama."
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "Apa kata ahli kami",
+    "ratingLabel": "5 daripada 5 bintang",
+    "items": [
+      {
+        "quote": "Pengalaman yang selesa dan penuh hormat. Saya rasa platform ini benar-benar membantu mencari pasangan yang sesuai dengan cara yang serius dan mematuhi syariah.",
+        "name": "Ahmed",
+        "ageLabel": "29 tahun"
+      },
+      {
+        "quote": "Saya suka betapa jelas dan tersusunnya setiap langkah. Skor keserasian juga membantu saya fokus kepada profil yang berkongsi nilai dan minat saya.",
+        "name": "Sara",
+        "ageLabel": "29 tahun"
+      },
+      {
+        "quote": "Ia berbeza daripada aplikasi temu janji tradisional. Tujuannya jelas sejak awal: membina hubungan serius dengan matlamat perkahwinan.",
+        "name": "Ahmed",
+        "ageLabel": "29 tahun"
       }
     ]
   },
@@ -428,6 +449,26 @@
       ]
     }
   },
+  "vipPayment": {
+    "price": "Harga",
+    "title": "Pilihan pembayaran",
+    "whatsapp": "Pautan pembayaran melalui WhatsApp",
+    "agent": "Pembayaran melalui ejen",
+    "transferReference": "Rujukan pindahan (pilihan)",
+    "uploadProof": "Muat naik bukti pindahan (JPG, PNG, WebP)",
+    "next": "Seterusnya",
+    "back": "Kembali",
+    "submitError": "Bukti pindahan tidak dapat dihantar.",
+    "fields": {
+      "paymentType": "Jenis pembayaran",
+      "agentName": "Nama ejen",
+      "paymentNumber": "Nombor pembayaran",
+      "paymentLink": "Pautan pembayaran",
+      "bankName": "Nama bank",
+      "accountHolder": "Pemegang akaun",
+      "agentPhone": "Telefon ejen"
+    }
+  },
   "paymentStatus": {
     "close": "Tutup",
     "backToHome": "Kembali ke laman utama",
@@ -469,7 +510,7 @@
       "contactMethods": "Kaedah hubungan",
       "nationality": "Kewarganegaraan",
       "city": "Bandar",
-      "marriageRequirements": "Keperluan perkahwinan",
+      "marriageRequirements": "Tarikh lahir",
       "day": "Hari",
       "month": "Bulan",
       "year": "Tahun",
@@ -499,5 +540,28 @@
       "preferredEducationLevels": "Tahap pendidikan pilihan",
       "preferredJobGrades": "Tahap pekerjaan pilihan"
     }
+  },
+  "vipTerms": {
+    "eyebrow": "Terma dan Syarat",
+    "imageAlt": "Sebuah tangan menulis di atas kertas dengan pen, melambangkan akad perkahwinan",
+    "serviceTitle": "Perkhidmatan Carian Peribadi",
+    "platformLine": "di Platform Zefaaf",
+    "intro": "Ini bukan perkhidmatan apl atau tapak web tradisional, tetapi perkhidmatan peribadi di mana pasukan berdedikasi bekerja rapat dengan anda dalam mencari, menyenarai pendek, menapis dan semakan kesungguhan awal berdasarkan pilihan dan keadaan anda.",
+    "bullets": [
+      "Yuran perkhidmatan ialah €99 (atau yang setara dengannya dalam mata wang tempatan anda), meliputi sebulan penuh bermula dari tarikh pengaktifan profil anda.",
+      "Anda mendapat papan pemuka peribadi yang selamat, diakses dengan e-mel dan kata laluan anda, untuk membuat susulan ke atas pengesyoran penasihat secara kerap — berpotensi setiap hari apabila perlawanan yang sesuai tersedia, insya-Allah.",
+      "Perkhidmatan anda dikendalikan dengan privasi dan kerahsiaan yang lengkap; tiada calon boleh melihat data, pilihan atau permintaan anda tanpa kebenaran anda yang jelas.",
+      "Foto ID diperlukan untuk mengesahkan identiti anda dan mengesahkan akaun anda; ia kekal sulit dengan pasukan yang diberi kuasa sahaja dan tidak pernah diterbitkan atau dikongsi.",
+      "Gambar peribadi diperlukan untuk menilai tahap penerimaan mengikut keutamaan setiap pihak; ia digunakan secara dalaman sahaja dan tidak pernah diterbitkan atau dihantar kepada sesiapa.",
+      "Berkenalan atau bertukar butiran hubungan hanya bermula selepas kedua-dua pihak bersetuju, dengan privasi penuh dikekalkan untuk semua orang.",
+      "Tiada bilangan cadangan tetap; matlamatnya ialah kualiti dan keserasian, bukan menghantar bilangan profil tertentu.",
+      "Rangkaian kami termasuk ahli serius dari pelbagai negara dan kewarganegaraan, termasuk Muslim Eropah, tanpa menjamin ketersediaan kewarganegaraan atau negara tertentu.",
+      "Tiada bayaran tambahan untuk cadangan, berkenalan, atau walaupun selepas perkahwinan selesai; yuran penuh hanya €99, atau yang setara dengannya dalam mata wang tempatan anda.",
+      "Kejayaan berada di tangan Tuhan, dan tiada siapa yang boleh menjamin perkahwinan dalam jangka masa tertentu, tetapi pasukan kami melakukan yang terbaik sepanjang langganan anda untuk mencari, menapis dan mencapai padanan yang paling sesuai yang tersedia untuk anda.",
+      "Susulan berlaku melalui WhatsApp dan e-mel. Telegram mungkin terganggu oleh syarikat, jadi ia tidak boleh dipercayai sebagai satu-satunya cara untuk dihubungi.",
+      "Yuran tidak akan dikembalikan setelah perkhidmatan diaktifkan dan pasukan mula bekerja pada profil anda, kerana ia meliputi masa dan usaha pasukan berdedikasi yang mula bekerja serta-merta.",
+      "Dengan melengkapkan pembayaran, anda mengakui bahawa anda telah membaca dan bersetuju dengan syarat ini, dan pasukan kami akan mula bekerja dengan anda dengan penuh berhati-hati dan privasi, insya-Allah."
+    ],
+    "closing": "Semoga Allah mengurniakan pasangan hidup yang soleh."
   }
 }

@@ -51,7 +51,11 @@ export const MARRIAGE_REQUIREMENT_OPTIONS = [
   "Both",
 ] as const;
 
-export const CONTACT_METHODS = ["Phone call", "WhatsApp", "Email"] as const;
+export const CONTACT_METHODS = [
+  { value: "whatsapp", label: "WhatsApp" },
+  { value: "telegram", label: "Telegram" },
+  { value: "email", label: "Email" },
+] as const;
 
 export const EDUCATION_LEVELS = [
   "High school",

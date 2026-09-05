@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import type { Personality } from "@/shared/api";
 
 type SliderContent = {
   title: string;
@@ -12,12 +13,27 @@ type SliderContent = {
   secondFollowers: string;
 };
 
-export function InfluentialFiguresSlider({ content }: { content: SliderContent }) {
+type Props = {
+  content: SliderContent;
+  personalities: Personality[];
+  locale: string;
+};
+
+export function InfluentialFiguresSlider({ content, personalities, locale }: Props) {
   const [activeSlide, setActiveSlide] = useState(0);
-  const figures = [
-    { name: content.name, followers: content.followers },
-    { name: content.secondName, followers: content.secondFollowers },
+  const fallbackFigures = [
+    { name: content.name, description: "", followers: content.followers, imageUrl: "/images/image 568.svg" },
+    { name: content.secondName, description: "", followers: content.secondFollowers, imageUrl: "/images/image 568.svg" },
   ];
+  const followersLabel = content.followers.trim().split(/\s+/).at(-1) ?? "";
+  const figures = personalities.length === 2
+    ? personalities.map((personality) => ({
+        name: personality.name,
+        description: personality.description,
+        followers: `${new Intl.NumberFormat(locale, { notation: "compact", maximumFractionDigits: 1 }).format(personality.followers_count)} ${followersLabel}`,
+        imageUrl: personality.image_url || "/images/image 568.svg",
+      }))
+    : fallbackFigures;
 
   return (
     <section aria-labelledby="influential-figures-title" className="overflow-x-clip [--figures-top:clamp(110px,10vw,145px)] pt-(--figures-top)">
@@ -54,13 +70,15 @@ export function InfluentialFiguresSlider({ content }: { content: SliderContent }
 
             {figures.map((figure, index) => (
               <article key={figure.name} className="relative flex h-[278px] min-w-0 basis-[calc((100%_-_20px)/2)] flex-col overflow-hidden rounded-[15px] bg-person-card max-sm:basis-[calc((100%_-_12px)/2)]">
-                <div className="relative mx-[8px] mt-[8px] h-[148px] shrink-0 overflow-hidden rounded-[10px]">
-                  <Image src="/images/image 568.svg" alt={figure.name} fill unoptimized sizes="294px" className={index === 1 ? "scale-x-[-1] object-cover" : "object-cover"} />
+                <div className="absolute inset-[8px] overflow-hidden rounded-[10px]">
+                  <Image src={figure.imageUrl} alt={figure.name} fill unoptimized sizes="294px" className={index === 1 ? "scale-x-[-1] object-cover" : "object-cover"} />
                 </div>
-                <Image src="/images/Group-shap78.svg" alt="" width={199} height={141} unoptimized aria-hidden="true" className="pointer-events-none absolute bottom-[-42px] start-[34%] h-[220px] w-[155px] -translate-x-1/2 rotate-[31.52deg] opacity-70 rtl:translate-x-1/2" />
-                <div className="relative z-10 flex flex-1 flex-col items-center justify-center px-4 text-center font-cairo text-person-card-foreground">
-                  <h3 className="text-[22px] leading-[1.5] font-bold tracking-normal max-sm:text-[17px]">{figure.name}</h3>
-                  <p className="text-[22px] leading-[1.5] font-medium tracking-normal max-sm:text-[16px]">{figure.followers}</p>
+                <div aria-hidden="true" className="pointer-events-none absolute inset-x-[8px] bottom-[8px] h-[35%] rounded-b-[10px] bg-person-card" />
+                <Image src="/images/Group-shap78.svg" alt="" width={199} height={141} unoptimized aria-hidden="true" className="pointer-events-none absolute bottom-[-52px] start-[34%] h-[220px] w-[155px] -translate-x-1/2 rotate-[31.52deg] opacity-70 rtl:translate-x-1/2" />
+                <div className="relative z-10 mt-auto mb-[8px] flex h-[97px] flex-col items-center justify-center px-4 py-2 text-center font-cairo text-person-card-foreground">
+                  <h3 className="text-[19px] leading-[1.4] font-bold tracking-normal max-sm:text-[16px]">{figure.name}</h3>
+                  {figure.description && <p className="line-clamp-2 text-[12px] leading-[1.4] font-medium">{figure.description}</p>}
+                  <p className="text-[16px] leading-[1.4] font-medium tracking-normal max-sm:text-[14px]">{figure.followers}</p>
                 </div>
               </article>
             ))}

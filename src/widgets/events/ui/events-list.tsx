@@ -9,6 +9,7 @@ import { Button } from "@/shared/ui/button";
 
 import { getEventsCopy } from "../model/copy";
 import { REVEAL, REVEAL_STAGGERED, VIEWPORT } from "../model/motion";
+import type { PublicEvent } from "@/shared/api";
 
 const CARD_IMAGES = [
   "/images/events/event-card-1.webp",
@@ -22,7 +23,6 @@ const CARD_IMAGES = [
 // Only the Bosnia gathering (2nd event, every locale) has a dedicated
 // details page so far — same pattern as the blog list, where only one
 // article has a real route and the rest stay plain cards.
-const BOSNIA_EVENT_INDEX = 1;
 const BOSNIA_EVENT_PATH = "/events/bosnia-islamic-marriage-gathering";
 
 type Event = {
@@ -33,10 +33,15 @@ type Event = {
   price: string;
 };
 
-export function EventsList() {
+export function EventsList({ initialEvents = [] }: { initialEvents?: PublicEvent[] }) {
   const t = useTranslations();
   const { buyTicketsCta } = getEventsCopy(useLocale());
-  const events = t.raw("upcomingEvents.events") as Event[];
+  const fallbackEvents = t.raw("upcomingEvents.events") as Event[];
+  const events: Array<Event & { image?: string; ulid?: string }> = initialEvents.length ? initialEvents.map((event) => ({
+    date: event.date ?? "", time: event.start_time?.slice(0, 5) ?? "", title: event.name,
+    location: event.location ?? "", price: [event.ticket_price, event.currency].filter(Boolean).join(" "),
+    image: event.banner_urls?.[0], ulid: event.ulid,
+  })) : fallbackEvents;
 
   return (
     <MotionConfig reducedMotion="user">
@@ -55,7 +60,7 @@ export function EventsList() {
           {t("nav.upcomingEvents")}
         </motion.h2>
 
-        <ul className="mt-[clamp(20px,2.6vw,32px)] grid grid-cols-[repeat(auto-fit,minmax(min(320px,100%),1fr))] gap-[clamp(16px,2.1vw,32px)]">
+        <ul className="mt-[clamp(20px,2.6vw,32px)] grid grid-cols-1 gap-[clamp(16px,2.1vw,32px)] sm:grid-cols-2 xl:grid-cols-3">
           {events.map((event, index) => (
             <motion.li
               key={event.title}
@@ -65,7 +70,7 @@ export function EventsList() {
             >
               <div className="relative h-[clamp(120px,13vw,152px)] w-full shrink-0 overflow-hidden rounded-[6px]">
                 <Image
-                  src={CARD_IMAGES[index % CARD_IMAGES.length]}
+                  src={event.image ?? CARD_IMAGES[index % CARD_IMAGES.length]}
                   alt=""
                   fill
                   sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
@@ -97,27 +102,16 @@ export function EventsList() {
                 </span>
               </div>
 
-              {index === BOSNIA_EVENT_INDEX ? (
-                <Button
+              <Button
                   asChild
                   variant="default"
                   className="mt-[clamp(14px,1.6vw,18px)] h-auto w-full gap-3 rounded-[6px] py-[13.5px] font-almarai text-[18px] font-bold"
                 >
-                  <Link href={BOSNIA_EVENT_PATH}>
+                  <Link href={event.ulid ? `/events/${encodeURIComponent(event.ulid)}` : BOSNIA_EVENT_PATH}>
                     {buyTicketsCta}
                     <img src="/icons/event-arrow-up-right.svg" alt="" className="size-[18px]" />
                   </Link>
                 </Button>
-              ) : (
-                <Button
-                  variant="default"
-                  className="mt-[clamp(14px,1.6vw,18px)] h-auto w-full gap-3 rounded-[6px] py-[13.5px] font-almarai text-[18px] font-bold"
-                  icon={<img src="/icons/event-arrow-up-right.svg" alt="" className="size-[18px]" />}
-                  iconPosition="end"
-                >
-                  {buyTicketsCta}
-                </Button>
-              )}
             </motion.li>
           ))}
         </ul>

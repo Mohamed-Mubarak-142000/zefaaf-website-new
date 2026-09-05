@@ -96,7 +96,7 @@
       "privacyNote": "Të dhënat tuaja janë në duar të sigurta. Kontrolloni politikën tonë të privatësisë për më shumë informacion."
     },
     "bottom": {
-      "developedBy": "Zhvilluar nga {brand}",
+      "developedBy": "Zhvilluar nga <link>{brand}</link>",
       "copyright": "Të gjitha të drejtat e rezervuara për platformën Zefaaf © {year}"
     }
   },
@@ -187,11 +187,11 @@
       }
     ],
     "ticker": [
-      "Jetoni më të mirën",
-      "udhëtim të shëndetshëm",
-      "partnerin e jetës",
-      "zgjedhje të shëndetshme",
-      "partnerin e jetës"
+      "Partneri juaj i jetës",
+      "Zgjedhje të besueshme",
+      "Një udhëtim i sigurt",
+      "Martesë serioze",
+      "Privatësia juaj e para"
     ]
   },
   "blogDetail": {
@@ -345,7 +345,7 @@
     }
   },
   "downloadApp": {
-    "title": "Një Provë Falas Speciale – Shkarkoni aplikacionin\nZefaaf tani dhe shijoni mesazhe falas\npër 3 ditët tuaja të para!",
+    "title": "Shkarkoni aplikacionin Zefaaf tani\ndhe nisni udhëtimin drejt gjetjes së partnerit tuaj të jetës",
     "features": [
       "Një mjedis i sigurt dhe i mbrojtur për të gjetur partnerin e duhur.",
       "Një përvojë e rrjedhshme që respekton udhëzimet islame."
@@ -375,6 +375,27 @@
       {
         "title": "Takim ballë për ballë në vendin tuaj | Kudo që të jeni",
         "description": "Fillojmë me një takim privat në Zoom me një këshilltar familjar për të kuptuar personalitetin dhe nevojat tuaja, më pas kërkojmë një partner të përshtatshëm dhe organizojmë një takim ballë për ballë kur ka pranim të ndërsjellë."
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "Çfarë thonë anëtarët tanë",
+    "ratingLabel": "5 nga 5 yje",
+    "items": [
+      {
+        "quote": "Një përvojë komode dhe e respektueshme. Ndjeva se platforma vërtet ndihmon të gjesh një partner të përshtatshëm në mënyrë serioze dhe në përputhje me sheriatin.",
+        "name": "Ahmed",
+        "ageLabel": "29 vjeç"
+      },
+      {
+        "quote": "Më pëlqeu sa e qartë dhe e organizuar ishte çdo hap. Rezultati i përputhshmërisë më ndihmoi gjithashtu të fokusohesha te profilet që ndajnë vlerat dhe interesat e mia.",
+        "name": "Sara",
+        "ageLabel": "29 vjeçe"
+      },
+      {
+        "quote": "Është ndryshe nga aplikacionet tradicionale të takimeve. Qëllimi është i qartë që në fillim: ndërtimi i një marrëdhënieje serioze me martesën në mendje.",
+        "name": "Ahmed",
+        "ageLabel": "29 vjeç"
       }
     ]
   },
@@ -428,6 +449,26 @@
       ]
     }
   },
+  "vipPayment": {
+    "price": "Çmimi",
+    "title": "Opsionet e pagesës",
+    "whatsapp": "Lidhja e pagesës përmes WhatsApp",
+    "agent": "Pagesë përmes një agjenti",
+    "transferReference": "Referenca e transfertës (opsionale)",
+    "uploadProof": "Ngarko dëshminë e transfertës (JPG, PNG, WebP)",
+    "next": "Tjetër",
+    "back": "Kthehu",
+    "submitError": "Dëshmia e transfertës nuk mund të dërgohej.",
+    "fields": {
+      "paymentType": "Lloji i pagesës",
+      "agentName": "Emri i agjentit",
+      "paymentNumber": "Numri i pagesës",
+      "paymentLink": "Lidhja e pagesës",
+      "bankName": "Emri i bankës",
+      "accountHolder": "Mbajtësi i llogarisë",
+      "agentPhone": "Telefoni i agjentit"
+    }
+  },
   "paymentStatus": {
     "close": "Mbyll",
     "backToHome": "Kthehu në faqen kryesore",
@@ -469,7 +510,7 @@
       "contactMethods": "Mënyrat e kontaktit",
       "nationality": "Kombësia",
       "city": "Qyteti",
-      "marriageRequirements": "Kërkesat e martesës",
+      "marriageRequirements": "Data e lindjes",
       "day": "Dita",
       "month": "Muaji",
       "year": "Viti",
@@ -499,5 +540,28 @@
       "preferredEducationLevels": "Niveli arsimor i preferuar",
       "preferredJobGrades": "Niveli i punës i preferuar"
     }
+  },
+  "vipTerms": {
+    "eyebrow": "Termat dhe Kushtet",
+    "imageAlt": "Një dorë që shkruan në letër me stilolaps, që simbolizon një kontratë martese",
+    "serviceTitle": "Shërbimi i Kërkimit Personal",
+    "platformLine": "në platformën Zefaaf",
+    "intro": "Ky nuk është një aplikacion tradicional ose shërbim uebsajti, por një shërbim personal ku një ekip i dedikuar punon ngushtë me ju në kërkimin, përzgjedhjen, filtrimin dhe një kontroll fillestar serioziteti bazuar në preferencat dhe rrethanat tuaja.",
+    "bullets": [
+      "Tarifa e shërbimit është 99 € (ose ekuivalenti i saj në monedhën tuaj vendase), duke mbuluar një muaj të plotë duke filluar nga data e aktivizimit të profilit tuaj.",
+      "Ju merrni një panel privat, të sigurt, të aksesuar me emailin dhe fjalëkalimin tuaj, për të ndjekur rregullisht rekomandimet e këshilltarëve – potencialisht çdo ditë sa herë që të disponohen ndeshje të përshtatshme, me dëshirën e Zotit.",
+      "Shërbimi juaj trajtohet me privatësi dhe konfidencialitet të plotë; asnjë kandidat nuk mund t'i shohë të dhënat, preferencat ose kërkesat tuaja pa pëlqimin tuaj të qartë.",
+      "Kërkohet një fotografi ID për të verifikuar identitetin tuaj dhe për të konfirmuar llogarinë tuaj; ai qëndron konfidencial vetëm me ekipin e autorizuar dhe nuk publikohet apo shpërndahet kurrë.",
+      "Fotot personale kërkohen për të vlerësuar nivelin e pranimit sipas preferencave të secilës palë; ato përdoren vetëm brenda dhe nuk publikohen apo dërgohen askujt.",
+      "Njohja ose shkëmbimi i detajeve të kontaktit fillon vetëm pasi të dyja palët bien dakord, me privatësi të plotë të ruajtur për të gjithë.",
+      "Nuk ka një numër të caktuar rekomandimesh; qëllimi është cilësia dhe pajtueshmëria, jo dërgimi i një numri të caktuar profilesh.",
+      "Rrjeti ynë përfshin anëtarë seriozë nga vende dhe kombësi të ndryshme, duke përfshirë evropianë myslimanë, pa garantuar disponueshmërinë e një kombësie apo vendi të caktuar.",
+      "Nuk ka tarifa shtesë për rekomandime, njohje apo edhe pas përfundimit të martesës; tarifa e plotë është vetëm 99 €, ose ekuivalenti i saj në monedhën tuaj vendase.",
+      "Suksesi është në duart e Zotit dhe askush nuk mund të garantojë martesën brenda një afati kohor të caktuar, por ekipi ynë bën të pamundurën gjatë gjithë abonimit tuaj për të kërkuar, filtruar dhe arritur ndeshjet më të përshtatshme në dispozicion për ju.",
+      "Përcjellja ndodh përmes WhatsApp dhe email. Telegrami mund të ndërpritet nga kompania, kështu që nuk duhet të mbështetet tek ai si mjeti i vetëm i kontaktit.",
+      "Tarifat janë të pakthyeshme pasi shërbimi të aktivizohet dhe ekipi të fillojë të punojë në profilin tuaj, pasi ato mbulojnë kohën dhe përpjekjen e një ekipi të përkushtuar që fillon të punojë menjëherë.",
+      "Duke përfunduar pagesën, ju e pranoni se i keni lexuar dhe pranuar këto kushte dhe ekipi ynë do të fillojë të punojë me ju me kujdes dhe privatësi të plotë, me dëshirën e Zotit."
+    ],
+    "closing": "Zoti ju dhente nje shok jete te drejte."
   }
 }

@@ -7,6 +7,7 @@ import { useLocale } from "next-intl";
 
 import { BookSeatDialog } from "@/features/book-seat";
 import { Button } from "@/shared/ui/button";
+import type { PublicEvent } from "@/shared/api";
 
 import { getEventDetailsCopy } from "../model/copy";
 import { REVEAL, VIEWPORT } from "../model/motion";
@@ -30,23 +31,30 @@ const INFO_ITEMS = [
   { icon: "/icons/event-location.svg", key: "location" as const },
 ];
 
-export function EventDetailsHero() {
+export function EventDetailsHero({ event }: { event?: PublicEvent | null }) {
   const locale = useLocale();
   const copy = getEventDetailsCopy(locale);
   const { stats } = copy;
   const [bookSeatOpen, setBookSeatOpen] = useState(false);
   const [activeImage, setActiveImage] = useState(0);
   const reduceMotion = useReducedMotion();
+  const heroImages = event?.banner_urls?.length ? event.banner_urls : [...HERO_IMAGES];
+  const info = {
+    date: event?.date ? `${event.date}${event.start_time ? ` ${event.start_time.slice(0, 5)}` : ""}` : copy.info.date,
+    payment: event?.ticket_price != null ? `${event.ticket_price} ${event.currency ?? ""}` : copy.info.payment,
+    duration: event?.duration_hours ? `${event.duration_hours}` : copy.info.duration,
+    location: event?.location ?? copy.info.location,
+  };
 
   useEffect(() => {
     if (reduceMotion) return;
 
     const interval = window.setInterval(() => {
-      setActiveImage((current) => (current + 1) % HERO_IMAGES.length);
+      setActiveImage((current) => (current + 1) % heroImages.length);
     }, 4000);
 
     return () => window.clearInterval(interval);
-  }, [reduceMotion]);
+  }, [reduceMotion, heroImages.length]);
 
   return (
     <MotionConfig reducedMotion="user">
@@ -71,15 +79,13 @@ export function EventDetailsHero() {
               dir="auto"
               className="font-alexandria text-[clamp(20px,2.1vw,26px)] leading-[1.2] font-bold text-foreground"
             >
-              {copy.titleLine1}
-              <br />
-              {copy.titleLine2}
+              {event?.name ?? <>{copy.titleLine1}<br />{copy.titleLine2}</>}
             </h1>
             <p
               dir="auto"
               className="max-w-[62ch] font-alexandria text-[clamp(14px,1.15vw,16px)] leading-[1.5] text-muted-foreground"
             >
-              {copy.description}
+              {event?.description ?? copy.description}
             </p>
           </motion.div>
 
@@ -94,7 +100,7 @@ export function EventDetailsHero() {
               >
                 <img src={item.icon} alt="" className="size-[clamp(16px,1.4vw,20px)]" />
                 <p className="text-center font-alexandria text-[clamp(12px,1vw,14px)] font-medium whitespace-nowrap text-foreground">
-                  {copy.info[item.key]}
+                  {info[item.key]}
                 </p>
               </div>
             ))}
@@ -144,7 +150,7 @@ export function EventDetailsHero() {
             >
               {copy.cta}
             </Button>
-            <BookSeatDialog open={bookSeatOpen} onOpenChange={setBookSeatOpen} />
+            <BookSeatDialog open={bookSeatOpen} onOpenChange={setBookSeatOpen} eventUlid={event?.ulid} />
           </motion.div>
         </div>
 
@@ -158,7 +164,7 @@ export function EventDetailsHero() {
             className="absolute inset-0 rotate-[4.17deg] overflow-hidden rounded-[12px] bg-grey-primary"
           >
             <Image
-              src={HERO_IMAGES[(activeImage + 1) % HERO_IMAGES.length]}
+              src={heroImages[(activeImage + 1) % heroImages.length]}
               alt=""
               fill
               sizes="(min-width: 1280px) 513px, 90vw"
@@ -168,7 +174,7 @@ export function EventDetailsHero() {
 
           <AnimatePresence mode="popLayout" initial={false}>
             <motion.div
-              key={HERO_IMAGES[activeImage]}
+              key={heroImages[activeImage]}
               initial={{ opacity: 0, x: 28, scale: 0.97, rotate: 1.5 }}
               animate={{ opacity: 1, x: 0, scale: 1, rotate: 0 }}
               exit={{ opacity: 0, x: -28, scale: 0.97, rotate: -1.5 }}
@@ -176,7 +182,7 @@ export function EventDetailsHero() {
               className="absolute inset-0 overflow-hidden rounded-[12px] shadow-lg"
             >
               <Image
-                src={HERO_IMAGES[activeImage]}
+                src={heroImages[activeImage]}
                 alt={copy.imageAlt}
                 fill
                 priority={activeImage === 0}

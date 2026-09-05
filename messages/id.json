@@ -96,7 +96,7 @@
       "privacyNote": "Data Anda berada di tangan yang aman. Lihat kebijakan privasi kami untuk informasi lebih lanjut."
     },
     "bottom": {
-      "developedBy": "Dikembangkan oleh {brand}",
+      "developedBy": "Dikembangkan oleh <link>{brand}</link>",
       "copyright": "Hak cipta dilindungi oleh platform Zefaaf © {year}"
     }
   },
@@ -187,11 +187,11 @@
       }
     ],
     "ticker": [
-      "Jalani yang terbaik",
-      "perjalanan sehat",
-      "pasangan hidup",
-      "pilihan sehat",
-      "pasangan hidup"
+      "Pasangan hidup Anda",
+      "Pilihan tepercaya",
+      "Perjalanan yang aman",
+      "Pernikahan yang serius",
+      "Privasi Anda utama"
     ]
   },
   "blogDetail": {
@@ -345,7 +345,7 @@
     }
   },
   "downloadApp": {
-    "title": "Uji Coba Gratis Khusus – Unduh aplikasi Zefaaf\nsekarang dan nikmati pesan gratis untuk\n3 hari pertama Anda!",
+    "title": "Unduh aplikasi Zefaaf sekarang\ndan mulailah perjalanan mencari pasangan hidup Anda",
     "features": [
       "Lingkungan yang aman dan terpercaya untuk menemukan pasangan yang tepat.",
       "Pengalaman yang mulus dan sesuai dengan pedoman Islam."
@@ -375,6 +375,27 @@
       {
         "title": "Pertemuan langsung di negara Anda | Di mana pun Anda berada",
         "description": "Kami memulai dengan pertemuan Zoom pribadi bersama konselor keluarga untuk memahami kepribadian dan kebutuhan Anda, lalu mencari pasangan yang sesuai dan mengatur pertemuan langsung ketika terdapat kesepakatan dari kedua belah pihak."
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "Apa kata anggota kami",
+    "ratingLabel": "5 dari 5 bintang",
+    "items": [
+      {
+        "quote": "Pengalaman yang nyaman dan penuh rasa hormat. Saya merasa platform ini benar-benar membantu menemukan pasangan yang cocok dengan cara yang serius dan sesuai syariah.",
+        "name": "Ahmed",
+        "ageLabel": "29 tahun"
+      },
+      {
+        "quote": "Saya suka betapa jelas dan terorganisirnya setiap langkah. Skor kecocokan juga membantu saya fokus pada profil yang memiliki nilai dan minat yang sama.",
+        "name": "Sara",
+        "ageLabel": "29 tahun"
+      },
+      {
+        "quote": "Ini berbeda dari aplikasi kencan tradisional. Tujuannya jelas sejak awal: membangun hubungan serius dengan niat menikah.",
+        "name": "Ahmed",
+        "ageLabel": "29 tahun"
       }
     ]
   },
@@ -428,6 +449,26 @@
       ]
     }
   },
+  "vipPayment": {
+    "price": "Harga",
+    "title": "Opsi pembayaran",
+    "whatsapp": "Tautan pembayaran melalui WhatsApp",
+    "agent": "Pembayaran melalui agen",
+    "transferReference": "Referensi transfer (opsional)",
+    "uploadProof": "Unggah bukti transfer (JPG, PNG, WebP)",
+    "next": "Berikutnya",
+    "back": "Kembali",
+    "submitError": "Bukti transfer tidak dapat dikirim.",
+    "fields": {
+      "paymentType": "Jenis pembayaran",
+      "agentName": "Nama agen",
+      "paymentNumber": "Nomor pembayaran",
+      "paymentLink": "Tautan pembayaran",
+      "bankName": "Nama bank",
+      "accountHolder": "Pemilik rekening",
+      "agentPhone": "Telepon agen"
+    }
+  },
   "paymentStatus": {
     "close": "Tutup",
     "backToHome": "Kembali ke beranda",
@@ -469,7 +510,7 @@
       "contactMethods": "Metode kontak",
       "nationality": "Kewarganegaraan",
       "city": "Kota",
-      "marriageRequirements": "Persyaratan pernikahan",
+      "marriageRequirements": "Tanggal lahir",
       "day": "Tanggal",
       "month": "Bulan",
       "year": "Tahun",
@@ -499,5 +540,28 @@
       "preferredEducationLevels": "Tingkat pendidikan yang diinginkan",
       "preferredJobGrades": "Tingkat pekerjaan yang diinginkan"
     }
+  },
+  "vipTerms": {
+    "eyebrow": "syarat dan Ketentuan",
+    "imageAlt": "Tangan yang menulis di atas kertas dengan pena, melambangkan akad pernikahan",
+    "serviceTitle": "Layanan Pencarian Pribadi",
+    "platformLine": "di Platform Zefaaf",
+    "intro": "Ini bukan layanan aplikasi atau situs web tradisional, tetapi layanan pribadi di mana tim khusus bekerja sama dengan Anda dalam pencarian, pemilihan, pemfilteran, dan pemeriksaan keseriusan awal berdasarkan preferensi dan keadaan Anda.",
+    "bullets": [
+      "Biaya layanannya adalah €99 (atau setara dalam mata uang lokal Anda), mencakup satu bulan penuh mulai dari tanggal aktivasi profil Anda.",
+      "Anda mendapatkan dasbor pribadi dan aman, diakses dengan email dan kata sandi Anda, untuk menindaklanjuti rekomendasi penasihat secara rutin — mungkin setiap hari kapan pun kecocokan yang cocok tersedia, Insya Allah.",
+      "Layanan Anda ditangani dengan privasi dan kerahasiaan penuh; tidak ada kandidat yang dapat melihat data, preferensi, atau permintaan Anda tanpa izin tertulis dari Anda.",
+      "Foto ID diperlukan untuk memverifikasi identitas Anda dan mengonfirmasi akun Anda; itu tetap rahasia hanya pada tim yang berwenang dan tidak pernah dipublikasikan atau dibagikan.",
+      "Foto pribadi diperlukan untuk menilai tingkat penerimaan sesuai dengan preferensi masing-masing pihak; mereka hanya digunakan secara internal dan tidak pernah dipublikasikan atau dikirimkan kepada siapa pun.",
+      "Perkenalan atau pertukaran detail kontak hanya dimulai setelah kedua belah pihak sepakat, dengan privasi penuh terjaga untuk semua orang.",
+      "Tidak ada jumlah rekomendasi yang pasti; tujuannya adalah kualitas dan kompatibilitas, bukan mengirimkan sejumlah profil tertentu.",
+      "Jaringan kami mencakup anggota serius dari berbagai negara dan kebangsaan, termasuk Muslim Eropa, tanpa menjamin ketersediaan kebangsaan atau negara tertentu.",
+      "Tidak ada biaya tambahan untuk rekomendasi, perkenalan, atau bahkan setelah pernikahan selesai; biaya penuhnya hanya €99, atau setara dalam mata uang lokal Anda.",
+      "Kesuksesan ada di tangan Tuhan, dan tidak ada yang bisa menjamin pernikahan dalam jangka waktu tertentu, namun tim kami melakukan yang terbaik sepanjang langganan Anda untuk mencari, memfilter, dan mencapai jodoh paling sesuai yang tersedia untuk Anda.",
+      "Tindak lanjut terjadi melalui WhatsApp dan email. Telegram mungkin diganggu oleh perusahaan, jadi Telegram tidak boleh diandalkan sebagai satu-satunya sarana kontak.",
+      "Biaya tidak dapat dikembalikan setelah layanan diaktifkan dan tim mulai mengerjakan profil Anda, karena biaya tersebut mencakup waktu dan upaya tim khusus yang segera mulai bekerja.",
+      "Dengan menyelesaikan pembayaran, Anda mengakui bahwa Anda telah membaca dan menyetujui persyaratan ini, dan tim kami akan mulai bekerja sama dengan Anda dengan penuh kehati-hatian dan privasi, Insya Allah."
+    ],
+    "closing": "Semoga Tuhan memberi Anda pasangan hidup yang saleh."
   }
 }

@@ -1,13 +1,15 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { motion, MotionConfig } from "framer-motion";
 import Image from "next/image";
+import { useSearchParams } from "next/navigation";
 import { useLocale } from "next-intl";
 
 import { StartNowDialog } from "@/features/start-now";
 import { Button } from "@/shared/ui/button";
 import { getDirection, type Locale } from "@/shared/i18n";
+import { getVipPrice, type VipPrice } from "@/shared/api";
 
 import { getVipCopy } from "../model/copy";
 import { REVEAL, VIEWPORT } from "../model/motion";
@@ -17,6 +19,16 @@ export function VipHero() {
   const { hero } = getVipCopy(locale);
   const isRtl = getDirection(locale as Locale) === "rtl";
   const [startNowOpen, setStartNowOpen] = useState(false);
+  const searchParams = useSearchParams();
+  const [livePrice, setLivePrice] = useState<VipPrice | null>(null);
+  const queryCountryId = Number(searchParams.get("country_id"));
+  const queryGender = searchParams.get("gender");
+  const hasPriceParams = Boolean(queryCountryId && (queryGender === "male" || queryGender === "female"));
+
+  useEffect(() => {
+    if (!hasPriceParams || (queryGender !== "male" && queryGender !== "female")) return;
+    void getVipPrice(queryCountryId, queryGender).then(setLivePrice).catch(() => setLivePrice(null));
+  }, [hasPriceParams, queryCountryId, queryGender]);
 
   return (
     <MotionConfig reducedMotion="user">
@@ -130,7 +142,7 @@ export function VipHero() {
                   height={120}
                   className="size-[clamp(22px,2.07vw,30px)] shrink-0"
                 />
-                {hero.price}
+                {hasPriceParams && livePrice?.price != null ? `${livePrice.price} ${livePrice.currency ?? ""}` : hero.price}
               </p>
 
               <Button

@@ -6,6 +6,7 @@ import { Link } from "@/shared/i18n";
 const BLOG_DETAILS_PATH = "/blogs/marriage-bosnian-woman";
 
 export type BlogArticle = {
+  slug?: string;
   title: string;
   excerpt: string;
   image: string;
@@ -35,7 +36,7 @@ export function BlogCard({ article }: { article: BlogArticle }) {
           <p className="font-alexandria text-(length:--text-fluid-nav) leading-[1.6] text-grey-primary">
             {article.excerpt}
           </p>
-          <ViewMoreLink label={t("viewMore")} />
+          <ViewMoreLink label={t("viewMore")} slug={article.slug} />
         </div>
       </article>
     );
@@ -60,16 +61,16 @@ export function BlogCard({ article }: { article: BlogArticle }) {
         <p className="font-alexandria text-(length:--text-fluid-nav) leading-[1.6] text-grey-primary">
           {article.excerpt}
         </p>
-        <ViewMoreLink label={t("viewMore")} />
+        <ViewMoreLink label={t("viewMore")} slug={article.slug} />
       </div>
     </article>
   );
 }
 
-function ViewMoreLink({ label }: { label: string }) {
+function ViewMoreLink({ label, slug }: { label: string; slug?: string }) {
   return (
     <Link
-      href={BLOG_DETAILS_PATH}
+      href={slug ? `/blogs/${slug}` : BLOG_DETAILS_PATH}
       className="flex items-center gap-(--space-fluid-3xs) font-almarai text-(length:--text-fluid-xs) text-foreground transition-opacity hover:opacity-70"
     >
       <span>{label}</span>

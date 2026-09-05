@@ -6,6 +6,7 @@ import { Footer } from "@/widgets/footer";
 import { Header } from "@/widgets/header";
 import { buildMetadata } from "@/shared/lib/seo";
 import type { Locale } from "@/shared/i18n";
+import { getPublicEvents } from "@/shared/api";
 
 export async function generateMetadata({
   params,
@@ -23,14 +24,16 @@ export async function generateMetadata({
   });
 }
 
-export default function EventsPage() {
+export default async function EventsPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const events = await getPublicEvents(locale).catch(() => []);
   return (
     <>
       <Header />
       <main>
         <EventsHeader />
         <EventsBanner />
-        <EventsList />
+        <EventsList initialEvents={events} />
       </main>
       <Footer />
     </>

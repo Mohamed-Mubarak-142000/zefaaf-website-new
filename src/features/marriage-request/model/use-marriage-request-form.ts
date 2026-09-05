@@ -9,7 +9,8 @@ const INITIAL_DATA: MarriageRequestFormData = {
   fullName: "",
   email: "",
   phoneNumber: "",
-  contactMethod: "",
+  telegramUsername: "",
+  contactMethod: "whatsapp",
   nationality: "",
   city: "",
   targetDay: "",
@@ -17,9 +18,10 @@ const INITIAL_DATA: MarriageRequestFormData = {
   targetYear: "",
   country: "",
   marriageType: "",
-  marriageRequirement: "",
+  marriageRequirement: [],
 
   education: "",
+  jobGrade: "",
   jobStability: "",
   housingState: "",
   monthlyIncome: "",
@@ -32,12 +34,17 @@ const INITIAL_DATA: MarriageRequestFormData = {
 
   minimumAge: "",
   maximumAge: "",
-  preferredNationalities: "",
-  partnersCountry: "",
-  preferredMaritalStatuses: "",
-  preferredReligiousStatuses: "",
-  preferredEducationLevels: "",
-  preferredJobGrades: "",
+  preferredNationalities: [],
+  partnersCountry: [],
+  preferredMaritalStatuses: [],
+  preferredReligiousStatuses: [],
+  preferredEducationLevels: [],
+  preferredJobGrades: [],
+  preferredJobStability: [],
+  preferredHousingStates: [],
+  preferredMonthlyIncome: [],
+  preferredDowry: [],
+  preferredGold: [],
 };
 
 // Intentionally takes no `open` prop: the caller only mounts this hook from
@@ -49,7 +56,30 @@ export function useMarriageRequestForm() {
 
   const setField = React.useCallback(
     <K extends keyof MarriageRequestFormData>(key: K, value: MarriageRequestFormData[K]) => {
-      setData((prev) => ({ ...prev, [key]: value }));
+      setData((prev) => {
+        const next = { ...prev, [key]: value };
+
+        if (key === "country" && value !== prev.country) next.city = "";
+        if (key === "contactMethod" && value !== prev.contactMethod) {
+          if (value === "telegram" || value === "email") next.phoneNumber = "";
+          else next.telegramUsername = "";
+        }
+        if (key === "applicant" && value !== prev.applicant) {
+          next.marriageRequirement = [];
+          next.jobStability = "";
+          next.housingState = "";
+          next.monthlyIncome = "";
+          next.dowry = "";
+          next.gold = "";
+          next.preferredJobStability = [];
+          next.preferredHousingStates = [];
+          next.preferredMonthlyIncome = [];
+          next.preferredDowry = [];
+          next.preferredGold = [];
+        }
+
+        return next;
+      });
     },
     [],
   );
@@ -62,5 +92,9 @@ export function useMarriageRequestForm() {
     setStep((current) => (current > 1 ? ((current - 1) as MarriageRequestStep) : current));
   }, []);
 
-  return { step, data, setField, goNext, goBack };
+  const goToStep = React.useCallback((nextStep: MarriageRequestStep) => {
+    setStep(nextStep);
+  }, []);
+
+  return { step, data, setField, goNext, goBack, goToStep };
 }

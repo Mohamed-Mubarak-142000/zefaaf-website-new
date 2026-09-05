@@ -3,6 +3,7 @@ export interface MarriageRequestFormData {
   fullName: string;
   email: string;
   phoneNumber: string;
+  telegramUsername: string;
   contactMethod: string;
   nationality: string;
   city: string;
@@ -11,9 +12,10 @@ export interface MarriageRequestFormData {
   targetYear: string;
   country: string;
   marriageType: string;
-  marriageRequirement: string;
+  marriageRequirement: string[];
 
   education: string;
+  jobGrade: string;
   jobStability: string;
   housingState: string;
   monthlyIncome: string;
@@ -26,12 +28,17 @@ export interface MarriageRequestFormData {
 
   minimumAge: string;
   maximumAge: string;
-  preferredNationalities: string;
-  partnersCountry: string;
-  preferredMaritalStatuses: string;
-  preferredReligiousStatuses: string;
-  preferredEducationLevels: string;
-  preferredJobGrades: string;
+  preferredNationalities: string[];
+  partnersCountry: string[];
+  preferredMaritalStatuses: string[];
+  preferredReligiousStatuses: string[];
+  preferredEducationLevels: string[];
+  preferredJobGrades: string[];
+  preferredJobStability: string[];
+  preferredHousingStates: string[];
+  preferredMonthlyIncome: string[];
+  preferredDowry: string[];
+  preferredGold: string[];
 }
 
 export type MarriageRequestStep = 1 | 2 | 3;
