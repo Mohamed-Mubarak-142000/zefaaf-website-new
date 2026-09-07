@@ -42,6 +42,7 @@
       "zefaafEvents": "Мероприятия Zefaaf",
       "marriageForm": "Ваша анкета для брака",
       "bosniaTour": "Тур в Боснию для заключения брака",
+      "travels": "Поездки",
       "meetingInCountry": "Встреча в вашей стране"
     }
   },
@@ -485,7 +486,7 @@
     }
   },
   "marriageRequest": {
-    "modalTitle": "Информация о местоположении",
+    "modalTitle": "Анкета для брака",
     "close": "Закрыть",
     "actions": {
       "back": "Назад",

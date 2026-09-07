@@ -42,6 +42,7 @@
       "zefaafEvents": "Mga Kaganapan ng Zefaaf",
       "marriageForm": "Ang Iyong Marriage Form",
       "bosniaTour": "Bosnia Marriage Tour",
+      "travels": "Mga Paglalakbay",
       "meetingInCountry": "Pagpupulong sa Iyong Bansa"
     }
   },
@@ -485,7 +486,7 @@
     }
   },
   "marriageRequest": {
-    "modalTitle": "Impormasyon ng lokasyon",
+    "modalTitle": "Marriage Form",
     "close": "Isara",
     "actions": {
       "back": "Bumalik",

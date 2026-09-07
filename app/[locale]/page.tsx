@@ -8,11 +8,17 @@ import { Services } from "@/widgets/services";
 import { Testimonials } from "@/widgets/testimonials";
 import { UpcomingEvents } from "@/widgets/upcoming-events";
 import { WhyChooseZefaaf } from "@/widgets/why-choose-zefaaf";
-import { getPublicEvents } from "@/shared/api";
+import { getPublicEvents, type PublicEvent } from "@/shared/api";
 
 export default async function HomePage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
-  const events = await getPublicEvents(locale).catch(() => []);
+  let events: PublicEvent[] = [];
+  let eventsError = false;
+  try {
+    events = await getPublicEvents(locale);
+  } catch {
+    eventsError = true;
+  }
   return (
     <>
       <Header />
@@ -20,7 +26,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
         <Hero />
         <Services />
         <GlobalPresence />
-        <UpcomingEvents initialEvents={events} />
+        <UpcomingEvents initialEvents={events} initialEventsError={eventsError} />
         <InfluentialFigures />
         <WhyChooseZefaaf />
         <Testimonials />

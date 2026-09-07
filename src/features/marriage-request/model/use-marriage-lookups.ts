@@ -13,6 +13,11 @@ export function useMarriageLookups(countryId: string, applicant: "male" | "femal
   const [governoratesCountryId, setGovernoratesCountryId] = useState("");
   const [raw, setRaw] = useState<Record<string, unknown> | null>(null);
   const [badWords, setBadWords] = useState<string[]>([]);
+  const [lookupsError, setLookupsError] = useState<string | null>(null);
+  // Holds the country id whose governorates fetch last failed, so a
+  // country change invalidates a stale error just by comparison below —
+  // no need to reset it imperatively.
+  const [governoratesErrorCountryId, setGovernoratesErrorCountryId] = useState<string | null>(null);
 
   useEffect(() => {
     let active = true;
@@ -35,6 +40,9 @@ export function useMarriageLookups(countryId: string, applicant: "male" | "femal
           setRaw(options && typeof options === "object" ? options as Record<string, unknown> : null);
         }
         if (blockedWordsResult.status === "fulfilled") setBadWords(blockedWordsResult.value);
+        const anyRejected = [countryResult, nationalityResult, optionsResult, blockedWordsResult]
+          .some((result) => result.status === "rejected");
+        setLookupsError(anyRejected ? "تعذر تحميل بيانات الفورم. حاول تحديث الصفحة." : null);
       });
     return () => {
       active = false;
@@ -51,7 +59,9 @@ export function useMarriageLookups(countryId: string, applicant: "male" | "femal
           setGovernoratesCountryId(countryId);
         }
       })
-      .catch(() => undefined);
+      .catch(() => {
+        if (active) setGovernoratesErrorCountryId(countryId);
+      });
     return () => {
       active = false;
     };
@@ -65,6 +75,8 @@ export function useMarriageLookups(countryId: string, applicant: "male" | "femal
     badWords,
     nationalities,
     governorates: governoratesCountryId === countryId ? governorates : [],
+    lookupsError,
+    governoratesError: governoratesErrorCountryId === countryId ? "تعذر تحميل قائمة المدن لهذه الدولة." : null,
     marriageTypes: readOptions(raw, ["marriage_types"]),
     marriageRequirements: readOptions(raw, ["marriage_requirements"]),
     educationLevels: readOptions(raw, ["education_levels", "education_level"], gender),
@@ -80,7 +92,7 @@ export function useMarriageLookups(countryId: string, applicant: "male" | "femal
     partnerMaritalStatuses: readOptions(raw, ["marital_statuses", "marital_status"], partnerGender),
     partnerReligiousStatuses: readOptions(raw, ["religious_status", "religious_statuses"], partnerGender),
     partnerJobGrades: readOptions(raw, ["job_grades", "job_grade"], partnerGender),
-  }), [countries, countryDetails, nationalities, governorates, governoratesCountryId, countryId, raw, gender, partnerGender, badWords]);
+  }), [countries, countryDetails, nationalities, governorates, governoratesCountryId, countryId, raw, gender, partnerGender, badWords, lookupsError, governoratesErrorCountryId]);
 }
 
 export type MarriageLookups = ReturnType<typeof useMarriageLookups>;

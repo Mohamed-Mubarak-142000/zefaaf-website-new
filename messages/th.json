@@ -42,6 +42,7 @@
       "zefaafEvents": "กิจกรรมของ Zefaaf",
       "marriageForm": "แบบฟอร์มการแต่งงานของคุณ",
       "bosniaTour": "ทัวร์แต่งงานบอสเนีย",
+      "travels": "การเดินทาง",
       "meetingInCountry": "พบปะในประเทศของคุณ"
     }
   },
@@ -485,7 +486,7 @@
     }
   },
   "marriageRequest": {
-    "modalTitle": "ข้อมูลสถานที่",
+    "modalTitle": "แบบฟอร์มการแต่งงาน",
     "close": "ปิด",
     "actions": {
       "back": "ย้อนกลับ",

@@ -1,18 +1,20 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 import { cn } from "@/shared/lib/utils";
+import { Alert } from "@/shared/ui/alert";
 
 import { BlogCard, type BlogArticle } from "./blog-card";
 
 const TOPIC_KEYS = ["all", "qualities", "relationships", "health", "choosing"] as const;
 
-export function BlogList({ apiArticles }: { apiArticles?: BlogArticle[] }) {
+export function BlogList({ apiArticles, error }: { apiArticles: BlogArticle[]; error?: boolean }) {
   const t = useTranslations("blog.list");
-  const translatedArticles = t.raw("articles") as BlogArticle[];
-  const articles = apiArticles?.length ? apiArticles : translatedArticles;
+  const locale = useLocale();
+  const isArabic = locale.startsWith("ar");
+  const articles = apiArticles;
 
   const [search, setSearch] = useState("");
   const [activeTopic, setActiveTopic] = useState<(typeof TOPIC_KEYS)[number]>("all");
@@ -43,7 +45,7 @@ export function BlogList({ apiArticles }: { apiArticles?: BlogArticle[] }) {
         </p>
       </div>
 
-      <div className="mt-(--space-fluid-lg) flex flex-nowrap items-center gap-(--space-fluid-xs) overflow-x-auto pb-1">
+      <div className="mt-(--space-fluid-lg) flex flex-nowrap items-center gap-(--space-fluid-xs) overflow-x-auto pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
         <label className="flex w-[min(32vw,424px)] min-w-[260px] shrink-0 items-center gap-(--space-fluid-xs) rounded-[9px] bg-stroke-2 px-(--space-fluid-sm) py-(--space-fluid-2xs)">
           <img src="/icons/search-01.svg" alt="" className="size-(--size-fluid-icon-xs) shrink-0 rtl:scale-x-[-1]" />
           <span className="sr-only">{t("searchPlaceholder")}</span>
@@ -78,20 +80,32 @@ export function BlogList({ apiArticles }: { apiArticles?: BlogArticle[] }) {
       </div>
 
       <div className="mt-(--space-fluid-lg) flex flex-col gap-(--space-fluid-md)">
-        {firstRow.length > 0 && (
-          <div className="grid grid-cols-1 items-stretch gap-(--space-fluid-md) lg:grid-cols-[minmax(0,1fr)_minmax(0,2fr)]">
-            {firstRow.map((article, index) => (
-              <BlogCard key={`${article.title}-${index}`} article={article} />
-            ))}
-          </div>
-        )}
+        {error ? (
+          <Alert>{isArabic ? "تعذر تحميل المقالات." : "Could not load articles."}</Alert>
+        ) : (
+          <>
+            {firstRow.length > 0 && (
+              <div className="grid grid-cols-1 items-stretch gap-(--space-fluid-md) lg:grid-cols-[minmax(0,1fr)_minmax(0,2fr)]">
+                {firstRow.map((article, index) => (
+                  <BlogCard key={`${article.title}-${index}`} article={article} />
+                ))}
+              </div>
+            )}
 
-        {secondRow.length > 0 && (
-          <div className="grid grid-cols-[repeat(auto-fit,minmax(min(280px,100%),1fr))] gap-(--space-fluid-md)">
-            {secondRow.map((article, index) => (
-              <BlogCard key={`${article.title}-${index}`} article={{ ...article, wide: false }} />
-            ))}
-          </div>
+            {secondRow.length > 0 && (
+              <div className="grid grid-cols-[repeat(auto-fit,minmax(min(280px,100%),1fr))] gap-(--space-fluid-md)">
+                {secondRow.map((article, index) => (
+                  <BlogCard key={`${article.title}-${index}`} article={{ ...article, wide: false }} />
+                ))}
+              </div>
+            )}
+
+            {filteredArticles.length === 0 && (
+              <p className="font-alexandria text-(length:--text-fluid-nav) text-grey-primary">
+                {isArabic ? "لا توجد مقالات حاليًا." : "No articles yet."}
+              </p>
+            )}
+          </>
         )}
       </div>
     </section>

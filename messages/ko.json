@@ -42,6 +42,7 @@
       "zefaafEvents": "Zefaaf 이벤트",
       "marriageForm": "결혼 신청서",
       "bosniaTour": "보스니아 결혼 투어",
+      "travels": "여행",
       "meetingInCountry": "귀하의 국가에서 만남"
     }
   },
@@ -485,7 +486,7 @@
     }
   },
   "marriageRequest": {
-    "modalTitle": "위치 정보",
+    "modalTitle": "결혼 신청서",
     "close": "닫기",
     "actions": {
       "back": "뒤로",

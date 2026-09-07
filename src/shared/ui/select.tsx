@@ -43,25 +43,31 @@ function SelectTrigger({
 function SelectContent({
   className,
   children,
+  search,
   position = "popper",
   ...props
-}: React.ComponentProps<typeof SelectPrimitive.Content>) {
+}: React.ComponentProps<typeof SelectPrimitive.Content> & {
+  /** A `SearchField` pinned above the list. Sits outside the scrolling
+   *  viewport, so it stays put while the options scroll under it. */
+  search?: React.ReactNode
+}) {
   return (
     <SelectPrimitive.Portal>
       <SelectPrimitive.Content
         data-slot="select-content"
         position={position}
         className={cn(
-          "relative z-[60] max-h-72 min-w-(--radix-select-trigger-width) overflow-hidden rounded-lg border border-border bg-popover text-popover-foreground shadow-md data-open:animate-in data-open:fade-in-0 data-open:zoom-in-95 data-closed:animate-out data-closed:fade-out-0 data-closed:zoom-out-95",
+          "relative z-[60] flex max-h-72 min-w-(--radix-select-trigger-width) flex-col overflow-hidden rounded-lg border border-border bg-popover text-popover-foreground shadow-md data-open:animate-in data-open:fade-in-0 data-open:zoom-in-95 data-closed:animate-out data-closed:fade-out-0 data-closed:zoom-out-95",
           position === "popper" &&
             "data-[side=bottom]:translate-y-1 data-[side=top]:-translate-y-1",
           className
         )}
         {...props}
       >
+        {search}
         <SelectPrimitive.Viewport
           className={cn(
-            "max-h-72 overflow-y-auto p-1",
+            "min-h-0 overflow-y-auto p-1",
             position === "popper" &&
               "w-full min-w-[var(--radix-select-trigger-width)]"
           )}

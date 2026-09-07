@@ -42,6 +42,7 @@
       "zefaafEvents": "Acara Zefaaf",
       "marriageForm": "Formulir Pernikahan Anda",
       "bosniaTour": "Tur Pernikahan Bosnia",
+      "travels": "Perjalanan",
       "meetingInCountry": "Pertemuan di Negara Anda"
     }
   },
@@ -485,7 +486,7 @@
     }
   },
   "marriageRequest": {
-    "modalTitle": "Informasi lokasi",
+    "modalTitle": "Formulir Pernikahan",
     "close": "Tutup",
     "actions": {
       "back": "Kembali",

@@ -42,6 +42,7 @@
       "zefaafEvents": "ஜெஃபாஃப் நிகழ்வுகள்",
       "marriageForm": "உங்கள் திருமண படிவம்",
       "bosniaTour": "போஸ்னியா திருமண சுற்றுலா",
+      "travels": "பயணங்கள்",
       "meetingInCountry": "உங்கள் நாட்டில் சந்திப்பு"
     }
   },
@@ -485,7 +486,7 @@
     }
   },
   "marriageRequest": {
-    "modalTitle": "இருப்பிட தகவல்",
+    "modalTitle": "திருமண படிவம்",
     "close": "மூடு",
     "actions": {
       "back": "பின்னால்",

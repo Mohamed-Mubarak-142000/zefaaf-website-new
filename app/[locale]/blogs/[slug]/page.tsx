@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { notFound } from "next/navigation";
 import { getTranslations } from "next-intl/server";
 
 import { Footer } from "@/widgets/footer";
@@ -15,7 +16,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale, slug } = await params;
   const t = await getTranslations({ locale, namespace: "blogDetail" });
-  const blog = await fetchSeoBlog(slug, locale);
+  const blog = await fetchSeoBlog(slug, locale).catch(() => null);
 
   return buildMetadata({
     locale: locale as Locale,
@@ -27,12 +28,19 @@ export async function generateMetadata({
 
 export default async function BlogDetailsPage({ params }: { params: Promise<{ locale: string; slug: string }> }) {
   const { locale, slug } = await params;
-  const blog = await fetchSeoBlog(slug, locale);
+  let blog = null;
+  let blogError = false;
+  try {
+    blog = await fetchSeoBlog(slug, locale);
+  } catch {
+    blogError = true;
+  }
+  if (!blog && !blogError) notFound();
   return (
     <>
       <Header />
       <main>
-        <BlogArticle blog={blog} />
+        <BlogArticle blog={blog} error={blogError} />
       </main>
       <Footer />
     </>

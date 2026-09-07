@@ -42,6 +42,7 @@
       "zefaafEvents": "Zefaaf events",
       "marriageForm": "Your Marriage Form",
       "bosniaTour": "Bosnia Marriage Tour",
+      "travels": "Travels",
       "meetingInCountry": "Meeting in Your Country"
     }
   },
@@ -485,7 +486,7 @@
     }
   },
   "marriageRequest": {
-    "modalTitle": "Location info",
+    "modalTitle": "Marriage Form",
     "close": "Close",
     "actions": {
       "back": "Back",

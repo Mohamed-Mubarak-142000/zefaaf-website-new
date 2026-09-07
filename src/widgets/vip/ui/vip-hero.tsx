@@ -7,6 +7,7 @@ import { useSearchParams } from "next/navigation";
 import { useLocale } from "next-intl";
 
 import { StartNowDialog } from "@/features/start-now";
+import { Alert } from "@/shared/ui/alert";
 import { Button } from "@/shared/ui/button";
 import { getDirection, type Locale } from "@/shared/i18n";
 import { getVipPrice, type VipPrice } from "@/shared/api";
@@ -16,19 +17,31 @@ import { REVEAL, VIEWPORT } from "../model/motion";
 
 export function VipHero() {
   const locale = useLocale();
+  const isArabic = locale === "ar";
   const { hero } = getVipCopy(locale);
   const isRtl = getDirection(locale as Locale) === "rtl";
   const [startNowOpen, setStartNowOpen] = useState(false);
   const searchParams = useSearchParams();
   const [livePrice, setLivePrice] = useState<VipPrice | null>(null);
+  const [priceError, setPriceError] = useState<string | null>(null);
   const queryCountryId = Number(searchParams.get("country_id"));
   const queryGender = searchParams.get("gender");
   const hasPriceParams = Boolean(queryCountryId && (queryGender === "male" || queryGender === "female"));
 
   useEffect(() => {
     if (!hasPriceParams || (queryGender !== "male" && queryGender !== "female")) return;
-    void getVipPrice(queryCountryId, queryGender).then(setLivePrice).catch(() => setLivePrice(null));
-  }, [hasPriceParams, queryCountryId, queryGender]);
+    queueMicrotask(() => setPriceError(null));
+    void getVipPrice(queryCountryId, queryGender)
+      .then((value) => { setLivePrice(value); setPriceError(null); })
+      .catch(() => {
+        setLivePrice(null);
+        setPriceError(
+          isArabic
+            ? "تعذر تحميل السعر المباشر. يتم عرض السعر العام أدناه."
+            : "Couldn't load the live price. Showing the general price below instead."
+        );
+      });
+  }, [hasPriceParams, queryCountryId, queryGender, isArabic]);
 
   return (
     <MotionConfig reducedMotion="user">
@@ -144,6 +157,12 @@ export function VipHero() {
                 />
                 {hasPriceParams && livePrice?.price != null ? `${livePrice.price} ${livePrice.currency ?? ""}` : hero.price}
               </p>
+
+              {hasPriceParams && priceError && (
+                <Alert className="mt-[clamp(8px,0.9vw,13px)] max-w-[320px] bg-white/90 text-[13px]">
+                  {priceError}
+                </Alert>
+              )}
 
               <Button
                 type="button"

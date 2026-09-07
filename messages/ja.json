@@ -42,6 +42,7 @@
       "zefaafEvents": "Zefaafイベント",
       "marriageForm": "結婚フォーム",
       "bosniaTour": "ボスニア結婚ツアー",
+      "travels": "旅行",
       "meetingInCountry": "あなたの国での面会"
     }
   },
@@ -485,7 +486,7 @@
     }
   },
   "marriageRequest": {
-    "modalTitle": "所在地情報",
+    "modalTitle": "結婚フォーム",
     "close": "閉じる",
     "actions": {
       "back": "戻る",

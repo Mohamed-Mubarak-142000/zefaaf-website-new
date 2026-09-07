@@ -42,6 +42,7 @@
       "zefaafEvents": "Zefaaf događaji",
       "marriageForm": "Vaš obrazac za brak",
       "bosniaTour": "Bosanska tura za brak",
+      "travels": "Putovanja",
       "meetingInCountry": "Sastanak u vašoj zemlji"
     }
   },
@@ -485,7 +486,7 @@
     }
   },
   "marriageRequest": {
-    "modalTitle": "Informacije o lokaciji",
+    "modalTitle": "Obrazac za brak",
     "close": "Zatvori",
     "actions": {
       "back": "Nazad",

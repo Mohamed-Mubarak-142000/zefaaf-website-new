@@ -8,7 +8,7 @@ import { Footer } from "@/widgets/footer";
 import { BlogHero } from "@/widgets/blog/hero";
 import { FeaturedArticle } from "@/widgets/blog/featured-article";
 import { BlogList } from "@/widgets/blog/list";
-import { fetchSeoBlogs } from "@/shared/api";
+import { fetchSeoBlogs, type SeoBlog } from "@/shared/api";
 
 export async function generateMetadata({
   params,
@@ -28,7 +28,13 @@ export async function generateMetadata({
 
 export default async function BlogsPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
-  const blogs = await fetchSeoBlogs(locale);
+  let blogs: SeoBlog[] = [];
+  let blogsError = false;
+  try {
+    blogs = await fetchSeoBlogs(locale);
+  } catch {
+    blogsError = true;
+  }
   const apiArticles = blogs.map((blog, index) => ({
     slug: blog.slug,
     title: blog.title,
@@ -43,7 +49,7 @@ export default async function BlogsPage({ params }: { params: Promise<{ locale: 
       <main>
         <BlogHero />
         <FeaturedArticle />
-        <BlogList apiArticles={apiArticles} />
+        <BlogList apiArticles={apiArticles} error={blogsError} />
       </main>
       <Footer />
     </>

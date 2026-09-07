@@ -42,6 +42,7 @@
       "zefaafEvents": "Zefaaf-arrangementer",
       "marriageForm": "Din ægteskabsformular",
       "bosniaTour": "Bosnien Ægteskabsrejse",
+      "travels": "Rejser",
       "meetingInCountry": "Møde i dit land"
     }
   },
@@ -485,7 +486,7 @@
     }
   },
   "marriageRequest": {
-    "modalTitle": "Lokationsoplysninger",
+    "modalTitle": "Ægteskabsformular",
     "close": "Luk",
     "actions": {
       "back": "Tilbage",

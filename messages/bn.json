@@ -42,6 +42,7 @@
       "zefaafEvents": "জেফাফ অনুষ্ঠান",
       "marriageForm": "আপনার বিবাহ ফর্ম",
       "bosniaTour": "বসনিয়া বিবাহ ভ্রমণ",
+      "travels": "ভ্রমণ",
       "meetingInCountry": "আপনার দেশে সাক্ষাৎ"
     }
   },
@@ -485,7 +486,7 @@
     }
   },
   "marriageRequest": {
-    "modalTitle": "অবস্থান তথ্য",
+    "modalTitle": "বিবাহ ফর্ম",
     "close": "বন্ধ করুন",
     "actions": {
       "back": "পিছনে",

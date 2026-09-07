@@ -42,6 +42,7 @@
       "zefaafEvents": "Ngjarjet e Zefaaf",
       "marriageForm": "Formulari juaj i Martesës",
       "bosniaTour": "Udhëtimi i Martesës në Bosnjë",
+      "travels": "Udhëtime",
       "meetingInCountry": "Takim në Vendin Tuaj"
     }
   },
@@ -485,7 +486,7 @@
     }
   },
   "marriageRequest": {
-    "modalTitle": "Informacion mbi vendndodhjen",
+    "modalTitle": "Formulari i Martesës",
     "close": "Mbyll",
     "actions": {
       "back": "Mbrapa",

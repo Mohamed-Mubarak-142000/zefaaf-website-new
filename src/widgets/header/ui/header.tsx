@@ -20,9 +20,12 @@ import {
 } from "@/shared/ui/dropdown-menu";
 import { Logo } from "@/shared/ui/logo";
 
+import { useUpcomingTrips } from "../model/use-upcoming-trips";
+
 import { ChevronDown } from "./chevron-down";
 import { NavLink } from "./nav-link";
-import { ServicesDropdown, SERVICE_MENU_ITEMS, useMarriageFormEntry } from "./services-dropdown";
+import { ServicesDropdown, SERVICE_MENU_ITEMS, TRAVELS_KEY, useMarriageFormEntry } from "./services-dropdown";
+import { TravelsMenuEntry } from "./travels-menu-entry";
 
 const MARRIAGE_FORM_KEY: (typeof SERVICE_MENU_ITEMS)[number]["labelKey"] = "nav.servicesMenu.marriageForm";
 
@@ -53,6 +56,7 @@ const NAV_ITEMS = [
 // this menu instead so navigation never overflows in any locale.
 function CompactNavMenu({ t }: { t: ReturnType<typeof useTranslations> }) {
   const { openTeaser, dialogs } = useMarriageFormEntry();
+  const trips = useUpcomingTrips();
 
   return (
     <>
@@ -71,7 +75,13 @@ function CompactNavMenu({ t }: { t: ReturnType<typeof useTranslations> }) {
                 </DropdownMenuSubTrigger>
                 <DropdownMenuSubContent>
                   {SERVICE_MENU_ITEMS.map((sub) =>
-                    sub.labelKey === MARRIAGE_FORM_KEY ? (
+                    sub.labelKey === TRAVELS_KEY ? (
+                      <TravelsMenuEntry
+                        key={sub.labelKey}
+                        trips={trips}
+                        labelClassName="font-alexandria font-normal"
+                      />
+                    ) : sub.labelKey === MARRIAGE_FORM_KEY ? (
                       <DropdownMenuItem key={sub.labelKey} asChild>
                         <button type="button" onClick={openTeaser} className="w-full text-start font-alexandria font-normal">
                           {t(sub.labelKey)}

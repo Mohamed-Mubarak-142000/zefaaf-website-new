@@ -42,6 +42,7 @@
       "zefaafEvents": "Eventos de Zefaaf",
       "marriageForm": "Tu Formulario de Matrimonio",
       "bosniaTour": "Viaje de Matrimonio a Bosnia",
+      "travels": "Viajes",
       "meetingInCountry": "Encuentro en tu País"
     }
   },
@@ -485,7 +486,7 @@
     }
   },
   "marriageRequest": {
-    "modalTitle": "Información de ubicación",
+    "modalTitle": "Formulario de Matrimonio",
     "close": "Cerrar",
     "actions": {
       "back": "Atrás",
