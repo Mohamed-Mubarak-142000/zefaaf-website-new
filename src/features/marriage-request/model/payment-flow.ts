@@ -24,11 +24,18 @@ export function toPaymentMethod(channel: SmartMarriagePaymentMethod): "local_age
   return channel === "local_agent" ? "local_agent" : "manual";
 }
 
-/** The chat to open for a channel; `null` for the agent, who is called. */
-export function getChatLink(channel: SmartMarriagePaymentMethod): string | null {
-  if (channel === "whatsapp") return WHATSAPP_LINK;
-  if (channel === "telegram") return TELEGRAM_LINK;
-  return null;
+/**
+ * The chat to open for a channel; `null` for the agent, who is called.
+ *
+ * Both clients read `text` off the deep link and drop it into the composer,
+ * so the whole request arrives with the chat and nobody has to retype it. A
+ * client that ignores the parameter just opens the chat, as it did before.
+ */
+export function getChatLink(channel: SmartMarriagePaymentMethod, message?: string): string | null {
+  const base = channel === "whatsapp" ? WHATSAPP_LINK : channel === "telegram" ? TELEGRAM_LINK : null;
+  if (!base) return null;
+  const text = message?.trim();
+  return text ? `${base}?text=${encodeURIComponent(text)}` : base;
 }
 
 /**
@@ -63,13 +70,15 @@ export type PaymentDialogAction =
 /**
  * What the dialog's primary button does, given the resolved channel and the
  * step it's on. The agent walks through their details and code before the
- * request is sent; a chat channel sends on the first press.
+ * request is sent; a chat channel sends on the first press, opening the chat
+ * with `message` — the request summary — already in its composer.
  */
 export function getPaymentDialogAction(
   channel: SmartMarriagePaymentMethod | null,
   step: PaymentDialogStep,
+  message?: string,
 ): PaymentDialogAction {
   if (channel === "local_agent" && step === "select") return { type: "go-to-step", step: "agent-details" };
   if (step === "agent-details") return { type: "go-to-step", step: "agent-code" };
-  return { type: "submit", chatLink: channel ? getChatLink(channel) : null };
+  return { type: "submit", chatLink: channel ? getChatLink(channel, message) : null };
 }

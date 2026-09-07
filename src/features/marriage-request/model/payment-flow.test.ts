@@ -27,8 +27,21 @@ describe("getChatLink", () => {
     expect(getChatLink("telegram")).toBe(TELEGRAM_LINK);
   });
 
+  it("carries the request summary into the chat's composer", () => {
+    expect(getChatLink("whatsapp", "طلب زواج\nالاسم: أحمد")).toBe(
+      `${WHATSAPP_LINK}?text=${encodeURIComponent("طلب زواج\nالاسم: أحمد")}`,
+    );
+    expect(getChatLink("telegram", "hello there")).toBe(`${TELEGRAM_LINK}?text=hello%20there`);
+  });
+
+  it("leaves the bare link when there is no message to carry", () => {
+    expect(getChatLink("whatsapp", "")).toBe(WHATSAPP_LINK);
+    expect(getChatLink("whatsapp", "   ")).toBe(WHATSAPP_LINK);
+  });
+
   it("opens nothing for a local agent", () => {
     expect(getChatLink("local_agent")).toBeNull();
+    expect(getChatLink("local_agent", "a summary")).toBeNull();
   });
 });
 
@@ -85,6 +98,18 @@ describe("getPaymentDialogAction", () => {
     expect(getPaymentDialogAction("telegram", "select")).toEqual({
       type: "submit",
       chatLink: TELEGRAM_LINK,
+    });
+  });
+
+  it("hands the request summary to the chat it opens", () => {
+    expect(getPaymentDialogAction("whatsapp", "select", "summary")).toEqual({
+      type: "submit",
+      chatLink: `${WHATSAPP_LINK}?text=summary`,
+    });
+    // The agent is contacted directly, so the summary opens no chat for them.
+    expect(getPaymentDialogAction("local_agent", "agent-code", "summary")).toEqual({
+      type: "submit",
+      chatLink: null,
     });
   });
 

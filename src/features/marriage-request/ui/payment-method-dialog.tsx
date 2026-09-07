@@ -20,7 +20,7 @@ import {
 
 export type { SmartMarriagePaymentMethod };
 
-export function PaymentMethodDialog({ open, onOpenChange, locale, countryCode, method, onMethodChange, agentCode, onAgentCodeChange, submitting, error, onContinue }: {
+export function PaymentMethodDialog({ open, onOpenChange, locale, countryCode, method, onMethodChange, agentCode, onAgentCodeChange, chatMessage, submitting, error, onContinue }: {
   open: boolean;
   onOpenChange: (open: boolean) => void;
   locale: string;
@@ -29,6 +29,8 @@ export function PaymentMethodDialog({ open, onOpenChange, locale, countryCode, m
   onMethodChange: (method: SmartMarriagePaymentMethod, agentId?: number) => void;
   agentCode: string;
   onAgentCodeChange: (value: string) => void;
+  /** The request summary the WhatsApp/Telegram chat opens pre-filled with. */
+  chatMessage: string;
   submitting: boolean;
   error: string | null;
   onContinue: () => void;
@@ -87,7 +89,7 @@ export function PaymentMethodDialog({ open, onOpenChange, locale, countryCode, m
   }, [open, checkingAgent, agentError, contactMethod, resolvedAgent?.id]);
 
   function next() {
-    const action = getPaymentDialogAction(method, step);
+    const action = getPaymentDialogAction(method, step, chatMessage);
     if (action.type === "go-to-step") return setStep(action.step);
     // The chat opens straight out of this click and `onContinue` sends the
     // request alongside it, so the two leave together — and the tab stays

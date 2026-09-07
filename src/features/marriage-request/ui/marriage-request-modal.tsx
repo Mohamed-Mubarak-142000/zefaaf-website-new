@@ -12,6 +12,7 @@ import { useMarriageRequestForm } from "../model/use-marriage-request-form";
 import { useMarriageLookups } from "../model/use-marriage-lookups";
 import { createSmartMarriage } from "@/shared/api";
 import { detectCountryFromDevice, detectLocationFromCoordinates } from "@/shared/lib/detect-country";
+import { toInternationalPhone } from "@/shared/lib/phone";
 import { StepFinancialLifestyle } from "./step-financial-lifestyle";
 import { StepPartnerSpecifications } from "./step-partner-specifications";
 import { StepPersonalInfo } from "./step-personal-info";
@@ -22,6 +23,7 @@ import {
   toPaymentMethod,
   type SmartMarriagePaymentMethod,
 } from "../model/payment-flow";
+import { buildMarriageRequestMessage } from "../model/request-summary";
 import { PaymentMethodDialog } from "./payment-method-dialog";
 
 export interface MarriageRequestModalProps {
@@ -69,6 +71,19 @@ function MarriageRequestWizard({ onSubmitted }: { onSubmitted: () => void }) {
   const [detectedRegion, setDetectedRegion] = React.useState<string | null>(null);
   const [coordinates, setCoordinates] = React.useState<{ latitude: number; longitude: number } | null>(null);
   const lookups = useMarriageLookups(data.country, data.applicant);
+
+  const selectedCountry = lookups.countryDetails.find((country) => String(country.id) === data.country);
+  const internationalPhone = toInternationalPhone(data.phoneNumber, selectedCountry?.dialingCode);
+  // The whole request as one message, ready for the chat the payment dialog
+  // opens on submit. Built here rather than inside that dialog so it sees the
+  // wizard's data and the same lookups the fields were filled from.
+  const chatMessage = buildMarriageRequestMessage({
+    data,
+    options: lookups,
+    channel: paymentMethod,
+    phone: ["email", "telegram"].includes(data.contactMethod) ? "" : internationalPhone,
+    agentCode,
+  });
 
   React.useEffect(() => {
     if (!navigator.geolocation) {
@@ -230,11 +245,6 @@ function MarriageRequestWizard({ onSubmitted }: { onSubmitted: () => void }) {
     try {
       const gender = data.applicant === "male" ? "male" : "female";
       const communicationMethod = data.contactMethod === "whatsapp" ? "phone" : data.contactMethod;
-      const selectedCountry = lookups.countryDetails.find((country) => String(country.id) === data.country);
-      const localPhone = data.phoneNumber.trim();
-      const internationalPhone = localPhone.startsWith("+") || !selectedCountry?.dialingCode
-        ? localPhone
-        : `+${selectedCountry.dialingCode}${localPhone.replace(/^0+/, "")}`;
       const payload: Record<string, unknown> = {
         full_name: data.fullName.trim(), email: data.email.trim(),
         communication_method: communicationMethod,
@@ -339,7 +349,7 @@ function MarriageRequestWizard({ onSubmitted }: { onSubmitted: () => void }) {
           if (!submitting) setPaymentDialogOpen(nextOpen);
         }}
         locale={locale}
-        countryCode={lookups.countryDetails.find((country) => String(country.id) === data.country)?.isoCode ?? ""}
+        countryCode={selectedCountry?.isoCode ?? ""}
         method={paymentMethod}
         onMethodChange={(method, selectedAgentId) => {
           setPaymentMethod(method);
@@ -348,6 +358,7 @@ function MarriageRequestWizard({ onSubmitted }: { onSubmitted: () => void }) {
         }}
         agentCode={agentCode}
         onAgentCodeChange={setAgentCode}
+        chatMessage={chatMessage}
         submitting={submitting}
         error={paymentError}
         onContinue={handlePaymentContinue}
