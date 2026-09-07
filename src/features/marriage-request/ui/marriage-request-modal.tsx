@@ -3,7 +3,6 @@
 import * as React from "react";
 import axios from "axios";
 import { useLocale, useTranslations } from "next-intl";
-import { flushSync } from "react-dom";
 import { Loader2 } from "lucide-react";
 
 import { Button } from "@/shared/ui/button";
@@ -17,22 +16,17 @@ import { StepFinancialLifestyle } from "./step-financial-lifestyle";
 import { StepPartnerSpecifications } from "./step-partner-specifications";
 import { StepPersonalInfo } from "./step-personal-info";
 import { MarriageRequestStepper } from "./stepper";
-import { PaymentMethodDialog, type SmartMarriagePaymentMethod } from "./payment-method-dialog";
+import {
+  getAgentPaymentFields,
+  isMissingAgentDetails,
+  toPaymentMethod,
+  type SmartMarriagePaymentMethod,
+} from "../model/payment-flow";
+import { PaymentMethodDialog } from "./payment-method-dialog";
 
 export interface MarriageRequestModalProps {
   open: boolean;
   onOpenChange: (open: boolean) => void;
-}
-
-function getPaymentRedirectUrl(response: unknown): string | null {
-  if (!response || typeof response !== "object") return null;
-  const root = response as Record<string, unknown>;
-  const nested = root.data && typeof root.data === "object" ? root.data as Record<string, unknown> : null;
-  for (const key of ["approval_url", "approval_link", "approve_url", "paypal_url", "paypal_approval_url", "checkout_url", "payment_url", "redirect_url", "url"]) {
-    const value = nested?.[key] ?? root[key];
-    if (typeof value === "string" && /^https?:\/\//i.test(value)) return value;
-  }
-  return null;
 }
 
 export function MarriageRequestModal({ open, onOpenChange }: MarriageRequestModalProps) {
@@ -227,7 +221,7 @@ function MarriageRequestWizard({ onSubmitted }: { onSubmitted: () => void }) {
 
   async function handlePaymentContinue() {
     if (!paymentMethod) return;
-    if (paymentMethod === "local_agent" && (!agentId || !agentCode.trim())) {
+    if (isMissingAgentDetails(paymentMethod, agentId, agentCode)) {
       setPaymentError(locale.startsWith("ar") ? "يرجى إدخال رقم الوكيل وكوده." : "Enter the agent ID and code.");
       return;
     }
@@ -253,7 +247,7 @@ function MarriageRequestWizard({ onSubmitted }: { onSubmitted: () => void }) {
         religious_status: data.religiousLevel, education_level: data.education,
         job_grade: data.jobGrade, personality_traits: data.personalTraits,
         partner_traits: data.partnerTraits,
-        payment_method: paymentMethod,
+        payment_method: toPaymentMethod(paymentMethod),
         pref_min_age: Number(data.minimumAge), pref_max_age: Number(data.maximumAge),
         pref_country_ids: data.partnersCountry.map(Number),
         pref_nationality_ids: data.preferredNationalities.map(Number),
@@ -267,15 +261,7 @@ function MarriageRequestWizard({ onSubmitted }: { onSubmitted: () => void }) {
         payload.latitude = coordinates.latitude;
         payload.longitude = coordinates.longitude;
       }
-      if (paymentMethod === "local_agent") {
-        payload.local_agent_id = agentId;
-        payload.local_agent_code = agentCode.trim();
-      } else {
-        const successUrl = new URL(`/${locale}/smart-marriage/success`, window.location.origin);
-        const cancelUrl = new URL(`/${locale}/smart-marriage/cancel`, window.location.origin);
-        payload.success_url = successUrl.toString();
-        payload.cancel_url = cancelUrl.toString();
-      }
+      Object.assign(payload, getAgentPaymentFields(paymentMethod, agentId, agentCode));
       if (gender === "male") {
         const optionalMaleFields: Record<string, unknown> = {
           dowry: data.dowry,
@@ -300,16 +286,9 @@ function MarriageRequestWizard({ onSubmitted }: { onSubmitted: () => void }) {
       if (response?.success === false) {
         throw new Error(response.message ?? response.error ?? "تعذر إرسال الطلب. حاول مرة أخرى.");
       }
-      if (paymentMethod === "paypal") {
-        const redirectUrl = getPaymentRedirectUrl(response);
-        if (!redirectUrl) throw new Error(locale.startsWith("ar") ? "لم يصل رابط PayPal من الخادم." : "The PayPal URL was not returned.");
-        // Close and unmount the form before leaving, then replace this history
-        // entry so Back cannot restore the completed form (and its private data)
-        // from the browser's back/forward cache.
-        flushSync(() => onSubmitted());
-        window.location.replace(redirectUrl);
-        return;
-      }
+      // The WhatsApp/Telegram tab is already open — the dialog opens it inside
+      // the click that calls this, so the chat and the request go out
+      // together rather than the tab waiting on the response.
       setPaymentDialogOpen(false);
       onSubmitted();
     } catch (error) {

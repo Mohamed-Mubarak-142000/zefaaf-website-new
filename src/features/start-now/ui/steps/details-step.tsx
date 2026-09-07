@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { useLocale } from "next-intl";
 
-import { COUNTRIES, countryFlagEmoji } from "@/shared/config";
+import { countryFlagEmoji } from "@/shared/config";
 import type { Country } from "@/shared/api";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/shared/ui/select";
 
@@ -33,9 +33,12 @@ export function DetailsStep({
   countries?: Country[];
 }) {
   const locale = useLocale();
-  const rawCountryOptions: CountryOption[] = countries?.length
-    ? countries.map((country) => ({ iso2: country.isoCode, name: country.name, dialCode: country.dialingCode, flagUrl: country.flagUrl }))
-    : COUNTRIES.map((country) => ({ ...country, flagUrl: undefined }));
+  const rawCountryOptions: CountryOption[] = (countries ?? []).map((country) => ({
+    iso2: country.isoCode,
+    name: country.name,
+    dialCode: country.dialingCode,
+    flagUrl: country.flagUrl,
+  }));
   const countryOptions = Array.from(
     new Map(
       rawCountryOptions

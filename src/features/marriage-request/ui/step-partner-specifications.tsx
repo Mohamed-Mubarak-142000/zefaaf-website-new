@@ -2,7 +2,6 @@
 
 import { useTranslations } from "next-intl";
 
-import { COUNTRIES, EDUCATION_LEVELS, JOB_GRADES, MARITAL_STATUSES, NATIONALITIES, RELIGIOUS_LEVELS } from "../model/options";
 import type { MarriageRequestFormData, SetMarriageRequestField } from "../model/types";
 import type { MarriageLookups } from "../model/use-marriage-lookups";
 import { MultiSelectField, TextField } from "./form-fields";
@@ -33,7 +32,7 @@ export function StepPartnerSpecifications({
           label={t("step3.preferredNationalities")}
           values={data.preferredNationalities}
           onChange={(values) => setField("preferredNationalities", values)}
-          options={lookups.nationalities.length ? lookups.nationalities : NATIONALITIES}
+          options={lookups.nationalities}
           required
         />
         <MultiSelectField
@@ -41,7 +40,7 @@ export function StepPartnerSpecifications({
           label={t("step3.partnersCountry")}
           values={data.partnersCountry}
           onChange={(values) => setField("partnersCountry", values)}
-          options={lookups.countries.length ? lookups.countries : COUNTRIES}
+          options={lookups.countries}
           required
         />
       </div>
@@ -52,14 +51,14 @@ export function StepPartnerSpecifications({
           label={t("step3.preferredMaritalStatuses")}
           values={data.preferredMaritalStatuses}
           onChange={(values) => setField("preferredMaritalStatuses", values)}
-          options={lookups.partnerMaritalStatuses.length ? lookups.partnerMaritalStatuses : MARITAL_STATUSES}
+          options={lookups.partnerMaritalStatuses}
         />
         <MultiSelectField
           id="mr-pref-religious"
           label={t("step3.preferredReligiousStatuses")}
           values={data.preferredReligiousStatuses}
           onChange={(values) => setField("preferredReligiousStatuses", values)}
-          options={lookups.partnerReligiousStatuses.length ? lookups.partnerReligiousStatuses : RELIGIOUS_LEVELS}
+          options={lookups.partnerReligiousStatuses}
         />
       </div>
 
@@ -69,7 +68,7 @@ export function StepPartnerSpecifications({
           label={t("step3.preferredEducationLevels")}
           values={data.preferredEducationLevels}
           onChange={(values) => setField("preferredEducationLevels", values)}
-          options={lookups.partnerEducationLevels.length ? lookups.partnerEducationLevels : EDUCATION_LEVELS}
+          options={lookups.partnerEducationLevels}
           required={data.applicant !== "male"}
         />
         <MultiSelectField
@@ -77,7 +76,7 @@ export function StepPartnerSpecifications({
           label={t("step3.preferredJobGrades")}
           values={data.preferredJobGrades}
           onChange={(values) => setField("preferredJobGrades", values)}
-          options={lookups.partnerJobGrades.length ? lookups.partnerJobGrades : JOB_GRADES}
+          options={lookups.partnerJobGrades}
         />
       </div>
     </div>

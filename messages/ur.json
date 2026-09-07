@@ -42,6 +42,7 @@
       "zefaafEvents": "زفاف کی تقریبات",
       "marriageForm": "آپ کا شادی فارم",
       "bosniaTour": "بوسنیا شادی ٹور",
+      "travels": "سفر",
       "meetingInCountry": "آپ کے ملک میں ملاقات"
     }
   },
@@ -485,7 +486,7 @@
     }
   },
   "marriageRequest": {
-    "modalTitle": "مقام کی معلومات",
+    "modalTitle": "شادی فارم",
     "close": "بند کریں",
     "actions": {
       "back": "پیچھے",

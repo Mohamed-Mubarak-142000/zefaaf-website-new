@@ -2,16 +2,23 @@
 
 import Image from "next/image";
 import * as React from "react";
-import { Loader2 } from "lucide-react";
+import { Loader2, Send } from "lucide-react";
 
 import { getLocalAgent, type LocalAgent } from "@/shared/api";
+import { Alert } from "@/shared/ui/alert";
 import { cn } from "@/shared/lib/utils";
+import { resolveContactMethod } from "@/shared/lib/whatsapp-contact";
 import { Button } from "@/shared/ui/button";
 import { Dialog, DialogContent, DialogFooter, DialogHeader, DialogTitle } from "@/shared/ui/dialog";
 import { Input } from "@/shared/ui/input";
 
-export type SmartMarriagePaymentMethod = "local_agent" | "paypal";
-type AgentStep = "select" | "agent-details" | "agent-code";
+import {
+  getPaymentDialogAction,
+  type PaymentDialogStep,
+  type SmartMarriagePaymentMethod,
+} from "../model/payment-flow";
+
+export type { SmartMarriagePaymentMethod };
 
 export function PaymentMethodDialog({ open, onOpenChange, locale, countryCode, method, onMethodChange, agentCode, onAgentCodeChange, submitting, error, onContinue }: {
   open: boolean;
@@ -29,11 +36,18 @@ export function PaymentMethodDialog({ open, onOpenChange, locale, countryCode, m
   const isArabic = locale.startsWith("ar");
   const [agent, setAgent] = React.useState<LocalAgent | null>(null);
   const [agentCountryCode, setAgentCountryCode] = React.useState("");
-  const [step, setStep] = React.useState<AgentStep>("select");
+  // Holds `${countryCode}:${retryKey}` for whichever attempt last failed, so
+  // a country change or a retry click naturally invalidates a stale error
+  // just by changing what this is compared against below — no need to
+  // reset it imperatively (which would run afoul of react-hooks/set-state-in-effect).
+  const [failedAttempt, setFailedAttempt] = React.useState<string | null>(null);
+  const [retryKey, setRetryKey] = React.useState(0);
+  const [step, setStep] = React.useState<PaymentDialogStep>("select");
 
   React.useEffect(() => {
     if (!open || !countryCode) return;
     let active = true;
+    const attempt = `${countryCode}:${retryKey}`;
     void getLocalAgent(countryCode)
       .then((found) => {
         if (!active) return;
@@ -41,23 +55,45 @@ export function PaymentMethodDialog({ open, onOpenChange, locale, countryCode, m
         setAgentCountryCode(countryCode);
       })
       .catch(() => {
+        // A failed lookup is NOT the same as "no local agent for this
+        // country" — silently treating it that way used to route the user
+        // to WhatsApp/Telegram as if that were a real business decision.
         if (!active) return;
-        setAgent(null);
-        setAgentCountryCode(countryCode);
+        setFailedAttempt(attempt);
       });
     return () => { active = false; };
-  }, [countryCode, open]);
+  }, [countryCode, open, retryKey]);
+
+  const agentError = failedAttempt === `${countryCode}:${retryKey}`;
 
   const resolvedAgent = agentCountryCode === countryCode ? agent : null;
-  const checkingAgent = Boolean(open && countryCode && agentCountryCode !== countryCode);
+  const checkingAgent = Boolean(open && countryCode && agentCountryCode !== countryCode && !agentError);
+  // Same precedence VIP uses for its single auto-picked row: a resolved
+  // local agent wins, otherwise WhatsApp/Telegram is chosen by country.
+  const resolved = resolveContactMethod(Boolean(resolvedAgent), countryCode);
+  const contactMethod: SmartMarriagePaymentMethod = resolved === "agent" ? "local_agent" : resolved;
 
-  function choose(selected: SmartMarriagePaymentMethod) {
-    onMethodChange(selected, selected === "local_agent" ? resolvedAgent?.id : undefined);
-  }
+  // There is only ever one method now (like VIP, nothing to pick between),
+  // so it's reported to the parent as soon as it's resolved instead of
+  // waiting for a click. The ref sidesteps onMethodChange's identity
+  // changing every parent render, which would otherwise refire this.
+  const onMethodChangeRef = React.useRef(onMethodChange);
+  React.useEffect(() => {
+    onMethodChangeRef.current = onMethodChange;
+  });
+  React.useEffect(() => {
+    if (!open || checkingAgent || agentError) return;
+    onMethodChangeRef.current(contactMethod, contactMethod === "local_agent" ? resolvedAgent?.id : undefined);
+  }, [open, checkingAgent, agentError, contactMethod, resolvedAgent?.id]);
 
   function next() {
-    if (method === "local_agent" && step === "select") return setStep("agent-details");
-    if (step === "agent-details") return setStep("agent-code");
+    const action = getPaymentDialogAction(method, step);
+    if (action.type === "go-to-step") return setStep(action.step);
+    // The chat opens straight out of this click and `onContinue` sends the
+    // request alongside it, so the two leave together — and the tab stays
+    // inside the user gesture, which is what keeps the browser from blocking
+    // it as a popup (awaiting the request first would not).
+    if (action.chatLink) window.open(action.chatLink, "_blank", "noopener,noreferrer");
     onContinue();
   }
 
@@ -65,7 +101,7 @@ export function PaymentMethodDialog({ open, onOpenChange, locale, countryCode, m
     ? (isArabic ? "بيانات الوكيل" : "Agent details")
     : step === "agent-code"
       ? (isArabic ? "كود الوكيل" : "Agent code")
-      : (isArabic ? "اختر طريقة الدفع" : "Choose payment method");
+      : (isArabic ? "طريقة الدفع" : "Payment method");
 
   return (
     <Dialog open={open} onOpenChange={(nextOpen) => {
@@ -85,10 +121,26 @@ export function PaymentMethodDialog({ open, onOpenChange, locale, countryCode, m
               <Loader2 className="size-6 animate-spin" />
               <span>{isArabic ? "جارٍ التحقق من الوكيل..." : "Checking local agent..."}</span>
             </div>
+          ) : agentError && step === "select" ? (
+            <div className="flex flex-col gap-3">
+              <Alert>{isArabic ? "تعذر التحقق من الوكيل المحلي لهذه الدولة." : "Could not check for a local agent in this country."}</Alert>
+              <Button type="button" variant="outline" onClick={() => setRetryKey((key) => key + 1)} className="font-alexandria">
+                {isArabic ? "إعادة المحاولة" : "Retry"}
+              </Button>
+            </div>
           ) : step === "select" ? (
-            <div className={cn("grid grid-cols-1 gap-4", resolvedAgent && "sm:grid-cols-2")}>
-              {resolvedAgent && <PaymentChoice active={method === "local_agent"} icon="/assets/agent.svg" label={isArabic ? "الدفع عن طريق وكيل" : "Local agent"} onClick={() => choose("local_agent")} />}
-              <PaymentChoice active={method === "paypal"} icon="/assets/paypal.svg" label="PayPal" onClick={() => choose("paypal")} />
+            <div className="flex flex-col gap-3">
+              <PaymentChoice
+                active
+                icon={contactMethod === "local_agent"
+                  ? <Image src="/assets/agent.svg" alt="" width={39} height={39} className="size-[39px] shrink-0 object-contain" />
+                  : contactMethod === "telegram"
+                    ? <Send className="size-[39px] shrink-0 text-[#229ED9]" />
+                    : <Image src="/icons/start-now/whatsapp-payment.svg" alt="" width={39} height={39} className="size-[39px] shrink-0 object-contain" />}
+                label={contactMethod === "local_agent"
+                  ? (isArabic ? "الدفع عن طريق وكيل" : "Local agent")
+                  : contactMethod === "telegram" ? "Telegram" : (isArabic ? "واتساب" : "WhatsApp")}
+              />
             </div>
           ) : step === "agent-details" && resolvedAgent ? (
             <div className="rounded-2xl border border-border bg-white p-4 text-start">
@@ -117,9 +169,27 @@ export function PaymentMethodDialog({ open, onOpenChange, locale, countryCode, m
   );
 }
 
-function PaymentChoice({ active, icon, label, onClick }: { active: boolean; icon: string; label: string; onClick: () => void }) {
-  return <button type="button" onClick={onClick} className={cn("flex flex-col items-center gap-2 rounded-2xl border bg-white p-6 text-center transition-colors", active ? "border-brand bg-brand/5" : "border-border")}>
-    <Image src={icon} alt="" width={58} height={58} className="size-14 object-contain" />
-    <span className="font-alexandria font-semibold text-foreground">{label}</span>
-  </button>;
+function PaymentChoice({ active, icon, label }: { active: boolean; icon: React.ReactNode; label: string }) {
+  return (
+    <div
+      className={cn(
+        "flex w-full items-center justify-between rounded-xl border p-3",
+        active ? "border-brand" : "border-[#d9d9d9]"
+      )}
+    >
+      <div className="flex items-center gap-3">
+        {icon}
+        <span className="font-alexandria text-lg text-[#757575]">{label}</span>
+      </div>
+      <span
+        aria-hidden
+        className={cn(
+          "flex size-6 shrink-0 items-center justify-center rounded-full border-2",
+          active ? "border-brand" : "border-[#d9d9d9]"
+        )}
+      >
+        {active && <span className="size-3 rounded-full bg-brand" />}
+      </span>
+    </div>
+  );
 }

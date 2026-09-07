@@ -3,11 +3,12 @@
 import { useLocale, useTranslations } from "next-intl";
 
 import { cn } from "@/shared/lib/utils";
+import { Alert } from "@/shared/ui/alert";
 import { Label } from "@/shared/ui/label";
 import { RadioGroup, RadioGroupItem } from "@/shared/ui/radio-group";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/shared/ui/select";
 
-import { CONTACT_METHODS, COUNTRIES, MARRIAGE_REQUIREMENT_OPTIONS, MARRIAGE_TYPES, NATIONALITIES } from "../model/options";
+import { CONTACT_METHODS } from "../model/options";
 import type { MarriageRequestFormData, SetMarriageRequestField } from "../model/types";
 import type { MarriageLookups } from "../model/use-marriage-lookups";
 import { MultiSelectField, PhoneField, SelectField, TextField } from "./form-fields";
@@ -125,13 +126,15 @@ export function StepPersonalInfo({
         />
       </div>
 
+      {lookups.lookupsError && <Alert>{lookups.lookupsError}</Alert>}
+
       <div className={ROW_CLASS}>
         <SelectField
           id="mr-nationality"
           label={t("step1.nationality")}
           value={data.nationality}
           onChange={(v) => setField("nationality", v)}
-          options={lookups.nationalities.length ? lookups.nationalities : NATIONALITIES}
+          options={lookups.nationalities}
           required
         />
         <SelectField
@@ -139,7 +142,7 @@ export function StepPersonalInfo({
           label={t("step1.country")}
           value={data.country}
           onChange={(v) => setField("country", v)}
-          options={lookups.countries.length ? lookups.countries : COUNTRIES}
+          options={lookups.countries}
           required
         />
       </div>
@@ -174,6 +177,7 @@ export function StepPersonalInfo({
           required
         />
       </div>
+      {lookups.governoratesError && <Alert>{lookups.governoratesError}</Alert>}
 
       <div className={ROW_CLASS}>
         <SelectField
@@ -181,7 +185,7 @@ export function StepPersonalInfo({
           label={t("step1.marriageType")}
           value={data.marriageType}
           onChange={(v) => setField("marriageType", v)}
-          options={lookups.marriageTypes.length ? lookups.marriageTypes : MARRIAGE_TYPES}
+          options={lookups.marriageTypes}
           required
         />
         <MultiSelectField
@@ -189,7 +193,7 @@ export function StepPersonalInfo({
           label={t("step1.marriageRequirement")}
           values={data.marriageRequirement}
           onChange={(values) => setField("marriageRequirement", values)}
-          options={lookups.marriageRequirements.length ? lookups.marriageRequirements : MARRIAGE_REQUIREMENT_OPTIONS}
+          options={lookups.marriageRequirements}
           required={data.applicant !== "male"}
         />
       </div>

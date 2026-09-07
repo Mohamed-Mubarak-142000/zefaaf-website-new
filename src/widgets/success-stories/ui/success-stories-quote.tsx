@@ -8,12 +8,9 @@ import { useLocale } from "next-intl";
 import { getSuccessStoriesCopy } from "../model/copy";
 import { REVEAL, VIEWPORT } from "../model/motion";
 import { getSuccessStories } from "@/shared/api";
+import { Alert } from "@/shared/ui/alert";
 
-const QUOTE_IMAGES = [
-  "/images/success-stories/quote-photo.png",
-  "/images/success-stories/gallery-live-better.png",
-  "/images/success-stories/journey-photo-main.png",
-] as const;
+type SuccessStorySlide = { image: string; text: string; names: string[] };
 
 // Same "elements" arrow glyph used by the About-page testimonial carousel
 // (node 121:30363 / 97:16728) — it points down natively, so `rotate-90` aims
@@ -40,42 +37,77 @@ function CarouselArrow({ variant, onClick }: { variant: "prev" | "next"; onClick
 export function SuccessStoriesQuote() {
   const { quote } = getSuccessStoriesCopy(useLocale());
   const [activeImage, setActiveImage] = useState(0);
-  const [remoteStories, setRemoteStories] = useState<Array<{ image: string; text: string; names: string[] }>>([]);
-  const fallbackSlides = QUOTE_IMAGES.map((image) => ({ image, text: quote.quote, names: [...quote.names] }));
-  const slides = remoteStories.length > 1 ? remoteStories : fallbackSlides;
-  const activeSlide = slides[activeImage % slides.length];
+  const [remoteStories, setRemoteStories] = useState<SuccessStorySlide[]>([]);
+  const [status, setStatus] = useState<"loading" | "success" | "error">("loading");
+  const slides = remoteStories;
+  const activeSlide = slides.length ? slides[activeImage % slides.length] : undefined;
 
   useEffect(() => {
-    void getSuccessStories().then((stories) => {
-      const normalized = stories.map((story) => {
-        let image: string | null = null;
-        for (const key of ["image_url", "image", "photo", "imageUrl"]) {
-          if (typeof story[key] === "string") image = story[key];
-        }
-        const text = ["quote", "story", "content", "description", "testimonial"]
-          .map((key) => story[key]).find((value): value is string => typeof value === "string") ?? "";
-        const names = ["couple_name", "name", "names", "user_name", "partner_name"]
-          .flatMap((key) => Array.isArray(story[key]) ? story[key] as string[] : typeof story[key] === "string" ? [story[key] as string] : []);
-        return image && text ? { image, text, names } : null;
-      }).filter((story): story is { image: string; text: string; names: string[] } => Boolean(story));
-      if (normalized.length) setRemoteStories(normalized);
-    }).catch(() => undefined);
+    let cancelled = false;
+    getSuccessStories()
+      .then((stories) => {
+        if (cancelled) return;
+        const normalized = stories.map((story) => {
+          let image: string | null = null;
+          for (const key of ["image_url", "image", "photo", "imageUrl"]) {
+            if (typeof story[key] === "string") image = story[key];
+          }
+          const text = ["quote", "story", "content", "description", "testimonial"]
+            .map((key) => story[key]).find((value): value is string => typeof value === "string") ?? "";
+          const names = ["couple_name", "name", "names", "user_name", "partner_name"]
+            .flatMap((key) => Array.isArray(story[key]) ? story[key] as string[] : typeof story[key] === "string" ? [story[key] as string] : []);
+          return image && text ? { image, text, names } : null;
+        }).filter((story): story is SuccessStorySlide => Boolean(story));
+        setRemoteStories(normalized);
+        setStatus("success");
+      })
+      .catch(() => {
+        if (cancelled) return;
+        setStatus("error");
+      });
+    return () => {
+      cancelled = true;
+    };
   }, []);
 
   const showPrevious = () => {
+    if (!slides.length) return;
     setActiveImage((current) => (current - 1 + slides.length) % slides.length);
   };
 
   const showNext = () => {
+    if (!slides.length) return;
     setActiveImage((current) => (current + 1) % slides.length);
   };
 
   useEffect(() => {
+    if (!slides.length) return;
     const interval = window.setInterval(() => {
       setActiveImage((current) => (current + 1) % slides.length);
     }, 4000);
     return () => window.clearInterval(interval);
   }, [slides.length]);
+
+  if (status === "loading") return null;
+
+  if (status === "error") {
+    return (
+      <section
+        aria-labelledby="success-stories-quote-title"
+        className="mx-auto flex w-full max-w-[1600px] flex-col gap-[clamp(14px,1.9vw,27px)] px-(--space-fluid-container) pt-[clamp(70px,6.5vw,90px)]"
+      >
+        <h2
+          id="success-stories-quote-title"
+          className="font-alexandria text-[clamp(26px,2.5vw,36px)] leading-[1.4] font-semibold text-foreground"
+        >
+          {quote.title}
+        </h2>
+        <Alert>{quote.subtitle}</Alert>
+      </section>
+    );
+  }
+
+  if (!activeSlide) return null;
 
   return (
     <MotionConfig reducedMotion="user">
@@ -107,13 +139,15 @@ export function SuccessStoriesQuote() {
               <p dir="auto" className="font-alexandria text-[clamp(14px,1.25vw,18px)] leading-[1.5] text-foreground">
                 {activeSlide.text}
               </p>
-              <div dir="auto" className="flex flex-wrap items-center gap-[clamp(12px,1.25vw,18px)]">
-                {(activeSlide.names.length ? activeSlide.names : quote.names).map((name) => (
-                  <p key={name} className="font-alexandria text-[clamp(14px,1.25vw,18px)] leading-[1.5] font-bold text-foreground">
-                    {name}
-                  </p>
-                ))}
-              </div>
+              {activeSlide.names.length > 0 && (
+                <div dir="auto" className="flex flex-wrap items-center gap-[clamp(12px,1.25vw,18px)]">
+                  {activeSlide.names.map((name) => (
+                    <p key={name} className="font-alexandria text-[clamp(14px,1.25vw,18px)] leading-[1.5] font-bold text-foreground">
+                      {name}
+                    </p>
+                  ))}
+                </div>
+              )}
             </div>
 
             <div className="flex items-center gap-[clamp(6px,0.63vw,9px)]">

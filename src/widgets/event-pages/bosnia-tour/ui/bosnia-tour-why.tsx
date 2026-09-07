@@ -4,7 +4,10 @@ import { motion, MotionConfig } from "framer-motion";
 import Image from "next/image";
 import { useLocale } from "next-intl";
 
+import type { Trip } from "@/shared/api";
+
 import { getBosniaCopy } from "../model/copy";
+import { getWhyItems, getWhyPhotos } from "../model/trip-content";
 import { REVEAL, REVEAL_STAGGERED, VIEWPORT } from "../model/motion";
 
 // Figma's photo cluster sits on a 506.011×424.887 canvas: a tall card rotated
@@ -21,8 +24,15 @@ function pctH(px: number) {
   return `${(px / CANVAS_H) * 100}%`;
 }
 
-export function BosniaTourWhy() {
+// The listed reasons and both photos come from the trip; only the heading
+// stays the programme's own copy.
+export function BosniaTourWhy({ trip }: { trip?: Trip | null } = {}) {
   const { why } = getBosniaCopy(useLocale());
+  const items = getWhyItems(trip, why.items);
+  const photos = getWhyPhotos(trip);
+  // The banners are the trip's own, so its title describes them better than
+  // copy written for photos of Bosnia that are no longer shown here.
+  const photoAlt = trip?.main_title?.trim();
 
   return (
     <MotionConfig reducedMotion="user">
@@ -45,16 +55,19 @@ export function BosniaTourWhy() {
 
             <div className="mt-[clamp(20px,2vw,29px)] rounded-[12px] bg-muted p-[clamp(16px,2vw,29px)]">
               <ul className="flex flex-col gap-[clamp(14px,1.5vw,22px)]">
-                {why.items.map((item, index) => (
-                  <motion.li key={item.title} custom={index} variants={REVEAL_STAGGERED} className="flex gap-[clamp(10px,1vw,14px)]">
+                {items.map((item, index) => (
+                  <motion.li key={index} custom={index} variants={REVEAL_STAGGERED} className="flex gap-[clamp(10px,1vw,14px)]">
                     <span
                       aria-hidden
                       className="shrink-0 bg-gradient-to-br from-[#ffc643] via-[#f668d1] to-[#8539f7] bg-clip-text font-alexandria text-[clamp(18px,1.7vw,24px)] leading-[1.2] font-extrabold text-transparent opacity-35"
                     >
                       {String(index + 1).padStart(2, "0")}
                     </span>
-                    <p className="font-alexandria text-[clamp(13px,1.1vw,15px)] leading-[1.6] text-foreground">
-                      <span className="font-bold">{item.title}: </span>
+                    {/* Rewaq translates a trip into some of the 33 locales only, so
+                        `dir="auto"` keeps its text readable whichever direction the
+                        page around it runs. */}
+                    <p dir="auto" className="font-alexandria text-[clamp(13px,1.1vw,15px)] leading-[1.6] text-foreground">
+                      {item.title && <span className="font-bold">{item.title}: </span>}
                       {item.description}
                     </p>
                   </motion.li>
@@ -63,6 +76,9 @@ export function BosniaTourWhy() {
             </div>
           </div>
 
+          {/* The cluster is the trip's last two banners. With no banners at all
+              there is nothing to put in the two frames, so it goes. */}
+          {photos.tall && photos.overlay && (
           <motion.div
             variants={REVEAL}
             className="relative mx-auto w-full max-w-[420px] shrink-0"
@@ -79,8 +95,8 @@ export function BosniaTourWhy() {
               }}
             >
               <Image
-                src="/images/bosnia-tour/why-photo-tall.webp"
-                alt={why.photoAlt.tall}
+                src={photos.tall}
+                alt={photoAlt ?? why.photoAlt.tall}
                 fill
                 sizes="(min-width: 1024px) 21vw, 60vw"
                 className="object-cover"
@@ -98,14 +114,15 @@ export function BosniaTourWhy() {
               }}
             >
               <Image
-                src="/images/bosnia-tour/why-photo-small-overlay.webp"
-                alt={why.photoAlt.overlay}
+                src={photos.overlay}
+                alt={photoAlt ?? why.photoAlt.overlay}
                 fill
                 sizes="(min-width: 1024px) 17vw, 48vw"
                 className="object-cover"
               />
             </div>
           </motion.div>
+          )}
         </div>
       </motion.section>
     </MotionConfig>

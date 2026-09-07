@@ -6,6 +6,7 @@ import { useLocale, useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
 
 import { Button } from "@/shared/ui/button";
+import { Alert } from "@/shared/ui/alert";
 import { getDirection, Link, type Locale } from "@/shared/i18n";
 import { getPublicEvents, type PublicEvent } from "@/shared/api";
 
@@ -35,7 +36,17 @@ const WHEEL_VARIANTS: Variants = {
 
 const EVENTS_PER_PAGE = 2;
 
-function mapPublicEvents(items: PublicEvent[], locale: string) {
+type MappedEvent = {
+  date: string;
+  time: string;
+  title: string;
+  location: string;
+  price: string;
+  ulid?: string;
+  image?: string;
+};
+
+function mapPublicEvents(items: PublicEvent[], locale: string): MappedEvent[] {
   return items
     .filter((item) => item.status !== "canceled" && item.status !== "cancelled")
     .map((item) => ({
@@ -87,23 +98,29 @@ function TickerTrack({ phrases, ariaHidden }: { phrases: string[]; ariaHidden?: 
   );
 }
 
-export function UpcomingEvents({ initialEvents = [] }: { initialEvents?: PublicEvent[] }) {
+export function UpcomingEvents({
+  initialEvents = [],
+  initialEventsError = false,
+}: {
+  initialEvents?: PublicEvent[];
+  initialEventsError?: boolean;
+}) {
   const t = useTranslations();
   const locale = useLocale();
   const direction = getDirection(locale as Locale);
-  const fallbackEvents = t.raw("upcomingEvents.events") as {
-    date: string;
-    time: string;
-    title: string;
-    location: string;
-    price: string;
-  }[];
-  const [apiEvents, setApiEvents] = useState<Array<(typeof fallbackEvents)[number] & { ulid?: string; image?: string }>>(() => mapPublicEvents(initialEvents, locale));
+  const isArabic = locale === "ar";
+  const [apiEvents, setApiEvents] = useState<MappedEvent[]>(() => mapPublicEvents(initialEvents, locale));
+  const [hasError, setHasError] = useState(initialEventsError);
   useEffect(() => {
     if (initialEvents.length) return;
-    void getPublicEvents().then((items) => setApiEvents(mapPublicEvents(items, locale))).catch(() => undefined);
+    void getPublicEvents()
+      .then((items) => {
+        setApiEvents(mapPublicEvents(items, locale));
+        setHasError(false);
+      })
+      .catch(() => setHasError(true));
   }, [locale, initialEvents.length]);
-  const events: Array<(typeof fallbackEvents)[number] & { ulid?: string; image?: string }> = apiEvents.length ? apiEvents : fallbackEvents;
+  const events = apiEvents;
   const ticker = t.raw("upcomingEvents.ticker") as string[];
   const [[page, wheelDirection], setPage] = useState([0, 1]);
   const pageCount = Math.ceil(events.length / EVENTS_PER_PAGE);
@@ -113,6 +130,11 @@ export function UpcomingEvents({ initialEvents = [] }: { initialEvents?: PublicE
     if (nextPage === page) return;
     setPage([nextPage, nextPage > page ? 1 : -1]);
   }
+
+  // A successful fetch that legitimately returns zero events is a normal
+  // empty state, not an error — there is nothing fabricated to show, so the
+  // whole (decorative, homepage-only) section just doesn't render.
+  if (!hasError && events.length === 0) return null;
 
   return (
     <MotionConfig reducedMotion="user">
@@ -167,6 +189,13 @@ export function UpcomingEvents({ initialEvents = [] }: { initialEvents?: PublicE
           </motion.div>
 
           <div className="relative w-full overflow-hidden [perspective:1000px] lg:max-w-[680px]">
+            {hasError ? (
+              <Alert>
+                {isArabic
+                  ? "تعذّر تحميل الفعاليات القادمة. حاول تحديث الصفحة لاحقًا."
+                  : "We couldn't load upcoming events. Please try refreshing later."}
+              </Alert>
+            ) : (
             <AnimatePresence initial={false} mode="popLayout" custom={wheelDirection}>
               <motion.div
                 key={page}
@@ -239,6 +268,7 @@ export function UpcomingEvents({ initialEvents = [] }: { initialEvents?: PublicE
                 ))}
               </motion.div>
             </AnimatePresence>
+            )}
           </div>
         </div>
 

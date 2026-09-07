@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
 
 import { Link } from "@/shared/i18n";
+import { Alert } from "@/shared/ui/alert";
 import { Button } from "@/shared/ui/button";
 
 import { getEventsCopy } from "../model/copy";
@@ -33,15 +34,22 @@ type Event = {
   price: string;
 };
 
-export function EventsList({ initialEvents = [] }: { initialEvents?: PublicEvent[] }) {
+export function EventsList({
+  initialEvents = [],
+  initialEventsError = false,
+}: {
+  initialEvents?: PublicEvent[];
+  initialEventsError?: boolean;
+}) {
   const t = useTranslations();
-  const { buyTicketsCta } = getEventsCopy(useLocale());
-  const fallbackEvents = t.raw("upcomingEvents.events") as Event[];
-  const events: Array<Event & { image?: string; ulid?: string }> = initialEvents.length ? initialEvents.map((event) => ({
+  const locale = useLocale();
+  const isArabic = locale === "ar";
+  const { buyTicketsCta } = getEventsCopy(locale);
+  const events: Array<Event & { image?: string; ulid?: string }> = initialEvents.map((event) => ({
     date: event.date ?? "", time: event.start_time?.slice(0, 5) ?? "", title: event.name,
     location: event.location ?? "", price: [event.ticket_price, event.currency].filter(Boolean).join(" "),
     image: event.banner_urls?.[0], ulid: event.ulid,
-  })) : fallbackEvents;
+  }));
 
   return (
     <MotionConfig reducedMotion="user">
@@ -60,6 +68,13 @@ export function EventsList({ initialEvents = [] }: { initialEvents?: PublicEvent
           {t("nav.upcomingEvents")}
         </motion.h2>
 
+        {initialEventsError ? (
+          <Alert className="mt-[clamp(20px,2.6vw,32px)]">
+            {isArabic
+              ? "تعذّر تحميل الفعاليات. حاول تحديث الصفحة لاحقًا."
+              : "We couldn't load events. Please try refreshing later."}
+          </Alert>
+        ) : events.length === 0 ? null : (
         <ul className="mt-[clamp(20px,2.6vw,32px)] grid grid-cols-1 gap-[clamp(16px,2.1vw,32px)] sm:grid-cols-2 xl:grid-cols-3">
           {events.map((event, index) => (
             <motion.li
@@ -115,6 +130,7 @@ export function EventsList({ initialEvents = [] }: { initialEvents?: PublicEvent
             </motion.li>
           ))}
         </ul>
+        )}
       </motion.section>
     </MotionConfig>
   );

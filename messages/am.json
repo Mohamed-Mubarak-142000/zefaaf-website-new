@@ -42,6 +42,7 @@
       "zefaafEvents": "የዘፋፍ ዝግጅቶች",
       "marriageForm": "የጋብቻ ቅጽዎ",
       "bosniaTour": "የቦስኒያ ጋብቻ ጉዞ",
+      "travels": "ጉዞዎች",
       "meetingInCountry": "በሀገርዎ ውስጥ ስብሰባ"
     }
   },
@@ -485,7 +486,7 @@
     }
   },
   "marriageRequest": {
-    "modalTitle": "የአካባቢ መረጃ",
+    "modalTitle": "የጋብቻ ቅጽ",
     "close": "ዝጋ",
     "actions": {
       "back": "ተመለስ",

@@ -42,6 +42,7 @@
       "zefaafEvents": "فعاليات زفاف",
       "marriageForm": "استمارة الزواج الخاصة بك",
       "bosniaTour": "جولة الزواج في البوسنة",
+      "travels": "الرحلات",
       "meetingInCountry": "اللقاء في بلدك"
     }
   },
@@ -485,7 +486,7 @@
     }
   },
   "marriageRequest": {
-    "modalTitle": "معلومات الموقع",
+    "modalTitle": "استمارة الزواج",
     "close": "إغلاق",
     "actions": {
       "back": "رجوع",

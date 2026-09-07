@@ -42,6 +42,7 @@
       "zefaafEvents": "د زفاف غونډې",
       "marriageForm": "ستاسو د واده فورم",
       "bosniaTour": "د بوسنیا د واده سفر",
+      "travels": "سفرونه",
       "meetingInCountry": "ستاسو په هيواد کې لیدنه"
     }
   },
@@ -485,7 +486,7 @@
     }
   },
   "marriageRequest": {
-    "modalTitle": "د ځای معلومات",
+    "modalTitle": "د واده فورم",
     "close": "تړل",
     "actions": {
       "back": "شاته",

@@ -1,14 +1,9 @@
 import Image from "next/image";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
+import { Alert } from "@/shared/ui/alert";
 import { Breadcrumb } from "@/shared/ui/breadcrumb";
 import type { SeoBlog } from "@/shared/api";
-
-type BlogSection = {
-  heading: string;
-  paragraphs: string[];
-  list?: string[];
-};
 
 function NewsletterMark() {
   return (
@@ -27,34 +22,22 @@ function NewsletterMark() {
   );
 }
 
-function BlogSectionBlock({ section }: { section: BlogSection }) {
-  return (
-    <section className="flex flex-col items-start gap-[24px]">
-      <h2 className="font-alexandria text-[clamp(19px,2vw,24px)] leading-[1.4] font-bold text-black-primary">
-        {section.heading}
-      </h2>
-
-      <div className="flex flex-col font-alexandria text-[clamp(12.5px,1vw,13.5px)] leading-[1.6] text-grey-primary">
-        {section.paragraphs.map((paragraph) => (
-          <p key={paragraph}>{paragraph}</p>
-        ))}
-
-        {section.list && (
-          <ul className="list-disc ps-[20.25px]">
-            {section.list.map((item) => (
-              <li key={item}>{item}</li>
-            ))}
-          </ul>
-        )}
-      </div>
-    </section>
-  );
-}
-
-export function BlogArticle({ blog }: { blog?: SeoBlog | null }) {
+export function BlogArticle({ blog, error }: { blog?: SeoBlog | null; error?: boolean }) {
   const t = useTranslations("blogDetail");
-  const leadParagraphs = t.raw("leadParagraphs") as string[];
-  const sections = t.raw("sections") as BlogSection[];
+  const locale = useLocale();
+  const isArabic = locale.startsWith("ar");
+
+  if (!blog) {
+    return (
+      <article className="mx-auto w-full max-w-[1600px] px-(--space-fluid-container) py-(--space-fluid-lg)">
+        <Alert>
+          {error
+            ? (isArabic ? "تعذر تحميل هذا المقال." : "Could not load this article.")
+            : (isArabic ? "هذا المقال غير موجود." : "This article was not found.")}
+        </Alert>
+      </article>
+    );
+  }
 
   return (
     <article className="mx-auto w-full max-w-[1600px] px-(--space-fluid-container) pt-(--space-fluid-lg)">
@@ -68,22 +51,22 @@ export function BlogArticle({ blog }: { blog?: SeoBlog | null }) {
 
       <header className="mt-(--space-fluid-lg) flex flex-col items-start gap-[18px]">
         <span className="rounded-[12px] bg-cta-secondary px-[12px] py-[6px] font-alexandria text-[12px] leading-[1.6] text-white">
-          {blog?.publishedAt ? new Intl.DateTimeFormat(undefined, { dateStyle: "medium" }).format(new Date(blog.publishedAt)) : t("date")}
+          {blog.publishedAt ? new Intl.DateTimeFormat(undefined, { dateStyle: "medium" }).format(new Date(blog.publishedAt)) : t("date")}
         </span>
 
         <h1 className="font-alexandria text-[clamp(24px,4vw,36px)] leading-[1.4] font-semibold text-black-primary">
-          {blog?.title ?? t("title")}
+          {blog.title}
         </h1>
 
         <p className="font-alexandria text-[clamp(14px,1.1vw,16px)] leading-[1.6] text-grey-primary">
-          {blog?.description ?? t("intro")}
+          {blog.description ?? t("intro")}
         </p>
       </header>
 
       <div className="relative mt-(--space-fluid-lg) h-[clamp(220px,26vw,384px)] w-full overflow-hidden rounded-[9px] bg-[#22344c]">
         <Image
-          src={blog?.featuredImage ?? "/images/blog/tourism-guide-bosnia.jpg"}
-          alt={blog?.featuredImageAlt ?? t("banner.imageAlt")}
+          src={blog.featuredImage ?? "/images/blog/tourism-guide-bosnia.jpg"}
+          alt={blog.featuredImageAlt ?? t("banner.imageAlt")}
           fill
           sizes="(min-width: 1600px) 1600px, 100vw"
           className="object-cover object-[75%_30%]"
@@ -98,17 +81,11 @@ export function BlogArticle({ blog }: { blog?: SeoBlog | null }) {
         </div>
       </div>
 
-      <div className="mt-(--space-fluid-xl) flex flex-col gap-[42px] whitespace-pre-wrap font-alexandria text-[clamp(12.5px,1vw,13.5px)] leading-[1.8] text-grey-primary">
-        {(blog?.content ? [blog.content] : leadParagraphs).map((paragraph) => (
-          <p key={paragraph}>{paragraph}</p>
-        ))}
-      </div>
-
-      <div className="mt-(--space-fluid-xl) flex flex-col gap-[clamp(32px,4vw,55px)] pb-(--space-fluid-xl)">
-        {!blog && sections.map((section) => (
-          <BlogSectionBlock key={section.heading} section={section} />
-        ))}
-      </div>
+      {blog.content && (
+        <div className="mt-(--space-fluid-xl) flex flex-col gap-[42px] pb-(--space-fluid-xl) whitespace-pre-wrap font-alexandria text-[clamp(12.5px,1vw,13.5px)] leading-[1.8] text-grey-primary">
+          <p>{blog.content}</p>
+        </div>
+      )}
     </article>
   );
 }

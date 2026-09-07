@@ -8,14 +8,19 @@ import { Dialog, DialogContent, DialogFooter, DialogHeader, DialogTitle } from "
 
 import { getBookSeatCopy } from "../model/copy";
 
-export function BookSeatDialog({ open, onOpenChange, eventUlid }: { open: boolean; onOpenChange: (open: boolean) => void; eventUlid?: string }) {
+export function BookSeatDialog({ open, onOpenChange, eventUlid, tripUlid }: { open: boolean; onOpenChange: (open: boolean) => void; eventUlid?: string; tripUlid?: string }) {
   const locale = useLocale();
   const copy = getBookSeatCopy(locale);
-  const rewaqBaseUrl = process.env.NEXT_PUBLIC_REWAQ_URL ??
-    (process.env.NODE_ENV === "production" ? "https://rewaq.nl" : "https://dev.rewaq.nl");
-  const rewaqUrl = eventUlid
-    ? `${rewaqBaseUrl.replace(/\/$/, "")}/${locale}/events/${encodeURIComponent(eventUlid)}`
-    : rewaqBaseUrl;
+  const rewaqBaseUrl = (process.env.NEXT_PUBLIC_REWAQ_URL ??
+    (process.env.NODE_ENV === "production" ? "https://rewaq.nl" : "https://dev.rewaq.nl")).replace(/\/$/, "");
+  // A trip hands the visitor over to Rewaq's trip details page, an event to
+  // its event page; with neither (the standalone /bosnia-tour page) the CTA
+  // still just opens Rewaq's home.
+  const rewaqUrl = tripUlid
+    ? `${rewaqBaseUrl}/${locale}/travel-details/${encodeURIComponent(tripUlid)}`
+    : eventUlid
+      ? `${rewaqBaseUrl}/${locale}/events/${encodeURIComponent(eventUlid)}`
+      : rewaqBaseUrl;
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
@@ -39,8 +44,6 @@ export function BookSeatDialog({ open, onOpenChange, eventUlid }: { open: boolea
         </div>
 
         <DialogFooter className="justify-end">
-          {/* No live Rewaq destination exists yet — same placeholder
-              convention as the header/footer/VIP CTAs. */}
           <Button asChild className="h-9 rounded-lg px-2.5 font-alexandria text-[10.5px]">
             <a href={rewaqUrl} target="_blank" rel="noopener noreferrer">{copy.cta}</a>
           </Button>

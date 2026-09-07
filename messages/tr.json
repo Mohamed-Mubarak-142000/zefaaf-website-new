@@ -42,6 +42,7 @@
       "zefaafEvents": "Zefaaf Etkinlikleri",
       "marriageForm": "Evlilik Formunuz",
       "bosniaTour": "Bosna Evlilik Turu",
+      "travels": "Seyahatler",
       "meetingInCountry": "Kendi Ülkenizde Buluşma"
     }
   },
@@ -485,7 +486,7 @@
     }
   },
   "marriageRequest": {
-    "modalTitle": "Konum bilgisi",
+    "modalTitle": "Evlilik Formu",
     "close": "Kapat",
     "actions": {
       "back": "Geri",

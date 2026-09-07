@@ -42,6 +42,7 @@
       "zefaafEvents": "Zefaaf-evenementen",
       "marriageForm": "Uw Huwelijksformulier",
       "bosniaTour": "Bosnië Huwelijksreis",
+      "travels": "Reizen",
       "meetingInCountry": "Ontmoeting in uw Land"
     }
   },
@@ -485,7 +486,7 @@
     }
   },
   "marriageRequest": {
-    "modalTitle": "Locatie-informatie",
+    "modalTitle": "Huwelijksformulier",
     "close": "Sluiten",
     "actions": {
       "back": "Terug",

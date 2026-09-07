@@ -42,6 +42,7 @@
       "zefaafEvents": "Zefaaf tadbirlari",
       "marriageForm": "Sizning nikoh formangiz",
       "bosniaTour": "Bosniya nikoh sayohati",
+      "travels": "Sayohatlar",
       "meetingInCountry": "O'z mamlakatingizda uchrashuv"
     }
   },
@@ -485,7 +486,7 @@
     }
   },
   "marriageRequest": {
-    "modalTitle": "Manzil haqida ma'lumot",
+    "modalTitle": "Nikoh formasi",
     "close": "Yopish",
     "actions": {
       "back": "Orqaga",

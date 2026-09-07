@@ -33,7 +33,7 @@ export function BlogCard({ article }: { article: BlogArticle }) {
           <h3 className="font-alexandria text-(length:--text-fluid-xl) leading-[1.4] font-semibold text-foreground">
             {article.title}
           </h3>
-          <p className="font-alexandria text-(length:--text-fluid-nav) leading-[1.6] text-grey-primary">
+          <p className="line-clamp-3 font-alexandria text-(length:--text-fluid-nav) leading-[1.6] text-grey-primary">
             {article.excerpt}
           </p>
           <ViewMoreLink label={t("viewMore")} slug={article.slug} />

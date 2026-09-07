@@ -42,6 +42,7 @@
       "zefaafEvents": "Zefaaf іс-шаралары",
       "marriageForm": "Сіздің неке нысаныңыз",
       "bosniaTour": "Босния неке сапары",
+      "travels": "Сапарлар",
       "meetingInCountry": "Өз еліңізде кездесу"
     }
   },
@@ -485,7 +486,7 @@
     }
   },
   "marriageRequest": {
-    "modalTitle": "Орналасу туралы ақпарат",
+    "modalTitle": "Неке нысаны",
     "close": "Жабу",
     "actions": {
       "back": "Артқа",

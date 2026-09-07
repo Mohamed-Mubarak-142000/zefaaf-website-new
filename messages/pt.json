@@ -42,6 +42,7 @@
       "zefaafEvents": "Eventos Zefaaf",
       "marriageForm": "Seu Formulário de Casamento",
       "bosniaTour": "Viagem de Casamento à Bósnia",
+      "travels": "Viagens",
       "meetingInCountry": "Encontro no seu País"
     }
   },
@@ -485,7 +486,7 @@
     }
   },
   "marriageRequest": {
-    "modalTitle": "Informações de localização",
+    "modalTitle": "Formulário de Casamento",
     "close": "Fechar",
     "actions": {
       "back": "Voltar",

@@ -3,37 +3,32 @@
 import Image from "next/image";
 import { useState } from "react";
 import type { Personality } from "@/shared/api";
+import { Alert } from "@/shared/ui/alert";
 
 type SliderContent = {
   title: string;
   description: string;
-  name: string;
-  followers: string;
-  secondName: string;
-  secondFollowers: string;
+  followersLabel: string;
+  error: string;
 };
 
 type Props = {
   content: SliderContent;
   personalities: Personality[];
   locale: string;
+  hasError: boolean;
 };
 
-export function InfluentialFiguresSlider({ content, personalities, locale }: Props) {
+export function InfluentialFiguresSlider({ content, personalities, locale, hasError }: Props) {
   const [activeSlide, setActiveSlide] = useState(0);
-  const fallbackFigures = [
-    { name: content.name, description: "", followers: content.followers, imageUrl: "/images/image 568.svg" },
-    { name: content.secondName, description: "", followers: content.secondFollowers, imageUrl: "/images/image 568.svg" },
-  ];
-  const followersLabel = content.followers.trim().split(/\s+/).at(-1) ?? "";
-  const figures = personalities.length === 2
-    ? personalities.map((personality) => ({
+  const figures = hasError
+    ? []
+    : personalities.map((personality) => ({
         name: personality.name,
         description: personality.description,
-        followers: `${new Intl.NumberFormat(locale, { notation: "compact", maximumFractionDigits: 1 }).format(personality.followers_count)} ${followersLabel}`,
+        followers: `${new Intl.NumberFormat(locale, { notation: "compact", maximumFractionDigits: 1 }).format(personality.followers_count)} ${content.followersLabel}`,
         imageUrl: personality.image_url || "/images/image 568.svg",
-      }))
-    : fallbackFigures;
+      }));
 
   return (
     <section aria-labelledby="influential-figures-title" className="overflow-x-clip [--figures-top:clamp(110px,10vw,145px)] pt-(--figures-top)">
@@ -65,25 +60,42 @@ export function InfluentialFiguresSlider({ content, personalities, locale }: Pro
         </div>
 
         <div className="relative mx-auto min-h-[355px] w-full max-w-[560px]">
-          <div className={`absolute inset-0 flex flex-nowrap items-center justify-center gap-5 py-[64px] transition-all duration-500 max-sm:gap-3 ${activeSlide === 0 ? "translate-x-0 opacity-100" : "pointer-events-none -translate-x-6 opacity-0 rtl:translate-x-6"}`} aria-hidden={activeSlide !== 0}>
-            <Image src="/images/Ellipse 1630.svg" alt="" width={74} height={74} unoptimized aria-hidden="true" className="absolute start-1/2 top-[-12px] z-20 size-[58px] -translate-x-1/2 rtl:translate-x-1/2" />
+          <div
+            className={`absolute inset-0 flex flex-nowrap items-center justify-center gap-(--figures-gap) py-[64px] transition-all duration-500 [--figures-gap:20px] max-sm:[--figures-gap:12px] ${hasError ? "px-6" : ""} ${activeSlide === 0 ? "translate-x-0 opacity-100" : "pointer-events-none -translate-x-6 opacity-0 rtl:translate-x-6"}`}
+            aria-hidden={activeSlide !== 0}
+          >
+            {hasError ? (
+              <Alert>{content.error}</Alert>
+            ) : figures.length > 0 ? (
+              <>
+                <Image src="/images/Ellipse 1630.svg" alt="" width={74} height={74} unoptimized aria-hidden="true" className="absolute start-1/2 top-[-12px] z-20 size-[58px] -translate-x-1/2 rtl:translate-x-1/2" />
 
-            {figures.map((figure, index) => (
-              <article key={figure.name} className="relative flex h-[278px] min-w-0 basis-[calc((100%_-_20px)/2)] flex-col overflow-hidden rounded-[15px] bg-person-card max-sm:basis-[calc((100%_-_12px)/2)]">
-                <div className="absolute inset-[8px] overflow-hidden rounded-[10px]">
-                  <Image src={figure.imageUrl} alt={figure.name} fill unoptimized sizes="294px" className={index === 1 ? "scale-x-[-1] object-cover" : "object-cover"} />
-                </div>
-                <div aria-hidden="true" className="pointer-events-none absolute inset-x-[8px] bottom-[8px] h-[35%] rounded-b-[10px] bg-person-card" />
-                <Image src="/images/Group-shap78.svg" alt="" width={199} height={141} unoptimized aria-hidden="true" className="pointer-events-none absolute bottom-[-52px] start-[34%] h-[220px] w-[155px] -translate-x-1/2 rotate-[31.52deg] opacity-70 rtl:translate-x-1/2" />
-                <div className="relative z-10 mt-auto mb-[8px] flex h-[97px] flex-col items-center justify-center px-4 py-2 text-center font-cairo text-person-card-foreground">
-                  <h3 className="text-[19px] leading-[1.4] font-bold tracking-normal max-sm:text-[16px]">{figure.name}</h3>
-                  {figure.description && <p className="line-clamp-2 text-[12px] leading-[1.4] font-medium">{figure.description}</p>}
-                  <p className="text-[16px] leading-[1.4] font-medium tracking-normal max-sm:text-[14px]">{figure.followers}</p>
-                </div>
-              </article>
-            ))}
+                {figures.map((figure, index) => (
+                  <article
+                    key={figure.name}
+                    style={{
+                      flexBasis: figures.length > 1
+                        ? `calc((100% - var(--figures-gap) * ${figures.length - 1}) / ${figures.length})`
+                        : "100%",
+                    }}
+                    className="relative flex h-[278px] min-w-0 flex-col overflow-hidden rounded-[15px] bg-person-card"
+                  >
+                    <div className="absolute inset-[8px] overflow-hidden rounded-[10px]">
+                      <Image src={figure.imageUrl} alt={figure.name} fill unoptimized sizes="294px" className={index % 2 === 1 ? "scale-x-[-1] object-cover" : "object-cover"} />
+                    </div>
+                    <div aria-hidden="true" className="pointer-events-none absolute inset-x-[8px] bottom-[8px] h-[35%] rounded-b-[10px] bg-person-card" />
+                    <Image src="/images/Group-shap78.svg" alt="" width={199} height={141} unoptimized aria-hidden="true" className="pointer-events-none absolute bottom-[-52px] start-[34%] h-[220px] w-[155px] -translate-x-1/2 rotate-[31.52deg] opacity-70 rtl:translate-x-1/2" />
+                    <div className="relative z-10 mt-auto mb-[8px] flex h-[97px] flex-col items-center justify-center px-4 py-2 text-center font-cairo text-person-card-foreground">
+                      <h3 className="text-[19px] leading-[1.4] font-bold tracking-normal max-sm:text-[16px]">{figure.name}</h3>
+                      {figure.description && <p className="line-clamp-2 text-[12px] leading-[1.4] font-medium">{figure.description}</p>}
+                      <p className="text-[16px] leading-[1.4] font-medium tracking-normal max-sm:text-[14px]">{figure.followers}</p>
+                    </div>
+                  </article>
+                ))}
 
-            <Image src="/images/Ellipse 16302.svg" alt="" width={53} height={53} unoptimized aria-hidden="true" className="absolute end-0 bottom-[4px] size-[46px]" />
+                <Image src="/images/Ellipse 16302.svg" alt="" width={53} height={53} unoptimized aria-hidden="true" className="absolute end-0 bottom-[4px] size-[46px]" />
+              </>
+            ) : null}
           </div>
 
           <div className={`absolute inset-0 flex items-center py-[24px] transition-all duration-500 ${activeSlide === 1 ? "translate-x-0 opacity-100" : "pointer-events-none translate-x-6 opacity-0 rtl:-translate-x-6"}`} aria-hidden={activeSlide !== 1}>

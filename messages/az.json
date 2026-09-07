@@ -42,6 +42,7 @@
       "zefaafEvents": "Zefaaf tədbirləri",
       "marriageForm": "Nikah formanız",
       "bosniaTour": "Bosniya Nikah Turu",
+      "travels": "Səyahətlər",
       "meetingInCountry": "Öz ölkənizdə görüş"
     }
   },
@@ -485,7 +486,7 @@
     }
   },
   "marriageRequest": {
-    "modalTitle": "Məkan məlumatı",
+    "modalTitle": "Nikah forması",
     "close": "Bağla",
     "actions": {
       "back": "Geri",

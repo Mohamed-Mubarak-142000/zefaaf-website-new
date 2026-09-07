@@ -42,6 +42,7 @@
       "zefaafEvents": "Zefaaf-evenemang",
       "marriageForm": "Ditt äktenskapsformulär",
       "bosniaTour": "Bosnien äktenskapsresa",
+      "travels": "Resor",
       "meetingInCountry": "Möte i ditt land"
     }
   },
@@ -485,7 +486,7 @@
     }
   },
   "marriageRequest": {
-    "modalTitle": "Platsinformation",
+    "modalTitle": "Äktenskapsformulär",
     "close": "Stäng",
     "actions": {
       "back": "Tillbaka",

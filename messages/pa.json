@@ -42,6 +42,7 @@
       "zefaafEvents": "ਜ਼ੇਫ਼ਾਫ਼ ਸਮਾਗਮ",
       "marriageForm": "ਤੁਹਾਡਾ ਵਿਆਹ ਫਾਰਮ",
       "bosniaTour": "ਬੋਸਨੀਆ ਵਿਆਹ ਦੌਰਾ",
+      "travels": "ਯਾਤਰਾਵਾਂ",
       "meetingInCountry": "ਤੁਹਾਡੇ ਦੇਸ਼ ਵਿੱਚ ਮੁਲਾਕਾਤ"
     }
   },
@@ -485,7 +486,7 @@
     }
   },
   "marriageRequest": {
-    "modalTitle": "ਟਿਕਾਣੇ ਦੀ ਜਾਣਕਾਰੀ",
+    "modalTitle": "ਵਿਆਹ ਫਾਰਮ",
     "close": "ਬੰਦ ਕਰੋ",
     "actions": {
       "back": "ਪਿੱਛੇ",

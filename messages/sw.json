@@ -42,6 +42,7 @@
       "zefaafEvents": "Matukio ya Zefaaf",
       "marriageForm": "Fomu Yako ya Ndoa",
       "bosniaTour": "Safari ya Ndoa Bosnia",
+      "travels": "Safari",
       "meetingInCountry": "Mkutano katika Nchi Yako"
     }
   },
@@ -485,7 +486,7 @@
     }
   },
   "marriageRequest": {
-    "modalTitle": "Taarifa za mahali",
+    "modalTitle": "Fomu ya Ndoa",
     "close": "Funga",
     "actions": {
       "back": "Rudi",

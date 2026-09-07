@@ -1,9 +1,10 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { Loader2 } from "lucide-react";
 
+import { Alert } from "@/shared/ui/alert";
 import { Button } from "@/shared/ui/button";
 import { Dialog, DialogContent, DialogFooter, DialogHeader, DialogTitle } from "@/shared/ui/dialog";
 
@@ -20,12 +21,14 @@ import { getVipPaymentMethod } from "../model/payment-method";
 
 export function StartNowDialog({ open, onOpenChange }: { open: boolean; onOpenChange: (open: boolean) => void }) {
   const locale = useLocale();
+  const isArabic = locale === "ar";
   const copy = getStartNowCopy(locale);
   const tPayment = useTranslations("vipPayment");
   const { step, gender, setGender, details, patchDetails, goNext, goBack, reset } = useStartNow();
   const [requestingLocation, setRequestingLocation] = useState(false);
   const [locationError, setLocationError] = useState<string | null>(null);
   const [countries, setCountries] = useState<Country[]>([]);
+  const [countriesError, setCountriesError] = useState<string | null>(null);
   const [price, setPrice] = useState<VipPrice | null>(null);
   const [priceLoading, setPriceLoading] = useState(false);
   const [proof, setProof] = useState<File | null>(null);
@@ -34,9 +37,22 @@ export function StartNowDialog({ open, onOpenChange }: { open: boolean; onOpenCh
   const [transferReference, setTransferReference] = useState("");
   const [showAgentDetails, setShowAgentDetails] = useState(false);
 
+  const loadCountries = useCallback(() => {
+    queueMicrotask(() => setCountriesError(null));
+    return getCountries()
+      .then((value) => { setCountries(value); setCountriesError(null); })
+      .catch(() => {
+        setCountriesError(
+          isArabic
+            ? "تعذر تحميل قائمة الدول. يرجى المحاولة مرة أخرى."
+            : "Couldn't load the country list. Please try again."
+        );
+      });
+  }, [isArabic]);
+
   useEffect(() => {
-    if (open) void getCountries().then(setCountries).catch(() => undefined);
-  }, [open]);
+    if (open) void loadCountries();
+  }, [open, loadCountries]);
 
   useEffect(() => {
     if (step !== "payment") return;
@@ -47,11 +63,20 @@ export function StartNowDialog({ open, onOpenChange }: { open: boolean; onOpenCh
     }
     let cancelled = false;
     void getVipPrice(country.id, details.gender)
-      .then((value) => { if (!cancelled) setPrice(value); })
-      .catch(() => { if (!cancelled) setPrice(null); })
+      .then((value) => { if (!cancelled) { setPrice(value); setPaymentError(null); } })
+      .catch(() => {
+        if (!cancelled) {
+          setPrice(null);
+          setPaymentError(
+            isArabic
+              ? "تعذر تحميل سعر VIP. يرجى المحاولة مرة أخرى."
+              : "Couldn't load the VIP price. Please try again."
+          );
+        }
+      })
       .finally(() => { if (!cancelled) setPriceLoading(false); });
     return () => { cancelled = true; };
-  }, [step, countries, details.countryIso2, details.gender]);
+  }, [step, countries, details.countryIso2, details.gender, isArabic]);
 
   function handleOpenChange(next: boolean) {
     onOpenChange(next);
@@ -59,6 +84,7 @@ export function StartNowDialog({ open, onOpenChange }: { open: boolean; onOpenCh
       reset();
       setRequestingLocation(false);
       setLocationError(null);
+      setCountriesError(null);
       setPriceLoading(false);
       setPaymentSubmitting(false);
       setShowAgentDetails(false);
@@ -147,16 +173,31 @@ export function StartNowDialog({ open, onOpenChange }: { open: boolean; onOpenCh
         }
         return;
       }
-      // No live WhatsApp destination or geolocation backend exists yet —
-      // same placeholder convention as the header/footer/VIP CTAs — so the
-      // flow simply completes and closes.
       setPaymentSubmitting(true);
+      setPaymentError(null);
       try {
-        const link = paymentMethod === "telegram"
-          ? "https://t.me/zefaaf"
-          : await getVipWhatsappLink().catch(() => null) ?? "https://wa.me/31683834839";
+        if (paymentMethod === "telegram") {
+          window.open("https://t.me/zefaaf", "_blank", "noopener,noreferrer");
+          handleOpenChange(false);
+          return;
+        }
+        const link = await getVipWhatsappLink();
+        if (!link) {
+          setPaymentError(
+            isArabic
+              ? "تعذر تحميل رابط واتساب. يرجى المحاولة مرة أخرى."
+              : "Couldn't load the WhatsApp link. Please try again."
+          );
+          return;
+        }
         window.open(link, "_blank", "noopener,noreferrer");
         handleOpenChange(false);
+      } catch {
+        setPaymentError(
+          isArabic
+            ? "تعذر تحميل رابط واتساب. يرجى المحاولة مرة أخرى."
+            : "Couldn't load the WhatsApp link. Please try again."
+        );
       } finally {
         setPaymentSubmitting(false);
       }
@@ -186,6 +227,18 @@ export function StartNowDialog({ open, onOpenChange }: { open: boolean; onOpenCh
 
         {step === "gender" && <GenderStep copy={copy.gender} value={gender} onChange={(value) => { setGender(value); patchDetails({ gender: value === "woman" ? "female" : "male" }); }} />}
         {step === "details" && <DetailsStep copy={copy.details} values={details} onChange={patchDetails} countries={countries} />}
+        {step === "details" && countriesError && (
+          <div className="flex flex-col gap-2 px-4 pb-2">
+            <Alert>{countriesError}</Alert>
+            <button
+              type="button"
+              onClick={() => void loadCountries()}
+              className="self-start font-alexandria text-sm text-brand"
+            >
+              {isArabic ? "إعادة المحاولة" : "Retry"}
+            </button>
+          </div>
+        )}
         {step === "payment" && priceLoading && (
           <div className="flex min-h-44 items-center justify-center p-6">
             <span className="size-8 animate-spin rounded-full border-2 border-brand/25 border-t-brand" aria-label="Loading payment options" />
